@@ -1,0 +1,60 @@
+:root {
+  --ink: #1a1410;
+  --parchment: #f4ead5;
+  --parchment-dark: #e8d9bc;
+  --gold: #c9a227;
+  --gold-light: #e8c84a;
+  --burgundy: #6b1f2a;
+  --burgundy-light: #8f2d3c;
+  --slate: #2c3540;
+  --slate-light: #3d4a58;
+  --text-muted: #7a6f5e;
+  --card-shadow: 0 8px 32px rgba(26, 20, 16, 0.18);
+  --radius: 12px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body), Georgia, "Times New Roman", serif;
+  background: var(--ink);
+  color: var(--parchment);
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--gold-light);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
+::selection {
+  background: var(--burgundy);
+  color: var(--parchment);
+}
