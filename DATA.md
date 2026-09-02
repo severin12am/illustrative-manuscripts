@@ -51,7 +51,14 @@ Each verse may carry zero or more `variants[]` units, ready for later counting a
 | `intention` | `error` \| `likely_intentional` \| `uncertain` — left `uncertain` in automated CNTR collation |
 | `source` | `cntr` \| `igntp` \| `manual` |
 
-`scripts/lib/variant-classify.mjs` applies conservative word-diff rules only (no LLM batch classification). Fragment verses whose extant words are a contiguous subsequence of SR GNT are not flagged. UI shows a count line plus per-variant strips with `kind` badge.
+`scripts/lib/variant-classify.mjs` applies conservative alignment rules only (no LLM batch classification):
+
+- Uses SR GNT **word tokens** (not a concatenated verse blob).
+- Compares **extant runs** only (`segmentsToExtantRuns` — supplied `~` text excluded).
+- Anchors each run in SR by longest matching substring, then extends with lacuna tolerance.
+- Missing context before/after extant letters is **not** scored as omission/substitution.
+
+Fragment verses whose extant letters match the corresponding SR span (allowing lacunae) produce zero variants. UI shows a count line plus per-variant strips with `kind` badge.
 
 Do **not** use NA28, UBS, NIV, ESV, or BHQ text.
 

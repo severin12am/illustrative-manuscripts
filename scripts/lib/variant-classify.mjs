@@ -1,6 +1,7 @@
 /**
  * Conservative CNTR-vs-SR variant classification for taxonomy-ready storage.
- * Does not guess intention at scale; classifies kind only when obvious.
+ * Compares extant witness letters against the corresponding SR span only;
+ * lacunae, supplied text, and missing context are not scored as variants.
  */
 
 import { normalizeGreek } from "./mes-parser.mjs";
@@ -28,15 +29,6 @@ function levenshtein(a, b) {
     prev = cur;
   }
   return prev[n];
-}
-
-function isContiguousSubsequence(needle, haystack) {
-  if (needle.length === 0) return true;
-  let j = 0;
-  for (let i = 0; i < haystack.length && j < needle.length; i++) {
-    if (haystack[i] === needle[j]) j++;
-  }
-  return j === needle.length;
 }
 
 function makeLocus(bookId, chapter, verse, wordStart, wordEnd) {
@@ -77,152 +69,192 @@ function unit(locus, witness, base, kind, note, wordStart, wordEnd) {
   };
 }
 
+function srCharMap(srWords) {
+  const words = srWords.map((w) => normalizeGreek(w)).filter(Boolean);
+  let chars = "";
+  const charToWord = [];
+  for (let wi = 0; wi < words.length; wi++) {
+    for (const ch of words[wi]) {
+      chars += ch;
+      charToWord.push(wi + 1);
+    }
+  }
+  return { chars, charToWord, words };
+}
+
+function runChars(runPlain) {
+  return tokenizeGreek(runPlain).join("");
+}
+
+function findAnchor(wChars, sChars, minS) {
+  const minLen = wChars.length >= 6 ? 4 : Math.min(3, wChars.length);
+  let best = null;
+  for (let len = Math.min(wChars.length, 16); len >= minLen; len--) {
+    for (let wi = 0; wi <= wChars.length - len; wi++) {
+      const sub = wChars.slice(wi, wi + len);
+      let from = minS;
+      while (from < sChars.length) {
+        const si = sChars.indexOf(sub, from);
+        if (si < 0) break;
+        const score = len * 10 - si * 0.001;
+        if (!best || score > best.score) {
+          best = { wi, si, len, score };
+        }
+        from = si + 1;
+      }
+    }
+  }
+  return best;
+}
+
+function extendSide(wChars, sChars, wFrom, wTo, sFrom, sTo, maxGap) {
+  const mismatches = [];
+  let wi = wFrom;
+  let si = sFrom;
+
+  while (wi < wTo && si < sTo) {
+    if (wChars[wi] === sChars[si]) {
+      wi++;
+      si++;
+      continue;
+    }
+
+    let fixed = false;
+    for (let k = 1; k <= maxGap && si + k < sTo; k++) {
+      if (wChars[wi] === sChars[si + k]) {
+        si += k;
+        fixed = true;
+        break;
+      }
+    }
+    if (fixed) continue;
+
+    for (let k = 1; k <= 3 && wi + k < wTo; k++) {
+      if (wChars[wi + k] === sChars[si]) {
+        wi += k;
+        fixed = true;
+        break;
+      }
+    }
+    if (fixed) continue;
+
+    if (levenshtein(wChars[wi], sChars[si]) === 1) {
+      mismatches.push({ wi, si, kind: "orthography" });
+      wi++;
+      si++;
+      continue;
+    }
+
+    return null;
+  }
+
+  return { wi, si, mismatches };
+}
+
+/** Align extant run to SR using a unique long anchor, then extend. */
+function alignRunToSr(wChars, sChars, minS = 0) {
+  if (!wChars.length || !sChars.length) return null;
+  if (/^\d+$/.test(wChars)) return { mismatches: [], endSi: minS };
+
+  const anchor = findAnchor(wChars, sChars, minS);
+  if (!anchor) return null;
+
+  const maxGap = Math.min(14, Math.ceil(wChars.length * 0.5));
+
+  const left = extendSide(
+    wChars,
+    sChars,
+    0,
+    anchor.wi,
+    Math.max(minS, anchor.si - maxGap),
+    anchor.si,
+    maxGap
+  );
+  if (!left) return null;
+
+  const right = extendSide(
+    wChars,
+    sChars,
+    anchor.wi + anchor.len,
+    wChars.length,
+    anchor.si + anchor.len,
+    Math.min(sChars.length, anchor.si + anchor.len + maxGap + 4),
+    maxGap
+  );
+  if (!right) return null;
+
+  const mismatches = [...left.mismatches, ...right.mismatches];
+  return { mismatches, endSi: right.si };
+}
+
+function mismatchToVariant(m, wChars, sChars, charToWord, locusBase) {
+  const wSlice = expandAround(wChars, m.wi, 2);
+  const sSlice = expandAround(sChars, m.si, 2);
+  const wordPos = charToWord[m.si] ?? undefined;
+  const kind = m.kind === "orthography" ? "orthography" : "substitution";
+  const note =
+    kind === "orthography"
+      ? "Single-character difference in extant letters vs SR GNT."
+      : "Extant letters differ from SR GNT at this position.";
+
+  return unit(
+    locusBase,
+    wSlice,
+    sSlice,
+    kind,
+    note,
+    wordPos,
+    wordPos
+  );
+}
+
+function expandAround(chars, idx, radius) {
+  const start = Math.max(0, idx - radius);
+  const end = Math.min(chars.length, idx + radius + 1);
+  return chars.slice(start, end);
+}
+
 /**
- * Compare witness plain text to SR GNT for a verse.
- * Returns [] when the witness is a mere fragment (contiguous subsequence of SR).
+ * Compare extant witness runs to SR GNT word tokens for a verse.
+ * @param {string[]} extantRuns - contiguous extant plain-text runs (no supplied text)
+ * @param {string[]} srWords - SR koine word tokens for the verse
  */
 export function classifyVerseVariants(
-  witnessPlain,
-  srPlain,
+  extantRuns,
+  srWords,
   bookId,
   chapter,
   verse
 ) {
-  const w = tokenizeGreek(witnessPlain);
-  const s = tokenizeGreek(srPlain);
-  if (w.length === 0 || s.length === 0) return [];
+  const { chars: sChars, charToWord } = srCharMap(srWords);
+  if (!sChars.length) return [];
 
-  if (w.join(" ") === s.join(" ")) return [];
-
-  // Partial papyrus leaf: extant words follow SR order → not a collation variant
-  if (isContiguousSubsequence(w, s)) return [];
-
-  const variants = [];
-  const wSet = new Set(w);
-  const sSet = new Set(s);
-  const onlyW = w.filter((t) => !sSet.has(t));
-  const onlyS = s.filter((t) => !wSet.has(t));
+  const runs = Array.isArray(extantRuns)
+    ? extantRuns
+    : extantRuns
+      ? [extantRuns]
+      : [];
+  if (!runs.length) return [];
 
   const locusBase = { book_id: bookId, chapter, verse };
+  const variants = [];
+  let minS = 0;
 
-  // Single-word substitution with one-character difference → orthography
-  if (
-    onlyW.length === 1 &&
-    onlyS.length === 1 &&
-    w.length === s.length &&
-    levenshtein(onlyW[0], onlyS[0]) === 1
-  ) {
-    const wi = w.indexOf(onlyW[0]);
-    variants.push(
-      unit(
-        locusBase,
-        onlyW[0],
-        onlyS[0],
-        "orthography",
-        "Single-character difference; may be itacism or orthographic variation.",
-        wi + 1,
-        wi + 1
-      )
-    );
-    return variants;
-  }
+  for (const runPlain of runs) {
+    const wChars = runChars(runPlain);
+    if (!wChars.length || /^\d+$/.test(wChars)) continue;
 
-  // Clear extra words in witness
-  if (onlyW.length > 0 && onlyS.length === 0 && w.length > s.length) {
-    const start = w.findIndex((t) => onlyW.includes(t));
-    variants.push(
-      unit(
-        locusBase,
-        onlyW.join(" "),
-        "(absent)",
-        "addition",
-        "Witness contains word(s) not in SR GNT.",
-        start + 1,
-        start + onlyW.length
-      )
-    );
-    return variants;
-  }
+    const align = alignRunToSr(wChars, sChars, minS);
+    if (!align) continue;
 
-  // Clear missing words in witness (extant portion complete vs SR)
-  if (onlyS.length > 0 && onlyW.length === 0 && w.length < s.length) {
-    const start = s.findIndex((t) => onlyS.includes(t));
-    variants.push(
-      unit(
-        locusBase,
-        "(absent)",
-        onlyS.join(" "),
-        "omission",
-        "Witness lacks word(s) present in SR GNT.",
-        start + 1,
-        start + onlyS.length
-      )
-    );
-    return variants;
-  }
-
-  // Paired different words → substitution(s)
-  if (onlyW.length > 0 && onlyS.length > 0) {
-    const n = Math.min(onlyW.length, onlyS.length);
-    for (let i = 0; i < n; i++) {
-      const wi = w.indexOf(onlyW[i]);
-      const kind =
-        levenshtein(onlyW[i], onlyS[i]) === 1 ? "orthography" : "substitution";
+    for (const m of align.mismatches) {
       variants.push(
-        unit(
-          locusBase,
-          onlyW[i],
-          onlyS[i],
-          kind,
-          kind === "orthography"
-            ? "Single-character substitution."
-            : "Substituted wording vs SR GNT.",
-          wi >= 0 ? wi + 1 : undefined,
-          wi >= 0 ? wi + 1 : undefined
-        )
+        mismatchToVariant(m, wChars, sChars, charToWord, locusBase)
       );
     }
-    if (onlyW.length > onlyS.length) {
-      variants.push(
-        unit(
-          locusBase,
-          onlyW.slice(n).join(" "),
-          "(absent)",
-          "addition",
-          "Additional words in witness.",
-          undefined,
-          undefined
-        )
-      );
-    }
-    if (onlyS.length > onlyW.length) {
-      variants.push(
-        unit(
-          locusBase,
-          "(absent)",
-          onlyS.slice(n).join(" "),
-          "omission",
-          "Additional words in SR GNT.",
-          undefined,
-          undefined
-        )
-      );
-    }
-    return variants;
+    minS = Math.max(minS, align.endSi);
   }
 
-  // Fallback: verse-level difference without clear word alignment
-  variants.push(
-    unit(
-      locusBase,
-      witnessPlain.slice(0, 160),
-      srPlain.slice(0, 160),
-      "uncertain",
-      "Verse differs from SR GNT; word alignment unclear (fragment or complex variation).",
-      undefined,
-      undefined
-    )
-  );
   return variants;
 }
 
