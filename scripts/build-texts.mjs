@@ -19,8 +19,12 @@ import {
   parseMesFile,
   segmentsToDiplomatic,
   segmentsToPlain,
-  normalizeGreek,
 } from "./lib/mes-parser.mjs";
+import {
+  classifyVerseVariants,
+  countVariantsInVerses,
+  BASE_TEXT_NAME,
+} from "./lib/variant-classify.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -94,33 +98,7 @@ async function loadSR() {
 
 function srVerseText(srByVerse, esn) {
   const words = srByVerse.get(String(esn)) || [];
-  return normalizeGreek(words.join(""));
-}
-
-function compareTexts(witnessPlain, srPlain) {
-  if (!witnessPlain || !srPlain) return { differs: false, note: "" };
-  if (witnessPlain === srPlain) return { differs: false, note: "" };
-  const wWords = witnessPlain.split(/\s+/).filter(Boolean);
-  const sWords = srPlain.split(/\s+/).filter(Boolean);
-  if (wWords.join(" ") === sWords.join(" "))
-    return { differs: false, note: "" };
-  return {
-    differs: true,
-    witness_reading: witnessPlain.slice(0, 120),
-    sr_reading: srPlain.slice(0, 120),
-    note: "Reading differs from SR GNT (CNTR) at this verse.",
-  };
-}
-
-function inFocus(focusRanges, book, chapter, verse) {
-  if (!focusRanges?.length) return false;
-  return focusRanges.some(
-    (r) =>
-      r.book === book &&
-      r.chapter === chapter &&
-      verse >= r.verseStart &&
-      verse <= r.verseEnd
-  );
+  return words.join("");
 }
 
 function buildVerseEntry(esn, segments, srByVerse, webData, bookId) {
@@ -132,7 +110,14 @@ function buildVerseEntry(esn, segments, srByVerse, webData, bookId) {
     webData && CNTR_BOOKS[bookId]
       ? getWEBVerse(webData, chapter, verse)
       : "";
-  const cmp = compareTexts(plain, srPlain);
+
+  const variants = classifyVerseVariants(
+    plain,
+    srPlain,
+    book,
+    chapter,
+    verse
+  );
 
   const lines = [];
   let current = [];
@@ -157,15 +142,8 @@ function buildVerseEntry(esn, segments, srByVerse, webData, bookId) {
     greek_plain: plain,
     english_web: web,
     english_adapted: web,
-    has_variant: cmp.differs,
-    variant: cmp.differs
-      ? {
-          locus: formatRef(book, chapter, verse),
-          sr_reading: cmp.sr_reading,
-          witness_reading: cmp.witness_reading,
-          note: cmp.note,
-        }
-      : null,
+    has_variant: variants.length > 0,
+    variants,
   };
 }
 
@@ -235,20 +213,35 @@ async function processWitness(ga, srByVerse) {
     more = allVerses.slice(maxInitial);
   }
 
+  const difference_count = countVariantsInVerses(initial);
+
   return {
     available: true,
     message: null,
     source: "CNTR electronic transcription (CC BY-SA 4.0)",
     translation_base: "World English Bible (public domain), adapted to this witness where variants affect wording",
     translation_label: "English of this fragment",
+    base_text: BASE_TEXT_NAME,
     cntr_url: `https://greekcntr.org/manuscripts/${ga}`,
     cntr_file: `${CNTR_BASE}/${ga}.txt`,
     total_verses: allVerses.length,
+    difference_count,
     initial_verses: initial,
     more_verses: more,
     attribution:
       "Greek: CNTR (Alan Bunning, CC BY-SA 4.0). English: WEB (PD). Collation base: SR GNT (CNTR, CC BY 4.0).",
   };
+}
+
+function inFocus(focusRanges, book, chapter, verse) {
+  if (!focusRanges?.length) return false;
+  return focusRanges.some(
+    (r) =>
+      r.book === book &&
+      r.chapter === chapter &&
+      verse >= r.verseStart &&
+      verse <= r.verseEnd
+  );
 }
 
 async function main() {
@@ -299,8 +292,10 @@ async function main() {
       source: full.source,
       translation_base: full.translation_base,
       translation_label: full.translation_label,
+      base_text: full.base_text ?? BASE_TEXT_NAME,
       cntr_url: full.cntr_url,
       total_verses: full.total_verses,
+      difference_count: full.difference_count ?? 0,
       more_count: full.more_verses?.length ?? 0,
       initial_verses: full.initial_verses ?? [],
       attribution: full.attribution,

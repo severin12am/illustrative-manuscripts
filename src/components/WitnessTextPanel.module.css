@@ -29,6 +29,13 @@
   line-height: 1.4;
 }
 
+.diffCount {
+  font-size: 0.8rem;
+  color: var(--gold-light);
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
 .verseList {
   display: flex;
   flex-direction: column;
@@ -92,8 +99,16 @@
   font-style: italic;
 }
 
+.variantList {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .variantStrip {
-  margin-top: 0.75rem;
   padding-top: 0.6rem;
   border-top: 1px solid rgba(201, 162, 39, 0.1);
   font-size: 0.75rem;
@@ -103,6 +118,38 @@
   flex-wrap: wrap;
   gap: 0.35rem 0.5rem;
   align-items: baseline;
+}
+
+.kindBadge {
+  font-size: 0.62rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+  background: rgba(201, 162, 39, 0.15);
+  color: var(--gold);
+}
+
+.kindBadge[data-kind="orthography"] {
+  background: rgba(120, 160, 200, 0.2);
+  color: #9ec5e8;
+}
+
+.kindBadge[data-kind="omission"],
+.kindBadge[data-kind="addition"] {
+  background: rgba(180, 100, 100, 0.2);
+  color: #d4a0a0;
+}
+
+.kindBadge[data-kind="substitution"] {
+  background: rgba(180, 140, 80, 0.2);
+  color: #d4c090;
+}
+
+.vsLocus {
+  font-weight: 500;
+  color: var(--gold-light);
 }
 
 .vsLabel {
@@ -121,7 +168,7 @@
   opacity: 0.4;
 }
 
-.vsSr {
+.vsBase {
   color: var(--text-muted);
   font-family: var(--font-greek);
 }

@@ -39,6 +39,20 @@ node scripts/download-commons.mjs
 - **56/61** witnesses have CNTR class-1 files; **5 lack CNTR files** (P16, P65, P78, P80, P103) and show an honest unavailable state.
 - Large manuscripts (P46, P66, P75, …) ship the **photo-matched passage** first; full CNTR text loads from `public/cntr-texts/{GA}.json` on expand.
 
+### Variant taxonomy (v1 schema)
+
+Each verse may carry zero or more `variants[]` units, ready for later counting and categorization:
+
+| Field | Values / notes |
+|-------|----------------|
+| `locus` | `book`, `book_id`, `chapter`, `verse`, `reference`; optional `word_start` / `word_end` |
+| `witness_reading`, `base_reading` | Token or phrase; base is named via `base_text` (SR GNT) |
+| `kind` | `orthography` \| `omission` \| `addition` \| `substitution` \| `transposition` \| `nonsense` \| `harmonization` \| `uncertain` |
+| `intention` | `error` \| `likely_intentional` \| `uncertain` — left `uncertain` in automated CNTR collation |
+| `source` | `cntr` \| `igntp` \| `manual` |
+
+`scripts/lib/variant-classify.mjs` applies conservative word-diff rules only (no LLM batch classification). Fragment verses whose extant words are a contiguous subsequence of SR GNT are not flagged. UI shows a count line plus per-variant strips with `kind` badge.
+
 Do **not** use NA28, UBS, NIV, ESV, or BHQ text.
 
 Cached Liste export: `scripts/cache/liste.json` (2026-09-02 snapshot, 141 papyri).

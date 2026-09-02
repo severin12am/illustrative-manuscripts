@@ -3,8 +3,13 @@
 import { useState } from "react";
 import styles from "./WitnessTextPanel.module.css";
 import GreekDiplomatic from "./GreekDiplomatic";
-import type { WitnessText, TextVerse } from "@/types/text";
+import type { WitnessText, TextVerse, VariantUnit } from "@/types/text";
+import { countVariants, formatLocus } from "@/types/text";
 import { assetUrl } from "@/lib/assetUrl";
+
+function kindLabel(kind: VariantUnit["kind"]): string {
+  return kind.replace(/_/g, " ");
+}
 
 interface Props {
   text: WitnessText;
@@ -36,14 +41,22 @@ function VerseRow({ verse }: { verse: TextVerse }) {
           </p>
         </div>
       </div>
-      {verse.variant && (
-        <div className={styles.variantStrip}>
-          <span className={styles.vsLabel}>vs SR GNT</span>
-          <span className={styles.vsWitness}>{verse.variant.witness_reading}</span>
-          <span className={styles.vsSep}>|</span>
-          <span className={styles.vsSr}>{verse.variant.sr_reading}</span>
-          <span className={styles.vsNote}>{verse.variant.note}</span>
-        </div>
+      {verse.variants.length > 0 && (
+        <ul className={styles.variantList}>
+          {verse.variants.map((v, i) => (
+            <li key={`${verse.esn}-${i}`} className={styles.variantStrip}>
+              <span className={styles.kindBadge} data-kind={v.kind}>
+                {kindLabel(v.kind)}
+              </span>
+              <span className={styles.vsLabel}>vs {v.base_text}</span>
+              <span className={styles.vsLocus}>{formatLocus(v.locus)}</span>
+              <span className={styles.vsWitness}>{v.witness_reading}</span>
+              <span className={styles.vsSep}>|</span>
+              <span className={styles.vsBase}>{v.base_reading}</span>
+              {v.note && <span className={styles.vsNote}>{v.note}</span>}
+            </li>
+          ))}
+        </ul>
       )}
     </div>
   );
@@ -96,12 +109,19 @@ export default function WitnessTextPanel({ text, ga }: Props) {
     ? [...text.initial_verses, ...moreVerses]
     : text.initial_verses;
 
+  const differenceCount = countVariants(visible);
+  const baseText = text.base_text ?? "SR GNT";
+
   return (
     <section className={styles.panel}>
       <header className={styles.panelHeader}>
         <h4 className={styles.heading}>Running text</h4>
         <p className={styles.subhead}>
           {text.translation_label} — {text.translation_base}
+        </p>
+        <p className={styles.diffCount}>
+          {differenceCount} difference{differenceCount !== 1 ? "s" : ""} vs{" "}
+          {baseText} in the surviving verses shown
         </p>
       </header>
 
