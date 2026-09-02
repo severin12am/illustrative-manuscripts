@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "data": "node scripts/generate-data.mjs",
+    "texts": "node scripts/build-texts.mjs",
     "images": "node scripts/download-commons.mjs"
   },
   "dependencies": {

@@ -7,6 +7,7 @@ A year-by-year timeline of **Greek New Testament papyri** for the first two cent
 ## What this is
 
 - **61 Greek NT papyri** whose INTF Liste date overlaps 1–200 CE
+- **Original + translation** on every card: CNTR diplomatic Greek beside WEB English of the fragment, with SR GNT variant strips
 - **33 Wikimedia Commons photographs** (PD / CC) shipped in `/public/witnesses/`
 - Honest **date ranges** from the [Kurzgefasste Liste](https://ntvmr.uni-muenster.de/liste/) — not fake exact years
 - Variant highlights vs open texts ([SBLGNT](https://github.com/LogosBible/SBLGNT), [SR GNT / CNTR](https://greekcntr.org/)) where verified
@@ -27,6 +28,7 @@ Not a replacement for NTVMR, INTF, or ECM. Not a corpus of high-res library down
 ```bash
 npm install
 npm run data      # regenerate from cached Liste (+ live API if reachable)
+npm run texts     # CNTR Greek + WEB English + SR variant strips
 npm run images    # refresh Commons downloads (slow; rate-limited)
 npm run dev       # http://localhost:3000
 ```

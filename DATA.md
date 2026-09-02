@@ -25,9 +25,21 @@ We do **not** host NA28/UBS5/BHQ apparatus (Deutsche Bibelgesellschaft copyright
 # Requires network access to ntvmr.uni-muenster.de
 node scripts/generate-data.mjs
 
+# CNTR transcriptions + WEB + SR GNT collation (required for running text)
+node scripts/build-texts.mjs
+
 # Download/update Commons images (rate-limited; be patient)
 node scripts/download-commons.mjs
 ```
+
+## Running text (CNTR + WEB)
+
+- **Greek:** [CNTR transcriptions](https://github.com/Center-for-New-Testament-Restoration/transcriptions) (CC BY-SA 4.0), parsed from MES format with lacunae (`[...]`), missing letters (`·`), and line breaks preserved.
+- **English:** [World English Bible](https://github.com/TehShrike/world-english-bible) (public domain), labeled *English of this fragment* — verse text for the surviving passage, with variant strips vs **SR GNT** (CNTR, CC BY 4.0).
+- **56/61** witnesses have CNTR class-1 files; **5 lack CNTR files** (P16, P65, P78, P80, P103) and show an honest unavailable state.
+- Large manuscripts (P46, P66, P75, …) ship the **photo-matched passage** first; full CNTR text loads from `public/cntr-texts/{GA}.json` on expand.
+
+Do **not** use NA28, UBS, NIV, ESV, or BHQ text.
 
 Cached Liste export: `scripts/cache/liste.json` (2026-09-02 snapshot, 141 papyri).
 

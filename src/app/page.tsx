@@ -62,6 +62,11 @@ export default function Home() {
               date overlaps {TIMELINE_START}–{TIMELINE_END} CE
             </li>
             <li>
+              <strong>Original Greek</strong> (CNTR diplomatic) +{" "}
+              <strong>English of this fragment</strong> (WEB, public domain)
+              on every card with a CNTR file
+            </li>
+            <li>
               <strong>{withImages}</strong> with PD/CC photographs from{" "}
               <a
                 href="https://commons.wikimedia.org/"
