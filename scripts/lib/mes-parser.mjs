@@ -155,6 +155,54 @@ export function segmentsToPlain(segments) {
   return normalizeGreek(plain);
 }
 
+/**
+ * Contiguous extant runs separated by lacunae or editorial supply (~).
+ * Supplied reconstruction is excluded; lacuna/line breaks split runs only when
+ * a lacuna or supplied block intervenes (not on mere line breaks).
+ */
+export function segmentsToExtantRuns(segments) {
+  const runs = [];
+  let current = "";
+  let inSupplied = false;
+
+  function flush() {
+    const t = normalizeGreek(current);
+    if (t) runs.push(t);
+    current = "";
+  }
+
+  for (const seg of segments) {
+    switch (seg.type) {
+      case "supplied":
+        flush();
+        inSupplied = true;
+        break;
+      case "lacuna":
+        flush();
+        inSupplied = false;
+        break;
+      case "text":
+      case "nomina":
+        if (!inSupplied) current += seg.text;
+        else inSupplied = false;
+        break;
+      case "missing":
+      case "damaged":
+        inSupplied = false;
+        break;
+      case "linebreak":
+      case "pagebreak":
+        current += " ";
+        inSupplied = false;
+        break;
+      default:
+        break;
+    }
+  }
+  flush();
+  return runs;
+}
+
 export function normalizeGreek(s) {
   return s
     .normalize("NFD")

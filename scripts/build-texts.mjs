@@ -19,6 +19,7 @@ import {
   parseMesFile,
   segmentsToDiplomatic,
   segmentsToPlain,
+  segmentsToExtantRuns,
 } from "./lib/mes-parser.mjs";
 import {
   classifyVerseVariants,
@@ -96,24 +97,24 @@ async function loadSR() {
   return byVerse;
 }
 
-function srVerseText(srByVerse, esn) {
-  const words = srByVerse.get(String(esn)) || [];
-  return words.join("");
+function srVerseWords(srByVerse, esn) {
+  return srByVerse.get(String(esn)) || [];
 }
 
 function buildVerseEntry(esn, segments, srByVerse, webData, bookId) {
   const { book, chapter, verse } = parseESN(esn);
   const diplomatic = segmentsToDiplomatic(segments);
   const plain = segmentsToPlain(segments);
-  const srPlain = srVerseText(srByVerse, esn);
+  const extantRuns = segmentsToExtantRuns(segments);
+  const srWords = srVerseWords(srByVerse, esn);
   const web =
     webData && CNTR_BOOKS[bookId]
       ? getWEBVerse(webData, chapter, verse)
       : "";
 
   const variants = classifyVerseVariants(
-    plain,
-    srPlain,
+    extantRuns,
+    srWords,
     book,
     chapter,
     verse
