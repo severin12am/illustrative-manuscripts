@@ -1,0 +1,126 @@
+{
+  "ok": [
+    "P52",
+    "P66",
+    "P75",
+    "P4"
+  ],
+  "fail": [
+    {
+      "ga": "P46",
+      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/8/8d/Bifolio_from_Paul%27s_Letter_to_the_Romans%2C_the_end_of_Paul%27s_Letter_to_the_Philippians_and_the_beginning_of_Paul%27s_Letter_to_the_Colossians.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    {
+      "ga": "P45",
+      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/8/8f/P45_Marc_8.35-9.1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    {
+      "ga": "P104",
+      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/6/64/Oxford%2C_Sackler_Library_Ms_LXIV_4404_%28Papyrus_104%29_recto_Matt_21%2C_34-37.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    {
+      "ga": "P5",
+      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/6/63/London%2C_British_Library_Ms_Oxyrhynchus_208_%28Papyrus_5%29_verso_John_1%2C_23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    {
+      "ga": "P13",
+      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/0/09/London%2C_British_Library_Ms_Inv._Nr._1532v_%28Papyrus_13%29_Fragment_1_recto_Hebrews_4%2C2-12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    {
+      "ga": "P16",
+      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/3/37/Papyrus_16_-_Papyrus_Oxyrhynchus_1009_-_Cairo_Egyptian_Museum_JE_47424_-_Epistle_to_the_Philippians_3%2C10%E2%80%9317%2C_4%2C2%E2%80%938.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    {
+      "ga": "P22",
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+    },
+    {
+      "ga": "P27",
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+    },
+    {
+      "ga": "P28",
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+    },
+    {
+      "ga": "P30",
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+    },
+    {
+      "ga": "P39",
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+    },
+    {
+      "ga": "P48",
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+    },
+    {
+      "ga": "P53",
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+    },
+    {
+      "ga": "P78",
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+    },
+    {
+      "ga": "P80",
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+    },
+    {
+      "ga": "P91",
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+    },
+    {
+      "ga": "P92",
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+    },
+    {
+      "ga": "P95",
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+    },
+    {
+      "ga": "P98",
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+    },
+    {
+      "ga": "P103",
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+    },
+    {
+      "ga": "P106",
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+    },
+    {
+      "ga": "P107",
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+    },
+    {
+      "ga": "P108",
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+    },
+    {
+      "ga": "P109",
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+    },
+    {
+      "ga": "P111",
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+    },
+    {
+      "ga": "P113",
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+    },
+    {
+      "ga": "P114",
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+    },
+    {
+      "ga": "P118",
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+    },
+    {
+      "ga": "P90",
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+    }
+  ]
+}
