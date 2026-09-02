@@ -4,153 +4,183 @@
 
 .hero {
   background: linear-gradient(
-    180deg,
-    rgba(107, 31, 42, 0.25) 0%,
-    transparent 100%
+    165deg,
+    rgba(107, 31, 42, 0.35) 0%,
+    rgba(26, 20, 16, 0) 55%
   );
   border-bottom: 1px solid rgba(201, 162, 39, 0.15);
-  padding: 3rem 1.5rem 2rem;
+  padding: 2.5rem 1.5rem 2rem;
 }
 
 .heroInner {
-  max-width: 900px;
+  max-width: 920px;
   margin: 0 auto;
-  text-align: center;
 }
 
 .eyebrow {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.14em;
   color: var(--gold);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.6rem;
 }
 
 .title {
-  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
   color: var(--parchment);
   margin-bottom: 1rem;
-  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+  line-height: 1.1;
 }
 
-.subtitle {
-  font-size: 1.1rem;
+.lead {
+  font-size: 1.05rem;
   color: var(--text-muted);
-  max-width: 600px;
-  margin: 0 auto;
   line-height: 1.7;
+  max-width: 720px;
 }
 
-.timelineSection {
+.principles {
+  list-style: none;
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--parchment);
+}
+
+.principles a {
+  color: var(--gold-light);
+}
+
+.controls {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .yearPicker {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.yearLabel {
-  font-size: 0.85rem;
-  color: var(--gold);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.yearControls {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.yearBtn {
-  background: rgba(201, 162, 39, 0.15);
-  border: 1px solid rgba(201, 162, 39, 0.3);
-  color: var(--gold-light);
-  padding: 0.4rem 0.75rem;
-  border-radius: 6px;
-  cursor: pointer;
-  font-family: var(--font-body);
-  font-size: 0.85rem;
-  transition: background 0.2s;
-}
-
-.yearBtn:hover {
-  background: rgba(201, 162, 39, 0.25);
-}
-
-.yearInput {
-  width: 80px;
-  background: rgba(26, 20, 16, 0.6);
-  border: 1px solid rgba(201, 162, 39, 0.3);
-  color: var(--parchment);
-  padding: 0.4rem 0.5rem;
-  border-radius: 6px;
-  font-family: var(--font-body);
-  font-size: 1rem;
-  text-align: center;
-}
-
-.yearInput:focus {
-  outline: none;
-  border-color: var(--gold);
-}
-
-.yearDisplay {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--gold-light);
-  min-width: 100px;
-  text-align: center;
-}
-
-.witnessesSection,
-.allSection {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
-}
-
-.allSection {
-  border-top: 1px solid rgba(201, 162, 39, 0.1);
-  margin-top: 1rem;
-}
-
-.sectionTitle {
-  font-size: 1.5rem;
-  color: var(--parchment);
-  margin-bottom: 1.5rem;
-  display: flex;
-  align-items: baseline;
   gap: 0.75rem;
   flex-wrap: wrap;
 }
 
-.count {
+.label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.stepBtn {
+  background: rgba(201, 162, 39, 0.12);
+  border: 1px solid rgba(201, 162, 39, 0.3);
+  color: var(--gold-light);
+  padding: 0.35rem 0.65rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+}
+
+.slider {
+  flex: 1;
+  min-width: 160px;
+  max-width: 400px;
+  accent-color: var(--gold);
+}
+
+.yearDisplay {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--gold-light);
+  min-width: 90px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.search {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(201, 162, 39, 0.25);
+  color: var(--parchment);
+  padding: 0.45rem 0.75rem;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  min-width: 180px;
+}
+
+.filterBtn {
+  background: transparent;
+  border: 1px solid rgba(201, 162, 39, 0.2);
+  color: var(--text-muted);
+  padding: 0.4rem 0.85rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+}
+
+.filterActive {
+  background: rgba(201, 162, 39, 0.18);
+  border-color: var(--gold);
+  color: var(--gold-light);
+}
+
+.timelineSection {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.witnessesSection {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 3rem;
+}
+
+.sectionTitle {
+  font-size: 1.35rem;
+  margin-bottom: 1.25rem;
+  color: var(--parchment);
+}
+
+.subtitle {
+  display: block;
   font-size: 0.85rem;
   color: var(--text-muted);
   font-weight: 400;
+  margin-top: 0.25rem;
 }
 
 .cardGrid {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .empty {
-  color: var(--text-muted);
-  font-style: italic;
-  padding: 2rem;
   text-align: center;
-  background: rgba(26, 20, 16, 0.3);
+  padding: 3rem 2rem;
+  background: rgba(0, 0, 0, 0.3);
   border-radius: var(--radius);
+  border: 1px dashed rgba(201, 162, 39, 0.2);
+}
+
+.emptyHint {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
 }
 
 .footer {
@@ -159,10 +189,6 @@
   padding: 2rem 1.5rem 3rem;
   border-top: 1px solid rgba(201, 162, 39, 0.1);
   text-align: center;
-}
-
-.footer p {
   font-size: 0.85rem;
   color: var(--text-muted);
-  line-height: 1.6;
 }

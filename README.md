@@ -1,97 +1,63 @@
 # Illustrative Manuscripts
 
-A year-by-year illustrated history of the written Bible. Pick a year (e.g. 150 CE) and see manuscripts, scraps, and other written witnesses from around that time: where they were found, where they are now, a representative translation, notable textual variants, and links to scholarship and institutional image pages.
+A year-by-year timeline of **Greek New Testament papyri** for the first two centuries CE (**1–200**). Scrub a year to see which witnesses' paleographic date ranges overlap that moment — with real manuscript photographs where we have legal copies.
 
-**v1 is a scaffold** with ~10 famous seed witnesses (NT-heavy, a few OT anchors). It is not a comprehensive database.
+**Live site (GitHub Pages):** https://severin12am.github.io/illustrative-manuscripts/
 
 ## What this is
 
-- A browsable timeline of biblical manuscripts and related witnesses
-- Honest metadata with paleographic date ranges (`date_start` / `date_end`)
-- Outbound links to institutional image pages and scholarly resources
-- Public-domain English renderings of representative passages
+- **61 Greek NT papyri** whose INTF Liste date overlaps 1–200 CE
+- **33 Wikimedia Commons photographs** (PD / CC) shipped in `/public/witnesses/`
+- Honest **date ranges** from the [Kurzgefasste Liste](https://ntvmr.uni-muenster.de/liste/) — not fake exact years
+- Variant highlights vs open texts ([SBLGNT](https://github.com/LogosBible/SBLGNT), [SR GNT / CNTR](https://greekcntr.org/)) where verified
+- Deep links to [NTVMR](https://ntvmr.uni-muenster.de/) and [CSNTM](https://manuscripts.csntm.org/) for institutional scans
 
 ## What this is not
 
-This project is **not** a replacement for professional text-critical tools and catalogs:
+Not a replacement for NTVMR, INTF, or ECM. Not a corpus of high-res library downloads. We **link** institutional viewers; we only **host** images that are clearly PD/CC on Wikimedia Commons.
 
-- [NTVMR](https://ntvmr.uni-muenster.de/) — New Testament Virtual Manuscript Room (Münster)
-- [INTF](https://www.uni-muenster.de/INTF/) — Institute for New Testament Textual Research
-- [ECM](http://ntgreek.net/) — Editio Critica Maior
-- [Liste](https://ntvmr.uni-muenster.de/liste) — Comprehensive manuscript register
+## Legal rule
 
-Use those resources for apparatus work, transcriptions, and high-resolution images under institutional terms.
-
-## Legal and ethical rule
-
-**We link images; we do not host them.**
-
-Photographs of manuscripts are usually under institutional copyright even when the ancient text itself is public domain. This app:
-
-- Stores metadata and outbound links only
-- Does not scrape or bundle institutional image archives (CSNTM, INTF, Vatican, British Library, etc.)
-- Uses placeholder thumbnails that link to the holding institution's page
-- Marks uncertain dates and readings honestly
-
-Our code and metadata compilation are licensed **MIT** (code) and **CC-BY 4.0** (metadata). We do not claim ownership of manuscript photographs.
+- **Do not** scrape or rehost CSNTM, NTVMR tiles, Vatican, BL, Manchester, or IAA photographs.
+- **Do** use Commons PD-scan files with attribution sidecars (`.attribution.json`).
+- **Do** cite INTF for Liste metadata. Code: MIT. Metadata compilation: CC-BY 4.0.
 
 ## Run locally
 
-Requirements: Node.js 18+ and npm.
-
 ```bash
 npm install
-npm run dev
+npm run data      # regenerate from cached Liste (+ live API if reachable)
+npm run images    # refresh Commons downloads (slow; rate-limited)
+npm run dev       # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Production static export:
 
 ```bash
-npm run build   # production build
-npm start       # serve production build
+npm run build     # outputs to out/
+npx serve out     # or any static file server
 ```
 
-## Data model
+For GitHub Pages locally with the correct base path:
 
-Each witness (`src/types/witness.ts`) includes:
+```bash
+NEXT_PUBLIC_BASE_PATH=/illustrative-manuscripts npm run build
+```
 
-| Field | Description |
-|-------|-------------|
-| `traditional_name`, `aliases[]` | Common names |
-| `corpus` | `nt` \| `ot` \| `lxx` \| `version` \| `other` |
-| `language`, `material`, `contents` | Physical and textual description |
-| `date_start`, `date_end`, `date_note` | Paleographic range (negative = BCE) |
-| `find_place`, `find_year_or_note` | Discovery information |
-| `current_institution`, `current_shelfmark` | Present location |
-| `image_policy` | `hosted` \| `link_only` \| `missing` |
-| `source_page_url` | Link to institutional image/page |
-| `translation` | Short public-domain English passage |
-| `modern_base_text` | e.g. NA28, BHS |
-| `known_variants[]` | Locus, readings, significance |
-| `bibliography[]` | Scholarly links |
-| `license_note` | Image rights disclaimer |
+## Data
 
-Seed data lives in `src/data/witnesses.ts`.
+See [DATA.md](./DATA.md) for provenance, API cache notes, and which witnesses still lack a Commons image.
 
-## Seed witnesses (v1)
+See [SOURCES.md](./SOURCES.md) for intended future link-only sources.
 
-1. Ketef Hinnom Silver Amulets
-2. Great Isaiah Scroll (1QIsᵃ)
-3. Nash Papyrus
-4. Papyrus 52 (P⁵² / Rylands)
-5. Papyrus 66 (P⁶⁶)
-6. Papyrus 75 (P⁷⁵)
-7. Papyrus 46 (P⁴⁶)
-8. Codex Vaticanus (B / 03)
-9. Codex Sinaiticus (א / 01)
-10. Codex Alexandrinus (A / 02)
+## Deploy
 
-## Future sources
+Pushes to `main` (or this feature branch) run `.github/workflows/pages.yml`, which builds with `output: 'export'` and deploys to GitHub Pages.
 
-See [SOURCES.md](./SOURCES.md) for intended later data sources (link-only for now).
+Enable Pages in repo settings: **Source → GitHub Actions**.
 
 ## License
 
-- **Code:** MIT — see [LICENSE](./LICENSE)
-- **Metadata compilation:** CC-BY 4.0
-- **Manuscript images:** © respective holding institutions — not included in this repository
+- Code: [MIT](./LICENSE)
+- Metadata: CC-BY 4.0
+- Manuscript photos: © holding institutions or Commons licensors (see sidecars)

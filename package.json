@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "data": "node scripts/generate-data.mjs",
+    "images": "node scripts/download-commons.mjs"
   },
   "dependencies": {
     "next": "^15.1.0",

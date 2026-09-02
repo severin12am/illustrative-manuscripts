@@ -6,12 +6,14 @@ export type Material =
   | "inscription"
   | "other";
 export type ImagePolicy = "hosted" | "link_only" | "missing";
+export type BookCategory = "gospels" | "paul" | "other" | "all";
 
 export interface KnownVariant {
   locus: string;
   witness_reading: string;
   modern_reading: string;
   significance: string;
+  base_text?: string;
 }
 
 export interface BibliographyEntry {
@@ -20,25 +22,49 @@ export interface BibliographyEntry {
   note?: string;
 }
 
+export interface ImageAttribution {
+  ga: string;
+  file: string;
+  commons_title: string;
+  commons_url: string;
+  download_url?: string;
+  license: string;
+  license_url?: string;
+  artist?: string;
+  credit?: string;
+  attribution_required: boolean;
+  note?: string;
+}
+
 export interface Witness {
   id: string;
+  ga_number: string;
   traditional_name: string;
   aliases: string[];
   corpus: Corpus;
+  book_category: BookCategory;
   language: string;
   material: Material;
   contents: string;
   date_start: number;
   date_end: number;
+  date_label: string;
   date_note: string;
+  dating_method: string;
+  dating_source: string;
   find_place: string;
   find_year_or_note: string;
   current_institution: string;
   current_shelfmark: string;
   image_policy: ImagePolicy;
-  image_url?: string;
+  hosted_image: string | null;
+  image_attribution: ImageAttribution | null;
+  commons_url?: string;
   source_page_url?: string;
-  transcription_url?: string;
+  ntvmr_url: string;
+  csntm_url?: string;
+  cntr_url?: string;
+  docID: number;
   translation: string;
   modern_base_text: string;
   known_variants: KnownVariant[];
@@ -48,7 +74,6 @@ export interface Witness {
 
 export function formatYear(year: number): string {
   if (year < 0) return `${Math.abs(year)} BCE`;
-  if (year === 0) return "1 BCE/CE";
   return `${year} CE`;
 }
 

@@ -1,55 +1,72 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import styles from "./Timeline.module.css";
-import { witnesses, getTimelineBounds } from "@/data/witnesses";
+import { TIMELINE_START, TIMELINE_END } from "@/data/witnesses";
 import type { Witness } from "@/types/witness";
 import { formatYear } from "@/types/witness";
 
 interface TimelineProps {
   onYearSelect: (year: number) => void;
   selectedYear: number;
+  filteredWitnesses: Witness[];
 }
 
-export default function Timeline({ onYearSelect, selectedYear }: TimelineProps) {
-  const bounds = getTimelineBounds();
-  const padding = 50;
-  const min = bounds.min - padding;
-  const max = bounds.max + padding;
+export default function Timeline({
+  onYearSelect,
+  selectedYear,
+  filteredWitnesses,
+}: TimelineProps) {
+  const min = TIMELINE_START;
+  const max = TIMELINE_END;
 
   const ticks = useMemo(() => {
     const result: number[] = [];
-    const step = 100;
-    const start = Math.ceil(min / step) * step;
-    for (let y = start; y <= max; y += step) {
-      result.push(y);
-    }
-    return result;
-  }, [min, max]);
+    for (let y = 25; y <= max; y += 25) result.push(y);
+    if (!result.includes(1)) result.unshift(1);
+    if (!result.includes(200)) result.push(200);
+    return result.sort((a, b) => a - b);
+  }, [max]);
 
-  const yearToPercent = (year: number) => ((year - min) / (max - min)) * 100;
+  const yearToPercent = (year: number) =>
+    ((year - min) / (max - min)) * 100;
 
   const witnessBars = useMemo(() => {
-    return witnesses.map((w) => ({
+    return filteredWitnesses.map((w, i) => ({
       witness: w,
-      left: yearToPercent(w.date_start),
-      width: Math.max(yearToPercent(w.date_end) - yearToPercent(w.date_start), 1.5),
+      left: yearToPercent(Math.max(w.date_start, min)),
+      width: Math.max(
+        yearToPercent(Math.min(w.date_end, max)) -
+          yearToPercent(Math.max(w.date_start, min)),
+        0.8
+      ),
+      row: i % 4,
     }));
-  }, [min, max]);
+  }, [filteredWitnesses, min, max]);
 
   return (
     <div className={styles.timeline}>
+      <div className={styles.header}>
+        <span className={styles.rangeLabel}>
+          {formatYear(TIMELINE_START)} – {formatYear(TIMELINE_END)}
+        </span>
+        <span className={styles.hint}>
+          Dates are paleographic ranges — scrub a year to slice through them
+        </span>
+      </div>
+
       <div className={styles.axis}>
         {ticks.map((year) => (
           <button
             key={year}
+            type="button"
             className={`${styles.tick} ${selectedYear === year ? styles.tickActive : ""}`}
             style={{ left: `${yearToPercent(year)}%` }}
             onClick={() => onYearSelect(year)}
             aria-label={`Select year ${formatYear(year)}`}
           >
             <span className={styles.tickMark} />
-            <span className={styles.tickLabel}>{formatYear(year)}</span>
+            <span className={styles.tickLabel}>{year}</span>
           </button>
         ))}
       </div>
@@ -60,50 +77,32 @@ export default function Timeline({ onYearSelect, selectedYear }: TimelineProps) 
           style={{ left: `${yearToPercent(selectedYear)}%` }}
           aria-hidden
         />
-        {witnessBars.map(({ witness, left, width }) => (
-          <WitnessBar
-            key={witness.id}
-            witness={witness}
-            left={left}
-            width={width}
-            selectedYear={selectedYear}
-            onSelect={() =>
-              onYearSelect(
-                Math.round((witness.date_start + witness.date_end) / 2)
-              )
-            }
-          />
-        ))}
+        {witnessBars.map(({ witness, left, width, row }) => {
+          const active =
+            selectedYear >= witness.date_start &&
+            selectedYear <= witness.date_end;
+          return (
+            <button
+              key={witness.id}
+              type="button"
+              className={`${styles.bar} ${active ? styles.barActive : ""}`}
+              style={{
+                left: `${left}%`,
+                width: `${width}%`,
+                top: `${8 + row * 28}px`,
+              }}
+              onClick={() =>
+                onYearSelect(
+                  Math.round((witness.date_start + witness.date_end) / 2)
+                )
+              }
+              title={`${witness.ga_number}: ${formatYear(witness.date_start)}–${formatYear(witness.date_end)}`}
+            >
+              <span className={styles.barLabel}>{witness.ga_number}</span>
+            </button>
+          );
+        })}
       </div>
     </div>
-  );
-}
-
-function WitnessBar({
-  witness,
-  left,
-  width,
-  selectedYear,
-  onSelect,
-}: {
-  witness: Witness;
-  left: number;
-  width: number;
-  selectedYear: number;
-  onSelect: () => void;
-}) {
-  const active =
-    selectedYear >= witness.date_start && selectedYear <= witness.date_end;
-
-  return (
-    <button
-      className={`${styles.bar} ${active ? styles.barActive : ""}`}
-      style={{ left: `${left}%`, width: `${width}%` }}
-      onClick={onSelect}
-      title={`${witness.traditional_name} (${formatYear(witness.date_start)} – ${formatYear(witness.date_end)})`}
-      aria-label={`${witness.traditional_name}, ${formatYear(witness.date_start)} to ${formatYear(witness.date_end)}`}
-    >
-      <span className={styles.barLabel}>{witness.traditional_name}</span>
-    </button>
   );
 }
