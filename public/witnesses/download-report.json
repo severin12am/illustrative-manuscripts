@@ -3,124 +3,78 @@
     "P52",
     "P66",
     "P75",
-    "P4"
+    "P46",
+    "P45",
+    "P104",
+    "P4",
+    "P5",
+    "P13",
+    "P16",
+    "P22",
+    "P27",
+    "P28",
+    "P30",
+    "P39",
+    "P48",
+    "P53",
+    "P78",
+    "P80",
+    "P91",
+    "P92",
+    "P95",
+    "P98",
+    "P103",
+    "P106",
+    "P107",
+    "P108",
+    "P109",
+    "P111",
+    "P113",
+    "P114",
+    "P118",
+    "P90",
+    "P6",
+    "P8",
+    "P9",
+    "P10",
+    "P12",
+    "P15",
+    "P17",
+    "P19",
+    "P24",
+    "P37",
+    "P38",
+    "P49",
+    "P70",
+    "P71",
+    "P89",
+    "P102",
+    "P123"
   ],
   "fail": [
     {
-      "ga": "P46",
-      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/8/8d/Bifolio_from_Paul%27s_Letter_to_the_Romans%2C_the_end_of_Paul%27s_Letter_to_the_Philippians_and_the_beginning_of_Paul%27s_Letter_to_the_Colossians.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      "ga": "P77",
+      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/b/bd/P077-Mat-23_30-34-POxy4405-II-III.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     },
     {
-      "ga": "P45",
-      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/8/8f/P45_Marc_8.35-9.1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      "ga": "P81",
+      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/0/02/Trieste%2C_Property_S._Daris_Ms_Papyrus_No_2_%28Papyrus_81%29_recto_1_Peter_3%2C_4-12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     },
     {
-      "ga": "P104",
-      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/6/64/Oxford%2C_Sackler_Library_Ms_LXIV_4404_%28Papyrus_104%29_recto_Matt_21%2C_34-37.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      "ga": "P86",
+      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/4/43/P086-Mat-5_13-16-IV.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     },
     {
-      "ga": "P5",
-      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/6/63/London%2C_British_Library_Ms_Oxyrhynchus_208_%28Papyrus_5%29_verso_John_1%2C_23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      "ga": "P110",
+      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/0/02/Oxford%2C_Sackler_Library_Ms_LXIV_4494_%28Papyrus_110%29_recto_Matt_10%2C_13-14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     },
     {
-      "ga": "P13",
-      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/0/09/London%2C_British_Library_Ms_Inv._Nr._1532v_%28Papyrus_13%29_Fragment_1_recto_Hebrews_4%2C2-12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      "ga": "P120",
+      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/f/fd/Oxford%2C_Sackler_Library_Ms_P._Oxy._4803_%28Papyrus_120%29_recto_John_1%2C_25-28%3B_33-34.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     },
     {
-      "ga": "P16",
-      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/3/37/Papyrus_16_-_Papyrus_Oxyrhynchus_1009_-_Cairo_Egyptian_Museum_JE_47424_-_Epistle_to_the_Philippians_3%2C10%E2%80%9317%2C_4%2C2%E2%80%938.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-    },
-    {
-      "ga": "P22",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
-    },
-    {
-      "ga": "P27",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
-    },
-    {
-      "ga": "P28",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
-    },
-    {
-      "ga": "P30",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
-    },
-    {
-      "ga": "P39",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
-    },
-    {
-      "ga": "P48",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
-    },
-    {
-      "ga": "P53",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
-    },
-    {
-      "ga": "P78",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
-    },
-    {
-      "ga": "P80",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
-    },
-    {
-      "ga": "P91",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
-    },
-    {
-      "ga": "P92",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
-    },
-    {
-      "ga": "P95",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
-    },
-    {
-      "ga": "P98",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
-    },
-    {
-      "ga": "P103",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
-    },
-    {
-      "ga": "P106",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
-    },
-    {
-      "ga": "P107",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
-    },
-    {
-      "ga": "P108",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
-    },
-    {
-      "ga": "P109",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
-    },
-    {
-      "ga": "P111",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
-    },
-    {
-      "ga": "P113",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
-    },
-    {
-      "ga": "P114",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
-    },
-    {
-      "ga": "P118",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
-    },
-    {
-      "ga": "P90",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
+      "ga": "P126",
+      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/c/c8/Florence%2C_Papyrological_Institute_%22G._Vitelli%22_Ms_PSI_XV_1497_-_PSI_inv._2176_%28Papyrus_126%29_recto_Heb_13%2C_12-13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     }
   ]
 }

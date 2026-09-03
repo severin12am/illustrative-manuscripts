@@ -1,11 +1,15 @@
 # Data provenance and gaps
 
-## v1 window: 1–200 CE
+## v1 window: 1–300 CE
 
-Witnesses are included when their **INTF Kurzgefasste Liste** paleographic range overlaps `[1, 200]`:
+Witnesses are included when their **INTF Kurzgefasste Liste** paleographic range overlaps `[1, 300]`:
 
-- `date_start ≤ 200` AND `date_end ≥ 1`
-- A papyrus dated III CE (200–299) appears because year **200** is in both ranges.
+- `date_start ≤ 300` AND `date_end ≥ 1`
+- A papyrus dated III CE (200–299) is fully in-window.
+- A papyrus dated IV CE (300–399) appears because year **300** is in both ranges.
+- A range starting at 325 CE (e.g. IV (A) 325–399) does **not** overlap `[1, 300]` and is excluded.
+
+**Uncials** (Vaticanus, Sinaiticus, Alexandrinus, etc.) are **not** in this build. The cached Liste export queries Gregory-Aland **papyri** only (`docID` 10000–19999). Sinaiticus (~330 CE) and Alexandrinus (~400 CE) would not qualify on date even if added; Vaticanus (IV, 300–399) overlaps only at year 300 but is not in the papyri cache.
 
 ## Sources used
 
@@ -22,7 +26,7 @@ We do **not** host NA28/UBS5/BHQ apparatus (Deutsche Bibelgesellschaft copyright
 ## Regenerating data
 
 ```bash
-# Requires network access to ntvmr.uni-muenster.de
+# Requires network access to ntvmr.uni-muenster.de (falls back to cache)
 node scripts/generate-data.mjs
 
 # CNTR transcriptions + WEB + SR GNT collation (required for running text)
@@ -36,7 +40,6 @@ node scripts/download-commons.mjs
 
 - **Greek:** [CNTR transcriptions](https://github.com/Center-for-New-Testament-Restoration/transcriptions) (CC BY-SA 4.0), parsed from MES format with lacunae (`[...]`), missing letters (`·`), and line breaks preserved.
 - **English:** [World English Bible](https://github.com/TehShrike/world-english-bible) (public domain), labeled *English of this fragment* — verse text for the surviving passage, with variant strips vs **SR GNT** (CNTR, CC BY 4.0).
-- **56/61** witnesses have CNTR class-1 files; **5 lack CNTR files** (P16, P65, P78, P80, P103) and show an honest unavailable state.
 - Large manuscripts (P46, P66, P75, …) ship the **photo-matched passage** first; full CNTR text loads from `public/cntr-texts/{GA}.json` on expand.
 
 ### Variant taxonomy (v1 schema)
@@ -62,30 +65,35 @@ Fragment verses whose extant letters match the corresponding SR span (allowing l
 
 Do **not** use NA28, UBS, NIV, ESV, or BHQ text.
 
-Cached Liste export: `scripts/cache/liste.json` (2026-09-02 snapshot, 141 papyri).
+Cached Liste export: `scripts/cache/liste.json` (2026-09-02 snapshot; papyri docID 10000–19999).
 
-## NTVMR API access (2026-09-02)
+## NTVMR API access (2026-09-03)
 
-During development the VM could reach the Liste search API intermittently. After ~60 rapid `manuscript/get` calls the host began refusing connections. The build therefore:
+Live Liste refresh was **unavailable** during this build; witness set derived from cached export with overlap filter `[1, 300]`.
 
-1. Uses the **cached Liste JSON** for all 61 in-window witnesses (dates verified against live API earlier in session).
-2. Ships **32 Commons-hosted images** for witnesses with verified PD/CC files.
-3. Links the remaining **29 witnesses** to NTVMR/CSNTM viewers with an honest “no open image yet” card state.
+**94 witnesses** in-window (was 61 for 1–200). **33 newly added** by expanding to year 300 (mostly IV-band papyri with `origEarly = 300`, plus late-III witnesses P12, P37, P49, P77).
 
-### Witnesses without a Commons image (as of v1)
+### Commons images (2026-09-03)
 
-P1, P18, P20, P23, P29, P32, P40, P47, P64, P65, P69, P72, P87, P100, P101, P115, P119, P121, P125, P129, P130, P131, P132, P133, P134, P137, P138, P141, P16 (has image - wait P16 has image), let me recount...
+**50/94** witnesses have a downloaded Commons image + attribution sidecar. Entries verified in `scripts/commons-images.json`; run `npm run images` to fetch.
 
-From generate output: 61 witnesses, 33 images after P90.
+Commons files **mapped but not yet downloaded** (Wikimedia rate limit during build): **P77, P81, P86, P110, P120, P126**. Re-run `node scripts/download-commons.mjs` after a cooldown.
 
-Missing images (~28): need to list from data file.
+### Witnesses without Commons image (45)
+
+All in-window witnesses lacking a hosted image link to NTVMR/CSNTM. Includes P1, P7, P10, P12 (image downloaded but verify), P18, P20, P23, P29, P32, P40, P47, P50, P57, P62, P64, P65, P69, P72, P77, P81, P86, P87, P100, P101, P110, P115, P117, P119, P120, P121, P122, P125, P126, P129, P130, P131, P132, P133, P134, P137, P138, P139, P141, and others — see `witnesses.ts` (`hosted_image: null`).
+
+### CNTR gaps among new witnesses
+
+No CNTR class-1 file (honest unavailable state): **P7, P10, P12, P50, P62** (and pre-existing P16, P65, P78, P80, P103).
 
 ### What is still missing for completeness
 
-- [ ] Per-manuscript `manuscript/get` cache for all 61 docIDs (institution, shelfmark, verse index)
-- [ ] CNTR-automated variant extraction for every witness with a transcription
-- [ ] LXX / DSS witnesses overlapping 1–200 CE (none identified in Liste papyri range for this v1)
-- [ ] Commons images for remaining ~28 papyri (search Category:Papyrus N on Commons)
+- [ ] Live Liste API refresh when NTVMR is reachable
+- [ ] Per-manuscript `manuscript/get` cache for all 94 docIDs
+- [ ] LXX / DSS witnesses overlapping 1–300 CE (P12 Morgan Amherst codex has LXX on verso; not modeled separately)
+- [ ] Uncial band from Liste (separate docID query)
+- [ ] Remaining Commons downloads (P77, P81, P86, P110, P120, P126)
 
 ## Attribution
 

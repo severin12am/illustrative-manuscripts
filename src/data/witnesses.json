@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-02T21:32:41.155Z",
+  "generated_at": "2026-09-03T00:59:13.562Z",
   "window": [
     1,
-    200
+    300
   ],
-  "count": 61,
-  "with_commons_images": 33,
+  "count": 94,
+  "with_commons_images": 50,
   "source": "INTF NTVMR Liste (cached)",
   "witnesses": [
     {
@@ -3262,6 +3262,1778 @@
       ],
       "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
       "commons_url": "https://commons.wikimedia.org/wiki/File:Florence,_Biblioteca_Medicea_Laurenziana_Ms_31_(Papyrus_95)_recto_John_5,_26-29.jpg"
+    },
+    {
+      "id": "p37",
+      "ga_number": "P37",
+      "traditional_name": "P37 (Gregory-Aland)",
+      "aliases": [
+        "P37",
+        "𝔓37"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 250,
+      "date_end": 299,
+      "date_label": "III",
+      "date_note": "INTF Liste: III (250–299 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "hosted",
+      "hosted_image": "/witnesses/P37-matthew.jpg",
+      "image_attribution": {
+        "ga": "P37",
+        "file": "P37-matthew.jpg",
+        "commons_title": "File:Ann Arbor, University of Michigan Ms P.Mich.inv. 1570 (Papyrus 37) recto Matt 26, 19-37.jpg",
+        "commons_url": "https://commons.wikimedia.org/wiki/File:Ann_Arbor,_University_of_Michigan_Ms_P.Mich.inv._1570_(Papyrus_37)_recto_Matt_26,_19-37.jpg",
+        "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Ann_Arbor%2C_University_of_Michigan_Ms_P.Mich.inv._1570_%28Papyrus_37%29_recto_Matt_26%2C_19-37.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "Public domain",
+        "license_url": "",
+        "artist": "Unknown authorUnknown author",
+        "credit": "https://quod.lib.umich.edu/a/apis/x-1469",
+        "attribution_required": true,
+        "note": "Wikimedia Commons file — not the holding library's high-res scan."
+      },
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10037",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10037",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P37",
+      "cntr_url": "https://greekcntr.org/manuscripts/P37",
+      "docID": 10037,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P37",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P37",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P37",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10037"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Ann_Arbor,_University_of_Michigan_Ms_P.Mich.inv._1570_(Papyrus_37)_recto_Matt_26,_19-37.jpg"
+    },
+    {
+      "id": "p77",
+      "ga_number": "P77",
+      "traditional_name": "P77 (Gregory-Aland)",
+      "aliases": [
+        "P77",
+        "𝔓77"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 250,
+      "date_end": 299,
+      "date_label": "III",
+      "date_note": "INTF Liste: III (250–299 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "link_only",
+      "hosted_image": null,
+      "image_attribution": null,
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10077",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10077",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P77",
+      "cntr_url": "https://greekcntr.org/manuscripts/P77",
+      "docID": 10077,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P77",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P77",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P77",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10077"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    },
+    {
+      "id": "p12",
+      "ga_number": "P12",
+      "traditional_name": "P12 (Gregory-Aland)",
+      "aliases": [
+        "P12",
+        "𝔓12"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 275,
+      "date_end": 299,
+      "date_label": "E III",
+      "date_note": "INTF Liste: E III (275–299 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "hosted",
+      "hosted_image": "/witnesses/P12-hebrews.jpg",
+      "image_attribution": {
+        "ga": "P12",
+        "file": "P12-hebrews.jpg",
+        "commons_title": "File:New York, Morgan Library Ms Amherst Greek Papyrus 3 (Papyrus 12) recto crop Hebrews 1, 1.jpg",
+        "commons_url": "https://commons.wikimedia.org/wiki/File:New_York,_Morgan_Library_Ms_Amherst_Greek_Papyrus_3_(Papyrus_12)_recto_crop_Hebrews_1,_1.jpg",
+        "download_url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/New_York%2C_Morgan_Library_Ms_Amherst_Greek_Papyrus_3_%28Papyrus_12%29_recto_crop_Hebrews_1%2C_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "Public domain",
+        "license_url": "",
+        "artist": "Unknown authorUnknown author",
+        "credit": "https://www.themorgan.org/manuscript/350198",
+        "attribution_required": true,
+        "note": "Wikimedia Commons file — not the holding library's high-res scan."
+      },
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10012",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10012",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P12",
+      "cntr_url": "https://greekcntr.org/manuscripts/P12",
+      "docID": 10012,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P12",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P12",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P12",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10012"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:New_York,_Morgan_Library_Ms_Amherst_Greek_Papyrus_3_(Papyrus_12)_recto_crop_Hebrews_1,_1.jpg"
+    },
+    {
+      "id": "p49",
+      "ga_number": "P49",
+      "traditional_name": "P49 (Gregory-Aland)",
+      "aliases": [
+        "P49",
+        "𝔓49"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 275,
+      "date_end": 299,
+      "date_label": "III (E)",
+      "date_note": "INTF Liste: III (E) (275–299 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "hosted",
+      "hosted_image": "/witnesses/P49-ephesians.jpg",
+      "image_attribution": {
+        "ga": "P49",
+        "file": "P49-ephesians.jpg",
+        "commons_title": "File:New Haven, Yale University Library, Beinecke Library Ms P. CtYBR inv. 415 (Papyrus 49) recto Eph 4, 16-29.jpg",
+        "commons_url": "https://commons.wikimedia.org/wiki/File:New_Haven,_Yale_University_Library,_Beinecke_Library_Ms_P._CtYBR_inv._415_(Papyrus_49)_recto_Eph_4,_16-29.jpg",
+        "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/New_Haven%2C_Yale_University_Library%2C_Beinecke_Library_Ms_P._CtYBR_inv._415_%28Papyrus_49%29_recto_Eph_4%2C_16-29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "Public domain",
+        "license_url": "",
+        "artist": "Unknown authorUnknown author",
+        "credit": "https://collections.library.yale.edu/catalog/33171852",
+        "attribution_required": true,
+        "note": "Wikimedia Commons file — not the holding library's high-res scan."
+      },
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10049",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10049",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P49",
+      "cntr_url": "https://greekcntr.org/manuscripts/P49",
+      "docID": 10049,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P49",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P49",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P49",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10049"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:New_Haven,_Yale_University_Library,_Beinecke_Library_Ms_P._CtYBR_inv._415_(Papyrus_49)_recto_Eph_4,_16-29.jpg"
+    },
+    {
+      "id": "p9",
+      "ga_number": "P9",
+      "traditional_name": "P9 (Gregory-Aland)",
+      "aliases": [
+        "P9",
+        "𝔓9"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 275,
+      "date_end": 325,
+      "date_label": "E III - A IV",
+      "date_note": "INTF Liste: E III - A IV (275–325 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "hosted",
+      "hosted_image": "/witnesses/P9-1john.jpg",
+      "image_attribution": {
+        "ga": "P9",
+        "file": "P9-1john.jpg",
+        "commons_title": "File:Papyrus 9 (GA), POxy402.jpg",
+        "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus_9_(GA),_POxy402.jpg",
+        "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Papyrus_9_%28GA%29%2C_POxy402.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "Public domain",
+        "license_url": "",
+        "artist": "Unknown authorUnknown author",
+        "credit": "Papyrus Oxyrhynchus 402, Papyrus 9 (Gregory-Aland)",
+        "attribution_required": true,
+        "note": "Wikimedia Commons file — not the holding library's high-res scan."
+      },
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10009",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10009",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P9",
+      "cntr_url": "https://greekcntr.org/manuscripts/P9",
+      "docID": 10009,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P9",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P9",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P9",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10009"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus_9_(GA),_POxy402.jpg"
+    },
+    {
+      "id": "p10",
+      "ga_number": "P10",
+      "traditional_name": "P10 (Gregory-Aland)",
+      "aliases": [
+        "P10",
+        "𝔓10"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 399,
+      "date_label": "IV",
+      "date_note": "INTF Liste: IV (300–399 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "hosted",
+      "hosted_image": "/witnesses/P10-romans.jpg",
+      "image_attribution": {
+        "ga": "P10",
+        "file": "P10-romans.jpg",
+        "commons_title": "File:Oxyrhynchus 209 (p10).jpg",
+        "commons_url": "https://commons.wikimedia.org/wiki/File:Oxyrhynchus_209_(p10).jpg",
+        "download_url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Oxyrhynchus_209_%28p10%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "Public domain",
+        "license_url": "",
+        "artist": "Unknown authorUnknown author",
+        "credit": "Oxyrhynchus 209, manuscript of the New Testament, designated by P10 on the list Gregory-Aland",
+        "attribution_required": true,
+        "note": "Wikimedia Commons file — not the holding library's high-res scan."
+      },
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10010",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10010",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P10",
+      "cntr_url": "https://greekcntr.org/manuscripts/P10",
+      "docID": 10010,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P10",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P10",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P10",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10010"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Oxyrhynchus_209_(p10).jpg"
+    },
+    {
+      "id": "p102",
+      "ga_number": "P102",
+      "traditional_name": "P102 (Gregory-Aland)",
+      "aliases": [
+        "P102",
+        "𝔓102"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 399,
+      "date_label": "IV",
+      "date_note": "INTF Liste: IV (300–399 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "hosted",
+      "hosted_image": "/witnesses/P102-matthew.jpg",
+      "image_attribution": {
+        "ga": "P102",
+        "file": "P102-matthew.jpg",
+        "commons_title": "File:Oxford, Sackler Library Ms P.Oxy. LXIV 4402 (Papyrus 102) recto Matt 4, 11-12.jpg",
+        "commons_url": "https://commons.wikimedia.org/wiki/File:Oxford,_Sackler_Library_Ms_P.Oxy._LXIV_4402_(Papyrus_102)_recto_Matt_4,_11-12.jpg",
+        "download_url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Oxford%2C_Sackler_Library_Ms_P.Oxy._LXIV_4402_%28Papyrus_102%29_recto_Matt_4%2C_11-12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "Public domain",
+        "license_url": "",
+        "artist": "Unknown authorUnknown author",
+        "credit": "https://portal.sds.ox.ac.uk/articles/online_resource/P_Oxy_LXIV_4402_Matthew_IV_11-12_22-23/21178696",
+        "attribution_required": true,
+        "note": "Wikimedia Commons file — not the holding library's high-res scan."
+      },
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10102",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10102",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P102",
+      "cntr_url": "https://greekcntr.org/manuscripts/P102",
+      "docID": 10102,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P102",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P102",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P102",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10102"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Oxford,_Sackler_Library_Ms_P.Oxy._LXIV_4402_(Papyrus_102)_recto_Matt_4,_11-12.jpg"
+    },
+    {
+      "id": "p110",
+      "ga_number": "P110",
+      "traditional_name": "P110 (Gregory-Aland)",
+      "aliases": [
+        "P110",
+        "𝔓110"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 399,
+      "date_label": "IV",
+      "date_note": "INTF Liste: IV (300–399 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "link_only",
+      "hosted_image": null,
+      "image_attribution": null,
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10110",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10110",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P110",
+      "cntr_url": "https://greekcntr.org/manuscripts/P110",
+      "docID": 10110,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P110",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P110",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P110",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10110"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    },
+    {
+      "id": "p117",
+      "ga_number": "P117",
+      "traditional_name": "P117 (Gregory-Aland)",
+      "aliases": [
+        "P117",
+        "𝔓117"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 499,
+      "date_label": "IV/V",
+      "date_note": "INTF Liste: IV/V (300–499 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "link_only",
+      "hosted_image": null,
+      "image_attribution": null,
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10117",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10117",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P117",
+      "cntr_url": "https://greekcntr.org/manuscripts/P117",
+      "docID": 10117,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P117",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P117",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P117",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10117"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    },
+    {
+      "id": "p120",
+      "ga_number": "P120",
+      "traditional_name": "P120 (Gregory-Aland)",
+      "aliases": [
+        "P120",
+        "𝔓120"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 399,
+      "date_label": "IV",
+      "date_note": "INTF Liste: IV (300–399 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "link_only",
+      "hosted_image": null,
+      "image_attribution": null,
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10120",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10120",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P120",
+      "cntr_url": "https://greekcntr.org/manuscripts/P120",
+      "docID": 10120,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P120",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P120",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P120",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10120"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    },
+    {
+      "id": "p122",
+      "ga_number": "P122",
+      "traditional_name": "P122 (Gregory-Aland)",
+      "aliases": [
+        "P122",
+        "𝔓122"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 499,
+      "date_label": "IV/V",
+      "date_note": "INTF Liste: IV/V (300–499 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "link_only",
+      "hosted_image": null,
+      "image_attribution": null,
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10122",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10122",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P122",
+      "cntr_url": "https://greekcntr.org/manuscripts/P122",
+      "docID": 10122,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P122",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P122",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P122",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10122"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    },
+    {
+      "id": "p123",
+      "ga_number": "P123",
+      "traditional_name": "P123 (Gregory-Aland)",
+      "aliases": [
+        "P123",
+        "𝔓123"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 399,
+      "date_label": "IV",
+      "date_note": "INTF Liste: IV (300–399 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "hosted",
+      "hosted_image": "/witnesses/P123-1cor.jpg",
+      "image_attribution": {
+        "ga": "P123",
+        "file": "P123-1cor.jpg",
+        "commons_title": "File:Oxford, Sackler Library Ms P. Oxy 4844 (Papyrus 123) recto 1 Cor 14, 31-34.jpg",
+        "commons_url": "https://commons.wikimedia.org/wiki/File:Oxford,_Sackler_Library_Ms_P._Oxy_4844_(Papyrus_123)_recto_1_Cor_14,_31-34.jpg",
+        "download_url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Oxford%2C_Sackler_Library_Ms_P._Oxy_4844_%28Papyrus_123%29_recto_1_Cor_14%2C_31-34.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "Public domain",
+        "license_url": "",
+        "artist": "Unknown authorUnknown author",
+        "credit": "https://portal.sds.ox.ac.uk/articles/online_resource/P_Oxy_LXXII_4844_I_Corinthians_XIV_31-4_XV_3-6/21180163",
+        "attribution_required": true,
+        "note": "Wikimedia Commons file — not the holding library's high-res scan."
+      },
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10123",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10123",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P123",
+      "cntr_url": "https://greekcntr.org/manuscripts/P123",
+      "docID": 10123,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P123",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P123",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P123",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10123"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Oxford,_Sackler_Library_Ms_P._Oxy_4844_(Papyrus_123)_recto_1_Cor_14,_31-34.jpg"
+    },
+    {
+      "id": "p126",
+      "ga_number": "P126",
+      "traditional_name": "P126 (Gregory-Aland)",
+      "aliases": [
+        "P126",
+        "𝔓126"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 399,
+      "date_label": "IV",
+      "date_note": "INTF Liste: IV (300–399 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "link_only",
+      "hosted_image": null,
+      "image_attribution": null,
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10126",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10126",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P126",
+      "cntr_url": "https://greekcntr.org/manuscripts/P126",
+      "docID": 10126,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P126",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P126",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P126",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10126"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    },
+    {
+      "id": "p139",
+      "ga_number": "P139",
+      "traditional_name": "P139 (Gregory-Aland)",
+      "aliases": [
+        "P139",
+        "𝔓139"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 399,
+      "date_label": "IV",
+      "date_note": "INTF Liste: IV (300–399 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "link_only",
+      "hosted_image": null,
+      "image_attribution": null,
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10139",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10139",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P139",
+      "cntr_url": "https://greekcntr.org/manuscripts/P139",
+      "docID": 10139,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P139",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P139",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P139",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10139"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    },
+    {
+      "id": "p15",
+      "ga_number": "P15",
+      "traditional_name": "P15 (Gregory-Aland)",
+      "aliases": [
+        "P15",
+        "𝔓15"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 399,
+      "date_label": "IV",
+      "date_note": "INTF Liste: IV (300–399 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "hosted",
+      "hosted_image": "/witnesses/P15-1cor.jpg",
+      "image_attribution": {
+        "ga": "P15",
+        "file": "P15-1cor.jpg",
+        "commons_title": "File:POxy1008 (1Co 7.33-8.4).jpg",
+        "commons_url": "https://commons.wikimedia.org/wiki/File:POxy1008_(1Co_7.33-8.4).jpg",
+        "download_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/POxy1008_%281Co_7.33-8.4%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "Public domain",
+        "license_url": "",
+        "artist": "Unknown authorUnknown author",
+        "credit": "Papyrus Oxyrhynchus 1008, papyrus 15 (Gregory-Aland) Greek manuscript of the New Testament",
+        "attribution_required": true,
+        "note": "Wikimedia Commons file — not the holding library's high-res scan."
+      },
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10015",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10015",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P15",
+      "cntr_url": "https://greekcntr.org/manuscripts/P15",
+      "docID": 10015,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P15",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P15",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P15",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10015"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:POxy1008_(1Co_7.33-8.4).jpg"
+    },
+    {
+      "id": "p17",
+      "ga_number": "P17",
+      "traditional_name": "P17 (Gregory-Aland)",
+      "aliases": [
+        "P17",
+        "𝔓17"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 399,
+      "date_label": "IV",
+      "date_note": "INTF Liste: IV (300–399 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "hosted",
+      "hosted_image": "/witnesses/P17-hebrews.jpg",
+      "image_attribution": {
+        "ga": "P17",
+        "file": "P17-hebrews.jpg",
+        "commons_title": "File:Camebrige, Cambridge University Library Ms Add. 5893 Papyrus Oxyrhynchus 1078 (Papyrus 17) recto Hebrews 9, 12–14.jpg",
+        "commons_url": "https://commons.wikimedia.org/wiki/File:Camebrige,_Cambridge_University_Library_Ms_Add._5893_Papyrus_Oxyrhynchus_1078_(Papyrus_17)_recto_Hebrews_9,_12%E2%80%9314.jpg",
+        "download_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Camebrige%2C_Cambridge_University_Library_Ms_Add._5893_Papyrus_Oxyrhynchus_1078_%28Papyrus_17%29_recto_Hebrews_9%2C_12%E2%80%9314.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "Public domain",
+        "license_url": "",
+        "artist": "Unknown authorUnknown author",
+        "credit": "https://manuscripts.csntm.org/Manuscript/View/GA_P17?PreviousViewer=",
+        "attribution_required": true,
+        "note": "Wikimedia Commons file — not the holding library's high-res scan."
+      },
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10017",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10017",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P17",
+      "cntr_url": "https://greekcntr.org/manuscripts/P17",
+      "docID": 10017,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P17",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P17",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P17",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10017"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Camebrige,_Cambridge_University_Library_Ms_Add._5893_Papyrus_Oxyrhynchus_1078_(Papyrus_17)_recto_Hebrews_9,_12%E2%80%9314.jpg"
+    },
+    {
+      "id": "p19",
+      "ga_number": "P19",
+      "traditional_name": "P19 (Gregory-Aland)",
+      "aliases": [
+        "P19",
+        "𝔓19"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 499,
+      "date_label": "IV/V",
+      "date_note": "INTF Liste: IV/V (300–499 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "hosted",
+      "hosted_image": "/witnesses/P19-matthew.jpg",
+      "image_attribution": {
+        "ga": "P19",
+        "file": "P19-matthew.jpg",
+        "commons_title": "File:Oxford, Bodleian Library MS Gr. bib. d. 6 (P) - P. Oxy. XI 1170 (Papyrus 19) recto Matthew 10, 32-11,5.jpg",
+        "commons_url": "https://commons.wikimedia.org/wiki/File:Oxford,_Bodleian_Library_MS_Gr._bib._d._6_(P)_-_P._Oxy._XI_1170_(Papyrus_19)_recto_Matthew_10,_32-11,5.jpg",
+        "download_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Oxford%2C_Bodleian_Library_MS_Gr._bib._d._6_%28P%29_-_P._Oxy._XI_1170_%28Papyrus_19%29_recto_Matthew_10%2C_32-11%2C5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "Public domain",
+        "license_url": "",
+        "artist": "Unknown authorUnknown author",
+        "credit": "https://digital.bodleian.ox.ac.uk/objects/a7b93358-b0b6-4c40-bda2-61c05271cce7/",
+        "attribution_required": true,
+        "note": "Wikimedia Commons file — not the holding library's high-res scan."
+      },
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10019",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10019",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P19",
+      "cntr_url": "https://greekcntr.org/manuscripts/P19",
+      "docID": 10019,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P19",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P19",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P19",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10019"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Oxford,_Bodleian_Library_MS_Gr._bib._d._6_(P)_-_P._Oxy._XI_1170_(Papyrus_19)_recto_Matthew_10,_32-11,5.jpg"
+    },
+    {
+      "id": "p24",
+      "ga_number": "P24",
+      "traditional_name": "P24 (Gregory-Aland)",
+      "aliases": [
+        "P24",
+        "𝔓24"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 399,
+      "date_label": "IV",
+      "date_note": "INTF Liste: IV (300–399 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "hosted",
+      "hosted_image": "/witnesses/P24-revelation.jpg",
+      "image_attribution": {
+        "ga": "P24",
+        "file": "P24-revelation.jpg",
+        "commons_title": "File:New Heaven CT, Yale Ms P. Oxy 1230 RG 305 (Papyrus 24) recto Revelation 5, 5-8.jpg",
+        "commons_url": "https://commons.wikimedia.org/wiki/File:New_Heaven_CT,_Yale_Ms_P._Oxy_1230_RG_305_(Papyrus_24)_recto_Revelation_5,_5-8.jpg",
+        "download_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/New_Heaven_CT%2C_Yale_Ms_P._Oxy_1230_RG_305_%28Papyrus_24%29_recto_Revelation_5%2C_5-8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "Public domain",
+        "license_url": "",
+        "artist": "Unknown authorUnknown author",
+        "credit": "https://digital.library.yale.edu/catalog/17147600",
+        "attribution_required": true,
+        "note": "Wikimedia Commons file — not the holding library's high-res scan."
+      },
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10024",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10024",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P24",
+      "cntr_url": "https://greekcntr.org/manuscripts/P24",
+      "docID": 10024,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P24",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P24",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P24",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10024"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:New_Heaven_CT,_Yale_Ms_P._Oxy_1230_RG_305_(Papyrus_24)_recto_Revelation_5,_5-8.jpg"
+    },
+    {
+      "id": "p38",
+      "ga_number": "P38",
+      "traditional_name": "P38 (Gregory-Aland)",
+      "aliases": [
+        "P38",
+        "𝔓38"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 325,
+      "date_label": "IV (A)",
+      "date_note": "INTF Liste: IV (A) (300–325 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "hosted",
+      "hosted_image": "/witnesses/P38-acts.jpg",
+      "image_attribution": {
+        "ga": "P38",
+        "file": "P38-acts.jpg",
+        "commons_title": "File:P038-Act-18.27-19.6-III-IV.jpg",
+        "commons_url": "https://commons.wikimedia.org/wiki/File:P038-Act-18.27-19.6-III-IV.jpg",
+        "download_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/P038-Act-18.27-19.6-III-IV.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "Public domain",
+        "license_url": "",
+        "artist": "unknown writer in 3rd century",
+        "credit": "http://chrles.multiply.com/",
+        "attribution_required": true,
+        "note": "Wikimedia Commons file — not the holding library's high-res scan."
+      },
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10038",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10038",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P38",
+      "cntr_url": "https://greekcntr.org/manuscripts/P38",
+      "docID": 10038,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P38",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P38",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P38",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10038"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:P038-Act-18.27-19.6-III-IV.jpg"
+    },
+    {
+      "id": "p50",
+      "ga_number": "P50",
+      "traditional_name": "P50 (Gregory-Aland)",
+      "aliases": [
+        "P50",
+        "𝔓50"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 499,
+      "date_label": "IV/V",
+      "date_note": "INTF Liste: IV/V (300–499 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "link_only",
+      "hosted_image": null,
+      "image_attribution": null,
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10050",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10050",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P50",
+      "cntr_url": "https://greekcntr.org/manuscripts/P50",
+      "docID": 10050,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P50",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P50",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P50",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10050"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    },
+    {
+      "id": "p57",
+      "ga_number": "P57",
+      "traditional_name": "P57 (Gregory-Aland)",
+      "aliases": [
+        "P57",
+        "𝔓57"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 499,
+      "date_label": "IV/V",
+      "date_note": "INTF Liste: IV/V (300–499 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "link_only",
+      "hosted_image": null,
+      "image_attribution": null,
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10057",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10057",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P57",
+      "cntr_url": "https://greekcntr.org/manuscripts/P57",
+      "docID": 10057,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P57",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P57",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P57",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10057"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    },
+    {
+      "id": "p6",
+      "ga_number": "P6",
+      "traditional_name": "P6 (Gregory-Aland)",
+      "aliases": [
+        "P6",
+        "𝔓6"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 399,
+      "date_label": "IV",
+      "date_note": "INTF Liste: IV (300–399 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "hosted",
+      "hosted_image": "/witnesses/P6-john.jpg",
+      "image_attribution": {
+        "ga": "P6",
+        "file": "P6-john.jpg",
+        "commons_title": "File:Papyrus 6 (John 10,1-10).jpg",
+        "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus_6_(John_10,1-10).jpg",
+        "download_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Papyrus_6_%28John_10%2C1-10%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "Public domain",
+        "license_url": "",
+        "artist": "Unknown authorUnknown author",
+        "credit": "Papyrus 6 (Gregory-Aland), manuscript of New Testament",
+        "attribution_required": true,
+        "note": "Wikimedia Commons file — not the holding library's high-res scan."
+      },
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10006",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10006",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P6",
+      "cntr_url": "https://greekcntr.org/manuscripts/P6",
+      "docID": 10006,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P6",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P6",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P6",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10006"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus_6_(John_10,1-10).jpg"
+    },
+    {
+      "id": "p62",
+      "ga_number": "P62",
+      "traditional_name": "P62 (Gregory-Aland)",
+      "aliases": [
+        "P62",
+        "𝔓62"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 399,
+      "date_label": "IV",
+      "date_note": "INTF Liste: IV (300–399 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "link_only",
+      "hosted_image": null,
+      "image_attribution": null,
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10062",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10062",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P62",
+      "cntr_url": "https://greekcntr.org/manuscripts/P62",
+      "docID": 10062,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P62",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P62",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P62",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10062"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    },
+    {
+      "id": "p7",
+      "ga_number": "P7",
+      "traditional_name": "P7 (Gregory-Aland)",
+      "aliases": [
+        "P7",
+        "𝔓7"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 499,
+      "date_label": "III/IV (?)",
+      "date_note": "INTF Liste: III/IV (?) (300–499 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "link_only",
+      "hosted_image": null,
+      "image_attribution": null,
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10007",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10007",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P7",
+      "cntr_url": "https://greekcntr.org/manuscripts/P7",
+      "docID": 10007,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P7",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P7",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P7",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10007"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    },
+    {
+      "id": "p70",
+      "ga_number": "P70",
+      "traditional_name": "P70 (Gregory-Aland)",
+      "aliases": [
+        "P70",
+        "𝔓70"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 350,
+      "date_label": "IV",
+      "date_note": "INTF Liste: IV (300–350 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "hosted",
+      "hosted_image": "/witnesses/P70-matthew.jpg",
+      "image_attribution": {
+        "ga": "P70",
+        "file": "P70-matthew.jpg",
+        "commons_title": "File:Florence, National Archaeological Museum MS PSI inv.3407 (Papyrus 70) fragment a recto Matt 2, 22-3, 1.jpg",
+        "commons_url": "https://commons.wikimedia.org/wiki/File:Florence,_National_Archaeological_Museum_MS_PSI_inv.3407_(Papyrus_70)_fragment_a_recto_Matt_2,_22-3,_1.jpg",
+        "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Florence%2C_National_Archaeological_Museum_MS_PSI_inv.3407_%28Papyrus_70%29_fragment_a_recto_Matt_2%2C_22-3%2C_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "Public domain",
+        "license_url": "",
+        "artist": "Unknown authorUnknown author",
+        "credit": "https://psi-online.it/documents/m-naldini-prometheus-1-1975-pp-195-200",
+        "attribution_required": true,
+        "note": "Wikimedia Commons file — not the holding library's high-res scan."
+      },
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10070",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10070",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P70",
+      "cntr_url": "https://greekcntr.org/manuscripts/P70",
+      "docID": 10070,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P70",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P70",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P70",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10070"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Florence,_National_Archaeological_Museum_MS_PSI_inv.3407_(Papyrus_70)_fragment_a_recto_Matt_2,_22-3,_1.jpg"
+    },
+    {
+      "id": "p71",
+      "ga_number": "P71",
+      "traditional_name": "P71 (Gregory-Aland)",
+      "aliases": [
+        "P71",
+        "𝔓71"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 399,
+      "date_label": "IV",
+      "date_note": "INTF Liste: IV (300–399 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "hosted",
+      "hosted_image": "/witnesses/P71-matthew.jpg",
+      "image_attribution": {
+        "ga": "P71",
+        "file": "P71-matthew.jpg",
+        "commons_title": "File:Oxford, Ashmolean Museum Ms P. Oxy. XXIV 2385 (Papyrus 71) recto Matt 19, 10-11.jpg",
+        "commons_url": "https://commons.wikimedia.org/wiki/File:Oxford,_Ashmolean_Museum_Ms_P._Oxy._XXIV_2385_(Papyrus_71)_recto_Matt_19,_10-11.jpg",
+        "download_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Oxford%2C_Ashmolean_Museum_Ms_P._Oxy._XXIV_2385_%28Papyrus_71%29_recto_Matt_19%2C_10-11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "Public domain",
+        "license_url": "",
+        "artist": "Unknown authorUnknown author",
+        "credit": "https://portal.sds.ox.ac.uk/articles/online_resource/P_Oxy_XXIV_2385_Gospel_acc_to_St_Matthew_xix/21164638",
+        "attribution_required": true,
+        "note": "Wikimedia Commons file — not the holding library's high-res scan."
+      },
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10071",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10071",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P71",
+      "cntr_url": "https://greekcntr.org/manuscripts/P71",
+      "docID": 10071,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P71",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P71",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P71",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10071"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Oxford,_Ashmolean_Museum_Ms_P._Oxy._XXIV_2385_(Papyrus_71)_recto_Matt_19,_10-11.jpg"
+    },
+    {
+      "id": "p8",
+      "ga_number": "P8",
+      "traditional_name": "P8 (Gregory-Aland)",
+      "aliases": [
+        "P8",
+        "𝔓8"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 399,
+      "date_label": "IV",
+      "date_note": "INTF Liste: IV (300–399 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "hosted",
+      "hosted_image": "/witnesses/P8-acts.jpg",
+      "image_attribution": {
+        "ga": "P8",
+        "file": "P8-acts.jpg",
+        "commons_title": "File:Berlin, Staatliche Museen zu Berlin Ms Papyrus 8683 (Papyrus 8) Recto Acts 4, 31–37; 6, 8-15.jpg",
+        "commons_url": "https://commons.wikimedia.org/wiki/File:Berlin,_Staatliche_Museen_zu_Berlin_Ms_Papyrus_8683_(Papyrus_8)_Recto_Acts_4,_31%E2%80%9337;_6,_8-15.jpg",
+        "download_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Berlin%2C_Staatliche_Museen_zu_Berlin_Ms_Papyrus_8683_%28Papyrus_8%29_Recto_Acts_4%2C_31%E2%80%9337%3B_6%2C_8-15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "Public domain",
+        "license_url": "",
+        "artist": "Unknown authorUnknown author",
+        "credit": "https://berlpap.smb.museum/02505/",
+        "attribution_required": true,
+        "note": "Wikimedia Commons file — not the holding library's high-res scan."
+      },
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10008",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10008",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P8",
+      "cntr_url": "https://greekcntr.org/manuscripts/P8",
+      "docID": 10008,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P8",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P8",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P8",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10008"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Berlin,_Staatliche_Museen_zu_Berlin_Ms_Papyrus_8683_(Papyrus_8)_Recto_Acts_4,_31%E2%80%9337;_6,_8-15.jpg"
+    },
+    {
+      "id": "p81",
+      "ga_number": "P81",
+      "traditional_name": "P81 (Gregory-Aland)",
+      "aliases": [
+        "P81",
+        "𝔓81"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 399,
+      "date_label": "IV",
+      "date_note": "INTF Liste: IV (300–399 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "link_only",
+      "hosted_image": null,
+      "image_attribution": null,
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10081",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10081",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P81",
+      "cntr_url": "https://greekcntr.org/manuscripts/P81",
+      "docID": 10081,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P81",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P81",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P81",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10081"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    },
+    {
+      "id": "p82",
+      "ga_number": "P82",
+      "traditional_name": "P82 (Gregory-Aland)",
+      "aliases": [
+        "P82",
+        "𝔓82"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 499,
+      "date_label": "IV/V",
+      "date_note": "INTF Liste: IV/V (300–499 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "link_only",
+      "hosted_image": null,
+      "image_attribution": null,
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10082",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10082",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P82",
+      "cntr_url": "https://greekcntr.org/manuscripts/P82",
+      "docID": 10082,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P82",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P82",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P82",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10082"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    },
+    {
+      "id": "p85",
+      "ga_number": "P85",
+      "traditional_name": "P85 (Gregory-Aland)",
+      "aliases": [
+        "P85",
+        "𝔓85"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 499,
+      "date_label": "IV/V",
+      "date_note": "INTF Liste: IV/V (300–499 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "link_only",
+      "hosted_image": null,
+      "image_attribution": null,
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10085",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10085",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P85",
+      "cntr_url": "https://greekcntr.org/manuscripts/P85",
+      "docID": 10085,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P85",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P85",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P85",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10085"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    },
+    {
+      "id": "p86",
+      "ga_number": "P86",
+      "traditional_name": "P86 (Gregory-Aland)",
+      "aliases": [
+        "P86",
+        "𝔓86"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 399,
+      "date_label": "IV",
+      "date_note": "INTF Liste: IV (300–399 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "link_only",
+      "hosted_image": null,
+      "image_attribution": null,
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10086",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10086",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P86",
+      "cntr_url": "https://greekcntr.org/manuscripts/P86",
+      "docID": 10086,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P86",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P86",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P86",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10086"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    },
+    {
+      "id": "p88",
+      "ga_number": "P88",
+      "traditional_name": "P88 (Gregory-Aland)",
+      "aliases": [
+        "P88",
+        "𝔓88"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 399,
+      "date_label": "IV",
+      "date_note": "INTF Liste: IV (300–399 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "link_only",
+      "hosted_image": null,
+      "image_attribution": null,
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10088",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10088",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P88",
+      "cntr_url": "https://greekcntr.org/manuscripts/P88",
+      "docID": 10088,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P88",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P88",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P88",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10088"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    },
+    {
+      "id": "p89",
+      "ga_number": "P89",
+      "traditional_name": "P89 (Gregory-Aland)",
+      "aliases": [
+        "P89",
+        "𝔓89"
+      ],
+      "corpus": "nt",
+      "book_category": "other",
+      "language": "Greek",
+      "material": "papyrus",
+      "contents": "See NTVMR workspace for indexed content",
+      "date_start": 300,
+      "date_end": 399,
+      "date_label": "IV",
+      "date_note": "INTF Liste: IV (300–399 CE). Paleographic range.",
+      "dating_method": "paleography",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Egypt (provenance uncertain — verify in Liste)",
+      "find_year_or_note": "See Liste bibliography",
+      "current_institution": "See NTVMR Liste",
+      "current_shelfmark": "",
+      "image_policy": "hosted",
+      "hosted_image": "/witnesses/P89-hebrews.jpg",
+      "image_attribution": {
+        "ga": "P89",
+        "file": "P89-hebrews.jpg",
+        "commons_title": "File:Florence, Biblioteca Medicea Laurenziana Ms PFlor. 292 - PLaur. IV 142 (Papyrus 89) recto Heb 6, 16-17.jpg",
+        "commons_url": "https://commons.wikimedia.org/wiki/File:Florence,_Biblioteca_Medicea_Laurenziana_Ms_PFlor._292_-_PLaur._IV_142_(Papyrus_89)_recto_Heb_6,_16-17.jpg",
+        "download_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Florence%2C_Biblioteca_Medicea_Laurenziana_Ms_PFlor._292_-_PLaur._IV_142_%28Papyrus_89%29_recto_Heb_6%2C_16-17.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "Public domain",
+        "license_url": "",
+        "artist": "Unknown authorUnknown author",
+        "credit": "https://manuscripts.csntm.org/manuscript/View/GA_P89",
+        "attribution_required": true,
+        "note": "Wikimedia Commons file — not the holding library's high-res scan."
+      },
+      "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10089",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10089",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P89",
+      "cntr_url": "https://greekcntr.org/manuscripts/P89",
+      "docID": 10089,
+      "translation": "Indexed passage: See NTVMR workspace for indexed content. (KJV available for NT verses.)",
+      "modern_base_text": "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+      "known_variants": [],
+      "bibliography": [
+        {
+          "title": "INTF Liste — P89",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=P89",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "NTVMR — P89",
+          "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10089"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Florence,_Biblioteca_Medicea_Laurenziana_Ms_PFlor._292_-_PLaur._IV_142_(Papyrus_89)_recto_Heb_6,_16-17.jpg"
     }
   ]
 }
