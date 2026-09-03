@@ -14,13 +14,35 @@ Witnesses are included when a published **C14 or paleographic CE range** overlap
 - `date_start ≤ 719` AND `date_end ≥ 622` (CE)
 - Later **Kufic display mushafs** (8th–9th c. starting after 100 AH) are **out** unless a published range genuinely overlaps.
 - **15 witnesses** in `scripts/quran-seed.json` (verify each against Corpus Coranicum before expanding).
-- **3/15** Commons images (Birmingham Mingana 1572a, Parisino 328a, Sanʿāʾ DAM 01-27.1).
+- **10/15** witnesses show a leaf photo (3 Wikimedia Commons + 7 official IIIF); remaining gaps documented below.
 - Arabic reference text: Tanzil Uthmani via [fawazahmed0/quran-api](https://github.com/fawazahmed0/quran-api) (diacritics stripped for rasm comparison — see [tanzil.net](https://tanzil.net) license).
 - English: **Pickthall 1930** (public domain) via same API.
 - **Not** traced facsimiles: cards show standard rasm for verses on each leaf unless a CC transliteration is added to the seed.
 - Sanʿāʾ DAM 01-27.1: **one physical manuscript**, upper + lower palimpsest layers — not two fake witnesses.
 
 Regenerate: `node scripts/build-quran-data.mjs`
+
+### Qurʾān image coverage (15 witnesses)
+
+| Witness | Image source | Notes |
+|---------|--------------|-------|
+| mingana-1572a | **Commons** (hosted) | Birmingham Cadbury press photo |
+| parisino-328a | **Commons** (hosted) | BnF Parisino first leaf |
+| sanaa-dam-01-27-1 | **Commons** (hosted) | Stanford/Yemen palimpsest plate |
+| bl-or-2165 | **IIIF** | BL Digirati `vdc_100104060212` fol. 1r |
+| tubingen-ma-vi-165 | **IIIF** | Tübingen OpenDigi Ma VI 165 p01r |
+| bnf-arabe-330g | **IIIF** | BnF Gallica `btv1b8415208w` fol. 1 |
+| bnf-arabe-331 | **IIIF** | BnF Gallica `btv1b84152099` fol. 1r |
+| berlin-wetzstein-1913 | **IIIF** | SBB `PPN618539204` opening leaf |
+| vatican-arabo-1605 | **IIIF** | DigiVatLib Vat.ar.1605 fol. 1r |
+| leiden-or-14-545b | **IIIF** | Dispersed folio of BnF Arabe 331 codex — Paris fol. 1r shown |
+| marcel-17 | **None** | St Petersburg (Marcel 17) — no public IIIF or verified Commons leaf |
+| mingana-1572b | **None** | Birmingham 1572b — no separate open image yet |
+| gotha-orient-a-409 | **None** | Gotha — no public IIIF/Commons match |
+| doha-ms-2007 | **None** | MIA Doha — no public IIIF/Commons match |
+| cairo-dar-al-kutub-792 | **None** | Cairo Dar al-Kutub — no public IIIF/Commons match |
+
+IIIF images load via `<img src>` to each library's Image API (no Mirador). Commons files live in `public/witnesses/` with `.attribution.json` sidecars.
 
 ## Greek NT window: 1–300 CE
 

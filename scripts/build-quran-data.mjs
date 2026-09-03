@@ -114,35 +114,65 @@ function passageToAyahs(passage, pickthall, arabic, m) {
   return ayahs;
 }
 
-function attachCommons(witnesses) {
+function attachCommons(witnesses, seedById) {
   const mapPath = join(__dirname, "quran-commons-images.json");
-  if (!existsSync(mapPath)) return witnesses;
-  const map = JSON.parse(readFileSync(mapPath, "utf8"));
+  const map = existsSync(mapPath)
+    ? JSON.parse(readFileSync(mapPath, "utf8"))
+    : {};
   delete map._comment;
   const attrDir = join(ROOT, "public/witnesses");
 
   return witnesses.map((w) => {
+    const seed = seedById.get(w.id);
+    const image = seed?.image;
+    let next = { ...w };
+
     const key = w.id;
     const entry = map[key];
-    if (!entry) return w;
-    const imgPath = join(attrDir, entry.file);
-    const attrPath = `${imgPath}.attribution.json`;
-    if (!existsSync(imgPath)) return w;
-    let attr = null;
-    if (existsSync(attrPath)) {
-      attr = JSON.parse(readFileSync(attrPath, "utf8"));
+    if (entry) {
+      const imgPath = join(attrDir, entry.file);
+      const attrPath = `${imgPath}.attribution.json`;
+      if (existsSync(imgPath)) {
+        let attr = null;
+        if (existsSync(attrPath)) {
+          attr = JSON.parse(readFileSync(attrPath, "utf8"));
+        }
+        next = {
+          ...next,
+          image_policy: "hosted",
+          image_source: "commons",
+          hosted_image: `/witnesses/${entry.file}`,
+          image_attribution: attr,
+          commons_url: entry.commons_url,
+        };
+      }
     }
-    return {
-      ...w,
-      image_policy: "hosted",
-      hosted_image: `/witnesses/${entry.file}`,
-      image_attribution: attr,
-      commons_url: entry.commons_url,
-    };
+
+    if (image?.policy === "iiif" && image.iiif_image_url) {
+      next = {
+        ...next,
+        image_policy: "iiif",
+        image_source: "iiif",
+        hosted_image: null,
+        iiif_manifest: image.iiif_manifest || undefined,
+        iiif_image_url: image.iiif_image_url,
+        image_attribution: image.attribution || null,
+        source_page_url: image.viewer_url || seed.library_url,
+      };
+    }
+
+    return next;
   });
 }
 
 function seedToWitness(m) {
+  const imagePolicy =
+    m.image?.policy === "iiif"
+      ? "iiif"
+      : m.commons_key
+        ? "hosted"
+        : "link_only";
+
   return {
     id: m.id,
     ga_number: m.catalog_id,
@@ -168,9 +198,12 @@ function seedToWitness(m) {
     script: m.script,
     palimpsest: m.palimpsest || false,
     layers: m.layers || null,
-    image_policy: "link_only",
+    image_policy: imagePolicy,
+    image_source: m.commons_key ? "commons" : m.image?.policy === "iiif" ? "iiif" : undefined,
     hosted_image: null,
-    image_attribution: null,
+    iiif_manifest: m.image?.iiif_manifest || undefined,
+    iiif_image_url: m.image?.iiif_image_url || undefined,
+    image_attribution: m.image?.attribution || null,
     source_page_url: m.library_url,
     library_url: m.library_url,
     corpus_coranicum_url: m.corpus_coranicum_url,
@@ -196,7 +229,8 @@ async function main() {
   const arabic = buildVerseIndex(arabicData.quran);
 
   let witnesses = seed.manuscripts.map(seedToWitness);
-  witnesses = attachCommons(witnesses);
+  const seedById = new Map(seed.manuscripts.map((m) => [m.id, m]));
+  witnesses = attachCommons(witnesses, seedById);
 
   const texts = {};
   for (const m of seed.manuscripts) {
@@ -225,10 +259,12 @@ async function main() {
     };
   }
 
-  const withImages = witnesses.filter((w) => w.hosted_image).length;
+  const withImages = witnesses.filter(
+    (w) => w.hosted_image || w.iiif_image_url
+  ).length;
   const header = `/**
  * Generated ${new Date().toISOString().split("T")[0]} from scripts/quran-seed.json
- * Window: 1–100 AH (≈622–719 CE overlap). ${witnesses.length} witnesses, ${withImages} with Commons images.
+ * Window: 1–100 AH (≈622–719 CE overlap). ${witnesses.length} witnesses, ${withImages} with Commons or IIIF leaf images.
  * Regenerate: node scripts/build-quran-data.mjs
  */
 `;

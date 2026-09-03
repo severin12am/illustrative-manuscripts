@@ -20,9 +20,26 @@ const categoryLabels: Record<string, string> = {
 
 export default function WitnessCard({ witness }: WitnessCardProps) {
   const isQuran = witness.corpus === "quran";
-  const hasHosted = witness.image_policy === "hosted" && witness.hosted_image;
   const ntText = !isQuran ? getWitnessText(witness.ga_number) : null;
   const quranText = isQuran ? getQuranWitnessText(witness.id) : null;
+
+  const primaryLink = isQuran
+    ? witness.library_url || witness.corpus_coranicum_url
+    : witness.ntvmr_url;
+
+  const hasHosted = witness.image_policy === "hosted" && witness.hosted_image;
+  const hasIiif =
+    witness.image_policy === "iiif" && Boolean(witness.iiif_image_url);
+  const hasImage = hasHosted || hasIiif;
+  const imageBadge = hasHosted ? "Commons" : hasIiif ? "IIIF" : null;
+  const imageHref = hasHosted
+    ? witness.commons_url || witness.source_page_url || primaryLink
+    : hasIiif
+      ? witness.iiif_manifest ||
+        witness.image_attribution?.viewer_url ||
+        witness.library_url ||
+        primaryLink
+      : primaryLink;
 
   const badge = isQuran
     ? witness.script === "hijazi"
@@ -30,9 +47,11 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
       : witness.script || "Qur'an"
     : categoryLabels[witness.book_category] || witness.book_category;
 
-  const primaryLink = isQuran
-    ? witness.library_url || witness.corpus_coranicum_url
-    : witness.ntvmr_url;
+  const attr = witness.image_attribution;
+  const creditLabel =
+    attr?.institution && attr?.license
+      ? `${attr.institution} · ${attr.license}`
+      : attr?.license || attr?.institution;
 
   return (
     <article className={styles.card} id={witness.id}>
@@ -72,21 +91,27 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
 
       <div className={styles.mainGrid}>
         <div className={styles.imageColumn}>
-          {hasHosted ? (
+          {hasImage ? (
             <a
-              href={witness.commons_url || witness.source_page_url || primaryLink}
+              href={imageHref || "#"}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.imageLink}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={assetUrl(witness.hosted_image!)}
+                src={
+                  hasHosted
+                    ? assetUrl(witness.hosted_image!)
+                    : witness.iiif_image_url!
+                }
                 alt={`${witness.ga_number} manuscript photograph`}
                 className={styles.image}
                 loading="lazy"
               />
-              <span className={styles.imageBadge}>Commons</span>
+              {imageBadge && (
+                <span className={styles.imageBadge}>{imageBadge}</span>
+              )}
             </a>
           ) : (
             <div className={styles.noImage}>
@@ -126,15 +151,22 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
               )}
             </div>
           )}
-          {witness.image_attribution && (
+          {attr && creditLabel && (
             <p className={styles.imageCredit}>
-              <a
-                href={witness.image_attribution.commons_url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {witness.image_attribution.license}
-              </a>
+              {attr.commons_url || attr.license_url || attr.viewer_url ? (
+                <a
+                  href={
+                    attr.commons_url || attr.license_url || attr.viewer_url
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {creditLabel}
+                </a>
+              ) : (
+                creditLabel
+              )}
+              {attr.note ? <> — {attr.note}</> : null}
             </p>
           )}
         </div>
@@ -163,6 +195,15 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
             {witness.library_url && (
               <a href={witness.library_url} target="_blank" rel="noopener noreferrer">
                 Library ↗
+              </a>
+            )}
+            {witness.iiif_manifest && (
+              <a
+                href={witness.iiif_manifest}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                IIIF manifest ↗
               </a>
             )}
           </>
