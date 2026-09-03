@@ -17,7 +17,7 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const CACHE = join(__dirname, "cache");
 const OUT = join(__dirname, "../src/data");
-const WINDOW = [1, 200];
+const WINDOW = [1, 300];
 
 const LISTE_LIVE =
   "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10000-19999&format=json&detail=document&limit=500";

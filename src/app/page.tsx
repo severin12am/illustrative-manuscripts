@@ -202,8 +202,9 @@ export default function Home() {
             </p>
             <p className={styles.emptyHint}>
               Try another year, or clear the book/search filters. Remember:
-              dates are ranges — a papyrus dated III CE (200–299) only overlaps
-              year 200 at the boundary.
+              dates are ranges — e.g. a papyrus dated IV CE (300–399) overlaps
+              year 300 at the boundary; one dated 325–399 does not appear in
+              the 1–300 window.
             </p>
           </div>
         )}

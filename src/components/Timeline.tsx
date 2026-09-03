@@ -24,7 +24,7 @@ export default function Timeline({
     const result: number[] = [];
     for (let y = 25; y <= max; y += 25) result.push(y);
     if (!result.includes(1)) result.unshift(1);
-    if (!result.includes(200)) result.push(200);
+    if (!result.includes(300)) result.push(300);
     return result.sort((a, b) => a - b);
   }, [max]);
 
@@ -40,7 +40,7 @@ export default function Timeline({
           yearToPercent(Math.max(w.date_start, min)),
         0.8
       ),
-      row: i % 4,
+      row: i % 6,
     }));
   }, [filteredWitnesses, min, max]);
 
