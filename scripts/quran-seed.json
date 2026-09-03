@@ -162,7 +162,21 @@
       "current_institution": "British Library",
       "current_shelfmark": "Or. 2165",
       "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
-      "library_url": "https://www.bl.uk/collection-items/an-early-quranic-manuscript",
+      "library_url": "https://www.bl.uk/manuscripts/Viewer.aspx?ref=or_2165_f001r",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100104060212.0x000001/manifest.json",
+        "iiif_image_url": "https://bl.digirati.io/iiif/ark:/81055/vdc_100104060212.0x000001/f001r/full/800,/0/default.jpg",
+        "viewer_url": "https://www.bl.uk/manuscripts/Viewer.aspx?ref=or_2165_f001r",
+        "attribution": {
+          "institution": "British Library",
+          "license": "IIIF display — © British Library",
+          "license_url": "https://www.bl.uk/terms-and-conditions",
+          "viewer_url": "https://www.bl.uk/manuscripts/Viewer.aspx?ref=or_2165_f001r",
+          "note": "Folio 1r via BL IIIF (Digirati)",
+          "attribution_required": true
+        }
+      },
       "passages": [
         {
           "surah": 33,
@@ -198,7 +212,20 @@
       "current_institution": "Universitätsbibliothek Tübingen",
       "current_shelfmark": "Ma VI 165",
       "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
-      "library_url": "https://idb.ub.uni-tuebingen.de/",
+      "library_url": "https://opendigi.ub.uni-tuebingen.de/opendigi/MaVI165",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://opendigi.ub.uni-tuebingen.de/opendigi/MaVI165/manifest",
+        "iiif_image_url": "https://opendigi.ub.uni-tuebingen.de/opendigi/image/MaVI165/MaVI165_p01r.jp2/full/800,/0/default.jpg",
+        "viewer_url": "https://opendigi.ub.uni-tuebingen.de/opendigi/MaVI165",
+        "attribution": {
+          "institution": "Universitätsbibliothek Tübingen (OpenDigi)",
+          "license": "IIIF display",
+          "viewer_url": "https://opendigi.ub.uni-tuebingen.de/opendigi/MaVI165",
+          "note": "Leaf p01r via Tübingen IIIF",
+          "attribution_required": true
+        }
+      },
       "passages": [
         {
           "surah": 11,
@@ -293,7 +320,21 @@
       "current_institution": "Bibliothèque nationale de France",
       "current_shelfmark": "Arabe 330g",
       "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
-      "library_url": "https://gallica.bnf.fr/",
+      "library_url": "https://gallica.bnf.fr/ark:/12148/btv1b8415208w",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8415208w/manifest.json",
+        "iiif_image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8415208w/f1/full/800,/0/default.jpg",
+        "viewer_url": "https://gallica.bnf.fr/ark:/12148/btv1b8415208w",
+        "attribution": {
+          "institution": "BnF Gallica",
+          "license": "Gallica terms — IIIF display",
+          "license_url": "https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica",
+          "viewer_url": "https://gallica.bnf.fr/ark:/12148/btv1b8415208w",
+          "note": "Arabe 330g fol. 1 via Gallica IIIF",
+          "attribution_required": true
+        }
+      },
       "passages": [
         {
           "surah": 5,
@@ -323,7 +364,21 @@
       "current_institution": "Bibliothèque nationale de France",
       "current_shelfmark": "Arabe 331",
       "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
-      "library_url": "https://gallica.bnf.fr/",
+      "library_url": "https://gallica.bnf.fr/ark:/12148/btv1b84152099",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b84152099/manifest.json",
+        "iiif_image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b84152099/f1/full/800,/0/default.jpg",
+        "viewer_url": "https://gallica.bnf.fr/ark:/12148/btv1b84152099",
+        "attribution": {
+          "institution": "BnF Gallica",
+          "license": "Gallica terms — IIIF display",
+          "license_url": "https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica",
+          "viewer_url": "https://gallica.bnf.fr/ark:/12148/btv1b84152099",
+          "note": "Arabe 331 fol. 1r via Gallica IIIF",
+          "attribution_required": true
+        }
+      },
       "passages": [
         {
           "surah": 6,
@@ -353,7 +408,20 @@
       "current_institution": "Staatsbibliothek zu Berlin",
       "current_shelfmark": "Wetzstein II 1913",
       "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
-      "library_url": "https://staatsbibliothek-berlin.de/",
+      "library_url": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN618539204",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://content.staatsbibliothek-berlin.de/dc/618539204/manifest",
+        "iiif_image_url": "https://content.staatsbibliothek-berlin.de/dc/618539204-0001/full/800,/0/default.jpg",
+        "viewer_url": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN618539204",
+        "attribution": {
+          "institution": "Staatsbibliothek zu Berlin",
+          "license": "IIIF display — SBB digitised collections",
+          "viewer_url": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN618539204",
+          "note": "Wetzstein II 1913 opening leaf via SBB IIIF",
+          "attribution_required": true
+        }
+      },
       "passages": [
         {
           "surah": 4,
@@ -383,7 +451,21 @@
       "current_institution": "Leiden University Library",
       "current_shelfmark": "Or. 14.545b",
       "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
-      "library_url": "https://www.universiteitleiden.nl/en",
+      "library_url": "https://www.universiteitleiden.nl/en/library/special-collections",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b84152099/manifest.json",
+        "iiif_image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b84152099/f1/full/800,/0/default.jpg",
+        "viewer_url": "https://gallica.bnf.fr/ark:/12148/btv1b84152099",
+        "attribution": {
+          "institution": "BnF Gallica (codex Arabe 331)",
+          "license": "Gallica terms — IIIF display",
+          "license_url": "https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica",
+          "viewer_url": "https://gallica.bnf.fr/ark:/12148/btv1b84152099",
+          "note": "Leiden Or. 14.545b is a dispersed folio of BnF Arabe 331; image shows Paris fol. 1r",
+          "attribution_required": true
+        }
+      },
       "passages": [
         {
           "surah": 7,
@@ -508,7 +590,20 @@
       "current_institution": "Biblioteca Apostolica Vaticana",
       "current_shelfmark": "Vat. ar. 1605",
       "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
-      "library_url": "https://digi.vatlib.it/",
+      "library_url": "https://digi.vatlib.it/view/MSS_Vat.ar.1605",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://digi.vatlib.it/iiif/MSS_Vat.ar.1605/manifest.json",
+        "iiif_image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.ar.1605/Vat.ar.1605_0001_fa_0001r%20.jp2/full/800,/0/default.jpg",
+        "viewer_url": "https://digi.vatlib.it/view/MSS_Vat.ar.1605",
+        "attribution": {
+          "institution": "Biblioteca Apostolica Vaticana (DigiVatLib)",
+          "license": "Personal study use — © Biblioteca Apostolica Vaticana",
+          "viewer_url": "https://digi.vatlib.it/view/MSS_Vat.ar.1605",
+          "note": "Folio 1r via Vatican IIIF",
+          "attribution_required": true
+        }
+      },
       "passages": [
         {
           "surah": 2,

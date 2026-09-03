@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T01:17:38.475Z",
+  "generated_at": "2026-09-03T07:16:23.871Z",
   "sources": {
     "pickthall": "https://cdn.jsdelivr.net/gh/fawazahmed0/quran-api@1/editions/eng-mohammedmarmadu.json",
     "arabic_reference": "https://cdn.jsdelivr.net/gh/fawazahmed0/quran-api@1/editions/ara-quranuthmanihaf.json",
@@ -1650,7 +1650,7 @@
       "translation_label": "English of these verses",
       "arabic_base": "Uthmani rasm (Tanzil / King Fahd complex, diacritics stripped for comparison)",
       "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
-      "library_url": "https://www.bl.uk/collection-items/an-early-quranic-manuscript",
+      "library_url": "https://www.bl.uk/manuscripts/Viewer.aspx?ref=or_2165_f001r",
       "total_ayahs": 10,
       "difference_count": 0,
       "initial_ayahs": [
@@ -1815,7 +1815,7 @@
       "translation_label": "English of these verses",
       "arabic_base": "Uthmani rasm (Tanzil / King Fahd complex, diacritics stripped for comparison)",
       "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
-      "library_url": "https://idb.ub.uni-tuebingen.de/",
+      "library_url": "https://opendigi.ub.uni-tuebingen.de/opendigi/MaVI165",
       "total_ayahs": 15,
       "difference_count": 0,
       "initial_ayahs": [
@@ -2550,7 +2550,7 @@
       "translation_label": "English of these verses",
       "arabic_base": "Uthmani rasm (Tanzil / King Fahd complex, diacritics stripped for comparison)",
       "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
-      "library_url": "https://gallica.bnf.fr/",
+      "library_url": "https://gallica.bnf.fr/ark:/12148/btv1b8415208w",
       "total_ayahs": 10,
       "difference_count": 0,
       "initial_ayahs": [
@@ -2715,7 +2715,7 @@
       "translation_label": "English of these verses",
       "arabic_base": "Uthmani rasm (Tanzil / King Fahd complex, diacritics stripped for comparison)",
       "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
-      "library_url": "https://gallica.bnf.fr/",
+      "library_url": "https://gallica.bnf.fr/ark:/12148/btv1b84152099",
       "total_ayahs": 12,
       "difference_count": 0,
       "initial_ayahs": [
@@ -2910,7 +2910,7 @@
       "translation_label": "English of these verses",
       "arabic_base": "Uthmani rasm (Tanzil / King Fahd complex, diacritics stripped for comparison)",
       "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
-      "library_url": "https://staatsbibliothek-berlin.de/",
+      "library_url": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN618539204",
       "total_ayahs": 15,
       "difference_count": 0,
       "initial_ayahs": [
@@ -3150,7 +3150,7 @@
       "translation_label": "English of these verses",
       "arabic_base": "Uthmani rasm (Tanzil / King Fahd complex, diacritics stripped for comparison)",
       "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
-      "library_url": "https://www.universiteitleiden.nl/en",
+      "library_url": "https://www.universiteitleiden.nl/en/library/special-collections",
       "total_ayahs": 10,
       "difference_count": 0,
       "initial_ayahs": [
@@ -4335,7 +4335,7 @@
       "translation_label": "English of these verses",
       "arabic_base": "Uthmani rasm (Tanzil / King Fahd complex, diacritics stripped for comparison)",
       "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
-      "library_url": "https://digi.vatlib.it/",
+      "library_url": "https://digi.vatlib.it/view/MSS_Vat.ar.1605",
       "total_ayahs": 20,
       "difference_count": 0,
       "initial_ayahs": [

@@ -12,7 +12,8 @@ export type Material =
   | "ostracon"
   | "inscription"
   | "other";
-export type ImagePolicy = "hosted" | "link_only" | "missing";
+export type ImagePolicy = "hosted" | "iiif" | "link_only" | "missing";
+export type ImageSource = "commons" | "iiif";
 export type BookCategory = "gospels" | "paul" | "other" | "all";
 
 export interface KnownVariant {
@@ -30,15 +31,18 @@ export interface BibliographyEntry {
 }
 
 export interface ImageAttribution {
-  ga: string;
-  file: string;
-  commons_title: string;
-  commons_url: string;
+  ga?: string;
+  file?: string;
+  commons_title?: string;
+  commons_url?: string;
   download_url?: string;
   license: string;
   license_url?: string;
   artist?: string;
   credit?: string;
+  institution?: string;
+  license_note?: string;
+  viewer_url?: string;
   attribution_required: boolean;
   note?: string;
 }
@@ -73,6 +77,10 @@ export interface Witness {
   library_url?: string;
   image_policy: ImagePolicy;
   hosted_image: string | null;
+  /** Remote IIIF Image API URL (library-hosted; not scraped). */
+  iiif_manifest?: string;
+  iiif_image_url?: string;
+  image_source?: ImageSource;
   image_attribution: ImageAttribution | null;
   commons_url?: string;
   source_page_url?: string;
@@ -131,4 +139,11 @@ export function formatDateRange(start: number, end: number): string {
 
 export function witnessOverlapsYear(witness: Witness, year: number): boolean {
   return year >= witness.date_start && year <= witness.date_end;
+}
+
+export function witnessHasDisplayImage(witness: Witness): boolean {
+  return Boolean(
+    witness.hosted_image ||
+      (witness.image_policy === "iiif" && witness.iiif_image_url)
+  );
 }

@@ -17,7 +17,7 @@ import {
   getQuranWitnessesForYear,
 } from "@/data/quran-witnesses";
 import type { BookCategory } from "@/types/witness";
-import { formatYear } from "@/types/witness";
+import { formatYear, witnessHasDisplayImage } from "@/types/witness";
 
 export type SiteCorpus = "nt" | "quran";
 
@@ -57,7 +57,7 @@ export default function Home() {
     return forYear.filter((w) => filteredAll.some((f) => f.id === w.id));
   }, [selectedYear, filteredAll, isQuran]);
 
-  const withImages = allWitnesses.filter((w) => w.hosted_image).length;
+  const withImages = allWitnesses.filter((w) => witnessHasDisplayImage(w)).length;
 
   function switchCorpus(next: SiteCorpus) {
     setSiteCorpus(next);
