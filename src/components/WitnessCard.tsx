@@ -1,9 +1,11 @@
 import styles from "./WitnessCard.module.css";
 import type { Witness } from "@/types/witness";
-import { formatDateRange } from "@/types/witness";
+import { formatDualDateRange } from "@/types/witness";
 import { assetUrl } from "@/lib/assetUrl";
 import { getWitnessText } from "@/data/witness-texts";
+import { getQuranWitnessText } from "@/data/quran-texts";
 import WitnessTextPanel from "./WitnessTextPanel";
+import QuranTextPanel from "./QuranTextPanel";
 
 interface WitnessCardProps {
   witness: Witness;
@@ -13,23 +15,43 @@ const categoryLabels: Record<string, string> = {
   gospels: "Gospels",
   paul: "Pauline",
   other: "Other NT",
+  hijazi: "Hijazi",
 };
 
 export default function WitnessCard({ witness }: WitnessCardProps) {
+  const isQuran = witness.corpus === "quran";
   const hasHosted = witness.image_policy === "hosted" && witness.hosted_image;
-  const text = getWitnessText(witness.ga_number);
+  const ntText = !isQuran ? getWitnessText(witness.ga_number) : null;
+  const quranText = isQuran ? getQuranWitnessText(witness.id) : null;
+
+  const badge = isQuran
+    ? witness.script === "hijazi"
+      ? "Hijazi"
+      : witness.script || "Qur'an"
+    : categoryLabels[witness.book_category] || witness.book_category;
+
+  const primaryLink = isQuran
+    ? witness.library_url || witness.corpus_coranicum_url
+    : witness.ntvmr_url;
 
   return (
     <article className={styles.card} id={witness.id}>
       <header className={styles.cardHeader}>
         <div className={styles.titleRow}>
           <h3 className={styles.ga}>{witness.ga_number}</h3>
-          <span className={styles.badge}>
-            {categoryLabels[witness.book_category] || witness.book_category}
-          </span>
+          <span className={styles.badge}>{badge}</span>
+          {witness.palimpsest && (
+            <span className={styles.badge}>Palimpsest</span>
+          )}
         </div>
+        <p className={styles.traditionalName}>{witness.traditional_name}</p>
         <p className={styles.date}>
-          {formatDateRange(witness.date_start, witness.date_end)}
+          {formatDualDateRange(
+            witness.date_start,
+            witness.date_end,
+            witness.ah_start,
+            witness.ah_end
+          )}
           <span className={styles.dateLabel}> ({witness.date_label})</span>
         </p>
         <p className={styles.survives}>
@@ -39,6 +61,12 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
           )}
           {witness.find_place && <> · Found: {witness.find_place}</>}
         </p>
+        {witness.layers && witness.layers.length > 0 && (
+          <p className={styles.layers}>
+            <strong>Layers:</strong>{" "}
+            {witness.layers.map((l) => l.label).join("; ")}
+          </p>
+        )}
         <p className={styles.dateNote}>{witness.date_note}</p>
       </header>
 
@@ -46,7 +74,7 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
         <div className={styles.imageColumn}>
           {hasHosted ? (
             <a
-              href={witness.commons_url || witness.source_page_url}
+              href={witness.commons_url || witness.source_page_url || primaryLink}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.imageLink}
@@ -66,15 +94,17 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
               <p className={styles.noImageText}>
                 View the scan at the holding institution:
               </p>
-              <a
-                href={witness.ntvmr_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.viewerLink}
-              >
-                NTVMR ↗
-              </a>
-              {witness.csntm_url && (
+              {primaryLink && (
+                <a
+                  href={primaryLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.viewerLink}
+                >
+                  {isQuran ? "Library viewer ↗" : "NTVMR ↗"}
+                </a>
+              )}
+              {!isQuran && witness.csntm_url && (
                 <a
                   href={witness.csntm_url}
                   target="_blank"
@@ -82,6 +112,16 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
                   className={styles.viewerLink}
                 >
                   CSNTM ↗
+                </a>
+              )}
+              {isQuran && witness.corpus_coranicum_url && (
+                <a
+                  href={witness.corpus_coranicum_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.viewerLink}
+                >
+                  Corpus Coranicum ↗
                 </a>
               )}
             </div>
@@ -100,18 +140,45 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
         </div>
 
         <div className={styles.textColumn}>
-          <WitnessTextPanel text={text} ga={witness.ga_number} />
+          {isQuran && quranText ? (
+            <QuranTextPanel text={quranText} witnessId={witness.id} />
+          ) : ntText ? (
+            <WitnessTextPanel text={ntText} ga={witness.ga_number} />
+          ) : null}
         </div>
       </div>
 
       <footer className={styles.links}>
-        <a href={witness.ntvmr_url} target="_blank" rel="noopener noreferrer">
-          NTVMR ↗
-        </a>
-        {witness.cntr_url && (
-          <a href={witness.cntr_url} target="_blank" rel="noopener noreferrer">
-            CNTR ↗
-          </a>
+        {isQuran ? (
+          <>
+            {witness.corpus_coranicum_url && (
+              <a
+                href={witness.corpus_coranicum_url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Corpus Coranicum ↗
+              </a>
+            )}
+            {witness.library_url && (
+              <a href={witness.library_url} target="_blank" rel="noopener noreferrer">
+                Library ↗
+              </a>
+            )}
+          </>
+        ) : (
+          <>
+            {witness.ntvmr_url && (
+              <a href={witness.ntvmr_url} target="_blank" rel="noopener noreferrer">
+                NTVMR ↗
+              </a>
+            )}
+            {witness.cntr_url && (
+              <a href={witness.cntr_url} target="_blank" rel="noopener noreferrer">
+                CNTR ↗
+              </a>
+            )}
+          </>
         )}
         {witness.commons_url && (
           <a href={witness.commons_url} target="_blank" rel="noopener noreferrer">

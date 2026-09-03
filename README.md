@@ -1,17 +1,26 @@
 # Illustrative Manuscripts
 
-A year-by-year timeline of **Greek New Testament papyri** for the first three centuries CE (**1–300**). Scrub a year to see which witnesses' paleographic date ranges overlap that moment — with real manuscript photographs where we have legal copies.
+A year-by-year timeline of early biblical manuscripts — **Greek NT papyri (1–300 CE)** and **Qurʾān Hijazi witnesses (1–100 AH)**. Scrub a year to see which paleographic date ranges overlap that moment, with real manuscript photographs where we have legal copies.
 
 **Live site (GitHub Pages):** https://severin12am.github.io/illustrative-manuscripts/
 
 ## What this is
 
+### Greek NT (corpus switch)
 - **94 Greek NT papyri** whose INTF Liste date overlaps 1–300 CE
-- **Original + translation** on every card: CNTR diplomatic Greek beside WEB English of the fragment, with SR GNT variant strips
-- **Wikimedia Commons photographs** (PD / CC) for **50** witnesses, shipped in `/public/witnesses/`
-- Honest **date ranges** from the [Kurzgefasste Liste](https://ntvmr.uni-muenster.de/liste/) — not fake exact years
-- Variant highlights vs open texts ([SBLGNT](https://github.com/LogosBible/SBLGNT), [SR GNT / CNTR](https://greekcntr.org/)) where verified
-- Deep links to [NTVMR](https://ntvmr.uni-muenster.de/) and [CSNTM](https://manuscripts.csntm.org/) for institutional scans
+- CNTR diplomatic Greek + WEB English + SR GNT variant strips
+- **50** Wikimedia Commons photographs in `/public/witnesses/`
+
+### Qurʾān (corpus switch)
+- **15 verified Hijazi / 1st-century AH** witnesses (hand-curated seed; expandable)
+- Dual **AH + CE** date ranges on cards; timeline ~610–720 CE with AH tick labels
+- Arabic rasm reference (Tanzil Uthmani, diacritics stripped) + **Pickthall 1930** (public domain)
+- Catalog spine: [Corpus Coranicum](https://corpuscoranicum.org/) (CC BY 4.0 metadata); library deep links
+- **3** Commons-hosted images (Birmingham, Parisino, Sanʿāʾ); others link to holding institutions
+
+### Shared
+- Honest **date ranges** — not fake point dates
+- Corpus switch keeps Qurʾān witnesses out of the NT year-150 view
 
 ## What this is not
 
@@ -29,9 +38,11 @@ Major uncials (Vaticanus, Sinaiticus, Alexandrinus) are **not** in this dataset 
 
 ```bash
 npm install
-npm run data      # regenerate from cached Liste (+ live API if reachable)
-npm run texts     # CNTR Greek + WEB English + SR variant strips
-npm run images    # refresh Commons downloads (slow; rate-limited)
+npm run data      # NT: regenerate from cached Liste
+npm run texts     # NT: CNTR Greek + WEB + SR variant strips
+npm run quran     # Qurʾān: build from scripts/quran-seed.json
+npm run images    # NT Commons downloads
+npm run quran-images  # Qurʾān Commons downloads
 npm run dev       # http://localhost:3000
 ```
 

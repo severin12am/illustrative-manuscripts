@@ -1,0 +1,18 @@
+{
+  "_comment": "Verified Wikimedia Commons files only. Run scripts/download-quran-commons.mjs",
+  "mingana-1572a": {
+    "file": "mingana-1572a.jpg",
+    "commons_title": "File:Birmingham Quran manuscript.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Birmingham_Quran_manuscript.jpg"
+  },
+  "parisino-328a": {
+    "file": "parisino-328a.jpg",
+    "commons_title": "File:Codex Parisino-petropolitanus, first leaf recto.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Codex_Parisino-petropolitanus,_first_leaf_recto.jpg"
+  },
+  "sanaa-dam-01-27-1": {
+    "file": "sanaa-palimpsest.jpg",
+    "commons_title": "File:Sana'a1 Stanford '07 recto.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Sana%27a1_Stanford_%2707_recto.jpg"
+  }
+}

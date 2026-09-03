@@ -2,31 +2,37 @@
 
 import { useMemo } from "react";
 import styles from "./Timeline.module.css";
-import { TIMELINE_START, TIMELINE_END } from "@/data/witnesses";
 import type { Witness } from "@/types/witness";
-import { formatYear } from "@/types/witness";
+import { ceToAhTick, formatYear } from "@/types/witness";
 
 interface TimelineProps {
   onYearSelect: (year: number) => void;
   selectedYear: number;
   filteredWitnesses: Witness[];
+  timelineStart: number;
+  timelineEnd: number;
+  showAhTicks?: boolean;
 }
 
 export default function Timeline({
   onYearSelect,
   selectedYear,
   filteredWitnesses,
+  timelineStart,
+  timelineEnd,
+  showAhTicks = false,
 }: TimelineProps) {
-  const min = TIMELINE_START;
-  const max = TIMELINE_END;
+  const min = timelineStart;
+  const max = timelineEnd;
 
   const ticks = useMemo(() => {
-    const result: number[] = [];
-    for (let y = 25; y <= max; y += 25) result.push(y);
-    if (!result.includes(1)) result.unshift(1);
-    if (!result.includes(300)) result.push(300);
+    const span = max - min;
+    const step = span <= 120 ? 10 : 25;
+    const result: number[] = [min];
+    for (let y = min + step; y < max; y += step) result.push(y);
+    if (!result.includes(max)) result.push(max);
     return result.sort((a, b) => a - b);
-  }, [max]);
+  }, [min, max]);
 
   const yearToPercent = (year: number) =>
     ((year - min) / (max - min)) * 100;
@@ -48,10 +54,17 @@ export default function Timeline({
     <div className={styles.timeline}>
       <div className={styles.header}>
         <span className={styles.rangeLabel}>
-          {formatYear(TIMELINE_START)} – {formatYear(TIMELINE_END)}
+          {formatYear(min)} – {formatYear(max)}
+          {showAhTicks && (
+            <span className={styles.ahRange}>
+              {" "}
+              (~{ceToAhTick(min)}–{ceToAhTick(max)} AH)
+            </span>
+          )}
         </span>
         <span className={styles.hint}>
-          Dates are paleographic ranges — scrub a year to slice through them
+          Dates are ranges — scrub a year to slice through them
+          {showAhTicks && " (CE; AH labels approximate on ticks)"}
         </span>
       </div>
 
@@ -66,7 +79,12 @@ export default function Timeline({
             aria-label={`Select year ${formatYear(year)}`}
           >
             <span className={styles.tickMark} />
-            <span className={styles.tickLabel}>{year}</span>
+            <span className={styles.tickLabel}>
+              {year}
+              {showAhTicks && year >= 622 && (
+                <span className={styles.tickAh}> ~{ceToAhTick(year)} AH</span>
+              )}
+            </span>
           </button>
         ))}
       </div>
