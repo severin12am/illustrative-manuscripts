@@ -1,4 +1,11 @@
-export type Corpus = "nt" | "ot" | "lxx" | "version" | "other";
+export type Corpus = "nt" | "quran" | "ot" | "lxx" | "version" | "other";
+export type QuranScript = "hijazi" | "kufic" | "other";
+
+export interface PalimpsestLayer {
+  id: string;
+  label: string;
+  description: string;
+}
 export type Material =
   | "papyrus"
   | "parchment"
@@ -48,6 +55,9 @@ export interface Witness {
   contents: string;
   date_start: number;
   date_end: number;
+  /** Hijri range when known (Quran corpus). */
+  ah_start?: number | null;
+  ah_end?: number | null;
   date_label: string;
   date_note: string;
   dating_method: string;
@@ -56,15 +66,20 @@ export interface Witness {
   find_year_or_note: string;
   current_institution: string;
   current_shelfmark: string;
+  script?: QuranScript;
+  palimpsest?: boolean;
+  layers?: PalimpsestLayer[] | null;
+  corpus_coranicum_url?: string;
+  library_url?: string;
   image_policy: ImagePolicy;
   hosted_image: string | null;
   image_attribution: ImageAttribution | null;
   commons_url?: string;
   source_page_url?: string;
-  ntvmr_url: string;
+  ntvmr_url?: string;
   csntm_url?: string;
   cntr_url?: string;
-  docID: number;
+  docID?: number;
   translation: string;
   modern_base_text: string;
   known_variants: KnownVariant[];
@@ -75,6 +90,38 @@ export interface Witness {
 export function formatYear(year: number): string {
   if (year < 0) return `${Math.abs(year)} BCE`;
   return `${year} CE`;
+}
+
+export function formatAhYear(ah: number): string {
+  if (ah <= 0) return "pre-1 AH";
+  return `${ah} AH`;
+}
+
+export function formatAhRange(start: number | null | undefined, end: number | null | undefined): string | null {
+  if (start == null && end == null) return null;
+  if (start != null && end != null) {
+    if (start <= 0 && end > 0) return `pre-1 – ${end} AH`;
+    if (start === end) return formatAhYear(start);
+    return `${formatAhYear(start)} – ${formatAhYear(end)}`;
+  }
+  if (start != null) return `${formatAhYear(start)}+`;
+  return `≤ ${formatAhYear(end!)}`;
+}
+
+/** Rough CE→AH label for timeline ticks (linear map 622 CE = 1 AH, 719 CE ≈ 100 AH). */
+export function ceToAhTick(ce: number): number {
+  return Math.round(((ce - 622) / (719 - 622)) * 99 + 1);
+}
+
+export function formatDualDateRange(
+  ceStart: number,
+  ceEnd: number,
+  ahStart?: number | null,
+  ahEnd?: number | null
+): string {
+  const ce = formatDateRange(ceStart, ceEnd);
+  const ah = formatAhRange(ahStart, ahEnd);
+  return ah ? `${ce} · ${ah}` : ce;
 }
 
 export function formatDateRange(start: number, end: number): string {

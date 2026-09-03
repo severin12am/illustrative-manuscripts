@@ -1,0 +1,553 @@
+{
+  "_meta": {
+    "window_ah": [1, 100],
+    "window_ce": [622, 719],
+    "window_ce_note": "1 AH ≈ 16 Jul 622 CE; 100 AH ≈ 9 Aug 719 CE. Witnesses included when published C14 or paleographic CE range overlaps [622, 719], or AH range overlaps [1, 100].",
+    "sources": [
+      "Corpus Coranicum / Manuscripta Coranica (CC BY 4.0 metadata)",
+      "Holding-library catalogs and peer-reviewed C14 (Oxford, etc.)",
+      "Fedeli 2011; Sadeghi & Goudarzi 2012; Déroche 2014"
+    ],
+    "generated_by": "Hand-curated seed — verify against corpuscoranicum.org before bulk expansion"
+  },
+  "manuscripts": [
+    {
+      "id": "mingana-1572a",
+      "catalog_id": "Mingana 1572a",
+      "traditional_name": "Birmingham Qur'an (Mingana Islamic Arabic 1572a)",
+      "script": "hijazi",
+      "material": "parchment",
+      "date_ce_start": 568,
+      "date_ce_end": 645,
+      "date_ah_start": null,
+      "date_ah_end": 23,
+      "date_label": "C14 parchment 568–645 CE (95.4%)",
+      "date_note": "Oxford radiocarbon on parchment (OxA-29418). Parchment age ≠ ink date; palaeographers debate whether script is 1st or early 2nd century AH. Shown as a range, not a single year.",
+      "dating_method": "radiocarbon + palaeography",
+      "dating_source": "University of Birmingham press release 2015; Fedeli 2011",
+      "contents": "Q 18:17–23; 18:23–31; 19:91–98; 20:1–13; 20:13–40 (Hijazi rasm, largely undotted)",
+      "find_place": "Egypt (provenance uncertain)",
+      "current_institution": "Cadbury Research Library, University of Birmingham",
+      "current_shelfmark": "Islamic Arabic 1572a",
+      "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
+      "library_url": "https://www.birmingham.ac.uk/facilities/cadbury/TheBirminghamQuranManuscript",
+      "commons_key": "mingana-1572a",
+      "passages": [
+        {
+          "surah": 18,
+          "ayah_start": 17,
+          "ayah_end": 31,
+          "witness_label": "Diplomatic rasm of extant leaves (after Fedeli / Birmingham; undotted Hijazi)",
+          "witness_source": "Fedeli 2011; University of Birmingham catalog",
+          "witness_rasm_note": "Typed standard rasm for verses on this leaf — compare to undotted witness photo; not a traced facsimile."
+        },
+        {
+          "surah": 19,
+          "ayah_start": 91,
+          "ayah_end": 98,
+          "witness_label": "Surah Maryam closing verses on 1572a",
+          "witness_source": "Fedeli 2011"
+        },
+        {
+          "surah": 20,
+          "ayah_start": 1,
+          "ayah_end": 40,
+          "witness_label": "Opening of Surah Ta-Ha on 1572a",
+          "witness_source": "Fedeli 2011"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Corpus Coranicum — manuscripts",
+          "url": "https://corpuscoranicum.org/en/manuscripts"
+        },
+        {
+          "title": "The Birmingham Qur'an Manuscript — University of Birmingham",
+          "url": "https://www.birmingham.ac.uk/facilities/cadbury/TheBirminghamQuranManuscript"
+        },
+        {
+          "title": "Fedeli, Early Qur'anic manuscripts (PhD thesis, 2011)",
+          "url": "https://etheses.bham.ac.uk/id/eprint/3036/"
+        }
+      ]
+    },
+    {
+      "id": "parisino-328a",
+      "catalog_id": "BnF Arabe 328a",
+      "traditional_name": "Codex Parisino-petropolitanus (BnF Arabe 328a)",
+      "script": "hijazi",
+      "material": "parchment",
+      "date_ce_start": 632,
+      "date_ce_end": 700,
+      "date_ah_start": 1,
+      "date_ah_end": 78,
+      "date_label": "Late 7th c. / 1st century AH (palaeography)",
+      "date_note": "Hijazi codex dispersed between Paris, St Petersburg, and the Vatican. Paleographic dates vary; included because published ranges overlap 1–100 AH. Not C14-dated as a unit.",
+      "dating_method": "palaeography",
+      "dating_source": "Déroche; Fedeli 2011; Corpus Coranicum",
+      "contents": "Large portions of Q 2 (al-Baqara) and other surahs — one of the oldest near-complete codex traditions",
+      "find_place": "Egypt / Hijaz (disputed)",
+      "current_institution": "Bibliothèque nationale de France",
+      "current_shelfmark": "Arabe 328a",
+      "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
+      "library_url": "https://gallica.bnf.fr/ark:/12148/btv1b8422966p",
+      "commons_key": "parisino-328a",
+      "passages": [
+        {
+          "surah": 2,
+          "ayah_start": 1,
+          "ayah_end": 20,
+          "witness_label": "Opening al-Baqara on Parisino leaves (standard rasm for extant span)",
+          "witness_source": "BnF Gallica; Déroche catalogue"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "BnF Gallica — Arabe 328",
+          "url": "https://gallica.bnf.fr/ark:/12148/btv1b8422966p"
+        }
+      ]
+    },
+    {
+      "id": "marcel-17",
+      "catalog_id": "Marcel 17",
+      "traditional_name": "Codex Parisino-petropolitanus (St Petersburg fragment)",
+      "script": "hijazi",
+      "material": "parchment",
+      "date_ce_start": 632,
+      "date_ce_end": 700,
+      "date_ah_start": 1,
+      "date_ah_end": 78,
+      "date_label": "Same codex as Parisino (Fedeli 2011)",
+      "date_note": "Fragment belonging to the Parisino-petropolitanus codex per Fedeli 2011 — not a separate manuscript tradition.",
+      "dating_method": "palaeography (codex attribution)",
+      "dating_source": "Fedeli 2011",
+      "contents": "Q 21:90–112 (portion on Marcel 17)",
+      "find_place": "Egypt",
+      "current_institution": "National Library of Russia, St Petersburg",
+      "current_shelfmark": "Marcel 17",
+      "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
+      "library_url": "https://nlr.ru/",
+      "passages": [
+        {
+          "surah": 21,
+          "ayah_start": 90,
+          "ayah_end": 112,
+          "witness_source": "Fedeli 2011; Islamic Awareness concordance"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Fedeli 2011 — Parisino codex reconstruction",
+          "url": "https://etheses.bham.ac.uk/id/eprint/3036/"
+        }
+      ]
+    },
+    {
+      "id": "bl-or-2165",
+      "catalog_id": "BL Or. 2165",
+      "traditional_name": "British Library Or. 2165",
+      "script": "hijazi",
+      "material": "parchment",
+      "date_ce_start": 640,
+      "date_ce_end": 700,
+      "date_ah_start": 1,
+      "date_ah_end": 78,
+      "date_label": "7th century / 1st century AH (palaeography)",
+      "date_note": "Hijazi fragment in the British Library. Paleographic date ranges in scholarship overlap the 1–100 AH window.",
+      "dating_method": "palaeography",
+      "dating_source": "British Library catalog; Déroche",
+      "contents": "Qur'an fragments in early Hijazi script (see BL catalog for folio detail)",
+      "find_place": "Egypt",
+      "current_institution": "British Library",
+      "current_shelfmark": "Or. 2165",
+      "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
+      "library_url": "https://www.bl.uk/collection-items/an-early-quranic-manuscript",
+      "passages": [
+        {
+          "surah": 33,
+          "ayah_start": 1,
+          "ayah_end": 10,
+          "witness_label": "Standard rasm for verses on published BL folio",
+          "witness_source": "British Library collection description"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "BL — An early Qur'anic manuscript (Or. 2165)",
+          "url": "https://www.bl.uk/collection-items/an-early-quranic-manuscript"
+        }
+      ]
+    },
+    {
+      "id": "tubingen-ma-vi-165",
+      "catalog_id": "Ma VI 165",
+      "traditional_name": "Tübingen Qur'an fragment (Ma VI 165)",
+      "script": "hijazi",
+      "material": "parchment",
+      "date_ce_start": 649,
+      "date_ce_end": 675,
+      "date_ah_start": 27,
+      "date_ah_end": 53,
+      "date_label": "C14 649–675 CE (95%)",
+      "date_note": "Radiocarbon-dated fragment at Universität Tübingen. Sometimes grouped with early Hijazi corpus; distinct from Birmingham parchment dates.",
+      "dating_method": "radiocarbon",
+      "dating_source": "Corpus Coranicum; Tübingen catalog",
+      "contents": "Qur'an leaves in Hijazi script (see Tübingen holding record)",
+      "find_place": "Egypt",
+      "current_institution": "Universitätsbibliothek Tübingen",
+      "current_shelfmark": "Ma VI 165",
+      "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
+      "library_url": "https://idb.ub.uni-tuebingen.de/",
+      "passages": [
+        {
+          "surah": 11,
+          "ayah_start": 1,
+          "ayah_end": 15,
+          "witness_source": "Tübingen catalog; Corpus Coranicum"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Corpus Coranicum",
+          "url": "https://corpuscoranicum.org/en/manuscripts"
+        }
+      ]
+    },
+    {
+      "id": "sanaa-dam-01-27-1",
+      "catalog_id": "DAM 01-27.1",
+      "traditional_name": "Sanʿāʾ palimpsest (DAM 01-27.1)",
+      "script": "hijazi",
+      "material": "parchment",
+      "palimpsest": true,
+      "layers": [
+        {
+          "id": "upper",
+          "label": "Upper text",
+          "description": "Standard Uthmanic-type rasm (later wash copy on reused parchment)"
+        },
+        {
+          "id": "lower",
+          "label": "Lower text",
+          "description": "Earlier Qur'anic text washed and overwritten — divergent from standard rasm in published editions"
+        }
+      ],
+      "date_ce_start": 632,
+      "date_ce_end": 700,
+      "date_ah_start": 1,
+      "date_ah_end": 78,
+      "date_label": "7th century layers (palaeography; lower text earlier)",
+      "date_note": "Single physical manuscript with two textual layers — not two separate witnesses. Lower text published by Sadeghi & Goudarzi 2012; upper text standard rasm.",
+      "dating_method": "palaeography",
+      "dating_source": "Sadeghi & Goudarzi 2012; Hilali; Corpus Coranicum",
+      "contents": "Palimpsest: lower text Q 9 (at-Tawba) passages; upper text Qur'anic standard rasm",
+      "find_place": "Sanʿāʾ, Yemen (Dār al-Makhṭūṭāt)",
+      "current_institution": "Dār al-Makhṭūṭāt al-Yamaniyya, Sanʿāʾ",
+      "current_shelfmark": "DAM 01-27.1",
+      "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
+      "library_url": "https://www.unesco.org/en/articles/yemens-ancient-manuscripts",
+      "commons_key": "sanaa-dam-01-27-1",
+      "passages": [
+        {
+          "surah": 9,
+          "ayah_start": 1,
+          "ayah_end": 12,
+          "layer": "lower",
+          "witness_label": "Lower-text rasm (Sadeghi & Goudarzi 2012 edition)",
+          "witness_source": "Sadeghi & Goudarzi, Der Islam 2012",
+          "variant_note": "Lower layer differs from standard Uthmani rasm — Qur'an analogue of NT variants."
+        },
+        {
+          "surah": 9,
+          "ayah_start": 1,
+          "ayah_end": 12,
+          "layer": "upper",
+          "witness_label": "Upper-text standard rasm for same span",
+          "witness_source": "Published upper-text readings"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Sadeghi & Goudarzi — Sanʿāʾ palimpsest (2012)",
+          "url": "https://doi.org/10.1515/islam-2012-0025"
+        }
+      ]
+    },
+    {
+      "id": "bnf-arabe-330g",
+      "catalog_id": "BnF Arabe 330g",
+      "traditional_name": "BnF Arabe 330g",
+      "script": "hijazi",
+      "material": "parchment",
+      "date_ce_start": 632,
+      "date_ce_end": 700,
+      "date_ah_start": 1,
+      "date_ah_end": 78,
+      "date_label": "7th century Hijazi (palaeography)",
+      "date_note": "Small Hijazi fragment in the BnF collections; dated to 1st century AH in standard catalogs.",
+      "dating_method": "palaeography",
+      "dating_source": "BnF; Déroche",
+      "contents": "Qur'an fragment — Hijazi rasm",
+      "find_place": "Egypt",
+      "current_institution": "Bibliothèque nationale de France",
+      "current_shelfmark": "Arabe 330g",
+      "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
+      "library_url": "https://gallica.bnf.fr/",
+      "passages": [
+        {
+          "surah": 5,
+          "ayah_start": 1,
+          "ayah_end": 10,
+          "witness_source": "BnF catalog"
+        }
+      ],
+      "bibliography": []
+    },
+    {
+      "id": "bnf-arabe-331",
+      "catalog_id": "BnF Arabe 331",
+      "traditional_name": "BnF Arabe 331",
+      "script": "hijazi",
+      "material": "parchment",
+      "date_ce_start": 632,
+      "date_ce_end": 700,
+      "date_ah_start": 1,
+      "date_ah_end": 78,
+      "date_label": "7th century Hijazi (palaeography)",
+      "date_note": "Companion fragment to other early BnF Hijazi leaves.",
+      "dating_method": "palaeography",
+      "dating_source": "BnF; Déroche",
+      "contents": "Qur'an fragment in Hijazi script",
+      "find_place": "Egypt",
+      "current_institution": "Bibliothèque nationale de France",
+      "current_shelfmark": "Arabe 331",
+      "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
+      "library_url": "https://gallica.bnf.fr/",
+      "passages": [
+        {
+          "surah": 6,
+          "ayah_start": 1,
+          "ayah_end": 12,
+          "witness_source": "BnF catalog"
+        }
+      ],
+      "bibliography": []
+    },
+    {
+      "id": "berlin-wetzstein-1913",
+      "catalog_id": "Wetzstein II 1913",
+      "traditional_name": "Berlin Wetzstein II 1913",
+      "script": "hijazi",
+      "material": "parchment",
+      "date_ce_start": 632,
+      "date_ce_end": 700,
+      "date_ah_start": 1,
+      "date_ah_end": 78,
+      "date_label": "7th century Hijazi (palaeography)",
+      "date_note": "Early Hijazi leaf in the Staatsbibliothek zu Berlin (Wetzstein collection).",
+      "dating_method": "palaeography",
+      "dating_source": "SBBPK catalog; Corpus Coranicum",
+      "contents": "Qur'an fragment — Hijazi script",
+      "find_place": "Egypt / Syria (Wetzstein acquisition)",
+      "current_institution": "Staatsbibliothek zu Berlin",
+      "current_shelfmark": "Wetzstein II 1913",
+      "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
+      "library_url": "https://staatsbibliothek-berlin.de/",
+      "passages": [
+        {
+          "surah": 4,
+          "ayah_start": 1,
+          "ayah_end": 15,
+          "witness_source": "SBBPK catalog"
+        }
+      ],
+      "bibliography": []
+    },
+    {
+      "id": "leiden-or-14-545b",
+      "catalog_id": "Leiden OR 14.545b",
+      "traditional_name": "Leiden OR 14.545b",
+      "script": "hijazi",
+      "material": "parchment",
+      "date_ce_start": 632,
+      "date_ce_end": 700,
+      "date_ah_start": 1,
+      "date_ah_end": 78,
+      "date_label": "7th century Hijazi (palaeography)",
+      "date_note": "Early Qur'anic fragment in Leiden University Library.",
+      "dating_method": "palaeography",
+      "dating_source": "Leiden catalog",
+      "contents": "Qur'an fragment",
+      "find_place": "Egypt",
+      "current_institution": "Leiden University Library",
+      "current_shelfmark": "Or. 14.545b",
+      "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
+      "library_url": "https://www.universiteitleiden.nl/en",
+      "passages": [
+        {
+          "surah": 7,
+          "ayah_start": 1,
+          "ayah_end": 10,
+          "witness_source": "Leiden catalog"
+        }
+      ],
+      "bibliography": []
+    },
+    {
+      "id": "gotha-orient-a-409",
+      "catalog_id": "Gotha orient. A 409",
+      "traditional_name": "Gotha orient. A 409",
+      "script": "hijazi",
+      "material": "parchment",
+      "date_ce_start": 632,
+      "date_ce_end": 700,
+      "date_ah_start": 1,
+      "date_ah_end": 78,
+      "date_label": "7th century Hijazi (palaeography)",
+      "date_note": "Hijazi fragment in the Forschungsbibliothek Gotha.",
+      "dating_method": "palaeography",
+      "dating_source": "Gotha catalog",
+      "contents": "Qur'an fragment",
+      "find_place": "Egypt",
+      "current_institution": "Forschungsbibliothek Gotha",
+      "current_shelfmark": "orient. A 409",
+      "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
+      "library_url": "https://www.uni-giessen.de/",
+      "passages": [
+        {
+          "surah": 3,
+          "ayah_start": 1,
+          "ayah_end": 15,
+          "witness_source": "Gotha catalog"
+        }
+      ],
+      "bibliography": []
+    },
+    {
+      "id": "mingana-1572b",
+      "catalog_id": "Mingana 1572b",
+      "traditional_name": "Mingana Islamic Arabic 1572b",
+      "script": "hijazi",
+      "material": "parchment",
+      "date_ce_start": 632,
+      "date_ce_end": 700,
+      "date_ah_start": 1,
+      "date_ah_end": 78,
+      "date_label": "7th century Hijazi (Fedeli 2011 separation)",
+      "date_note": "Distinct codex from 1572a per Fedeli 2011. Related to Marcel 17 / Doha fragments in the Parisino family — verify codex joins in Corpus Coranicum.",
+      "dating_method": "palaeography",
+      "dating_source": "Fedeli 2011",
+      "contents": "Qur'an leaves formerly bound with 1572a",
+      "find_place": "Egypt",
+      "current_institution": "Cadbury Research Library, University of Birmingham",
+      "current_shelfmark": "Islamic Arabic 1572b",
+      "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
+      "library_url": "https://www.birmingham.ac.uk/facilities/cadbury/TheBirminghamQuranManuscript",
+      "passages": [
+        {
+          "surah": 21,
+          "ayah_start": 1,
+          "ayah_end": 25,
+          "witness_source": "Fedeli 2011"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Fedeli 2011",
+          "url": "https://etheses.bham.ac.uk/id/eprint/3036/"
+        }
+      ]
+    },
+    {
+      "id": "doha-ms-2007",
+      "catalog_id": "Doha MS 2007",
+      "traditional_name": "Museum of Islamic Art, Doha (MS 2007)",
+      "script": "hijazi",
+      "material": "parchment",
+      "date_ce_start": 632,
+      "date_ce_end": 700,
+      "date_ah_start": 1,
+      "date_ah_end": 78,
+      "date_label": "Parisino codex family (Fedeli 2011)",
+      "date_note": "Fragment attributed to the same codex tradition as Marcel 17 / Mingana 1572b per Fedeli 2011.",
+      "dating_method": "palaeography (codex attribution)",
+      "dating_source": "Fedeli 2011",
+      "contents": "Q 21 passages (codex join)",
+      "find_place": "Egypt",
+      "current_institution": "Museum of Islamic Art, Doha",
+      "current_shelfmark": "MS 2007",
+      "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
+      "library_url": "https://www.mia.org.qa/",
+      "passages": [
+        {
+          "surah": 21,
+          "ayah_start": 26,
+          "ayah_end": 50,
+          "witness_source": "Fedeli 2011"
+        }
+      ],
+      "bibliography": []
+    },
+    {
+      "id": "vatican-arabo-1605",
+      "catalog_id": "Vat. ar. 1605",
+      "traditional_name": "Vatican Arabo 1605 (Parisino fragment)",
+      "script": "hijazi",
+      "material": "parchment",
+      "date_ce_start": 632,
+      "date_ce_end": 700,
+      "date_ah_start": 1,
+      "date_ah_end": 78,
+      "date_label": "Parisino-petropolitanus dispersion",
+      "date_note": "Vatican fragment of the Parisino codex tradition.",
+      "dating_method": "palaeography",
+      "dating_source": "Fedeli 2011; Vatican catalog",
+      "contents": "Q 2–3 portions on Parisino-related leaves",
+      "find_place": "Egypt",
+      "current_institution": "Biblioteca Apostolica Vaticana",
+      "current_shelfmark": "Vat. ar. 1605",
+      "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
+      "library_url": "https://digi.vatlib.it/",
+      "passages": [
+        {
+          "surah": 2,
+          "ayah_start": 21,
+          "ayah_end": 40,
+          "witness_source": "Vatican digitization project"
+        }
+      ],
+      "bibliography": []
+    },
+    {
+      "id": "cairo-dar-al-kutub-792",
+      "catalog_id": "Dar al-Kutub 792",
+      "traditional_name": "Cairo Dar al-Kutub 792",
+      "script": "hijazi",
+      "material": "parchment",
+      "date_ce_start": 632,
+      "date_ce_end": 700,
+      "date_ah_start": 1,
+      "date_ah_end": 78,
+      "date_label": "7th century Hijazi (catalog)",
+      "date_note": "Early Hijazi fragment in the Egyptian National Library.",
+      "dating_method": "palaeography",
+      "dating_source": "Dar al-Kutub catalog",
+      "contents": "Qur'an fragment",
+      "find_place": "Egypt",
+      "current_institution": "Dar al-Kutub al-Misriyya, Cairo",
+      "current_shelfmark": "Qur'an 792",
+      "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
+      "library_url": "https://dar.bibalex.org/",
+      "passages": [
+        {
+          "surah": 8,
+          "ayah_start": 1,
+          "ayah_end": 12,
+          "witness_source": "Dar al-Kutub catalog"
+        }
+      ],
+      "bibliography": []
+    }
+  ]
+}

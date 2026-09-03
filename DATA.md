@@ -1,6 +1,28 @@
 # Data provenance and gaps
 
-## v1 window: 1–300 CE
+## Corpus switch
+
+| Mode | Window | Catalog spine |
+|------|--------|---------------|
+| Greek NT | 1–300 CE overlap | [INTF Liste](https://ntvmr.uni-muenster.de/liste/) |
+| Qurʾān | 1–100 AH (~622–719 CE overlap) | [Corpus Coranicum](https://corpuscoranicum.org/) (hand-curated seed) |
+
+## Qurʾān window: 1–100 AH
+
+Witnesses are included when a published **C14 or paleographic CE range** overlaps `[622, 719]` CE (approx. 1–100 AH), or when an AH range overlaps `[1, 100]`:
+
+- `date_start ≤ 719` AND `date_end ≥ 622` (CE)
+- Later **Kufic display mushafs** (8th–9th c. starting after 100 AH) are **out** unless a published range genuinely overlaps.
+- **15 witnesses** in `scripts/quran-seed.json` (verify each against Corpus Coranicum before expanding).
+- **3/15** Commons images (Birmingham Mingana 1572a, Parisino 328a, Sanʿāʾ DAM 01-27.1).
+- Arabic reference text: Tanzil Uthmani via [fawazahmed0/quran-api](https://github.com/fawazahmed0/quran-api) (diacritics stripped for rasm comparison — see [tanzil.net](https://tanzil.net) license).
+- English: **Pickthall 1930** (public domain) via same API.
+- **Not** traced facsimiles: cards show standard rasm for verses on each leaf unless a CC transliteration is added to the seed.
+- Sanʿāʾ DAM 01-27.1: **one physical manuscript**, upper + lower palimpsest layers — not two fake witnesses.
+
+Regenerate: `node scripts/build-quran-data.mjs`
+
+## Greek NT window: 1–300 CE
 
 Witnesses are included when their **INTF Kurzgefasste Liste** paleographic range overlaps `[1, 300]`:
 
@@ -29,11 +51,15 @@ We do **not** host NA28/UBS5/BHQ apparatus (Deutsche Bibelgesellschaft copyright
 # Requires network access to ntvmr.uni-muenster.de (falls back to cache)
 node scripts/generate-data.mjs
 
-# CNTR transcriptions + WEB + SR GNT collation (required for running text)
+# CNTR transcriptions + WEB + SR GNT collation (NT)
 node scripts/build-texts.mjs
+
+# Qurʾān witness + text bundles
+node scripts/build-quran-data.mjs
 
 # Download/update Commons images (rate-limited; be patient)
 node scripts/download-commons.mjs
+node scripts/download-quran-commons.mjs
 ```
 
 ## Running text (CNTR + WEB)

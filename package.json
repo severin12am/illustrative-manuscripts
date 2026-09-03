@@ -9,7 +9,9 @@
     "lint": "next lint",
     "data": "node scripts/generate-data.mjs",
     "texts": "node scripts/build-texts.mjs",
-    "images": "node scripts/download-commons.mjs"
+    "quran": "node scripts/build-quran-data.mjs",
+    "images": "node scripts/download-commons.mjs",
+    "quran-images": "node scripts/download-quran-commons.mjs"
   },
   "dependencies": {
     "next": "^15.1.0",

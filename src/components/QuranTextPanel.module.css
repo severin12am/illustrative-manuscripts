@@ -1,0 +1,174 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.unavailable {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px dashed rgba(201, 162, 39, 0.25);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.panelHeader {
+  border-bottom: 1px solid rgba(201, 162, 39, 0.12);
+  padding-bottom: 0.75rem;
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--gold-light);
+  margin-bottom: 0.25rem;
+}
+
+.subhead,
+.diffCount {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.diffCount {
+  color: var(--gold-light);
+  margin-top: 0.5rem;
+}
+
+.ayahList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.ayahRow {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(201, 162, 39, 0.08);
+}
+
+.ref {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gold);
+  margin-bottom: 0.6rem;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.colLabel {
+  display: block;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.arabicCol {
+  border-right: 1px solid rgba(201, 162, 39, 0.1);
+  padding-right: 0.75rem;
+}
+
+.arabicStandard {
+  font-family: var(--font-arabic, "Noto Naskh Arabic", serif);
+  font-size: 1.25rem;
+  line-height: 1.9;
+  color: var(--parchment);
+  margin: 0 0 0.5rem;
+  text-align: right;
+}
+
+.witnessNote,
+.sourceNote,
+.transNote {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin: 0.25rem 0 0;
+  font-style: italic;
+}
+
+.english {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--parchment);
+  margin: 0;
+}
+
+.variantList {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+}
+
+.variantStrip {
+  padding-top: 0.6rem;
+  border-top: 1px solid rgba(201, 162, 39, 0.1);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.5rem;
+  align-items: baseline;
+}
+
+.kindBadge {
+  font-size: 0.62rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+  background: rgba(201, 162, 39, 0.15);
+  color: var(--gold);
+}
+
+.vsLabel {
+  font-weight: 600;
+  color: var(--gold);
+}
+
+.vsWitness,
+.vsBase {
+  font-family: var(--font-arabic, "Noto Naskh Arabic", serif);
+}
+
+.ayahNote {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.attr {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  border-top: 1px solid rgba(201, 162, 39, 0.08);
+  padding-top: 0.75rem;
+}
+
+.hint {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 700px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+
+  .arabicCol {
+    border-right: none;
+    border-bottom: 1px solid rgba(201, 162, 39, 0.1);
+    padding-right: 0;
+    padding-bottom: 0.75rem;
+  }
+}

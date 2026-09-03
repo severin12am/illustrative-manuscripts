@@ -53,6 +53,43 @@
   color: var(--gold-light);
 }
 
+.corpusSwitch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 0.25rem;
+}
+
+.corpusBtn {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(201, 162, 39, 0.25);
+  color: var(--text-muted);
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+}
+
+.corpusBtn:hover {
+  border-color: var(--gold);
+  color: var(--gold-light);
+}
+
+.corpusActive {
+  background: rgba(107, 31, 42, 0.55);
+  border-color: var(--gold);
+  color: var(--parchment);
+}
+
+.completeness {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.75rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+
 .controls {
   max-width: 1100px;
   margin: 0 auto;

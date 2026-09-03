@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Source_Serif_4, Gentium_Plus } from "next/font/google";
+import { Cormorant_Garamond, Source_Serif_4, Gentium_Plus, Noto_Naskh_Arabic } from "next/font/google";
 import "./globals.css";
 
 const display = Cormorant_Garamond({
@@ -20,6 +20,12 @@ const greek = Gentium_Plus({
   variable: "--font-greek",
 });
 
+const arabic = Noto_Naskh_Arabic({
+  subsets: ["arabic"],
+  weight: ["400", "700"],
+  variable: "--font-arabic",
+});
+
 export const metadata: Metadata = {
   title: "Illustrative Manuscripts",
   description:
@@ -32,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable} ${greek.variable}`}>
+    <html lang="en" className={`${display.variable} ${body.variable} ${greek.variable} ${arabic.variable}`}>
       <body>{children}</body>
     </html>
   );

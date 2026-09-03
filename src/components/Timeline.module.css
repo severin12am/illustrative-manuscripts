@@ -24,6 +24,17 @@
   font-style: italic;
 }
 
+.ahRange {
+  font-size: 0.95rem;
+  color: var(--gold);
+}
+
+.tickAh {
+  display: block;
+  font-size: 0.58rem;
+  opacity: 0.85;
+}
+
 .axis {
   position: relative;
   height: 44px;
