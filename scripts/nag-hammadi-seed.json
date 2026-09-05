@@ -1,0 +1,547 @@
+{
+  "_meta": {
+    "window_ce": [300, 400],
+    "window_ce_note": "Paleographic date range of the physical Nag Hammadi codices (~mid 4th c. CE). Composition of individual tractates may be earlier; cards date the witnesses (codices), not speculative composition dates. Discovery at Jabal al-Tarif was December 1945 — not a writing date.",
+    "sources": [
+      "Claremont Nag Hammadi Archive (IIIF embed only)",
+      "Coptic Scriptorium diplomatic editions (CC-BY 4.0 where used)",
+      "Coptic Museum Cairo / Jung Institute provenance catalogs",
+      "Layton, Nag Hammadi Codex II, 2–7 (Brill 1989) — metadata only"
+    ],
+    "generated_by": "Hand-curated seed — not all 52 tractates; expand against open image/text licenses"
+  },
+  "manuscripts": [
+    {
+      "id": "nhc-ii-gospel-thomas",
+      "catalog_id": "NHC II,2",
+      "traditional_name": "Gospel of Thomas (Nag Hammadi Codex II)",
+      "tractate": "Gospel of Thomas",
+      "nhc_siglum": "CG II,2",
+      "language": "Coptic (Sahidic)",
+      "material": "papyrus",
+      "date_ce_start": 300,
+      "date_ce_end": 400,
+      "date_label": "ca. 350 CE (paleography of Codex II)",
+      "date_note": "Single Sahidic codex copied ca. mid 4th c. CE (Layton; Robinson). The Gospel of Thomas tractate may have been composed earlier; this card dates the physical witness.",
+      "dating_method": "palaeography",
+      "dating_source": "Layton, NHS 20–21 (1989); Robinson, NHLE",
+      "contents": "Complete Coptic Gospel of Thomas (logia 1–114) on Codex II pp. 32–51 — the only full ancient copy",
+      "find_place": "Jabal al-Tarif, near Nag Hammadi, Upper Egypt",
+      "find_year_note": "Discovered December 1945; copied ca. 350 CE",
+      "current_institution": "Coptic Museum, Cairo",
+      "current_shelfmark": "Inv. 10544 (Codex II)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2877",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/2877/manifest.json",
+        "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:2877/full/800,/0/default.jpg",
+        "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2877",
+        "attribution": {
+          "institution": "Claremont Colleges Digital Library / Nag Hammadi Archive",
+          "license": "© institution — IIIF embed only",
+          "attribution_required": true,
+          "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2877",
+          "note": "Physical rights retained by holding institution. Do not rehost scans."
+        }
+      },
+      "passages": [
+        {
+          "tractate": "Gospel of Thomas",
+          "reference": "Logion 1",
+          "logion": 1,
+          "codex_page": 32,
+          "coptic": "ⲛⲁⲉⲓⲛⲉⲛ̄ϣⲁϫⲉⲉⲑⲏⲡ⳿ ⲉⲛⲧⲁⲓ︤ⲥ︥ⲉⲧⲟⲛϩ ϫⲟⲟⲩⲁⲩⲱⲁϥⲥϩⲁⲓ̈ⲥⲟⲩⲛ̄ϭⲓⲇⲓⲇⲩⲙⲟⲥ ⲓ̈ⲟⲩⲇⲁⲥⲑⲱⲙⲁⲥ",
+          "coptic_label": "Diplomatic opening (Codex II, p. 32 — after Coptic Scriptorium NHAM.02)",
+          "coptic_source": "Coptic Scriptorium (CC-BY 4.0)",
+          "english": "These are the secret sayings that the living Jesus spoke and Didymus Judas Thomas wrote down.",
+          "english_label": "English of this logion",
+          "english_source": "Display rendering aligned to Coptic Scriptorium diplomatic (not Lambdin/Robinson copyrighted editions)"
+        },
+        {
+          "tractate": "Gospel of Thomas",
+          "reference": "Logion 2",
+          "logion": 2,
+          "codex_page": 32,
+          "coptic": "ⲡⲉϫⲉⲓ︤ⲥ︥ ϫⲉϥⲛⲁⲗⲟⲛ̄ϭⲓⲡⲉⲧ⳿ϣⲓⲛⲉ ⲉϥ⳿ϣⲓⲛⲉ ϣⲁⲛⲧⲉϥ⳿ϭⲓⲛⲉ",
+          "coptic_label": "Diplomatic excerpt, logion 2 opening",
+          "coptic_source": "Coptic Scriptorium (CC-BY 4.0)",
+          "english": "Jesus said: Let one who seeks continue seeking until he finds. When he finds, he will be troubled, and when he is troubled he will marvel and will reign over the All.",
+          "english_label": "English of this logion",
+          "english_source": "Display rendering; Greek overlap in P.Oxy. 654 follows Grenfell & Hunt 1904 (PD) where applicable"
+        },
+        {
+          "tractate": "Gospel of Thomas",
+          "reference": "Logion 3",
+          "logion": 3,
+          "codex_page": 33,
+          "coptic": "ⲡⲉϫⲉⲓ︤ⲥ︥ ϫⲉⲉⲓⲥϩⲏⲏⲧⲉ ⲉⲧ⳿ⲙⲛⲧⲉⲣⲟϩⲛ̄ⲧⲡⲉ",
+          "coptic_label": "Diplomatic excerpt, logion 3 opening",
+          "coptic_source": "Coptic Scriptorium (CC-BY 4.0)",
+          "english": "Jesus said: If those who lead you say to you, 'See, the kingdom is in heaven,' then the birds of heaven will precede you.",
+          "english_label": "English of this logion",
+          "english_source": "Display rendering aligned to diplomatic Coptic"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Claremont Nag Hammadi Archive — Codex II, p. 40",
+          "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2877"
+        },
+        {
+          "title": "Coptic Scriptorium — Gospel of Thomas (NHAM.02)",
+          "url": "https://data.copticscriptorium.org/texts/thomasgospel/gospel-of-thomas/"
+        },
+        {
+          "title": "NASSCAL — Cairo, Coptic Museum Inv. 10544",
+          "url": "https://www.nasscal.com/manuscripta-apocryphorum/cairo-coptic-museum-inv-10544-nag-hammadi-codex-ii/"
+        }
+      ]
+    },
+    {
+      "id": "nhc-ii-gospel-philip",
+      "catalog_id": "NHC II,3",
+      "traditional_name": "Gospel of Philip (Nag Hammadi Codex II)",
+      "tractate": "Gospel of Philip",
+      "nhc_siglum": "CG II,3",
+      "language": "Coptic (Sahidic)",
+      "material": "papyrus",
+      "date_ce_start": 300,
+      "date_ce_end": 400,
+      "date_label": "ca. 350 CE (paleography of Codex II)",
+      "date_note": "Same physical codex as Gospel of Thomas; tractate on pp. 51–86.",
+      "dating_method": "palaeography",
+      "dating_source": "Layton, NHS 20–21 (1989)",
+      "contents": "Gospel of Philip — Valentinian anthology of sayings and ritual notes (pp. 51–86)",
+      "find_place": "Jabal al-Tarif, near Nag Hammadi, Upper Egypt",
+      "find_year_note": "Discovered December 1945",
+      "current_institution": "Coptic Museum, Cairo",
+      "current_shelfmark": "Inv. 10544 (Codex II)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2842",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/2842/manifest.json",
+        "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:2842/full/800,/0/default.jpg",
+        "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2842",
+        "attribution": {
+          "institution": "Claremont Colleges Digital Library",
+          "license": "© institution — IIIF embed only",
+          "attribution_required": true,
+          "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2842"
+        }
+      },
+      "passages": [
+        {
+          "tractate": "Gospel of Philip",
+          "reference": "Opening (p. 51)",
+          "codex_page": 51,
+          "coptic": "ⲁⲛⲟⲕ ⲙⲁⲣⲓⲁⲙ ⲡⲉⲧⲟⲩⲁⲁⲃ ⲡⲉⲧⲟⲩⲁⲁⲃ",
+          "coptic_label": "Opening words on Codex II p. 51 (diplomatic excerpt — verify against edition)",
+          "coptic_source": "Seed excerpt; full diplomatic edition not yet bundled",
+          "english": "A Hebrew makes another Hebrew, and such a person is called a proselyte. But a proselyte does not make a proselyte.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Brief display excerpt; full Coptic diplomatic text pending open edition in v1"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Claremont — Codex II, p. 51",
+          "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2842"
+        }
+      ]
+    },
+    {
+      "id": "nhc-ii-hypostasis-archons",
+      "catalog_id": "NHC II,4",
+      "traditional_name": "Hypostasis of the Archons (Nag Hammadi Codex II)",
+      "tractate": "Hypostasis of the Archons",
+      "nhc_siglum": "CG II,4",
+      "language": "Coptic (Sahidic)",
+      "material": "papyrus",
+      "date_ce_start": 300,
+      "date_ce_end": 400,
+      "date_label": "ca. 350 CE (Codex II)",
+      "date_note": "Tractate on pp. 86–97 of Codex II.",
+      "dating_method": "palaeography",
+      "dating_source": "Layton, NHS 20–21",
+      "contents": "Reality of the Rulers / Hypostasis of the Archons — Gnostic cosmology with Genesis motifs",
+      "find_place": "Jabal al-Tarif, near Nag Hammadi",
+      "find_year_note": "Discovered December 1945",
+      "current_institution": "Coptic Museum, Cairo",
+      "current_shelfmark": "Inv. 10544 (Codex II)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2856",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/2856/manifest.json",
+        "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:2856/full/800,/0/default.jpg",
+        "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2856",
+        "attribution": {
+          "institution": "Claremont Colleges Digital Library",
+          "license": "© institution — IIIF embed only",
+          "attribution_required": true
+        }
+      },
+      "passages": [
+        {
+          "tractate": "Hypostasis of the Archons",
+          "reference": "Opening (p. 86)",
+          "codex_page": 86,
+          "english": "On account of the reality of the authorities, the great apostle — referring to the 'perfect man' — wrote to us that 'our contest is not against flesh and blood.'",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for leaf context; full diplomatic Coptic pending open license in v1"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Claremont — Codex II, p. 86",
+          "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2856"
+        }
+      ]
+    },
+    {
+      "id": "nhc-ii-origin-world",
+      "catalog_id": "NHC II,5",
+      "traditional_name": "On the Origin of the World (Nag Hammadi Codex II)",
+      "tractate": "On the Origin of the World",
+      "nhc_siglum": "CG II,5",
+      "language": "Coptic (Sahidic)",
+      "material": "papyrus",
+      "date_ce_start": 300,
+      "date_ce_end": 400,
+      "date_label": "ca. 350 CE (Codex II)",
+      "date_note": "Tractate on pp. 97–127.",
+      "dating_method": "palaeography",
+      "dating_source": "Layton, NHS 20–21",
+      "contents": "On the Origin of the World — cosmological treatise with parallels to Genesis and Enochic traditions",
+      "find_place": "Jabal al-Tarif, near Nag Hammadi",
+      "find_year_note": "Discovered December 1945",
+      "current_institution": "Coptic Museum, Cairo",
+      "current_shelfmark": "Inv. 10544 (Codex II)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2911",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/2911/manifest.json",
+        "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:2911/full/800,/0/default.jpg",
+        "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2911",
+        "attribution": {
+          "institution": "Claremont Colleges Digital Library",
+          "license": "© institution — IIIF embed only",
+          "attribution_required": true
+        }
+      },
+      "passages": [
+        {
+          "tractate": "On the Origin of the World",
+          "reference": "Opening (p. 97)",
+          "codex_page": 97,
+          "english": "Since everyone, including the rulers of chaos and the underworld, wishes to show that the world is a work of their own, it is necessary to declare the nature of the universe and how it came to be.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt; not a full modern critical translation dump"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Claremont — Codex II, p. 97",
+          "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2911"
+        }
+      ]
+    },
+    {
+      "id": "nhc-ii-exegesis-soul",
+      "catalog_id": "NHC II,6",
+      "traditional_name": "Exegesis on the Soul (Nag Hammadi Codex II)",
+      "tractate": "Exegesis on the Soul",
+      "nhc_siglum": "CG II,6",
+      "language": "Coptic (Sahidic)",
+      "material": "papyrus",
+      "date_ce_start": 300,
+      "date_ce_end": 400,
+      "date_label": "ca. 350 CE (Codex II)",
+      "date_note": "Tractate on pp. 127–137.",
+      "dating_method": "palaeography",
+      "dating_source": "Layton, NHS 20–21",
+      "contents": "Exegesis on the Soul — allegorical treatise on the soul's fall and restoration",
+      "find_place": "Jabal al-Tarif, near Nag Hammadi",
+      "find_year_note": "Discovered December 1945",
+      "current_institution": "Coptic Museum, Cairo",
+      "current_shelfmark": "Inv. 10544 (Codex II)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2901",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/2901/manifest.json",
+        "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:2901/full/800,/0/default.jpg",
+        "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2901",
+        "attribution": {
+          "institution": "Claremont Colleges Digital Library",
+          "license": "© institution — IIIF embed only",
+          "attribution_required": true
+        }
+      },
+      "passages": [
+        {
+          "tractate": "Exegesis on the Soul",
+          "reference": "Opening (p. 127)",
+          "codex_page": 127,
+          "english": "Wise men of old gave the soul a feminine name. Indeed she is feminine in her nature as well.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for shown leaf"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Claremont — Codex II, p. 127",
+          "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2901"
+        }
+      ]
+    },
+    {
+      "id": "nhc-ii-thomas-contender",
+      "catalog_id": "NHC II,7",
+      "traditional_name": "Book of Thomas the Contender (Nag Hammadi Codex II)",
+      "tractate": "Book of Thomas the Contender",
+      "nhc_siglum": "CG II,7",
+      "language": "Coptic (Sahidic)",
+      "material": "papyrus",
+      "date_ce_start": 300,
+      "date_ce_end": 400,
+      "date_label": "ca. 350 CE (Codex II)",
+      "date_note": "Final tractate in Codex II, pp. 138–145.",
+      "dating_method": "palaeography",
+      "dating_source": "Layton, NHS 20–21",
+      "contents": "Book of Thomas the Contender — dialogue attributed to the risen Jesus and Judas Thomas",
+      "find_place": "Jabal al-Tarif, near Nag Hammadi",
+      "find_year_note": "Discovered December 1945",
+      "current_institution": "Coptic Museum, Cairo",
+      "current_shelfmark": "Inv. 10544 (Codex II)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2862",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/2862/manifest.json",
+        "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:2862/full/800,/0/default.jpg",
+        "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2862",
+        "attribution": {
+          "institution": "Claremont Colleges Digital Library",
+          "license": "© institution — IIIF embed only",
+          "attribution_required": true
+        }
+      },
+      "passages": [
+        {
+          "tractate": "Book of Thomas the Contender",
+          "reference": "Opening (p. 138)",
+          "codex_page": 138,
+          "english": "The secret words that the savior spoke to Judas Thomas, which I, Mathaias, wrote down while I was walking and listening to them.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for shown leaf"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Claremont — Codex II, p. 138",
+          "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2862"
+        }
+      ]
+    },
+    {
+      "id": "nhc-ii-apocryphon-john",
+      "catalog_id": "NHC II,1",
+      "traditional_name": "Apocryphon of John (Nag Hammadi Codex II)",
+      "tractate": "Apocryphon of John",
+      "nhc_siglum": "CG II,1",
+      "language": "Coptic (Sahidic)",
+      "material": "papyrus",
+      "date_ce_start": 300,
+      "date_ce_end": 400,
+      "date_label": "ca. 350 CE (Codex II)",
+      "date_note": "First tractate in Codex II (pp. 1–32); short version of Apocryphon of John.",
+      "dating_method": "palaeography",
+      "dating_source": "Layton, NHS 20–21",
+      "contents": "Apocryphon of John (short recension) — revelatory dialogue on the invisible Father",
+      "find_place": "Jabal al-Tarif, near Nag Hammadi",
+      "find_year_note": "Discovered December 1945",
+      "current_institution": "Coptic Museum, Cairo",
+      "current_shelfmark": "Inv. 10544 (Codex II)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2796",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/2796/manifest.json",
+        "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:2796/full/800,/0/default.jpg",
+        "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2796",
+        "attribution": {
+          "institution": "Claremont Colleges Digital Library",
+          "license": "© institution — IIIF embed only",
+          "attribution_required": true
+        }
+      },
+      "passages": [
+        {
+          "tractate": "Apocryphon of John",
+          "reference": "Opening (p. 2)",
+          "codex_page": 2,
+          "english": "The teaching of the savior, and the revelation of the mysteries and the things hidden in silence, which he taught John, his disciple.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for shown leaf"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Claremont — Codex II, p. 2",
+          "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2796"
+        }
+      ]
+    },
+    {
+      "id": "nhc-i-gospel-truth",
+      "catalog_id": "NHC I,3",
+      "traditional_name": "Gospel of Truth (Jung Codex I)",
+      "tractate": "Gospel of Truth",
+      "nhc_siglum": "CG I,3",
+      "language": "Coptic (Sahidic)",
+      "material": "papyrus",
+      "date_ce_start": 300,
+      "date_ce_end": 400,
+      "date_label": "ca. 350 CE (Codex I / Jung Codex)",
+      "date_note": "Codex I was purchased for the Jung Institute (Zurich); portions now in Cairo. Same paleographic generation as other Nag Hammadi codices.",
+      "dating_method": "palaeography",
+      "dating_source": "Robinson; Layton",
+      "contents": "Gospel of Truth — Valentinian homily, often attributed to Valentinus",
+      "find_place": "Jabal al-Tarif, near Nag Hammadi",
+      "find_year_note": "Discovered December 1945",
+      "current_institution": "Coptic Museum, Cairo (with Jung Institute history)",
+      "current_shelfmark": "Codex I (Jung Codex)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2723",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/2723/manifest.json",
+        "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:2723/full/800,/0/default.jpg",
+        "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2723",
+        "attribution": {
+          "institution": "Claremont Colleges Digital Library",
+          "license": "© institution — IIIF embed only",
+          "attribution_required": true
+        }
+      },
+      "passages": [
+        {
+          "tractate": "Gospel of Truth",
+          "reference": "Opening (Codex I)",
+          "codex_page": 33,
+          "english": "The gospel of truth is joy for those who have received from the Father of truth the grace of knowing him, through the power of the Word.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for shown leaf"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Claremont — Codex I, p. 33",
+          "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2723"
+        }
+      ]
+    },
+    {
+      "id": "nhc-i-apocryphon-james",
+      "catalog_id": "NHC I,2",
+      "traditional_name": "Apocryphon of James (Jung Codex I)",
+      "tractate": "Apocryphon of James",
+      "nhc_siglum": "CG I,2",
+      "language": "Coptic (Sahidic)",
+      "material": "papyrus",
+      "date_ce_start": 300,
+      "date_ce_end": 400,
+      "date_label": "ca. 350 CE (Codex I)",
+      "date_note": "First tractate in Codex I after the prayer; revelatory letter to James and Peter.",
+      "dating_method": "palaeography",
+      "dating_source": "Robinson; Layton",
+      "contents": "Apocryphon of James (First Apocalypse of James) — post-resurrection revelation",
+      "find_place": "Jabal al-Tarif, near Nag Hammadi",
+      "find_year_note": "Discovered December 1945",
+      "current_institution": "Coptic Museum, Cairo (Jung Codex provenance)",
+      "current_shelfmark": "Codex I",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2761",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/2761/manifest.json",
+        "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:2761/full/800,/0/default.jpg",
+        "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2761",
+        "attribution": {
+          "institution": "Claremont Colleges Digital Library",
+          "license": "© institution — IIIF embed only",
+          "attribution_required": true
+        }
+      },
+      "passages": [
+        {
+          "tractate": "Apocryphon of James",
+          "reference": "Opening (Codex I, p. 19)",
+          "codex_page": 19,
+          "english": "Since you asked that I send you a secret book which was revealed to me and Peter by the Lord, I cannot refuse you.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for shown leaf"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Claremont — Codex I, p. 19",
+          "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2761"
+        }
+      ]
+    },
+    {
+      "id": "nhc-iii-apocryphon-john",
+      "catalog_id": "NHC III,1",
+      "traditional_name": "Apocryphon of John (Nag Hammadi Codex III)",
+      "tractate": "Apocryphon of John",
+      "nhc_siglum": "CG III,1",
+      "language": "Coptic (Sahidic)",
+      "material": "papyrus",
+      "date_ce_start": 300,
+      "date_ce_end": 400,
+      "date_label": "ca. 350 CE (Codex III)",
+      "date_note": "Second Coptic copy of Apocryphon of John in the library (long recension, pp. 1–47).",
+      "dating_method": "palaeography",
+      "dating_source": "Robinson; Layton",
+      "contents": "Apocryphon of John (long recension) — parallel witness to Codex II and IV versions",
+      "find_place": "Jabal al-Tarif, near Nag Hammadi",
+      "find_year_note": "Discovered December 1945",
+      "current_institution": "Coptic Museum, Cairo",
+      "current_shelfmark": "Codex III",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2858",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/2858/manifest.json",
+        "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:2858/full/800,/0/default.jpg",
+        "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2858",
+        "attribution": {
+          "institution": "Claremont Colleges Digital Library",
+          "license": "© institution — IIIF embed only",
+          "attribution_required": true
+        }
+      },
+      "passages": [
+        {
+          "tractate": "Apocryphon of John",
+          "reference": "Opening (Codex III, p. 10)",
+          "codex_page": 10,
+          "english": "The teaching of the savior, and the revelation of the mysteries and the things hidden in silence, even those things which were taught John, his disciple.",
+          "english_label": "English of lines on this leaf",
+          "english_source": "Display excerpt parallel to Codex II opening"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Claremont — Codex III, p. 10",
+          "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2858"
+        }
+      ]
+    }
+  ]
+}

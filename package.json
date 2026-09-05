@@ -10,6 +10,7 @@
     "data": "node scripts/generate-data.mjs",
     "texts": "node scripts/build-texts.mjs",
     "quran": "node scripts/build-quran-data.mjs",
+    "nag-hammadi": "node scripts/build-nag-hammadi-data.mjs",
     "images": "node scripts/download-commons.mjs",
     "quran-images": "node scripts/download-quran-commons.mjs"
   },

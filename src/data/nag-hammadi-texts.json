@@ -1,0 +1,294 @@
+{
+  "generated_at": "2026-09-05T15:41:18.082Z",
+  "sources": {
+    "seed": "scripts/nag-hammadi-seed.json",
+    "coptic_scriptorium": "https://data.copticscriptorium.org/texts/thomasgospel/ (CC-BY 4.0)",
+    "claremont": "https://ccdl.claremont.edu/digital/collection/nha/"
+  },
+  "texts": {
+    "nhc-ii-gospel-thomas": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + Coptic Scriptorium (Thomas, CC-BY 4.0)",
+      "translation_base": "Display excerpts — not Robinson/Lambdin/Brill editions",
+      "translation_label": "English of these lines",
+      "coptic_base": "Coptic Scriptorium diplomatic where noted (CC-BY 4.0)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2877",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "total_units": 3,
+      "initial_units": [
+        {
+          "reference": "Logion 1",
+          "tractate": "Gospel of Thomas",
+          "logion": 1,
+          "codex_page": 32,
+          "coptic": "ⲛⲁⲉⲓⲛⲉⲛ̄ϣⲁϫⲉⲉⲑⲏⲡ⳿ ⲉⲛⲧⲁⲓ︤ⲥ︥ⲉⲧⲟⲛϩ ϫⲟⲟⲩⲁⲩⲱⲁϥⲥϩⲁⲓ̈ⲥⲟⲩⲛ̄ϭⲓⲇⲓⲇⲩⲙⲟⲥ ⲓ̈ⲟⲩⲇⲁⲥⲑⲱⲙⲁⲥ",
+          "coptic_label": "Diplomatic opening (Codex II, p. 32 — after Coptic Scriptorium NHAM.02)",
+          "coptic_source": "Coptic Scriptorium (CC-BY 4.0)",
+          "english": "These are the secret sayings that the living Jesus spoke and Didymus Judas Thomas wrote down.",
+          "english_label": "English of this logion",
+          "english_source": "Display rendering aligned to Coptic Scriptorium diplomatic (not Lambdin/Robinson copyrighted editions)"
+        },
+        {
+          "reference": "Logion 2",
+          "tractate": "Gospel of Thomas",
+          "logion": 2,
+          "codex_page": 32,
+          "coptic": "ⲡⲉϫⲉⲓ︤ⲥ︥ ϫⲉϥⲛⲁⲗⲟⲛ̄ϭⲓⲡⲉⲧ⳿ϣⲓⲛⲉ ⲉϥ⳿ϣⲓⲛⲉ ϣⲁⲛⲧⲉϥ⳿ϭⲓⲛⲉ",
+          "coptic_label": "Diplomatic excerpt, logion 2 opening",
+          "coptic_source": "Coptic Scriptorium (CC-BY 4.0)",
+          "english": "Jesus said: Let one who seeks continue seeking until he finds. When he finds, he will be troubled, and when he is troubled he will marvel and will reign over the All.",
+          "english_label": "English of this logion",
+          "english_source": "Display rendering; Greek overlap in P.Oxy. 654 follows Grenfell & Hunt 1904 (PD) where applicable"
+        },
+        {
+          "reference": "Logion 3",
+          "tractate": "Gospel of Thomas",
+          "logion": 3,
+          "codex_page": 33,
+          "coptic": "ⲡⲉϫⲉⲓ︤ⲥ︥ ϫⲉⲉⲓⲥϩⲏⲏⲧⲉ ⲉⲧ⳿ⲙⲛⲧⲉⲣⲟϩⲛ̄ⲧⲡⲉ",
+          "coptic_label": "Diplomatic excerpt, logion 3 opening",
+          "coptic_source": "Coptic Scriptorium (CC-BY 4.0)",
+          "english": "Jesus said: If those who lead you say to you, 'See, the kingdom is in heaven,' then the birds of heaven will precede you.",
+          "english_label": "English of this logion",
+          "english_source": "Display rendering aligned to diplomatic Coptic"
+        }
+      ],
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation."
+    },
+    "nhc-ii-gospel-philip": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + Coptic Scriptorium (Thomas, CC-BY 4.0)",
+      "translation_base": "Display excerpts — not Robinson/Lambdin/Brill editions",
+      "translation_label": "English of these lines",
+      "coptic_base": "Coptic Scriptorium diplomatic where noted (CC-BY 4.0)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2842",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Opening (p. 51)",
+          "tractate": "Gospel of Philip",
+          "logion": null,
+          "codex_page": 51,
+          "coptic": "ⲁⲛⲟⲕ ⲙⲁⲣⲓⲁⲙ ⲡⲉⲧⲟⲩⲁⲁⲃ ⲡⲉⲧⲟⲩⲁⲁⲃ",
+          "coptic_label": "Opening words on Codex II p. 51 (diplomatic excerpt — verify against edition)",
+          "coptic_source": "Seed excerpt; full diplomatic edition not yet bundled",
+          "english": "A Hebrew makes another Hebrew, and such a person is called a proselyte. But a proselyte does not make a proselyte.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Brief display excerpt; full Coptic diplomatic text pending open edition in v1"
+        }
+      ],
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation."
+    },
+    "nhc-ii-hypostasis-archons": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + Coptic Scriptorium (Thomas, CC-BY 4.0)",
+      "translation_base": "Display excerpts — not Robinson/Lambdin/Brill editions",
+      "translation_label": "English of these lines",
+      "coptic_base": "Coptic Scriptorium diplomatic where noted (CC-BY 4.0)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2856",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Opening (p. 86)",
+          "tractate": "Hypostasis of the Archons",
+          "logion": null,
+          "codex_page": 86,
+          "coptic": null,
+          "coptic_label": "Coptic diplomatic text not yet bundled for this tractate in v1",
+          "coptic_source": "Layton, NHS 20–21",
+          "english": "On account of the reality of the authorities, the great apostle — referring to the 'perfect man' — wrote to us that 'our contest is not against flesh and blood.'",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for leaf context; full diplomatic Coptic pending open license in v1"
+        }
+      ],
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation."
+    },
+    "nhc-ii-origin-world": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + Coptic Scriptorium (Thomas, CC-BY 4.0)",
+      "translation_base": "Display excerpts — not Robinson/Lambdin/Brill editions",
+      "translation_label": "English of these lines",
+      "coptic_base": "Coptic Scriptorium diplomatic where noted (CC-BY 4.0)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2911",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Opening (p. 97)",
+          "tractate": "On the Origin of the World",
+          "logion": null,
+          "codex_page": 97,
+          "coptic": null,
+          "coptic_label": "Coptic diplomatic text not yet bundled for this tractate in v1",
+          "coptic_source": "Layton, NHS 20–21",
+          "english": "Since everyone, including the rulers of chaos and the underworld, wishes to show that the world is a work of their own, it is necessary to declare the nature of the universe and how it came to be.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt; not a full modern critical translation dump"
+        }
+      ],
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation."
+    },
+    "nhc-ii-exegesis-soul": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + Coptic Scriptorium (Thomas, CC-BY 4.0)",
+      "translation_base": "Display excerpts — not Robinson/Lambdin/Brill editions",
+      "translation_label": "English of these lines",
+      "coptic_base": "Coptic Scriptorium diplomatic where noted (CC-BY 4.0)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2901",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Opening (p. 127)",
+          "tractate": "Exegesis on the Soul",
+          "logion": null,
+          "codex_page": 127,
+          "coptic": null,
+          "coptic_label": "Coptic diplomatic text not yet bundled for this tractate in v1",
+          "coptic_source": "Layton, NHS 20–21",
+          "english": "Wise men of old gave the soul a feminine name. Indeed she is feminine in her nature as well.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for shown leaf"
+        }
+      ],
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation."
+    },
+    "nhc-ii-thomas-contender": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + Coptic Scriptorium (Thomas, CC-BY 4.0)",
+      "translation_base": "Display excerpts — not Robinson/Lambdin/Brill editions",
+      "translation_label": "English of these lines",
+      "coptic_base": "Coptic Scriptorium diplomatic where noted (CC-BY 4.0)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2862",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Opening (p. 138)",
+          "tractate": "Book of Thomas the Contender",
+          "logion": null,
+          "codex_page": 138,
+          "coptic": null,
+          "coptic_label": "Coptic diplomatic text not yet bundled for this tractate in v1",
+          "coptic_source": "Layton, NHS 20–21",
+          "english": "The secret words that the savior spoke to Judas Thomas, which I, Mathaias, wrote down while I was walking and listening to them.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for shown leaf"
+        }
+      ],
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation."
+    },
+    "nhc-ii-apocryphon-john": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + Coptic Scriptorium (Thomas, CC-BY 4.0)",
+      "translation_base": "Display excerpts — not Robinson/Lambdin/Brill editions",
+      "translation_label": "English of these lines",
+      "coptic_base": "Coptic Scriptorium diplomatic where noted (CC-BY 4.0)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2796",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Opening (p. 2)",
+          "tractate": "Apocryphon of John",
+          "logion": null,
+          "codex_page": 2,
+          "coptic": null,
+          "coptic_label": "Coptic diplomatic text not yet bundled for this tractate in v1",
+          "coptic_source": "Layton, NHS 20–21",
+          "english": "The teaching of the savior, and the revelation of the mysteries and the things hidden in silence, which he taught John, his disciple.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for shown leaf"
+        }
+      ],
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation."
+    },
+    "nhc-i-gospel-truth": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + Coptic Scriptorium (Thomas, CC-BY 4.0)",
+      "translation_base": "Display excerpts — not Robinson/Lambdin/Brill editions",
+      "translation_label": "English of these lines",
+      "coptic_base": "Coptic Scriptorium diplomatic where noted (CC-BY 4.0)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2723",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Opening (Codex I)",
+          "tractate": "Gospel of Truth",
+          "logion": null,
+          "codex_page": 33,
+          "coptic": null,
+          "coptic_label": "Coptic diplomatic text not yet bundled for this tractate in v1",
+          "coptic_source": "Robinson; Layton",
+          "english": "The gospel of truth is joy for those who have received from the Father of truth the grace of knowing him, through the power of the Word.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for shown leaf"
+        }
+      ],
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation."
+    },
+    "nhc-i-apocryphon-james": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + Coptic Scriptorium (Thomas, CC-BY 4.0)",
+      "translation_base": "Display excerpts — not Robinson/Lambdin/Brill editions",
+      "translation_label": "English of these lines",
+      "coptic_base": "Coptic Scriptorium diplomatic where noted (CC-BY 4.0)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2761",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Opening (Codex I, p. 19)",
+          "tractate": "Apocryphon of James",
+          "logion": null,
+          "codex_page": 19,
+          "coptic": null,
+          "coptic_label": "Coptic diplomatic text not yet bundled for this tractate in v1",
+          "coptic_source": "Robinson; Layton",
+          "english": "Since you asked that I send you a secret book which was revealed to me and Peter by the Lord, I cannot refuse you.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for shown leaf"
+        }
+      ],
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation."
+    },
+    "nhc-iii-apocryphon-john": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + Coptic Scriptorium (Thomas, CC-BY 4.0)",
+      "translation_base": "Display excerpts — not Robinson/Lambdin/Brill editions",
+      "translation_label": "English of these lines",
+      "coptic_base": "Coptic Scriptorium diplomatic where noted (CC-BY 4.0)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2858",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Opening (Codex III, p. 10)",
+          "tractate": "Apocryphon of John",
+          "logion": null,
+          "codex_page": 10,
+          "coptic": null,
+          "coptic_label": "Coptic diplomatic text not yet bundled for this tractate in v1",
+          "coptic_source": "Robinson; Layton",
+          "english": "The teaching of the savior, and the revelation of the mysteries and the things hidden in silence, even those things which were taught John, his disciple.",
+          "english_label": "English of lines on this leaf",
+          "english_source": "Display excerpt parallel to Codex II opening"
+        }
+      ],
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation."
+    }
+  }
+}

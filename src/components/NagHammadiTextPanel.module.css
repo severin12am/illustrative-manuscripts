@@ -1,0 +1,144 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.unavailable {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px dashed rgba(201, 162, 39, 0.25);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.panelHeader {
+  border-bottom: 1px solid rgba(201, 162, 39, 0.12);
+  padding-bottom: 0.75rem;
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--gold-light);
+  margin-bottom: 0.25rem;
+}
+
+.subhead,
+.note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.note {
+  color: var(--gold-light);
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.unitList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.unitRow {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(201, 162, 39, 0.08);
+}
+
+.ref {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gold);
+  margin-bottom: 0.6rem;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.colLabel {
+  display: block;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.copticCol {
+  border-right: 1px solid rgba(201, 162, 39, 0.1);
+  padding-right: 0.75rem;
+}
+
+.coptic {
+  font-family: var(--font-coptic, var(--font-greek), "Gentium Plus", serif);
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--parchment);
+  margin: 0 0 0.5rem;
+}
+
+.missingCoptic {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin: 0 0 0.5rem;
+}
+
+.witnessNote,
+.sourceNote,
+.transNote {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin: 0.25rem 0 0;
+  font-style: italic;
+}
+
+.english {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--parchment);
+  margin: 0;
+}
+
+.unitNote {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.attr {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  border-top: 1px solid rgba(201, 162, 39, 0.08);
+  padding-top: 0.75rem;
+}
+
+.hint {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 700px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+
+  .copticCol {
+    border-right: none;
+    border-bottom: 1px solid rgba(201, 162, 39, 0.1);
+    padding-right: 0;
+    padding-bottom: 0.75rem;
+  }
+}

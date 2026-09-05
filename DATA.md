@@ -6,6 +6,7 @@
 |------|--------|---------------|
 | Greek NT | 1–300 CE overlap | [INTF Liste](https://ntvmr.uni-muenster.de/liste/) |
 | Qurʾān | 1–100 AH (~622–719 CE overlap) | [Corpus Coranicum](https://corpuscoranicum.org/) (hand-curated seed) |
+| Nag Hammadi | ~300–400 CE overlap (codex paleography) | [Claremont NHA](https://ccdl.claremont.edu/digital/collection/nha/) (hand-curated seed) |
 
 ## Qurʾān window: 1–100 AH
 
@@ -44,6 +45,46 @@ Regenerate: `node scripts/build-quran-data.mjs`
 
 IIIF images load via `<img src>` to each library's Image API (no Mirador). Commons files live in `public/witnesses/` with `.attribution.json` sidecars.
 
+## Nag Hammadi window: ~300–400 CE
+
+Witnesses are included when a published **paleographic CE range** for the physical codex overlaps `[300, 400]`:
+
+- `date_start ≤ 400` AND `date_end ≥ 300`
+- Cards date the **codex witnesses** (mid 4th c. CE), not speculative composition dates of individual tractates.
+- **Discovery** at Jabal al-Tarif was **December 1945** — that is not a writing date.
+- **10 tractate witnesses** in `scripts/nag-hammadi-seed.json` (seed, not all 52 Nag Hammadi texts).
+- **10/10** show a leaf photo via **Claremont IIIF embed** (no rehosted Brill/Claremont JPGs).
+- Coptic diplomatic (Gospel of Thomas logia 1–3): [Coptic Scriptorium](https://data.copticscriptorium.org/texts/thomasgospel/gospel-of-thomas/) (CC-BY 4.0).
+- English: short **display excerpts** of the lines shown — not Robinson/Lambdin/Brill critical editions.
+- **No variant collation** against modern Thomas critical text in v1 (different corpus from Greek NT SR GNT workflow).
+
+Regenerate: `node scripts/build-nag-hammadi-data.mjs`
+
+### Nag Hammadi image coverage (10 witnesses)
+
+| Witness | Tractate | Image source | Notes |
+|---------|----------|--------------|-------|
+| nhc-ii-gospel-thomas | Gospel of Thomas | **IIIF** | Codex II p. 40 (Claremont `nha:2877`) |
+| nhc-ii-gospel-philip | Gospel of Philip | **IIIF** | Codex II p. 51 (`nha:2842`) |
+| nhc-ii-hypostasis-archons | Hypostasis of the Archons | **IIIF** | Codex II p. 86 (`nha:2856`) |
+| nhc-ii-origin-world | On the Origin of the World | **IIIF** | Codex II p. 97 (`nha:2911`) |
+| nhc-ii-exegesis-soul | Exegesis on the Soul | **IIIF** | Codex II p. 127 (`nha:2901`) |
+| nhc-ii-thomas-contender | Book of Thomas the Contender | **IIIF** | Codex II p. 138 (`nha:2862`) |
+| nhc-ii-apocryphon-john | Apocryphon of John (short) | **IIIF** | Codex II p. 2 (`nha:2796`) |
+| nhc-i-gospel-truth | Gospel of Truth | **IIIF** | Codex I p. 33 (`nha:2723`) |
+| nhc-i-apocryphon-james | Apocryphon of James | **IIIF** | Codex I p. 19 (`nha:2761`) |
+| nhc-iii-apocryphon-john | Apocryphon of John (long) | **IIIF** | Codex III p. 10 (`nha:2858`) |
+
+Claremont rights: "Physical rights are retained by the institution. Copyright is retained in accordance with U. S. Copyright laws." → **IIIF embed only**, same policy as BnF/BL Qurʾān cards.
+
+### Nag Hammadi text gaps (v1)
+
+- [ ] Full diplomatic Coptic for tractates beyond Gospel of Thomas (open editions needed)
+- [ ] PD or CC English aligned line-by-line to diplomatic Coptic for all tractates
+- [ ] Codex IV/V witnesses and remaining ~40 tractates
+- [ ] Variant notes vs open critical base (if one becomes available under compatible license)
+- [ ] Commons-hosted color photos where PD scans exist (Thomas page 32 Coptic Museum plate)
+
 ## Greek NT window: 1–300 CE
 
 Witnesses are included when their **INTF Kurzgefasste Liste** paleographic range overlaps `[1, 300]`:
@@ -78,6 +119,9 @@ node scripts/build-texts.mjs
 
 # Qurʾān witness + text bundles
 node scripts/build-quran-data.mjs
+
+# Nag Hammadi witness + text bundles
+node scripts/build-nag-hammadi-data.mjs
 
 # Download/update Commons images (rate-limited; be patient)
 node scripts/download-commons.mjs
