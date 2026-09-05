@@ -1,6 +1,6 @@
 # Illustrative Manuscripts
 
-A year-by-year timeline of early biblical manuscripts — **Greek NT papyri (1–300 CE)** and **Qurʾān Hijazi witnesses (1–100 AH)**. Scrub a year to see which paleographic date ranges overlap that moment, with real manuscript photographs where we have legal copies.
+A year-by-year timeline of early biblical manuscripts — **Greek NT papyri (1–300 CE)**, **Qurʾān Hijazi witnesses (1–100 AH)**, and **Nag Hammadi Coptic codices (~300–400 CE)**. Scrub a year to see which paleographic date ranges overlap that moment, with real manuscript photographs where we have legal copies.
 
 **Live site (GitHub Pages):** https://severin12am.github.io/illustrative-manuscripts/
 
@@ -17,6 +17,13 @@ A year-by-year timeline of early biblical manuscripts — **Greek NT papyri (1�
 - Arabic rasm reference (Tanzil Uthmani, diacritics stripped) + **Pickthall 1930** (public domain)
 - Catalog spine: [Corpus Coranicum](https://corpuscoranicum.org/) (CC BY 4.0 metadata); library deep links
 - **3** Commons-hosted images (Birmingham, Parisino, Sanʿāʾ); others link to holding institutions
+
+### Nag Hammadi (corpus switch)
+- **10 tractate witnesses** from Codices I (Jung), II, and III (hand-curated seed)
+- Timeline **300–400 CE** — dates the physical codices, not 1945 discovery
+- Gospel of Thomas with Coptic Scriptorium diplomatic (CC-BY 4.0) + English excerpts
+- **10** Claremont IIIF leaf embeds (no rehosted facsimile scans)
+- Non-canonical Gnostic/apocryphal Christian texts — **not** New Testament manuscripts
 
 ### Shared
 - Honest **date ranges** — not fake point dates
@@ -41,6 +48,7 @@ npm install
 npm run data      # NT: regenerate from cached Liste
 npm run texts     # NT: CNTR Greek + WEB + SR variant strips
 npm run quran     # Qurʾān: build from scripts/quran-seed.json
+npm run nag-hammadi  # Nag Hammadi: build from scripts/nag-hammadi-seed.json
 npm run images    # NT Commons downloads
 npm run quran-images  # Qurʾān Commons downloads
 npm run dev       # http://localhost:3000

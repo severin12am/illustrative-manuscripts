@@ -4,8 +4,10 @@ import { formatDualDateRange } from "@/types/witness";
 import { assetUrl } from "@/lib/assetUrl";
 import { getWitnessText } from "@/data/witness-texts";
 import { getQuranWitnessText } from "@/data/quran-texts";
+import { getNagHammadiWitnessText } from "@/data/nag-hammadi-texts";
 import WitnessTextPanel from "./WitnessTextPanel";
 import QuranTextPanel from "./QuranTextPanel";
+import NagHammadiTextPanel from "./NagHammadiTextPanel";
 
 interface WitnessCardProps {
   witness: Witness;
@@ -20,12 +22,18 @@ const categoryLabels: Record<string, string> = {
 
 export default function WitnessCard({ witness }: WitnessCardProps) {
   const isQuran = witness.corpus === "quran";
-  const ntText = !isQuran ? getWitnessText(witness.ga_number) : null;
+  const isNagHammadi = witness.corpus === "nag-hammadi";
+  const ntText = !isQuran && !isNagHammadi ? getWitnessText(witness.ga_number) : null;
   const quranText = isQuran ? getQuranWitnessText(witness.id) : null;
+  const nagHammadiText = isNagHammadi
+    ? getNagHammadiWitnessText(witness.id)
+    : null;
 
   const primaryLink = isQuran
     ? witness.library_url || witness.corpus_coranicum_url
-    : witness.ntvmr_url;
+    : isNagHammadi
+      ? witness.library_url || witness.claremont_url
+      : witness.ntvmr_url;
 
   const hasHosted = witness.image_policy === "hosted" && witness.hosted_image;
   const hasIiif =
@@ -41,11 +49,13 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
         primaryLink
       : primaryLink;
 
-  const badge = isQuran
-    ? witness.script === "hijazi"
-      ? "Hijazi"
-      : witness.script || "Qur'an"
-    : categoryLabels[witness.book_category] || witness.book_category;
+  const badge = isNagHammadi
+    ? witness.tractate || "Nag Hammadi"
+    : isQuran
+      ? witness.script === "hijazi"
+        ? "Hijazi"
+        : witness.script || "Qur'an"
+      : categoryLabels[witness.book_category] || witness.book_category;
 
   const attr = witness.image_attribution;
   const creditLabel =
@@ -126,7 +136,7 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
                   rel="noopener noreferrer"
                   className={styles.viewerLink}
                 >
-                  {isQuran ? "Library viewer ↗" : "NTVMR ↗"}
+                  {isQuran || isNagHammadi ? "Library viewer ↗" : "NTVMR ↗"}
                 </a>
               )}
               {!isQuran && witness.csntm_url && (
@@ -174,6 +184,8 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
         <div className={styles.textColumn}>
           {isQuran && quranText ? (
             <QuranTextPanel text={quranText} witnessId={witness.id} />
+          ) : isNagHammadi && nagHammadiText ? (
+            <NagHammadiTextPanel text={nagHammadiText} witnessId={witness.id} />
           ) : ntText ? (
             <WitnessTextPanel text={ntText} ga={witness.ga_number} />
           ) : null}
@@ -195,6 +207,28 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
             {witness.library_url && (
               <a href={witness.library_url} target="_blank" rel="noopener noreferrer">
                 Library ↗
+              </a>
+            )}
+            {witness.iiif_manifest && (
+              <a
+                href={witness.iiif_manifest}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                IIIF manifest ↗
+              </a>
+            )}
+          </>
+        ) : isNagHammadi ? (
+          <>
+            {witness.claremont_url && (
+              <a href={witness.claremont_url} target="_blank" rel="noopener noreferrer">
+                Claremont NHA ↗
+              </a>
+            )}
+            {witness.library_url && (
+              <a href={witness.library_url} target="_blank" rel="noopener noreferrer">
+                Leaf viewer ↗
               </a>
             )}
             {witness.iiif_manifest && (

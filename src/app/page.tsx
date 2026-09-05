@@ -16,10 +16,22 @@ import {
   QURAN_TIMELINE_END,
   getQuranWitnessesForYear,
 } from "@/data/quran-witnesses";
+import {
+  nagHammadiWitnesses,
+  NAG_HAMMADI_TIMELINE_START,
+  NAG_HAMMADI_TIMELINE_END,
+  getNagHammadiWitnessesForYear,
+} from "@/data/nag-hammadi-witnesses";
 import type { BookCategory } from "@/types/witness";
 import { formatYear, witnessHasDisplayImage } from "@/types/witness";
 
-export type SiteCorpus = "nt" | "quran";
+export type SiteCorpus = "nt" | "quran" | "nag-hammadi";
+
+const CORPUS_DEFAULT_YEAR: Record<SiteCorpus, number> = {
+  nt: 150,
+  quran: 650,
+  "nag-hammadi": 350,
+};
 
 export default function Home() {
   const [siteCorpus, setSiteCorpus] = useState<SiteCorpus>("nt");
@@ -28,13 +40,26 @@ export default function Home() {
   const [search, setSearch] = useState("");
 
   const isQuran = siteCorpus === "quran";
-  const allWitnesses = isQuran ? quranWitnesses : ntWitnesses;
-  const timelineStart = isQuran ? QURAN_TIMELINE_START : TIMELINE_START;
-  const timelineEnd = isQuran ? QURAN_TIMELINE_END : TIMELINE_END;
+  const isNagHammadi = siteCorpus === "nag-hammadi";
+  const allWitnesses = isNagHammadi
+    ? nagHammadiWitnesses
+    : isQuran
+      ? quranWitnesses
+      : ntWitnesses;
+  const timelineStart = isNagHammadi
+    ? NAG_HAMMADI_TIMELINE_START
+    : isQuran
+      ? QURAN_TIMELINE_START
+      : TIMELINE_START;
+  const timelineEnd = isNagHammadi
+    ? NAG_HAMMADI_TIMELINE_END
+    : isQuran
+      ? QURAN_TIMELINE_END
+      : TIMELINE_END;
 
   const filteredAll = useMemo(() => {
     return allWitnesses.filter((w) => {
-      if (!isQuran && bookFilter !== "all" && w.book_category !== bookFilter)
+      if (!isQuran && !isNagHammadi && bookFilter !== "all" && w.book_category !== bookFilter)
         return false;
       if (search) {
         const q = search.toLowerCase();
@@ -42,20 +67,23 @@ export default function Home() {
           !w.ga_number.toLowerCase().includes(q) &&
           !w.traditional_name.toLowerCase().includes(q) &&
           !w.contents.toLowerCase().includes(q) &&
-          !w.current_shelfmark.toLowerCase().includes(q)
+          !w.current_shelfmark.toLowerCase().includes(q) &&
+          !(w.tractate || "").toLowerCase().includes(q)
         )
           return false;
       }
       return true;
     });
-  }, [allWitnesses, bookFilter, search, isQuran]);
+  }, [allWitnesses, bookFilter, search, isQuran, isNagHammadi]);
 
   const activeWitnesses = useMemo(() => {
-    const forYear = isQuran
-      ? getQuranWitnessesForYear(selectedYear)
-      : getWitnessesForYear(selectedYear);
+    const forYear = isNagHammadi
+      ? getNagHammadiWitnessesForYear(selectedYear)
+      : isQuran
+        ? getQuranWitnessesForYear(selectedYear)
+        : getWitnessesForYear(selectedYear);
     return forYear.filter((w) => filteredAll.some((f) => f.id === w.id));
-  }, [selectedYear, filteredAll, isQuran]);
+  }, [selectedYear, filteredAll, isQuran, isNagHammadi]);
 
   const withImages = allWitnesses.filter((w) => witnessHasDisplayImage(w)).length;
 
@@ -63,31 +91,47 @@ export default function Home() {
     setSiteCorpus(next);
     setBookFilter("all");
     setSearch("");
-    setSelectedYear(next === "quran" ? 650 : 150);
+    setSelectedYear(CORPUS_DEFAULT_YEAR[next]);
   }
+
+  const corpusLabel = isNagHammadi
+    ? "Nag Hammadi Coptic codices"
+    : isQuran
+      ? "Hijazi / 1st-century AH"
+      : "Greek NT papyri";
+
+  const textPairLabel = isNagHammadi
+    ? "Coptic diplomatic + English excerpts on Nag Hammadi cards"
+    : isQuran
+      ? "Arabic rasm + Pickthall English (PD 1930) on Qurʾān cards"
+      : "CNTR Greek + WEB on NT cards";
 
   return (
     <main className={styles.main}>
       <header className={styles.hero}>
         <div className={styles.heroInner}>
           <p className={styles.eyebrow}>
-            {isQuran
-              ? `Qurʾān manuscripts · 1–100 AH (~${QURAN_TIMELINE_START}–${QURAN_TIMELINE_END} CE)`
-              : `Greek New Testament papyri · ${TIMELINE_START}–${TIMELINE_END} CE`}
+            {isNagHammadi
+              ? `Nag Hammadi library · ${NAG_HAMMADI_TIMELINE_START}–${NAG_HAMMADI_TIMELINE_END} CE (codex paleography)`
+              : isQuran
+                ? `Qurʾān manuscripts · 1–100 AH (~${QURAN_TIMELINE_START}–${QURAN_TIMELINE_END} CE)`
+                : `Greek New Testament papyri · ${TIMELINE_START}–${TIMELINE_END} CE`}
           </p>
           <h1 className={styles.title}>Illustrative Manuscripts</h1>
           <p className={styles.lead}>
-            {isQuran
-              ? "A year-by-year slice through early Qurʾanic witnesses in the first century AH. Every manuscript is dated as a paleographic or C14 range — not a single year."
-              : "A year-by-year slice through early biblical manuscripts. Every witness is dated as a paleographic range — scrub the timeline to see what could have existed in a given moment."}
+            {isNagHammadi
+              ? "A year-by-year slice through fourth-century Coptic codices from the Nag Hammadi library — non-canonical Gnostic and apocryphal Christian texts. Dates reflect the physical witnesses (the codices), not speculative composition dates."
+              : isQuran
+                ? "A year-by-year slice through early Qurʾanic witnesses in the first century AH. Every manuscript is dated as a paleographic or C14 range — not a single year."
+                : "A year-by-year slice through early biblical manuscripts. Every witness is dated as a paleographic range — scrub the timeline to see what could have existed in a given moment."}
           </p>
 
           <div className={styles.corpusSwitch} role="tablist" aria-label="Corpus">
             <button
               type="button"
               role="tab"
-              aria-selected={!isQuran}
-              className={`${styles.corpusBtn} ${!isQuran ? styles.corpusActive : ""}`}
+              aria-selected={!isQuran && !isNagHammadi}
+              className={`${styles.corpusBtn} ${!isQuran && !isNagHammadi ? styles.corpusActive : ""}`}
               onClick={() => switchCorpus("nt")}
             >
               Greek NT (1–300 CE)
@@ -101,33 +145,66 @@ export default function Home() {
             >
               Qurʾān (1–100 AH)
             </button>
+            <button
+              type="button"
+              role="tab"
+              aria-selected={isNagHammadi}
+              className={`${styles.corpusBtn} ${isNagHammadi ? styles.corpusActive : ""}`}
+              onClick={() => switchCorpus("nag-hammadi")}
+            >
+              Nag Hammadi (300–400 CE)
+            </button>
           </div>
 
           <ul className={styles.principles}>
             <li>
-              <strong>{allWitnesses.length}</strong> verified{" "}
-              {isQuran ? "Hijazi / 1st-century AH" : "Greek NT papyri"} in this
+              <strong>{allWitnesses.length}</strong> verified {corpusLabel} in this
               dataset
             </li>
             <li>
-              <strong>Original Arabic</strong> (diplomatic rasm) +{" "}
-              <strong>Pickthall English</strong> (PD 1930) on Qurʾān cards;{" "}
-              <strong>CNTR Greek</strong> + <strong>WEB</strong> on NT cards
+              <strong>{textPairLabel}</strong>
+              {!isNagHammadi && !isQuran && (
+                <>
+                  ; <strong>CNTR Greek</strong> + <strong>WEB</strong> on NT cards
+                </>
+              )}
             </li>
             <li>
-              <strong>{withImages}</strong> with PD/CC photographs from{" "}
-              <a
-                href="https://commons.wikimedia.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Wikimedia Commons
-              </a>
-              ; others link to library viewers
+              <strong>{withImages}</strong> with photographs (
+              {isNagHammadi
+                ? "Claremont IIIF embeds"
+                : "PD/CC from"}{" "}
+              {!isNagHammadi && (
+                <a
+                  href="https://commons.wikimedia.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Wikimedia Commons
+                </a>
+              )}
+              {isNagHammadi && (
+                <a
+                  href="https://ccdl.claremont.edu/digital/collection/nha/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Claremont NHA
+                </a>
+              )}
+              ); others link to library viewers
             </li>
             <li>
               Catalog:{" "}
-              {isQuran ? (
+              {isNagHammadi ? (
+                <a
+                  href="https://ccdl.claremont.edu/digital/collection/nha/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Claremont Nag Hammadi Archive
+                </a>
+              ) : isQuran ? (
                 <a
                   href="https://corpuscoranicum.org/en/manuscripts"
                   target="_blank"
@@ -151,6 +228,14 @@ export default function Home() {
               Hand-curated seed of well-sourced Hijazi witnesses overlapping 1–100
               AH. Later Kufic display mushafs (8th–9th c.) are out of scope
               unless their published range overlaps this window.
+            </p>
+          )}
+          {isNagHammadi && (
+            <p className={styles.completeness}>
+              Hand-curated seed of tractates from multiple Nag Hammadi codices
+              (Codex I Jung, II, III). These are non-canonical Coptic texts — not
+              New Testament manuscripts. Discovery at Jabal al-Tarif was in 1945;
+              the codices were copied ca. mid 4th c. CE.
             </p>
           )}
         </div>
@@ -195,7 +280,11 @@ export default function Home() {
           <input
             type="search"
             placeholder={
-              isQuran ? "Search shelfmark (e.g. Mingana 1572a)…" : "Search GA (e.g. P52)…"
+              isNagHammadi
+                ? "Search tractate (e.g. Gospel of Thomas)…"
+                : isQuran
+                  ? "Search shelfmark (e.g. Mingana 1572a)…"
+                  : "Search GA (e.g. P52)…"
             }
             value={search}
             onChange={(e) => setSearch(e.target.value)}
@@ -203,6 +292,7 @@ export default function Home() {
             aria-label="Search manuscripts"
           />
           {!isQuran &&
+            !isNagHammadi &&
             (["all", "gospels", "paul", "other"] as const).map((cat) => (
               <button
                 key={cat}
@@ -240,9 +330,11 @@ export default function Home() {
           {formatYear(selectedYear)}
           <span className={styles.subtitle}>
             (of {allWitnesses.length} in the{" "}
-            {isQuran
-              ? `1–100 AH / ~${QURAN_TIMELINE_START}–${QURAN_TIMELINE_END} CE`
-              : `${TIMELINE_START}–${TIMELINE_END} CE`}{" "}
+            {isNagHammadi
+              ? `${NAG_HAMMADI_TIMELINE_START}–${NAG_HAMMADI_TIMELINE_END} CE`
+              : isQuran
+                ? `1–100 AH / ~${QURAN_TIMELINE_START}–${QURAN_TIMELINE_END} CE`
+                : `${TIMELINE_START}–${TIMELINE_END} CE`}{" "}
             dataset)
           </span>
         </h2>
@@ -269,7 +361,20 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <p>
-          {isQuran ? (
+          {isNagHammadi ? (
+            <>
+              Catalog via{" "}
+              <a
+                href="https://ccdl.claremont.edu/digital/collection/nha/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Claremont Nag Hammadi Archive
+              </a>
+              . v1 seed covers selected tractates from Codices I–III; not all 52
+              texts.
+            </>
+          ) : isQuran ? (
             <>
               Catalog via{" "}
               <a href="https://corpuscoranicum.org/" target="_blank" rel="noreferrer">

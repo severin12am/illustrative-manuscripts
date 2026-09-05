@@ -1,4 +1,4 @@
-export type Corpus = "nt" | "quran" | "ot" | "lxx" | "version" | "other";
+export type Corpus = "nt" | "quran" | "nag-hammadi" | "ot" | "lxx" | "version" | "other";
 export type QuranScript = "hijazi" | "kufic" | "other";
 
 export interface PalimpsestLayer {
@@ -74,6 +74,11 @@ export interface Witness {
   palimpsest?: boolean;
   layers?: PalimpsestLayer[] | null;
   corpus_coranicum_url?: string;
+  /** Nag Hammadi tractate title (e.g. Gospel of Thomas). */
+  tractate?: string;
+  /** Nag Hammadi catalog siglum (e.g. CG II,2). */
+  nhc_siglum?: string;
+  claremont_url?: string;
   library_url?: string;
   image_policy: ImagePolicy;
   hosted_image: string | null;
