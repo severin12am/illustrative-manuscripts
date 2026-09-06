@@ -7,13 +7,20 @@ import type { WitnessText, TextVerse, VariantUnit } from "@/types/text";
 import { countVariants, formatLocus } from "@/types/text";
 import { assetUrl } from "@/lib/assetUrl";
 import { kindLabel, sortKindEntries } from "@/lib/variantTaxonomy";
+import { unitIdForVariant } from "@/lib/unitId";
+import {
+  getIntentionalTag,
+  hasAnyIntentionalTags,
+  intentionalBadgeTitle,
+  INTENTIONAL_LABEL_DISPLAY,
+} from "@/lib/intentionalTags";
 
 interface Props {
   text: WitnessText;
   ga: string;
 }
 
-function VerseRow({ verse }: { verse: TextVerse }) {
+function VerseRow({ verse, ga }: { verse: TextVerse; ga: string }) {
   return (
     <div
       className={styles.verseRow}
@@ -41,21 +48,47 @@ function VerseRow({ verse }: { verse: TextVerse }) {
       {verse.variants.length > 0 && (
         <ul className={styles.variantList}>
           {verse.variants.map((v, i) => (
-            <li key={`${verse.esn}-${i}`} className={styles.variantStrip}>
-              <span className={styles.kindBadge} data-kind={v.kind}>
-                {kindLabel(v.kind)}
-              </span>
-              <span className={styles.vsLabel}>vs {v.base_text}</span>
-              <span className={styles.vsLocus}>{formatLocus(v.locus)}</span>
-              <span className={styles.vsWitness}>{v.witness_reading}</span>
-              <span className={styles.vsSep}>|</span>
-              <span className={styles.vsBase}>{v.base_reading}</span>
-              {v.note && <span className={styles.vsNote}>{v.note}</span>}
-            </li>
+            <VariantStrip key={`${verse.esn}-${i}`} verse={verse} variant={v} ga={ga} />
           ))}
         </ul>
       )}
     </div>
+  );
+}
+
+function VariantStrip({
+  verse,
+  variant,
+  ga,
+}: {
+  verse: TextVerse;
+  variant: VariantUnit;
+  ga: string;
+}) {
+  const unitId = unitIdForVariant(ga, verse.esn, variant);
+  const tag = getIntentionalTag(unitId);
+
+  return (
+    <li className={styles.variantStrip}>
+      <span className={styles.kindBadge} data-kind={variant.kind}>
+        {kindLabel(variant.kind)}
+      </span>
+      {tag && (
+        <span
+          className={styles.intentionBadge}
+          data-intention={tag.label}
+          title={intentionalBadgeTitle(tag.label, tag.rationale)}
+        >
+          {INTENTIONAL_LABEL_DISPLAY[tag.label].short}
+        </span>
+      )}
+      <span className={styles.vsLabel}>vs {variant.base_text}</span>
+      <span className={styles.vsLocus}>{formatLocus(variant.locus)}</span>
+      <span className={styles.vsWitness}>{variant.witness_reading}</span>
+      <span className={styles.vsSep}>|</span>
+      <span className={styles.vsBase}>{variant.base_reading}</span>
+      {variant.note && <span className={styles.vsNote}>{variant.note}</span>}
+    </li>
   );
 }
 
@@ -141,6 +174,13 @@ export default function WitnessTextPanel({ text, ga }: Props) {
             ))}
           </ul>
         )}
+        {!hasAnyIntentionalTags() && (
+          <p className={styles.kindPending}>
+            Intentional-vs-error tagging not run yet. On your machine:{" "}
+            <code>npm run export-taggable</code> then{" "}
+            <code>npm run tag-intentional</code> (LM Studio / Qwen). See DATA.md.
+          </p>
+        )}
         {text.cntr_url && (
           <a
             href={text.cntr_url}
@@ -155,7 +195,7 @@ export default function WitnessTextPanel({ text, ga }: Props) {
 
       <div className={styles.verseList}>
         {visible.map((v) => (
-          <VerseRow key={v.esn} verse={v} />
+          <VerseRow key={v.esn} verse={v} ga={ga} />
         ))}
       </div>
 

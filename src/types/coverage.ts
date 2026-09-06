@@ -1,3 +1,5 @@
+import type { IntentionalTaggingStats } from "@/types/intentionalTags";
+
 export interface CoveragePerWitness {
   ga: string;
   id: string;
@@ -42,6 +44,7 @@ export interface CoverageData {
       missing_percent: number;
     };
     per_witness: CoveragePerWitness[];
+    intentional_tagging: IntentionalTaggingStats;
   };
   quran: {
     witness_count: number;

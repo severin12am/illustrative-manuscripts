@@ -11,6 +11,7 @@ import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 import { normalizeGreek, segmentsToExtantRuns } from "./lib/mes-parser.mjs";
 import { tokenizeGreek } from "./lib/variant-classify.mjs";
+import { countTaggableUnits } from "./lib/taggable-units.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -253,6 +254,38 @@ function computeNagHammadiCoverage(witnesses) {
   };
 }
 
+function computeIntentionalTagging() {
+  const tagsPath = join(ROOT, "src/data/intentional-tags.json");
+  const taggableTotal = countTaggableUnits(false);
+  const byLabel = { error: 0, intentional: 0, uncertain: 0 };
+  let taggedCount = 0;
+
+  if (existsSync(tagsPath)) {
+    const raw = readFileSync(tagsPath, "utf8").trim();
+    if (raw && raw !== "{}") {
+      const tags = JSON.parse(raw);
+      for (const tag of Object.values(tags)) {
+        if (!tag?.label || !(tag.label in byLabel)) continue;
+        byLabel[tag.label]++;
+        taggedCount++;
+      }
+    }
+  }
+
+  return {
+    definition:
+      "Model-assisted error / intentional / uncertain labels on a subset of non-orthography variation units. Provisional hypotheses only — not ECM or NA judgments.",
+    taggable_total: taggableTotal,
+    tagged_count: taggedCount,
+    coverage_percent: taggableTotal
+      ? Math.round((taggedCount / taggableTotal) * 1000) / 10
+      : 0,
+    by_label: byLabel,
+    not_run: taggedCount === 0,
+    run_command: "npm run export-taggable && npm run tag-intentional",
+  };
+}
+
 function findPrimerExample(witnessTexts) {
   for (const [ga, entry] of Object.entries(witnessTexts.texts)) {
     if (!entry?.available) continue;
@@ -281,6 +314,7 @@ function main() {
   const liste = loadJson(join(ROOT, "scripts/cache/liste.json"));
 
   const nt = computeNtCoverage(witnesses, witnessTexts, liste);
+  nt.intentional_tagging = computeIntentionalTagging();
   const quran = computeQuranCoverage(quranWitnesses);
   const nagHammadi = computeNagHammadiCoverage(nagHammadiWitnesses);
 
@@ -291,6 +325,7 @@ function main() {
       cntr_overflow: "public/cntr-texts/*.json",
       liste: "scripts/cache/liste.json",
       classifier: "scripts/lib/variant-classify.mjs",
+      intentional_tags: "src/data/intentional-tags.json",
     },
     greek_nt: nt,
     quran,

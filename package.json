@@ -15,7 +15,10 @@
     "images": "node scripts/download-commons.mjs",
     "quran-images": "node scripts/download-quran-commons.mjs",
     "coverage": "node scripts/compute-coverage.mjs",
-    "test:classify": "node scripts/test-variant-classify.mjs"
+    "export-taggable": "node scripts/export-taggable.mjs --sample 100",
+    "tag-intentional": "node scripts/tag-intentional.mjs",
+    "test:classify": "node scripts/test-variant-classify.mjs",
+    "test:intentional": "node scripts/test-intentional-gold.mjs"
   },
   "dependencies": {
     "next": "^15.1.0",
