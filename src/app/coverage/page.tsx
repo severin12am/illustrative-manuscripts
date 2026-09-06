@@ -7,6 +7,10 @@ import {
   sortKindEntries,
   VARIANT_KIND_DEFINITIONS,
 } from "@/lib/variantTaxonomy";
+import {
+  INTENTIONAL_LABEL_DISPLAY,
+  INTENTIONAL_LABEL_ORDER,
+} from "@/lib/intentionalTags";
 import styles from "./coverage.module.css";
 
 export const metadata: Metadata = {
@@ -32,6 +36,8 @@ export default function CoveragePage() {
   const { greek_nt, quran, nag_hammadi, generated_at } = coverage;
   const kinds = sortKindEntries(greek_nt.disagreements.by_kind);
   const disagreementTotal = greek_nt.disagreements.total;
+  const tagging = greek_nt.intentional_tagging;
+  const taggedTotal = tagging?.tagged_count ?? 0;
 
   return (
     <main className={styles.main}>
@@ -191,10 +197,46 @@ export default function CoveragePage() {
                 diacritics, and common Koine spelling equivalences. Transposition
                 detection is intentionally weak (2–3 word windows only); some
                 true transpositions may appear as substitution or omission/addition.
-                Intentional-vs-error classification is deferred to a later pass.
               </p>
             </div>
           )}
+        </div>
+
+        <div className={styles.detailBlock}>
+          <h3>Intentional vs error tagging (local LLM pass)</h3>
+          <p>{tagging?.definition}</p>
+          {tagging?.not_run ? (
+            <p className={styles.note}>
+              Tagging not run yet — <code>src/data/intentional-tags.json</code> is
+              empty. On your machine with LM Studio (Qwen):{" "}
+              <code>npm run export-taggable</code> then{" "}
+              <code>npm run tag-intentional</code>. See DATA.md for ethics and
+              options (<code>--limit</code>, <code>--resume</code>,{" "}
+              <code>--dry-run</code>).
+            </p>
+          ) : (
+            <>
+              <p className={styles.bigNumber}>
+                <strong>{taggedTotal.toLocaleString()}</strong> units tagged of{" "}
+                <strong>{tagging.taggable_total.toLocaleString()}</strong>{" "}
+                taggable non-orthography units (
+                {tagging.coverage_percent}% of taggable subset)
+              </p>
+              <ul className={styles.inlineStats}>
+                {INTENTIONAL_LABEL_ORDER.map((label) => (
+                  <li key={label}>
+                    {INTENTIONAL_LABEL_DISPLAY[label].short}:{" "}
+                    <strong>{tagging.by_label[label].toLocaleString()}</strong>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+          <p className={styles.note}>
+            These counts reflect model-assisted hypotheses on a subset only — not
+            a scholarly apparatus or ECM judgment. Orthography units are skipped
+            by default because intentionality rarely applies to spelling alone.
+          </p>
         </div>
 
         <div className={styles.detailBlock}>

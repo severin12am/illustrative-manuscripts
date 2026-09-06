@@ -1,0 +1,125 @@
+{
+  "description": "Hand-labeled smoke set for intentional-vs-error tagging. Expected labels are provisional scholarly hypotheses for regression testing — not ECM verdicts. Automatic LLM tags must be treated the same way.",
+  "units": [
+    {
+      "unit_id": "P106:43001031:w4-5:transposition",
+      "expected_label": "error",
+      "note": "Local word-order swap (εγω ηλθον / ηλθον εγω); classic mechanical transposition."
+    },
+    {
+      "unit_id": "P13:58003013:w5:transposition",
+      "expected_label": "error",
+      "note": "αρματιασ for αμαρτιας — letter-order slip, not a plausible lexical variant."
+    },
+    {
+      "unit_id": "P100:59004011:w3:substitution",
+      "expected_label": "error",
+      "note": "Truncated νον for νομον — likely parablepsis/haplography at line break."
+    },
+    {
+      "unit_id": "P106:43001033:w3:addition",
+      "expected_label": "error",
+      "note": "Nonsense cluster xμι in lacuna-damaged John 1:33; not a known intentional reading."
+    },
+    {
+      "unit_id": "P110:40010014:w1:substitution",
+      "expected_label": "error",
+      "note": "ξερχομενων for εξερχομενοι — garbled ending, unlikely deliberate."
+    },
+    {
+      "unit_id": "P115:66014006:w1:substitution",
+      "expected_label": "error",
+      "note": "λλον for ειδον — fragmentary nonsense at verse start in damaged Rev 14:6."
+    },
+    {
+      "unit_id": "P101:40004002:w5:omission",
+      "expected_label": "error",
+      "note": "Missing τεσσερακοντα in Matt 4:2 fasting count — likely accidental omission in damaged line."
+    },
+    {
+      "unit_id": "P106:43001034:w4:substitution",
+      "expected_label": "intentional",
+      "note": "εκλεκτοσ for υιοσ (John 1:34) — famous christological reading; may be theological preference (hypothesis)."
+    },
+    {
+      "unit_id": "P106:43001044:w7:addition",
+      "expected_label": "intentional",
+      "note": "Added του before της πολεως — clarifying genitive article, stylistic smoothing."
+    },
+    {
+      "unit_id": "P4:42003022:w20-22:transposition",
+      "expected_label": "intentional",
+      "note": "Baptism voice word order (ουιοσ μου ο) — may reflect liturgical phrasing; not a mere slip."
+    },
+    {
+      "unit_id": "P106:43001040:w9:addition",
+      "expected_label": "intentional",
+      "note": "Partial κολουθησαν where SR has ακολουθησαντων — possible clarifying expansion of verb form."
+    },
+    {
+      "unit_id": "P115:66009011:w2:addition",
+      "expected_label": "uncertain",
+      "note": "Added article ο before βασιλεα — could be clarifying or mechanical in lacunose context."
+    },
+    {
+      "unit_id": "P1:40001007:w10:addition",
+      "expected_label": "uncertain",
+      "note": "αβεια added where SR has αβια — may be spelling/dittography or doublet; alignment messy."
+    },
+    {
+      "unit_id": "P1:40001007:w10:omission",
+      "expected_label": "uncertain",
+      "note": "Paired omission of αβια opposite addition at same locus — classifier alignment artifact."
+    },
+    {
+      "unit_id": "P106:43001032:w1:substitution",
+      "expected_label": "uncertain",
+      "note": "Damaged John 1:32 with multiple substitutions — insufficient context for intentionality."
+    },
+    {
+      "unit_id": "P106:43001032:w2:substitution",
+      "expected_label": "uncertain",
+      "note": "Same damaged verse; word roles unstable under mechanical alignment."
+    },
+    {
+      "unit_id": "P106:43001032:w3:substitution",
+      "expected_label": "uncertain",
+      "note": "Same damaged verse; cannot reliably separate error from editorial reconstruction."
+    },
+    {
+      "unit_id": "P117:47007011:w2:substitution",
+      "expected_label": "uncertain",
+      "note": "λογιαν for σπουδην in 2 Cor 7:11 — significant lexical change; intentionality debatable without apparatus."
+    },
+    {
+      "unit_id": "P15:46007018:w4-5:transposition",
+      "expected_label": "error",
+      "note": "τισ κεκληται / κεκληται τισ — word-order transposition in formulaic phrase."
+    },
+    {
+      "unit_id": "P101:40003017:w4:substitution",
+      "expected_label": "error",
+      "note": "ηυδοκησα for ευδοκησα — dittography of eta at Matt 3:17 voice formula."
+    },
+    {
+      "unit_id": "P106:43001045:w2:substitution",
+      "expected_label": "error",
+      "note": "καιοι for οι — fusion/dittography at word boundary in damaged text."
+    },
+    {
+      "unit_id": "P115:66013008:w2:omission",
+      "expected_label": "intentional",
+      "note": "Omission of αυτου in Rev 13:8 — attested textual variant family; may be deliberate shorter reading."
+    },
+    {
+      "unit_id": "P101:40004002:w3:addition",
+      "expected_label": "error",
+      "note": "Stray $μ (numeral marker) inserted in fasting verse — mechanical notation slip."
+    },
+    {
+      "unit_id": "P106:43001042:w5:omission",
+      "expected_label": "error",
+      "note": "Omission of ιν (Jesus) in John 1:42 — likely lacuna damage, not theological omission."
+    }
+  ]
+}

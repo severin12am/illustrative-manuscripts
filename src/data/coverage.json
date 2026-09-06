@@ -1,10 +1,11 @@
 {
-  "generated_at": "2026-09-06T10:15:29.258Z",
+  "generated_at": "2026-09-06T10:29:46.079Z",
   "sources": {
     "witness_texts": "src/data/witness-texts.json",
     "cntr_overflow": "public/cntr-texts/*.json",
     "liste": "scripts/cache/liste.json",
-    "classifier": "scripts/lib/variant-classify.mjs"
+    "classifier": "scripts/lib/variant-classify.mjs",
+    "intentional_tags": "src/data/intentional-tags.json"
   },
   "greek_nt": {
     "witness_count": 94,
@@ -1281,7 +1282,20 @@
           "substitution": 1
         }
       }
-    ]
+    ],
+    "intentional_tagging": {
+      "definition": "Model-assisted error / intentional / uncertain labels on a subset of non-orthography variation units. Provisional hypotheses only — not ECM or NA judgments.",
+      "taggable_total": 5463,
+      "tagged_count": 0,
+      "coverage_percent": 0,
+      "by_label": {
+        "error": 0,
+        "intentional": 0,
+        "uncertain": 0
+      },
+      "not_run": true,
+      "run_command": "npm run export-taggable && npm run tag-intentional"
+    }
   },
   "quran": {
     "witness_count": 15,

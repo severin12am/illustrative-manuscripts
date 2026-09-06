@@ -143,7 +143,7 @@ Each verse may carry zero or more `variants[]` **variation units**, ready for la
 | `locus` | `book`, `book_id`, `chapter`, `verse`, `reference`; optional `word_start` / `word_end` |
 | `witness_reading`, `base_reading` | Word or short phrase in normalized CNTR spelling; base is named via `base_text` (SR GNT) |
 | `kind` | `orthography` \| `omission` \| `addition` \| `substitution` \| `transposition` \| `uncertain` |
-| `intention` | `error` \| `likely_intentional` \| `uncertain` — left `uncertain` in automated CNTR collation (**intentional-vs-error is out of scope** until a later Qwen pass) |
+| `intention` | `error` \| `likely_intentional` \| `uncertain` — left `uncertain` in automated CNTR collation; see **Intentional tagging** below for the optional LLM pass |
 | `source` | `cntr` \| `igntp` \| `manual` |
 
 **Kind definitions (v1, no LLM):**
@@ -184,7 +184,57 @@ npm run coverage     # writes src/data/coverage.json
 npm run test:classify
 ```
 
-**Do not** cite our total as “the number of NT variants.” Peter J. Gurry ([*NTS* 2016](https://doi.org/10.1017/S0028688516000216); [open accepted manuscript](https://www.repository.cam.ac.uk/bitstreams/fbac7937-110b-48a0-81f5-656677f85d8e/download)) estimates ~500,000 distinct readings in the full Greek NT tradition (excluding spelling and nomina-sacra abbreviation differences) — an extrapolation from ~3% of the text, not a census. No one has counted every reading in every witness. Reuse CNTR, NTVMR, and IGNTP for full critical work.
+### Intentional vs error tagging (local LLM — optional)
+
+After the mechanical taxonomy (substitution / omission / addition / transposition / orthography), a **second pass** tags non-orthography units as likely **scribal error**, **likely intentional** (harmonization, doctrinal/stylistic preference, clarifying expansion — always a *hypothesis*), or **uncertain**.
+
+**Ethics / scope:**
+
+- These labels are **model-assisted teaching hypotheses**, not ECM, NA28, or IGNTP judgments.
+- The cloud build and GitHub Pages deploy **never** call LM Studio; CI passes with an empty `src/data/intentional-tags.json`.
+- **Orthography is skipped by default** — spelling-only differences rarely need an intentionality label.
+- Qwen (or any OpenAI-compatible model) in **LM Studio on your machine** is the intended runner.
+
+**On your machine (SAIP):**
+
+```bash
+# 1. Export taggable units (orthography skipped; writes full JSONL + 100-line sample)
+npm run export-taggable
+
+# 2. Start LM Studio with Qwen; default API http://127.0.0.1:1234
+export LM_MODEL=qwen2.5-7b-instruct   # optional; auto-detects first non-embedding model
+npm run tag-intentional               # all units — use --limit 50 while testing
+
+# Options
+npm run tag-intentional -- --limit 100 --resume    # skip already-tagged unit_ids
+npm run tag-intentional -- --dry-run --limit 5     # print prompts, no API calls
+npm run tag-intentional -- --limit 0             # CLI validation only
+
+# 3. Regenerate coverage stats and commit intentional-tags.json when satisfied
+npm run coverage
+```
+
+**Files:**
+
+| File | Role |
+|------|------|
+| `scripts/cache/taggable-units.jsonl` | Full export (~5.4k non-orthography units; gitignored) |
+| `scripts/cache/taggable-units.sample.jsonl` | First 100 lines for quick SAIP start (committed) |
+| `scripts/tag-intentional.mjs` | POSTs to `LM_BASE_URL` (default `http://127.0.0.1:1234/v1/chat/completions`) |
+| `src/data/intentional-tags.json` | Map `unit_id` → `{ label, rationale, confidence, tagged_at }` |
+| `scripts/fixtures/intentional-gold.json` | ~20 hand-labeled smoke cases (`npm run test:intentional`) |
+
+**Label meanings (tagger output):**
+
+| Label | Meaning |
+|-------|---------|
+| `error` | Haplography, dittography, leap, nonsense, clear slip |
+| `intentional` | Harmonization to parallel, doctrinal/stylistic preference, clarifying expansion (hypothesis) |
+| `uncertain` | Cannot tell from the evidence given |
+
+The tagger **never invents tags without a model response** — failed API calls are logged and skipped.
+
+**Do not** cite tagged counts as a census of intentional variants in the NT tradition. Peter J. Gurry ([*NTS* 2016](https://doi.org/10.1017/S0028688516000216); [open accepted manuscript](https://www.repository.cam.ac.uk/bitstreams/fbac7937-110b-48a0-81f5-656677f85d8e/download)) estimates ~500,000 distinct readings in the full Greek NT tradition (excluding spelling and nomina-sacra abbreviation differences) — an extrapolation from ~3% of the text, not a census. No one has counted every reading in every witness. Reuse CNTR, NTVMR, and IGNTP for full critical work.
 
 Do **not** use NA28, UBS, NIV, ESV, or BHQ text.
 
