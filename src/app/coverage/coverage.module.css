@@ -1,0 +1,208 @@
+.main {
+  min-height: 100vh;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.hero {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(201, 162, 39, 0.15);
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  color: var(--parchment);
+  margin-bottom: 0.75rem;
+}
+
+.lead {
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.75rem;
+}
+
+.lead code {
+  color: var(--gold-light);
+  font-size: 0.9em;
+}
+
+.section {
+  margin: 2rem 0;
+}
+
+.sectionTitle {
+  font-size: 1.4rem;
+  color: var(--gold-light);
+  margin-bottom: 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid rgba(201, 162, 39, 0.12);
+}
+
+.steps {
+  padding-left: 1.25rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  font-size: 0.95rem;
+}
+
+.steps li {
+  margin-bottom: 0.5rem;
+}
+
+.statGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.statCard {
+  background: var(--slate);
+  border: 1px solid rgba(201, 162, 39, 0.18);
+  border-radius: var(--radius);
+  padding: 1rem;
+  text-align: center;
+}
+
+.statValue {
+  display: block;
+  font-size: 1.75rem;
+  font-family: var(--font-display);
+  color: var(--gold-light);
+  line-height: 1.1;
+}
+
+.statLabel {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 0.35rem;
+  line-height: 1.35;
+}
+
+.detailBlock {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.detailBlock h3 {
+  font-size: 1rem;
+  color: var(--parchment);
+  margin-bottom: 0.5rem;
+}
+
+.detailBlock h4 {
+  font-size: 0.9rem;
+  color: var(--parchment);
+  margin: 0.75rem 0 0.4rem;
+}
+
+.bigNumber {
+  font-size: 1rem;
+  color: var(--parchment);
+  margin: 0.5rem 0;
+}
+
+.inlineStats {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.88rem;
+}
+
+.kindBreakdown ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin: 0.35rem 0;
+}
+
+.kindBreakdown li {
+  font-size: 0.88rem;
+}
+
+.kindBadge {
+  display: inline-block;
+  background: rgba(201, 162, 39, 0.15);
+  color: var(--gold-light);
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  margin-right: 0.35rem;
+}
+
+.note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.disclaimer {
+  background: rgba(107, 31, 42, 0.25);
+  border: 1px solid rgba(107, 31, 42, 0.45);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.75rem;
+  margin-top: 2.5rem;
+}
+
+.disclaimer h2 {
+  font-size: 1.15rem;
+  color: var(--parchment);
+  margin-bottom: 0.75rem;
+}
+
+.disclaimer ul {
+  padding-left: 1.25rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-size: 0.92rem;
+  margin-bottom: 1rem;
+}
+
+.gurry {
+  border-left: 3px solid var(--burgundy-light);
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  background: rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+  color: var(--parchment);
+  line-height: 1.65;
+}
+
+.gurryLinks {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(201, 162, 39, 0.12);
+  font-size: 0.9rem;
+}

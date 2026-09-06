@@ -155,6 +155,23 @@ Each verse may carry zero or more `variants[]` units, ready for later counting a
 
 Fragment verses whose extant letters match the corresponding SR span (allowing lacunae) produce zero variants. UI shows a count line plus per-variant strips with `kind` badge.
 
+### Published disagreement count (site aggregate)
+
+The home stats strip and `/coverage` page show **computed** totals from our data — never hand-typed:
+
+| Metric | Definition |
+|--------|------------|
+| **Letter-level disagreements** | Count of `variants[]` units across all stored CNTR verses (`witness-texts.json` + `public/cntr-texts/*.json`), classified by `scripts/lib/variant-classify.mjs` vs **SR GNT**. One unit per aligned letter mismatch in extant runs. |
+| **Extant word tokens** | Greek word tokens in extant (non-supplied) runs across the same verse set. Lacunae and `~` supplied reconstruction excluded. |
+
+Regenerate after changing witness text or Liste cache:
+
+```bash
+npm run coverage   # writes src/data/coverage.json
+```
+
+**Do not** cite our total as “the number of NT variants.” Peter J. Gurry ([*NTS* 2016](https://doi.org/10.1017/S0028688516000216); [open accepted manuscript](https://www.repository.cam.ac.uk/bitstreams/fbac7937-110b-48a0-81f5-656677f85d8e/download)) estimates ~500,000 distinct readings in the full Greek NT tradition (excluding spelling and nomina-sacra abbreviation differences) — an extrapolation from ~3% of the text, not a census. No one has counted every reading in every witness. Reuse CNTR, NTVMR, and IGNTP for full critical work.
+
 Do **not** use NA28, UBS, NIV, ESV, or BHQ text.
 
 Cached Liste export: `scripts/cache/liste.json` (2026-09-02 snapshot; papyri docID 10000–19999).

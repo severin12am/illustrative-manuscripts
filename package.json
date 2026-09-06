@@ -12,7 +12,8 @@
     "quran": "node scripts/build-quran-data.mjs",
     "nag-hammadi": "node scripts/build-nag-hammadi-data.mjs",
     "images": "node scripts/download-commons.mjs",
-    "quran-images": "node scripts/download-quran-commons.mjs"
+    "quran-images": "node scripts/download-quran-commons.mjs",
+    "coverage": "node scripts/compute-coverage.mjs"
   },
   "dependencies": {
     "next": "^15.1.0",

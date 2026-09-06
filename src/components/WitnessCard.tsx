@@ -3,6 +3,7 @@ import type { Witness } from "@/types/witness";
 import { formatDualDateRange } from "@/types/witness";
 import { assetUrl } from "@/lib/assetUrl";
 import { getWitnessText } from "@/data/witness-texts";
+import { coverage } from "@/data/coverage";
 import { getQuranWitnessText } from "@/data/quran-texts";
 import { getNagHammadiWitnessText } from "@/data/nag-hammadi-texts";
 import WitnessTextPanel from "./WitnessTextPanel";
@@ -27,6 +28,10 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
   const quranText = isQuran ? getQuranWitnessText(witness.id) : null;
   const nagHammadiText = isNagHammadi
     ? getNagHammadiWitnessText(witness.id)
+    : null;
+
+  const ntCoverage = !isQuran && !isNagHammadi
+    ? coverage.greek_nt.per_witness.find((w) => w.ga === witness.ga_number)
     : null;
 
   const primaryLink = isQuran
@@ -97,6 +102,45 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
           </p>
         )}
         <p className={styles.dateNote}>{witness.date_note}</p>
+        {ntCoverage && ntCoverage.cntr_transcription && (
+          <div className={styles.variantSummary}>
+            <p className={styles.variantDef}>
+              <strong>
+                {ntCoverage.disagreements.toLocaleString()} letter-level
+                disagreement{ntCoverage.disagreements !== 1 ? "s" : ""}
+              </strong>{" "}
+              in extant (non-supplied) runs vs CNTR SR GNT across all stored
+              verses. Lacunae and reconstructed text are not counted as
+              variants.
+            </p>
+            {Object.keys(ntCoverage.disagreements_by_kind).length > 0 ? (
+              <ul className={styles.kindList}>
+                {Object.entries(ntCoverage.disagreements_by_kind)
+                  .sort((a, b) => b[1] - a[1])
+                  .map(([kind, count]) => (
+                    <li key={kind}>
+                      <span className={styles.kindTag}>
+                        {kind.replace(/_/g, " ")}
+                      </span>
+                      {count.toLocaleString()}
+                    </li>
+                  ))}
+              </ul>
+            ) : (
+              <p className={styles.variantPending}>Type breakdown: coming soon</p>
+            )}
+            {witness.cntr_url && (
+              <a
+                href={witness.cntr_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.cntrLink}
+              >
+                Open on CNTR ↗
+              </a>
+            )}
+          </div>
+        )}
       </header>
 
       <div className={styles.mainGrid}>

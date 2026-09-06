@@ -4,6 +4,8 @@ import { useMemo, useState } from "react";
 import styles from "./page.module.css";
 import Timeline from "@/components/Timeline";
 import WitnessCard from "@/components/WitnessCard";
+import StatsStrip from "@/components/StatsStrip";
+import HomePrimerBanner from "@/components/HomePrimerBanner";
 import {
   witnesses as ntWitnesses,
   TIMELINE_START,
@@ -108,6 +110,8 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
+      <StatsStrip />
+      <HomePrimerBanner />
       <header className={styles.hero}>
         <div className={styles.heroInner}>
           <p className={styles.eyebrow}>

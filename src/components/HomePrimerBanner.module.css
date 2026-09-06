@@ -1,0 +1,43 @@
+.wrap {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 1.5rem 1rem;
+}
+
+.toggle {
+  background: transparent;
+  border: 1px solid rgba(201, 162, 39, 0.3);
+  color: var(--gold-light);
+  font-family: inherit;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.toggle:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.panel {
+  position: relative;
+  margin-top: 0.75rem;
+}
+
+.dismiss {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  cursor: pointer;
+  font-family: inherit;
+  text-decoration: underline;
+}
+
+.dismiss:hover {
+  color: var(--parchment);
+}
