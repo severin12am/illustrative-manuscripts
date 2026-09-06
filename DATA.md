@@ -134,26 +134,38 @@ node scripts/download-quran-commons.mjs
 - **English:** [World English Bible](https://github.com/TehShrike/world-english-bible) (public domain), labeled *English of this fragment* — verse text for the surviving passage, with variant strips vs **SR GNT** (CNTR, CC BY 4.0).
 - Large manuscripts (P46, P66, P75, …) ship the **photo-matched passage** first; full CNTR text loads from `public/cntr-texts/{GA}.json` on expand.
 
-### Variant taxonomy (v1 schema)
+### Variant taxonomy (v1 — mechanical, word-aligned)
 
-Each verse may carry zero or more `variants[]` units, ready for later counting and categorization:
+Each verse may carry zero or more `variants[]` **variation units**, ready for later counting and categorization (Ehrman-style “how many and what kind” at coarse granularity):
 
 | Field | Values / notes |
 |-------|----------------|
 | `locus` | `book`, `book_id`, `chapter`, `verse`, `reference`; optional `word_start` / `word_end` |
-| `witness_reading`, `base_reading` | Token or phrase; base is named via `base_text` (SR GNT) |
-| `kind` | `orthography` \| `omission` \| `addition` \| `substitution` \| `transposition` \| `nonsense` \| `harmonization` \| `uncertain` |
-| `intention` | `error` \| `likely_intentional` \| `uncertain` — left `uncertain` in automated CNTR collation |
+| `witness_reading`, `base_reading` | Word or short phrase in normalized CNTR spelling; base is named via `base_text` (SR GNT) |
+| `kind` | `orthography` \| `omission` \| `addition` \| `substitution` \| `transposition` \| `uncertain` |
+| `intention` | `error` \| `likely_intentional` \| `uncertain` — left `uncertain` in automated CNTR collation (**intentional-vs-error is out of scope** until a later Qwen pass) |
 | `source` | `cntr` \| `igntp` \| `manual` |
 
-`scripts/lib/variant-classify.mjs` applies conservative alignment rules only (no LLM batch classification):
+**Kind definitions (v1, no LLM):**
+
+| Kind | Rule |
+|------|------|
+| `orthography` | Itacism, movable nu, ει/ι, αι/ε, ω/ο, nomina-sacra abbreviation vs plene where letters otherwise match, diacritic/breathing-insensitive spelling |
+| `omission` | SR has word(s) the witness lacks in the aligned extant span (witness shorter) |
+| `addition` | Witness has word(s) SR lacks (witness longer) |
+| `substitution` | Same aligned slot, different lexical content (not explainable as orthography alone) |
+| `transposition` | Same multiset of words/letters in different order when detectable cheaply (2–3 word window); otherwise folded into substitution/omission/addition |
+| `uncertain` | Alignment too messy to decide |
+
+`scripts/lib/variant-classify.mjs` applies conservative alignment only:
 
 - Uses SR GNT **word tokens** (not a concatenated verse blob).
 - Compares **extant runs** only (`segmentsToExtantRuns` — supplied `~` text excluded).
-- Anchors each run in SR by longest matching substring, then extends with lacuna tolerance.
-- Missing context before/after extant letters is **not** scored as omission/substitution.
+- Anchors each run by exact word matches, then extends with lacuna tolerance inside the span.
+- **Missing context** before/after an extant run (fragment edges, lacuna) is **not** scored as omission/substitution.
+- Line-break fragments (`πα` + `ριστανετε`) are coalesced when the merge matches an SR word.
 
-Fragment verses whose extant letters match the corresponding SR span (allowing lacunae) produce zero variants. UI shows a count line plus per-variant strips with `kind` badge.
+Fragment verses whose extant words match the corresponding SR span (allowing lacunae) produce zero variants. UI shows a count line, per-kind breakdown, and per-variant strips with `kind` badge.
 
 ### Published disagreement count (site aggregate)
 
@@ -161,13 +173,15 @@ The home stats strip and `/coverage` page show **computed** totals from our data
 
 | Metric | Definition |
 |--------|------------|
-| **Letter-level disagreements** | Count of `variants[]` units across all stored CNTR verses (`witness-texts.json` + `public/cntr-texts/*.json`), classified by `scripts/lib/variant-classify.mjs` vs **SR GNT**. One unit per aligned letter mismatch in extant runs. |
+| **Variation units** | Count of `variants[]` units across all stored CNTR verses (`witness-texts.json` + `public/cntr-texts/*.json`), classified by `scripts/lib/variant-classify.mjs` vs **SR GNT**. One unit per word-aligned disagreement in extant runs (spelling-only differences count as `orthography` units). |
 | **Extant word tokens** | Greek word tokens in extant (non-supplied) runs across the same verse set. Lacunae and `~` supplied reconstruction excluded. |
 
-Regenerate after changing witness text or Liste cache:
+Regenerate after changing witness text, classifier, or Liste cache:
 
 ```bash
-npm run coverage   # writes src/data/coverage.json
+npm run reclassify   # fast: reuse committed CNTR JSON
+npm run coverage     # writes src/data/coverage.json
+npm run test:classify
 ```
 
 **Do not** cite our total as “the number of NT variants.” Peter J. Gurry ([*NTS* 2016](https://doi.org/10.1017/S0028688516000216); [open accepted manuscript](https://www.repository.cam.ac.uk/bitstreams/fbac7937-110b-48a0-81f5-656677f85d8e/download)) estimates ~500,000 distinct readings in the full Greek NT tradition (excluding spelling and nomina-sacra abbreviation differences) — an extrapolation from ~3% of the text, not a census. No one has counted every reading in every witness. Reuse CNTR, NTVMR, and IGNTP for full critical work.

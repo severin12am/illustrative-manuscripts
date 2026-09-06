@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { coverage } from "@/data/coverage";
 import StudentPrimer from "@/components/StudentPrimer";
+import {
+  kindLabel,
+  sortKindEntries,
+  VARIANT_KIND_DEFINITIONS,
+} from "@/lib/variantTaxonomy";
 import styles from "./coverage.module.css";
 
 export const metadata: Metadata = {
@@ -18,15 +23,15 @@ function formatPercent(n: number) {
   return `${n}%`;
 }
 
-function kindLabel(kind: string) {
-  return kind.replace(/_/g, " ");
+function pct(count: number, total: number) {
+  if (!total) return "0%";
+  return formatPercent(Math.round((count / total) * 1000) / 10);
 }
 
 export default function CoveragePage() {
   const { greek_nt, quran, nag_hammadi, generated_at } = coverage;
-  const kinds = Object.entries(greek_nt.disagreements.by_kind).sort(
-    (a, b) => b[1] - a[1]
-  );
+  const kinds = sortKindEntries(greek_nt.disagreements.by_kind);
+  const disagreementTotal = greek_nt.disagreements.total;
 
   return (
     <main className={styles.main}>
@@ -137,8 +142,8 @@ export default function CoveragePage() {
             <strong>
               {greek_nt.disagreements.total.toLocaleString()}
             </strong>{" "}
-            total letter-level disagreements across all stored CNTR verses
-            (initial + lazy-load overflow)
+            total variation units across all stored CNTR verses (initial +
+            lazy-load overflow)
           </p>
           <ul className={styles.inlineStats}>
             <li>
@@ -156,20 +161,37 @@ export default function CoveragePage() {
           </ul>
           {kinds.length > 0 && (
             <div className={styles.kindBreakdown}>
-              <h4>By classifier kind (v1)</h4>
-              <ul>
-                {kinds.map(([kind, count]) => (
-                  <li key={kind}>
-                    <span className={styles.kindBadge}>{kindLabel(kind)}</span>
-                    {count.toLocaleString()}
-                  </li>
-                ))}
-              </ul>
+              <h4>Taxonomy breakdown (v1 mechanical classifier)</h4>
+              <table className={styles.kindTable}>
+                <thead>
+                  <tr>
+                    <th>Kind</th>
+                    <th>Count</th>
+                    <th>% of total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {kinds.map(([kind, count]) => (
+                    <tr key={kind}>
+                      <td>
+                        <span className={styles.kindBadge}>{kindLabel(kind)}</span>
+                        <p className={styles.kindDef}>
+                          {VARIANT_KIND_DEFINITIONS[kind] ??
+                            "See DATA.md for taxonomy notes."}
+                        </p>
+                      </td>
+                      <td>{count.toLocaleString()}</td>
+                      <td>{pct(count, disagreementTotal)}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
               <p className={styles.note}>
-                Today&apos;s automated classifier is conservative on fragments;
-                most counted differences are single-letter{" "}
-                <em>orthography</em>. Omission/addition taxonomy is not yet
-                reliable enough to publish separately.
+                Units are aligned at the word level after normalizing case,
+                diacritics, and common Koine spelling equivalences. Transposition
+                detection is intentionally weak (2–3 word windows only); some
+                true transpositions may appear as substitution or omission/addition.
+                Intentional-vs-error classification is deferred to a later pass.
               </p>
             </div>
           )}

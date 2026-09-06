@@ -1,0 +1,144 @@
+[
+  {
+    "id": "p66-john-1-4-movable-ending",
+    "description": "P66 John 1:4 — case/movable-nu style ending on ανθρωπω vs ανθρωπων",
+    "extant_runs": ["αυτω ζωη ην και η ζωη ην το φωσ των ανθρωπω¯"],
+    "sr_words": [
+      "εν", "αυτω", "ζωη", "ην", "και", "η", "ζωη", "ην", "το", "φωσ", "των", "ανθρωπων"
+    ],
+    "book_id": 43,
+    "chapter": 1,
+    "verse": 4,
+    "expect": [{ "kind": "orthography", "witness_reading": "ανθρωπω¯", "base_reading": "ανθρωπων" }]
+  },
+  {
+    "id": "p46-rom-6-13-substitution-kai",
+    "description": "P46 Rom 6:13 — και for μηδε at run start (complete word, not lacuna)",
+    "extant_runs": ["και πα ριστανετε"],
+    "sr_words": ["μηδε", "παριστανετε", "τα", "μελη"],
+    "book_id": 45,
+    "chapter": 6,
+    "verse": 13,
+    "expect": [{ "kind": "substitution", "witness_reading": "και", "base_reading": "μηδε" }]
+  },
+  {
+    "id": "p46-rom-8-22-syllabic-nu",
+    "description": "P46 Rom 8:22 — συνστεναζει vs συστεναζει (extra nu)",
+    "extant_runs": [
+      "οιδαμεν γαρ οτι πασα η κτισισ συνστεναζει και συνωδεινει αχρι του νυν"
+    ],
+    "sr_words": [
+      "οιδαμεν", "γαρ", "οτι", "πασα", "η", "κτισισ", "συστεναζει", "και", "συνωδινει",
+      "αχρι", "του", "νυν"
+    ],
+    "book_id": 45,
+    "chapter": 8,
+    "verse": 22,
+    "expect": [
+      { "kind": "orthography", "witness_reading": "συνστεναζει", "base_reading": "συστεναζει" },
+      { "kind": "orthography", "witness_reading": "συνωδεινει", "base_reading": "συνωδινει" }
+    ]
+  },
+  {
+    "id": "p46-rom-6-2-fragment-no-variant",
+    "description": "P46 Rom 6:2 — mid-word fragment ενοι το must not invent variants vs μη γενοιτο",
+    "extant_runs": ["ενοι το οιτινεσ απεθανομεν", "ετι ζησωμεν εν αυτη"],
+    "sr_words": [
+      "μη", "γενοιτο", "οιτινεσ", "απεθανομεν", "τη", "αμαρτια", "πωσ", "ετι", "ζησωμεν",
+      "εν", "αυτη"
+    ],
+    "book_id": 45,
+    "chapter": 6,
+    "verse": 2,
+    "expect": []
+  },
+  {
+    "id": "omission-single-word",
+    "description": "Witness lacks one SR word in aligned interior span",
+    "extant_runs": ["εν αρχη ην ο λογος"],
+    "sr_words": ["εν", "αρχη", "ην", "ο", "και", "λογος"],
+    "book_id": 43,
+    "chapter": 1,
+    "verse": 1,
+    "expect": [{ "kind": "omission", "witness_reading": "", "base_reading": "και" }]
+  },
+  {
+    "id": "addition-single-word",
+    "description": "Witness adds one word SR lacks in aligned interior span",
+    "extant_runs": ["εν αρχη ην ο λογος και"],
+    "sr_words": ["εν", "αρχη", "ην", "ο", "λογος"],
+    "book_id": 43,
+    "chapter": 1,
+    "verse": 1,
+    "expect": [{ "kind": "addition", "witness_reading": "και", "base_reading": "" }]
+  },
+  {
+    "id": "substitution-lexical",
+    "description": "Different lemma, same alignment slot",
+    "extant_runs": ["εν αρχη ην ο λογος"],
+    "sr_words": ["εν", "αρχη", "ην", "ο", "θεος"],
+    "book_id": 43,
+    "chapter": 1,
+    "verse": 1,
+    "expect": [{ "kind": "substitution", "witness_reading": "λογοσ", "base_reading": "θεοσ" }]
+  },
+  {
+    "id": "orthography-itacism",
+    "description": "ει vs ι spelling only",
+    "extant_runs": ["ειρηνη υμιν"],
+    "sr_words": ["ιρηνη", "υμιν"],
+    "book_id": 43,
+    "chapter": 20,
+    "verse": 19,
+    "expect": [{ "kind": "orthography", "witness_reading": "ειρηνη", "base_reading": "ιρηνη" }]
+  },
+  {
+    "id": "transposition-two-words-weak",
+    "description": "Two-word order swap — cheap check may report transposition or omission/addition pair",
+    "extant_runs": ["ο θεος αγαπη"],
+    "sr_words": ["ο", "αγαπη", "θεος"],
+    "book_id": 43,
+    "chapter": 3,
+    "verse": 16,
+    "expect_any": [
+      [
+        {
+          "kind": "transposition",
+          "witness_reading": "θεος αγαπη",
+          "base_reading": "αγαπη θεος"
+        }
+      ],
+      [
+        {
+          "kind": "transposition",
+          "witness_reading": "θεοσ αγαπη",
+          "base_reading": "αγαπη θεοσ"
+        }
+      ],
+      [
+        { "kind": "omission", "witness_reading": "", "base_reading": "αγαπη" },
+        { "kind": "addition", "witness_reading": "αγαπη", "base_reading": "" }
+      ]
+    ]
+  },
+  {
+    "id": "nomina-sacra-orthography",
+    "description": "SR =θω abbreviation vs witness plene θω",
+    "extant_runs": ["τω θω"],
+    "sr_words": ["τω", "=θω"],
+    "book_id": 45,
+    "chapter": 6,
+    "verse": 13,
+    "expect": []
+  },
+  {
+    "id": "p52-no-false-omission-prefix",
+    "description": "Fragment starting mid-verse must not score missing prefix words as omission",
+    "extant_runs": ["θεον"],
+    "sr_words": ["απεκριθη", "ο", "ιησους", "και", "ειπεν", "αυτω", "οτι", "εισ", "θεον"],
+    "book_id": 43,
+    "chapter": 8,
+    "verse": 58,
+    "expect": []
+  }
+]

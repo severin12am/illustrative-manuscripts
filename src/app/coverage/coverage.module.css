@@ -133,6 +133,35 @@
   font-size: 0.88rem;
 }
 
+.kindTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.75rem 0;
+  font-size: 0.88rem;
+}
+
+.kindTable th,
+.kindTable td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.55rem 0.65rem;
+  border-bottom: 1px solid rgba(201, 162, 39, 0.12);
+}
+
+.kindTable th {
+  color: var(--gold-light);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.kindDef {
+  margin: 0.35rem 0 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  max-width: 42rem;
+}
+
 .kindBreakdown ul {
   list-style: none;
   display: flex;

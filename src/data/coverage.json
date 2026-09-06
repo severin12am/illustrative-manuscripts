@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T10:00:38.102Z",
+  "generated_at": "2026-09-06T10:15:29.258Z",
   "sources": {
     "witness_texts": "src/data/witness-texts.json",
     "cntr_overflow": "public/cntr-texts/*.json",
@@ -29,15 +29,20 @@
       "total": 90913
     },
     "disagreements": {
-      "definition": "Letter-level disagreements in extant runs vs SR GNT (CNTR), using scripts/lib/variant-classify.mjs. Lacunae and reconstructed supplied text are not counted.",
+      "definition": "Word-aligned variation units in extant runs vs SR GNT (CNTR), using scripts/lib/variant-classify.mjs. Lacunae and reconstructed supplied text are not counted. Intentional-vs-error labels are not assigned in this mechanical pass.",
       "base_text": "SR GNT",
-      "total": 4408,
+      "total": 8878,
+      "unit": "variation units (word-aligned disagreements; spelling-only differences count as orthography units)",
       "by_kind": {
-        "orthography": 4408
+        "substitution": 3953,
+        "orthography": 3365,
+        "omission": 655,
+        "addition": 792,
+        "transposition": 113
       },
-      "per_witness_median": 4,
-      "per_witness_max": 1116,
-      "witnesses_with_any": 71
+      "per_witness_median": 6,
+      "per_witness_max": 2679,
+      "witnesses_with_any": 81
     },
     "intl_liste_papyri": {
       "window": [
@@ -58,8 +63,11 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 122,
-        "disagreements": 0,
-        "disagreements_by_kind": {}
+        "disagreements": 12,
+        "disagreements_by_kind": {
+          "substitution": 9,
+          "orthography": 3
+        }
       },
       {
         "ga": "P137",
@@ -68,9 +76,9 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 30,
-        "disagreements": 4,
+        "disagreements": 2,
         "disagreements_by_kind": {
-          "orthography": 4
+          "substitution": 2
         }
       },
       {
@@ -80,9 +88,10 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 142,
-        "disagreements": 3,
+        "disagreements": 8,
         "disagreements_by_kind": {
-          "orthography": 3
+          "substitution": 6,
+          "orthography": 2
         }
       },
       {
@@ -92,8 +101,10 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 40,
-        "disagreements": 0,
-        "disagreements_by_kind": {}
+        "disagreements": 2,
+        "disagreements_by_kind": {
+          "orthography": 2
+        }
       },
       {
         "ga": "P104",
@@ -112,9 +123,10 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 57,
-        "disagreements": 10,
+        "disagreements": 7,
         "disagreements_by_kind": {
-          "orthography": 10
+          "orthography": 4,
+          "substitution": 3
         }
       },
       {
@@ -124,9 +136,12 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 277,
-        "disagreements": 3,
+        "disagreements": 28,
         "disagreements_by_kind": {
-          "orthography": 3
+          "orthography": 18,
+          "substitution": 7,
+          "omission": 2,
+          "addition": 1
         }
       },
       {
@@ -136,9 +151,11 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 195,
-        "disagreements": 16,
+        "disagreements": 7,
         "disagreements_by_kind": {
-          "orthography": 16
+          "orthography": 3,
+          "substitution": 3,
+          "omission": 1
         }
       },
       {
@@ -148,9 +165,12 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 93,
-        "disagreements": 8,
+        "disagreements": 10,
         "disagreements_by_kind": {
-          "orthography": 8
+          "substitution": 7,
+          "addition": 1,
+          "omission": 1,
+          "orthography": 1
         }
       },
       {
@@ -170,9 +190,13 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 201,
-        "disagreements": 12,
+        "disagreements": 21,
         "disagreements_by_kind": {
-          "orthography": 12
+          "transposition": 1,
+          "substitution": 12,
+          "addition": 3,
+          "orthography": 4,
+          "omission": 1
         }
       },
       {
@@ -182,9 +206,10 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 45,
-        "disagreements": 1,
+        "disagreements": 2,
         "disagreements_by_kind": {
-          "orthography": 1
+          "orthography": 1,
+          "substitution": 1
         }
       },
       {
@@ -194,9 +219,10 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 61,
-        "disagreements": 3,
+        "disagreements": 6,
         "disagreements_by_kind": {
-          "orthography": 3
+          "substitution": 4,
+          "orthography": 2
         }
       },
       {
@@ -206,9 +232,9 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 36,
-        "disagreements": 2,
+        "disagreements": 1,
         "disagreements_by_kind": {
-          "orthography": 2
+          "substitution": 1
         }
       },
       {
@@ -220,7 +246,7 @@
         "extant_word_tokens": 26,
         "disagreements": 2,
         "disagreements_by_kind": {
-          "orthography": 2
+          "substitution": 2
         }
       },
       {
@@ -240,8 +266,10 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 22,
-        "disagreements": 0,
-        "disagreements_by_kind": {}
+        "disagreements": 1,
+        "disagreements_by_kind": {
+          "orthography": 1
+        }
       },
       {
         "ga": "P115",
@@ -250,9 +278,12 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 843,
-        "disagreements": 42,
+        "disagreements": 49,
         "disagreements_by_kind": {
-          "orthography": 42
+          "orthography": 11,
+          "addition": 2,
+          "substitution": 35,
+          "omission": 1
         }
       },
       {
@@ -262,9 +293,9 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 79,
-        "disagreements": 7,
+        "disagreements": 3,
         "disagreements_by_kind": {
-          "orthography": 7
+          "substitution": 3
         }
       },
       {
@@ -274,9 +305,10 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 68,
-        "disagreements": 4,
+        "disagreements": 5,
         "disagreements_by_kind": {
-          "orthography": 4
+          "substitution": 3,
+          "orthography": 2
         }
       },
       {
@@ -286,9 +318,9 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 19,
-        "disagreements": 4,
+        "disagreements": 3,
         "disagreements_by_kind": {
-          "orthography": 4
+          "substitution": 3
         }
       },
       {
@@ -298,9 +330,11 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 131,
-        "disagreements": 5,
+        "disagreements": 13,
         "disagreements_by_kind": {
-          "orthography": 5
+          "substitution": 4,
+          "orthography": 7,
+          "omission": 2
         }
       },
       {
@@ -310,9 +344,13 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 1331,
-        "disagreements": 49,
+        "disagreements": 128,
         "disagreements_by_kind": {
-          "orthography": 49
+          "orthography": 67,
+          "substitution": 44,
+          "transposition": 2,
+          "omission": 6,
+          "addition": 9
         }
       },
       {
@@ -322,9 +360,10 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 55,
-        "disagreements": 4,
+        "disagreements": 3,
         "disagreements_by_kind": {
-          "orthography": 4
+          "omission": 1,
+          "substitution": 2
         }
       },
       {
@@ -334,9 +373,10 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 91,
-        "disagreements": 4,
+        "disagreements": 5,
         "disagreements_by_kind": {
-          "orthography": 4
+          "orthography": 2,
+          "substitution": 3
         }
       },
       {
@@ -346,8 +386,10 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 25,
-        "disagreements": 0,
-        "disagreements_by_kind": {}
+        "disagreements": 2,
+        "disagreements_by_kind": {
+          "substitution": 2
+        }
       },
       {
         "ga": "P133",
@@ -358,7 +400,9 @@
         "extant_word_tokens": 122,
         "disagreements": 4,
         "disagreements_by_kind": {
-          "orthography": 4
+          "omission": 1,
+          "substitution": 2,
+          "orthography": 1
         }
       },
       {
@@ -368,8 +412,10 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 20,
-        "disagreements": 0,
-        "disagreements_by_kind": {}
+        "disagreements": 3,
+        "disagreements_by_kind": {
+          "substitution": 3
+        }
       },
       {
         "ga": "P138",
@@ -380,7 +426,8 @@
         "extant_word_tokens": 48,
         "disagreements": 2,
         "disagreements_by_kind": {
-          "orthography": 2
+          "orthography": 1,
+          "substitution": 1
         }
       },
       {
@@ -390,9 +437,10 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 155,
-        "disagreements": 9,
+        "disagreements": 7,
         "disagreements_by_kind": {
-          "orthography": 9
+          "substitution": 5,
+          "orthography": 2
         }
       },
       {
@@ -412,9 +460,9 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 91,
-        "disagreements": 4,
+        "disagreements": 2,
         "disagreements_by_kind": {
-          "orthography": 4
+          "orthography": 2
         }
       },
       {
@@ -426,7 +474,9 @@
         "extant_word_tokens": 126,
         "disagreements": 9,
         "disagreements_by_kind": {
-          "orthography": 9
+          "substitution": 6,
+          "orthography": 2,
+          "omission": 1
         }
       },
       {
@@ -436,8 +486,13 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 126,
-        "disagreements": 0,
-        "disagreements_by_kind": {}
+        "disagreements": 16,
+        "disagreements_by_kind": {
+          "substitution": 9,
+          "orthography": 5,
+          "addition": 1,
+          "omission": 1
+        }
       },
       {
         "ga": "P23",
@@ -446,9 +501,11 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 126,
-        "disagreements": 4,
+        "disagreements": 10,
         "disagreements_by_kind": {
-          "orthography": 4
+          "substitution": 3,
+          "orthography": 5,
+          "addition": 2
         }
       },
       {
@@ -458,9 +515,10 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 149,
-        "disagreements": 7,
+        "disagreements": 4,
         "disagreements_by_kind": {
-          "orthography": 7
+          "orthography": 3,
+          "substitution": 1
         }
       },
       {
@@ -470,9 +528,10 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 93,
-        "disagreements": 4,
+        "disagreements": 6,
         "disagreements_by_kind": {
-          "orthography": 4
+          "orthography": 4,
+          "substitution": 2
         }
       },
       {
@@ -482,9 +541,9 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 22,
-        "disagreements": 4,
+        "disagreements": 2,
         "disagreements_by_kind": {
-          "orthography": 4
+          "substitution": 2
         }
       },
       {
@@ -494,9 +553,10 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 157,
-        "disagreements": 2,
+        "disagreements": 6,
         "disagreements_by_kind": {
-          "orthography": 2
+          "orthography": 3,
+          "substitution": 3
         }
       },
       {
@@ -508,7 +568,7 @@
         "extant_word_tokens": 69,
         "disagreements": 1,
         "disagreements_by_kind": {
-          "orthography": 1
+          "substitution": 1
         }
       },
       {
@@ -520,7 +580,7 @@
         "extant_word_tokens": 98,
         "disagreements": 5,
         "disagreements_by_kind": {
-          "orthography": 5
+          "substitution": 5
         }
       },
       {
@@ -530,9 +590,13 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 1333,
-        "disagreements": 35,
+        "disagreements": 84,
         "disagreements_by_kind": {
-          "orthography": 35
+          "substitution": 34,
+          "orthography": 31,
+          "addition": 5,
+          "omission": 9,
+          "transposition": 5
         }
       },
       {
@@ -542,9 +606,11 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 328,
-        "disagreements": 10,
+        "disagreements": 20,
         "disagreements_by_kind": {
-          "orthography": 10
+          "orthography": 8,
+          "substitution": 11,
+          "omission": 1
         }
       },
       {
@@ -554,9 +620,13 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 8314,
-        "disagreements": 703,
+        "disagreements": 1005,
         "disagreements_by_kind": {
-          "orthography": 703
+          "substitution": 510,
+          "orthography": 319,
+          "omission": 94,
+          "addition": 59,
+          "transposition": 23
         }
       },
       {
@@ -566,9 +636,13 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 25543,
-        "disagreements": 1116,
+        "disagreements": 2679,
         "disagreements_by_kind": {
-          "orthography": 1116
+          "orthography": 1071,
+          "substitution": 1175,
+          "omission": 203,
+          "addition": 202,
+          "transposition": 28
         }
       },
       {
@@ -578,9 +652,13 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 3011,
-        "disagreements": 178,
+        "disagreements": 391,
         "disagreements_by_kind": {
-          "orthography": 178
+          "substitution": 209,
+          "addition": 27,
+          "omission": 32,
+          "transposition": 9,
+          "orthography": 114
         }
       },
       {
@@ -590,9 +668,12 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 167,
-        "disagreements": 42,
+        "disagreements": 16,
         "disagreements_by_kind": {
-          "orthography": 42
+          "substitution": 10,
+          "orthography": 4,
+          "omission": 1,
+          "addition": 1
         }
       },
       {
@@ -602,9 +683,11 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 376,
-        "disagreements": 14,
+        "disagreements": 23,
         "disagreements_by_kind": {
-          "orthography": 14
+          "orthography": 9,
+          "substitution": 13,
+          "addition": 1
         }
       },
       {
@@ -614,9 +697,13 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 358,
-        "disagreements": 7,
+        "disagreements": 28,
         "disagreements_by_kind": {
-          "orthography": 7
+          "substitution": 16,
+          "transposition": 2,
+          "orthography": 6,
+          "addition": 3,
+          "omission": 1
         }
       },
       {
@@ -628,7 +715,9 @@
         "extant_word_tokens": 189,
         "disagreements": 6,
         "disagreements_by_kind": {
-          "orthography": 6
+          "substitution": 2,
+          "omission": 1,
+          "orthography": 3
         }
       },
       {
@@ -648,9 +737,13 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 14669,
-        "disagreements": 873,
+        "disagreements": 1502,
         "disagreements_by_kind": {
-          "orthography": 873
+          "orthography": 528,
+          "omission": 95,
+          "addition": 251,
+          "substitution": 606,
+          "transposition": 22
         }
       },
       {
@@ -660,9 +753,10 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 72,
-        "disagreements": 11,
+        "disagreements": 9,
         "disagreements_by_kind": {
-          "orthography": 11
+          "substitution": 7,
+          "omission": 2
         }
       },
       {
@@ -672,9 +766,13 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 3518,
-        "disagreements": 268,
+        "disagreements": 689,
         "disagreements_by_kind": {
-          "orthography": 268
+          "substitution": 202,
+          "orthography": 379,
+          "addition": 66,
+          "omission": 34,
+          "transposition": 8
         }
       },
       {
@@ -684,9 +782,13 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 23003,
-        "disagreements": 620,
+        "disagreements": 1668,
         "disagreements_by_kind": {
-          "orthography": 620
+          "orthography": 613,
+          "omission": 141,
+          "substitution": 764,
+          "addition": 139,
+          "transposition": 11
         }
       },
       {
@@ -718,7 +820,7 @@
         "extant_word_tokens": 33,
         "disagreements": 2,
         "disagreements_by_kind": {
-          "orthography": 2
+          "substitution": 2
         }
       },
       {
@@ -728,9 +830,10 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 94,
-        "disagreements": 9,
+        "disagreements": 8,
         "disagreements_by_kind": {
-          "orthography": 9
+          "substitution": 6,
+          "orthography": 2
         }
       },
       {
@@ -740,8 +843,11 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 67,
-        "disagreements": 0,
-        "disagreements_by_kind": {}
+        "disagreements": 3,
+        "disagreements_by_kind": {
+          "orthography": 2,
+          "substitution": 1
+        }
       },
       {
         "ga": "P95",
@@ -750,9 +856,9 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 54,
-        "disagreements": 1,
+        "disagreements": 2,
         "disagreements_by_kind": {
-          "orthography": 1
+          "substitution": 2
         }
       },
       {
@@ -762,9 +868,12 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 455,
-        "disagreements": 32,
+        "disagreements": 50,
         "disagreements_by_kind": {
-          "orthography": 32
+          "substitution": 33,
+          "omission": 5,
+          "orthography": 10,
+          "addition": 2
         }
       },
       {
@@ -774,9 +883,10 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 164,
-        "disagreements": 6,
+        "disagreements": 12,
         "disagreements_by_kind": {
-          "orthography": 6
+          "substitution": 10,
+          "orthography": 2
         }
       },
       {
@@ -796,9 +906,11 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 382,
-        "disagreements": 28,
+        "disagreements": 29,
         "disagreements_by_kind": {
-          "orthography": 28
+          "orthography": 21,
+          "omission": 1,
+          "substitution": 7
         }
       },
       {
@@ -808,9 +920,11 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 58,
-        "disagreements": 7,
+        "disagreements": 6,
         "disagreements_by_kind": {
-          "orthography": 7
+          "substitution": 3,
+          "orthography": 2,
+          "addition": 1
         }
       },
       {
@@ -840,9 +954,11 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 72,
-        "disagreements": 14,
+        "disagreements": 9,
         "disagreements_by_kind": {
-          "orthography": 14
+          "omission": 1,
+          "orthography": 2,
+          "substitution": 6
         }
       },
       {
@@ -852,9 +968,10 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 61,
-        "disagreements": 1,
+        "disagreements": 5,
         "disagreements_by_kind": {
-          "orthography": 1
+          "orthography": 1,
+          "substitution": 4
         }
       },
       {
@@ -864,9 +981,11 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 66,
-        "disagreements": 6,
+        "disagreements": 7,
         "disagreements_by_kind": {
-          "orthography": 6
+          "substitution": 5,
+          "orthography": 1,
+          "omission": 1
         }
       },
       {
@@ -876,9 +995,10 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 52,
-        "disagreements": 14,
+        "disagreements": 4,
         "disagreements_by_kind": {
-          "orthography": 14
+          "substitution": 3,
+          "orthography": 1
         }
       },
       {
@@ -888,8 +1008,11 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 45,
-        "disagreements": 0,
-        "disagreements_by_kind": {}
+        "disagreements": 2,
+        "disagreements_by_kind": {
+          "substitution": 1,
+          "orthography": 1
+        }
       },
       {
         "ga": "P126",
@@ -898,9 +1021,10 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 21,
-        "disagreements": 3,
+        "disagreements": 2,
         "disagreements_by_kind": {
-          "orthography": 3
+          "substitution": 1,
+          "addition": 1
         }
       },
       {
@@ -910,9 +1034,9 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 47,
-        "disagreements": 3,
+        "disagreements": 2,
         "disagreements_by_kind": {
-          "orthography": 3
+          "orthography": 2
         }
       },
       {
@@ -922,9 +1046,13 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 542,
-        "disagreements": 20,
+        "disagreements": 37,
         "disagreements_by_kind": {
-          "orthography": 20
+          "transposition": 2,
+          "orthography": 13,
+          "substitution": 16,
+          "addition": 2,
+          "omission": 4
         }
       },
       {
@@ -934,8 +1062,10 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 62,
-        "disagreements": 0,
-        "disagreements_by_kind": {}
+        "disagreements": 1,
+        "disagreements_by_kind": {
+          "orthography": 1
+        }
       },
       {
         "ga": "P19",
@@ -944,9 +1074,10 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 161,
-        "disagreements": 8,
+        "disagreements": 11,
         "disagreements_by_kind": {
-          "orthography": 8
+          "orthography": 5,
+          "substitution": 6
         }
       },
       {
@@ -956,9 +1087,9 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 57,
-        "disagreements": 5,
+        "disagreements": 1,
         "disagreements_by_kind": {
-          "orthography": 5
+          "orthography": 1
         }
       },
       {
@@ -968,9 +1099,11 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 214,
-        "disagreements": 46,
+        "disagreements": 18,
         "disagreements_by_kind": {
-          "orthography": 46
+          "addition": 2,
+          "orthography": 2,
+          "substitution": 14
         }
       },
       {
@@ -990,8 +1123,10 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 50,
-        "disagreements": 0,
-        "disagreements_by_kind": {}
+        "disagreements": 1,
+        "disagreements_by_kind": {
+          "substitution": 1
+        }
       },
       {
         "ga": "P6",
@@ -1000,9 +1135,12 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 207,
-        "disagreements": 8,
+        "disagreements": 18,
         "disagreements_by_kind": {
-          "orthography": 8
+          "substitution": 5,
+          "orthography": 10,
+          "omission": 2,
+          "addition": 1
         }
       },
       {
@@ -1032,9 +1170,9 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 125,
-        "disagreements": 4,
+        "disagreements": 5,
         "disagreements_by_kind": {
-          "orthography": 4
+          "substitution": 5
         }
       },
       {
@@ -1044,9 +1182,9 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 41,
-        "disagreements": 3,
+        "disagreements": 1,
         "disagreements_by_kind": {
-          "orthography": 3
+          "omission": 1
         }
       },
       {
@@ -1056,9 +1194,12 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 446,
-        "disagreements": 20,
+        "disagreements": 36,
         "disagreements_by_kind": {
-          "orthography": 20
+          "orthography": 9,
+          "omission": 3,
+          "addition": 2,
+          "substitution": 22
         }
       },
       {
@@ -1068,9 +1209,11 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 214,
-        "disagreements": 4,
+        "disagreements": 15,
         "disagreements_by_kind": {
-          "orthography": 4
+          "substitution": 13,
+          "omission": 1,
+          "orthography": 1
         }
       },
       {
@@ -1080,9 +1223,9 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 42,
-        "disagreements": 3,
+        "disagreements": 2,
         "disagreements_by_kind": {
-          "orthography": 3
+          "substitution": 2
         }
       },
       {
@@ -1092,9 +1235,10 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 81,
-        "disagreements": 1,
+        "disagreements": 5,
         "disagreements_by_kind": {
-          "orthography": 1
+          "orthography": 2,
+          "substitution": 3
         }
       },
       {
@@ -1104,9 +1248,10 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 126,
-        "disagreements": 4,
+        "disagreements": 5,
         "disagreements_by_kind": {
-          "orthography": 4
+          "orthography": 4,
+          "addition": 1
         }
       },
       {
@@ -1116,9 +1261,12 @@
         "leaf_image": false,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 490,
-        "disagreements": 32,
+        "disagreements": 61,
         "disagreements_by_kind": {
-          "orthography": 32
+          "substitution": 23,
+          "orthography": 27,
+          "addition": 7,
+          "omission": 4
         }
       },
       {
@@ -1128,9 +1276,9 @@
         "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 40,
-        "disagreements": 3,
+        "disagreements": 1,
         "disagreements_by_kind": {
-          "orthography": 3
+          "substitution": 1
         }
       }
     ]
@@ -1148,16 +1296,16 @@
     "collation_note": "No Thomas↔NT collation in v1. These are Coptic Gnostic tractates, not Greek New Testament witnesses."
   },
   "primer_example": {
-    "witness": "P137",
-    "reference": "Mark 1:17",
-    "witness_reading": "ιπεν",
-    "base_reading": "οισο=",
+    "witness": "P129",
+    "reference": "1 Cor 7:35",
+    "witness_reading": "μων",
+    "base_reading": "αυτων",
     "base_text": "SR GNT",
-    "kind": "orthography"
+    "kind": "substitution"
   },
   "home_stats": {
     "greek_nt_witnesses": 94,
-    "disagreements_total": 4408,
-    "disagreements_label": "extant-letter disagreements vs SR GNT"
+    "disagreements_total": 8878,
+    "disagreements_label": "variation units vs SR GNT"
   }
 }

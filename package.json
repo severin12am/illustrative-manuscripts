@@ -9,11 +9,13 @@
     "lint": "next lint",
     "data": "node scripts/generate-data.mjs",
     "texts": "node scripts/build-texts.mjs",
+    "reclassify": "node scripts/reclassify-variants.mjs",
     "quran": "node scripts/build-quran-data.mjs",
     "nag-hammadi": "node scripts/build-nag-hammadi-data.mjs",
     "images": "node scripts/download-commons.mjs",
     "quran-images": "node scripts/download-quran-commons.mjs",
-    "coverage": "node scripts/compute-coverage.mjs"
+    "coverage": "node scripts/compute-coverage.mjs",
+    "test:classify": "node scripts/test-variant-classify.mjs"
   },
   "dependencies": {
     "next": "^15.1.0",

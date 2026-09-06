@@ -58,9 +58,10 @@ export default function StudentPrimer({ compact = false }: Props) {
             A <strong>variation unit</strong> is one spot where witnesses
             disagree (e.g. a word in John 1:1). Each possible spelling there is
             a <strong>reading</strong>. Our site counts{" "}
-            <strong>letter-level disagreements</strong> in surviving letters
-            only — one counted difference per aligned mismatch, not every
-            scholarly category Ehrman or Gurry discuss.
+            <strong>word-aligned variation units</strong> in surviving text
+            only — classified as orthography, omission, addition, substitution,
+            or transposition (mechanical v1 rules). Intentional-vs-error labels
+            are not assigned yet.
           </dd>
         </div>
 

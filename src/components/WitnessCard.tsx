@@ -9,6 +9,7 @@ import { getNagHammadiWitnessText } from "@/data/nag-hammadi-texts";
 import WitnessTextPanel from "./WitnessTextPanel";
 import QuranTextPanel from "./QuranTextPanel";
 import NagHammadiTextPanel from "./NagHammadiTextPanel";
+import { kindLabel, sortKindEntries } from "@/lib/variantTaxonomy";
 
 interface WitnessCardProps {
   witness: Witness;
@@ -106,29 +107,24 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
           <div className={styles.variantSummary}>
             <p className={styles.variantDef}>
               <strong>
-                {ntCoverage.disagreements.toLocaleString()} letter-level
-                disagreement{ntCoverage.disagreements !== 1 ? "s" : ""}
+                {ntCoverage.disagreements.toLocaleString()} variation unit
+                {ntCoverage.disagreements !== 1 ? "s" : ""}
               </strong>{" "}
               in extant (non-supplied) runs vs CNTR SR GNT across all stored
-              verses. Lacunae and reconstructed text are not counted as
-              variants.
+              verses. Lacunae and reconstructed text are not counted.
             </p>
             {Object.keys(ntCoverage.disagreements_by_kind).length > 0 ? (
               <ul className={styles.kindList}>
-                {Object.entries(ntCoverage.disagreements_by_kind)
-                  .sort((a, b) => b[1] - a[1])
-                  .map(([kind, count]) => (
+                {sortKindEntries(ntCoverage.disagreements_by_kind).map(
+                  ([kind, count]) => (
                     <li key={kind}>
-                      <span className={styles.kindTag}>
-                        {kind.replace(/_/g, " ")}
-                      </span>
+                      <span className={styles.kindTag}>{kindLabel(kind)}</span>
                       {count.toLocaleString()}
                     </li>
-                  ))}
+                  )
+                )}
               </ul>
-            ) : (
-              <p className={styles.variantPending}>Type breakdown: coming soon</p>
-            )}
+            ) : null}
             {witness.cntr_url && (
               <a
                 href={witness.cntr_url}
