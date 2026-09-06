@@ -197,9 +197,11 @@ function computeNtCoverage(witnesses, witnessTexts, liste) {
     },
     disagreements: {
       definition:
-        "Letter-level disagreements in extant runs vs SR GNT (CNTR), using scripts/lib/variant-classify.mjs. Lacunae and reconstructed supplied text are not counted.",
+        "Word-aligned variation units in extant runs vs SR GNT (CNTR), using scripts/lib/variant-classify.mjs. Lacunae and reconstructed supplied text are not counted. Intentional-vs-error labels are not assigned in this mechanical pass.",
       base_text: "SR GNT",
       total: totalDisagreements,
+      unit:
+        "variation units (word-aligned disagreements; spelling-only differences count as orthography units)",
       by_kind: globalByKind,
       per_witness_median: median(disagreementCounts),
       per_witness_max: disagreementCounts.length
@@ -297,7 +299,7 @@ function main() {
     home_stats: {
       greek_nt_witnesses: nt.witness_count,
       disagreements_total: nt.disagreements.total,
-      disagreements_label: "extant-letter disagreements vs SR GNT",
+      disagreements_label: "variation units vs SR GNT",
     },
   };
 

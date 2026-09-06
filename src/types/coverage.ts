@@ -27,6 +27,7 @@ export interface CoverageData {
       definition: string;
       base_text: string;
       total: number;
+      unit?: string;
       by_kind: Record<string, number>;
       per_witness_median: number;
       per_witness_max: number;

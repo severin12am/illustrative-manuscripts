@@ -6,10 +6,7 @@ import GreekDiplomatic from "./GreekDiplomatic";
 import type { WitnessText, TextVerse, VariantUnit } from "@/types/text";
 import { countVariants, formatLocus } from "@/types/text";
 import { assetUrl } from "@/lib/assetUrl";
-
-function kindLabel(kind: VariantUnit["kind"]): string {
-  return kind.replace(/_/g, " ");
-}
+import { kindLabel, sortKindEntries } from "@/lib/variantTaxonomy";
 
 interface Props {
   text: WitnessText;
@@ -117,7 +114,7 @@ export default function WitnessTextPanel({ text, ga }: Props) {
     }
     return acc;
   }, {});
-  const kindEntries = Object.entries(kindTotals).sort((a, b) => b[1] - a[1]);
+  const kindEntries = sortKindEntries(kindTotals);
 
   return (
     <section className={styles.panel}>
@@ -127,24 +124,22 @@ export default function WitnessTextPanel({ text, ga }: Props) {
           {text.translation_label} — {text.translation_base}
         </p>
         <p className={styles.diffCount}>
-          <strong>{differenceCount}</strong> letter-level disagreement
+          <strong>{differenceCount}</strong> variation unit
           {differenceCount !== 1 ? "s" : ""} in extant (non-supplied) runs vs{" "}
           {baseText} in the surviving verses shown. Lacunae and reconstructed
-          text are not counted as variants.
+          text are not counted.
         </p>
-        {kindEntries.length > 0 ? (
+        {kindEntries.length > 0 && (
           <ul className={styles.kindBreakdown}>
             {kindEntries.map(([kind, count]) => (
               <li key={kind}>
                 <span className={styles.kindBadge} data-kind={kind}>
-                  {kindLabel(kind as VariantUnit["kind"])}
+                  {kindLabel(kind)}
                 </span>
                 {count}
               </li>
             ))}
           </ul>
-        ) : (
-          <p className={styles.kindPending}>Type breakdown: coming soon</p>
         )}
         {text.cntr_url && (
           <a
