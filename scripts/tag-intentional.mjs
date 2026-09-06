@@ -13,6 +13,7 @@
  *   LM_MODEL     default first non-embedding model from /v1/models, else "uncategorized"
  *   RATE_LIMIT_MS default 500
  *   LM_DISABLE_THINKING  if set, sends enable_thinking:false (LM Studio / Qwen; ignored elsewhere)
+ *   LM_JSON_MODE         if set, sends response_format json_object (LM Studio may honor)
  */
 
 import {
@@ -24,8 +25,12 @@ import {
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 import {
+  SYSTEM_PROMPT,
+  buildRetryUserPrompt,
   parseTagFromMessage,
+  isParseFailure,
   thinkingDisableFields,
+  jsonModeFields,
 } from "./lib/tag-intentional-response.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -34,18 +39,6 @@ const ROOT = join(__dirname, "..");
 const DEFAULT_INPUT = join(ROOT, "scripts/cache/taggable-units.jsonl");
 const DEFAULT_OUTPUT = join(ROOT, "src/data/intentional-tags.json");
 const MAX_TOKENS = 1024;
-
-const SYSTEM_PROMPT = `You classify New Testament papyrus variation units as likely scribal error, likely intentional, or uncertain.
-
-Reply with JSON only — no markdown, no prose outside the object:
-{"unit_id":"<same id>","label":"error"|"intentional"|"uncertain","rationale":"≤20 words","confidence":0.0-1.0}
-
-Labels:
-- error: haplography, dittography, leap, nonsense, clear slip
-- intentional: harmonization to parallel, doctrinal/stylistic preference, clarifying expansion (hypothesis, not verdict)
-- uncertain: cannot tell from the evidence given
-
-These are provisional hypotheses for teaching, not ECM judgments.`;
 
 function parseArgs(argv) {
   const opts = {
@@ -85,6 +78,7 @@ Environment:
   LM_MODEL              Model id (auto-detected from /v1/models when unset)
   RATE_LIMIT_MS         Default delay between requests
   LM_DISABLE_THINKING   If set, request enable_thinking:false (LM Studio/Qwen; harmless elsewhere)
+  LM_JSON_MODE          If set, request response_format json_object (LM Studio may honor)
 `);
       process.exit(0);
     }
@@ -153,19 +147,18 @@ function buildUserPrompt(unit) {
   ];
   if (unit.context_left) parts.push(`context_left: ${unit.context_left}`);
   if (unit.context_right) parts.push(`context_right: ${unit.context_right}`);
+  parts.push("Reply with one JSON object only. First character { last character }.");
   return parts.join("\n");
 }
 
-async function tagUnit(unit, opts, model) {
+async function requestCompletion(messages, opts, model) {
   const body = {
     model,
     temperature: 0.2,
     max_tokens: MAX_TOKENS,
-    messages: [
-      { role: "system", content: SYSTEM_PROMPT },
-      { role: "user", content: buildUserPrompt(unit) },
-    ],
+    messages,
     ...thinkingDisableFields(),
+    ...jsonModeFields(),
   };
 
   const res = await fetch(opts.baseUrl, {
@@ -180,10 +173,37 @@ async function tagUnit(unit, opts, model) {
   }
 
   const data = await res.json();
-  const message = data.choices?.[0]?.message;
-  const tag = parseTagFromMessage(message, unit.unit_id, console.warn);
-  tag.model = model;
-  return tag;
+  return data.choices?.[0]?.message;
+}
+
+async function tagUnit(unit, opts, model) {
+  const messages = [
+    { role: "system", content: SYSTEM_PROMPT },
+    { role: "user", content: buildUserPrompt(unit) },
+  ];
+
+  let message;
+  try {
+    message = await requestCompletion(messages, opts, model);
+    const tag = parseTagFromMessage(message, unit.unit_id, console.warn);
+    tag.model = model;
+    return tag;
+  } catch (err) {
+    if (!isParseFailure(err)) throw err;
+    console.warn(`WARN ${unit.unit_id}: parse failed, retrying — ${err.message}`);
+    message = await requestCompletion(
+      [
+        { role: "system", content: SYSTEM_PROMPT },
+        { role: "user", content: buildRetryUserPrompt(unit.unit_id) },
+      ],
+      opts,
+      model
+    );
+    const tag = parseTagFromMessage(message, unit.unit_id, console.warn);
+    tag.model = model;
+    tag.retried = true;
+    return tag;
+  }
 }
 
 function saveTags(path, tags) {
@@ -226,6 +246,9 @@ async function main() {
   console.log(`Endpoint: ${opts.baseUrl}`);
   if (process.env.LM_DISABLE_THINKING) {
     console.log("LM_DISABLE_THINKING set — requesting enable_thinking:false");
+  }
+  if (process.env.LM_JSON_MODE) {
+    console.log("LM_JSON_MODE set — requesting response_format json_object");
   }
 
   const tags = { ...existing };

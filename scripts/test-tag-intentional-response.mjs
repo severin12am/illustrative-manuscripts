@@ -7,9 +7,13 @@
 import {
   messageTextFromChoice,
   extractJsonObject,
+  findTagJsonObject,
+  stripMarkdownFences,
   validateTag,
   parseTagFromMessage,
   thinkingDisableFields,
+  jsonModeFields,
+  isParseFailure,
 } from "./lib/tag-intentional-response.mjs";
 
 const UNIT = "P106:43001031:w4-5:transposition";
@@ -35,10 +39,24 @@ ok(
   messageTextFromChoice({ content: "  ", reasoning_content: JSON_TAG }) === JSON_TAG
 );
 
-const parsed = extractJsonObject(
-  `Let me think...\n${JSON_TAG}\nDone.`
+const proseThenJson = `We need answer JSON only. Need classify unit_id ${UNIT}.\n${JSON_TAG}`;
+const parsed = extractJsonObject(proseThenJson);
+ok("extractJsonObject after English prose", parsed.label === "error");
+
+ok(
+  "findTagJsonObject skips invalid first brace",
+  findTagJsonObject(`Not json. {"foo":1} More talk. ${JSON_TAG}`).label === "error"
 );
-ok("extractJsonObject embedded", parsed.label === "error");
+
+ok(
+  "stripMarkdownFences",
+  stripMarkdownFences("```json\n" + JSON_TAG + "\n```") === JSON_TAG
+);
+
+ok(
+  "markdown fenced JSON",
+  extractJsonObject("```json\n" + JSON_TAG + "\n```").label === "error"
+);
 
 const tag = parseTagFromMessage(
   { content: "", reasoning_content: JSON_TAG },
@@ -81,12 +99,37 @@ ok(
 );
 delete process.env.LM_DISABLE_THINKING;
 
+ok("jsonModeFields empty by default", Object.keys(jsonModeFields()).length === 0);
+process.env.LM_JSON_MODE = "1";
+ok(
+  "jsonModeFields when set",
+  jsonModeFields().response_format?.type === "json_object"
+);
+delete process.env.LM_JSON_MODE;
+
+ok(
+  "isParseFailure detects missing JSON",
+  isParseFailure(new Error("Model did not return JSON: hello"))
+);
+ok(
+  "isParseFailure ignores API errors",
+  !isParseFailure(new Error("LM API 500: boom"))
+);
+
 try {
   parseTagFromMessage({ content: "", reasoning_content: "" }, UNIT, () => {});
   failed++;
   console.error("FAIL empty message should throw");
 } catch (err) {
   ok("empty message throws", err.message.includes("Empty model response"));
+}
+
+try {
+  extractJsonObject("We need answer JSON only. Need classify unit_id foo.");
+  failed++;
+  console.error("FAIL prose-only should throw");
+} catch (err) {
+  ok("prose-only throws", err.message.includes("Model did not return JSON"));
 }
 
 if (failed) {
