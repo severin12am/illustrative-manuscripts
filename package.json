@@ -18,7 +18,8 @@
     "export-taggable": "node scripts/export-taggable.mjs --sample 100",
     "tag-intentional": "node scripts/tag-intentional.mjs",
     "test:classify": "node scripts/test-variant-classify.mjs",
-    "test:intentional": "node scripts/test-intentional-gold.mjs"
+    "test:intentional": "node scripts/test-intentional-gold.mjs",
+    "test:tag-intentional": "node scripts/test-tag-intentional-response.mjs"
   },
   "dependencies": {
     "next": "^15.1.0",
