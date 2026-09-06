@@ -12,6 +12,7 @@
  *   LM_BASE_URL  default http://127.0.0.1:1234/v1/chat/completions
  *   LM_MODEL     default first non-embedding model from /v1/models, else "uncategorized"
  *   RATE_LIMIT_MS default 500
+ *   LM_DISABLE_THINKING  if set, sends enable_thinking:false (LM Studio / Qwen; ignored elsewhere)
  */
 
 import {
@@ -22,13 +23,17 @@ import {
 } from "fs";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
+import {
+  parseTagFromMessage,
+  thinkingDisableFields,
+} from "./lib/tag-intentional-response.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 
 const DEFAULT_INPUT = join(ROOT, "scripts/cache/taggable-units.jsonl");
 const DEFAULT_OUTPUT = join(ROOT, "src/data/intentional-tags.json");
-const VALID_LABELS = new Set(["error", "intentional", "uncertain"]);
+const MAX_TOKENS = 1024;
 
 const SYSTEM_PROMPT = `You classify New Testament papyrus variation units as likely scribal error, likely intentional, or uncertain.
 
@@ -76,9 +81,10 @@ Options:
   --delay-ms MS    Pause between API calls (default 500 or RATE_LIMIT_MS)
 
 Environment:
-  LM_BASE_URL      OpenAI-compatible chat completions endpoint
-  LM_MODEL         Model id (auto-detected from /v1/models when unset)
-  RATE_LIMIT_MS    Default delay between requests
+  LM_BASE_URL           OpenAI-compatible chat completions endpoint
+  LM_MODEL              Model id (auto-detected from /v1/models when unset)
+  RATE_LIMIT_MS         Default delay between requests
+  LM_DISABLE_THINKING   If set, request enable_thinking:false (LM Studio/Qwen; harmless elsewhere)
 `);
       process.exit(0);
     }
@@ -150,60 +156,16 @@ function buildUserPrompt(unit) {
   return parts.join("\n");
 }
 
-function extractJsonObject(text) {
-  const trimmed = text.trim();
-  try {
-    return JSON.parse(trimmed);
-  } catch {
-    const start = trimmed.indexOf("{");
-    const end = trimmed.lastIndexOf("}");
-    if (start >= 0 && end > start) {
-      return JSON.parse(trimmed.slice(start, end + 1));
-    }
-    throw new Error(`Model did not return JSON: ${trimmed.slice(0, 200)}`);
-  }
-}
-
-function validateTag(parsed, expectedUnitId) {
-  if (!parsed || typeof parsed !== "object") {
-    throw new Error("Response is not an object");
-  }
-  if (parsed.unit_id !== expectedUnitId) {
-    throw new Error(
-      `unit_id mismatch: expected ${expectedUnitId}, got ${parsed.unit_id}`
-    );
-  }
-  if (!VALID_LABELS.has(parsed.label)) {
-    throw new Error(`Invalid label: ${parsed.label}`);
-  }
-  const rationale = String(parsed.rationale ?? "").trim();
-  if (!rationale) throw new Error("Missing rationale");
-  const words = rationale.split(/\s+/).filter(Boolean);
-  if (words.length > 20) {
-    throw new Error(`Rationale too long (${words.length} words)`);
-  }
-  const confidence = Number(parsed.confidence);
-  if (!Number.isFinite(confidence) || confidence < 0 || confidence > 1) {
-    throw new Error(`Invalid confidence: ${parsed.confidence}`);
-  }
-  return {
-    label: parsed.label,
-    rationale,
-    confidence,
-    tagged_at: new Date().toISOString(),
-    model: parsed.model,
-  };
-}
-
 async function tagUnit(unit, opts, model) {
   const body = {
     model,
     temperature: 0.2,
-    max_tokens: 120,
+    max_tokens: MAX_TOKENS,
     messages: [
       { role: "system", content: SYSTEM_PROMPT },
       { role: "user", content: buildUserPrompt(unit) },
     ],
+    ...thinkingDisableFields(),
   };
 
   const res = await fetch(opts.baseUrl, {
@@ -218,10 +180,8 @@ async function tagUnit(unit, opts, model) {
   }
 
   const data = await res.json();
-  const content = data.choices?.[0]?.message?.content;
-  if (!content) throw new Error("Empty model response");
-  const parsed = extractJsonObject(content);
-  const tag = validateTag(parsed, unit.unit_id);
+  const message = data.choices?.[0]?.message;
+  const tag = parseTagFromMessage(message, unit.unit_id, console.warn);
   tag.model = model;
   return tag;
 }
@@ -264,6 +224,9 @@ async function main() {
   const model = await resolveModel(opts.baseUrl, opts.model);
   console.log(`Using model: ${model}`);
   console.log(`Endpoint: ${opts.baseUrl}`);
+  if (process.env.LM_DISABLE_THINKING) {
+    console.log("LM_DISABLE_THINKING set — requesting enable_thinking:false");
+  }
 
   const tags = { ...existing };
   let tagged = 0;

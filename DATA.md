@@ -203,6 +203,7 @@ npm run export-taggable
 
 # 2. Start LM Studio with Qwen; default API http://127.0.0.1:1234
 export LM_MODEL=qwen2.5-7b-instruct   # optional; auto-detects first non-embedding model
+export LM_DISABLE_THINKING=1          # optional; Qwen/LM Studio — skip chain-of-thought (harmless on other servers)
 npm run tag-intentional               # all units — use --limit 50 while testing
 
 # Options
@@ -220,7 +221,7 @@ npm run coverage
 |------|------|
 | `scripts/cache/taggable-units.jsonl` | Full export (~5.4k non-orthography units; gitignored) |
 | `scripts/cache/taggable-units.sample.jsonl` | First 100 lines for quick SAIP start (committed) |
-| `scripts/tag-intentional.mjs` | POSTs to `LM_BASE_URL` (default `http://127.0.0.1:1234/v1/chat/completions`) |
+| `scripts/tag-intentional.mjs` | POSTs to `LM_BASE_URL` (default `http://127.0.0.1:1234/v1/chat/completions`); reads `message.content` or falls back to `reasoning_content` (Qwen thinking models); `max_tokens` 1024 |
 | `src/data/intentional-tags.json` | Map `unit_id` → `{ label, rationale, confidence, tagged_at }` |
 | `scripts/fixtures/intentional-gold.json` | ~20 hand-labeled smoke cases (`npm run test:intentional`) |
 
