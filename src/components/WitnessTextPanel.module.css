@@ -33,7 +33,30 @@
   font-size: 0.8rem;
   color: var(--gold-light);
   margin-top: 0.5rem;
-  line-height: 1.4;
+  line-height: 1.5;
+}
+
+.kindBreakdown {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.9rem;
+  margin-top: 0.45rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.kindPending {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.35rem;
+  font-style: italic;
+}
+
+.cntrOpen {
+  display: inline-block;
+  margin-top: 0.45rem;
+  font-size: 0.78rem;
 }
 
 .verseList {

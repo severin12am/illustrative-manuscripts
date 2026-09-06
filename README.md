@@ -28,10 +28,13 @@ A year-by-year timeline of early biblical manuscripts — **Greek NT papyri (1�
 ### Shared
 - Honest **date ranges** — not fake point dates
 - Corpus switch keeps Qurʾān witnesses out of the NT year-150 view
+- **[Coverage page](https://severin12am.github.io/illustrative-manuscripts/coverage/)** — computed witness counts, extant-letter disagreements vs SR GNT (our CNTR slice only), and plain-language limits
 
 ## What this is not
 
 Not a replacement for NTVMR, INTF, or ECM. Not a corpus of high-res library downloads. We **link** institutional viewers; we only **host** images that are clearly PD/CC on Wikimedia Commons.
+
+**Not a census of NT variants.** Our published disagreement total covers early papyri with CNTR transcriptions in this dataset — not ~5,700 Greek manuscripts and not Gurry’s ~500k extrapolation. See [DATA.md](./DATA.md) and `/coverage` for definitions.
 
 Major uncials (Vaticanus, Sinaiticus, Alexandrinus) are **not** in this dataset — the cached Liste export covers Gregory-Aland papyri (docID 10000–19999) only.
 
@@ -51,6 +54,7 @@ npm run quran     # Qurʾān: build from scripts/quran-seed.json
 npm run nag-hammadi  # Nag Hammadi: build from scripts/nag-hammadi-seed.json
 npm run images    # NT Commons downloads
 npm run quran-images  # Qurʾān Commons downloads
+npm run coverage   # recompute src/data/coverage.json (stats for /coverage + home strip)
 npm run dev       # http://localhost:3000
 ```
 
@@ -69,7 +73,7 @@ NEXT_PUBLIC_BASE_PATH=/illustrative-manuscripts npm run build
 
 ## Data
 
-See [DATA.md](./DATA.md) for provenance, API cache notes, and which witnesses still lack a Commons image.
+See [DATA.md](./DATA.md) for provenance, API cache notes, variant/disagreement definitions, and which witnesses still lack a Commons image.
 
 See [SOURCES.md](./SOURCES.md) for intended future link-only sources.
 

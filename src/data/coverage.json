@@ -1,0 +1,1163 @@
+{
+  "generated_at": "2026-09-06T10:00:38.102Z",
+  "sources": {
+    "witness_texts": "src/data/witness-texts.json",
+    "cntr_overflow": "public/cntr-texts/*.json",
+    "liste": "scripts/cache/liste.json",
+    "classifier": "scripts/lib/variant-classify.mjs"
+  },
+  "greek_nt": {
+    "witness_count": 94,
+    "cntr_transcription_count": 84,
+    "cntr_missing": [
+      "P103",
+      "P16",
+      "P65",
+      "P78",
+      "P80",
+      "P12",
+      "P10",
+      "P50",
+      "P62",
+      "P7"
+    ],
+    "leaf_image_count": 50,
+    "nonzero_extant_comparison_count": 84,
+    "lazy_load_overflow_files": 46,
+    "extant_word_tokens": {
+      "definition": "Greek word tokens in extant (non-supplied) runs across all CNTR verses we store, including lazy-load overflow files. Lacunae and editorially supplied letters are excluded.",
+      "total": 90913
+    },
+    "disagreements": {
+      "definition": "Letter-level disagreements in extant runs vs SR GNT (CNTR), using scripts/lib/variant-classify.mjs. Lacunae and reconstructed supplied text are not counted.",
+      "base_text": "SR GNT",
+      "total": 4408,
+      "by_kind": {
+        "orthography": 4408
+      },
+      "per_witness_median": 4,
+      "per_witness_max": 1116,
+      "witnesses_with_any": 71
+    },
+    "intl_liste_papyri": {
+      "window": [
+        1,
+        300
+      ],
+      "liste_in_window": 94,
+      "included": 94,
+      "missing": [],
+      "included_percent": 100,
+      "missing_percent": 0
+    },
+    "per_witness": [
+      {
+        "ga": "P129",
+        "id": "p129",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 122,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P137",
+        "id": "p137",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 30,
+        "disagreements": 4,
+        "disagreements_by_kind": {
+          "orthography": 4
+        }
+      },
+      {
+        "ga": "P90",
+        "id": "p90",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 142,
+        "disagreements": 3,
+        "disagreements_by_kind": {
+          "orthography": 3
+        }
+      },
+      {
+        "ga": "P52",
+        "id": "p52",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 40,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P104",
+        "id": "p104",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 40,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P98",
+        "id": "p98",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 57,
+        "disagreements": 10,
+        "disagreements_by_kind": {
+          "orthography": 10
+        }
+      },
+      {
+        "ga": "P1",
+        "id": "p1",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 277,
+        "disagreements": 3,
+        "disagreements_by_kind": {
+          "orthography": 3
+        }
+      },
+      {
+        "ga": "P100",
+        "id": "p100",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 195,
+        "disagreements": 16,
+        "disagreements_by_kind": {
+          "orthography": 16
+        }
+      },
+      {
+        "ga": "P101",
+        "id": "p101",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 93,
+        "disagreements": 8,
+        "disagreements_by_kind": {
+          "orthography": 8
+        }
+      },
+      {
+        "ga": "P103",
+        "id": "p103",
+        "cntr_transcription": false,
+        "leaf_image": true,
+        "nonzero_extant_comparison": false,
+        "extant_word_tokens": 0,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P106",
+        "id": "p106",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 201,
+        "disagreements": 12,
+        "disagreements_by_kind": {
+          "orthography": 12
+        }
+      },
+      {
+        "ga": "P107",
+        "id": "p107",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 45,
+        "disagreements": 1,
+        "disagreements_by_kind": {
+          "orthography": 1
+        }
+      },
+      {
+        "ga": "P108",
+        "id": "p108",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 61,
+        "disagreements": 3,
+        "disagreements_by_kind": {
+          "orthography": 3
+        }
+      },
+      {
+        "ga": "P109",
+        "id": "p109",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 36,
+        "disagreements": 2,
+        "disagreements_by_kind": {
+          "orthography": 2
+        }
+      },
+      {
+        "ga": "P111",
+        "id": "p111",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 26,
+        "disagreements": 2,
+        "disagreements_by_kind": {
+          "orthography": 2
+        }
+      },
+      {
+        "ga": "P113",
+        "id": "p113",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 20,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P114",
+        "id": "p114",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 22,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P115",
+        "id": "p115",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 843,
+        "disagreements": 42,
+        "disagreements_by_kind": {
+          "orthography": 42
+        }
+      },
+      {
+        "ga": "P118",
+        "id": "p118",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 79,
+        "disagreements": 7,
+        "disagreements_by_kind": {
+          "orthography": 7
+        }
+      },
+      {
+        "ga": "P119",
+        "id": "p119",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 68,
+        "disagreements": 4,
+        "disagreements_by_kind": {
+          "orthography": 4
+        }
+      },
+      {
+        "ga": "P121",
+        "id": "p121",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 19,
+        "disagreements": 4,
+        "disagreements_by_kind": {
+          "orthography": 4
+        }
+      },
+      {
+        "ga": "P125",
+        "id": "p125",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 131,
+        "disagreements": 5,
+        "disagreements_by_kind": {
+          "orthography": 5
+        }
+      },
+      {
+        "ga": "P13",
+        "id": "p13",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 1331,
+        "disagreements": 49,
+        "disagreements_by_kind": {
+          "orthography": 49
+        }
+      },
+      {
+        "ga": "P130",
+        "id": "p130",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 55,
+        "disagreements": 4,
+        "disagreements_by_kind": {
+          "orthography": 4
+        }
+      },
+      {
+        "ga": "P131",
+        "id": "p131",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 91,
+        "disagreements": 4,
+        "disagreements_by_kind": {
+          "orthography": 4
+        }
+      },
+      {
+        "ga": "P132",
+        "id": "p132",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 25,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P133",
+        "id": "p133",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 122,
+        "disagreements": 4,
+        "disagreements_by_kind": {
+          "orthography": 4
+        }
+      },
+      {
+        "ga": "P134",
+        "id": "p134",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 20,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P138",
+        "id": "p138",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 48,
+        "disagreements": 2,
+        "disagreements_by_kind": {
+          "orthography": 2
+        }
+      },
+      {
+        "ga": "P141",
+        "id": "p141",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 155,
+        "disagreements": 9,
+        "disagreements_by_kind": {
+          "orthography": 9
+        }
+      },
+      {
+        "ga": "P16",
+        "id": "p16",
+        "cntr_transcription": false,
+        "leaf_image": true,
+        "nonzero_extant_comparison": false,
+        "extant_word_tokens": 0,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P18",
+        "id": "p18",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 91,
+        "disagreements": 4,
+        "disagreements_by_kind": {
+          "orthography": 4
+        }
+      },
+      {
+        "ga": "P20",
+        "id": "p20",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 126,
+        "disagreements": 9,
+        "disagreements_by_kind": {
+          "orthography": 9
+        }
+      },
+      {
+        "ga": "P22",
+        "id": "p22",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 126,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P23",
+        "id": "p23",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 126,
+        "disagreements": 4,
+        "disagreements_by_kind": {
+          "orthography": 4
+        }
+      },
+      {
+        "ga": "P27",
+        "id": "p27",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 149,
+        "disagreements": 7,
+        "disagreements_by_kind": {
+          "orthography": 7
+        }
+      },
+      {
+        "ga": "P28",
+        "id": "p28",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 93,
+        "disagreements": 4,
+        "disagreements_by_kind": {
+          "orthography": 4
+        }
+      },
+      {
+        "ga": "P29",
+        "id": "p29",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 22,
+        "disagreements": 4,
+        "disagreements_by_kind": {
+          "orthography": 4
+        }
+      },
+      {
+        "ga": "P30",
+        "id": "p30",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 157,
+        "disagreements": 2,
+        "disagreements_by_kind": {
+          "orthography": 2
+        }
+      },
+      {
+        "ga": "P32",
+        "id": "p32",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 69,
+        "disagreements": 1,
+        "disagreements_by_kind": {
+          "orthography": 1
+        }
+      },
+      {
+        "ga": "P39",
+        "id": "p39",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 98,
+        "disagreements": 5,
+        "disagreements_by_kind": {
+          "orthography": 5
+        }
+      },
+      {
+        "ga": "P4",
+        "id": "p4",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 1333,
+        "disagreements": 35,
+        "disagreements_by_kind": {
+          "orthography": 35
+        }
+      },
+      {
+        "ga": "P40",
+        "id": "p40",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 328,
+        "disagreements": 10,
+        "disagreements_by_kind": {
+          "orthography": 10
+        }
+      },
+      {
+        "ga": "P45",
+        "id": "p45",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 8314,
+        "disagreements": 703,
+        "disagreements_by_kind": {
+          "orthography": 703
+        }
+      },
+      {
+        "ga": "P46",
+        "id": "p46",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 25543,
+        "disagreements": 1116,
+        "disagreements_by_kind": {
+          "orthography": 1116
+        }
+      },
+      {
+        "ga": "P47",
+        "id": "p47",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 3011,
+        "disagreements": 178,
+        "disagreements_by_kind": {
+          "orthography": 178
+        }
+      },
+      {
+        "ga": "P48",
+        "id": "p48",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 167,
+        "disagreements": 42,
+        "disagreements_by_kind": {
+          "orthography": 42
+        }
+      },
+      {
+        "ga": "P5",
+        "id": "p5",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 376,
+        "disagreements": 14,
+        "disagreements_by_kind": {
+          "orthography": 14
+        }
+      },
+      {
+        "ga": "P53",
+        "id": "p53",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 358,
+        "disagreements": 7,
+        "disagreements_by_kind": {
+          "orthography": 7
+        }
+      },
+      {
+        "ga": "P64",
+        "id": "p64",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 189,
+        "disagreements": 6,
+        "disagreements_by_kind": {
+          "orthography": 6
+        }
+      },
+      {
+        "ga": "P65",
+        "id": "p65",
+        "cntr_transcription": false,
+        "leaf_image": false,
+        "nonzero_extant_comparison": false,
+        "extant_word_tokens": 0,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P66",
+        "id": "p66",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 14669,
+        "disagreements": 873,
+        "disagreements_by_kind": {
+          "orthography": 873
+        }
+      },
+      {
+        "ga": "P69",
+        "id": "p69",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 72,
+        "disagreements": 11,
+        "disagreements_by_kind": {
+          "orthography": 11
+        }
+      },
+      {
+        "ga": "P72",
+        "id": "p72",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 3518,
+        "disagreements": 268,
+        "disagreements_by_kind": {
+          "orthography": 268
+        }
+      },
+      {
+        "ga": "P75",
+        "id": "p75",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 23003,
+        "disagreements": 620,
+        "disagreements_by_kind": {
+          "orthography": 620
+        }
+      },
+      {
+        "ga": "P78",
+        "id": "p78",
+        "cntr_transcription": false,
+        "leaf_image": true,
+        "nonzero_extant_comparison": false,
+        "extant_word_tokens": 0,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P80",
+        "id": "p80",
+        "cntr_transcription": false,
+        "leaf_image": true,
+        "nonzero_extant_comparison": false,
+        "extant_word_tokens": 0,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P87",
+        "id": "p87",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 33,
+        "disagreements": 2,
+        "disagreements_by_kind": {
+          "orthography": 2
+        }
+      },
+      {
+        "ga": "P91",
+        "id": "p91",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 94,
+        "disagreements": 9,
+        "disagreements_by_kind": {
+          "orthography": 9
+        }
+      },
+      {
+        "ga": "P92",
+        "id": "p92",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 67,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P95",
+        "id": "p95",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 54,
+        "disagreements": 1,
+        "disagreements_by_kind": {
+          "orthography": 1
+        }
+      },
+      {
+        "ga": "P37",
+        "id": "p37",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 455,
+        "disagreements": 32,
+        "disagreements_by_kind": {
+          "orthography": 32
+        }
+      },
+      {
+        "ga": "P77",
+        "id": "p77",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 164,
+        "disagreements": 6,
+        "disagreements_by_kind": {
+          "orthography": 6
+        }
+      },
+      {
+        "ga": "P12",
+        "id": "p12",
+        "cntr_transcription": false,
+        "leaf_image": true,
+        "nonzero_extant_comparison": false,
+        "extant_word_tokens": 0,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P49",
+        "id": "p49",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 382,
+        "disagreements": 28,
+        "disagreements_by_kind": {
+          "orthography": 28
+        }
+      },
+      {
+        "ga": "P9",
+        "id": "p9",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 58,
+        "disagreements": 7,
+        "disagreements_by_kind": {
+          "orthography": 7
+        }
+      },
+      {
+        "ga": "P10",
+        "id": "p10",
+        "cntr_transcription": false,
+        "leaf_image": true,
+        "nonzero_extant_comparison": false,
+        "extant_word_tokens": 0,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P102",
+        "id": "p102",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 12,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P110",
+        "id": "p110",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 72,
+        "disagreements": 14,
+        "disagreements_by_kind": {
+          "orthography": 14
+        }
+      },
+      {
+        "ga": "P117",
+        "id": "p117",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 61,
+        "disagreements": 1,
+        "disagreements_by_kind": {
+          "orthography": 1
+        }
+      },
+      {
+        "ga": "P120",
+        "id": "p120",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 66,
+        "disagreements": 6,
+        "disagreements_by_kind": {
+          "orthography": 6
+        }
+      },
+      {
+        "ga": "P122",
+        "id": "p122",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 52,
+        "disagreements": 14,
+        "disagreements_by_kind": {
+          "orthography": 14
+        }
+      },
+      {
+        "ga": "P123",
+        "id": "p123",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 45,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P126",
+        "id": "p126",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 21,
+        "disagreements": 3,
+        "disagreements_by_kind": {
+          "orthography": 3
+        }
+      },
+      {
+        "ga": "P139",
+        "id": "p139",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 47,
+        "disagreements": 3,
+        "disagreements_by_kind": {
+          "orthography": 3
+        }
+      },
+      {
+        "ga": "P15",
+        "id": "p15",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 542,
+        "disagreements": 20,
+        "disagreements_by_kind": {
+          "orthography": 20
+        }
+      },
+      {
+        "ga": "P17",
+        "id": "p17",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 62,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P19",
+        "id": "p19",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 161,
+        "disagreements": 8,
+        "disagreements_by_kind": {
+          "orthography": 8
+        }
+      },
+      {
+        "ga": "P24",
+        "id": "p24",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 57,
+        "disagreements": 5,
+        "disagreements_by_kind": {
+          "orthography": 5
+        }
+      },
+      {
+        "ga": "P38",
+        "id": "p38",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 214,
+        "disagreements": 46,
+        "disagreements_by_kind": {
+          "orthography": 46
+        }
+      },
+      {
+        "ga": "P50",
+        "id": "p50",
+        "cntr_transcription": false,
+        "leaf_image": false,
+        "nonzero_extant_comparison": false,
+        "extant_word_tokens": 0,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P57",
+        "id": "p57",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 50,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P6",
+        "id": "p6",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 207,
+        "disagreements": 8,
+        "disagreements_by_kind": {
+          "orthography": 8
+        }
+      },
+      {
+        "ga": "P62",
+        "id": "p62",
+        "cntr_transcription": false,
+        "leaf_image": false,
+        "nonzero_extant_comparison": false,
+        "extant_word_tokens": 0,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P7",
+        "id": "p7",
+        "cntr_transcription": false,
+        "leaf_image": false,
+        "nonzero_extant_comparison": false,
+        "extant_word_tokens": 0,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P70",
+        "id": "p70",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 125,
+        "disagreements": 4,
+        "disagreements_by_kind": {
+          "orthography": 4
+        }
+      },
+      {
+        "ga": "P71",
+        "id": "p71",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 41,
+        "disagreements": 3,
+        "disagreements_by_kind": {
+          "orthography": 3
+        }
+      },
+      {
+        "ga": "P8",
+        "id": "p8",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 446,
+        "disagreements": 20,
+        "disagreements_by_kind": {
+          "orthography": 20
+        }
+      },
+      {
+        "ga": "P81",
+        "id": "p81",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 214,
+        "disagreements": 4,
+        "disagreements_by_kind": {
+          "orthography": 4
+        }
+      },
+      {
+        "ga": "P82",
+        "id": "p82",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 42,
+        "disagreements": 3,
+        "disagreements_by_kind": {
+          "orthography": 3
+        }
+      },
+      {
+        "ga": "P85",
+        "id": "p85",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 81,
+        "disagreements": 1,
+        "disagreements_by_kind": {
+          "orthography": 1
+        }
+      },
+      {
+        "ga": "P86",
+        "id": "p86",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 126,
+        "disagreements": 4,
+        "disagreements_by_kind": {
+          "orthography": 4
+        }
+      },
+      {
+        "ga": "P88",
+        "id": "p88",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 490,
+        "disagreements": 32,
+        "disagreements_by_kind": {
+          "orthography": 32
+        }
+      },
+      {
+        "ga": "P89",
+        "id": "p89",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 40,
+        "disagreements": 3,
+        "disagreements_by_kind": {
+          "orthography": 3
+        }
+      }
+    ]
+  },
+  "quran": {
+    "witness_count": 15,
+    "leaf_image_count": 10,
+    "leaf_image_fraction": 0.667,
+    "variant_census_note": "No NA-style variant census for Qurʾān in v1. Cards show reference rasm and library links, not a full manuscript collation."
+  },
+  "nag_hammadi": {
+    "tractate_witness_count": 10,
+    "leaf_image_count": 10,
+    "leaf_image_fraction": 1,
+    "collation_note": "No Thomas↔NT collation in v1. These are Coptic Gnostic tractates, not Greek New Testament witnesses."
+  },
+  "primer_example": {
+    "witness": "P137",
+    "reference": "Mark 1:17",
+    "witness_reading": "ιπεν",
+    "base_reading": "οισο=",
+    "base_text": "SR GNT",
+    "kind": "orthography"
+  },
+  "home_stats": {
+    "greek_nt_witnesses": 94,
+    "disagreements_total": 4408,
+    "disagreements_label": "extant-letter disagreements vs SR GNT"
+  }
+}

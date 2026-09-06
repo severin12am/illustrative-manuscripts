@@ -111,6 +111,13 @@ export default function WitnessTextPanel({ text, ga }: Props) {
 
   const differenceCount = countVariants(visible);
   const baseText = text.base_text ?? "SR GNT";
+  const kindTotals = visible.reduce<Record<string, number>>((acc, verse) => {
+    for (const v of verse.variants || []) {
+      acc[v.kind] = (acc[v.kind] || 0) + 1;
+    }
+    return acc;
+  }, {});
+  const kindEntries = Object.entries(kindTotals).sort((a, b) => b[1] - a[1]);
 
   return (
     <section className={styles.panel}>
@@ -120,9 +127,35 @@ export default function WitnessTextPanel({ text, ga }: Props) {
           {text.translation_label} — {text.translation_base}
         </p>
         <p className={styles.diffCount}>
-          {differenceCount} difference{differenceCount !== 1 ? "s" : ""} vs{" "}
-          {baseText} in the surviving verses shown
+          <strong>{differenceCount}</strong> letter-level disagreement
+          {differenceCount !== 1 ? "s" : ""} in extant (non-supplied) runs vs{" "}
+          {baseText} in the surviving verses shown. Lacunae and reconstructed
+          text are not counted as variants.
         </p>
+        {kindEntries.length > 0 ? (
+          <ul className={styles.kindBreakdown}>
+            {kindEntries.map(([kind, count]) => (
+              <li key={kind}>
+                <span className={styles.kindBadge} data-kind={kind}>
+                  {kindLabel(kind as VariantUnit["kind"])}
+                </span>
+                {count}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className={styles.kindPending}>Type breakdown: coming soon</p>
+        )}
+        {text.cntr_url && (
+          <a
+            href={text.cntr_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.cntrOpen}
+          >
+            Open on CNTR ↗
+          </a>
+        )}
       </header>
 
       <div className={styles.verseList}>

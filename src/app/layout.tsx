@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Source_Serif_4, Gentium_Plus, Noto_Naskh_Arabic } from "next/font/google";
+import SiteNav from "@/components/SiteNav";
 import "./globals.css";
 
 const display = Cormorant_Garamond({
@@ -39,7 +40,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${display.variable} ${body.variable} ${greek.variable} ${arabic.variable}`}>
-      <body>{children}</body>
+      <body>
+        <SiteNav />
+        {children}
+      </body>
     </html>
   );
 }
