@@ -1,1 +1,271 @@
-{}
+{
+  "P1:40001001:w4:substitution": {
+    "label": "uncertain",
+    "rationale": "Full form versus possible abbreviation; context does not distinguish slip from clarification.",
+    "confidence": 0.6,
+    "tagged_at": "2026-09-06T10:51:59.653Z",
+    "model": "uncategorized"
+  },
+  "P1:40001006:w15:omission": {
+    "label": "error",
+    "rationale": "Omission of small article before proper noun suggests scribal slip",
+    "confidence": 0.6,
+    "tagged_at": "2026-09-06T12:33:50.178Z",
+    "model": "uncategorized"
+  },
+  "P1:40001007:w10:addition": {
+    "label": "error",
+    "rationale": "Extra similar name αβεια before αβια suggests slip/dittography",
+    "confidence": 0.7,
+    "tagged_at": "2026-09-06T12:38:18.966Z",
+    "model": "uncategorized"
+  },
+  "P1:40001007:w10:omission": {
+    "label": "error",
+    "rationale": "Omission of the name before αβια δε suggests a scribal slip or haplography.",
+    "confidence": 0.85,
+    "tagged_at": "2026-09-06T11:01:22.004Z",
+    "model": "uncategorized"
+  },
+  "P1:40001017:w27:substitution": {
+    "label": "uncertain",
+    "rationale": "No specific reading or context provided to judge intentionality",
+    "confidence": 0.5,
+    "tagged_at": "2026-09-06T13:13:23.252Z",
+    "model": "uncategorized",
+    "retried": true
+  },
+  "P1:40001017:w8:substitution": {
+    "label": "uncertain",
+    "rationale": "Insufficient variation details to judge intentionality",
+    "confidence": 0.5,
+    "tagged_at": "2026-09-06T13:18:57.575Z",
+    "model": "uncategorized",
+    "retried": true
+  },
+  "P100:59003017:w2:substitution": {
+    "label": "uncertain",
+    "rationale": "Insufficient evidence to determine intentionality",
+    "confidence": 0.4,
+    "tagged_at": "2026-09-06T13:40:47.252Z",
+    "model": "uncategorized",
+    "retried": true
+  },
+  "P100:59004003:w3:omission": {
+    "label": "error",
+    "rationale": "Omitting negative particle reverses sense; simple scribal omission plausible.",
+    "confidence": 0.7,
+    "tagged_at": "2026-09-06T11:24:10.752Z",
+    "model": "uncategorized"
+  },
+  "P100:59004011:w3:substitution": {
+    "label": "uncertain",
+    "rationale": "Damaged text; intentionality unclear",
+    "confidence": 0.3,
+    "tagged_at": "2026-09-06T13:45:47.896Z",
+    "model": "uncategorized",
+    "retried": true
+  },
+  "P101:40003011:w1:substitution": {
+    "label": "uncertain",
+    "rationale": "No variation details provided; intentionality unclear",
+    "confidence": 0.4,
+    "tagged_at": "2026-09-06T13:57:39.436Z",
+    "model": "uncategorized",
+    "retried": true
+  },
+  "P101:40003011:w2:substitution": {
+    "label": "uncertain",
+    "rationale": "No variant text or context given; intentionality cannot be determined",
+    "confidence": 0.5,
+    "tagged_at": "2026-09-06T14:02:46.707Z",
+    "model": "uncategorized",
+    "retried": true
+  },
+  "P101:40003017:w4:substitution": {
+    "label": "error",
+    "rationale": "Simple epsilon-to-eta substitution, likely a clear scribal slip.",
+    "confidence": 0.85,
+    "tagged_at": "2026-09-06T11:35:41.048Z",
+    "model": "uncategorized"
+  },
+  "P101:40003017:w5:substitution": {
+    "label": "uncertain",
+    "rationale": "Insufficient evidence to determine intentionality",
+    "confidence": 0.5,
+    "tagged_at": "2026-09-06T14:08:26.259Z",
+    "model": "uncategorized",
+    "retried": true
+  },
+  "P101:40004002:w3:addition": {
+    "label": "error",
+    "rationale": "Single added mu appears accidental slip",
+    "confidence": 0.7,
+    "tagged_at": "2026-09-06T14:19:22.026Z",
+    "model": "uncategorized"
+  },
+  "P101:40004002:w5:omission": {
+    "label": "error",
+    "rationale": "Omission of repeated forty in parallel phrase suggests haplography or slip.",
+    "confidence": 0.7,
+    "tagged_at": "2026-09-06T11:45:55.740Z",
+    "model": "uncategorized"
+  },
+  "P106:43001031:w4-5:transposition": {
+    "label": "error",
+    "rationale": "Local word-order swap only",
+    "confidence": 0.9,
+    "tagged_at": "2026-09-06T14:27:36.845Z",
+    "model": "uncategorized"
+  },
+  "P106:43001033:w3:addition": {
+    "label": "uncertain",
+    "rationale": "Addition lacks context to distinguish slip or expansion",
+    "confidence": 0.4,
+    "tagged_at": "2026-09-06T14:51:39.005Z",
+    "model": "uncategorized",
+    "retried": true
+  },
+  "P106:43001034:w4:substitution": {
+    "label": "intentional",
+    "rationale": "Christological reading εκλεκτοσ for υιοσ",
+    "confidence": 0.7,
+    "tagged_at": "2026-09-06T14:58:26.712Z",
+    "model": "uncategorized"
+  },
+  "P106:43001040:w8:substitution": {
+    "label": "uncertain",
+    "rationale": "No specific variant text provided; intentionality cannot be determined",
+    "confidence": 0.5,
+    "tagged_at": "2026-09-06T15:02:26.705Z",
+    "model": "uncategorized",
+    "retried": true
+  },
+  "P106:43001040:w9:addition": {
+    "label": "uncertain",
+    "rationale": "Addition lacks clear context; intentionality cannot be determined",
+    "confidence": 0.5,
+    "tagged_at": "2026-09-06T15:05:57.901Z",
+    "model": "uncategorized",
+    "retried": true
+  },
+  "P106:43001042:w5:omission": {
+    "label": "uncertain",
+    "rationale": "Omission alone does not establish scribal error or intent",
+    "confidence": 0.4,
+    "tagged_at": "2026-09-06T15:14:30.535Z",
+    "model": "uncategorized",
+    "retried": true
+  },
+  "P106:43001042:w8:substitution": {
+    "label": "uncertain",
+    "rationale": "No specific variant evidence provided; intentionality unclear",
+    "confidence": 0.5,
+    "tagged_at": "2026-09-06T15:18:17.930Z",
+    "model": "uncategorized",
+    "retried": true
+  },
+  "P106:43001044:w7:addition": {
+    "label": "error",
+    "rationale": "Small article inserted before existing article suggests an accidental scribal slip.",
+    "confidence": 0.65,
+    "tagged_at": "2026-09-06T12:27:07.833Z",
+    "model": "uncategorized"
+  },
+  "P106:43001045:w1:substitution": {
+    "label": "uncertain",
+    "rationale": "No specific textual evidence provided to distinguish error from intentional change.",
+    "confidence": 0.5,
+    "tagged_at": "2026-09-06T15:28:07.836Z",
+    "model": "uncategorized",
+    "retried": true
+  },
+  "P106:43001045:w2:substitution": {
+    "label": "uncertain",
+    "rationale": "No textual evidence provided; intentionality cannot be determined",
+    "confidence": 0.4,
+    "tagged_at": "2026-09-06T15:31:47.522Z",
+    "model": "uncategorized",
+    "retried": true
+  },
+  "P106:43001046:w1:substitution": {
+    "label": "uncertain",
+    "rationale": "No evidence given; intentionality unclear",
+    "confidence": 0.4,
+    "tagged_at": "2026-09-06T15:35:00.069Z",
+    "model": "uncategorized",
+    "retried": true
+  },
+  "P107:43017001:w2:substitution": {
+    "label": "uncertain",
+    "rationale": "Insufficient variation details to judge intentionality",
+    "confidence": 0.5,
+    "tagged_at": "2026-09-06T15:38:45.317Z",
+    "model": "uncategorized",
+    "retried": true
+  },
+  "P108:43018004:w2:substitution": {
+    "label": "uncertain",
+    "rationale": "Insufficient evidence to determine intentionality",
+    "confidence": 0.5,
+    "tagged_at": "2026-09-06T15:53:26.966Z",
+    "model": "uncategorized",
+    "retried": true
+  },
+  "P108:43018005:w3:substitution": {
+    "label": "uncertain",
+    "rationale": "No specific evidence provided; intentionality unclear",
+    "confidence": 0.6,
+    "tagged_at": "2026-09-06T15:57:45.773Z",
+    "model": "uncategorized",
+    "retried": true
+  },
+  "P109:43021018:w1:substitution": {
+    "label": "uncertain",
+    "rationale": "No specific reading or context provided; intentionality unclear",
+    "confidence": 0.5,
+    "tagged_at": "2026-09-06T16:01:20.317Z",
+    "model": "uncategorized",
+    "retried": true
+  },
+  "P110:40010013:w2:omission": {
+    "label": "uncertain",
+    "rationale": "Omission alone does not show intentionality",
+    "confidence": 0.5,
+    "tagged_at": "2026-09-06T16:05:00.252Z",
+    "model": "uncategorized",
+    "retried": true
+  },
+  "P110:40010025:w3:substitution": {
+    "label": "uncertain",
+    "rationale": "Insufficient evidence to determine intentionality",
+    "confidence": 0.5,
+    "tagged_at": "2026-09-06T16:24:40.325Z",
+    "model": "uncategorized",
+    "retried": true
+  },
+  "P111:42017022:w1:substitution": {
+    "label": "uncertain",
+    "rationale": "No variation text provided; intentionality cannot be determined",
+    "confidence": 0.5,
+    "tagged_at": "2026-09-06T16:29:22.689Z",
+    "model": "uncategorized",
+    "retried": true
+  },
+  "P115:66003010:w2:addition": {
+    "label": "uncertain",
+    "rationale": "Addition lacks context to judge intentionality",
+    "confidence": 0.5,
+    "tagged_at": "2026-09-06T16:32:48.302Z",
+    "model": "uncategorized",
+    "retried": true
+  },
+  "P115:66008007:w1:substitution": {
+    "label": "uncertain",
+    "rationale": "Insufficient evidence to distinguish slip from intentional change",
+    "confidence": 0.4,
+    "tagged_at": "2026-09-06T16:42:35.149Z",
+    "model": "uncategorized",
+    "retried": true
+  }
+}
