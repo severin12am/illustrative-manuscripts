@@ -204,6 +204,7 @@ npm run export-taggable
 # 2. Start LM Studio with Qwen; default API http://127.0.0.1:1234
 export LM_MODEL=qwen2.5-7b-instruct   # optional; auto-detects first non-embedding model
 export LM_DISABLE_THINKING=1          # optional; Qwen/LM Studio — skip chain-of-thought (harmless on other servers)
+export LM_JSON_MODE=1                 # optional; request response_format json_object (LM Studio may honor)
 npm run tag-intentional               # all units — use --limit 50 while testing
 
 # Options
