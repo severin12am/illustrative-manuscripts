@@ -13,7 +13,7 @@ import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
-const MODEL = "composer-2.5";
+const MODEL = "heuristic-v1";
 const TAGGED_AT = new Date().toISOString();
 
 const NS_ABBREVS = new Set([
