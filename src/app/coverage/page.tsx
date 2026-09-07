@@ -5,6 +5,7 @@ import { TIMELINE_START, TIMELINE_END } from "@/data/witnesses";
 import StudentPrimer from "@/components/StudentPrimer";
 import VariantExamples from "@/components/VariantExamples";
 import DownloadCensus from "@/components/DownloadCensus";
+import BookVariantSummary from "@/components/BookVariantSummary";
 import {
   kindLabel,
   sortKindEntries,
@@ -39,6 +40,7 @@ export default function CoveragePage() {
   const { greek_nt, quran, nag_hammadi, generated_at } = coverage;
   const kinds = sortKindEntries(greek_nt.disagreements.by_kind);
   const disagreementTotal = greek_nt.disagreements.total;
+  const bookSummary = greek_nt.disagreements.by_book ?? [];
   const tagging = greek_nt.intentional_tagging;
   const taggedTotal = tagging?.tagged_count ?? 0;
 
@@ -100,6 +102,7 @@ export default function CoveragePage() {
               word-by-word to open <strong>SR GNT</strong> via CNTR transcriptions:
             </p>
             <p className={styles.bigNumber}>
+              <strong>{greek_nt.witness_count}</strong> witnesses ·{" "}
               <strong>{disagreementTotal.toLocaleString()}</strong> variation units
             </p>
             <p>
@@ -166,6 +169,11 @@ export default function CoveragePage() {
 
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Greek New Testament ({TIMELINE_START}–{TIMELINE_END} CE)</h2>
+        <p className={styles.sliceSummary}>
+          <strong>{greek_nt.witness_count}</strong> witnesses ·{" "}
+          <strong>{disagreementTotal.toLocaleString()}</strong> variation units vs
+          SR GNT · <strong>{greek_nt.leaf_image_count}</strong> with leaf image
+        </p>
         <div className={styles.statGrid}>
           <div className={styles.statCard}>
             <span className={styles.statValue}>{greek_nt.witness_count}</span>
@@ -251,6 +259,22 @@ export default function CoveragePage() {
             </div>
           )}
         </div>
+
+        {bookSummary.length > 0 && (
+          <div className={styles.detailBlock}>
+            <h3>By book (Matthew → Revelation)</h3>
+            <p>
+              Per-book totals of word-aligned disagreement units in our CNTR slice —
+              computed from the same census as the{" "}
+              <Link href="/variants/">variant explorer</Link>, not hand-typed.
+            </p>
+            <BookVariantSummary
+              books={bookSummary}
+              totalUnits={disagreementTotal}
+              linkToExplorer
+            />
+          </div>
+        )}
 
         <div className={styles.detailBlock} data-experimental>
           <h3>Experimental: intentional vs error tagging</h3>

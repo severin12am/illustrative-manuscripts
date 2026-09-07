@@ -11,6 +11,14 @@ export interface CoveragePerWitness {
   disagreements_by_kind: Record<string, number>;
 }
 
+export interface BookDisagreementSummary {
+  book_id: number;
+  book: string;
+  abbr: string;
+  total: number;
+  by_kind: Record<string, number>;
+}
+
 export interface CoverageData {
   generated_at: string;
   sources: Record<string, string>;
@@ -34,6 +42,7 @@ export interface CoverageData {
       per_witness_median: number;
       per_witness_max: number;
       witnesses_with_any: number;
+      by_book?: BookDisagreementSummary[];
     };
     intl_liste_papyri: {
       window: number[];

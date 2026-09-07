@@ -1,8 +1,10 @@
 {
   "ok": [
+    "P1",
     "P52",
     "P66",
     "P75",
+    "P47",
     "P46",
     "P45",
     "P104",
@@ -14,6 +16,7 @@
     "P27",
     "P28",
     "P30",
+    "P40",
     "P39",
     "P48",
     "P53",
@@ -51,26 +54,40 @@
     "P81",
     "P89",
     "P102",
+    "P110",
     "P123",
     "P126",
+    "01",
     "03"
   ],
   "fail": [
+    {
+      "ga": "P23",
+      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/e/eb/Papyrus_23_-Jam_1.10-12-POxy1229_III.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    {
+      "ga": "P29",
+      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/6/64/Papyrus_29_%28POxy1597%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    {
+      "ga": "P32",
+      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/d/d9/P032-Tit-1_11-15-II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    {
+      "ga": "P18",
+      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/6/63/Papyrus_18_POxy1079.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    {
+      "ga": "P20",
+      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/8/87/Papyrus_20_-_Papyrus_Oxyrhynchus_1171_-_Princeton_University_Library%2C_AM_4117_-_Epistle_of_James_2%2C26%E2%80%933%2C9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
     {
       "ga": "P86",
       "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/4/43/P086-Mat-5_13-16-IV.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     },
     {
-      "ga": "P110",
-      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/0/02/Oxford%2C_Sackler_Library_Ms_LXIV_4494_%28Papyrus_110%29_recto_Matt_10%2C_13-14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-    },
-    {
       "ga": "P120",
-      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/f/fd/Oxford%2C_Sackler_Library_Ms_P._Oxy._4803_%28Papyrus_120%29_recto_John_1%2C_25-28%3B_33-34.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-    },
-    {
-      "ga": "01",
-      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/8/81/Sinaiticus_gospod.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
     }
   ]
 }

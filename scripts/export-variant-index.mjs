@@ -11,6 +11,7 @@ import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 import { collectTaggableUnits } from "./lib/taggable-units.mjs";
 import { CNTR_BOOKS, parseESN } from "./lib/books.mjs";
+import { summarizeByBook } from "./lib/book-summary.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -120,6 +121,7 @@ function main() {
     base_text: "SR GNT",
     total: units.length,
     by_kind: byKind,
+    by_book: summarizeByBook(units),
     witness_count: witnesses.size,
     book_count: books.size,
     books: [...books].sort(),

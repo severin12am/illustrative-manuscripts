@@ -26,6 +26,7 @@ export interface VariantIndex {
   base_text: string;
   total: number;
   by_kind: Record<string, number>;
+  by_book?: import("@/types/coverage").BookDisagreementSummary[];
   witness_count: number;
   book_count: number;
   books: string[];

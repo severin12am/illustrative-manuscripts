@@ -11,7 +11,8 @@ import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 import { normalizeGreek, segmentsToExtantRuns } from "./lib/mes-parser.mjs";
 import { tokenizeGreek } from "./lib/variant-classify.mjs";
-import { countTaggableUnits } from "./lib/taggable-units.mjs";
+import { countTaggableUnits, collectTaggableUnits } from "./lib/taggable-units.mjs";
+import { summarizeByBook } from "./lib/book-summary.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -319,6 +320,8 @@ function main() {
   const liste = loadJson(join(ROOT, "scripts/cache/liste.json"));
 
   const nt = computeNtCoverage(witnesses, witnessTexts, liste);
+  const allUnits = collectTaggableUnits({ includeOrthography: true });
+  nt.disagreements.by_book = summarizeByBook(allUnits);
   nt.intentional_tagging = computeIntentionalTagging();
   const quran = computeQuranCoverage(quranWitnesses);
   const nagHammadi = computeNagHammadiCoverage(nagHammadiWitnesses);
