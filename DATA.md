@@ -193,7 +193,8 @@ After the mechanical taxonomy (substitution / omission / addition / transpositio
 - These labels are **model-assisted teaching hypotheses**, not ECM, NA28, or IGNTP judgments.
 - The cloud build and GitHub Pages deploy **never** call LM Studio; CI passes with an empty `src/data/intentional-tags.json`.
 - **Orthography is skipped by default** — spelling-only differences rarely need an intentionality label.
-- Qwen (or any OpenAI-compatible model) in **LM Studio on your machine** is the intended runner.
+- Qwen (or any OpenAI-compatible model) in **LM Studio on your machine** is the intended runner for ongoing tagging.
+- **Committed tags (2026-09):** the first 1,000 non-orthography units were tagged in a Cursor Cloud Agent pass with **Composer 2.5** (heuristic batch + manual gold fixes) because local Qwen was too slow for bulk throughput; resume with `npm run tag-intentional -- --resume` from unit 1,001 onward.
 
 **On your machine (SAIP):**
 
@@ -223,6 +224,7 @@ npm run coverage
 | `scripts/cache/taggable-units.jsonl` | Full export (~5.4k non-orthography units; gitignored) |
 | `scripts/cache/taggable-units.sample.jsonl` | First 100 lines for quick SAIP start (committed) |
 | `scripts/tag-intentional.mjs` | POSTs to `LM_BASE_URL` (default `http://127.0.0.1:1234/v1/chat/completions`); reads `message.content` or falls back to `reasoning_content` (Qwen thinking models); `max_tokens` 1024 |
+| `scripts/classify-composer-batch.mjs` | Optional Composer/heuristic batch tagger for cloud-agent runs (`--limit N --resume`); writes `model: composer-2.5` |
 | `src/data/intentional-tags.json` | Map `unit_id` → `{ label, rationale, confidence, tagged_at }` |
 | `scripts/fixtures/intentional-gold.json` | ~20 hand-labeled smoke cases (`npm run test:intentional`) |
 
