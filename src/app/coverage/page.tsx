@@ -133,6 +133,11 @@ export default function CoveragePage() {
 
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>How to use this site</h2>
+        <p className={styles.sliceSummary}>
+          For whole missing or inserted passages (not word-level rows), see{" "}
+          <Link href="/famous/">Famous passages</Link> — block-level issues
+          taught separately from the variant census.
+        </p>
         <ol className={styles.steps}>
           <li>
             Pick a corpus on the{" "}
@@ -142,6 +147,11 @@ export default function CoveragePage() {
             Browse counted disagreements in the{" "}
             <Link href="/variants/">variant explorer</Link> — filter by kind,
             witness, or book.
+          </li>
+          <li>
+            Read block-level famous passages (Pericope Adulterae, Mark&apos;s
+            ending, Comma Johanneum, etc.) on{" "}
+            <Link href="/famous/">Famous passages</Link>.
           </li>
           <li>
             Open a witness card: photograph (when legal), diplomatic text, and
@@ -392,6 +402,8 @@ export default function CoveragePage() {
       </aside>
 
       <footer className={styles.footer}>
+        <Link href="/famous/">Famous passages →</Link>
+        {" · "}
         <Link href="/compare/">Witness compare →</Link>
         {" · "}
         <Link href="/variants/">Variant explorer →</Link>

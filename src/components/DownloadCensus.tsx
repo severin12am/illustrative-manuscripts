@@ -18,7 +18,9 @@ export default function DownloadCensus() {
         units vs <strong>SR GNT</strong> — the same counted index that powers the{" "}
         <Link href="/variants/">variant explorer</Link>. This is{" "}
         <em>not</em> a full New Testament tradition census; it covers CNTR
-        transcriptions in this repository only.
+        transcriptions in this repository only. Whole missing blocks (e.g. John
+        7:53–8:11) are taught on{" "}
+        <Link href="/famous/">Famous passages</Link>, not as variant rows.
       </p>
       <ul className={styles.stats}>
         <li>
