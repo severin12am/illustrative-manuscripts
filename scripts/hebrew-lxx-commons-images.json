@@ -1,0 +1,43 @@
+{
+  "_comment": "Verified Wikimedia Commons files only. Run scripts/download-hebrew-lxx-commons.mjs",
+  "1qisaa": {
+    "file": "1qisaa.jpg",
+    "commons_title": "File:The Great Isaiah Scroll MS A (1QIsa) - Google Art Project.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:The_Great_Isaiah_Scroll_MS_A_(1QIsa)_-_Google_Art_Project.jpg"
+  },
+  "11qpsa": {
+    "file": "11qpsa.jpg",
+    "commons_title": "File:Psalms Scroll.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Psalms_Scroll.jpg"
+  },
+  "p-ryl-458": {
+    "file": "p-ryl-458.jpg",
+    "commons_title": "File:P. Rylands 458.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:P._Rylands_458.jpg"
+  },
+  "p-fouad-266": {
+    "file": "p-fouad-266.jpg",
+    "commons_title": "File:Pap 266.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Pap_266.jpg"
+  },
+  "p-oxy-656": {
+    "file": "p-oxy-656.jpg",
+    "commons_title": "File:Oxyrhyncus 656.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Oxyrhyncus_656.jpg"
+  },
+  "p-oxy-1007": {
+    "file": "p-oxy-1007.jpg",
+    "commons_title": "File:LXXP.Oxy.VII.1007.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:LXXP.Oxy.VII.1007.jpg"
+  },
+  "cbp-bp-iv": {
+    "file": "cbp-bp-iv.jpg",
+    "commons_title": "File:Papyrus with fragments of the Book of Genesis (Rahlfs 961) (CBL BP IV f.11).jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus_with_fragments_of_the_Book_of_Genesis_(Rahlfs_961)_(CBL_BP_IV_f.11).jpg"
+  },
+  "cbp-bp-v": {
+    "file": "cbp-bp-v.jpg",
+    "commons_title": "File:Papyrus with fragments of the Book of Genesis (Rahlfs 962) (CBL BP V f.21).jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus_with_fragments_of_the_Book_of_Genesis_(Rahlfs_962)_(CBL_BP_V_f.21).jpg"
+  }
+}

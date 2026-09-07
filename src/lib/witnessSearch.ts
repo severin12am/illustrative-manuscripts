@@ -23,12 +23,16 @@ export function witnessMatchesSearch(witness: Witness, query: string): boolean {
   return haystack.includes(q);
 }
 
-export function witnessSearchPlaceholder(corpus: "nt" | "quran" | "nag-hammadi"): string {
+export function witnessSearchPlaceholder(
+  corpus: "nt" | "quran" | "nag-hammadi" | "hebrew-lxx"
+): string {
   switch (corpus) {
     case "quran":
       return "Search shelfmark, institution, passage…";
     case "nag-hammadi":
       return "Search tractate, codex siglum, institution…";
+    case "hebrew-lxx":
+      return "Search DSS siglum, Rahlfs number, book, institution…";
     default:
       return "Search GA (P52), book, shelfmark, institution…";
   }

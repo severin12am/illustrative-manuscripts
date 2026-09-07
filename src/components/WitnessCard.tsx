@@ -6,9 +6,11 @@ import { getWitnessText } from "@/data/witness-texts";
 import { coverage } from "@/data/coverage";
 import { getQuranWitnessText } from "@/data/quran-texts";
 import { getNagHammadiWitnessText } from "@/data/nag-hammadi-texts";
+import { getHebrewLxxWitnessText } from "@/data/hebrew-lxx-texts";
 import WitnessTextPanel from "./WitnessTextPanel";
 import QuranTextPanel from "./QuranTextPanel";
 import NagHammadiTextPanel from "./NagHammadiTextPanel";
+import HebrewLxxTextPanel from "./HebrewLxxTextPanel";
 import { kindLabel, sortKindEntries } from "@/lib/variantTaxonomy";
 
 interface WitnessCardProps {
@@ -25,13 +27,20 @@ const categoryLabels: Record<string, string> = {
 export default function WitnessCard({ witness }: WitnessCardProps) {
   const isQuran = witness.corpus === "quran";
   const isNagHammadi = witness.corpus === "nag-hammadi";
-  const ntText = !isQuran && !isNagHammadi ? getWitnessText(witness.ga_number) : null;
+  const isHebrewLxx = witness.corpus === "ot" || witness.corpus === "lxx";
+  const ntText =
+    !isQuran && !isNagHammadi && !isHebrewLxx
+      ? getWitnessText(witness.ga_number)
+      : null;
   const quranText = isQuran ? getQuranWitnessText(witness.id) : null;
   const nagHammadiText = isNagHammadi
     ? getNagHammadiWitnessText(witness.id)
     : null;
+  const hebrewLxxText = isHebrewLxx
+    ? getHebrewLxxWitnessText(witness.id)
+    : null;
 
-  const ntCoverage = !isQuran && !isNagHammadi
+  const ntCoverage = !isQuran && !isNagHammadi && !isHebrewLxx
     ? coverage.greek_nt.per_witness.find((w) => w.ga === witness.ga_number)
     : null;
 
@@ -39,7 +48,9 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
     ? witness.library_url || witness.corpus_coranicum_url
     : isNagHammadi
       ? witness.library_url || witness.claremont_url
-      : witness.ntvmr_url;
+      : isHebrewLxx
+        ? witness.library_url || witness.source_page_url
+        : witness.ntvmr_url;
 
   const hasHosted = witness.image_policy === "hosted" && witness.hosted_image;
   const hasIiif =
@@ -55,13 +66,17 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
         primaryLink
       : primaryLink;
 
-  const badge = isNagHammadi
-    ? witness.tractate || "Nag Hammadi"
-    : isQuran
-      ? witness.script === "hijazi"
-        ? "Hijazi"
-        : witness.script || "Qur'an"
-      : categoryLabels[witness.book_category] || witness.book_category;
+  const badge = isHebrewLxx
+    ? witness.corpus === "ot"
+      ? "Hebrew DSS"
+      : "Greek LXX"
+    : isNagHammadi
+      ? witness.tractate || "Nag Hammadi"
+      : isQuran
+        ? witness.script === "hijazi"
+          ? "Hijazi"
+          : witness.script || "Qur'an"
+        : categoryLabels[witness.book_category] || witness.book_category;
 
   const attr = witness.image_attribution;
   const creditLabel =
@@ -176,7 +191,9 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
                   rel="noopener noreferrer"
                   className={styles.viewerLink}
                 >
-                  {isQuran || isNagHammadi ? "Library viewer ↗" : "NTVMR ↗"}
+                  {isQuran || isNagHammadi || isHebrewLxx
+                    ? "Library viewer ↗"
+                    : "NTVMR ↗"}
                 </a>
               )}
               {!isQuran && witness.csntm_url && (
@@ -226,6 +243,8 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
             <QuranTextPanel text={quranText} witnessId={witness.id} />
           ) : isNagHammadi && nagHammadiText ? (
             <NagHammadiTextPanel text={nagHammadiText} witnessId={witness.id} />
+          ) : isHebrewLxx && hebrewLxxText ? (
+            <HebrewLxxTextPanel text={hebrewLxxText} witnessId={witness.id} />
           ) : ntText ? (
             <WitnessTextPanel text={ntText} ga={witness.ga_number} />
           ) : null}
@@ -280,6 +299,29 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
                 IIIF manifest ↗
               </a>
             )}
+          </>
+        ) : isHebrewLxx ? (
+          <>
+            {witness.corpus === "ot" && witness.library_url && (
+              <a href={witness.library_url} target="_blank" rel="noopener noreferrer">
+                Leon Levy DSS ↗
+              </a>
+            )}
+            {witness.library_url && witness.corpus === "lxx" && (
+              <a href={witness.library_url} target="_blank" rel="noopener noreferrer">
+                Library ↗
+              </a>
+            )}
+            {witness.source_page_url &&
+              witness.source_page_url !== witness.library_url && (
+                <a
+                  href={witness.source_page_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Catalog ↗
+                </a>
+              )}
           </>
         ) : (
           <>

@@ -5,8 +5,45 @@
 | Mode | Window | Catalog spine |
 |------|--------|---------------|
 | Greek NT | 1–400 CE overlap | [INTF Liste](https://ntvmr.uni-muenster.de/liste/) (papyri) + `scripts/uncial-seed.json` (majuscules) |
+| Hebrew / LXX | **250 BCE – 400 CE** (this corpus only; BCE allowed) | `scripts/hebrew-lxx-seed.json` (hand-curated DSS + LXX papyri) |
 | Qurʾān | 1–100 AH (~622–719 CE overlap) | [Corpus Coranicum](https://corpuscoranicum.org/) (hand-curated seed) |
 | Nag Hammadi | ~300–400 CE overlap (codex paleography) | [Claremont NHA](https://ccdl.claremont.edu/digital/collection/nha/) (hand-curated seed) |
+
+**Greek NT stays 1–400 CE.** The Hebrew/LXX switch uses a wider window (250 BCE – 400 CE) so pre-Christian biblical witnesses (1QIsaᵃ, P.Ryl. 458, P.Fouad 266) appear on the timeline. Many famous DSS are BCE; they are included when their published range overlaps the window or when they are essential to the early written Bible story.
+
+## Hebrew / LXX window: 250 BCE – 400 CE
+
+Witnesses are included when a published **paleographic or C14 CE range** overlaps `[-250, 400]`, or when they are hand-curated as essential early Hebrew Bible / Septuagint witnesses in the seed:
+
+- `date_start ≤ 400` AND `date_end ≥ -250`
+- **BCE dates** are shown on this corpus timeline only (negative CE years → “250 BCE” labels).
+- **12 witnesses** in `scripts/hebrew-lxx-seed.json` (4 Hebrew DSS + 8 Greek LXX papyri).
+- **8/12** witnesses show a leaf photo (Commons PD/CC plates); IAA/Leon Levy restricted photos are **linked**, not rehosted.
+- Hebrew diplomatic: display consonants for the shown locus (compare Leon Levy / PD editio princeps plates).
+- Greek LXX diplomatic: uncial excerpts from PD facsimile publications (Grenfell & Hunt, Roberts 1936, etc.).
+- English: **World English Bible** (public domain) — labeled *English of these lines* for the surviving passage.
+- **Not** BHQ apparatus, Rahlfs/Göttingen critical text dumps, or invented transcriptions.
+
+Regenerate: `node scripts/build-hebrew-lxx-data.mjs`
+
+### Hebrew / LXX image coverage (12 witnesses)
+
+| Witness | Tradition | Image source | Notes |
+|---------|-----------|--------------|-------|
+| 1QIsaᵃ | Hebrew DSS | **Commons** (hosted) | Google Art Project / Israel Museum plate |
+| 11QPsᵃ | Hebrew DSS | **Commons** (hosted) | LOC/IAA Psalms Scroll (PDMC) |
+| 4QSamᵃ | Hebrew DSS | **None** | Leon Levy DSS Digital Library link only |
+| 2Q18 | Hebrew DSS | **None** | Leon Levy link only |
+| P.Ryl. 458 | Greek LXX | **Commons** (hosted) | Rahlfs 957; Roberts 1936 plate |
+| P.Fouad 266 | Greek LXX | **Commons** (hosted) | Rahlfs 847–848; tetragrammaton plate |
+| P.Oxy. 656 | Greek LXX | **Commons** (hosted) | Rahlfs 905; Grenfell & Hunt 1904 plate |
+| P.Oxy. 1007 | Greek LXX | **Commons** (hosted) | Rahlfs 907; Hunt 1910 plate |
+| CBL BP IV | Greek LXX | **Commons** (hosted) | Rahlfs 961 Genesis |
+| CBL BP V | Greek LXX | **Commons** (hosted) | Rahlfs 962 Genesis |
+| CBL BP VI | Greek LXX | **None** | Chester Beatty / Michigan — link only |
+| P.Vindob. G 39777 | Greek LXX | **None** | ONB Vienna — link only |
+
+Commons files live in `public/witnesses/` with `.attribution.json` sidecars. Run `npm run hebrew-lxx-images` to fetch.
 
 ## Qurʾān window: 1–100 AH
 
@@ -132,9 +169,13 @@ node scripts/build-quran-data.mjs
 # Nag Hammadi witness + text bundles
 node scripts/build-nag-hammadi-data.mjs
 
+# Hebrew Bible / LXX witness + text bundles
+node scripts/build-hebrew-lxx-data.mjs
+
 # Download/update Commons images (rate-limited; be patient)
 node scripts/download-commons.mjs
 node scripts/download-quran-commons.mjs
+node scripts/download-hebrew-lxx-commons.mjs
 ```
 
 ## Running text (CNTR + WEB)
@@ -296,7 +337,7 @@ No CNTR class-1 file (honest unavailable state): **P7, P10, P12, P16, P50, P54, 
 
 - [ ] Live Liste API refresh when NTVMR is reachable (cache refreshed on last `npm run data`)
 - [ ] Per-manuscript `manuscript/get` cache for all docIDs
-- [ ] LXX / DSS witnesses overlapping 1–400 CE (P12 Morgan Amherst codex has LXX on verso; not modeled separately)
+- [x] LXX / DSS witnesses overlapping 1–400 CE — see Hebrew/LXX corpus (`scripts/hebrew-lxx-seed.json`, 250 BCE – 400 CE timeline)
 - [ ] Additional uncials (02 Alexandrinus, 04, etc.) if window expands further
 - [ ] Remaining Commons plates for 42 witnesses listed above (no PD/CC match verified yet)
 

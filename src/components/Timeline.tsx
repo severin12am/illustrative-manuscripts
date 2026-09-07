@@ -80,7 +80,7 @@ export default function Timeline({
           >
             <span className={styles.tickMark} />
             <span className={styles.tickLabel}>
-              {year}
+              {formatYear(year)}
               {showAhTicks && year >= 622 && (
                 <span className={styles.tickAh}> ~{ceToAhTick(year)} AH</span>
               )}

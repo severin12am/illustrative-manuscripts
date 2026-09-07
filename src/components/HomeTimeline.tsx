@@ -26,6 +26,12 @@ import {
   NAG_HAMMADI_TIMELINE_END,
   getNagHammadiWitnessesForYear,
 } from "@/data/nag-hammadi-witnesses";
+import {
+  hebrewLxxWitnesses,
+  HEBREW_LXX_TIMELINE_START,
+  HEBREW_LXX_TIMELINE_END,
+  getHebrewLxxWitnessesForYear,
+} from "@/data/hebrew-lxx-witnesses";
 import type { BookCategory } from "@/types/witness";
 import { formatYear, witnessHasDisplayImage } from "@/types/witness";
 import {
@@ -33,13 +39,16 @@ import {
   witnessSearchPlaceholder,
 } from "@/lib/witnessSearch";
 
-export type SiteCorpus = "nt" | "quran" | "nag-hammadi";
+export type SiteCorpus = "nt" | "quran" | "nag-hammadi" | "hebrew-lxx";
 
 const CORPUS_DEFAULT_YEAR: Record<SiteCorpus, number> = {
   nt: 150,
   quran: 650,
   "nag-hammadi": 350,
+  "hebrew-lxx": 50,
 };
+
+const HEBREW_LXX_WINDOW_LABEL = `${formatYear(HEBREW_LXX_TIMELINE_START)} – ${formatYear(HEBREW_LXX_TIMELINE_END)}`;
 
 export default function HomeTimeline() {
   const searchParams = useSearchParams();
@@ -55,38 +64,49 @@ export default function HomeTimeline() {
 
   const isQuran = siteCorpus === "quran";
   const isNagHammadi = siteCorpus === "nag-hammadi";
-  const allWitnesses = isNagHammadi
-    ? nagHammadiWitnesses
-    : isQuran
-      ? quranWitnesses
-      : ntWitnesses;
-  const timelineStart = isNagHammadi
-    ? NAG_HAMMADI_TIMELINE_START
-    : isQuran
-      ? QURAN_TIMELINE_START
-      : TIMELINE_START;
-  const timelineEnd = isNagHammadi
-    ? NAG_HAMMADI_TIMELINE_END
-    : isQuran
-      ? QURAN_TIMELINE_END
-      : TIMELINE_END;
+  const isHebrewLxx = siteCorpus === "hebrew-lxx";
+  const isNt = !isQuran && !isNagHammadi && !isHebrewLxx;
+
+  const allWitnesses = isHebrewLxx
+    ? hebrewLxxWitnesses
+    : isNagHammadi
+      ? nagHammadiWitnesses
+      : isQuran
+        ? quranWitnesses
+        : ntWitnesses;
+  const timelineStart = isHebrewLxx
+    ? HEBREW_LXX_TIMELINE_START
+    : isNagHammadi
+      ? NAG_HAMMADI_TIMELINE_START
+      : isQuran
+        ? QURAN_TIMELINE_START
+        : TIMELINE_START;
+  const timelineEnd = isHebrewLxx
+    ? HEBREW_LXX_TIMELINE_END
+    : isNagHammadi
+      ? NAG_HAMMADI_TIMELINE_END
+      : isQuran
+        ? QURAN_TIMELINE_END
+        : TIMELINE_END;
 
   const filteredAll = useMemo(() => {
     return allWitnesses.filter((w) => {
-      if (!isQuran && !isNagHammadi && bookFilter !== "all" && w.book_category !== bookFilter)
+      if (isNt && bookFilter !== "all" && w.book_category !== bookFilter)
         return false;
       return witnessMatchesSearch(w, search);
     });
-  }, [allWitnesses, bookFilter, search, isQuran, isNagHammadi]);
+  }, [allWitnesses, bookFilter, search, isNt]);
 
   const activeWitnesses = useMemo(() => {
-    const forYear = isNagHammadi
-      ? getNagHammadiWitnessesForYear(selectedYear)
-      : isQuran
-        ? getQuranWitnessesForYear(selectedYear)
-        : getWitnessesForYear(selectedYear);
+    const forYear = isHebrewLxx
+      ? getHebrewLxxWitnessesForYear(selectedYear)
+      : isNagHammadi
+        ? getNagHammadiWitnessesForYear(selectedYear)
+        : isQuran
+          ? getQuranWitnessesForYear(selectedYear)
+          : getWitnessesForYear(selectedYear);
     return forYear.filter((w) => filteredAll.some((f) => f.id === w.id));
-  }, [selectedYear, filteredAll, isQuran, isNagHammadi]);
+  }, [selectedYear, filteredAll, isQuran, isNagHammadi, isHebrewLxx]);
 
   const withImages = allWitnesses.filter((w) => witnessHasDisplayImage(w)).length;
 
@@ -97,17 +117,21 @@ export default function HomeTimeline() {
     setSelectedYear(CORPUS_DEFAULT_YEAR[next]);
   }
 
-  const corpusLabel = isNagHammadi
-    ? "Nag Hammadi Coptic codices"
-    : isQuran
-      ? "Hijazi / 1st-century AH"
-      : "Greek NT papyri";
+  const corpusLabel = isHebrewLxx
+    ? "Hebrew DSS + Greek LXX papyri"
+    : isNagHammadi
+      ? "Nag Hammadi Coptic codices"
+      : isQuran
+        ? "Hijazi / 1st-century AH"
+        : "Greek NT papyri";
 
-  const textPairLabel = isNagHammadi
-    ? "Coptic diplomatic + English excerpts on Nag Hammadi cards"
-    : isQuran
-      ? "Arabic rasm + Pickthall English (PD 1930) on Qurʾān cards"
-      : "CNTR Greek + WEB on NT cards";
+  const textPairLabel = isHebrewLxx
+    ? "Hebrew/Greek diplomatic excerpts + WEB English on Hebrew/LXX cards"
+    : isNagHammadi
+      ? "Coptic diplomatic + English excerpts on Nag Hammadi cards"
+      : isQuran
+        ? "Arabic rasm + Pickthall English (PD 1930) on Qurʾān cards"
+        : "CNTR Greek + WEB on NT cards";
 
   return (
     <main className={styles.main}>
@@ -116,30 +140,43 @@ export default function HomeTimeline() {
       <header className={styles.hero}>
         <div className={styles.heroInner}>
           <p className={styles.eyebrow}>
-            {isNagHammadi
-              ? `Nag Hammadi library · ${NAG_HAMMADI_TIMELINE_START}–${NAG_HAMMADI_TIMELINE_END} CE (codex paleography)`
-              : isQuran
-                ? `Qurʾān manuscripts · 1–100 AH (~${QURAN_TIMELINE_START}–${QURAN_TIMELINE_END} CE)`
-                : `Greek New Testament papyri · ${TIMELINE_START}–${TIMELINE_END} CE`}
+            {isHebrewLxx
+              ? `Hebrew Bible & Septuagint · ${HEBREW_LXX_WINDOW_LABEL} (DSS + LXX papyri)`
+              : isNagHammadi
+                ? `Nag Hammadi library · ${NAG_HAMMADI_TIMELINE_START}–${NAG_HAMMADI_TIMELINE_END} CE (codex paleography)`
+                : isQuran
+                  ? `Qurʾān manuscripts · 1–100 AH (~${QURAN_TIMELINE_START}–${QURAN_TIMELINE_END} CE)`
+                  : `Greek New Testament papyri · ${TIMELINE_START}–${TIMELINE_END} CE`}
           </p>
           <h1 className={styles.title}>Illustrative Manuscripts</h1>
           <p className={styles.lead}>
-            {isNagHammadi
-              ? "A year-by-year slice through fourth-century Coptic codices from the Nag Hammadi library — non-canonical Gnostic and apocryphal Christian texts. Dates reflect the physical witnesses (the codices), not speculative composition dates."
-              : isQuran
-                ? "A year-by-year slice through early Qurʾanic witnesses in the first century AH. Every manuscript is dated as a paleographic or C14 range — not a single year."
-                : "A year-by-year slice through early biblical manuscripts — with a counted, browsable census of word-level disagreements vs SR GNT in our CNTR papyrus slice (not a full-tradition census). Scrub the timeline to see what could have existed in a given moment."}
+            {isHebrewLxx
+              ? "A year-by-year slice through biblical Dead Sea Scrolls and early Greek Old Testament papyri. This corpus timeline starts at 250 BCE so famous pre-Christian witnesses (1QIsaᵃ, P.Ryl. 458) appear; Greek NT stays frozen at 1–400 CE on its own switch."
+              : isNagHammadi
+                ? "A year-by-year slice through fourth-century Coptic codices from the Nag Hammadi library — non-canonical Gnostic and apocryphal Christian texts. Dates reflect the physical witnesses (the codices), not speculative composition dates."
+                : isQuran
+                  ? "A year-by-year slice through early Qurʾanic witnesses in the first century AH. Every manuscript is dated as a paleographic or C14 range — not a single year."
+                  : "A year-by-year slice through early biblical manuscripts — with a counted, browsable census of word-level disagreements vs SR GNT in our CNTR papyrus slice (not a full-tradition census). Scrub the timeline to see what could have existed in a given moment."}
           </p>
 
           <div className={styles.corpusSwitch} role="tablist" aria-label="Corpus">
             <button
               type="button"
               role="tab"
-              aria-selected={!isQuran && !isNagHammadi}
-              className={`${styles.corpusBtn} ${!isQuran && !isNagHammadi ? styles.corpusActive : ""}`}
+              aria-selected={isNt}
+              className={`${styles.corpusBtn} ${isNt ? styles.corpusActive : ""}`}
               onClick={() => switchCorpus("nt")}
             >
               Greek NT ({TIMELINE_START}–{TIMELINE_END} CE)
+            </button>
+            <button
+              type="button"
+              role="tab"
+              aria-selected={isHebrewLxx}
+              className={`${styles.corpusBtn} ${isHebrewLxx ? styles.corpusActive : ""}`}
+              onClick={() => switchCorpus("hebrew-lxx")}
+            >
+              Hebrew / LXX ({HEBREW_LXX_WINDOW_LABEL})
             </button>
             <button
               type="button"
@@ -168,7 +205,7 @@ export default function HomeTimeline() {
             </li>
             <li>
               <strong>{textPairLabel}</strong>
-              {!isNagHammadi && !isQuran && (
+              {isNt && (
                 <>
                   ; <strong>CNTR Greek</strong> + <strong>WEB</strong> on NT cards
                 </>
@@ -178,7 +215,9 @@ export default function HomeTimeline() {
               <strong>{withImages}</strong> with photographs (
               {isNagHammadi
                 ? "Claremont IIIF embeds"
-                : "PD/CC from"}{" "}
+                : isHebrewLxx
+                  ? "PD/CC from"
+                  : "PD/CC from"}{" "}
               {!isNagHammadi && (
                 <a
                   href="https://commons.wikimedia.org/"
@@ -198,10 +237,19 @@ export default function HomeTimeline() {
                 </a>
               )}
               ); others link to library viewers
+              {isHebrewLxx && " (Leon Levy DSS linked, not rehosted)"}
             </li>
             <li>
               Catalog:{" "}
-              {isNagHammadi ? (
+              {isHebrewLxx ? (
+                <a
+                  href="https://www.deadseascrolls.org.il/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Leon Levy DSS Digital Library
+                </a>
+              ) : isNagHammadi ? (
                 <a
                   href="https://ccdl.claremont.edu/digital/collection/nha/"
                   target="_blank"
@@ -228,6 +276,15 @@ export default function HomeTimeline() {
               )}
             </li>
           </ul>
+          {isHebrewLxx && (
+            <p className={styles.completeness}>
+              Hand-curated seed of {hebrewLxxWitnesses.filter((w) => w.corpus === "ot").length}{" "}
+              Hebrew DSS and {hebrewLxxWitnesses.filter((w) => w.corpus === "lxx").length} Greek
+              LXX papyri overlapping {HEBREW_LXX_WINDOW_LABEL}. BCE dates are allowed on this
+              timeline only. Famous Isaiah scrolls (1QIsaᵃ) are BCE — they appear here, not on the
+              Greek NT switch. No BHQ or Rahlfs apparatus reuse.
+            </p>
+          )}
           {isQuran && (
             <p className={styles.completeness}>
               Hand-curated seed of well-sourced Hijazi witnesses overlapping 1–100
@@ -246,7 +303,7 @@ export default function HomeTimeline() {
         </div>
       </header>
 
-      {!isQuran && !isNagHammadi && <VariantExamples />}
+      {isNt && <VariantExamples />}
 
       <section className={styles.controls}>
         <div className={styles.yearPicker}>
@@ -286,16 +343,13 @@ export default function HomeTimeline() {
         <div className={styles.filters}>
           <input
             type="search"
-            placeholder={witnessSearchPlaceholder(
-              isNagHammadi ? "nag-hammadi" : isQuran ? "quran" : "nt"
-            )}
+            placeholder={witnessSearchPlaceholder(siteCorpus)}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className={styles.search}
             aria-label="Search manuscripts"
           />
-          {!isQuran &&
-            !isNagHammadi &&
+          {isNt &&
             (["all", "gospels", "paul", "other"] as const).map((cat) => (
               <button
                 key={cat}
@@ -333,11 +387,13 @@ export default function HomeTimeline() {
           {formatYear(selectedYear)}
           <span className={styles.subtitle}>
             (of {allWitnesses.length} in the{" "}
-            {isNagHammadi
-              ? `${NAG_HAMMADI_TIMELINE_START}–${NAG_HAMMADI_TIMELINE_END} CE`
-              : isQuran
-                ? `1–100 AH / ~${QURAN_TIMELINE_START}–${QURAN_TIMELINE_END} CE`
-                : `${TIMELINE_START}–${TIMELINE_END} CE`}{" "}
+            {isHebrewLxx
+              ? HEBREW_LXX_WINDOW_LABEL
+              : isNagHammadi
+                ? `${NAG_HAMMADI_TIMELINE_START}–${NAG_HAMMADI_TIMELINE_END} CE`
+                : isQuran
+                  ? `1–100 AH / ~${QURAN_TIMELINE_START}–${QURAN_TIMELINE_END} CE`
+                  : `${TIMELINE_START}–${TIMELINE_END} CE`}{" "}
             dataset)
           </span>
         </h2>
@@ -357,6 +413,8 @@ export default function HomeTimeline() {
               Try another year or clear search filters. Dates are ranges — a
               witness dated IV CE (300–399) overlaps years 300–399, not a single
               point year.
+              {isHebrewLxx &&
+                " BCE witnesses (e.g. 1QIsaᵃ) appear when you scrub before 1 CE."}
             </p>
           </div>
         )}
@@ -364,7 +422,28 @@ export default function HomeTimeline() {
 
       <footer className={styles.footer}>
         <p>
-          {isNagHammadi ? (
+          {isHebrewLxx ? (
+            <>
+              Catalog via{" "}
+              <a
+                href="https://www.deadseascrolls.org.il/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Leon Levy DSS Digital Library
+              </a>{" "}
+              (DSS) and{" "}
+              <a
+                href="https://septuaginta.uni-goettingen.de/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Göttingen Septuaginta
+              </a>{" "}
+              (LXX metadata). v1 seed: 12 witnesses; Greek NT corpus unchanged at
+              1–400 CE.
+            </>
+          ) : isNagHammadi ? (
             <>
               Catalog via{" "}
               <a

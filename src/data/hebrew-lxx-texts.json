@@ -1,0 +1,319 @@
+{
+  "generated_at": "2026-09-07T18:26:17.442Z",
+  "sources": {
+    "seed": "scripts/hebrew-lxx-seed.json",
+    "leon_levy": "https://www.deadseascrolls.org.il/ (link only)",
+    "web": "World English Bible (PD)",
+    "rahlfs": "https://septuaginta.uni-goettingen.de/"
+  },
+  "texts": {
+    "1qisaa": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Hebrew consonantal display",
+      "library_url": "https://www.imj.org.il/en/wings/shrine-book/dead-sea-scrolls",
+      "leon_levy_url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/1Q1-1",
+      "total_units": 2,
+      "initial_units": [
+        {
+          "reference": "Isaiah 40:3",
+          "tradition": "hebrew",
+          "original": "קול קורא במדבר פנו דרך יהוה ישרו בערבה מסלה לאלהינו",
+          "original_label": "Hebrew consonantal text of this line (Masoretic vocalization for display; scroll lacks full pointing)",
+          "original_source": "Standard Isaiah 40:3 consonants; compare 1QIsaᵃ plate (Leon Levy / DJD X)",
+          "english": "A voice calls, \"In the wilderness, prepare the way of Yahweh! Make a level highway in the desert for our God.\"",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD), adapted to match shown Hebrew locus"
+        },
+        {
+          "reference": "Isaiah 40:6–8",
+          "tradition": "hebrew",
+          "original": "קול אמר קרא ואמר מה יקרא כל הבשר חציר וכל חסדו כציץ השדה יבש חציר נבל ציץ נבל כי רוח יהוה נשבה בו אכן חציר העם",
+          "original_label": "Excerpt from column XL (Isaiah 40) — diplomatic consonants for display",
+          "original_source": "Compare DJD X / Leon Levy 1QIsaᵃ facsimile",
+          "english": "A voice says, \"Cry out!\" One said, \"What shall I cry?\" \"All flesh is like grass, and all its glory is like the flower of the field. The grass withers, the flower fades, because Yahweh's breath blows on it. Surely the people are grass.\"",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "attribution": "Hebrew display consonants for the shown locus; compare Leon Levy DSS Digital Library plates. English: WEB (PD). Not a BHQ apparatus reuse."
+    },
+    "11qpsa": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Hebrew consonantal display",
+      "library_url": "https://www.deadseascrolls.org.il/",
+      "leon_levy_url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/11Q5-1",
+      "total_units": 2,
+      "initial_units": [
+        {
+          "reference": "Psalm 121:1–2 (MT numbering)",
+          "tradition": "hebrew",
+          "original": "שיר למעלות אשא עיני אל ההרים מני יבוא עזרי",
+          "original_label": "Hebrew of column XIX opening (Song of Ascents) — consonantal display",
+          "original_source": "LOC Scrolls exhibition transcription; compare Sanders DJD IV",
+          "english": "I will lift up my eyes to the hills. Where does my help come from?",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        },
+        {
+          "reference": "Psalm 121:3–4",
+          "tradition": "hebrew",
+          "original": "עזרי מעם יהוה עשה שמים וארץ אל יתן למוט רגלך אל ינום שמרך",
+          "original_label": "Continuation on 11Q5 column XIX",
+          "original_source": "LOC Scrolls exhibition transcription",
+          "english": "My help comes from Yahweh, who made heaven and earth. He will not allow your foot to be moved. He who keeps you will not slumber.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "attribution": "Hebrew display consonants for the shown locus; compare Leon Levy DSS Digital Library plates. English: WEB (PD). Not a BHQ apparatus reuse."
+    },
+    "4qsama": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Hebrew consonantal display",
+      "library_url": "https://www.deadseascrolls.org.il/",
+      "leon_levy_url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/4Q51-1",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "1 Samuel 2:10",
+          "tradition": "hebrew",
+          "original": "יהוה יחתו מריביו עליו בשמים ירעם יהוה ידין אפסי ארץ ויתן עוז למלכו וירם קרן משיחו",
+          "original_label": "Hebrew of Hannah's song closing (display consonants; 4QSamᵃ differs from MT in places)",
+          "original_source": "Compare Ulrich, DJD XVII — diplomatic edition",
+          "english": "Those who strive with Yahweh shall be broken to pieces. He will thunder against them in the sky. Yahweh will judge the ends of the earth. He will give strength to his king, and exalt the horn of his anointed.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD); 4QSamᵃ contains longer text in some witnesses"
+        }
+      ],
+      "attribution": "Hebrew display consonants for the shown locus; compare Leon Levy DSS Digital Library plates. English: WEB (PD). Not a BHQ apparatus reuse."
+    },
+    "2q18-exodus": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Hebrew consonantal display",
+      "library_url": "https://www.deadseascrolls.org.il/",
+      "leon_levy_url": "https://www.deadseascrolls.org.il/",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Exodus 3:14",
+          "tradition": "hebrew",
+          "original": "ויאמר אלהים אל משה אהיה אשר אהיה ויאמר כה תאמר לבני ישראל אהיה שלחני אליכם",
+          "original_label": "Standard Hebrew of the theophany formula (compare 2Q18 surviving letters on Leon Levy plate)",
+          "original_source": "Baillet DJD III; consonantal display for the locus",
+          "english": "God said to Moses, \"I AM WHO I AM,\" and he said, \"You shall tell the children of Israel this: 'I AM has sent me to you.'\"",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "attribution": "Hebrew display consonants for the shown locus; compare Leon Levy DSS Digital Library plates. English: WEB (PD). Not a BHQ apparatus reuse."
+    },
+    "p-ryl-458": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Greek uncial display",
+      "library_url": "https://www.digitalcollections.manchester.ac.uk/view/MS-GR-P-00458/1",
+      "rahlfs": "957",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Deuteronomy 26:17–19",
+          "tradition": "lxx",
+          "original": "σὴμερον κύριον τὸν θεὸν σοῦ εἶναι ἐν ὁδοῖς αὐτοῦ πορεύεσθαι καὶ φυλάσσειν τὰ δικαιώματα αὐτοῦ καὶ τὰς ἐντολὰς καὶ τὰ κρίματα αὐτοῦ καὶ ἀκούειν τῆς φωνῆς αὐτοῦ",
+          "original_label": "Greek uncial excerpt (fragment g) — Roberts 1936 diplomatic",
+          "original_source": "C. H. Roberts, P.Ryl. III 458 (1936) — PD editio princeps",
+          "english": "You have declared today that Yahweh is your God, and that you will walk in his ways, keep his statutes, his commandments, and his ordinances, and listen to his voice.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD), adapted from LXX sense"
+        }
+      ],
+      "attribution": "Greek diplomatic excerpts from PD editio princeps plates where noted. English: WEB (PD). Not a Rahlfs/Göttingen apparatus dump."
+    },
+    "p-fouad-266": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Greek uncial display",
+      "library_url": "https://en.wikipedia.org/wiki/Papyrus_Fouad_266",
+      "rahlfs": "847–848",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Deuteronomy 31:28–30",
+          "tradition": "lxx",
+          "original": "συνάχθητε πρός με καὶ ἀναγγελῶ ὑμῖν πάντα ὅσα ἀποβήσεται ὑμῖν ἐπʼ ἐσχάτων τῶν ἡμερῶν",
+          "original_label": "Greek excerpt; divine name written as Hebrew יהוה in manuscript (see plate)",
+          "original_source": "Dunand (1971) diplomatic; plate on Commons",
+          "english": "Assemble yourselves to me, and I will tell you all that will happen to you in the latter days.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "attribution": "Greek diplomatic excerpts from PD editio princeps plates where noted. English: WEB (PD). Not a Rahlfs/Göttingen apparatus dump."
+    },
+    "p-oxy-656": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Greek uncial display",
+      "library_url": "https://digital.bodleian.ox.ac.uk/objects/80c01ac4-14e0-4483-97f5-4455ef2bcc19/",
+      "rahlfs": "905",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Genesis 24:31",
+          "tradition": "lxx",
+          "original": "καὶ εἶπεν εἰσελθε εἰς οἶκον δεσπότου καὶ μὴ ὑπόμεινον ἔξω",
+          "original_label": "Greek uncial on folio showing Gen 24:28–37 (Grenfell & Hunt plate II excerpt)",
+          "original_source": "P.Oxy. IV 656 (1904) — PD",
+          "english": "He said, \"Come in, you blessed of Yahweh. Why do you stand outside? For I have prepared the house, and room for the camels.\"",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "attribution": "Greek diplomatic excerpts from PD editio princeps plates where noted. English: WEB (PD). Not a Rahlfs/Göttingen apparatus dump."
+    },
+    "p-oxy-1007": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Greek uncial display",
+      "library_url": "https://www.bl.uk/collection-items/papyrus-oxyrhynchus-1007",
+      "rahlfs": "907",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Genesis 2:7",
+          "tradition": "lxx",
+          "original": "καὶ ἔπλασεν ὁ θεὸς τὸν ἄνθρωπον χοῦν ἀπὸ τῆς γῆς καὶ ἐνεφύσησεν εἰς τὸ πρόσωπον αὐτοῦ πνοὴν ζωῆς",
+          "original_label": "Greek of creation of Adam (recto) — divine name as paleo-Hebrew yod symbol in ms.",
+          "original_source": "P.Oxy. VII 1007 (1910) — PD",
+          "english": "Yahweh God formed man from the dust of the ground, and breathed into his nostrils the breath of life.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "attribution": "Greek diplomatic excerpts from PD editio princeps plates where noted. English: WEB (PD). Not a Rahlfs/Göttingen apparatus dump."
+    },
+    "cbp-bp-iv": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Greek uncial display",
+      "library_url": "https://www.chesterbeatty.ie/",
+      "rahlfs": "961",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Genesis 9:13",
+          "tradition": "lxx",
+          "original": "τὴν τόξον μου δώσω ἐν τῇ νεφέλῃ καὶ ἔσται εἰς σημεῖον διαθήκης ἀνὰ μέσον ἐμοῦ καὶ ἀνὰ μέσον τῆς γῆς",
+          "original_label": "Greek of rainbow covenant sign (folio 11 area)",
+          "original_source": "Hayes, Chester Beatty Biblical Papyri plates — display excerpt",
+          "english": "I set my rainbow in the cloud, and it will be a sign of a covenant between me and the earth.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "attribution": "Greek diplomatic excerpts from PD editio princeps plates where noted. English: WEB (PD). Not a Rahlfs/Göttingen apparatus dump."
+    },
+    "cbp-bp-v": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Greek uncial display",
+      "library_url": "https://www.chesterbeatty.ie/",
+      "rahlfs": "962",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Genesis 1:1",
+          "tradition": "lxx",
+          "original": "ἐν ἀρχῇ ἐποίησεν ὁ θεὸς τὸν οὐρανὸν καὶ τὴν γῆν",
+          "original_label": "Greek opening of Genesis on Beatty V folio",
+          "original_source": "Hayes plates — display excerpt",
+          "english": "In the beginning, God created the heavens and the earth.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "attribution": "Greek diplomatic excerpts from PD editio princeps plates where noted. English: WEB (PD). Not a Rahlfs/Göttingen apparatus dump."
+    },
+    "cbp-bp-vi": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Greek uncial display",
+      "library_url": "https://www.chesterbeatty.ie/",
+      "rahlfs": "963",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Deuteronomy 4:6",
+          "tradition": "lxx",
+          "original": "καὶ φυλάξεσθε καὶ ποιήσετε αὐτά ὅτι αὕτη ἡ σοφία καὶ ἡ σύνεσις ὑμῶν ἐναντίον πάντων τῶν ἐθνῶν",
+          "original_label": "Greek of Moses' wisdom saying (Deut 4:6–7 locus)",
+          "original_source": "Hayes, Chester Beatty fasc. V — display excerpt",
+          "english": "Keep therefore and do them; for this is your wisdom and your understanding in the sight of the peoples.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "attribution": "Greek diplomatic excerpts from PD editio princeps plates where noted. English: WEB (PD). Not a Rahlfs/Göttingen apparatus dump."
+    },
+    "p-vindob-39777": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Greek uncial display",
+      "library_url": "https://www.onb.ac.at/",
+      "rahlfs": "802",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Leviticus 19:18",
+          "tradition": "lxx",
+          "original": "καὶ οὐ μισήσεις τὸν ἀδελφόν σου τῇ διανοίᾳ σου ἐλέγξεις τὸν πλησίον σου καὶ οὐ λήμψῃ διʼ αὐτὸν ἁμαρτίαν",
+          "original_label": "Greek of holiness code (Lev 19:17–18 locus)",
+          "original_source": "Rahlfs LXX Leviticus — display excerpt for the passage",
+          "english": "You shall not hate your brother in your heart. You shall surely rebuke your neighbor, and not bear sin because of him.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "attribution": "Greek diplomatic excerpts from PD editio princeps plates where noted. English: WEB (PD). Not a Rahlfs/Göttingen apparatus dump."
+    }
+  }
+}
