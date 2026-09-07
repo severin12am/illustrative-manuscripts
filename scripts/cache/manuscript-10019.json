@@ -1,0 +1,149 @@
+{
+  "status": "success",
+  "data": {
+    "manuscript": {
+      "docID": 10019,
+      "columns": {
+        "columnsMin": 1,
+        "content": 1
+      },
+      "groupID": "",
+      "primaryName": "P19",
+      "shelfInstances": {
+        "shelfInstance": {
+          "institution": {
+            "country": "United Kingdom",
+            "instID": 249,
+            "nameCustom": "",
+            "geoLocator": "",
+            "name": "Bodleian Library",
+            "place": "Oxford",
+            "logoURL": "https://iiif.bodleian.ox.ac.uk/iiif/image/f27e28db-0b08-4f16-9bdf-3565f591fb71/full/255,/0/default.jpg",
+            "url": "http://www.bodleian.ox.ac.uk/"
+          },
+          "leavesDescription": "1 Frg",
+          "shelfID": 17,
+          "originYearDescription": "IV/V",
+          "pages": {
+            "count": 0
+          },
+          "manuscripts": {
+            "count": 0
+          },
+          "formerGANumber": "",
+          "leavesCount": 0,
+          "shelfNumber": "Ms. Gr. bib. d. 6 (P)",
+          "contentOverview": "Mt 10,32-40; 10,41-11,5"
+        }
+      },
+      "userID": "",
+      "v11n": "",
+      "originYear": {
+        "late": 499,
+        "early": 300,
+        "content": "IV/V"
+      },
+      "leavesDescription": "1 Frg",
+      "pages": {
+        "count": 2,
+        "page": [
+          {
+            "biblicalContent": "Matt 10:32-40",
+            "images": {
+              "image": [
+                {
+                  "instID": 49,
+                  "shelfID": 0,
+                  "shelfNumberPartID": "",
+                  "accessLevel": 0,
+                  "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10019/10/10",
+                  "attribution": "<a target=\"_blank\" href=\"http://ntvmr.uni-muenster.de/liste\"><div>Photos ©<br/>The Holding Institution</div></a>&#x2028;&#x2028;&nbsp;\n<a target=\"_blank\" href=\"https://digital.bodleian.ox.ac.uk/inquire/p/b48aefef-f855-4bd1-8a5c-b288f564249f\"><div>External Images by<br/>Digital Bodleian\n</div></a>",
+                  "thumbURL": "https://ntmss.info/images/thumbs/10019/10_49_10.jpg",
+                  "userName": "",
+                  "uri": "https://ntmss.info/images/webfriendly/10019/10019x00010XX_INTF.jpg",
+                  "webFriendlyURL": "https://ntmss.info/images/webfriendly/10019/10019x00010XX_INTF.jpg",
+                  "surrID": 10,
+                  "protectLevel": 0
+                },
+                {
+                  "instID": 49,
+                  "shelfID": 0,
+                  "shelfNumberPartID": "",
+                  "accessLevel": 0,
+                  "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10019/10/20",
+                  "attribution": "<a target=\"_blank\" href=\"https://digital.bodleian.ox.ac.uk\"><div>Images ©<br/>Bodleian Libraries, University of Oxford</div></a>",
+                  "thumbURL": "https://ntmss.info/images/thumbs/10019/10_49_20.jpg",
+                  "userName": "",
+                  "uri": "https://ntmss.info/images/webfriendly/10019/10019x00010Xa_INTF.jpg",
+                  "webFriendlyURL": "https://ntmss.info/images/webfriendly/10019/10019x00010Xa_INTF.jpg",
+                  "surrID": 20,
+                  "protectLevel": 0
+                }
+              ]
+            },
+            "shelfID": 17,
+            "shelfFolioNums": "",
+            "sortOrder": "00010",
+            "folio": "1r",
+            "indexContent": "Matt 10:32-40",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10019&pageID=10&format=xhtml"
+              }
+            },
+            "pageID": 10,
+            "indexedBy": "lakmann"
+          },
+          {
+            "biblicalContent": "Matt 10:41-42; Matt 11:1-5",
+            "images": {
+              "image": {
+                "instID": 49,
+                "shelfID": 0,
+                "shelfNumberPartID": "",
+                "accessLevel": 0,
+                "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10019/20/10",
+                "attribution": "<a target=\"_blank\" href=\"http://ntvmr.uni-muenster.de/liste\"><div>Images ©<br/>The Holding Institution</div></a>&#x2028;&#x2028;&nbsp;&#x2028;&#x2028;<a target=\"_blank\" href=\"http://egora.uni-muenster.de/intf/\"><div>Photo Digitized by<br/>INTF for Research Purposes</div></a>\n<a target=\"_blank\" href=\"http://www.csntm.org/manuscript/View/GA_P19\"><div>External Images by<br/>CSNTM</div></a>",
+                "thumbURL": "https://ntmss.info/images/thumbs/10019/20_49_10.jpg",
+                "userName": "",
+                "uri": "https://ntmss.info/images/webfriendly/10019/10019x00020XX_INTF.jpg",
+                "webFriendlyURL": "https://ntmss.info/images/webfriendly/10019/10019x00020XX_INTF.jpg",
+                "surrID": 10,
+                "protectLevel": 0
+              }
+            },
+            "shelfID": 17,
+            "shelfFolioNums": "",
+            "sortOrder": "00020",
+            "folio": "1v",
+            "indexContent": "Matt 10:41-42; Matt 11:1-5",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10019&pageID=20&format=xhtml"
+              }
+            },
+            "pageID": 20,
+            "indexedBy": "lakmann"
+          }
+        ]
+      },
+      "gaNum": "P19",
+      "leaves": {
+        "leavesCount": 1,
+        "content": "1 Frg"
+      },
+      "width": {
+        "widthMin": 150
+      },
+      "lang": "g",
+      "contentOverview": "e: Mt",
+      "lineCount": {
+        "lineCountMin": 22,
+        "content": "22r, 23v"
+      },
+      "height": {
+        "heightMin": 230
+      }
+    }
+  }
+}

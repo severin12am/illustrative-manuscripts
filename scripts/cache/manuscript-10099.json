@@ -1,0 +1,154 @@
+{
+  "status": "success",
+  "data": {
+    "manuscript": {
+      "docID": 10099,
+      "columns": {
+        "columnsMin": 1,
+        "content": 1
+      },
+      "groupID": "",
+      "primaryName": "P99",
+      "shelfInstances": {
+        "shelfInstance": {
+          "institution": {
+            "country": "Ireland",
+            "instID": 259,
+            "nameCustom": "",
+            "geoLocator": "",
+            "name": "Chester Beatty Library",
+            "place": "Dublin",
+            "logoURL": "http://ntmss.info/instlogos/cbl.png",
+            "url": "http://www.cbl.ie/"
+          },
+          "leavesDescription": 16,
+          "shelfID": 85,
+          "originYearDescription": "V (A)",
+          "pages": {
+            "count": 0
+          },
+          "manuscripts": {
+            "count": 0
+          },
+          "formerGANumber": "",
+          "leavesCount": 0,
+          "shelfNumber": "CBL BP XXI",
+          "contentOverview": "(g-l) R 1,1; 2K 1,3-17.20-24; 2,1-8,22; 9,2-11,23.26-13,11; G 1,4-11.18-6,15; 1,14-4,9; E 1,4-2,21; 3,8-6,24"
+        }
+      },
+      "userID": "",
+      "v11n": "",
+      "originYear": {
+        "late": 425,
+        "early": 375,
+        "content": "um 400"
+      },
+      "leavesDescription": 16,
+      "pages": {
+        "count": 8,
+        "page": [
+          {
+            "biblicalContent": "",
+            "images": {
+              "image": {
+                "instID": 49,
+                "shelfID": 0,
+                "shelfNumberPartID": "",
+                "accessLevel": 0,
+                "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10099/10/10",
+                "attribution": "<a target=\"_blank\" href=\"http://www.csntm.org/manuscript/View/GA_P99\"><div>External Images by<br/>CSNTM\n</div></a>",
+                "thumbURL": "https://ntmss.info/images/thumbs/42482/10_49_10.jpg",
+                "userName": "",
+                "uri": "https://ntmss.info/images/webfriendly/SEE_ETERNAL_IMAGES/See_External_Images.jpg",
+                "webFriendlyURL": "https://ntmss.info/images/webfriendly/SEE_ETERNAL_IMAGES/See_External_Images.jpg",
+                "surrID": 10,
+                "protectLevel": 0
+              }
+            },
+            "shelfID": 85,
+            "shelfFolioNums": "",
+            "sortOrder": "00010",
+            "folio": "",
+            "indexContent": "",
+            "pageID": 10
+          },
+          {
+            "biblicalContent": "",
+            "shelfID": 85,
+            "shelfFolioNums": "",
+            "sortOrder": "00020",
+            "folio": "",
+            "indexContent": "",
+            "pageID": 20
+          },
+          {
+            "biblicalContent": "",
+            "shelfID": 85,
+            "shelfFolioNums": "",
+            "sortOrder": "00030",
+            "folio": "",
+            "indexContent": "",
+            "pageID": 30
+          },
+          {
+            "biblicalContent": "",
+            "shelfID": 85,
+            "shelfFolioNums": "",
+            "sortOrder": "00040",
+            "folio": "",
+            "indexContent": "",
+            "pageID": 40
+          },
+          {
+            "biblicalContent": "",
+            "shelfID": 85,
+            "shelfFolioNums": "",
+            "sortOrder": "00050",
+            "folio": "",
+            "indexContent": "",
+            "pageID": 50
+          },
+          {
+            "biblicalContent": "",
+            "shelfID": 85,
+            "shelfFolioNums": "",
+            "sortOrder": "00060",
+            "folio": "",
+            "indexContent": "",
+            "pageID": 60
+          },
+          {
+            "biblicalContent": "",
+            "shelfID": 85,
+            "shelfFolioNums": "",
+            "sortOrder": "00070",
+            "folio": "",
+            "indexContent": "",
+            "pageID": 70
+          },
+          {
+            "biblicalContent": "",
+            "shelfID": 85,
+            "shelfFolioNums": "",
+            "sortOrder": "00080",
+            "folio": "",
+            "indexContent": "",
+            "pageID": 80
+          }
+        ]
+      },
+      "gaNum": "P99",
+      "leaves": {
+        "leavesCount": 16,
+        "content": 16
+      },
+      "lang": "g-l",
+      "contentOverview": "p: R2KGE",
+      "lineCount": {
+        "lineCountMax": 32,
+        "lineCountMin": 27,
+        "content": "27-32"
+      }
+    }
+  }
+}

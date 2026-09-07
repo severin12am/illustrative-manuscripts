@@ -37,7 +37,7 @@ const WEB_BASE =
 const SR_URL =
   "https://raw.githubusercontent.com/Center-for-New-Testament-Restoration/SR/main/SR.tsv";
 
-const LARGE = new Set(["P46", "P66", "P75", "P45", "P4"]);
+const LARGE = new Set(["P46", "P66", "P75", "P45", "P4", "01", "03"]);
 
 mkdirSync(CACHE, { recursive: true });
 

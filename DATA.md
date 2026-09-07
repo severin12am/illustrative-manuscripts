@@ -4,7 +4,7 @@
 
 | Mode | Window | Catalog spine |
 |------|--------|---------------|
-| Greek NT | 1–300 CE overlap | [INTF Liste](https://ntvmr.uni-muenster.de/liste/) |
+| Greek NT | 1–400 CE overlap | [INTF Liste](https://ntvmr.uni-muenster.de/liste/) (papyri) + `scripts/uncial-seed.json` (majuscules) |
 | Qurʾān | 1–100 AH (~622–719 CE overlap) | [Corpus Coranicum](https://corpuscoranicum.org/) (hand-curated seed) |
 | Nag Hammadi | ~300–400 CE overlap (codex paleography) | [Claremont NHA](https://ccdl.claremont.edu/digital/collection/nha/) (hand-curated seed) |
 
@@ -85,16 +85,25 @@ Claremont rights: "Physical rights are retained by the institution. Copyright is
 - [ ] Variant notes vs open critical base (if one becomes available under compatible license)
 - [ ] Commons-hosted color photos where PD scans exist (Thomas page 32 Coptic Museum plate)
 
-## Greek NT window: 1–300 CE
+## Greek NT window: 1–400 CE
 
-Witnesses are included when their **INTF Kurzgefasste Liste** paleographic range overlaps `[1, 300]`:
+Witnesses are included when their **INTF Kurzgefasste Liste** paleographic range overlaps `[1, 400]`:
 
-- `date_start ≤ 300` AND `date_end ≥ 1`
+- `date_start ≤ 400` AND `date_end ≥ 1`
 - A papyrus dated III CE (200–299) is fully in-window.
-- A papyrus dated IV CE (300–399) appears because year **300** is in both ranges.
-- A range starting at 325 CE (e.g. IV (A) 325–399) does **not** overlap `[1, 300]` and is excluded.
+- A papyrus dated IV CE (300–399) is fully in-window (not only at year 300).
+- A range starting at 401 CE (e.g. V CE) does **not** overlap `[1, 400]` and is excluded.
 
-**Uncials** (Vaticanus, Sinaiticus, Alexandrinus, etc.) are **not** in this build. The cached Liste export queries Gregory-Aland **papyri** only (`docID` 10000–19999). Sinaiticus (~330 CE) and Alexandrinus (~400 CE) would not qualify on date even if added; Vaticanus (IV, 300–399) overlaps only at year 300 but is not in the papyri cache.
+**Papyri** come from the cached Liste export (Gregory-Aland papyri, `docID` 10000–19999).
+
+**Select uncials** are hand-curated in `scripts/uncial-seed.json` when they overlap the window but are outside the papyri Liste query:
+
+| GA | Name | Date range (CE) | Image |
+|----|------|-----------------|-------|
+| 01 | Codex Sinaiticus (ℵ) | 325–375 | Commons PD (Lord's Prayer leaf) |
+| 03 | Codex Vaticanus (B) | 300–399 | Commons PD (Heb / 2 Thess plate) |
+
+Alexandrinus (02, ~400 CE) and later Byzantine minuscules remain **out of scope** for v1.
 
 ## Sources used
 
@@ -195,7 +204,7 @@ Featured examples (one per major kind) are auto-picked for the home and coverage
 
 | Question | Answer on this site |
 |----------|---------------------|
-| **Ehrman** — has anyone counted all NT variants? | No — not globally. Our `/variants` page counts a **defined slice**: CNTR papyri 1–300 CE vs SR GNT. |
+| **Ehrman** — has anyone counted all NT variants? | No — not globally. Our `/variants` page counts a **defined slice**: CNTR witnesses 1–400 CE vs SR GNT. |
 | **Gurry** — ~500,000 readings? | Cited on `/coverage` with DOI; we do **not** publish that as our number. |
 | **This site** | Variation units in `coverage.json` (`greek_nt.disagreements.total`), browsable by kind/witness/book at `/variants`. |
 | **Not claimed** | Full tradition census, ECM/NA judgments, intentional tags as settled scholarship. |
@@ -267,31 +276,31 @@ Cached Liste export: `scripts/cache/liste.json` (2026-09-02 snapshot; papyri doc
 
 ## NTVMR API access (2026-09-03)
 
-Live Liste refresh was **unavailable** during this build; witness set derived from cached export with overlap filter `[1, 300]`.
+Live Liste refresh succeeded during the latest build; witness set derived from cached export with overlap filter `[1, 400]`.
 
-**94 witnesses** in-window (was 61 for 1–200). **33 newly added** by expanding to year 300 (mostly IV-band papyri with `origEarly = 300`, plus late-III witnesses P12, P37, P49, P77).
+**108 witnesses** in-window (94 at 1–300 CE + **14** additional IV-band papyri + **2** hand-curated uncials 01 and 03).
 
-### Commons images (2026-09-03)
+### Commons images (2026-09-07)
 
-**50/94** witnesses have a downloaded Commons image + attribution sidecar. Entries verified in `scripts/commons-images.json`; run `npm run images` to fetch.
+**55/108** witnesses have a downloaded Commons image + attribution sidecar. New majuscule plates: **01** (Sinaiticus Lord's Prayer), **03** (Vaticanus Heb/2 Thess). Entries verified in `scripts/commons-images.json`; run `npm run images` to fetch.
 
-Commons files **mapped but not yet downloaded** (Wikimedia rate limit during build): **P77, P81, P86, P110, P120, P126**. Re-run `node scripts/download-commons.mjs` after a cooldown.
+Commons files **mapped but not yet downloaded** (Wikimedia rate limit): **P86, P110, P120**. Re-run `node scripts/download-commons.mjs` after a cooldown.
 
-### Witnesses without Commons image (45)
+### Witnesses without Commons image
 
-All in-window witnesses lacking a hosted image link to NTVMR/CSNTM. Includes P1, P7, P10, P12 (image downloaded but verify), P18, P20, P23, P29, P32, P40, P47, P50, P57, P62, P64, P65, P69, P72, P77, P81, P86, P87, P100, P101, P110, P115, P117, P119, P120, P121, P122, P125, P126, P129, P130, P131, P132, P133, P134, P137, P138, P139, P141, and others — see `witnesses.ts` (`hosted_image: null`).
+All in-window witnesses lacking a hosted image link to NTVMR/CSNTM/Vatican/BL viewers. See `witnesses.ts` (`hosted_image: null`).
 
-### CNTR gaps among new witnesses
+### CNTR gaps among witnesses
 
-No CNTR class-1 file (honest unavailable state): **P7, P10, P12, P50, P62** (and pre-existing P16, P65, P78, P80, P103).
+No CNTR class-1 file (honest unavailable state): **P7, P10, P12, P16, P50, P54, P56, P62, P65, P78, P80, P99, P103, P105, P112, P127, P140, P93, P94** (and pre-existing gaps). **01** and **03** have full CNTR transcriptions (lazy-loaded overflow in `public/cntr-texts/`).
 
 ### What is still missing for completeness
 
-- [ ] Live Liste API refresh when NTVMR is reachable
-- [ ] Per-manuscript `manuscript/get` cache for all 94 docIDs
-- [ ] LXX / DSS witnesses overlapping 1–300 CE (P12 Morgan Amherst codex has LXX on verso; not modeled separately)
-- [ ] Uncial band from Liste (separate docID query)
-- [ ] Remaining Commons downloads (P77, P81, P86, P110, P120, P126)
+- [ ] Live Liste API refresh when NTVMR is reachable (cache refreshed on last `npm run data`)
+- [ ] Per-manuscript `manuscript/get` cache for all docIDs
+- [ ] LXX / DSS witnesses overlapping 1–400 CE (P12 Morgan Amherst codex has LXX on verso; not modeled separately)
+- [ ] Additional uncials (02 Alexandrinus, 04, etc.) if window expands further
+- [ ] Remaining Commons downloads (P86, P110, P120)
 
 ## Attribution
 

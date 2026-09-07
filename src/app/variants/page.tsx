@@ -5,7 +5,7 @@ import VariantsExplorer from "./VariantsExplorer";
 export const metadata: Metadata = {
   title: "Variant explorer — Illustrative Manuscripts",
   description:
-    "Browse counted word-level disagreements between Greek NT papyri (1–300 CE) and SR GNT — filterable by kind, witness, and book.",
+    "Browse counted word-level disagreements between Greek NT witnesses (1–400 CE) and SR GNT — filterable by kind, witness, and book.",
 };
 
 export default function VariantsPage() {

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { coverage } from "@/data/coverage";
+import { TIMELINE_START, TIMELINE_END } from "@/data/witnesses";
 import StudentPrimer from "@/components/StudentPrimer";
 import VariantExamples from "@/components/VariantExamples";
 import DownloadCensus from "@/components/DownloadCensus";
@@ -18,7 +19,7 @@ import styles from "./coverage.module.css";
 export const metadata: Metadata = {
   title: "Coverage & scope — Illustrative Manuscripts",
   description:
-    "What Bart Ehrman asked, what Gurry estimated, and what this site actually counts — honest computed numbers for Greek NT papyri vs SR GNT.",
+    "What Bart Ehrman asked, what Gurry estimated, and what this site actually counts — honest computed numbers for Greek NT witnesses vs SR GNT.",
 };
 
 const GURRY_DOI = "https://doi.org/10.1017/S0028688516000216";
@@ -95,7 +96,7 @@ export default function CoveragePage() {
             <h3>What this site answers</h3>
             <p>
               A <strong>defined census</strong> of extant-letter disagreements in
-              Greek NT witnesses overlapping <strong>1–300 CE</strong>, compared
+              Greek NT witnesses overlapping <strong>{TIMELINE_START}–{TIMELINE_END} CE</strong>, compared
               word-by-word to open <strong>SR GNT</strong> via CNTR transcriptions:
             </p>
             <p className={styles.bigNumber}>
@@ -164,7 +165,7 @@ export default function CoveragePage() {
       <StudentPrimer />
 
       <section className={styles.section}>
-        <h2 className={styles.sectionTitle}>Greek New Testament (1–300 CE)</h2>
+        <h2 className={styles.sectionTitle}>Greek New Testament ({TIMELINE_START}–{TIMELINE_END} CE)</h2>
         <div className={styles.statGrid}>
           <div className={styles.statCard}>
             <span className={styles.statValue}>{greek_nt.witness_count}</span>

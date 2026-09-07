@@ -1,0 +1,145 @@
+{
+  "status": "success",
+  "data": {
+    "manuscript": {
+      "docID": 10021,
+      "columns": {
+        "columnsMin": 1,
+        "content": 1
+      },
+      "groupID": "",
+      "primaryName": "P21",
+      "shelfInstances": {
+        "shelfInstance": {
+          "institution": {
+            "country": "USA",
+            "instID": 392,
+            "nameCustom": "",
+            "geoLocator": "",
+            "name": "Muhlenberg College",
+            "place": "Allentown, PA",
+            "logoURL": "http://ntmss.info/instlogos/Muhlenberg4.jpg",
+            "url": "http://www.muhlenberg.edu/"
+          },
+          "leavesDescription": "1 Frg",
+          "shelfID": 19,
+          "originYearDescription": "V",
+          "pages": {
+            "count": 0
+          },
+          "manuscripts": {
+            "count": 0
+          },
+          "formerGANumber": "",
+          "leavesCount": 0,
+          "shelfNumber": "Pap. 1227 (theol. 3)",
+          "contentOverview": "Mt 12,24-26; 12,32-33"
+        }
+      },
+      "userID": "",
+      "v11n": "",
+      "originYear": {
+        "late": 499,
+        "early": 400,
+        "content": "V"
+      },
+      "leavesDescription": "1 Frg",
+      "pages": {
+        "count": 2,
+        "page": [
+          {
+            "biblicalContent": "Matt 12:24-26",
+            "images": {
+              "image": [
+                {
+                  "instID": 49,
+                  "shelfID": 0,
+                  "shelfNumberPartID": "",
+                  "accessLevel": 0,
+                  "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10021/10/10",
+                  "attribution": "<a target=\"_blank\" href=\"https://www.muhlenberg.edu/\"><img src=\" https://www.muhlenberg.edu/media/kdmedia/images/header-logo.png\"><div> Images©<br/>Muhlenberg College</div></a>",
+                  "thumbURL": "https://ntmss.info/images/thumbs/10021/10_49_10.jpg",
+                  "userName": "",
+                  "uri": "https://ntmss.info/images/webfriendly/10021/P21_04recto.jpg",
+                  "webFriendlyURL": "https://ntmss.info/images/webfriendly/10021/P21_04recto.jpg",
+                  "surrID": 10,
+                  "protectLevel": 0
+                },
+                {
+                  "shelfID": 0,
+                  "accessLevel": 1,
+                  "userName": "",
+                  "uri": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                  "protectLevel": 0,
+                  "instID": 49,
+                  "shelfNumberPartID": "",
+                  "protected": true,
+                  "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10021/10/20",
+                  "attribution": "<a target=\"_blank\" href=\"http://ntvmr.uni-muenster.de/liste\"><div>Images ©<br/>The Holding Institution</div></a>&#x2028;&#x2028;&nbsp;&#x2028;&#x2028;<a target=\"_blank\" href=\"http://egora.uni-muenster.de/intf/\"><div>Photo Digitized by<br/>INTF for Research Purposes</div></a>",
+                  "thumbURL": "https://ntmss.info/images/thumbs/10021/10_49_20.jpg",
+                  "webFriendlyURL": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                  "surrID": 20
+                }
+              ]
+            },
+            "shelfID": 19,
+            "shelfFolioNums": "001r",
+            "sortOrder": "00010",
+            "folio": "001r",
+            "indexContent": "Matt 12:24-26",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10021&pageID=10&format=xhtml"
+              }
+            },
+            "pageID": 10,
+            "indexedBy": "MF"
+          },
+          {
+            "biblicalContent": "Matt 12:32-33",
+            "images": {
+              "image": {
+                "instID": 49,
+                "shelfID": 0,
+                "shelfNumberPartID": "",
+                "accessLevel": 0,
+                "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10021/20/10",
+                "attribution": "<a target=\"_blank\" href=\"https://www.muhlenberg.edu/\"><img src=\" https://www.muhlenberg.edu/media/kdmedia/images/header-logo.png\"><div> Images©<br/>Muhlenberg College</div></a>",
+                "thumbURL": "https://ntmss.info/images/thumbs/10021/20_49_10.jpg",
+                "userName": "",
+                "uri": "https://ntmss.info/images/webfriendly/10021/P21_04verso.jpg",
+                "webFriendlyURL": "https://ntmss.info/images/webfriendly/10021/P21_04verso.jpg",
+                "surrID": 10,
+                "protectLevel": 0
+              }
+            },
+            "shelfID": 19,
+            "shelfFolioNums": "001v",
+            "sortOrder": "00020",
+            "folio": "001v",
+            "indexContent": "Matt 12:32-33",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10021&pageID=20&format=xhtml"
+              }
+            },
+            "pageID": 20,
+            "indexedBy": "MF"
+          }
+        ]
+      },
+      "gaNum": "P21",
+      "leaves": {
+        "leavesCount": 1,
+        "content": "1 Frg"
+      },
+      "lang": "g",
+      "contentOverview": "e: Mt",
+      "lineCount": {
+        "lineCountMax": 33,
+        "lineCountMin": 10,
+        "content": "11r, 10v (32-33)"
+      }
+    }
+  }
+}

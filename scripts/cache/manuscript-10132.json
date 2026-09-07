@@ -1,0 +1,134 @@
+{
+  "status": "success",
+  "data": {
+    "manuscript": {
+      "docID": 10132,
+      "columns": {
+        "columnsMin": 1,
+        "content": 1
+      },
+      "groupID": "",
+      "primaryName": "P132",
+      "shelfInstances": {
+        "shelfInstance": {
+          "institution": {
+            "country": "United Kingdom",
+            "instID": 499,
+            "nameCustom": "",
+            "geoLocator": "",
+            "name": "Bodleian Art, Archaeology and Ancient World Library",
+            "place": "Oxford",
+            "logoURL": "https://pbs.twimg.com/profile_images/1789959363588763648/0XlnKdqo_400x400.png",
+            "url": "https://www.bodleian.ox.ac.uk/libraries/art"
+          },
+          "leavesDescription": "1 Frg",
+          "shelfID": 6009,
+          "originYearDescription": "III/IV",
+          "pages": {
+            "count": 0
+          },
+          "manuscripts": {
+            "count": 0
+          },
+          "formerGANumber": "",
+          "leavesCount": 0,
+          "shelfNumber": "P. Oxy. 5258",
+          "contentOverview": "Eph 3,21-4,2.14-16"
+        }
+      },
+      "userID": "",
+      "v11n": "",
+      "originYear": {
+        "late": 399,
+        "early": 200,
+        "content": "III/IV"
+      },
+      "leavesDescription": "1 Frg",
+      "pages": {
+        "count": 2,
+        "page": [
+          {
+            "biblicalContent": "Eph 3:21; Eph 4:1-2",
+            "images": {
+              "image": {
+                "instID": 49,
+                "shelfID": 0,
+                "shelfNumberPartID": "",
+                "accessLevel": 0,
+                "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10132/10/10",
+                "attribution": "<a target=\"_blank\" href=\" http://163.1.169.40/cgi-bin/library?a=p&p=home&l=en&w=utf-8 \"><div>Images©<br/> Courtesy of the Oxford Imaging Papyri Project </div></a>",
+                "thumbURL": "https://ntmss.info/images/thumbs/10132/10_49_10.jpg",
+                "userName": "",
+                "uri": "https://ntmss.info/images/webfriendly/10132/10132x00010XX_INTF.jpg",
+                "webFriendlyURL": "https://ntmss.info/images/webfriendly/10132/10132x00010XX_INTF.jpg",
+                "surrID": 10,
+                "protectLevel": 0
+              }
+            },
+            "shelfID": 6009,
+            "shelfFolioNums": "",
+            "sortOrder": "00010",
+            "folio": "1r",
+            "indexContent": "Eph 3:21; Eph 4:1-2",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10132&pageID=10&format=xhtml"
+              }
+            },
+            "pageID": 10,
+            "indexedBy": "jjmccollum"
+          },
+          {
+            "biblicalContent": "Eph 4:14-16",
+            "images": {
+              "image": {
+                "instID": 49,
+                "shelfID": 0,
+                "shelfNumberPartID": "",
+                "accessLevel": 0,
+                "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10132/20/10",
+                "attribution": "<a target=\"_blank\" href=\" http://163.1.169.40/cgi-bin/library?a=p&p=home&l=en&w=utf-8 \"><div>Images©<br/> Courtesy of the Oxford Imaging Papyri Project </div></a>",
+                "thumbURL": "https://ntmss.info/images/thumbs/10132/20_49_10.jpg",
+                "userName": "",
+                "uri": "https://ntmss.info/images/webfriendly/10132/10132x00020XX_INTF.jpg",
+                "webFriendlyURL": "https://ntmss.info/images/webfriendly/10132/10132x00020XX_INTF.jpg",
+                "surrID": 10,
+                "protectLevel": 0
+              }
+            },
+            "shelfID": 6009,
+            "shelfFolioNums": "",
+            "sortOrder": "00020",
+            "folio": "1v",
+            "indexContent": "Eph 4:14-16",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10132&pageID=20&format=xhtml"
+              }
+            },
+            "pageID": 20,
+            "indexedBy": "jjmccollum"
+          }
+        ]
+      },
+      "gaNum": "P132",
+      "leaves": {
+        "leavesCount": 0,
+        "content": "1 Frg"
+      },
+      "width": {
+        "widthMin": 135
+      },
+      "lang": "grc",
+      "contentOverview": "p: E",
+      "lineCount": {
+        "lineCountMax": 5,
+        "lineCountMin": 4,
+        "content": "4-5"
+      },
+      "height": {
+        "heightMin": 200
+      }
+    }
+  }
+}
