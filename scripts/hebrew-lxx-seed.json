@@ -1,0 +1,658 @@
+{
+  "_meta": {
+    "window_ce": [-250, 400],
+    "window_ce_note": "Hebrew/LXX timeline extends to 250 BCE so famous DSS (e.g. 1QIsaᵃ) and early LXX rolls (P.Ryl. 458, P.Fouad 266) appear. Greek NT corpus remains frozen at 1–400 CE. Witnesses included when a published paleographic or C14 range overlaps [-250, 400] OR when they are essential continuous early Bible witnesses in this window.",
+    "sources": [
+      "Leon Levy Dead Sea Scrolls Digital Library (link only — do not rehost IAA-restricted scans)",
+      "Wikimedia Commons PD/CC plates and Google Art Project (Israel Museum 1QIsaᵃ)",
+      "Grenfell & Hunt, Oxyrhynchus Papyri (PD facsimile plates)",
+      "C. H. Roberts, P.Ryl. III 458 (1936) — PD diplomatic excerpts",
+      "Rahlfs Verzeichnis / Göttingen Septuaginta catalogue (metadata)",
+      "World English Bible (PD) for English of shown lines"
+    ],
+    "generated_by": "Hand-curated seed — ~12 witnesses; expand against open image/text licenses"
+  },
+  "manuscripts": [
+    {
+      "id": "1qisaa",
+      "catalog_id": "1QIsaᵃ",
+      "traditional_name": "Great Isaiah Scroll (1QIsaᵃ)",
+      "tradition": "hebrew",
+      "language": "Hebrew (Qumran)",
+      "material": "parchment",
+      "date_ce_start": -125,
+      "date_ce_end": -100,
+      "date_label": "ca. 125–100 BCE (palaeography)",
+      "date_note": "Complete Isaiah scroll from Qumran Cave 1 — over a millennium older than medieval Masoretic codices. Paleographic date ca. 125–100 BCE (Cross; Ulrich).",
+      "dating_method": "palaeography",
+      "dating_source": "Cross, DJD X; Leon Levy DSS Digital Library",
+      "contents": "Complete Book of Isaiah (all 66 chapters) — best-preserved biblical Dead Sea Scroll",
+      "find_place": "Qumran Cave 1, Judean Desert",
+      "find_year_note": "Discovered 1947; copied ca. 125–100 BCE",
+      "current_institution": "Israel Museum, Jerusalem (Shrine of the Book)",
+      "current_shelfmark": "Inv. A (1QIsaᵃ)",
+      "leon_levy_url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/1Q1-1",
+      "library_url": "https://www.imj.org.il/en/wings/shrine-book/dead-sea-scrolls",
+      "commons_key": "1qisaa",
+      "image": {
+        "policy": "hosted",
+        "viewer_url": "https://commons.wikimedia.org/wiki/File:The_Great_Isaiah_Scroll_MS_A_(1QIsa)_-_Google_Art_Project-x4-y0.jpg",
+        "attribution": {
+          "institution": "Israel Museum / Google Art Project",
+          "license": "Public domain (ancient text; photograph per Commons PDMC tag)",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:The_Great_Isaiah_Scroll_MS_A_(1QIsa)_-_Google_Art_Project-x4-y0.jpg",
+          "attribution_required": false,
+          "note": "Leon Levy DSS Digital Library has higher-res views — link only; do not rehost IAA-restricted plates."
+        }
+      },
+      "passages": [
+        {
+          "reference": "Isaiah 40:3",
+          "original": "קול קורא במדבר פנו דרך יהוה ישרו בערבה מסלה לאלהינו",
+          "original_label": "Hebrew consonantal text of this line (Masoretic vocalization for display; scroll lacks full pointing)",
+          "original_source": "Standard Isaiah 40:3 consonants; compare 1QIsaᵃ plate (Leon Levy / DJD X)",
+          "english": "A voice calls, \"In the wilderness, prepare the way of Yahweh! Make a level highway in the desert for our God.\"",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD), adapted to match shown Hebrew locus"
+        },
+        {
+          "reference": "Isaiah 40:6–8",
+          "original": "קול אמר קרא ואמר מה יקרא כל הבשר חציר וכל חסדו כציץ השדה יבש חציר נבל ציץ נבל כי רוח יהוה נשבה בו אכן חציר העם",
+          "original_label": "Excerpt from column XL (Isaiah 40) — diplomatic consonants for display",
+          "original_source": "Compare DJD X / Leon Levy 1QIsaᵃ facsimile",
+          "english": "A voice says, \"Cry out!\" One said, \"What shall I cry?\" \"All flesh is like grass, and all its glory is like the flower of the field. The grass withers, the flower fades, because Yahweh's breath blows on it. Surely the people are grass.\"",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Leon Levy Dead Sea Scrolls Digital Library — 1QIsaᵃ",
+          "url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/1Q1-1"
+        },
+        {
+          "title": "Ulrich, DJD XXXII — 1QIsaᵃ",
+          "url": "https://www.deadseascrolls.org.il/"
+        }
+      ]
+    },
+    {
+      "id": "11qpsa",
+      "catalog_id": "11QPsᵃ",
+      "traditional_name": "Great Psalms Scroll (11Q5)",
+      "tradition": "hebrew",
+      "language": "Hebrew (Qumran)",
+      "material": "parchment",
+      "date_ce_start": 30,
+      "date_ce_end": 68,
+      "date_label": "ca. 30–68 CE (C14 / paleography)",
+      "date_note": "Longest Psalms manuscript from Qumran; includes extra psalms and Plea for Deliverance not in the Masoretic Psalter. Recent C14 supports 1st c. CE copy date.",
+      "dating_method": "radiocarbon + palaeography",
+      "dating_source": "Sanders, DJD IV; Museum of the Bible exhibition C14 (2025)",
+      "contents": "Psalms scroll with non-MT order and seven additional compositions (Plea for Deliverance, Apostrophe to Zion, etc.)",
+      "find_place": "Qumran Cave 11, Judean Desert",
+      "find_year_note": "Discovered February 1956",
+      "current_institution": "Israel Antiquities Authority / Shrine of the Book",
+      "current_shelfmark": "11Q5",
+      "leon_levy_url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/11Q5-1",
+      "library_url": "https://www.deadseascrolls.org.il/",
+      "commons_key": "11qpsa",
+      "image": {
+        "policy": "hosted",
+        "viewer_url": "https://commons.wikimedia.org/wiki/File:Psalms_Scroll.jpg",
+        "attribution": {
+          "institution": "Israel Antiquities Authority / Library of Congress exhibition",
+          "license": "Public domain (PDMC)",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Psalms_Scroll.jpg",
+          "attribution_required": false,
+          "note": "LOC/IAA 1993 exhibition photograph with modern Hebrew transcription overlay on Commons file."
+        }
+      },
+      "passages": [
+        {
+          "reference": "Psalm 121:1–2 (MT numbering)",
+          "original": "שיר למעלות אשא עיני אל ההרים מני יבוא עזרי",
+          "original_label": "Hebrew of column XIX opening (Song of Ascents) — consonantal display",
+          "original_source": "LOC Scrolls exhibition transcription; compare Sanders DJD IV",
+          "english": "I will lift up my eyes to the hills. Where does my help come from?",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        },
+        {
+          "reference": "Psalm 121:3–4",
+          "original": "עזרי מעם יהוה עשה שמים וארץ אל יתן למוט רגלך אל ינום שמרך",
+          "original_label": "Continuation on 11Q5 column XIX",
+          "original_source": "LOC Scrolls exhibition transcription",
+          "english": "My help comes from Yahweh, who made heaven and earth. He will not allow your foot to be moved. He who keeps you will not slumber.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Leon Levy DSS Digital Library — 11Q5",
+          "url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/11Q5-1"
+        },
+        {
+          "title": "Sanders, DJD IV — Psalms Scroll of Qumran Cave 11",
+          "url": "https://www.deadseascrolls.org.il/"
+        }
+      ]
+    },
+    {
+      "id": "4qsama",
+      "catalog_id": "4QSamᵃ",
+      "traditional_name": "Samuel manuscript 4QSamᵃ (4Q51)",
+      "tradition": "hebrew",
+      "language": "Hebrew (Qumran)",
+      "material": "parchment",
+      "date_ce_start": -60,
+      "date_ce_end": -45,
+      "date_label": "ca. 60–45 BCE (palaeography)",
+      "date_note": "Important pre-Masoretic Samuel text with passages harmonizing toward the Septuagint tradition. Dates to late Hasmonean period.",
+      "dating_method": "palaeography",
+      "dating_source": "Cross, Qumran Cave 4 XII (DJD XVII); Ulrich",
+      "contents": "1–2 Samuel fragments with significant textual variants vs MT",
+      "find_place": "Qumran Cave 4, Judean Desert",
+      "find_year_note": "Excavated 1952",
+      "current_institution": "Israel Antiquities Authority",
+      "current_shelfmark": "4Q51 (4QSamᵃ)",
+      "leon_levy_url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/4Q51-1",
+      "library_url": "https://www.deadseascrolls.org.il/",
+      "image": {
+        "policy": "link_only",
+        "viewer_url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/4Q51-1",
+        "attribution": {
+          "institution": "Israel Antiquities Authority / Leon Levy DSS Digital Library",
+          "license": "© IAA — link only",
+          "attribution_required": true,
+          "viewer_url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/4Q51-1",
+          "note": "No verified PD Commons leaf plate; view at Leon Levy DSS Digital Library."
+        }
+      },
+      "passages": [
+        {
+          "reference": "1 Samuel 2:10",
+          "original": "יהוה יחתו מריביו עליו בשמים ירעם יהוה ידין אפסי ארץ ויתן עוז למלכו וירם קרן משיחו",
+          "original_label": "Hebrew of Hannah's song closing (display consonants; 4QSamᵃ differs from MT in places)",
+          "original_source": "Compare Ulrich, DJD XVII — diplomatic edition",
+          "english": "Those who strive with Yahweh shall be broken to pieces. He will thunder against them in the sky. Yahweh will judge the ends of the earth. He will give strength to his king, and exalt the horn of his anointed.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD); 4QSamᵃ contains longer text in some witnesses"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Leon Levy DSS Digital Library — 4QSamᵃ",
+          "url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/4Q51-1"
+        },
+        {
+          "title": "Ulrich, The Biblical Qumran Scrolls in English",
+          "url": "https://www.deadseascrolls.org.il/"
+        }
+      ]
+    },
+    {
+      "id": "2q18-exodus",
+      "catalog_id": "2Q18",
+      "traditional_name": "Exodus fragments (2Q18)",
+      "tradition": "hebrew",
+      "language": "Hebrew (Qumran)",
+      "material": "parchment",
+      "date_ce_start": -30,
+      "date_ce_end": 1,
+      "date_label": "ca. 30–1 BCE (palaeography)",
+      "date_note": "Small biblical fragment from Cave 2 overlapping the turn of the era — illustrates ongoing Hebrew Bible copying at Qumran into the late 1st c. BCE.",
+      "dating_method": "palaeography",
+      "dating_source": "Baillet, DJD III",
+      "contents": "Exodus fragments (2Q18)",
+      "find_place": "Qumran Cave 2",
+      "find_year_note": "Excavated 1952",
+      "current_institution": "Israel Antiquities Authority",
+      "current_shelfmark": "2Q18",
+      "leon_levy_url": "https://www.deadseascrolls.org.il/",
+      "library_url": "https://www.deadseascrolls.org.il/",
+      "image": {
+        "policy": "link_only",
+        "viewer_url": "https://www.deadseascrolls.org.il/",
+        "attribution": {
+          "institution": "Israel Antiquities Authority",
+          "license": "© IAA — link only",
+          "attribution_required": true,
+          "note": "Fragment plate at Leon Levy DSS Digital Library; no open Commons rehost."
+        }
+      },
+      "passages": [
+        {
+          "reference": "Exodus 3:14",
+          "original": "ויאמר אלהים אל משה אהיה אשר אהיה ויאמר כה תאמר לבני ישראל אהיה שלחני אליכם",
+          "original_label": "Standard Hebrew of the theophany formula (compare 2Q18 surviving letters on Leon Levy plate)",
+          "original_source": "Baillet DJD III; consonantal display for the locus",
+          "english": "God said to Moses, \"I AM WHO I AM,\" and he said, \"You shall tell the children of Israel this: 'I AM has sent me to you.'\"",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Leon Levy Dead Sea Scrolls Digital Library",
+          "url": "https://www.deadseascrolls.org.il/"
+        }
+      ]
+    },
+    {
+      "id": "p-ryl-458",
+      "catalog_id": "P.Ryl. 458",
+      "rahlfs": "957",
+      "traditional_name": "Rylands Greek Deuteronomy Roll (P.Ryl. 458)",
+      "tradition": "lxx",
+      "language": "Greek (Koine)",
+      "material": "papyrus",
+      "date_ce_start": -199,
+      "date_ce_end": -100,
+      "date_label": "ca. 150–100 BCE (palaeography)",
+      "date_note": "Among the oldest known Septuagint manuscripts — eight fragments of Deuteronomy from Fayyum mummy cartonnage. Uses κύριος for the divine name (not the tetragrammaton).",
+      "dating_method": "palaeography",
+      "dating_source": "C. H. Roberts, P.Ryl. III 458 (1936); Rahlfs 957",
+      "contents": "Deuteronomy 23:24–28:2 (eight fragments, roll format)",
+      "find_place": "Fayyum, Egypt (mummy cartonnage)",
+      "find_year_note": "Acquired 1917; published Roberts 1936",
+      "current_institution": "John Rylands Library, University of Manchester",
+      "current_shelfmark": "Gr. P. 458 a–h",
+      "library_url": "https://www.digitalcollections.manchester.ac.uk/view/MS-GR-P-00458/1",
+      "commons_key": "p-ryl-458",
+      "image": {
+        "policy": "hosted",
+        "viewer_url": "https://commons.wikimedia.org/wiki/File:P._Rylands_458.jpg",
+        "attribution": {
+          "institution": "John Rylands Library",
+          "license": "Public domain (2nd c. BCE text; Commons upload)",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:P._Rylands_458.jpg",
+          "attribution_required": false
+        }
+      },
+      "passages": [
+        {
+          "reference": "Deuteronomy 26:17–19",
+          "original": "σὴμερον κύριον τὸν θεὸν σοῦ εἶναι ἐν ὁδοῖς αὐτοῦ πορεύεσθαι καὶ φυλάσσειν τὰ δικαιώματα αὐτοῦ καὶ τὰς ἐντολὰς καὶ τὰ κρίματα αὐτοῦ καὶ ἀκούειν τῆς φωνῆς αὐτοῦ",
+          "original_label": "Greek uncial excerpt (fragment g) — Roberts 1936 diplomatic",
+          "original_source": "C. H. Roberts, P.Ryl. III 458 (1936) — PD editio princeps",
+          "english": "You have declared today that Yahweh is your God, and that you will walk in his ways, keep his statutes, his commandments, and his ordinances, and listen to his voice.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD), adapted from LXX sense"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Roberts, Two Biblical Papyri in the John Rylands Library (1936)",
+          "url": "https://www.digitalcollections.manchester.ac.uk/view/MS-GR-P-00458/1"
+        },
+        {
+          "title": "Göttingen Septuaginta — Rahlfs 957",
+          "url": "https://septuaginta.uni-goettingen.de/"
+        }
+      ]
+    },
+    {
+      "id": "p-fouad-266",
+      "catalog_id": "P.Fouad 266",
+      "rahlfs": "847–848",
+      "traditional_name": "Fouad Greek Pentateuch (P.Fouad 266)",
+      "tradition": "lxx",
+      "language": "Greek (Koine)",
+      "material": "papyrus",
+      "date_ce_start": -100,
+      "date_ce_end": -50,
+      "date_label": "ca. 100–50 BCE (palaeography)",
+      "date_note": "117 fragments of Genesis and Deuteronomy — oldest manuscript embedding the Hebrew tetragrammaton (יהוה in square script) within Greek columns.",
+      "dating_method": "palaeography",
+      "dating_source": "Dunand, Papyrus grecs bibliques (1971); Kahle",
+      "contents": "Genesis and Deuteronomy fragments with Hebrew tetragrammaton in Greek text",
+      "find_place": "Fayyum, Egypt",
+      "find_year_note": "Discovered 1939",
+      "current_institution": "Société Royale de Papyrologie, Cairo",
+      "current_shelfmark": "P. Fouad Inv. 266",
+      "library_url": "https://en.wikipedia.org/wiki/Papyrus_Fouad_266",
+      "commons_key": "p-fouad-266",
+      "image": {
+        "policy": "hosted",
+        "viewer_url": "https://commons.wikimedia.org/wiki/File:Pap_266.jpg",
+        "attribution": {
+          "institution": "Société Royale de Papyrologie, Cairo",
+          "license": "Public domain (Commons)",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Pap_266.jpg",
+          "attribution_required": false,
+          "note": "Famous plate showing Hebrew יהוה in Greek Deuteronomy column."
+        }
+      },
+      "passages": [
+        {
+          "reference": "Deuteronomy 31:28–30",
+          "original": "συνάχθητε πρός με καὶ ἀναγγελῶ ὑμῖν πάντα ὅσα ἀποβήσεται ὑμῖν ἐπʼ ἐσχάτων τῶν ἡμερῶν",
+          "original_label": "Greek excerpt; divine name written as Hebrew יהוה in manuscript (see plate)",
+          "original_source": "Dunand (1971) diplomatic; plate on Commons",
+          "english": "Assemble yourselves to me, and I will tell you all that will happen to you in the latter days.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Dunand, Papyrus grecs bibliques (P. Fouad 266)",
+          "url": "https://en.wikipedia.org/wiki/Papyrus_Fouad_266"
+        },
+        {
+          "title": "Göttingen Septuaginta — Rahlfs 847/848",
+          "url": "https://septuaginta.uni-goettingen.de/"
+        }
+      ]
+    },
+    {
+      "id": "p-oxy-656",
+      "catalog_id": "P.Oxy. 656",
+      "rahlfs": "905",
+      "traditional_name": "Oxyrhynchus Genesis Codex (P.Oxy. 656)",
+      "tradition": "lxx",
+      "language": "Greek (Koine)",
+      "material": "papyrus",
+      "date_ce_start": 100,
+      "date_ce_end": 299,
+      "date_label": "late II – early III CE (palaeography)",
+      "date_note": "Jewish Greek codex of Genesis — often omits κύριος where God is meant, leaving spaces (tetragrammaton tradition). Published Grenfell & Hunt 1904.",
+      "dating_method": "palaeography",
+      "dating_source": "Grenfell & Hunt, P.Oxy. IV 656; Wevers Göttingen Genesis",
+      "contents": "Genesis 14:21–27:41 (four fragmentary leaves of a codex)",
+      "find_place": "Oxyrhynchus, Egypt",
+      "find_year_note": "Excavated 1897–1907; published 1904",
+      "current_institution": "Bodleian Library, Oxford",
+      "current_shelfmark": "MS. Gr. bibl. d. 5 (P)",
+      "library_url": "https://digital.bodleian.ox.ac.uk/objects/80c01ac4-14e0-4483-97f5-4455ef2bcc19/",
+      "commons_key": "p-oxy-656",
+      "image": {
+        "policy": "hosted",
+        "viewer_url": "https://commons.wikimedia.org/wiki/File:Oxyrhyncus_656.jpg",
+        "attribution": {
+          "institution": "Bodleian Library / Grenfell & Hunt plate (1904)",
+          "license": "Public domain (1904 facsimile plate)",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Oxyrhyncus_656.jpg",
+          "attribution_required": false
+        }
+      },
+      "passages": [
+        {
+          "reference": "Genesis 24:31",
+          "original": "καὶ εἶπεν εἰσελθε εἰς οἶκον δεσπότου καὶ μὴ ὑπόμεινον ἔξω",
+          "original_label": "Greek uncial on folio showing Gen 24:28–37 (Grenfell & Hunt plate II excerpt)",
+          "original_source": "P.Oxy. IV 656 (1904) — PD",
+          "english": "He said, \"Come in, you blessed of Yahweh. Why do you stand outside? For I have prepared the house, and room for the camels.\"",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Grenfell & Hunt, P.Oxy. IV 656 (1904)",
+          "url": "https://papyri.info/ddbdp/p.oxy;4;656"
+        },
+        {
+          "title": "Digital Bodleian — MS. Gr. bibl. d. 5 (P)",
+          "url": "https://digital.bodleian.ox.ac.uk/objects/80c01ac4-14e0-4483-97f5-4455ef2bcc19/"
+        }
+      ]
+    },
+    {
+      "id": "p-oxy-1007",
+      "catalog_id": "P.Oxy. 1007",
+      "rahlfs": "907",
+      "traditional_name": "Oxyrhynchus Genesis Parchment (P.Oxy. 1007)",
+      "tradition": "lxx",
+      "language": "Greek (Koine)",
+      "material": "parchment",
+      "date_ce_start": 200,
+      "date_ce_end": 299,
+      "date_label": "III CE (palaeography)",
+      "date_note": "Parchment codex fragment of Genesis 2–3 with special tetragrammaton symbol (double yod with stroke) — Jewish or Jewish-Christian scribal tradition.",
+      "dating_method": "palaeography",
+      "dating_source": "Hunt, P.Oxy. VII 1007; Rahlfs 907",
+      "contents": "Genesis 2:7–9, 16–19; 2:23–3:1, 6–8",
+      "find_place": "Oxyrhynchus, Egypt",
+      "find_year_note": "Published Hunt 1910",
+      "current_institution": "British Library, London",
+      "current_shelfmark": "Papyrus 2047",
+      "library_url": "https://www.bl.uk/collection-items/papyrus-oxyrhynchus-1007",
+      "commons_key": "p-oxy-1007",
+      "image": {
+        "policy": "hosted",
+        "viewer_url": "https://commons.wikimedia.org/wiki/File:LXXP.Oxy.VII.1007.jpg",
+        "attribution": {
+          "institution": "British Library / Hunt 1910 plate",
+          "license": "Public domain (1910 facsimile)",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:LXXP.Oxy.VII.1007.jpg",
+          "attribution_required": false
+        }
+      },
+      "passages": [
+        {
+          "reference": "Genesis 2:7",
+          "original": "καὶ ἔπλασεν ὁ θεὸς τὸν ἄνθρωπον χοῦν ἀπὸ τῆς γῆς καὶ ἐνεφύσησεν εἰς τὸ πρόσωπον αὐτοῦ πνοὴν ζωῆς",
+          "original_label": "Greek of creation of Adam (recto) — divine name as paleo-Hebrew yod symbol in ms.",
+          "original_source": "P.Oxy. VII 1007 (1910) — PD",
+          "english": "Yahweh God formed man from the dust of the ground, and breathed into his nostrils the breath of life.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Hunt, P.Oxy. VII 1007 (1910)",
+          "url": "https://papyri.info/ddbdp/p.oxy;7;1007"
+        },
+        {
+          "title": "British Library — P.Oxy. 1007",
+          "url": "https://www.bl.uk/collection-items/papyrus-oxyrhynchus-1007"
+        }
+      ]
+    },
+    {
+      "id": "cbp-bp-iv",
+      "catalog_id": "CBL BP IV",
+      "rahlfs": "961",
+      "traditional_name": "Chester Beatty Genesis Codex IV (Rahlfs 961)",
+      "tradition": "lxx",
+      "language": "Greek (Koine)",
+      "material": "papyrus",
+      "date_ce_start": 100,
+      "date_ce_end": 200,
+      "date_label": "II CE (palaeography)",
+      "date_note": "Substantial papyrus codex of Genesis — one of the Chester Beatty biblical papyri acquired in Egypt before 1931.",
+      "dating_method": "palaeography",
+      "dating_source": "Kenyon/Hayes, Chester Beatty Biblical Papyri fasc. I–II",
+      "contents": "Genesis (extensive portions in codex format)",
+      "find_place": "Egypt",
+      "find_year_note": "Acquired Chester Beatty before 1931",
+      "current_institution": "Chester Beatty, Dublin",
+      "current_shelfmark": "CBL BP IV",
+      "library_url": "https://www.chesterbeatty.ie/",
+      "commons_key": "cbp-bp-iv",
+      "image": {
+        "policy": "hosted",
+        "viewer_url": "https://commons.wikimedia.org/wiki/File:Papyrus_with_fragments_of_the_Book_of_Genesis_(Rahlfs_961)_(CBL_BP_IV_f.11).jpg",
+        "attribution": {
+          "institution": "Chester Beatty Library",
+          "license": "CC BY-SA (Commons)",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus_with_fragments_of_the_Book_of_Genesis_(Rahlfs_961)_(CBL_BP_IV_f.11).jpg",
+          "attribution_required": true
+        }
+      },
+      "passages": [
+        {
+          "reference": "Genesis 9:13",
+          "original": "τὴν τόξον μου δώσω ἐν τῇ νεφέλῃ καὶ ἔσται εἰς σημεῖον διαθήκης ἀνὰ μέσον ἐμοῦ καὶ ἀνὰ μέσον τῆς γῆς",
+          "original_label": "Greek of rainbow covenant sign (folio 11 area)",
+          "original_source": "Hayes, Chester Beatty Biblical Papyri plates — display excerpt",
+          "english": "I set my rainbow in the cloud, and it will be a sign of a covenant between me and the earth.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Chester Beatty — Biblical Papyri IV",
+          "url": "https://www.chesterbeatty.ie/"
+        }
+      ]
+    },
+    {
+      "id": "cbp-bp-v",
+      "catalog_id": "CBL BP V",
+      "rahlfs": "962",
+      "traditional_name": "Chester Beatty Genesis Codex V (Rahlfs 962)",
+      "tradition": "lxx",
+      "language": "Greek (Koine)",
+      "material": "papyrus",
+      "date_ce_start": 150,
+      "date_ce_end": 250,
+      "date_label": "II–III CE (palaeography)",
+      "date_note": "Companion Genesis codex to BP IV in the Chester Beatty collection.",
+      "dating_method": "palaeography",
+      "dating_source": "Kenyon/Hayes, Chester Beatty Biblical Papyri",
+      "contents": "Genesis (codex fragments)",
+      "find_place": "Egypt",
+      "find_year_note": "Acquired Chester Beatty before 1931",
+      "current_institution": "Chester Beatty, Dublin",
+      "current_shelfmark": "CBL BP V",
+      "library_url": "https://www.chesterbeatty.ie/",
+      "commons_key": "cbp-bp-v",
+      "image": {
+        "policy": "hosted",
+        "viewer_url": "https://commons.wikimedia.org/wiki/File:Papyrus_with_fragments_of_the_Book_of_Genesis_(Rahlfs_962)_(CBL_BP_V_f.21).jpg",
+        "attribution": {
+          "institution": "Chester Beatty Library",
+          "license": "CC BY-SA (Commons)",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus_with_fragments_of_the_Book_of_Genesis_(Rahlfs_962)_(CBL_BP_V_f.21).jpg",
+          "attribution_required": true
+        }
+      },
+      "passages": [
+        {
+          "reference": "Genesis 1:1",
+          "original": "ἐν ἀρχῇ ἐποίησεν ὁ θεὸς τὸν οὐρανὸν καὶ τὴν γῆν",
+          "original_label": "Greek opening of Genesis on Beatty V folio",
+          "original_source": "Hayes plates — display excerpt",
+          "english": "In the beginning, God created the heavens and the earth.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Chester Beatty — Biblical Papyri V",
+          "url": "https://www.chesterbeatty.ie/"
+        }
+      ]
+    },
+    {
+      "id": "cbp-bp-vi",
+      "catalog_id": "CBL BP VI",
+      "rahlfs": "963",
+      "traditional_name": "Chester Beatty Numbers–Deuteronomy (Rahlfs 963)",
+      "tradition": "lxx",
+      "language": "Greek (Koine)",
+      "material": "papyrus",
+      "date_ce_start": 150,
+      "date_ce_end": 250,
+      "date_label": "II CE (first half; palaeography)",
+      "date_note": "Important early LXX codex of Numbers and Deuteronomy — Deuteronomy text aligns with Codex Washingtonensis family, not Vaticanus.",
+      "dating_method": "palaeography",
+      "dating_source": "Kenyon/Hayes fasc. V; Rahlfs 963",
+      "contents": "Numbers 5–36; Deuteronomy 1–34 (fragmentary codex, ~50 leaves)",
+      "find_place": "Egypt",
+      "find_year_note": "Acquired Chester Beatty before 1931; some folios at Michigan",
+      "current_institution": "Chester Beatty, Dublin (+ Univ. of Michigan fragments)",
+      "current_shelfmark": "CBL BP VI / P.Mich. Inv. 5554",
+      "library_url": "https://www.chesterbeatty.ie/",
+      "image": {
+        "policy": "link_only",
+        "viewer_url": "https://www.chesterbeatty.ie/",
+        "attribution": {
+          "institution": "Chester Beatty Library / University of Michigan",
+          "license": "© institutions — link only (Hayes 1958 plates not rehosted)",
+          "attribution_required": true,
+          "viewer_url": "https://www.chesterbeatty.ie/",
+          "note": "Michigan Deut. 4 fragments imaged at APIS; no verified PD Commons plate for BP VI yet."
+        }
+      },
+      "passages": [
+        {
+          "reference": "Deuteronomy 4:6",
+          "original": "καὶ φυλάξεσθε καὶ ποιήσετε αὐτά ὅτι αὕτη ἡ σοφία καὶ ἡ σύνεσις ὑμῶν ἐναντίον πάντων τῶν ἐθνῶν",
+          "original_label": "Greek of Moses' wisdom saying (Deut 4:6–7 locus)",
+          "original_source": "Hayes, Chester Beatty fasc. V — display excerpt",
+          "english": "Keep therefore and do them; for this is your wisdom and your understanding in the sight of the peoples.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Chester Beatty — Biblical Papyri VI (Numbers & Deuteronomy)",
+          "url": "https://www.chesterbeatty.ie/"
+        },
+        {
+          "title": "University of Michigan APIS — P.Mich. Inv. 5554",
+          "url": "https://papyri.info/apis/michigan.apis.2494"
+        }
+      ]
+    },
+    {
+      "id": "p-vindob-39777",
+      "catalog_id": "P.Vindob. G 39777",
+      "rahlfs": "802",
+      "traditional_name": "Vienna Greek Leviticus Roll (P.Vindob. G 39777)",
+      "tradition": "lxx",
+      "language": "Greek (Koine)",
+      "material": "parchment",
+      "date_ce_start": 100,
+      "date_ce_end": 299,
+      "date_label": "II–III CE (palaeography)",
+      "date_note": "Parchment roll of Leviticus — among substantial early LXX witnesses outside the Chester Beatty and Oxyrhynchus caches.",
+      "dating_method": "palaeography",
+      "dating_source": "Rahlfs 802; Göttingen Leviticus apparatus",
+      "contents": "Leviticus (roll fragments)",
+      "find_place": "Egypt",
+      "find_year_note": "Vienna collection",
+      "current_institution": "Österreichische Nationalbibliothek, Vienna",
+      "current_shelfmark": "P.Vindob. G 39777",
+      "library_url": "https://www.onb.ac.at/",
+      "image": {
+        "policy": "link_only",
+        "viewer_url": "https://www.onb.ac.at/",
+        "attribution": {
+          "institution": "Österreichische Nationalbibliothek",
+          "license": "© ONB — link only",
+          "attribution_required": true,
+          "note": "No verified PD Commons plate; consult ONB catalog."
+        }
+      },
+      "passages": [
+        {
+          "reference": "Leviticus 19:18",
+          "original": "καὶ οὐ μισήσεις τὸν ἀδελφόν σου τῇ διανοίᾳ σου ἐλέγξεις τὸν πλησίον σου καὶ οὐ λήμψῃ διʼ αὐτὸν ἁμαρτίαν",
+          "original_label": "Greek of holiness code (Lev 19:17–18 locus)",
+          "original_source": "Rahlfs LXX Leviticus — display excerpt for the passage",
+          "english": "You shall not hate your brother in your heart. You shall surely rebuke your neighbor, and not bear sin because of him.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Göttingen Septuaginta — Rahlfs 802",
+          "url": "https://septuaginta.uni-goettingen.de/"
+        }
+      ]
+    }
+  ]
+}
