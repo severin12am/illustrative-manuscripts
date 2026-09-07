@@ -6,6 +6,7 @@ import Timeline from "@/components/Timeline";
 import WitnessCard from "@/components/WitnessCard";
 import StatsStrip from "@/components/StatsStrip";
 import HomePrimerBanner from "@/components/HomePrimerBanner";
+import VariantExamples from "@/components/VariantExamples";
 import {
   witnesses as ntWitnesses,
   TIMELINE_START,
@@ -127,7 +128,7 @@ export default function Home() {
               ? "A year-by-year slice through fourth-century Coptic codices from the Nag Hammadi library — non-canonical Gnostic and apocryphal Christian texts. Dates reflect the physical witnesses (the codices), not speculative composition dates."
               : isQuran
                 ? "A year-by-year slice through early Qurʾanic witnesses in the first century AH. Every manuscript is dated as a paleographic or C14 range — not a single year."
-                : "A year-by-year slice through early biblical manuscripts. Every witness is dated as a paleographic range — scrub the timeline to see what could have existed in a given moment."}
+                : "A year-by-year slice through early biblical manuscripts — with a counted, browsable census of word-level disagreements vs SR GNT in our CNTR papyrus slice (not a full-tradition census). Scrub the timeline to see what could have existed in a given moment."}
           </p>
 
           <div className={styles.corpusSwitch} role="tablist" aria-label="Corpus">
@@ -244,6 +245,8 @@ export default function Home() {
           )}
         </div>
       </header>
+
+      {!isQuran && !isNagHammadi && <VariantExamples />}
 
       <section className={styles.controls}>
         <div className={styles.yearPicker}>

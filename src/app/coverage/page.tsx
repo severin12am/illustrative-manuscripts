@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { coverage } from "@/data/coverage";
 import StudentPrimer from "@/components/StudentPrimer";
+import VariantExamples from "@/components/VariantExamples";
 import {
   kindLabel,
   sortKindEntries,
@@ -16,7 +17,7 @@ import styles from "./coverage.module.css";
 export const metadata: Metadata = {
   title: "Coverage & scope — Illustrative Manuscripts",
   description:
-    "Honest computed coverage numbers for our Greek NT, Qurʾān, and Nag Hammadi datasets — what we count, what we exclude, and what we are not claiming.",
+    "What Bart Ehrman asked, what Gurry estimated, and what this site actually counts — honest computed numbers for Greek NT papyri vs SR GNT.",
 };
 
 const GURRY_DOI = "https://doi.org/10.1017/S0028688516000216";
@@ -45,13 +46,13 @@ export default function CoveragePage() {
         <p className={styles.eyebrow}>Dataset honesty</p>
         <h1 className={styles.title}>Coverage &amp; scope</h1>
         <p className={styles.lead}>
-          Every number below is computed from our committed data files at build
-          time — not hand-typed estimates. Regenerate with{" "}
-          <code>npm run coverage</code> after changing witness text or Liste
-          cache.
+          Every number below is computed from committed data at build time — not
+          hand-typed. Regenerate with <code>npm run coverage</code> and{" "}
+          <code>npm run variant-index</code> after changing witness text.
         </p>
         <p className={styles.meta}>
-          Last computed: {new Date(generated_at).toLocaleString("en-GB", {
+          Last computed:{" "}
+          {new Date(generated_at).toLocaleString("en-GB", {
             dateStyle: "medium",
             timeStyle: "short",
           })}
@@ -59,40 +60,92 @@ export default function CoveragePage() {
       </header>
 
       <section className={styles.section}>
+        <h2 className={styles.sectionTitle}>The Ehrman question — and what we answer</h2>
+        <div className={styles.ehrmanGrid}>
+          <div className={styles.ehrmanCard}>
+            <h3>What Ehrman asked</h3>
+            <p>
+              Bart Ehrman&apos;s talking point is about <strong>volume</strong>:
+              nobody has counted <em>all</em> variants across the entire Greek New
+              Testament manuscript tradition (~5,700+ witnesses). The scale is
+              enormous — and that claim is about the full tradition, not one
+              papyrus fragment.
+            </p>
+          </div>
+          <div className={styles.ehrmanCard}>
+            <h3>What Gurry added</h3>
+            <p>
+              Peter J. Gurry (<em>NTS</em> 2016) extrapolated roughly{" "}
+              <strong>500,000</strong> distinct readings from ~3% of the text —
+              excluding spelling and nomina-sacra abbreviations, including
+              nonsense and singular readings. That is an estimate, not a census.
+            </p>
+            <p className={styles.gurryLinks}>
+              <a href={GURRY_DOI} target="_blank" rel="noopener noreferrer">
+                DOI: 10.1017/S0028688516000216
+              </a>
+              {" · "}
+              <a href={GURRY_OPEN} target="_blank" rel="noopener noreferrer">
+                Open accepted manuscript (Cambridge)
+              </a>
+            </p>
+          </div>
+          <div className={styles.ehrmanCard} data-highlight>
+            <h3>What this site answers</h3>
+            <p>
+              A <strong>defined census</strong> of extant-letter disagreements in
+              Greek NT witnesses overlapping <strong>1–300 CE</strong>, compared
+              word-by-word to open <strong>SR GNT</strong> via CNTR transcriptions:
+            </p>
+            <p className={styles.bigNumber}>
+              <strong>{disagreementTotal.toLocaleString()}</strong> variation units
+            </p>
+            <p>
+              Classified by kind (omission, addition, substitution, orthography,
+              transposition), browsable in the{" "}
+              <Link href="/variants/">variant explorer</Link>.
+            </p>
+          </div>
+          <div className={styles.ehrmanCard}>
+            <h3>What we do NOT claim</h3>
+            <ul className={styles.notClaimList}>
+              <li>A full-tradition NT census (~5,700+ manuscripts)</li>
+              <li>Gurry&apos;s ~500,000 as our own number</li>
+              <li>ECM or NA apparatus judgments</li>
+              <li>
+                Heuristic intentional tags as settled scholarship (see experimental
+                section below)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <VariantExamples />
+
+      <section className={styles.section}>
         <h2 className={styles.sectionTitle}>How to use this site</h2>
         <ol className={styles.steps}>
           <li>
             Pick a corpus on the{" "}
-            <Link href="/">timeline</Link> (Greek NT, Qurʾān, or Nag
-            Hammadi).
+            <Link href="/">timeline</Link> (Greek NT, Qurʾān, or Nag Hammadi).
           </li>
           <li>
-            Scrub the year slider — a witness appears only if its published date{" "}
-            <em>range</em> overlaps that year.
+            Browse counted disagreements in the{" "}
+            <Link href="/variants/">variant explorer</Link> — filter by kind,
+            witness, or book.
           </li>
           <li>
-            Open a card: photograph (when we have legal rights), diplomatic
-            text, and English where available.
+            Open a witness card: photograph (when legal), diplomatic text, and
+            variant strips under verses.
           </li>
           <li>
-            For Greek NT, read variant strips under verses — each is one counted
-            disagreement vs <strong>SR GNT</strong> in surviving letters.
-          </li>
-          <li>
-            For serious collation, follow links to{" "}
-            <a
-              href="https://greekcntr.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            For full critical work, follow links to{" "}
+            <a href="https://greekcntr.org/" target="_blank" rel="noopener noreferrer">
               CNTR
             </a>
             ,{" "}
-            <a
-              href="https://ntvmr.uni-muenster.de/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://ntvmr.uni-muenster.de/" target="_blank" rel="noopener noreferrer">
               INTF / NTVMR
             </a>
             , or{" "}
@@ -125,9 +178,9 @@ export default function CoveragePage() {
           </div>
           <div className={styles.statCard}>
             <span className={styles.statValue}>
-              {greek_nt.nonzero_extant_comparison_count}
+              {disagreementTotal.toLocaleString()}
             </span>
-            <span className={styles.statLabel}>with extant text compared</span>
+            <span className={styles.statLabel}>variation units vs SR GNT</span>
           </div>
         </div>
 
@@ -142,18 +195,16 @@ export default function CoveragePage() {
         </div>
 
         <div className={styles.detailBlock}>
-          <h3>Disagreements vs SR GNT (our classifier)</h3>
+          <h3>Taxonomy census (mechanical classifier)</h3>
           <p>{greek_nt.disagreements.definition}</p>
           <p className={styles.bigNumber}>
-            <strong>
-              {greek_nt.disagreements.total.toLocaleString()}
-            </strong>{" "}
-            total variation units across all stored CNTR verses (initial +
-            lazy-load overflow)
+            <strong>{disagreementTotal.toLocaleString()}</strong> total variation
+            units —{" "}
+            <Link href="/variants/">browse in the explorer →</Link>
           </p>
           <ul className={styles.inlineStats}>
             <li>
-              Median per witness (CNTR witnesses):{" "}
+              Median per witness:{" "}
               <strong>{greek_nt.disagreements.per_witness_median}</strong>
             </li>
             <li>
@@ -161,13 +212,13 @@ export default function CoveragePage() {
               <strong>{greek_nt.disagreements.per_witness_max}</strong>
             </li>
             <li>
-              Witnesses with ≥1 disagreement:{" "}
+              Witnesses with ≥1:{" "}
               <strong>{greek_nt.disagreements.witnesses_with_any}</strong>
             </li>
           </ul>
           {kinds.length > 0 && (
             <div className={styles.kindBreakdown}>
-              <h4>Taxonomy breakdown (v1 mechanical classifier)</h4>
+              <h4>By kind</h4>
               <table className={styles.kindTable}>
                 <thead>
                   <tr>
@@ -192,31 +243,26 @@ export default function CoveragePage() {
                   ))}
                 </tbody>
               </table>
-              <p className={styles.note}>
-                Units are aligned at the word level after normalizing case,
-                diacritics, and common Koine spelling equivalences. Transposition
-                detection is intentionally weak (2–3 word windows only); some
-                true transpositions may appear as substitution or omission/addition.
-              </p>
             </div>
           )}
         </div>
 
-        <div className={styles.detailBlock}>
-          <h3>Intentional vs error tagging (local LLM pass)</h3>
-          <p>{tagging?.definition}</p>
+        <div className={styles.detailBlock} data-experimental>
+          <h3>Experimental: intentional vs error tagging</h3>
+          <p className={styles.experimentalNote}>
+            <strong>Provisional only.</strong> {tagging?.definition} These labels
+            are model-assisted hypotheses — not ECM, NA28, or IGNTP judgments. Do
+            not cite tag counts as scholarship.
+          </p>
           {tagging?.not_run ? (
             <p className={styles.note}>
-              Tagging not run yet — <code>src/data/intentional-tags.json</code> is
-              empty. On your machine with LM Studio (Qwen):{" "}
-              <code>npm run export-taggable</code> then{" "}
-              <code>npm run tag-intentional</code>. See DATA.md for ethics and
-              options (<code>--limit</code>, <code>--resume</code>,{" "}
-              <code>--dry-run</code>).
+              Tagging not run — <code>src/data/intentional-tags.json</code> is
+              empty. Local workflow: <code>npm run export-taggable</code> then{" "}
+              <code>npm run tag-intentional</code>. See DATA.md.
             </p>
           ) : (
             <>
-              <p className={styles.bigNumber}>
+              <p>
                 <strong>{taggedTotal.toLocaleString()}</strong> units tagged of{" "}
                 <strong>{tagging.taggable_total.toLocaleString()}</strong>{" "}
                 taggable non-orthography units (
@@ -232,11 +278,6 @@ export default function CoveragePage() {
               </ul>
             </>
           )}
-          <p className={styles.note}>
-            These counts reflect model-assisted hypotheses on a subset only — not
-            a scholarly apparatus or ECM judgment. Orthography units are skipped
-            by default because intentionality rarely applies to spelling alone.
-          </p>
         </div>
 
         <div className={styles.detailBlock}>
@@ -312,50 +353,18 @@ export default function CoveragePage() {
       </section>
 
       <aside className={styles.disclaimer}>
-        <h2>What we are NOT claiming</h2>
-        <ul>
-          <li>
-            We have <strong>not</strong> counted every variant in every Greek
-            New Testament manuscript (~5,700+). Our numbers cover{" "}
-            <strong>this site&apos;s CNTR slice</strong> only.
-          </li>
-          <li>
-            We are <strong>not</strong> publishing Peter Gurry&apos;s ~500,000
-            figure as our own. That is an extrapolation, not a census.
-          </li>
-          <li>
-            No one has counted every reading in every witness — the famous
-            Ehrman/Gurry talking point is about the scale of the tradition, not
-            a problem this hobby site solves.
-          </li>
-        </ul>
-        <blockquote className={styles.gurry}>
-          <p>
-            Peter J. Gurry (<em>NTS</em> 2016) estimates about 500,000 distinct
-            readings in the Greek manuscript tradition of the NT, excluding
-            spelling and nomina-sacra abbreviation differences, including
-            nonsense and singular readings. This is an extrapolation from ~3% of
-            the text, not a census. No one has counted every reading in every
-            witness.
-          </p>
-          <p className={styles.gurryLinks}>
-            <a href={GURRY_DOI} target="_blank" rel="noopener noreferrer">
-              DOI: 10.1017/S0028688516000216
-            </a>
-            {" · "}
-            <a href={GURRY_OPEN} target="_blank" rel="noopener noreferrer">
-              Open accepted manuscript (Cambridge)
-            </a>
-          </p>
-        </blockquote>
+        <h2>Prior art</h2>
         <p>
-          <strong>Prior art conclusion:</strong> reuse CNTR, NTVMR, and IGNTP for
-          full critical work. Do not cite our papyrus-slice disagreement total
-          as &ldquo;the number of NT variants.&rdquo;
+          Reuse CNTR, NTVMR, and IGNTP for full critical work. Do not cite our
+          papyrus-slice disagreement total as &ldquo;the number of NT variants.&rdquo;
+          Gurry&apos;s ~500,000 remains an extrapolation; Ehrman&apos;s point about
+          uncounted tradition-scale volume stands for the full manuscript corpus.
         </p>
       </aside>
 
       <footer className={styles.footer}>
+        <Link href="/variants/">Variant explorer →</Link>
+        {" · "}
         <Link href="/">← Back to timeline</Link>
       </footer>
     </main>

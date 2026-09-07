@@ -169,7 +169,7 @@ Fragment verses whose extant words match the corresponding SR span (allowing lac
 
 ### Published disagreement count (site aggregate)
 
-The home stats strip and `/coverage` page show **computed** totals from our data — never hand-typed:
+The home stats strip, `/coverage`, and `/variants` show **computed** totals from our data — never hand-typed:
 
 | Metric | Definition |
 |--------|------------|
@@ -181,10 +181,30 @@ Regenerate after changing witness text, classifier, or Liste cache:
 ```bash
 npm run reclassify   # fast: reuse committed CNTR JSON
 npm run coverage     # writes src/data/coverage.json
+npm run variant-index  # writes src/data/variant-index.json (flat browse index for /variants)
 npm run test:classify
 ```
 
-### Intentional vs error tagging (local LLM — optional)
+### Variant explorer index (`/variants`)
+
+`scripts/export-variant-index.mjs` flattens all variation units into `src/data/variant-index.json` for client-side filtering on the static site. Same classifier definitions as coverage; includes orthography. Each entry carries `unit_id`, witness GA, verse ref, book, kind, witness vs SR readings, and CNTR link.
+
+Featured examples (one per major kind) are auto-picked for the home and coverage pages.
+
+### Ehrman / Gurry framing
+
+| Question | Answer on this site |
+|----------|---------------------|
+| **Ehrman** — has anyone counted all NT variants? | No — not globally. Our `/variants` page counts a **defined slice**: CNTR papyri 1–300 CE vs SR GNT. |
+| **Gurry** — ~500,000 readings? | Cited on `/coverage` with DOI; we do **not** publish that as our number. |
+| **This site** | Variation units in `coverage.json` (`greek_nt.disagreements.total`), browsable by kind/witness/book at `/variants`. |
+| **Not claimed** | Full tradition census, ECM/NA judgments, intentional tags as settled scholarship. |
+
+Intentional tagging is **experimental / provisional** — demoted on `/coverage` below the taxonomy census.
+
+### Intentional vs error tagging (local LLM — optional, experimental)
+
+**Status: provisional hypotheses only.** This layer is secondary to the mechanical taxonomy census on `/variants` and `/coverage`. Do not present tag counts as scholarship.
 
 After the mechanical taxonomy (substitution / omission / addition / transposition / orthography), a **second pass** tags non-orthography units as likely **scribal error**, **likely intentional** (harmonization, doctrinal/stylistic preference, clarifying expansion — always a *hypothesis*), or **uncertain**.
 

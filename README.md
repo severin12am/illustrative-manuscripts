@@ -28,7 +28,12 @@ A year-by-year timeline of early biblical manuscripts — **Greek NT papyri (1�
 ### Shared
 - Honest **date ranges** — not fake point dates
 - Corpus switch keeps Qurʾān witnesses out of the NT year-150 view
-- **[Coverage page](https://severin12am.github.io/illustrative-manuscripts/coverage/)** — computed witness counts, extant-letter disagreements vs SR GNT (our CNTR slice only), and plain-language limits
+- **[Variant explorer](https://severin12am.github.io/illustrative-manuscripts/variants/)** — browse **8,878** counted word-level disagreements vs SR GNT (filter by kind, witness, book)
+- **[Coverage page](https://severin12am.github.io/illustrative-manuscripts/coverage/)** — Ehrman/Gurry framing, computed totals, and plain-language limits
+
+## The Ehrman question (one paragraph)
+
+Bart Ehrman’s talking point is that nobody has counted *all* variants across the entire Greek NT tradition (~5,700+ manuscripts). Peter Gurry ([*NTS* 2016](https://doi.org/10.1017/S0028688516000216)) extrapolated ~500,000 distinct readings from ~3% of the text — an estimate, not a census. **This site does not solve that global problem.** It offers a **defined census** of extant-letter disagreements in our CNTR papyrus slice (1–300 CE) vs open SR GNT — countable, browsable, and illustrative. See `/variants` and `/coverage`.
 
 ## What this is not
 
@@ -55,6 +60,7 @@ npm run nag-hammadi  # Nag Hammadi: build from scripts/nag-hammadi-seed.json
 npm run images    # NT Commons downloads
 npm run quran-images  # Qurʾān Commons downloads
 npm run coverage   # recompute src/data/coverage.json (stats for /coverage + home strip)
+npm run variant-index  # flat index for /variants explorer (src/data/variant-index.json)
 npm run dev       # http://localhost:3000
 ```
 
