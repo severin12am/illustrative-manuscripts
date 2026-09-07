@@ -32,6 +32,7 @@ A year-by-year timeline of early biblical manuscripts — **Greek NT witnesses (
 - **[Variant explorer](https://severin12am.github.io/illustrative-manuscripts/variants/)** — browse counted word-level disagreements vs SR GNT (filter by kind, witness, book)
 - **[Witness compare](https://severin12am.github.io/illustrative-manuscripts/compare/)** — side-by-side alignment on shared verses (e.g. P75 vs Vaticanus)
 - **[Coverage page](https://severin12am.github.io/illustrative-manuscripts/coverage/)** — Ehrman/Gurry framing, computed totals, and plain-language limits
+- **[Cite & learn](https://severin12am.github.io/illustrative-manuscripts/cite/)** — how to cite the site and census, glossary of counts, card layout, Compare/Variants walkthrough, sources, and further reading
 
 ## The Ehrman question (one paragraph)
 

@@ -1,0 +1,208 @@
+.main {
+  min-height: 100vh;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3.5rem;
+}
+
+.hero {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-muted);
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: clamp(1.875rem, 4vw, 2.5rem);
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.lead {
+  color: var(--ink-secondary);
+  line-height: 1.75;
+  font-size: 1rem;
+  max-width: 42rem;
+}
+
+.section {
+  margin: 2.5rem 0;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  color: var(--ink);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-light);
+  font-weight: 600;
+}
+
+.sectionIntro {
+  color: var(--ink-secondary);
+  line-height: 1.7;
+  font-size: 0.9375rem;
+  margin-bottom: 1rem;
+  max-width: 42rem;
+}
+
+.citationBlock {
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.citationBlock h3 {
+  font-size: 0.9375rem;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.citation {
+  font-size: 0.9rem;
+  color: var(--ink-secondary);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.citation em {
+  font-style: italic;
+}
+
+.placeholder {
+  color: var(--accent);
+  font-family: var(--font-ui);
+  font-size: 0.85em;
+}
+
+.defList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.defItem dt {
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.25rem;
+  font-size: 0.9375rem;
+}
+
+.defItem dd {
+  color: var(--ink-secondary);
+  font-size: 0.9rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.defItem dd strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.defItem code {
+  font-size: 0.85em;
+  color: var(--accent);
+  font-family: var(--font-ui);
+}
+
+.steps {
+  padding-left: 1.25rem;
+  color: var(--ink-secondary);
+  line-height: 1.75;
+  font-size: 0.9375rem;
+}
+
+.steps li {
+  margin-bottom: 0.5rem;
+}
+
+.notClaimList {
+  padding-left: 1.25rem;
+  font-size: 0.9375rem;
+  color: var(--ink-secondary);
+  line-height: 1.7;
+}
+
+.notClaimList li {
+  margin-bottom: 0.4rem;
+}
+
+.sourceTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.sourceTable th,
+.sourceTable td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.6rem 0.65rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.sourceTable th {
+  color: var(--ink-muted);
+  font-weight: 600;
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.sourceTable td {
+  color: var(--ink-secondary);
+  line-height: 1.55;
+}
+
+.sourceTable a {
+  color: var(--accent);
+}
+
+.license {
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  color: var(--ink-muted);
+}
+
+.readingList {
+  padding-left: 1.25rem;
+  color: var(--ink-secondary);
+  line-height: 1.75;
+  font-size: 0.9375rem;
+}
+
+.readingList li {
+  margin-bottom: 0.65rem;
+}
+
+.readingList em {
+  font-style: italic;
+}
+
+.footer {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-light);
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  color: var(--ink-muted);
+  line-height: 1.6;
+}
+
+.footer a {
+  color: var(--accent);
+}
