@@ -1,28 +1,29 @@
 .wrap {
-  max-width: 920px;
+  max-width: var(--content-max);
   margin: 0 auto;
-  padding: 0 1.5rem 1rem;
+  padding: 0.5rem 1.5rem 0;
 }
 
 .toggle {
   background: transparent;
-  border: 1px solid rgba(201, 162, 39, 0.3);
-  color: var(--gold-light);
-  font-family: inherit;
-  font-size: 0.85rem;
-  padding: 0.35rem 0.75rem;
-  border-radius: 6px;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  color: var(--accent);
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  padding: 0.35rem 0;
   cursor: pointer;
 }
 
 .toggle:hover {
-  border-color: var(--gold);
-  color: var(--gold);
+  color: var(--accent-hover);
 }
 
 .panel {
   position: relative;
-  margin-top: 0.75rem;
+  margin-top: 1rem;
 }
 
 .dismiss {
@@ -31,13 +32,13 @@
   right: 0.75rem;
   background: transparent;
   border: none;
-  color: var(--text-muted);
+  color: var(--ink-muted);
+  font-family: var(--font-ui);
   font-size: 0.75rem;
   cursor: pointer;
-  font-family: inherit;
   text-decoration: underline;
 }
 
 .dismiss:hover {
-  color: var(--parchment);
+  color: var(--ink);
 }

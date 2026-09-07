@@ -1,105 +1,131 @@
 .variantsExplorer {
   min-height: 100vh;
-  max-width: 960px;
+  max-width: var(--content-wide);
   margin: 0 auto;
-  padding: 2rem 1.5rem 3rem;
+  padding: 2.5rem 1.5rem 3.5rem;
 }
 
 .hero {
-  margin-bottom: 1.75rem;
-  padding-bottom: 1.25rem;
-  border-bottom: 1px solid rgba(201, 162, 39, 0.15);
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-light);
 }
 
 .eyebrow {
-  font-size: 0.8rem;
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--gold);
-  margin-bottom: 0.5rem;
-}
-
-.title {
-  font-size: clamp(2rem, 4vw, 2.5rem);
-  color: var(--parchment);
+  letter-spacing: 0.12em;
+  color: var(--ink-muted);
   margin-bottom: 0.75rem;
 }
 
+.title {
+  font-size: clamp(1.875rem, 4vw, 2.375rem);
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
 .lead {
-  color: var(--text-muted);
-  line-height: 1.7;
+  color: var(--ink-secondary);
+  line-height: 1.75;
   font-size: 1rem;
+  max-width: 42rem;
 }
 
 .lead a {
-  color: var(--gold-light);
+  color: var(--accent);
 }
 
 .summaryGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 0.65rem;
-  margin: 1.25rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2rem;
+  margin: 1.5rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
 }
 
 .summaryCard {
-  background: var(--slate);
-  border: 1px solid rgba(201, 162, 39, 0.18);
-  border-radius: var(--radius);
-  padding: 0.75rem;
-  text-align: center;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .summaryCardActive {
-  border-color: var(--gold);
-  background: rgba(201, 162, 39, 0.08);
+  color: var(--accent);
 }
 
 .summaryValue {
   display: block;
-  font-size: 1.35rem;
+  font-family: var(--font-display);
+  font-size: 1.375rem;
   font-weight: 600;
-  color: var(--parchment);
+  color: var(--ink);
+  line-height: 1.1;
+}
+
+.summaryCardActive .summaryValue {
+  color: var(--accent);
 }
 
 .summaryLabel {
   display: block;
+  font-family: var(--font-ui);
   font-size: 0.75rem;
-  color: var(--text-muted);
+  color: var(--ink-muted);
   margin-top: 0.2rem;
+  letter-spacing: 0.02em;
 }
 
 .filters {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  margin: 1.25rem 0;
+  gap: 1rem 1.25rem;
+  margin: 1.5rem 0;
   align-items: flex-end;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-light);
 }
 
 .filterGroup {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.35rem;
   min-width: 120px;
 }
 
 .filterGroup label {
-  font-size: 0.75rem;
+  font-family: var(--font-ui);
+  font-size: 0.6875rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--text-muted);
+  color: var(--ink-muted);
+  font-weight: 600;
 }
 
 .filterGroup select,
 .filterGroup input {
-  background: var(--slate);
-  border: 1px solid rgba(201, 162, 39, 0.2);
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
-  color: var(--parchment);
+  color: var(--ink);
   padding: 0.45rem 0.6rem;
-  font-size: 0.9rem;
-  font-family: inherit;
+  font-size: 0.875rem;
+  font-family: var(--font-ui);
+}
+
+.filterGroup select:focus,
+.filterGroup input:focus {
+  outline: none;
+  border-color: var(--accent-border);
+  box-shadow: 0 0 0 2px var(--accent-subtle);
 }
 
 .filterGroup input {
@@ -107,14 +133,15 @@
 }
 
 .resultsMeta {
-  font-size: 0.85rem;
-  color: var(--text-muted);
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  color: var(--ink-muted);
   margin-bottom: 0.75rem;
 }
 
 .tableWrap {
-  border: 1px solid rgba(201, 162, 39, 0.15);
-  border-radius: var(--radius);
+  border: none;
+  border-top: 1px solid var(--border);
   overflow: hidden;
 }
 
@@ -126,18 +153,21 @@
 
 .table th {
   text-align: left;
-  padding: 0.6rem 0.75rem;
-  background: rgba(201, 162, 39, 0.08);
-  color: var(--gold-light);
-  font-size: 0.75rem;
+  padding: 0.75rem 0.75rem;
+  background: transparent;
+  color: var(--ink-muted);
+  font-family: var(--font-ui);
+  font-size: 0.6875rem;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
 }
 
 .table td {
-  padding: 0.55rem 0.75rem;
-  border-top: 1px solid rgba(201, 162, 39, 0.08);
-  color: var(--text-muted);
+  padding: 0.65rem 0.75rem;
+  border-top: 1px solid var(--border-light);
+  color: var(--ink-secondary);
   vertical-align: top;
 }
 
@@ -154,29 +184,28 @@
 }
 
 .rowButton:hover {
-  color: var(--parchment);
+  color: var(--ink);
 }
 
 .rowSelected td {
-  background: rgba(201, 162, 39, 0.06);
+  background: var(--accent-subtle);
 }
 
 .kindBadge {
-  display: inline-block;
-  font-size: 0.7rem;
+  display: inline;
+  font-family: var(--font-ui);
+  font-size: 0.6875rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  padding: 0.15rem 0.4rem;
-  border-radius: 3px;
-  background: rgba(201, 162, 39, 0.15);
-  color: var(--gold-light);
+  color: var(--accent);
+  font-weight: 600;
 }
 
 .detailPanel {
   margin-top: 0;
   padding: 1rem 0.75rem;
-  background: rgba(0, 0, 0, 0.2);
-  border-top: 1px solid rgba(201, 162, 39, 0.12);
+  background: var(--surface-muted);
+  border-top: 1px solid var(--border-light);
 }
 
 .detailGrid {
@@ -192,22 +221,24 @@
 }
 
 .detailLabel {
-  font-size: 0.75rem;
+  font-family: var(--font-ui);
+  font-size: 0.6875rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--gold);
+  color: var(--ink-muted);
   min-width: 5rem;
+  font-weight: 600;
 }
 
 .reading {
-  font-family: var(--font-gentium), "Gentium Plus", serif;
-  color: var(--parchment);
+  font-family: var(--font-greek), "Gentium Plus", serif;
+  color: var(--ink);
 }
 
 .gloss {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  line-height: 1.6;
+  font-size: 0.875rem;
+  color: var(--ink-secondary);
+  line-height: 1.65;
   margin-top: 0.5rem;
 }
 
@@ -216,11 +247,12 @@
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 0.75rem;
-  font-size: 0.85rem;
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
 }
 
 .detailLinks a {
-  color: var(--gold-light);
+  color: var(--accent);
 }
 
 .pagination {
@@ -229,18 +261,23 @@
   gap: 0.5rem;
   align-items: center;
   justify-content: center;
-  margin-top: 1.25rem;
+  margin-top: 1.5rem;
 }
 
 .pagination button {
-  background: var(--slate);
-  border: 1px solid rgba(201, 162, 39, 0.2);
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
-  color: var(--parchment);
+  color: var(--ink-secondary);
   padding: 0.4rem 0.75rem;
   cursor: pointer;
-  font-family: inherit;
-  font-size: 0.85rem;
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+}
+
+.pagination button:hover:not(:disabled) {
+  border-color: var(--accent-border);
+  color: var(--accent);
 }
 
 .pagination button:disabled {
@@ -249,36 +286,46 @@
 }
 
 .pagination span {
-  font-size: 0.85rem;
-  color: var(--text-muted);
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  color: var(--ink-muted);
 }
 
 .disclaimer {
-  margin-top: 2rem;
-  padding: 1rem 1.25rem;
-  background: rgba(201, 162, 39, 0.06);
-  border: 1px solid rgba(201, 162, 39, 0.15);
-  border-radius: var(--radius);
-  font-size: 0.9rem;
-  color: var(--text-muted);
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-light);
+  font-size: 0.9375rem;
+  color: var(--ink-secondary);
   line-height: 1.65;
 }
 
 .disclaimer h2 {
   font-size: 1rem;
-  color: var(--gold-light);
+  color: var(--ink);
   margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 .empty {
   padding: 2rem;
   text-align: center;
-  color: var(--text-muted);
+  color: var(--ink-muted);
 }
 
 @media (max-width: 640px) {
   .table th:nth-child(4),
   .table td:nth-child(4) {
     display: none;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filterGroup input {
+    min-width: 0;
+    width: 100%;
   }
 }

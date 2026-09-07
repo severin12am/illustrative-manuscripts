@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Source_Serif_4, Gentium_Plus, Noto_Naskh_Arabic } from "next/font/google";
+import {
+  Cormorant_Garamond,
+  Source_Serif_4,
+  Gentium_Plus,
+  Noto_Naskh_Arabic,
+  Source_Sans_3,
+} from "next/font/google";
 import SiteNav from "@/components/SiteNav";
 import "./globals.css";
 
@@ -13,6 +19,12 @@ const body = Source_Serif_4({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
   variable: "--font-body",
+});
+
+const ui = Source_Sans_3({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-ui",
 });
 
 const greek = Gentium_Plus({
@@ -39,7 +51,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable} ${greek.variable} ${arabic.variable}`}>
+    <html
+      lang="en"
+      className={`${display.variable} ${body.variable} ${ui.variable} ${greek.variable} ${arabic.variable}`}
+    >
       <body>
         <SiteNav />
         {children}

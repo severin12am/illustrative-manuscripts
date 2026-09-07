@@ -5,33 +5,35 @@
 }
 
 .unavailable {
-  background: rgba(0, 0, 0, 0.25);
-  border: 1px dashed rgba(201, 162, 39, 0.25);
-  border-radius: var(--radius);
+  background: var(--surface-muted);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-md);
   padding: 1.25rem;
+  color: var(--ink-muted);
 }
 
 .panelHeader {
-  border-bottom: 1px solid rgba(201, 162, 39, 0.12);
+  border-bottom: 1px solid var(--border-light);
   padding-bottom: 0.75rem;
 }
 
 .heading {
   font-family: var(--font-display);
-  font-size: 1.1rem;
-  color: var(--gold-light);
+  font-size: 1.0625rem;
+  color: var(--ink);
   margin-bottom: 0.25rem;
 }
 
 .subhead,
 .note {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  line-height: 1.4;
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  color: var(--ink-muted);
+  line-height: 1.45;
 }
 
 .note {
-  color: var(--gold-light);
+  color: var(--ink-secondary);
   margin-top: 0.5rem;
   font-style: italic;
 }
@@ -39,56 +41,61 @@
 .unitList {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1.5rem;
 }
 
 .unitRow {
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  padding: 0.75rem 1rem;
-  border: 1px solid rgba(201, 162, 39, 0.08);
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.unitRow:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .ref {
-  font-size: 0.75rem;
+  font-family: var(--font-ui);
+  font-size: 0.6875rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--gold);
-  margin-bottom: 0.6rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+  margin-bottom: 0.75rem;
 }
 
 .columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .colLabel {
   display: block;
-  font-size: 0.65rem;
+  font-family: var(--font-ui);
+  font-size: 0.625rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--text-muted);
-  margin-bottom: 0.4rem;
+  color: var(--ink-faint);
+  margin-bottom: 0.5rem;
 }
 
 .copticCol {
-  border-right: 1px solid rgba(201, 162, 39, 0.1);
-  padding-right: 0.75rem;
+  border-right: 1px solid var(--border-light);
+  padding-right: 1rem;
 }
 
 .coptic {
   font-family: var(--font-coptic, var(--font-greek), "Gentium Plus", serif);
   font-size: 1.15rem;
   line-height: 1.8;
-  color: var(--parchment);
+  color: var(--ink);
   margin: 0 0 0.5rem;
 }
 
 .missingCoptic {
-  font-size: 0.85rem;
-  color: var(--text-muted);
+  font-size: 0.875rem;
+  color: var(--ink-muted);
   font-style: italic;
   margin: 0 0 0.5rem;
 }
@@ -96,37 +103,40 @@
 .witnessNote,
 .sourceNote,
 .transNote {
-  font-size: 0.72rem;
-  color: var(--text-muted);
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--ink-muted);
   line-height: 1.45;
   margin: 0.25rem 0 0;
   font-style: italic;
 }
 
 .english {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: var(--parchment);
+  font-size: 0.975rem;
+  line-height: 1.65;
+  color: var(--ink);
   margin: 0;
 }
 
 .unitNote {
-  font-size: 0.75rem;
-  color: var(--text-muted);
+  font-size: 0.8125rem;
+  color: var(--ink-muted);
   margin-top: 0.5rem;
   font-style: italic;
 }
 
 .attr {
-  font-size: 0.68rem;
-  color: var(--text-muted);
+  font-family: var(--font-ui);
+  font-size: 0.6875rem;
+  color: var(--ink-faint);
   line-height: 1.5;
-  border-top: 1px solid rgba(201, 162, 39, 0.08);
+  border-top: 1px solid var(--border-light);
   padding-top: 0.75rem;
 }
 
 .hint {
-  font-size: 0.85rem;
+  font-size: 0.875rem;
+  color: var(--ink-muted);
   margin-top: 0.5rem;
 }
 
@@ -137,7 +147,7 @@
 
   .copticCol {
     border-right: none;
-    border-bottom: 1px solid rgba(201, 162, 39, 0.1);
+    border-bottom: 1px solid var(--border-light);
     padding-right: 0;
     padding-bottom: 0.75rem;
   }
