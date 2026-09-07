@@ -51,8 +51,8 @@ Witnesses are included when a published **C14 or paleographic CE range** overlap
 
 - `date_start ≤ 719` AND `date_end ≥ 622` (CE)
 - Later **Kufic display mushafs** (8th–9th c. starting after 100 AH) are **out** unless a published range genuinely overlaps.
-- **15 witnesses** in `scripts/quran-seed.json` (verify each against Corpus Coranicum before expanding).
-- **10/15** witnesses show a leaf photo (3 Wikimedia Commons + 7 official IIIF); remaining gaps documented below.
+- **19 witnesses** in `scripts/quran-seed.json` (verify each against Corpus Coranicum before expanding).
+- **15/19** witnesses show a leaf photo (4 Wikimedia Commons + 11 official IIIF); remaining gaps documented below.
 - Arabic reference text: Tanzil Uthmani via [fawazahmed0/quran-api](https://github.com/fawazahmed0/quran-api) (diacritics stripped for rasm comparison — see [tanzil.net](https://tanzil.net) license).
 - English: **Pickthall 1930** (public domain) via same API.
 - **Not** traced facsimiles: cards show standard rasm for verses on each leaf unless a CC transliteration is added to the seed.
@@ -60,25 +60,55 @@ Witnesses are included when a published **C14 or paleographic CE range** overlap
 
 Regenerate: `node scripts/build-quran-data.mjs`
 
-### Qurʾān image coverage (15 witnesses)
+### Qurʾān image coverage (19 witnesses)
 
 | Witness | Image source | Notes |
 |---------|--------------|-------|
 | mingana-1572a | **Commons** (hosted) | Birmingham Cadbury press photo |
 | parisino-328a | **Commons** (hosted) | BnF Parisino first leaf |
 | sanaa-dam-01-27-1 | **Commons** (hosted) | Stanford/Yemen palimpsest plate |
+| david-collection-86-2003 | **Commons** (hosted) | David Collection Copenhagen palimpsest (Q 2:282–286) |
 | bl-or-2165 | **IIIF** | BL Digirati `vdc_100104060212` fol. 1r |
 | tubingen-ma-vi-165 | **IIIF** | Tübingen OpenDigi Ma VI 165 p01r |
 | bnf-arabe-330g | **IIIF** | BnF Gallica `btv1b8415208w` fol. 1 |
 | bnf-arabe-331 | **IIIF** | BnF Gallica `btv1b84152099` fol. 1r |
+| bnf-arabe-328c | **IIIF** | BnF Gallica `btv1b8422966p` fol. 71r (328c; codex join with 1572a) |
 | berlin-wetzstein-1913 | **IIIF** | SBB `PPN618539204` opening leaf |
+| berlin-or-fol-4313 | **IIIF** | SBB `PPN644463252` fol. 1r (C14 606–652 CE) |
 | vatican-arabo-1605 | **IIIF** | DigiVatLib Vat.ar.1605 fol. 1r |
-| leiden-or-14-545b | **IIIF** | Dispersed folio of BnF Arabe 331 codex — Paris fol. 1r shown |
+| chester-beatty-is-1615i | **IIIF** | CBL `Is_1615I` fol. 1r (CC BY 4.0) |
+| leiden-or-14-545b | **IIIF** | Leiden UL Or. 14.545b fol. 1a (public domain) |
+| leiden-or-14-545c | **IIIF** | Leiden UL Or. 14.545c fol. 1a (C14; public domain) |
 | marcel-17 | **None** | St Petersburg (Marcel 17) — no public IIIF or verified Commons leaf |
 | mingana-1572b | **None** | Birmingham 1572b — no separate open image yet |
-| gotha-orient-a-409 | **None** | Gotha — no public IIIF/Commons match |
 | doha-ms-2007 | **None** | MIA Doha — no public IIIF/Commons match |
-| cairo-dar-al-kutub-792 | **None** | Cairo Dar al-Kutub — no public IIIF/Commons match |
+| dar-al-kutub-247-masahif | **None** | Cairo Ms. 247 Maṣāḥif — no public IIIF; see Berlin 4313 counterpart |
+
+**Removed (2026-09-07):** `gotha-orient-a-409` — shelfmark not verified in Corpus Coranicum / Gotha catalogs; replaced by verified witnesses above.
+
+### Qurʾān witness catalog (date basis)
+
+| Witness | Catalog ID | Date basis | Image license |
+|---------|------------|------------|---------------|
+| mingana-1572a | Mingana 1572a | C14 568–645 CE (OxA-29418) | Commons PD (Birmingham press photo) |
+| parisino-328a | BnF Arabe 328a | Palaeography, late 7th c. | Commons PD (BnF plate) |
+| marcel-17 | Marcel 17 | Palaeography (Parisino codex family) | — |
+| bl-or-2165 | BL Or. 2165 | Palaeography, 1st c. AH | IIIF © BL |
+| tubingen-ma-vi-165 | Ma VI 165 | C14 649–675 CE | IIIF (Tübingen OpenDigi) |
+| sanaa-dam-01-27-1 | DAM 01-27.1 | Palaeography, 7th c. layers | Commons PD (Stanford plate) |
+| bnf-arabe-330g | BnF Arabe 330g | Palaeography, 1st c. AH | IIIF (Gallica terms) |
+| bnf-arabe-331 | BnF Arabe 331 | Palaeography, 1st c. AH | IIIF (Gallica terms) |
+| bnf-arabe-328c | BnF Arabe 328c | Palaeography (Fedeli codex join) | IIIF (Gallica terms) |
+| berlin-wetzstein-1913 | Wetzstein II 1913 | Palaeography, 1st c. AH | IIIF (SBB) |
+| berlin-or-fol-4313 | SBB Ms. or. fol. 4313 | C14 606–652 CE / 15–30 AH | IIIF (SBB) |
+| david-collection-86-2003 | David Collection 86/2003 | Palaeography, mid–late 7th c. | Commons PD |
+| chester-beatty-is-1615i | CBL Is 1615I | Palaeography c. 675–725 CE (shown to 719) | IIIF CC BY 4.0 |
+| leiden-or-14-545b | Leiden OR 14.545b | C14 + palaeography (Coranica) | IIIF public domain |
+| leiden-or-14-545c | Leiden OR 14.545c | C14 650–700 CE (Coranica) | IIIF public domain |
+| mingana-1572b | Mingana 1572b | Palaeography (Fedeli 2011) | — |
+| doha-ms-2007 | Doha MS 2007 | Palaeography (Parisino family) | — |
+| vatican-arabo-1605 | Vat. ar. 1605 | Palaeography (Parisino dispersion) | IIIF © Vatican |
+| dar-al-kutub-247-masahif | Dar al-Kutub Ms. 247 | C14 via Berlin 4313 counterpart | — |
 
 IIIF images load via `<img src>` to each library's Image API (no Mirador). Commons files live in `public/witnesses/` with `.attribution.json` sidecars.
 

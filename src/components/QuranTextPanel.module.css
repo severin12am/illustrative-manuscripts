@@ -25,11 +25,17 @@
 }
 
 .subhead,
-.diffCount {
+.diffCount,
+.dateWindow {
   font-family: var(--font-ui);
   font-size: 0.8125rem;
   color: var(--ink-muted);
   line-height: 1.45;
+}
+
+.dateWindow {
+  margin-bottom: 0.35rem;
+  font-size: 0.75rem;
 }
 
 .diffCount {

@@ -7,6 +7,8 @@ import { countQuranVariants } from "@/types/quran-text";
 interface Props {
   text: QuranWitnessText;
   witnessId: string;
+  /** Optional CE/AH range for panel header (from witness card). */
+  dateRangeLabel?: string | null;
 }
 
 function AyahRow({ ayah }: { ayah: QuranAyah }) {
@@ -15,7 +17,7 @@ function AyahRow({ ayah }: { ayah: QuranAyah }) {
       <div className={styles.ref}>{ayah.reference}</div>
       <div className={styles.columns}>
         <div className={styles.arabicCol}>
-          <span className={styles.colLabel}>Original</span>
+          <span className={styles.colLabel}>Arabic rasm</span>
           <p className={styles.arabicStandard} dir="rtl" lang="ar">
             {ayah.arabic_standard}
           </p>
@@ -47,7 +49,7 @@ function AyahRow({ ayah }: { ayah: QuranAyah }) {
   );
 }
 
-export default function QuranTextPanel({ text, witnessId }: Props) {
+export default function QuranTextPanel({ text, witnessId, dateRangeLabel }: Props) {
   if (!text.available) {
     return (
       <section className={styles.unavailable}>
@@ -72,6 +74,11 @@ export default function QuranTextPanel({ text, witnessId }: Props) {
     <section className={styles.panel}>
       <header className={styles.panelHeader}>
         <h4 className={styles.heading}>Running text</h4>
+        {dateRangeLabel && (
+          <p className={styles.dateWindow}>
+            Witness window: {dateRangeLabel} (1–100 AH ≈ 622–719 CE)
+          </p>
+        )}
         <p className={styles.subhead}>
           {text.translation_label} — {text.translation_base}
         </p>

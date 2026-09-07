@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T18:18:47.926Z",
+  "generated_at": "2026-09-07T18:34:44.959Z",
   "sources": {
     "witness_texts": "src/data/witness-texts.json",
     "cntr_overflow": "public/cntr-texts/*.json",
@@ -1826,9 +1826,9 @@
     }
   },
   "quran": {
-    "witness_count": 15,
-    "leaf_image_count": 10,
-    "leaf_image_fraction": 0.667,
+    "witness_count": 19,
+    "leaf_image_count": 15,
+    "leaf_image_fraction": 0.789,
     "variant_census_note": "No NA-style variant census for Qurʾān in v1. Cards show reference rasm and library links, not a full manuscript collation."
   },
   "nag_hammadi": {

@@ -240,7 +240,16 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
 
         <div className={styles.textColumn}>
           {isQuran && quranText ? (
-            <QuranTextPanel text={quranText} witnessId={witness.id} />
+            <QuranTextPanel
+              text={quranText}
+              witnessId={witness.id}
+              dateRangeLabel={formatDualDateRange(
+                witness.date_start,
+                witness.date_end,
+                witness.ah_start,
+                witness.ah_end
+              )}
+            />
           ) : isNagHammadi && nagHammadiText ? (
             <NagHammadiTextPanel text={nagHammadiText} witnessId={witness.id} />
           ) : isHebrewLxx && hebrewLxxText ? (
