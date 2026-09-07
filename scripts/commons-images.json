@@ -1,5 +1,10 @@
 {
   "_comment": "Verified Wikimedia Commons files only. Run scripts/download-commons.mjs",
+  "P1": {
+    "file": "P1-recto.jpg",
+    "commons_title": "File:Papyrus 1 - recto.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus_1_-_recto.jpg"
+  },
   "P52": {
     "file": "P52-recto.jpg",
     "commons_title": "File:P52 recto.jpg",
@@ -14,6 +19,11 @@
     "file": "P75-lords-prayer.jpg",
     "commons_title": "File:P75 lords prayer.jpg",
     "commons_url": "https://commons.wikimedia.org/wiki/File:P75_lords_prayer.jpg"
+  },
+  "P47": {
+    "file": "P47-revelation.jpg",
+    "commons_title": "File:Papyrus 47 Rev 13,16-14.4.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus_47_Rev_13,16-14.4.jpg"
   },
   "P46": {
     "file": "P46-bifolio.jpg",
@@ -50,6 +60,11 @@
     "commons_title": "File:Papyrus 16 - Papyrus Oxyrhynchus 1009 - Cairo Egyptian Museum JE 47424 - Epistle to the Philippians 3,10–17, 4,2–8.jpg",
     "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus_16_-_Papyrus_Oxyrhynchus_1009_-_Cairo_Egyptian_Museum_JE_47424_-_Epistle_to_the_Philippians_3,10%E2%80%9317,_4,2%E2%80%938.jpg"
   },
+  "P23": {
+    "file": "P23-james.jpg",
+    "commons_title": "File:Papyrus 23 -Jam 1.10-12-POxy1229 III.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus_23_-Jam_1.10-12-POxy1229_III.jpg"
+  },
   "P22": {
     "file": "P22-john.jpg",
     "commons_title": "File:Papyrus 22 (John 15,25-16,2).jpg",
@@ -60,15 +75,30 @@
     "commons_title": "File:Cambridge, University Library Ms Add. 7211 - P. Oxy. 1355 (Papyrus 27) verso Romans 8, 33-9, 9.jpg",
     "commons_url": "https://commons.wikimedia.org/wiki/File:Cambridge,_University_Library_Ms_Add._7211_-_P._Oxy._1355_(Papyrus_27)_verso_Romans_8,_33-9,_9.jpg"
   },
+  "P29": {
+    "file": "P29-acts.jpg",
+    "commons_title": "File:Papyrus 29 (POxy1597).jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus_29_(POxy1597).jpg"
+  },
   "P28": {
     "file": "P28-john.jpg",
     "commons_title": "File:Los Angeles CA, Private Collection Ms P. Oxy. 1596 (Papyrus 28) verso John 6, 8-12.jpg",
     "commons_url": "https://commons.wikimedia.org/wiki/File:Los_Angeles_CA,_Private_Collection_Ms_P._Oxy._1596_(Papyrus_28)_verso_John_6,_8-12.jpg"
   },
+  "P32": {
+    "file": "P32-titus.jpg",
+    "commons_title": "File:P032-Tit-1 11-15-II.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:P032-Tit-1_11-15-II.jpg"
+  },
   "P30": {
     "file": "P30-1thess.jpg",
     "commons_title": "File:Ghent, University Library Ms Inv. 61 P. Oxy. 1598 (Papyrus 30) recto 1 Thess 5, 3; 5, 8-10; 5, 14-18; 5, 26-28.jpg",
     "commons_url": "https://commons.wikimedia.org/wiki/File:Ghent,_University_Library_Ms_Inv._61_P._Oxy._1598_(Papyrus_30)_recto_1_Thess_5,_3;_5,_8-10;_5,_14-18;_5,_26-28.jpg"
+  },
+  "P40": {
+    "file": "P40-acts.jpeg",
+    "commons_title": "File:Papyrus 40, Fr. c - h.jpeg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus_40,_Fr._c_-_h.jpeg"
   },
   "P39": {
     "file": "P39-john.jpg",
@@ -195,10 +225,20 @@
     "commons_title": "File:POxy1008 (1Co 7.33-8.4).jpg",
     "commons_url": "https://commons.wikimedia.org/wiki/File:POxy1008_(1Co_7.33-8.4).jpg"
   },
+  "P18": {
+    "file": "P18-revelation.jpg",
+    "commons_title": "File:Papyrus 18 POxy1079.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus_18_POxy1079.jpg"
+  },
   "P17": {
     "file": "P17-hebrews.jpg",
     "commons_title": "File:Camebrige, Cambridge University Library Ms Add. 5893 Papyrus Oxyrhynchus 1078 (Papyrus 17) recto Hebrews 9, 12–14.jpg",
     "commons_url": "https://commons.wikimedia.org/wiki/File:Camebrige,_Cambridge_University_Library_Ms_Add._5893_Papyrus_Oxyrhynchus_1078_(Papyrus_17)_recto_Hebrews_9,_12%E2%80%9314.jpg"
+  },
+  "P20": {
+    "file": "P20-james.jpg",
+    "commons_title": "File:Papyrus 20 - Papyrus Oxyrhynchus 1171 - Princeton University Library, AM 4117 - Epistle of James 2,26–3,9.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus_20_-_Papyrus_Oxyrhynchus_1171_-_Princeton_University_Library,_AM_4117_-_Epistle_of_James_2,26%E2%80%933,9.jpg"
   },
   "P19": {
     "file": "P19-matthew.jpg",

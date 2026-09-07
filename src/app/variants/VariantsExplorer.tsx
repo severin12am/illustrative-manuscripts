@@ -12,6 +12,7 @@ import {
   sortKindEntries,
   VARIANT_KIND_DEFINITIONS,
 } from "@/lib/variantTaxonomy";
+import BookVariantSummary from "@/components/BookVariantSummary";
 import styles from "./variants.module.css";
 
 const PAGE_SIZE = 50;
@@ -122,6 +123,18 @@ export default function VariantsExplorer() {
           ))}
         </div>
       </header>
+
+      {variantIndex.by_book && variantIndex.by_book.length > 0 && (
+        <section className={styles.bookChart} aria-label="Disagreements by book">
+          <h2 className={styles.bookChartTitle}>By book</h2>
+          <BookVariantSummary
+            books={variantIndex.by_book}
+            totalUnits={coverage.greek_nt.disagreements.total}
+            variant="chart"
+            linkToExplorer
+          />
+        </section>
+      )}
 
       <div className={styles.filters}>
         <div className={styles.filterGroup}>

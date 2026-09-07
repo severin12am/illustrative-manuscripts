@@ -282,13 +282,11 @@ Live Liste refresh succeeded during the latest build; witness set derived from c
 
 ### Commons images (2026-09-07)
 
-**55/108** witnesses have a downloaded Commons image + attribution sidecar. New majuscule plates: **01** (Sinaiticus Lord's Prayer), **03** (Vaticanus Heb/2 Thess). Entries verified in `scripts/commons-images.json`; run `npm run images` to fetch.
+**66/108** witnesses have a downloaded Commons image + attribution sidecar. Majuscule plates: **01** (Sinaiticus Lord's Prayer), **03** (Vaticanus Heb/2 Thess). New papyrus plates this pass: **P1, P18, P20, P23, P29, P32, P40, P47, P86, P110, P120** (all PD/CC from Wikimedia Commons — old print facsimiles or Oxyrhynchus press photos, not CSNTM/NTVMR/Vatican/BL copyrighted scans). Entries verified in `scripts/commons-images.json`; run `npm run images` to fetch.
 
-Commons files **mapped but not yet downloaded** (Wikimedia rate limit): **P86, P110, P120**. Re-run `node scripts/download-commons.mjs` after a cooldown.
+### Witnesses without Commons image (42)
 
-### Witnesses without Commons image
-
-All in-window witnesses lacking a hosted image link to NTVMR/CSNTM/Vatican/BL viewers. See `witnesses.ts` (`hosted_image: null`).
+All in-window witnesses lacking a hosted image link to NTVMR/CSNTM/Vatican/BL viewers. No verified PD/CC Commons plate found yet for: **P7, P21, P50, P51, P54, P56, P57, P62, P64, P65, P69, P72, P82, P85, P87, P88, P93, P94, P99, P100, P101, P105, P112, P115, P117, P119, P121, P122, P125, P127, P129, P130, P131, P132, P133, P134, P135, P137, P138, P139, P140, P141** — see `witnesses.ts` (`hosted_image: null`).
 
 ### CNTR gaps among witnesses
 
@@ -300,7 +298,7 @@ No CNTR class-1 file (honest unavailable state): **P7, P10, P12, P16, P50, P54, 
 - [ ] Per-manuscript `manuscript/get` cache for all docIDs
 - [ ] LXX / DSS witnesses overlapping 1–400 CE (P12 Morgan Amherst codex has LXX on verso; not modeled separately)
 - [ ] Additional uncials (02 Alexandrinus, 04, etc.) if window expands further
-- [ ] Remaining Commons downloads (P86, P110, P120)
+- [ ] Remaining Commons plates for 42 witnesses listed above (no PD/CC match verified yet)
 
 ## Attribution
 

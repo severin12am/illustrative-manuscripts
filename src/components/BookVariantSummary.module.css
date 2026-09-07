@@ -1,0 +1,106 @@
+.tableWrap {
+  overflow-x: auto;
+  margin: 0.75rem 0;
+}
+
+.bookTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.bookTable th,
+.bookTable td {
+  text-align: left;
+  padding: 0.5rem 0.65rem;
+  border-bottom: 1px solid var(--border-light);
+  white-space: nowrap;
+}
+
+.bookTable th {
+  color: var(--ink-muted);
+  font-weight: 600;
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.bookTable tfoot td {
+  border-top: 1px solid var(--border);
+  border-bottom: none;
+  padding-top: 0.65rem;
+}
+
+.bookLink {
+  color: var(--accent);
+}
+
+.chartBlock {
+  margin: 1rem 0;
+}
+
+.chartLead {
+  font-size: 0.9rem;
+  color: var(--ink-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  max-width: 42rem;
+}
+
+.barList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.barRow {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.barLabel,
+.barLabelLink {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+}
+
+.barLabelLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.barLabelLink:hover .barBook {
+  color: var(--accent);
+}
+
+.barBook {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.barCount {
+  color: var(--ink-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.barTrack {
+  height: 0.55rem;
+  background: var(--border-light);
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background: var(--accent);
+  opacity: 0.75;
+  border-radius: 1px;
+  min-width: 2px;
+}
