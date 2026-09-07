@@ -1,16 +1,46 @@
 :root {
-  --ink: #1a1410;
-  --parchment: #f4ead5;
-  --parchment-dark: #e8d9bc;
-  --gold: #c9a227;
-  --gold-light: #e8c84a;
-  --burgundy: #6b1f2a;
-  --burgundy-light: #8f2d3c;
-  --slate: #2c3540;
-  --slate-light: #3d4a58;
-  --text-muted: #7a6f5e;
-  --card-shadow: 0 8px 32px rgba(26, 20, 16, 0.18);
-  --radius: 12px;
+  /* Surfaces */
+  --paper: #f8f6f2;
+  --paper-warm: #f0ece4;
+  --surface: #ffffff;
+  --surface-muted: #f3f0ea;
+
+  /* Text */
+  --ink: #1a1814;
+  --ink-secondary: #4a463f;
+  --ink-muted: #736c62;
+  --ink-faint: #a39b90;
+
+  /* Accent — quiet ink blue */
+  --accent: #2c4563;
+  --accent-hover: #1e3348;
+  --accent-light: #dce4ed;
+  --accent-subtle: rgba(44, 69, 99, 0.08);
+  --accent-border: rgba(44, 69, 99, 0.22);
+
+  /* Structure */
+  --border: rgba(26, 24, 20, 0.1);
+  --border-light: rgba(26, 24, 20, 0.06);
+  --radius: 3px;
+  --radius-md: 6px;
+  --shadow-soft: 0 1px 2px rgba(26, 24, 20, 0.04);
+  --shadow-card: 0 1px 4px rgba(26, 24, 20, 0.06);
+
+  /* Layout */
+  --content-max: 920px;
+  --content-wide: 1040px;
+
+  /* Legacy aliases (light-theme remapping) */
+  --parchment: var(--ink);
+  --text-muted: var(--ink-muted);
+  --gold: var(--accent);
+  --gold-light: var(--accent);
+  --slate: var(--surface);
+  --slate-light: var(--surface-muted);
+  --burgundy: var(--accent);
+  --burgundy-light: var(--accent-hover);
+  --parchment-dark: var(--paper-warm);
+  --card-shadow: var(--shadow-card);
 }
 
 *,
@@ -27,10 +57,11 @@ html {
 
 body {
   font-family: var(--font-body), Georgia, "Times New Roman", serif;
-  background: var(--ink);
-  color: var(--parchment);
+  background: var(--paper);
+  color: var(--ink);
   min-height: 100vh;
-  line-height: 1.6;
+  line-height: 1.65;
+  font-size: 1rem;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -40,21 +71,29 @@ h3,
 h4 {
   font-family: var(--font-display), Georgia, serif;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.25;
+  color: var(--ink);
 }
 
 a {
-  color: var(--gold-light);
+  color: var(--accent);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color 0.15s ease;
 }
 
 a:hover {
-  color: var(--gold);
+  color: var(--accent-hover);
   text-decoration: underline;
 }
 
 ::selection {
-  background: var(--burgundy);
-  color: var(--parchment);
+  background: var(--accent-light);
+  color: var(--ink);
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: var(--font-ui), system-ui, sans-serif;
 }

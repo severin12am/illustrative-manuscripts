@@ -1,20 +1,21 @@
 .primer {
-  background: rgba(0, 0, 0, 0.22);
-  border: 1px solid rgba(201, 162, 39, 0.15);
-  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
   padding: 1.5rem 1.75rem;
 }
 
 .heading {
-  font-size: 1.35rem;
-  color: var(--gold-light);
+  font-size: 1.25rem;
+  color: var(--ink);
   margin-bottom: 0.35rem;
 }
 
 .lead {
-  color: var(--text-muted);
-  font-size: 0.95rem;
+  color: var(--ink-muted);
+  font-size: 0.9375rem;
   margin-bottom: 1.25rem;
+  line-height: 1.65;
 }
 
 .list {
@@ -25,37 +26,38 @@
 
 .item dt {
   font-weight: 600;
-  color: var(--parchment);
+  color: var(--ink);
   margin-bottom: 0.25rem;
-  font-size: 0.95rem;
+  font-size: 0.9375rem;
 }
 
 .item dd {
-  color: var(--text-muted);
+  color: var(--ink-secondary);
   font-size: 0.9rem;
   line-height: 1.65;
   margin: 0;
 }
 
 .item dd strong {
-  color: var(--parchment);
+  color: var(--ink);
   font-weight: 600;
 }
 
 .greek {
   font-family: var(--font-greek), serif;
-  color: var(--parchment);
+  color: var(--ink);
 }
 
 .example {
   display: block;
-  background: rgba(201, 162, 39, 0.08);
-  border-left: 3px solid var(--gold);
+  background: var(--accent-subtle);
+  border-left: 2px solid var(--accent);
   padding: 0.6rem 0.75rem;
-  border-radius: 0 6px 6px 0;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
 }
 
 .item code {
   font-size: 0.85em;
-  color: var(--gold-light);
+  color: var(--accent);
+  font-family: var(--font-ui);
 }
