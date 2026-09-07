@@ -3,6 +3,7 @@ import Link from "next/link";
 import { coverage } from "@/data/coverage";
 import StudentPrimer from "@/components/StudentPrimer";
 import VariantExamples from "@/components/VariantExamples";
+import DownloadCensus from "@/components/DownloadCensus";
 import {
   kindLabel,
   sortKindEntries,
@@ -103,7 +104,8 @@ export default function CoveragePage() {
             <p>
               Classified by kind (omission, addition, substitution, orthography,
               transposition), browsable in the{" "}
-              <Link href="/variants/">variant explorer</Link>.
+              <Link href="/variants/">variant explorer</Link> or{" "}
+              <Link href="/compare/">witness compare</Link>.
             </p>
           </div>
           <div className={styles.ehrmanCard}>
@@ -122,6 +124,8 @@ export default function CoveragePage() {
       </section>
 
       <VariantExamples />
+
+      <DownloadCensus />
 
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>How to use this site</h2>
@@ -363,6 +367,8 @@ export default function CoveragePage() {
       </aside>
 
       <footer className={styles.footer}>
+        <Link href="/compare/">Witness compare →</Link>
+        {" · "}
         <Link href="/variants/">Variant explorer →</Link>
         {" · "}
         <Link href="/">← Back to timeline</Link>
