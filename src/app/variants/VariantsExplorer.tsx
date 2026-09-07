@@ -89,11 +89,12 @@ export default function VariantsExplorer() {
             {coverage.greek_nt.disagreements.total.toLocaleString()}
           </strong>{" "}
           word-aligned disagreements between our CNTR witnesses and{" "}
-          <strong>SR GNT</strong> — counted mechanically, not hand-typed. This
-          answers Bart Ehrman&apos;s challenge at the scale of{" "}
-          <em>this dataset</em>; it is not a count of every variant in every
-          Greek manuscript. See{" "}
-          <Link href="/coverage/">Coverage</Link> for limits.
+          <strong>SR GNT</strong> — counted mechanically, not hand-typed. Compare
+          two witnesses in{" "}
+          <Link href="/compare/">Compare</Link> or download the open census from{" "}
+          <Link href="/coverage/">Coverage</Link>. This answers Bart Ehrman&apos;s
+          challenge at the scale of <em>this dataset</em>; it is not a count of
+          every variant in every Greek manuscript.
         </p>
 
         <div className={styles.summaryGrid} role="group" aria-label="Totals by kind">
@@ -278,6 +279,11 @@ export default function VariantsExplorer() {
           claim a full-tradition census (~5,700+ manuscripts) or Peter
           Gurry&apos;s ~500,000-reading extrapolation. ECM/NA judgments and
           heuristic intentional tags are separate, provisional layers.
+        </p>
+        <p>
+          <Link href="/compare/">Compare two witnesses →</Link>
+          {" · "}
+          <Link href="/coverage/">Coverage &amp; downloads →</Link>
         </p>
       </aside>
     </main>
