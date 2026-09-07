@@ -1,0 +1,126 @@
+{
+  "definition": "Hand-curated block-level textual issues in the Greek New Testament — whole passages absent, inserted, or disputed — distinct from word-level variation units in the variant census.",
+  "entries": [
+    {
+      "slug": "pericope-adulterae",
+      "title": "Pericope Adulterae",
+      "passage_ref": "John 7:53–8:11",
+      "book": "John",
+      "verse_esns": [43007053, 43007054, 43007055, 43007056, 43007057, 43007058, 43007059, 43007060, 43007061, 43007062, 43007063, 43007064, 43008001, 43008002, 43008003, 43008004, 43008005, 43008006, 43008007, 43008008, 43008009, 43008010, 43008011],
+      "story": "The story of Jesus and the woman caught in adultery (“Let him who is without sin…”) is one of the best-known Gospel scenes. In modern critical editions it is usually set in brackets or moved to a footnote because the passage does not appear in the earliest and best Greek manuscripts of John. The narrative jumps cleanly from 7:52 to 8:12 in witnesses like 𝔓⁶⁶, 𝔓⁷⁵, Codex Sinaiticus (01), and Codex Vaticanus (03). Scribes and editors later inserted the block at this point; it became standard in the Byzantine majority and thus in many printed Bibles — but the insertion is widely regarded as a secondary addition to the Fourth Gospel, not part of the earliest recoverable text.",
+      "later_tradition": "The pericope is absent from essentially all Greek manuscripts before the fifth century. It appears in a few late Greek witnesses and becomes common in Byzantine copies from roughly the ninth century onward, then in the Textus Receptus tradition. Standard introductions (e.g. Metzger, *Text of the NT*; Ehrman, *Misquoting Jesus*) treat it as a later insertion; NA28 and UBS5 bracket the passage. We do not date the first insertion to a precise year — paleography and stemmatics point to a gradual adoption, not a single datable event.",
+      "scholarship": [
+        {
+          "label": "CNTR apparatus & transcriptions",
+          "url": "https://greekcntr.org/"
+        },
+        {
+          "label": "Pericope Adulterae (Wikipedia — secondary overview)",
+          "url": "https://en.wikipedia.org/wiki/Pericope_Adulterae"
+        },
+        {
+          "label": "INTF / NTVMR manuscript workspace",
+          "url": "https://ntvmr.uni-muenster.de/"
+        }
+      ],
+      "witnesses": [
+        { "ga": "P66", "status": "absent", "note": "CNTR marks these verses absent (—) in 𝔓⁶⁶." },
+        { "ga": "P75", "status": "absent", "note": "CNTR marks these verses absent (—) in 𝔓⁷⁵." },
+        { "ga": "01", "status": "absent", "note": "Absent in Codex Sinaiticus; text runs 7:52 → 8:12." },
+        { "ga": "03", "status": "absent", "note": "Absent in Codex Vaticanus; text runs 7:52 → 8:12." }
+      ],
+      "variants_link": { "book": "John", "q": "8:12" },
+      "compare_link": { "a": "P66", "b": "P75", "book": "John" }
+    },
+    {
+      "slug": "mark-long-ending",
+      "title": "Longer ending of Mark",
+      "passage_ref": "Mark 16:9–20",
+      "book": "Mark",
+      "verse_esns": [41016009, 41016010, 41016011, 41016012, 41016013, 41016014, 41016015, 41016016, 41016017, 41016018, 41016019, 41016020],
+      "story": "Mark’s Gospel appears to end abruptly at 16:8 in the two earliest complete Greek codices: the women flee the tomb in fear and “they said nothing to anyone” — with no resurrection appearances, no Great Commission, no ascension. Verses 9–20, familiar from later Bibles, summarize appearances and commission the disciples. That longer ending is missing from 01 and 03; two very old Greek witnesses (Codex Bobiensis, 𝔓⁴⁵ does not cover this section) and several early citations suggest the shorter ending was known. Later scribes supplied the longer block to round out the narrative.",
+      "later_tradition": "The long ending is absent from 01 and 03 and from several Old Latin witnesses. It becomes dominant in Byzantine manuscripts and the Textus Receptus. Critical editions bracket or annotate 16:9–20; some append the shorter “Freer Logion” ending (after 16:8) found in one manuscript. Standard TC handbooks describe the long ending as a second-century or later compilation of resurrection traditions, not Mark’s original conclusion.",
+      "scholarship": [
+        {
+          "label": "CNTR — Mark witnesses",
+          "url": "https://greekcntr.org/"
+        },
+        {
+          "label": "Mark 16 (endings) — Wikipedia (secondary)",
+          "url": "https://en.wikipedia.org/wiki/Mark_16"
+        },
+        {
+          "label": "IGNTP — Mark",
+          "url": "https://igntp.org/"
+        }
+      ],
+      "witnesses": [
+        { "ga": "01", "status": "absent", "note": "Codex Sinaiticus ends Mark at 16:8 in the main tradition; CNTR marks 16:9–20 absent." },
+        { "ga": "03", "status": "absent", "note": "Codex Vaticanus ends at 16:8; long ending absent." },
+        { "ga": "P45", "status": "not_in_corpus", "note": "𝔓⁴⁵ does not preserve Mark 16 in our CNTR slice." }
+      ],
+      "variants_link": { "book": "Mark", "q": "16:8" },
+      "compare_link": { "a": "01", "b": "03", "book": "Mark" }
+    },
+    {
+      "slug": "comma-johanneum",
+      "title": "Comma Johanneum",
+      "passage_ref": "1 John 5:7–8",
+      "book": "1 John",
+      "verse_esns": [62005007, 62005008],
+      "story": "The King James and some Latin Bibles read that “there are three that bear record in heaven, the Father, the Word, and the Holy Ghost: and these three are one” — a explicit Trinitarian formula in 1 John 5:7–8. That wording (the Johannine Comma) is not found in any Greek manuscript before the sixteenth century. Early Greek witnesses have only the short reading about Spirit, water, and blood bearing witness. The Comma entered some Latin copies and was retro-translated into a handful of late Greek minuscules; Erasmus included it under pressure in later editions of his Greek New Testament.",
+      "later_tradition": "Absent from the entire pre-400 CE Greek tradition in our dataset. The interpolation is attested in Latin from the fourth century onward in some branches, but not in the best Greek line. Modern critical texts (NA28, UBS5, SR GNT) print the short reading only. Our CNTR transcriptions of 01 and 03 show 1 John 5:7–8 extant with the standard short Greek — the Comma text itself is absent.",
+      "scholarship": [
+        {
+          "label": "CNTR — 1 John witnesses",
+          "url": "https://greekcntr.org/"
+        },
+        {
+          "label": "Comma Johanneum — Wikipedia (secondary)",
+          "url": "https://en.wikipedia.org/wiki/Comma_Johanneum"
+        },
+        {
+          "label": "Metzger, *Text of the New Testament* (standard handbook)",
+          "url": "https://en.wikipedia.org/wiki/The_Text_of_the_New_Testament_(Metzger)"
+        }
+      ],
+      "witnesses": [
+        { "ga": "01", "status": "present", "note": "Verses extant; short Greek reading only — Johannine Comma absent (standard for early Greek)." },
+        { "ga": "03", "status": "present", "note": "Verses extant; short Greek reading only — Comma absent." },
+        { "ga": "P9", "status": "not_in_corpus", "note": "𝔓⁹ (1 John fragment) does not cover 5:7–8 in our CNTR slice." }
+      ],
+      "variants_link": { "book": "1 John", "q": "5:7" },
+      "compare_link": { "a": "01", "b": "03", "book": "1 John" }
+    },
+    {
+      "slug": "luke-bloody-sweat",
+      "title": "Jesus’ bloody sweat (Luke 22:43–44)",
+      "passage_ref": "Luke 22:43–44",
+      "book": "Luke",
+      "verse_esns": [42022043, 42022044],
+      "story": "Only Luke tells of an angel strengthening Jesus in Gethsemane and sweat “like drops of blood.” These two verses are absent from Codex Vaticanus (03) and from 𝔓⁷⁵, one of the earliest Luke papyri. Codex Sinaiticus (01) includes them, but a later corrector marked them as doubtful — a sign that even scribes knew the passage was debated. The verses read like a later amplification of Jesus’ agony, harmonizing with other tradition.",
+      "later_tradition": "Absent in 𝔓⁷⁵ and 03; present in 01 (with marginal doubt). Many later manuscripts include the verses; some mark them with asterisks or move them to the margin. NA28 brackets 22:43–44; the balance of early Greek evidence favors omission or secondary status, though the picture is less unanimous than for the Pericope Adulterae.",
+      "scholarship": [
+        {
+          "label": "CNTR — Luke witnesses",
+          "url": "https://greekcntr.org/"
+        },
+        {
+          "label": "Luke 22:43–44 — Wikipedia (secondary)",
+          "url": "https://en.wikipedia.org/wiki/Luke_22:43%E2%80%9344"
+        },
+        {
+          "label": "IGNTP — Luke",
+          "url": "https://igntp.org/"
+        }
+      ],
+      "witnesses": [
+        { "ga": "P75", "status": "absent", "note": "CNTR marks 22:43–44 absent (—) in 𝔓⁷⁵." },
+        { "ga": "03", "status": "absent", "note": "Absent in Codex Vaticanus." },
+        { "ga": "01", "status": "present", "note": "Present in Codex Sinaiticus; later marginal mark notes doubt." }
+      ],
+      "variants_link": { "book": "Luke", "q": "22:43" },
+      "compare_link": { "a": "P75", "b": "03", "book": "Luke" }
+    }
+  ]
+}

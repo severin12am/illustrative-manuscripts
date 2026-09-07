@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { coverage } from "@/data/coverage";
 import styles from "./StudentPrimer.module.css";
 
@@ -79,6 +80,17 @@ export default function StudentPrimer({ compact = false }: Props) {
             </dd>
           </div>
         )}
+
+        <div className={styles.item}>
+          <dt>Block-level famous passages</dt>
+          <dd>
+            Some well-known stories (e.g. the woman caught in adultery, John
+            7:53–8:11) are <strong>whole blocks</strong> missing from early
+            witnesses — they do not show up as neat rows in our word-level
+            census.             See <Link href="/famous/">Famous passages</Link> for those issues,
+            separate from the <Link href="/variants/">variant explorer</Link>.
+          </dd>
+        </div>
 
         <div className={styles.item}>
           <dt>Why lacunae matter</dt>

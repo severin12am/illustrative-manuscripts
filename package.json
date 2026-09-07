@@ -18,6 +18,7 @@
     "hebrew-lxx-images": "node scripts/download-hebrew-lxx-commons.mjs",
     "coverage": "node scripts/compute-coverage.mjs",
     "variant-index": "node scripts/export-variant-index.mjs",
+    "famous-passages": "node scripts/verify-famous-passages.mjs",
     "export-sr-esns": "node scripts/export-sr-witness-esns.mjs",
     "export-census": "node scripts/export-variant-census.mjs",
     "prebuild": "node scripts/export-sr-witness-esns.mjs && node scripts/export-variant-census.mjs",

@@ -1,0 +1,264 @@
+.main {
+  min-height: 100vh;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3.5rem;
+}
+
+.hero {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-muted);
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: clamp(1.875rem, 4vw, 2.5rem);
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.lead {
+  color: var(--ink-secondary);
+  line-height: 1.75;
+  font-size: 1rem;
+  max-width: 42rem;
+}
+
+.lead a {
+  color: var(--accent);
+}
+
+.callout {
+  background: var(--paper-warm);
+  border-left: 2px solid var(--accent);
+  padding: 1rem 1.25rem;
+  margin-bottom: 2.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--ink-secondary);
+}
+
+.callout a {
+  color: var(--accent);
+}
+
+.toc {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.tocTitle {
+  font-size: 0.875rem;
+  font-family: var(--font-ui);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.toc ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.toc li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+}
+
+.toc a {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.toc a:hover {
+  color: var(--accent);
+}
+
+.tocRef {
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  color: var(--ink-muted);
+}
+
+.entry {
+  margin: 3rem 0;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.entry:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.entryHeader {
+  margin-bottom: 1.5rem;
+}
+
+.entryTitle {
+  font-size: 1.5rem;
+  color: var(--ink);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.entryRef {
+  font-family: var(--font-ui);
+  font-size: 0.9375rem;
+  color: var(--ink-muted);
+}
+
+.entryBody {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.entryBody p {
+  color: var(--ink-secondary);
+  line-height: 1.75;
+  font-size: 1rem;
+}
+
+.subheading {
+  font-size: 1rem;
+  color: var(--ink);
+  font-weight: 600;
+  margin-bottom: 0.625rem;
+  font-family: var(--font-ui);
+}
+
+.witnessIntro {
+  font-size: 0.875rem !important;
+  color: var(--ink-muted) !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.witnessTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+  font-family: var(--font-ui);
+}
+
+.witnessTable th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--ink-muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.5rem 0.75rem 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.witnessTable td {
+  padding: 0.625rem 0.75rem 0.625rem 0;
+  border-bottom: 1px solid var(--border-light);
+  vertical-align: top;
+  color: var(--ink-secondary);
+}
+
+.witnessLink {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.statusBadge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.5rem;
+  border-radius: 2px;
+  background: var(--paper-warm);
+  color: var(--ink-muted);
+}
+
+.statusBadge[data-status="present"] {
+  color: #2d5a3d;
+  background: #eef4ef;
+}
+
+.statusBadge[data-status="absent"] {
+  color: #6b3a3a;
+  background: #f5ecec;
+}
+
+.statusBadge[data-status="lacunose"] {
+  color: #5a4a2d;
+  background: #f5f0e8;
+}
+
+.statusBadge[data-status="not_in_corpus"] {
+  color: var(--ink-muted);
+  background: var(--paper-warm);
+}
+
+.witnessNote {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.scholarshipList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.scholarshipList a {
+  color: var(--accent);
+  font-size: 0.9375rem;
+}
+
+.actionLink {
+  margin-top: 0.75rem !important;
+  font-size: 0.9375rem !important;
+}
+
+.actionLink a {
+  color: var(--accent);
+}
+
+.footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-light);
+  font-family: var(--font-ui);
+  font-size: 0.9375rem;
+  color: var(--ink-muted);
+}
+
+.footer a {
+  color: var(--accent);
+}
+
+@media (max-width: 640px) {
+  .witnessTable th:nth-child(3),
+  .witnessTable td:nth-child(3) {
+    display: none;
+  }
+}
