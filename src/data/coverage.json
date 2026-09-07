@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T08:57:45.043Z",
+  "generated_at": "2026-09-07T08:59:51.567Z",
   "sources": {
     "witness_texts": "src/data/witness-texts.json",
     "cntr_overflow": "public/cntr-texts/*.json",
@@ -1286,12 +1286,12 @@
     "intentional_tagging": {
       "definition": "Model-assisted error / intentional / uncertain labels on a subset of non-orthography variation units. Provisional hypotheses only — not ECM or NA judgments.",
       "taggable_total": 5463,
-      "tagged_count": 3000,
-      "coverage_percent": 54.9,
+      "tagged_count": 4000,
+      "coverage_percent": 73.2,
       "by_label": {
-        "error": 1171,
-        "intentional": 14,
-        "uncertain": 1815
+        "error": 1581,
+        "intentional": 17,
+        "uncertain": 2402
       },
       "not_run": false,
       "run_command": "npm run export-taggable && npm run tag-intentional"
