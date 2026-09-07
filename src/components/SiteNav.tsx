@@ -10,6 +10,7 @@ const links = [
   { href: "/variants/", label: "Variants", match: (path: string) => path.startsWith("/variants") },
   { href: "/compare/", label: "Compare", match: (path: string) => path.startsWith("/compare") },
   { href: "/coverage/", label: "Coverage", match: (path: string) => path.startsWith("/coverage") },
+  { href: "/cite/", label: "Cite & learn", match: (path: string) => path.startsWith("/cite") },
 ];
 
 export default function SiteNav() {
