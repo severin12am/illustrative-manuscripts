@@ -1,0 +1,213 @@
+{
+  "status": "success",
+  "data": {
+    "manuscript": {
+      "docID": 10056,
+      "columns": {
+        "columnsMin": 1,
+        "content": 1
+      },
+      "groupID": "",
+      "primaryName": "P56",
+      "shelfInstances": {
+        "shelfInstance": [
+          {
+            "institution": {
+              "country": "Austria",
+              "instID": 328,
+              "nameCustom": "",
+              "geoLocator": "",
+              "name": "Österreichische Nationalbibliothek",
+              "place": "Wien",
+              "logoURL": "http://ntmss.info/instlogos/OesterNationalbib.jpg",
+              "url": "http://www.onb.ac.at/"
+            },
+            "leavesDescription": "2 Frg",
+            "shelfID": 5440,
+            "originYearDescription": "V/VI",
+            "pages": {
+              "count": 0
+            },
+            "manuscripts": {
+              "count": 0
+            },
+            "formerGANumber": "",
+            "leavesCount": 0,
+            "shelfNumber": "Pap. G. 19918",
+            "contentOverview": "a"
+          },
+          {
+            "institution": {
+              "country": "Austria",
+              "instID": 328,
+              "nameCustom": "",
+              "geoLocator": "",
+              "name": "Österreichische Nationalbibliothek",
+              "place": "Wien",
+              "logoURL": "http://ntmss.info/instlogos/OesterNationalbib.jpg",
+              "url": "http://www.onb.ac.at/"
+            },
+            "leavesDescription": "1 Frg",
+            "shelfID": 5441,
+            "originYearDescription": "VI",
+            "pages": {
+              "count": 0
+            },
+            "manuscripts": {
+              "count": 0
+            },
+            "formerGANumber": "",
+            "leavesCount": 0,
+            "shelfNumber": "Pap. G. 19927",
+            "contentOverview": "aP: Act"
+          }
+        ]
+      },
+      "userID": "",
+      "v11n": "",
+      "originYear": {
+        "late": 599,
+        "early": 400,
+        "content": "VI"
+      },
+      "leavesDescription": "3 Frg",
+      "pages": {
+        "count": 4,
+        "page": [
+          {
+            "biblicalContent": "Mark 6:3-14",
+            "images": {
+              "image": [
+                {
+                  "instID": 49,
+                  "shelfID": 0,
+                  "shelfNumberPartID": "",
+                  "accessLevel": 0,
+                  "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10056/10/10",
+                  "attribution": "<a target=\"_blank\" href=\"http://digital.onb.ac.at/RepViewer/viewer.faces?doc=DTL_2172100&order=1&view=SINGLE\"><img src=\" http://digital.onb.ac.at/RepViewer/images/logo_c4.gif\"><div> Images©<br/>ÖNB</div></a>",
+                  "thumbURL": "https://ntmss.info/images/thumbs/10056/10_49_10.jpg",
+                  "userName": "",
+                  "uri": "https://ntmss.info/images/webfriendly/10056/10056x00010XX_INTF.jpg",
+                  "webFriendlyURL": "https://ntmss.info/images/webfriendly/10056/10056x00010XX_INTF.jpg",
+                  "surrID": 10,
+                  "protectLevel": 0
+                },
+                {
+                  "instID": 49,
+                  "shelfID": 0,
+                  "shelfNumberPartID": "",
+                  "accessLevel": 0,
+                  "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10056/10/20",
+                  "attribution": "<a target=\"_blank\" href=\"http://digital.onb.ac.at/RepViewer/viewer.faces?doc=DTL_2172100&order=1&view=SINGLE\"><img src=\" http://digital.onb.ac.at/RepViewer/images/logo_c4.gif\"><div> Images©<br/>ÖNB</div></a>",
+                  "thumbURL": "https://ntmss.info/images/thumbs/10056/10_49_20.jpg",
+                  "userName": "",
+                  "uri": "https://ntmss.info/images/webfriendly/10056/10056x00010Xa_INTF.jpg",
+                  "webFriendlyURL": "https://ntmss.info/images/webfriendly/10056/10056x00010Xa_INTF.jpg",
+                  "surrID": 20,
+                  "protectLevel": 0
+                }
+              ]
+            },
+            "shelfID": 5440,
+            "shelfFolioNums": "001r",
+            "sortOrder": "00010",
+            "folio": "001r",
+            "indexContent": "Mark 6:3-14",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10056&pageID=10&format=xhtml"
+              }
+            },
+            "pageID": 10,
+            "indexedBy": "josanvalls"
+          },
+          {
+            "biblicalContent": "Acts 1:7-11",
+            "images": {
+              "image": [
+                {
+                  "instID": 49,
+                  "shelfID": 0,
+                  "shelfNumberPartID": "",
+                  "accessLevel": 0,
+                  "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10056/20/10",
+                  "attribution": "<a target=\"_blank\" href=\"http://digital.onb.ac.at/RepViewer/viewer.faces?doc=DTL_2172100&order=1&view=SINGLE\"><img src=\" http://digital.onb.ac.at/RepViewer/images/logo_c4.gif\"><div> Images©<br/>ÖNB</div></a>",
+                  "thumbURL": "https://ntmss.info/images/thumbs/10056/20_49_10.jpg",
+                  "userName": "",
+                  "uri": "https://ntmss.info/images/webfriendly/10056/10056x00020XX_INTF.jpg",
+                  "webFriendlyURL": "https://ntmss.info/images/webfriendly/10056/10056x00020XX_INTF.jpg",
+                  "surrID": 10,
+                  "protectLevel": 0
+                },
+                {
+                  "instID": 49,
+                  "shelfID": 0,
+                  "shelfNumberPartID": "",
+                  "accessLevel": 0,
+                  "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10056/20/20",
+                  "attribution": "<a target=\"_blank\" href=\"http://digital.onb.ac.at/RepViewer/viewer.faces?doc=DTL_2172100&order=1&view=SINGLE\"><img src=\" http://digital.onb.ac.at/RepViewer/images/logo_c4.gif\"><div> Images©<br/>ÖNB</div></a>",
+                  "thumbURL": "https://ntmss.info/images/thumbs/10056/20_49_20.jpg",
+                  "userName": "",
+                  "uri": "https://ntmss.info/images/webfriendly/10056/10056x00020Xa_INTF.jpg",
+                  "webFriendlyURL": "https://ntmss.info/images/webfriendly/10056/10056x00020Xa_INTF.jpg",
+                  "surrID": 20,
+                  "protectLevel": 0
+                }
+              ]
+            },
+            "shelfID": 5440,
+            "shelfFolioNums": "001v",
+            "sortOrder": "00020",
+            "folio": "001v",
+            "indexContent": "Acts 1:7-11",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10056&pageID=20&format=xhtml"
+              }
+            },
+            "pageID": 20,
+            "indexedBy": "MF"
+          },
+          {
+            "biblicalContent": "Acts 1:1-3",
+            "shelfID": 5441,
+            "shelfFolioNums": "",
+            "sortOrder": "00030",
+            "folio": "",
+            "indexContent": "Acts 1:1-3",
+            "pageID": 30,
+            "indexedBy": "MF"
+          },
+          {
+            "biblicalContent": "Acts 1:7-10",
+            "shelfID": 5441,
+            "shelfFolioNums": "",
+            "sortOrder": "00040",
+            "folio": "",
+            "indexContent": "Acts 1:7-10",
+            "pageID": 40,
+            "indexedBy": "MF"
+          }
+        ]
+      },
+      "gaNum": "P56",
+      "leaves": {
+        "leavesCount": 3,
+        "content": "3 Frg"
+      },
+      "width": {
+        "widthMin": 116
+      },
+      "lang": "g",
+      "contentOverview": "a: Act",
+      "lineCount": {
+        "lineCountMax": 29,
+        "lineCountMin": 16,
+        "content": "16-29 (28-29)"
+      },
+      "height": {
+        "heightMin": 123
+      }
+    }
+  }
+}

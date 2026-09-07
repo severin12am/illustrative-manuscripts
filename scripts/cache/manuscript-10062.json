@@ -1,0 +1,424 @@
+{
+  "status": "success",
+  "data": {
+    "manuscript": {
+      "docID": 10062,
+      "columns": {
+        "columnsMin": 1,
+        "content": 1
+      },
+      "groupID": "",
+      "primaryName": "P62",
+      "shelfInstances": {
+        "shelfInstance": {
+          "institution": {
+            "country": "Norway",
+            "instID": 324,
+            "nameCustom": "",
+            "geoLocator": "",
+            "name": "University of Oslo Library ",
+            "place": "Oslo",
+            "logoURL": "",
+            "url": ""
+          },
+          "leavesDescription": "13 Frg (13 Dbl.)",
+          "shelfID": 54,
+          "originYearDescription": "IV",
+          "pages": {
+            "count": 0
+          },
+          "manuscripts": {
+            "count": 0
+          },
+          "formerGANumber": "",
+          "leavesCount": 0,
+          "shelfNumber": "P. 1661",
+          "contentOverview": "(g-k) Mt 11,25-30 (kopt.: Mt 11,25-30)"
+        }
+      },
+      "userID": "",
+      "v11n": "",
+      "originYear": {
+        "late": 399,
+        "early": 300,
+        "content": "IV"
+      },
+      "leavesDescription": "13 Frg (13 Dbl.)",
+      "pages": {
+        "count": 11,
+        "page": [
+          {
+            "biblicalContent": "Matt inscriptio",
+            "images": {
+              "image": {
+                "shelfID": 0,
+                "accessLevel": 1,
+                "userName": "",
+                "uri": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "protectLevel": 0,
+                "instID": 49,
+                "shelfNumberPartID": "",
+                "protected": true,
+                "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10062/10/10",
+                "attribution": "&#x2028;&#x2028;<a target=\"_blank\" href=\"http://egora.uni-muenster.de/intf/\"><div>Photos Digitized by<br/>INTF for Research Purposes</div></a>\n<a target=\"_blank\" href=\"https://www.ub.uio.no/english/\"><div>External Images by<br/>UiO</div></a>\n<a target=\"_blank\" href=\"http://www.csntm.org/manuscript/View/GA_P62\"><div>External Images by<br/>CSNTM</div></a>",
+                "thumbURL": "https://ntmss.info/images/thumbs/10062/10_49_10.jpg",
+                "webFriendlyURL": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "surrID": 10
+              }
+            },
+            "shelfID": 54,
+            "shelfFolioNums": "",
+            "sortOrder": "00010",
+            "folio": "1v",
+            "indexContent": "Matt inscriptio",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10062&pageID=10&format=xhtml"
+              }
+            },
+            "pageID": 10,
+            "indexedBy": "ECM"
+          },
+          {
+            "biblicalContent": "Matt 11:25",
+            "images": {
+              "image": {
+                "shelfID": 0,
+                "accessLevel": 1,
+                "userName": "",
+                "uri": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "protectLevel": 0,
+                "instID": 49,
+                "shelfNumberPartID": "",
+                "protected": true,
+                "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10062/20/10",
+                "attribution": "&#x2028;&#x2028;<a target=\"_blank\" href=\"http://egora.uni-muenster.de/intf/\"><div>Photos Digitized by<br/>INTF for Research Purposes</div></a>\n<a target=\"_blank\" href=\"https://www.ub.uio.no/english/\"><div>External Images by<br/>UiO</div></a>\n<a target=\"_blank\" href=\"http://www.csntm.org/manuscript/View/GA_P62\"><div>External Images by<br/>CSNTM</div></a>",
+                "thumbURL": "https://ntmss.info/images/thumbs/10062/20_49_10.jpg",
+                "webFriendlyURL": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "surrID": 10
+              }
+            },
+            "shelfID": 54,
+            "shelfFolioNums": "",
+            "sortOrder": "00020",
+            "folio": "2r",
+            "indexContent": "Matt 11:25",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10062&pageID=20&format=xhtml"
+              }
+            },
+            "pageID": 20,
+            "indexedBy": "gerloff"
+          },
+          {
+            "biblicalContent": "Matt 11:25",
+            "images": {
+              "image": {
+                "shelfID": 0,
+                "accessLevel": 1,
+                "userName": "",
+                "uri": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "protectLevel": 0,
+                "instID": 49,
+                "shelfNumberPartID": "",
+                "protected": true,
+                "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10062/30/10",
+                "attribution": "&#x2028;&#x2028;<a target=\"_blank\" href=\"http://egora.uni-muenster.de/intf/\"><div>Photos Digitized by<br/>INTF for Research Purposes</div></a>\n<a target=\"_blank\" href=\"https://www.ub.uio.no/english/\"><div>External Images by<br/>UiO</div></a>\n<a target=\"_blank\" href=\"http://www.csntm.org/manuscript/View/GA_P62\"><div>External Images by<br/>CSNTM</div></a>",
+                "thumbURL": "https://ntmss.info/images/thumbs/10062/30_49_10.jpg",
+                "webFriendlyURL": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "surrID": 10
+              }
+            },
+            "shelfID": 54,
+            "shelfFolioNums": "",
+            "sortOrder": "00030",
+            "folio": "2v",
+            "indexContent": "Matt 11:25",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10062&pageID=30&format=xhtml"
+              }
+            },
+            "pageID": 30,
+            "indexedBy": "gerloff"
+          },
+          {
+            "biblicalContent": "Matt 11:25-26",
+            "images": {
+              "image": {
+                "shelfID": 0,
+                "accessLevel": 1,
+                "userName": "",
+                "uri": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "protectLevel": 0,
+                "instID": 49,
+                "shelfNumberPartID": "",
+                "protected": true,
+                "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10062/40/10",
+                "attribution": "&#x2028;&#x2028;<a target=\"_blank\" href=\"http://egora.uni-muenster.de/intf/\"><div>Photos Digitized by<br/>INTF for Research Purposes</div></a>\n<a target=\"_blank\" href=\"https://www.ub.uio.no/english/\"><div>External Images by<br/>UiO</div></a>\n<a target=\"_blank\" href=\"http://www.csntm.org/manuscript/View/GA_P62\"><div>External Images by<br/>CSNTM</div></a>",
+                "thumbURL": "https://ntmss.info/images/thumbs/10062/40_49_10.jpg",
+                "webFriendlyURL": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "surrID": 10
+              }
+            },
+            "shelfID": 54,
+            "shelfFolioNums": "",
+            "sortOrder": "00040",
+            "folio": "3r",
+            "indexContent": "Matt 11:25-26",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10062&pageID=40&format=xhtml"
+              }
+            },
+            "pageID": 40,
+            "indexedBy": "gerloff"
+          },
+          {
+            "biblicalContent": "Matt 11:27",
+            "images": {
+              "image": {
+                "shelfID": 0,
+                "accessLevel": 1,
+                "userName": "",
+                "uri": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "protectLevel": 0,
+                "instID": 49,
+                "shelfNumberPartID": "",
+                "protected": true,
+                "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10062/50/10",
+                "attribution": "&#x2028;&#x2028;<a target=\"_blank\" href=\"http://egora.uni-muenster.de/intf/\"><div>Photos Digitized by<br/>INTF for Research Purposes</div></a>\n<a target=\"_blank\" href=\"https://www.ub.uio.no/english/\"><div>External Images by<br/>UiO</div></a>\n<a target=\"_blank\" href=\"http://www.csntm.org/manuscript/View/GA_P62\"><div>External Images by<br/>CSNTM</div></a>",
+                "thumbURL": "https://ntmss.info/images/thumbs/10062/50_49_10.jpg",
+                "webFriendlyURL": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "surrID": 10
+              }
+            },
+            "shelfID": 54,
+            "shelfFolioNums": "",
+            "sortOrder": "00050",
+            "folio": "3v",
+            "indexContent": "Matt 11:27",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10062&pageID=50&format=xhtml"
+              }
+            },
+            "pageID": 50,
+            "indexedBy": "gerloff"
+          },
+          {
+            "biblicalContent": "Matt 11:27",
+            "images": {
+              "image": {
+                "shelfID": 0,
+                "accessLevel": 1,
+                "userName": "",
+                "uri": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "protectLevel": 0,
+                "instID": 49,
+                "shelfNumberPartID": "",
+                "protected": true,
+                "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10062/60/10",
+                "attribution": "&#x2028;&#x2028;<a target=\"_blank\" href=\"http://egora.uni-muenster.de/intf/\"><div>Photos Digitized by<br/>INTF for Research Purposes</div></a>\n<a target=\"_blank\" href=\"https://www.ub.uio.no/english/\"><div>External Images by<br/>UiO</div></a>\n<a target=\"_blank\" href=\"http://www.csntm.org/manuscript/View/GA_P62\"><div>External Images by<br/>CSNTM</div></a>",
+                "thumbURL": "https://ntmss.info/images/thumbs/10062/60_49_10.jpg",
+                "webFriendlyURL": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "surrID": 10
+              }
+            },
+            "shelfID": 54,
+            "shelfFolioNums": "",
+            "sortOrder": "00060",
+            "folio": "4r",
+            "indexContent": "Matt 11:27",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10062&pageID=60&format=xhtml"
+              }
+            },
+            "pageID": 60,
+            "indexedBy": "gerloff"
+          },
+          {
+            "biblicalContent": "Matt 11:27-28",
+            "images": {
+              "image": {
+                "shelfID": 0,
+                "accessLevel": 1,
+                "userName": "",
+                "uri": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "protectLevel": 0,
+                "instID": 49,
+                "shelfNumberPartID": "",
+                "protected": true,
+                "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10062/70/10",
+                "attribution": "&#x2028;&#x2028;<a target=\"_blank\" href=\"http://egora.uni-muenster.de/intf/\"><div>Photos Digitized by<br/>INTF for Research Purposes</div></a>\n<a target=\"_blank\" href=\"https://www.ub.uio.no/english/\"><div>External Images by<br/>UiO</div></a>\n<a target=\"_blank\" href=\"http://www.csntm.org/manuscript/View/GA_P62\"><div>External Images by<br/>CSNTM</div></a>",
+                "thumbURL": "https://ntmss.info/images/thumbs/10062/70_49_10.jpg",
+                "webFriendlyURL": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "surrID": 10
+              }
+            },
+            "shelfID": 54,
+            "shelfFolioNums": "",
+            "sortOrder": "00070",
+            "folio": "4v",
+            "indexContent": "Matt 11:27-28",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10062&pageID=70&format=xhtml"
+              }
+            },
+            "pageID": 70,
+            "indexedBy": "gerloff"
+          },
+          {
+            "biblicalContent": "Matt 11:28-29",
+            "images": {
+              "image": {
+                "shelfID": 0,
+                "accessLevel": 1,
+                "userName": "",
+                "uri": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "protectLevel": 0,
+                "instID": 49,
+                "shelfNumberPartID": "",
+                "protected": true,
+                "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10062/80/10",
+                "attribution": "&#x2028;&#x2028;<a target=\"_blank\" href=\"http://egora.uni-muenster.de/intf/\"><div>Photos Digitized by<br/>INTF for Research Purposes</div></a>\n<a target=\"_blank\" href=\"https://www.ub.uio.no/english/\"><div>External Images by<br/>UiO</div></a>\n<a target=\"_blank\" href=\"http://www.csntm.org/manuscript/View/GA_P62\"><div>External Images by<br/>CSNTM</div></a>",
+                "thumbURL": "https://ntmss.info/images/thumbs/10062/80_49_10.jpg",
+                "webFriendlyURL": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "surrID": 10
+              }
+            },
+            "shelfID": 54,
+            "shelfFolioNums": "",
+            "sortOrder": "00080",
+            "folio": "5r",
+            "indexContent": "Matt 11:28-29",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10062&pageID=80&format=xhtml"
+              }
+            },
+            "pageID": 80,
+            "indexedBy": "gerloff"
+          },
+          {
+            "biblicalContent": "Matt 11:29",
+            "images": {
+              "image": {
+                "shelfID": 0,
+                "accessLevel": 1,
+                "userName": "",
+                "uri": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "protectLevel": 0,
+                "instID": 49,
+                "shelfNumberPartID": "",
+                "protected": true,
+                "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10062/90/10",
+                "attribution": "&#x2028;&#x2028;<a target=\"_blank\" href=\"http://egora.uni-muenster.de/intf/\"><div>Photos Digitized by<br/>INTF for Research Purposes</div></a>\n<a target=\"_blank\" href=\"https://www.ub.uio.no/english/\"><div>External Images by<br/>UiO</div></a>\n<a target=\"_blank\" href=\"http://www.csntm.org/manuscript/View/GA_P62\"><div>External Images by<br/>CSNTM</div></a>",
+                "thumbURL": "https://ntmss.info/images/thumbs/10062/90_49_10.jpg",
+                "webFriendlyURL": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "surrID": 10
+              }
+            },
+            "shelfID": 54,
+            "shelfFolioNums": "",
+            "sortOrder": "00090",
+            "folio": "5v",
+            "indexContent": "Matt 11:29",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10062&pageID=90&format=xhtml"
+              }
+            },
+            "pageID": 90,
+            "indexedBy": "lakmann"
+          },
+          {
+            "biblicalContent": "Matt 11:30",
+            "images": {
+              "image": {
+                "shelfID": 0,
+                "accessLevel": 1,
+                "userName": "",
+                "uri": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "protectLevel": 0,
+                "instID": 49,
+                "shelfNumberPartID": "",
+                "protected": true,
+                "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10062/100/10",
+                "attribution": "&#x2028;&#x2028;<a target=\"_blank\" href=\"http://egora.uni-muenster.de/intf/\"><div>Photos Digitized by<br/>INTF for Research Purposes</div></a>\n<a target=\"_blank\" href=\"https://www.ub.uio.no/english/\"><div>External Images by<br/>UiO</div></a>\n<a target=\"_blank\" href=\"http://www.csntm.org/manuscript/View/GA_P62\"><div>External Images by<br/>CSNTM</div></a>",
+                "thumbURL": "https://ntmss.info/images/thumbs/10062/100_49_10.jpg",
+                "webFriendlyURL": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "surrID": 10
+              }
+            },
+            "shelfID": 54,
+            "shelfFolioNums": "",
+            "sortOrder": "00100",
+            "folio": "6r",
+            "indexContent": "Matt 11:30",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10062&pageID=100&format=xhtml"
+              }
+            },
+            "pageID": 100,
+            "indexedBy": "gerloff"
+          },
+          {
+            "biblicalContent": "",
+            "images": {
+              "image": {
+                "shelfID": 0,
+                "accessLevel": 1,
+                "userName": "",
+                "uri": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "protectLevel": 0,
+                "instID": 49,
+                "shelfNumberPartID": "",
+                "protected": true,
+                "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10062/110/10",
+                "attribution": "&#x2028;&#x2028;<a target=\"_blank\" href=\"http://egora.uni-muenster.de/intf/\"><div>Photos Digitized by<br/>INTF for Research Purposes</div></a>\n<a target=\"_blank\" href=\"https://www.ub.uio.no/english/\"><div>External Images by<br/>UiO</div></a>\n<a target=\"_blank\" href=\"http://www.csntm.org/manuscript/View/GA_P62\"><div>External Images by<br/>CSNTM</div></a>",
+                "thumbURL": "https://ntmss.info/images/thumbs/10062/110_49_10.jpg",
+                "webFriendlyURL": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "surrID": 10
+              }
+            },
+            "shelfID": 54,
+            "shelfFolioNums": "",
+            "sortOrder": "00110",
+            "folio": "6v",
+            "indexContent": "",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10062&pageID=110&format=xhtml"
+              }
+            },
+            "pageID": 110,
+            "noIdx": true
+          }
+        ]
+      },
+      "gaNum": "P62",
+      "leaves": {
+        "leavesCount": 13,
+        "content": "13 Frg (13 Dbl.)"
+      },
+      "width": {
+        "widthMin": 56
+      },
+      "lang": "g-k",
+      "contentOverview": "e: Mt",
+      "lineCount": {
+        "lineCountMax": 7,
+        "lineCountMin": 1,
+        "content": "1-4 (7)"
+      },
+      "height": {
+        "heightMin": 65
+      }
+    }
+  }
+}

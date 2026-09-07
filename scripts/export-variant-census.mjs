@@ -13,6 +13,13 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 
+function loadNtWindow() {
+  const mod = readFileSync(join(ROOT, "src/data/witnesses.ts"), "utf8");
+  const start = Number(mod.match(/export const TIMELINE_START = (\d+)/)?.[1] ?? 1);
+  const end = Number(mod.match(/export const TIMELINE_END = (\d+)/)?.[1] ?? 400);
+  return [start, end];
+}
+
 const CSV_COLUMNS = [
   "unit_id",
   "witness",
@@ -49,12 +56,13 @@ function main() {
   ];
   writeFileSync(join(ROOT, "public/variant-census.csv"), csvLines.join("\n"));
 
+  const [winStart, winEnd] = loadNtWindow();
   const jsonOut = {
     generated_at: new Date().toISOString(),
     definition: index.definition,
     base_text: index.base_text,
     scope:
-      "Greek NT papyri overlapping 1–300 CE with CNTR transcriptions in this repository — not a full-tradition census.",
+      `Greek NT witnesses overlapping ${winStart}–${winEnd} CE with CNTR transcriptions in this repository — not a full-tradition census.`,
     licenses_note:
       "CNTR transcriptions CC BY-SA 4.0; SR GNT CC BY-SA 4.0. See DATA.md for full attribution.",
     total: rows.length,

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { assetUrl } from "@/lib/assetUrl";
 import { variantIndex } from "@/data/variant-index";
+import { TIMELINE_START, TIMELINE_END } from "@/data/witnesses";
 import styles from "./DownloadCensus.module.css";
 
 export default function DownloadCensus() {
@@ -13,7 +14,7 @@ export default function DownloadCensus() {
         Download open census
       </h2>
       <p className={styles.lead}>
-        Machine-readable export of our <strong>1–300 CE Greek NT</strong> variation
+        Machine-readable export of our <strong>{TIMELINE_START}–{TIMELINE_END} CE Greek NT</strong> variation
         units vs <strong>SR GNT</strong> — the same counted index that powers the{" "}
         <Link href="/variants/">variant explorer</Link>. This is{" "}
         <em>not</em> a full New Testament tradition census; it covers CNTR

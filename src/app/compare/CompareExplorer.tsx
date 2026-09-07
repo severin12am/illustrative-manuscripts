@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { variantIndex } from "@/data/variant-index";
+import { TIMELINE_START, TIMELINE_END } from "@/data/witnesses";
 import { loadAllVerses } from "@/lib/witnessVerseLoader";
 import {
   booksInOverlap,
@@ -19,6 +20,8 @@ import styles from "./compare.module.css";
 const PAGE_SIZE = 75;
 const PRESETS: [string, string, string][] = [
   ["P66", "P75", "John"],
+  ["P75", "03", "Luke"],
+  ["01", "03", "Matthew"],
   ["P66", "P45", "John"],
   ["P46", "P13", "Romans"],
   ["P46", "P49", "Ephesians"],
@@ -116,7 +119,7 @@ export default function CompareExplorer() {
   return (
     <main className={styles.compareExplorer}>
       <header className={styles.hero}>
-        <p className={styles.eyebrow}>Greek NT · 1–300 CE</p>
+        <p className={styles.eyebrow}>Greek NT · {TIMELINE_START}–{TIMELINE_END} CE</p>
         <h1 className={styles.title}>Witness compare</h1>
         <p className={styles.lead}>
           Pick two CNTR witnesses and a book overlap to see side-by-side readings

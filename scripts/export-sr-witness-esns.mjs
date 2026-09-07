@@ -13,6 +13,13 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 
+function loadNtWindow() {
+  const mod = readFileSync(join(ROOT, "src/data/witnesses.ts"), "utf8");
+  const start = Number(mod.match(/export const TIMELINE_START = (\d+)/)?.[1] ?? 1);
+  const end = Number(mod.match(/export const TIMELINE_END = (\d+)/)?.[1] ?? 400);
+  return [start, end];
+}
+
 function loadJson(path) {
   return JSON.parse(readFileSync(path, "utf8"));
 }
@@ -76,10 +83,11 @@ function main() {
     verses[String(esn)] = words;
   }
 
+  const [winStart, winEnd] = loadNtWindow();
   const out = {
     generated_at: new Date().toISOString(),
     definition:
-      "SR GNT Koine word tokens for verses in our CNTR witness corpus (1–300 CE slice). Used for witness-to-witness alignment on /compare.",
+      `SR GNT Koine word tokens for verses in our CNTR witness corpus (${winStart}–${winEnd} CE slice). Used for witness-to-witness alignment on /compare.`,
     base_text: "SR GNT",
     verse_count: Object.keys(verses).length,
     missing_sr_count: missing,

@@ -1,0 +1,134 @@
+{
+  "status": "success",
+  "data": {
+    "manuscript": {
+      "docID": 10001,
+      "columns": {
+        "columnsMin": 1,
+        "content": 1
+      },
+      "groupID": "",
+      "primaryName": "P1",
+      "shelfInstances": {
+        "shelfInstance": {
+          "institution": {
+            "country": "USA",
+            "instID": 443,
+            "nameCustom": "",
+            "geoLocator": "",
+            "name": "Penn Museum",
+            "place": "Philadelphia, PA",
+            "logoURL": "http://ntmss.info/instlogos/penn_logo.png",
+            "url": "http://www.penn.museum/"
+          },
+          "leavesDescription": "2 Frg (1 Dbl.)",
+          "shelfID": 1,
+          "originYearDescription": "III",
+          "pages": {
+            "count": 0
+          },
+          "manuscripts": {
+            "count": 0
+          },
+          "formerGANumber": "",
+          "leavesCount": 0,
+          "shelfNumber": "E 2746",
+          "contentOverview": "Mt 1,1-9.12; 1,14-20.23"
+        }
+      },
+      "userID": "",
+      "v11n": "",
+      "originYear": {
+        "late": 299,
+        "early": 200,
+        "content": "III"
+      },
+      "leavesDescription": "2 Frg (1 Dbl.)",
+      "pages": {
+        "count": 2,
+        "page": [
+          {
+            "biblicalContent": "Matt 1:1-9; Matt 1:12-13",
+            "images": {
+              "image": {
+                "instID": 49,
+                "shelfID": 0,
+                "shelfNumberPartID": "",
+                "accessLevel": 0,
+                "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10001/10/10",
+                "attribution": "<a target=\"_blank\" href=\"https://www.penn.museum/collections/object/254486\"><img src=\" https://upmaa-pennmuseum.netdna-ssl.com/img/brand/pm-logo-blue.jpg\"><div> Images©<br/>PennMuseum</div></a>",
+                "thumbURL": "https://ntmss.info/images/thumbs/10001/10_49_10.jpg",
+                "userName": "",
+                "uri": "https://ntmss.info/images/webfriendly/10001/10001x001.jpg",
+                "webFriendlyURL": "https://ntmss.info/images/webfriendly/10001/10001x001.jpg",
+                "surrID": 10,
+                "protectLevel": 0
+              }
+            },
+            "shelfID": 1,
+            "shelfFolioNums": "001r",
+            "sortOrder": "00010",
+            "folio": "1r",
+            "indexContent": "Matt 1:1-9; Matt 1:12-13",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10001&pageID=10&format=xhtml"
+              }
+            },
+            "pageID": 10,
+            "indexedBy": "lakmann"
+          },
+          {
+            "biblicalContent": "Matt 1:14-20; Matt 1:23",
+            "images": {
+              "image": {
+                "instID": 49,
+                "shelfID": 0,
+                "shelfNumberPartID": "",
+                "accessLevel": 0,
+                "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10001/20/10",
+                "attribution": "<a target=\"_blank\" href=\"https://www.penn.museum/collections/object/254486\"><img src=\" https://upmaa-pennmuseum.netdna-ssl.com/img/brand/pm-logo-blue.jpg\"><div> Images©<br/>PennMuseum</div></a>",
+                "thumbURL": "https://ntmss.info/images/thumbs/10001/20_49_10.jpg",
+                "userName": "",
+                "uri": "https://ntmss.info/images/webfriendly/10001/10001x002.jpg",
+                "webFriendlyURL": "https://ntmss.info/images/webfriendly/10001/10001x002.jpg",
+                "surrID": 10,
+                "protectLevel": 0
+              }
+            },
+            "shelfID": 1,
+            "shelfFolioNums": "001v",
+            "sortOrder": "00020",
+            "folio": "1v",
+            "indexContent": "Matt 1:14-20; Matt 1:23",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10001&pageID=20&format=xhtml"
+              }
+            },
+            "pageID": 20,
+            "indexedBy": "lakmann"
+          }
+        ]
+      },
+      "gaNum": "P1",
+      "leaves": {
+        "leavesCount": 1,
+        "content": "2 Frg (1 Dbl.)"
+      },
+      "width": {
+        "widthMin": 130
+      },
+      "lang": "g",
+      "contentOverview": "e: Mt",
+      "lineCount": {
+        "lineCountMax": 38,
+        "lineCountMin": 37,
+        "content": "27r, 25v"
+      },
+      "height": {
+        "heightMin": 250
+      }
+    }
+  }
+}

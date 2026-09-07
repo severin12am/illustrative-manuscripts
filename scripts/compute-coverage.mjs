@@ -16,7 +16,7 @@ import { countTaggableUnits } from "./lib/taggable-units.mjs";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 
-const NT_WINDOW = [1, 300];
+const NT_WINDOW = [1, 400];
 
 function loadJson(path) {
   return JSON.parse(readFileSync(path, "utf8"));
@@ -223,6 +223,11 @@ function computeNtCoverage(witnesses, witnessTexts, liste) {
         listeInWindow.length > 0
           ? Math.round((listeMissing.length / listeInWindow.length) * 1000) / 10
           : 0,
+    },
+    hand_curated_uncials: {
+      count: witnesses.filter((w) => /^0\d$/.test(w.ga_number)).length,
+      witnesses: witnesses.filter((w) => /^0\d$/.test(w.ga_number)).map((w) => w.ga_number),
+      note: "Gregory-Aland uncials from scripts/uncial-seed.json — not in Liste papyri export",
     },
     per_witness: perWitness,
   };

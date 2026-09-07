@@ -139,7 +139,7 @@ export default function HomeTimeline() {
               className={`${styles.corpusBtn} ${!isQuran && !isNagHammadi ? styles.corpusActive : ""}`}
               onClick={() => switchCorpus("nt")}
             >
-              Greek NT (1–300 CE)
+              Greek NT ({TIMELINE_START}–{TIMELINE_END} CE)
             </button>
             <button
               type="button"
@@ -355,8 +355,8 @@ export default function HomeTimeline() {
             </p>
             <p className={styles.emptyHint}>
               Try another year or clear search filters. Dates are ranges — a
-              witness dated IV CE (300–399) overlaps year 300 at the boundary
-              only.
+              witness dated IV CE (300–399) overlaps years 300–399, not a single
+              point year.
             </p>
           </div>
         )}
@@ -392,7 +392,7 @@ export default function HomeTimeline() {
                 NTVMR
               </a>
               , INTF, or ECM. v1 covers {TIMELINE_START}–{TIMELINE_END} CE Greek
-              NT papyri.
+              NT witnesses (papyri + select uncials).
             </>
           )}
         </p>

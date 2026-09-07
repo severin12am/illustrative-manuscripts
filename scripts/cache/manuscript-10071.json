@@ -1,0 +1,168 @@
+{
+  "status": "success",
+  "data": {
+    "manuscript": {
+      "docID": 10071,
+      "columns": {
+        "columnsMin": 1,
+        "content": 1
+      },
+      "groupID": "",
+      "primaryName": "P71",
+      "shelfInstances": {
+        "shelfInstance": {
+          "institution": {
+            "country": "United Kingdom",
+            "instID": 499,
+            "nameCustom": "",
+            "geoLocator": "",
+            "name": "Bodleian Art, Archaeology and Ancient World Library",
+            "place": "Oxford",
+            "logoURL": "https://pbs.twimg.com/profile_images/1789959363588763648/0XlnKdqo_400x400.png",
+            "url": "https://www.bodleian.ox.ac.uk/libraries/art"
+          },
+          "leavesDescription": "1Frg",
+          "shelfID": 6100,
+          "originYearDescription": "IV",
+          "pages": {
+            "count": 0
+          },
+          "manuscripts": {
+            "count": 0
+          },
+          "formerGANumber": "",
+          "leavesCount": 0,
+          "shelfNumber": "P. Oxy. 2385",
+          "contentOverview": "Mt 19,10-11.17-18"
+        }
+      },
+      "userID": "",
+      "v11n": "",
+      "originYear": {
+        "late": 399,
+        "early": 300,
+        "content": "IV"
+      },
+      "leavesDescription": "1 Frg",
+      "pages": {
+        "count": 2,
+        "page": [
+          {
+            "biblicalContent": "Matt 19:10-11",
+            "images": {
+              "image": [
+                {
+                  "shelfID": 0,
+                  "accessLevel": 1,
+                  "userName": "",
+                  "uri": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                  "protectLevel": 0,
+                  "instID": 49,
+                  "shelfNumberPartID": "",
+                  "protected": true,
+                  "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10071/10/20",
+                  "attribution": "<a target=\"_blank\" href=\"http://ntvmr.uni-muenster.de/liste\"><div>Images ©<br/>The Holding Institution</div></a>&#x2028;&#x2028;&nbsp;&#x2028;&#x2028;<a target=\"_blank\" href=\"http://egora.uni-muenster.de/intf/\"><div>Photos Digitized by<br/>INTF for Research Purposes</div></a>",
+                  "thumbURL": "https://ntmss.info/images/thumbs/10071/10_49_20.jpg",
+                  "webFriendlyURL": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                  "surrID": 20
+                },
+                {
+                  "instID": 49,
+                  "shelfID": 0,
+                  "shelfNumberPartID": "",
+                  "accessLevel": 0,
+                  "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10071/10/30",
+                  "attribution": "<a target=\"_blank\" href=\" http://163.1.169.40/cgi-bin/library?a=p&p=home&l=en&w=utf-8 \"><div>Images©<br/> Courtesy of the Oxford Imaging Papyri Project </div></a>",
+                  "thumbURL": "https://ntmss.info/images/thumbs/10071/10_49_30.jpg",
+                  "userName": "",
+                  "uri": "https://ntmss.info/images/webfriendly/10071/10071x00010Xa_INTF.jpg",
+                  "webFriendlyURL": "https://ntmss.info/images/webfriendly/10071/10071x00010Xa_INTF.jpg",
+                  "surrID": 30,
+                  "protectLevel": 0
+                }
+              ]
+            },
+            "shelfID": 6100,
+            "shelfFolioNums": "",
+            "sortOrder": "00010",
+            "folio": "001r",
+            "indexContent": "Matt 19:10-11",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10071&pageID=10&format=xhtml"
+              }
+            },
+            "pageID": 10,
+            "indexedBy": "MF"
+          },
+          {
+            "biblicalContent": "Matt 19:17-18",
+            "images": {
+              "image": [
+                {
+                  "shelfID": 0,
+                  "accessLevel": 1,
+                  "userName": "",
+                  "uri": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                  "protectLevel": 0,
+                  "instID": 49,
+                  "shelfNumberPartID": "",
+                  "protected": true,
+                  "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10071/20/20",
+                  "attribution": "<a target=\"_blank\" href=\"http://ntvmr.uni-muenster.de/liste\"><div>Images ©<br/>The Holding Institution</div></a>&#x2028;&#x2028;&nbsp;&#x2028;&#x2028;<a target=\"_blank\" href=\"http://egora.uni-muenster.de/intf/\"><div>Photos Digitized by<br/>INTF for Research Purposes</div></a>",
+                  "thumbURL": "https://ntmss.info/images/thumbs/10071/20_49_20.jpg",
+                  "webFriendlyURL": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                  "surrID": 20
+                },
+                {
+                  "instID": 49,
+                  "shelfID": 0,
+                  "shelfNumberPartID": "",
+                  "accessLevel": 0,
+                  "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10071/20/30",
+                  "attribution": "<a target=\"_blank\" href=\" http://163.1.169.40/cgi-bin/library?a=p&p=home&l=en&w=utf-8 \"><div>Images©<br/> Courtesy of the Oxford Imaging Papyri Project </div></a>",
+                  "thumbURL": "https://ntmss.info/images/thumbs/10071/20_49_30.jpg",
+                  "userName": "",
+                  "uri": "https://ntmss.info/images/webfriendly/10071/10071x00020Xa_INTF.jpg",
+                  "webFriendlyURL": "https://ntmss.info/images/webfriendly/10071/10071x00020Xa_INTF.jpg",
+                  "surrID": 30,
+                  "protectLevel": 0
+                }
+              ]
+            },
+            "shelfID": 6100,
+            "shelfFolioNums": "",
+            "sortOrder": "00020",
+            "folio": "001v",
+            "indexContent": "Matt 19:17-18",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10071&pageID=20&format=xhtml"
+              }
+            },
+            "pageID": 20,
+            "indexedBy": "MF"
+          }
+        ]
+      },
+      "gaNum": "P71",
+      "leaves": {
+        "leavesCount": 1,
+        "content": "1 Frg"
+      },
+      "width": {
+        "widthMin": 150
+      },
+      "lang": "g",
+      "contentOverview": "e: Mt",
+      "lineCount": {
+        "lineCountMax": 32,
+        "lineCountMin": 5,
+        "content": "5 (30-32)"
+      },
+      "height": {
+        "heightMin": 270
+      }
+    }
+  }
+}

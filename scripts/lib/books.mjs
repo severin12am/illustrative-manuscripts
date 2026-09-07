@@ -64,6 +64,11 @@ export const PHOTO_FOCUS = {
   P113: [{ book: 45, chapter: 2, verseStart: 29, verseEnd: 29 }],
   P114: [{ book: 58, chapter: 1, verseStart: 7, verseEnd: 12 }],
   P118: [{ book: 45, chapter: 15, verseStart: 26, verseEnd: 33 }],
+  "01": [{ book: 40, chapter: 6, verseStart: 4, verseEnd: 24 }],
+  "03": [
+    { book: 53, chapter: 3, verseStart: 11, verseEnd: 18 },
+    { book: 58, chapter: 1, verseStart: 1, verseEnd: 2 },
+  ],
 };
 
 export const MAX_INITIAL_VERSES = 12;

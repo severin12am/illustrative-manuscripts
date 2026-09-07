@@ -1,0 +1,137 @@
+{
+  "status": "success",
+  "data": {
+    "manuscript": {
+      "docID": 10028,
+      "columns": {
+        "columnsMin": 1,
+        "content": 1
+      },
+      "groupID": "",
+      "primaryName": "P28",
+      "shelfInstances": {
+        "shelfInstance": {
+          "institution": {
+            "country": "USA",
+            "instID": 532,
+            "nameCustom": "",
+            "geoLocator": "",
+            "name": "Collection of Gifford Combs",
+            "place": "Los Angeles, CA",
+            "logoURL": "",
+            "url": ""
+          },
+          "leavesDescription": "1 Frg",
+          "shelfID": 6200,
+          "originYearDescription": "III",
+          "pages": {
+            "count": 0
+          },
+          "manuscripts": {
+            "count": 0
+          },
+          "formerGANumber": "",
+          "leavesCount": 0,
+          "shelfNumber": "Pap.2",
+          "contentOverview": "J 6,8-12; 6,17-22"
+        }
+      },
+      "userID": "",
+      "v11n": "",
+      "originYear": {
+        "late": 299,
+        "early": 200,
+        "content": "III"
+      },
+      "leavesDescription": "1 Frg",
+      "pages": {
+        "count": 2,
+        "page": [
+          {
+            "biblicalContent": "John 6:8-12",
+            "images": {
+              "image": {
+                "shelfID": 0,
+                "accessLevel": 1,
+                "userName": "",
+                "uri": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "protectLevel": 0,
+                "instID": 49,
+                "shelfNumberPartID": "",
+                "protected": true,
+                "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10028/10/10",
+                "attribution": "<a target=\"_blank\" href=\"http://ntvmr.uni-muenster.de/liste\"><div>Images ©<br/>The Holding Institution</div></a>&#x2028;&#x2028;&nbsp;&#x2028;&#x2028;<a target=\"_blank\" href=\"http://egora.uni-muenster.de/intf/\"><div>Photos Digitized by<br/>INTF for Research Purposes</div></a>\n<a target=\"_blank\" href=\"http://www.csntm.org/manuscript/View/GA_P28\"><div>External Images by<br/>CSNTM</div></a>",
+                "thumbURL": "https://ntmss.info/images/thumbs/10028/10_49_10.jpg",
+                "webFriendlyURL": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "surrID": 10
+              }
+            },
+            "shelfID": 6200,
+            "shelfFolioNums": "",
+            "sortOrder": "00010",
+            "folio": "1r",
+            "indexContent": "John 6:8-12",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10028&pageID=10&format=xhtml"
+              }
+            },
+            "pageID": 10,
+            "indexedBy": "ECM"
+          },
+          {
+            "biblicalContent": "John 6:17-22",
+            "images": {
+              "image": {
+                "shelfID": 0,
+                "accessLevel": 1,
+                "userName": "",
+                "uri": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "protectLevel": 0,
+                "instID": 49,
+                "shelfNumberPartID": "",
+                "protected": true,
+                "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10028/20/10",
+                "attribution": "<a target=\"_blank\" href=\"http://ntvmr.uni-muenster.de/liste\"><div>Images ©<br/>The Holding Institution</div></a>&#x2028;&#x2028;&nbsp;&#x2028;&#x2028;<a target=\"_blank\" href=\"http://egora.uni-muenster.de/intf/\"><div>Photos Digitized by<br/>INTF for Research Purposes</div></a>\n<a target=\"_blank\" href=\"http://www.csntm.org/manuscript/View/GA_P28\"><div>External Images by<br/>CSNTM</div></a>",
+                "thumbURL": "https://ntmss.info/images/thumbs/10028/20_49_10.jpg",
+                "webFriendlyURL": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "surrID": 10
+              }
+            },
+            "shelfID": 6200,
+            "shelfFolioNums": "",
+            "sortOrder": "00020",
+            "folio": "1v",
+            "indexContent": "John 6:17-22",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10028&pageID=20&format=xhtml"
+              }
+            },
+            "pageID": 20,
+            "indexedBy": "ECM"
+          }
+        ]
+      },
+      "gaNum": "P28",
+      "leaves": {
+        "leavesCount": 1,
+        "content": "1 Frg"
+      },
+      "width": {
+        "widthMin": 130
+      },
+      "lang": "g",
+      "contentOverview": "e: J",
+      "lineCount": {
+        "lineCountMax": 26,
+        "lineCountMin": 11,
+        "content": "11r, 12v (25-26)"
+      },
+      "height": {
+        "heightMax": 230,
+        "heightMin": 220
+      }
+    }
+  }
+}

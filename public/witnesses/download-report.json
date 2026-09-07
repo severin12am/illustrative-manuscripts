@@ -47,19 +47,15 @@
     "P49",
     "P70",
     "P71",
+    "P77",
+    "P81",
     "P89",
     "P102",
-    "P123"
+    "P123",
+    "P126",
+    "03"
   ],
   "fail": [
-    {
-      "ga": "P77",
-      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/b/bd/P077-Mat-23_30-34-POxy4405-II-III.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-    },
-    {
-      "ga": "P81",
-      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/0/02/Trieste%2C_Property_S._Daris_Ms_Papyrus_No_2_%28Papyrus_81%29_recto_1_Peter_3%2C_4-12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-    },
     {
       "ga": "P86",
       "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/4/43/P086-Mat-5_13-16-IV.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
@@ -73,8 +69,8 @@
       "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/f/fd/Oxford%2C_Sackler_Library_Ms_P._Oxy._4803_%28Papyrus_120%29_recto_John_1%2C_25-28%3B_33-34.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     },
     {
-      "ga": "P126",
-      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/c/c8/Florence%2C_Papyrological_Institute_%22G._Vitelli%22_Ms_PSI_XV_1497_-_PSI_inv._2176_%28Papyrus_126%29_recto_Heb_13%2C_12-13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      "ga": "01",
+      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/8/81/Sinaiticus_gospod.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     }
   ]
 }

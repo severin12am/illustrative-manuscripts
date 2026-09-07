@@ -17,7 +17,8 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const CACHE = join(__dirname, "cache");
 const OUT = join(__dirname, "../src/data");
-const WINDOW = [1, 300];
+const WINDOW = [1, 400];
+const UNCIAL_SEED = join(__dirname, "uncial-seed.json");
 
 const LISTE_LIVE =
   "https://ntvmr.uni-muenster.de/community/vmr/api/metadata/liste/search/?docID=10000-19999&format=json&detail=document&limit=500";
@@ -230,6 +231,45 @@ function witnessFromListe(doc, detail) {
   };
 }
 
+function loadUncialWitnesses() {
+  if (!existsSync(UNCIAL_SEED)) return [];
+  const seed = JSON.parse(readFileSync(UNCIAL_SEED, "utf8"));
+  return (seed.witnesses || []).map((entry) => ({
+    id: entry.id,
+    ga_number: entry.ga_number,
+    traditional_name: entry.traditional_name,
+    aliases: entry.aliases,
+    corpus: "nt",
+    book_category: entry.book_category || "all",
+    language: "Greek",
+    material: "parchment",
+    contents: entry.contents,
+    date_start: entry.date_start,
+    date_end: entry.date_end,
+    date_label: entry.date_label,
+    date_note: entry.date_note,
+    dating_method: "paleography",
+    dating_source: entry.dating_source,
+    find_place: entry.find_place,
+    find_year_or_note: entry.find_year_or_note,
+    current_institution: entry.current_institution,
+    current_shelfmark: entry.current_shelfmark,
+    image_policy: "link_only",
+    hosted_image: null,
+    image_attribution: null,
+    source_page_url: entry.source_page_url,
+    ntvmr_url: entry.ntvmr_url,
+    csntm_url: entry.csntm_url,
+    cntr_url: entry.cntr_url,
+    docID: entry.docID,
+    translation: entry.translation,
+    modern_base_text: "SBLGNT / SR GNT (CNTR, CC BY 4.0)",
+    known_variants: entry.known_variants || [],
+    bibliography: entry.bibliography || [],
+    license_note: entry.license_note,
+  }));
+}
+
 function attachCommonsImages(witnesses) {
   const mapPath = join(__dirname, "commons-images.json");
   const attrDir = join(__dirname, "../public/witnesses");
@@ -308,11 +348,20 @@ async function main() {
       return witnessFromListe(doc, detail);
     });
 
+  const uncials = loadUncialWitnesses();
+  const gaSeen = new Set(witnesses.map((w) => w.ga_number));
+  for (const u of uncials) {
+    if (!gaSeen.has(u.ga_number)) witnesses.push(u);
+  }
+  witnesses.sort(
+    (a, b) => a.date_start - b.date_start || a.ga_number.localeCompare(b.ga_number)
+  );
+
   witnesses = attachCommonsImages(witnesses);
 
   const withImages = witnesses.filter((w) => w.hosted_image).length;
   const header = `/**
- * Generated ${new Date().toISOString().split("T")[0]} from INTF Liste (cached) + NTVMR manuscript cache.
+ * Generated ${new Date().toISOString().split("T")[0]} from INTF Liste (cached) + uncial seed + NTVMR cache.
  * Window: ${WINDOW[0]}–${WINDOW[1]} CE overlap. ${witnesses.length} witnesses, ${withImages} with Commons images.
  * Regenerate: node scripts/generate-data.mjs
  */
@@ -346,7 +395,7 @@ export function getWitnessById(id: string): Witness | undefined {
         window: WINDOW,
         count: witnesses.length,
         with_commons_images: withImages,
-        source: "INTF NTVMR Liste (cached)",
+        source: "INTF NTVMR Liste (cached) + scripts/uncial-seed.json",
         witnesses,
       },
       null,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T09:02:32.872Z",
+  "generated_at": "2026-09-07T18:09:45.825Z",
   "sources": {
     "witness_texts": "src/data/witness-texts.json",
     "cntr_overflow": "public/cntr-texts/*.json",
@@ -8,8 +8,8 @@
     "intentional_tags": "src/data/intentional-tags.json"
   },
   "greek_nt": {
-    "witness_count": 94,
-    "cntr_transcription_count": 84,
+    "witness_count": 108,
+    "cntr_transcription_count": 89,
     "cntr_missing": [
       "P103",
       "P16",
@@ -20,41 +20,58 @@
       "P10",
       "P50",
       "P62",
-      "P7"
+      "P7",
+      "P99",
+      "P105",
+      "P112",
+      "P127",
+      "P140",
+      "P54",
+      "P56",
+      "P93",
+      "P94"
     ],
-    "leaf_image_count": 50,
-    "nonzero_extant_comparison_count": 84,
-    "lazy_load_overflow_files": 46,
+    "leaf_image_count": 55,
+    "nonzero_extant_comparison_count": 89,
+    "lazy_load_overflow_files": 50,
     "extant_word_tokens": {
       "definition": "Greek word tokens in extant (non-supplied) runs across all CNTR verses we store, including lazy-load overflow files. Lacunae and editorially supplied letters are excluded.",
-      "total": 90913
+      "total": 388200
     },
     "disagreements": {
       "definition": "Word-aligned variation units in extant runs vs SR GNT (CNTR), using scripts/lib/variant-classify.mjs. Lacunae and reconstructed supplied text are not counted. Intentional-vs-error labels are not assigned in this mechanical pass.",
       "base_text": "SR GNT",
-      "total": 8878,
+      "total": 37592,
       "unit": "variation units (word-aligned disagreements; spelling-only differences count as orthography units)",
       "by_kind": {
-        "substitution": 3953,
-        "orthography": 3365,
-        "omission": 655,
-        "addition": 792,
-        "transposition": 113
+        "substitution": 13380,
+        "orthography": 17768,
+        "omission": 2550,
+        "addition": 3530,
+        "transposition": 364
       },
       "per_witness_median": 6,
-      "per_witness_max": 2679,
-      "witnesses_with_any": 81
+      "per_witness_max": 17562,
+      "witnesses_with_any": 86
     },
     "intl_liste_papyri": {
       "window": [
         1,
-        300
+        400
       ],
-      "liste_in_window": 94,
-      "included": 94,
+      "liste_in_window": 106,
+      "included": 106,
       "missing": [],
       "included_percent": 100,
       "missing_percent": 0
+    },
+    "hand_curated_uncials": {
+      "count": 2,
+      "witnesses": [
+        "03",
+        "01"
+      ],
+      "note": "Gregory-Aland uncials from scripts/uncial-seed.json — not in Liste papyri export"
     },
     "per_witness": [
       {
@@ -881,7 +898,7 @@
         "ga": "P77",
         "id": "p77",
         "cntr_transcription": true,
-        "leaf_image": false,
+        "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 164,
         "disagreements": 12,
@@ -926,6 +943,22 @@
           "substitution": 3,
           "orthography": 2,
           "addition": 1
+        }
+      },
+      {
+        "ga": "03",
+        "id": "03",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 136919,
+        "disagreements": 11117,
+        "disagreements_by_kind": {
+          "orthography": 6065,
+          "substitution": 3280,
+          "addition": 894,
+          "omission": 794,
+          "transposition": 84
         }
       },
       {
@@ -1019,7 +1052,7 @@
         "ga": "P126",
         "id": "p126",
         "cntr_transcription": true,
-        "leaf_image": false,
+        "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 21,
         "disagreements": 2,
@@ -1207,7 +1240,7 @@
         "ga": "P81",
         "id": "p81",
         "cntr_transcription": true,
-        "leaf_image": false,
+        "leaf_image": true,
         "nonzero_extant_comparison": true,
         "extant_word_tokens": 214,
         "disagreements": 15,
@@ -1281,13 +1314,160 @@
         "disagreements_by_kind": {
           "substitution": 1
         }
+      },
+      {
+        "ga": "P135",
+        "id": "p135",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 150,
+        "disagreements": 11,
+        "disagreements_by_kind": {
+          "substitution": 6,
+          "orthography": 4,
+          "addition": 1
+        }
+      },
+      {
+        "ga": "01",
+        "id": "01",
+        "cntr_transcription": true,
+        "leaf_image": true,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 159993,
+        "disagreements": 17562,
+        "disagreements_by_kind": {
+          "addition": 1842,
+          "substitution": 6127,
+          "orthography": 8325,
+          "omission": 1101,
+          "transposition": 167
+        }
+      },
+      {
+        "ga": "P99",
+        "id": "p99",
+        "cntr_transcription": false,
+        "leaf_image": false,
+        "nonzero_extant_comparison": false,
+        "extant_word_tokens": 0,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P105",
+        "id": "p105",
+        "cntr_transcription": false,
+        "leaf_image": false,
+        "nonzero_extant_comparison": false,
+        "extant_word_tokens": 0,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P112",
+        "id": "p112",
+        "cntr_transcription": false,
+        "leaf_image": false,
+        "nonzero_extant_comparison": false,
+        "extant_word_tokens": 0,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P127",
+        "id": "p127",
+        "cntr_transcription": false,
+        "leaf_image": false,
+        "nonzero_extant_comparison": false,
+        "extant_word_tokens": 0,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P140",
+        "id": "p140",
+        "cntr_transcription": false,
+        "leaf_image": false,
+        "nonzero_extant_comparison": false,
+        "extant_word_tokens": 0,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P21",
+        "id": "p21",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 80,
+        "disagreements": 9,
+        "disagreements_by_kind": {
+          "substitution": 5,
+          "addition": 1,
+          "orthography": 3
+        }
+      },
+      {
+        "ga": "P51",
+        "id": "p51",
+        "cntr_transcription": true,
+        "leaf_image": false,
+        "nonzero_extant_comparison": true,
+        "extant_word_tokens": 145,
+        "disagreements": 15,
+        "disagreements_by_kind": {
+          "orthography": 6,
+          "substitution": 9
+        }
+      },
+      {
+        "ga": "P54",
+        "id": "p54",
+        "cntr_transcription": false,
+        "leaf_image": false,
+        "nonzero_extant_comparison": false,
+        "extant_word_tokens": 0,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P56",
+        "id": "p56",
+        "cntr_transcription": false,
+        "leaf_image": false,
+        "nonzero_extant_comparison": false,
+        "extant_word_tokens": 0,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P93",
+        "id": "p93",
+        "cntr_transcription": false,
+        "leaf_image": false,
+        "nonzero_extant_comparison": false,
+        "extant_word_tokens": 0,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
+      },
+      {
+        "ga": "P94",
+        "id": "p94",
+        "cntr_transcription": false,
+        "leaf_image": false,
+        "nonzero_extant_comparison": false,
+        "extant_word_tokens": 0,
+        "disagreements": 0,
+        "disagreements_by_kind": {}
       }
     ],
     "intentional_tagging": {
       "definition": "Model-assisted error / intentional / uncertain labels on a subset of non-orthography variation units. Provisional hypotheses only — not ECM or NA judgments.",
-      "taggable_total": 5463,
+      "taggable_total": 19773,
       "tagged_count": 5463,
-      "coverage_percent": 100,
+      "coverage_percent": 27.6,
       "by_label": {
         "error": 2099,
         "intentional": 36,
@@ -1318,8 +1498,8 @@
     "kind": "substitution"
   },
   "home_stats": {
-    "greek_nt_witnesses": 94,
-    "disagreements_total": 8878,
+    "greek_nt_witnesses": 108,
+    "disagreements_total": 37592,
     "disagreements_label": "variation units vs SR GNT"
   }
 }

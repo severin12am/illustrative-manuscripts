@@ -1,0 +1,121 @@
+{
+  "_meta": {
+    "description": "Hand-curated Gregory-Aland uncials overlapping the Greek NT timeline window. Not in the Liste papyri export (docID 10000–19999)."
+  },
+  "witnesses": [
+    {
+      "id": "01",
+      "ga_number": "01",
+      "traditional_name": "Codex Sinaiticus",
+      "aliases": ["01", "א", "ℵ", "Sinaiticus", "Codex Sinaiticus", "Codex א"],
+      "book_category": "all",
+      "contents": "Complete Greek Bible (OT + NT) plus Epistle of Barnabas and Shepherd of Hermas; NT and much of OT extant",
+      "date_start": 325,
+      "date_end": 375,
+      "date_label": "IV (mid)",
+      "date_note": "Paleographic range IV century, commonly placed mid-4th c. (c. 330–360 CE in many handbooks). Liste and Tischendorf tradition; not a point date.",
+      "dating_source": "INTF Kurzgefasste Liste + scholarly consensus (paleography)",
+      "find_place": "Saint Catherine's Monastery, Mount Sinai, Egypt",
+      "find_year_or_note": "Discovered for Western scholarship by Constantin von Tischendorf, 1844 (monastery had long possessed the codex)",
+      "current_institution": "Dispersed: British Library (London), Universitätsbibliothek Leipzig, Saint Catherine's Monastery (Sinai), Russian National Library (few leaves)",
+      "current_shelfmark": "Add. MS 43725 (BL); Gr. 1 (Leipzig); etc.",
+      "source_page_url": "https://codexsinaiticus.org/en/",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=1",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_01",
+      "cntr_url": "https://greekcntr.org/manuscripts/01",
+      "docID": 1,
+      "translation": "\"Our Father which art in heaven, Hallowed be thy name.\" (Matt 6:9, KJV — Lord's Prayer leaf)",
+      "known_variants": [
+        {
+          "locus": "Mark 16:9–20",
+          "witness_reading": "Longer ending present",
+          "modern_reading": "Often bracketed in modern editions",
+          "significance": "One of the witnesses for the long ending of Mark.",
+          "base_text": "SBLGNT"
+        },
+        {
+          "locus": "John 7:53–8:11",
+          "witness_reading": "Pericope adulterae absent",
+          "modern_reading": "Bracketed/omitted in SBLGNT",
+          "significance": "Alexandrian omission pattern shared with Vaticanus and early papyri.",
+          "base_text": "SBLGNT"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Codex Sinaiticus Project",
+          "url": "https://codexsinaiticus.org/en/",
+          "note": "BL / Leipzig / Sinai digital edition"
+        },
+        {
+          "title": "INTF Liste — 01",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=01",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "CNTR — 01",
+          "url": "https://greekcntr.org/manuscripts/01"
+        }
+      ],
+      "license_note": "Metadata compiled from INTF and public catalogues. Photos © holding institutions unless a Commons image is shown.",
+      "commons_key": "01"
+    },
+    {
+      "id": "03",
+      "ga_number": "03",
+      "traditional_name": "Codex Vaticanus",
+      "aliases": ["03", "B", "Vaticanus", "Codex Vaticanus", "Codex B"],
+      "book_category": "all",
+      "contents": "Greek Bible (LXX + NT): Matt–2 Thess, Heb 1:1–9:13, Jas–Jude; lacks Pastorals, Phlm, Rev; Heb 9:14+ in later minuscule hand",
+      "date_start": 300,
+      "date_end": 399,
+      "date_label": "IV",
+      "date_note": "INTF Liste: IV (300–399 CE). Paleographic range for the original majuscule hand; not a point date.",
+      "dating_source": "INTF Kurzgefasste Liste via NTVMR",
+      "find_place": "Provenance before Vatican Library is unknown",
+      "find_year_or_note": "In the Vatican Library by at least the 15th century (catalogued 1475)",
+      "current_institution": "Biblioteca Apostolica Vaticana, Vatican City",
+      "current_shelfmark": "Vat. gr. 1209",
+      "source_page_url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209",
+      "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=3",
+      "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_03",
+      "cntr_url": "https://greekcntr.org/manuscripts/03",
+      "docID": 3,
+      "translation": "\"God, who at sundry times and in divers manners spake in time past unto the fathers by the prophets…\" (Heb 1:1, KJV)",
+      "known_variants": [
+        {
+          "locus": "Text-type",
+          "witness_reading": "Alexandrian (with P75, P66 cluster)",
+          "modern_reading": "SBLGNT / SR GNT",
+          "significance": "Benchmark Alexandrian majuscule; close to early papyri in many readings.",
+          "base_text": "SR GNT"
+        },
+        {
+          "locus": "John 7:53–8:11",
+          "witness_reading": "Pericope adulterae absent",
+          "modern_reading": "Bracketed/omitted in SBLGNT",
+          "significance": "Shared omission with Sinaiticus and 𝔓66/𝔓75.",
+          "base_text": "SBLGNT"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Vatican Library — Vat. gr. 1209",
+          "url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209",
+          "note": "Official IIIF viewer — link only, not rehosted"
+        },
+        {
+          "title": "INTF Liste — 03",
+          "url": "https://ntvmr.uni-muenster.de/liste/?gaNum=03",
+          "note": "Kurzgefasste Liste"
+        },
+        {
+          "title": "CNTR — 03",
+          "url": "https://greekcntr.org/manuscripts/03"
+        }
+      ],
+      "license_note": "Metadata from INTF Liste. Vatican facsimile images are link-only; Commons PD plate shown when available.",
+      "commons_key": "03"
+    }
+  ]
+}

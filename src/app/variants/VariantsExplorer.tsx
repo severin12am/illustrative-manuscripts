@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { variantIndex } from "@/data/variant-index";
 import { coverage } from "@/data/coverage";
+import { TIMELINE_START, TIMELINE_END } from "@/data/witnesses";
 import type { VariantIndexEntry } from "@/types/variantIndex";
 import {
   kindLabel,
@@ -81,7 +82,7 @@ export default function VariantsExplorer() {
   return (
     <main className={styles.variantsExplorer}>
       <header className={styles.hero}>
-        <p className={styles.eyebrow}>Greek NT · 1–300 CE</p>
+        <p className={styles.eyebrow}>Greek NT · {TIMELINE_START}–{TIMELINE_END} CE</p>
         <h1 className={styles.title}>Variant explorer</h1>
         <p className={styles.lead}>
           A browsable census of{" "}
@@ -274,7 +275,7 @@ export default function VariantsExplorer() {
       <aside className={styles.disclaimer}>
         <h2>What this is — and is not</h2>
         <p>
-          These are extant-letter disagreements in Greek NT papyri (1–300 CE)
+          These are extant-letter disagreements in Greek NT witnesses ({TIMELINE_START}–{TIMELINE_END} CE)
           with CNTR transcriptions, compared word-by-word to SR GNT. We do not
           claim a full-tradition census (~5,700+ manuscripts) or Peter
           Gurry&apos;s ~500,000-reading extrapolation. ECM/NA judgments and

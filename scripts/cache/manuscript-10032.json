@@ -1,0 +1,136 @@
+{
+  "status": "success",
+  "data": {
+    "manuscript": {
+      "docID": 10032,
+      "columns": {
+        "columnsMin": 1,
+        "content": 1
+      },
+      "groupID": "",
+      "primaryName": "P32",
+      "shelfInstances": {
+        "shelfInstance": {
+          "institution": {
+            "country": "United Kingdom",
+            "instID": 246,
+            "nameCustom": "",
+            "geoLocator": "",
+            "name": "John Rylands University Library of Manchester",
+            "place": "Manchester",
+            "logoURL": "http://ntmss.info/instlogos/JohnRylandUL.gif",
+            "url": "http://www.library.manchester.ac.uk/eresources/imagecollections/university/papyrus/"
+          },
+          "leavesDescription": "1 Frg",
+          "shelfID": 30,
+          "originYearDescription": "III (A)",
+          "pages": {
+            "count": 0
+          },
+          "manuscripts": {
+            "count": 0
+          },
+          "formerGANumber": "",
+          "leavesCount": 0,
+          "shelfNumber": "Gr. P. 5",
+          "contentOverview": "Tt 1,11-15; 2,3-8"
+        }
+      },
+      "userID": "",
+      "v11n": "",
+      "originYear": {
+        "late": 225,
+        "early": 200,
+        "content": "III (A)"
+      },
+      "leavesDescription": "1 Frg",
+      "pages": {
+        "count": 2,
+        "page": [
+          {
+            "biblicalContent": "Titus 1:11-15",
+            "images": {
+              "image": {
+                "shelfID": 0,
+                "accessLevel": 1,
+                "userName": "",
+                "uri": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "protectLevel": 0,
+                "instID": 49,
+                "shelfNumberPartID": "",
+                "protected": true,
+                "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10032/10/10",
+                "attribution": "<a target=\"_blank\" href=\"https://www.manchester.ac.uk/\"><img src=\" https://assets.manchester.ac.uk/corporate/images/design/logo-university-of-manchester.png\"><div> Images©<br/>University of Manchester</div></a>",
+                "thumbURL": "https://ntmss.info/images/thumbs/10032/10_49_10.jpg",
+                "webFriendlyURL": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "surrID": 10
+              }
+            },
+            "shelfID": 30,
+            "shelfFolioNums": "001r",
+            "sortOrder": "00010",
+            "folio": "001r",
+            "indexContent": "Titus 1:11-15",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10032&pageID=10&format=xhtml"
+              }
+            },
+            "pageID": 10,
+            "indexedBy": "MF"
+          },
+          {
+            "biblicalContent": "Titus 2:3-8",
+            "images": {
+              "image": {
+                "shelfID": 0,
+                "accessLevel": 1,
+                "userName": "",
+                "uri": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "protectLevel": 0,
+                "instID": 49,
+                "shelfNumberPartID": "",
+                "protected": true,
+                "viewURL": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10032/20/10",
+                "attribution": "<a target=\"_blank\" href=\"https://www.manchester.ac.uk/\"><img src=\" https://assets.manchester.ac.uk/corporate/images/design/logo-university-of-manchester.png\"><div> Images©<br/>University of Manchester</div></a>",
+                "thumbURL": "https://ntmss.info/images/thumbs/10032/20_49_10.jpg",
+                "webFriendlyURL": "https://ntvmr.uni-muenster.de/community/images/protected1.png",
+                "surrID": 10
+              }
+            },
+            "shelfID": 30,
+            "shelfFolioNums": "001v",
+            "sortOrder": "00020",
+            "folio": "001v",
+            "indexContent": "Titus 2:3-8",
+            "transcriptions": {
+              "transcription": {
+                "uri": "http://localhost:8080/community/vmr/api/transcript/get/?docid=10032&pageID=20&format=xhtml"
+              }
+            },
+            "pageID": 20,
+            "indexedBy": "MF"
+          }
+        ]
+      },
+      "gaNum": "P32",
+      "leaves": {
+        "leavesCount": 1,
+        "content": "1 Frg"
+      },
+      "width": {
+        "widthMin": 145
+      },
+      "lang": "g",
+      "contentOverview": "p: Tt",
+      "lineCount": {
+        "lineCountMax": 27,
+        "lineCountMin": 13,
+        "content": "13r, 14v (26-27)"
+      },
+      "height": {
+        "heightMin": 215
+      }
+    }
+  }
+}
