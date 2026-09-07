@@ -8,7 +8,8 @@
       "Holding-library catalogs and peer-reviewed C14 (Oxford, etc.)",
       "Fedeli 2011; Sadeghi & Goudarzi 2012; Déroche 2014"
     ],
-    "generated_by": "Hand-curated seed — verify against corpuscoranicum.org before bulk expansion"
+    "generated_by": "Hand-curated seed — verify against corpuscoranicum.org before bulk expansion",
+    "witness_count_note": "19 witnesses as of 2026-09-07 (expanded from 15; removed unverified Gotha A 409; added Berlin 4313, David Collection, 328c, CBL Is 1615I, Leiden 14.545c)"
   },
   "manuscripts": [
     {
@@ -454,15 +455,14 @@
       "library_url": "https://www.universiteitleiden.nl/en/library/special-collections",
       "image": {
         "policy": "iiif",
-        "iiif_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b84152099/manifest.json",
-        "iiif_image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b84152099/f1/full/800,/0/default.jpg",
-        "viewer_url": "https://gallica.bnf.fr/ark:/12148/btv1b84152099",
+        "iiif_manifest": "https://digitalcollections.universiteitleiden.nl/iiif_manifest/item:1562337/manifest",
+        "iiif_image_url": "https://iiif.universiteitleiden.nl/iiif/2/hdl:1887.1%252Fitem:1562338/full/800,/0/default.jpg",
+        "viewer_url": "https://digitalcollections.universiteitleiden.nl/view/item/1562337",
         "attribution": {
-          "institution": "BnF Gallica (codex Arabe 331)",
-          "license": "Gallica terms — IIIF display",
-          "license_url": "https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica",
-          "viewer_url": "https://gallica.bnf.fr/ark:/12148/btv1b84152099",
-          "note": "Leiden Or. 14.545b is a dispersed folio of BnF Arabe 331; image shows Paris fol. 1r",
+          "institution": "Leiden University Libraries (public domain)",
+          "license": "Public domain — IIIF display",
+          "viewer_url": "https://digitalcollections.universiteitleiden.nl/view/item/1562337",
+          "note": "Or. 14.545b fol. 1a via Leiden IIIF; dispersed folio of BnF Arabe 331 codex",
           "attribution_required": true
         }
       },
@@ -477,34 +477,234 @@
       "bibliography": []
     },
     {
-      "id": "gotha-orient-a-409",
-      "catalog_id": "Gotha orient. A 409",
-      "traditional_name": "Gotha orient. A 409",
+      "id": "berlin-or-fol-4313",
+      "catalog_id": "SBB Ms. or. fol. 4313",
+      "traditional_name": "Berlin Ḥijāzī Qurʾān (Ms. or. fol. 4313)",
       "script": "hijazi",
       "material": "parchment",
+      "date_ce_start": 606,
+      "date_ce_end": 652,
+      "date_ah_start": 15,
+      "date_ah_end": 30,
+      "date_label": "C14 15–30 AH / 606–652 CE (95.4%)",
+      "date_note": "Corpus Coranicum / Coranica radiocarbon on parchment (two samples). Counterpart to Cairo Dar al-Kutub Ms. 247 Maṣāḥif.",
+      "dating_method": "radiocarbon + palaeography",
+      "dating_source": "Corpus Coranicum; Marx & Jocham; JQS 2025",
+      "contents": "Q 4:138–5:146 (7 parchment leaves; archaic rasm)",
+      "find_place": "al-Fusṭāṭ (Egypt)",
+      "current_institution": "Staatsbibliothek zu Berlin",
+      "current_shelfmark": "Ms. or. fol. 4313",
+      "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
+      "library_url": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN644463252",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://content.staatsbibliothek-berlin.de/dc/644463252/manifest",
+        "iiif_image_url": "https://content.staatsbibliothek-berlin.de/dc/644463252-0001/full/800,/0/default.jpg",
+        "viewer_url": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN644463252",
+        "attribution": {
+          "institution": "Staatsbibliothek zu Berlin",
+          "license": "IIIF display — SBB digitised collections",
+          "viewer_url": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN644463252",
+          "note": "Ms. or. fol. 4313 fol. 1r via SBB IIIF",
+          "attribution_required": true
+        }
+      },
+      "passages": [
+        {
+          "surah": 4,
+          "ayah_start": 138,
+          "ayah_end": 152,
+          "witness_label": "Standard rasm for verses on Berlin folio (Q 4:138–146 extant)",
+          "witness_source": "Corpus Coranicum; JQS 2025"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "An Early Ḥijāzī Qurʾān Fragment at the Dār al-Kutub and its Berlin Counterpart (JQS 2025)",
+          "url": "https://doi.org/10.3366/jqs.2025.0604"
+        }
+      ]
+    },
+    {
+      "id": "david-collection-86-2003",
+      "catalog_id": "David Collection 86/2003",
+      "traditional_name": "Copenhagen Ḥijāzī palimpsest (David Collection 86/2003)",
+      "script": "hijazi",
+      "material": "parchment",
+      "palimpsest": true,
       "date_ce_start": 632,
       "date_ce_end": 700,
       "date_ah_start": 1,
       "date_ah_end": 78,
-      "date_label": "7th century Hijazi (palaeography)",
-      "date_note": "Hijazi fragment in the Forschungsbibliothek Gotha.",
+      "date_label": "Mid–late 7th c. / 1st century AH (palaeography)",
+      "date_note": "Palimpsest leaf on display in Copenhagen; >30 sister leaves in Sanʿāʾ DAM collection. Upper text Q 2:282–286.",
       "dating_method": "palaeography",
-      "dating_source": "Gotha catalog",
-      "contents": "Qur'an fragment",
-      "find_place": "Egypt",
-      "current_institution": "Forschungsbibliothek Gotha",
-      "current_shelfmark": "orient. A 409",
+      "dating_source": "Corpus Coranicum; David Collection catalog",
+      "contents": "Q 2:282–286 (Hijazi palimpsest; upper text)",
+      "find_place": "Sanʿāʾ, Yemen (sister leaves); Copenhagen leaf on loan/display",
+      "current_institution": "The David Collection, Copenhagen",
+      "current_shelfmark": "86/2003",
       "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
-      "library_url": "https://www.uni-giessen.de/",
+      "library_url": "https://www.davidmus.dk/en/collections/islamic/manuscripts",
+      "commons_key": "david-collection-86-2003",
       "passages": [
         {
-          "surah": 3,
-          "ayah_start": 1,
-          "ayah_end": 15,
-          "witness_source": "Gotha catalog"
+          "surah": 2,
+          "ayah_start": 282,
+          "ayah_end": 286,
+          "witness_label": "Closing verses of al-Baqara on Copenhagen leaf",
+          "witness_source": "David Collection; Corpus Coranicum"
         }
       ],
       "bibliography": []
+    },
+    {
+      "id": "bnf-arabe-328c",
+      "catalog_id": "BnF Arabe 328c",
+      "traditional_name": "BnF Arabe 328c (Mingana 1572a codex join)",
+      "script": "hijazi",
+      "material": "parchment",
+      "date_ce_start": 632,
+      "date_ce_end": 660,
+      "date_ah_start": 1,
+      "date_ah_end": 38,
+      "date_label": "7th century Hijazi I (Fedeli 2011 codex join)",
+      "date_note": "16 folios (ff. 71–86) of Arabe 328; same codex as Mingana Islamic Arabic 1572a per Fedeli 2011 and Corpus Coranicum.",
+      "dating_method": "palaeography (codex attribution)",
+      "dating_source": "Fedeli 2011; Corpus Coranicum",
+      "contents": "Q 10:35–11:110; 20:99–23:27 (16 folios)",
+      "find_place": "al-Fusṭāṭ (Egypt)",
+      "current_institution": "Bibliothèque nationale de France",
+      "current_shelfmark": "Arabe 328c",
+      "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
+      "library_url": "https://gallica.bnf.fr/ark:/12148/btv1b8422966p",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8422966p/manifest.json",
+        "iiif_image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8422966p/f71/full/800,/0/default.jpg",
+        "viewer_url": "https://gallica.bnf.fr/ark:/12148/btv1b8422966p",
+        "attribution": {
+          "institution": "BnF Gallica",
+          "license": "Gallica terms — IIIF display",
+          "license_url": "https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica",
+          "viewer_url": "https://gallica.bnf.fr/ark:/12148/btv1b8422966p",
+          "note": "Arabe 328c opening fol. 71r via Gallica IIIF",
+          "attribution_required": true
+        }
+      },
+      "passages": [
+        {
+          "surah": 10,
+          "ayah_start": 35,
+          "ayah_end": 50,
+          "witness_label": "Standard rasm for verses on 328c leaves (Hijazi I)",
+          "witness_source": "BnF Déroche catalogue; Fedeli 2011"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Fedeli 2011 — Mingana 1572a / Arabe 328c codex",
+          "url": "https://etheses.bham.ac.uk/id/eprint/3036/"
+        }
+      ]
+    },
+    {
+      "id": "chester-beatty-is-1615i",
+      "catalog_id": "CBL Is 1615I",
+      "traditional_name": "Chester Beatty Hijazi Qurʾān (Is 1615I)",
+      "script": "hijazi",
+      "material": "parchment",
+      "date_ce_start": 675,
+      "date_ce_end": 719,
+      "date_ah_start": 44,
+      "date_ah_end": 96,
+      "date_label": "c. 675–725 CE (CBL); shown through 719 CE / ~96 AH",
+      "date_note": "32 Hijazi parchment folios (Q 28–48). CBL paleographic range overlaps 1–100 AH at 675–719 CE; upper bound clipped to window.",
+      "dating_method": "palaeography",
+      "dating_source": "Chester Beatty Library catalog",
+      "contents": "Q 28:6–48:24 (32 folios, Hijazi script with surah illumination)",
+      "find_place": "Arabian Peninsula or Syria (disputed)",
+      "current_institution": "Chester Beatty Library, Dublin",
+      "current_shelfmark": "Is 1615I",
+      "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
+      "library_url": "https://viewer.cbl.ie/viewer/image/Is_1615I/1/LOG_0000/",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://viewer.cbl.ie/viewer/api/v1/records/Is_1615I/manifest/",
+        "iiif_image_url": "https://viewer.cbl.ie/viewer/api/v1/records/Is_1615I/files/images/Is1615_I_01.jpg/full/800,/0/default.jpg",
+        "viewer_url": "https://viewer.cbl.ie/viewer/image/Is_1615I/1/LOG_0000/",
+        "attribution": {
+          "institution": "Chester Beatty Library",
+          "license": "CC BY 4.0 — IIIF display",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "viewer_url": "https://viewer.cbl.ie/viewer/image/Is_1615I/1/LOG_0000/",
+          "note": "Is 1615I fol. 1r via CBL IIIF (public domain)",
+          "attribution_required": true
+        }
+      },
+      "passages": [
+        {
+          "surah": 28,
+          "ayah_start": 6,
+          "ayah_end": 20,
+          "witness_label": "Opening of shown span on Is 1615I (standard rasm)",
+          "witness_source": "Chester Beatty catalog"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Chester Beatty — Folios from a Hijazi Qurʾān (Is 1615I)",
+          "url": "https://viewer.cbl.ie/viewer/image/Is_1615I/1/LOG_0000/"
+        }
+      ]
+    },
+    {
+      "id": "leiden-or-14-545c",
+      "catalog_id": "Leiden OR 14.545c",
+      "traditional_name": "Leiden OR 14.545c",
+      "script": "hijazi",
+      "material": "parchment",
+      "date_ce_start": 650,
+      "date_ce_end": 700,
+      "date_ah_start": 28,
+      "date_ah_end": 78,
+      "date_label": "C14 + palaeography; 28–78 AH overlap",
+      "date_note": "Single folio; C14 (Coranica) places parchment in 650–700 CE with high probability. Same codex family as BnF Arabe 331 per Marx & Jocham.",
+      "dating_method": "radiocarbon + palaeography",
+      "dating_source": "Marx & Jocham; Corpus Coranicum",
+      "contents": "Q 6:75–81 (single folio; codex join with BnF Arabe 331)",
+      "find_place": "al-Fusṭāṭ (Egypt)",
+      "current_institution": "Leiden University Library",
+      "current_shelfmark": "Or. 14.545c",
+      "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
+      "library_url": "https://digitalcollections.universiteitleiden.nl/view/item/1572332",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://digitalcollections.universiteitleiden.nl/iiif_manifest/item:1572332/manifest",
+        "iiif_image_url": "https://iiif.universiteitleiden.nl/iiif/2/hdl:1887.1%252Fitem:1572333/full/800,/0/default.jpg",
+        "viewer_url": "https://digitalcollections.universiteitleiden.nl/view/item/1572332",
+        "attribution": {
+          "institution": "Leiden University Libraries (public domain)",
+          "license": "Public domain — IIIF display",
+          "viewer_url": "https://digitalcollections.universiteitleiden.nl/view/item/1572332",
+          "note": "Or. 14.545c fol. 1a via Leiden IIIF",
+          "attribution_required": true
+        }
+      },
+      "passages": [
+        {
+          "surah": 6,
+          "ayah_start": 75,
+          "ayah_end": 81,
+          "witness_source": "Corpus Coranicum; Marx & Jocham 2019"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Radiocarbon (14C) Dating of Qurʾān Manuscripts (Der Islam 2019)",
+          "url": "https://doi.org/10.1515/islam-2019-0008"
+        }
+      ]
     },
     {
       "id": "mingana-1572b",
@@ -615,34 +815,40 @@
       "bibliography": []
     },
     {
-      "id": "cairo-dar-al-kutub-792",
-      "catalog_id": "Dar al-Kutub 792",
-      "traditional_name": "Cairo Dar al-Kutub 792",
+      "id": "dar-al-kutub-247-masahif",
+      "catalog_id": "Dar al-Kutub Ms. 247 Maṣāḥif",
+      "traditional_name": "Cairo Dar al-Kutub 247 Maṣāḥif",
       "script": "hijazi",
       "material": "parchment",
-      "date_ce_start": 632,
-      "date_ce_end": 700,
-      "date_ah_start": 1,
-      "date_ah_end": 78,
-      "date_label": "7th century Hijazi (catalog)",
-      "date_note": "Early Hijazi fragment in the Egyptian National Library.",
-      "dating_method": "palaeography",
-      "dating_source": "Dar al-Kutub catalog",
-      "contents": "Qur'an fragment",
-      "find_place": "Egypt",
+      "date_ce_start": 606,
+      "date_ce_end": 652,
+      "date_ah_start": 15,
+      "date_ah_end": 30,
+      "date_label": "1st century AH (Berlin C14 counterpart; palaeography)",
+      "date_note": "31 Cairo folios + 7 Berlin folios (Ms. or. fol. 4313). Cairo fragment lacks open IIIF; dating follows C14 on Berlin leaves (Corpus Coranicum / JQS 2025).",
+      "dating_method": "radiocarbon (counterpart) + palaeography",
+      "dating_source": "JQS 2025; Corpus Coranicum; Grohmann",
+      "contents": "Q 2–21 portions across 31 folios (archaic Ḥijāzī rasm; ~16% of Qurʾān text with Berlin join)",
+      "find_place": "al-Fusṭāṭ (Egypt)",
       "current_institution": "Dar al-Kutub al-Misriyya, Cairo",
-      "current_shelfmark": "Qur'an 792",
+      "current_shelfmark": "Ms. 247 Maṣāḥif",
       "corpus_coranicum_url": "https://corpuscoranicum.org/en/manuscripts",
       "library_url": "https://dar.bibalex.org/",
       "passages": [
         {
-          "surah": 8,
+          "surah": 2,
           "ayah_start": 1,
-          "ayah_end": 12,
-          "witness_source": "Dar al-Kutub catalog"
+          "ayah_end": 15,
+          "witness_label": "Standard rasm for early folio span (see Berlin 4313 for imaged counterpart)",
+          "witness_source": "JQS 2025; Corpus Coranicum"
         }
       ],
-      "bibliography": []
+      "bibliography": [
+        {
+          "title": "An Early Ḥijāzī Qurʾān Fragment at the Dār al-Kutub and its Berlin Counterpart (JQS 2025)",
+          "url": "https://doi.org/10.3366/jqs.2025.0604"
+        }
+      ]
     }
   ]
 }
