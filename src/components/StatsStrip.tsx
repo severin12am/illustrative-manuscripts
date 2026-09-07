@@ -10,15 +10,19 @@ export default function StatsStrip() {
       <p className={styles.text}>
         <strong>{home_stats.greek_nt_witnesses}</strong> Greek NT witnesses ·{" "}
         <strong>{home_stats.disagreements_total.toLocaleString()}</strong>{" "}
-        {home_stats.disagreements_label} (our CNTR slice, not a global census) ·{" "}
-        <Link href="/coverage/" className={styles.link}>
-          definition &amp; limits →
+        counted disagreements vs SR GNT in this slice —{" "}
+        <Link href="/variants/" className={styles.link}>
+          browse variants →
         </Link>
       </p>
       <p className={styles.sub}>
-        {greek_nt.extant_word_tokens.total.toLocaleString()} extant Greek word
-        tokens compared · {greek_nt.leaf_image_count}/{greek_nt.witness_count}{" "}
-        with leaf images
+        Not a full-tradition census (Ehrman/Gurry scale).{" "}
+        <Link href="/coverage/" className={styles.link}>
+          What we count &amp; what we don&apos;t →
+        </Link>
+        {" · "}
+        {greek_nt.extant_word_tokens.total.toLocaleString()} extant word tokens
+        compared
       </p>
     </aside>
   );

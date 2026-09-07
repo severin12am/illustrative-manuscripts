@@ -10,6 +10,7 @@ export default function SiteNav() {
         </Link>
         <div className={styles.links}>
           <Link href="/">Timeline</Link>
+          <Link href="/variants/">Variants</Link>
           <Link href="/coverage/">Coverage</Link>
         </div>
       </div>
