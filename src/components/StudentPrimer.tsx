@@ -87,8 +87,20 @@ export default function StudentPrimer({ compact = false }: Props) {
             Some well-known stories (e.g. the woman caught in adultery, John
             7:53–8:11) are <strong>whole blocks</strong> missing from early
             witnesses — they do not show up as neat rows in our word-level
-            census.             See <Link href="/famous/">Famous passages</Link> for those issues,
-            separate from the <Link href="/variants/">variant explorer</Link>.
+            census. See <Link href="/famous/">Famous passages</Link> for those
+            issues, separate from the <Link href="/variants/">variant explorer</Link>.
+          </dd>
+        </div>
+
+        <div className={styles.item}>
+          <dt>Qurʾān regional rasm (not Greek variants)</dt>
+          <dd>
+            Word-level Greek <Link href="/variants/">Variants</Link> count CNTR
+            disagreements in the NT. Early Qurʾān witnesses share one{" "}
+            <strong>Uthmanic Text Type</strong>; medieval sources record ~35–40
+            tiny regional <em>rasm</em> differences between Syria, Medina, Basra,
+            and Kufa — not alternate Qurans. See{" "}
+            <Link href="/quran/uthmani/">Uthmanic regional rasm</Link>.
           </dd>
         </div>
 

@@ -92,7 +92,9 @@ export default function CitePage() {
           witness slice to open <strong>SR GNT</strong> (Society of Biblical
           Literature Greek New Testament, from CNTR). Qurʾān and Nag Hammadi cards
           show catalogued witnesses but do not yet publish the same mechanical
-          census.
+          census. For regional <em>rasm</em> within the Uthmanic Text Type (~35–40
+          reports in published stemmatics), see{" "}
+          <Link href="/quran/uthmani/">Uthmanic regional rasm</Link>.
         </p>
         <dl className={styles.defList}>
           <div className={styles.defItem}>
@@ -460,12 +462,16 @@ export default function CitePage() {
             >
               corpuscoranicum.org
             </a>{" "}
-            for early Qurʾān manuscript cataloguing and bibliography.
+            for early Qurʾān manuscript cataloguing and bibliography. Our{" "}
+            <Link href="/quran/uthmani/">Uthmanic regional rasm</Link> page
+            summarizes Cook / Sidky stemmatics with curated examples.
           </li>
         </ol>
       </section>
 
       <footer className={styles.footer}>
+        <Link href="/quran/uthmani/">Uthmanic regional rasm →</Link>
+        {" · "}
         <Link href="/coverage/">Coverage &amp; scope →</Link>
         {" · "}
         <Link href="/variants/">Variant explorer →</Link>

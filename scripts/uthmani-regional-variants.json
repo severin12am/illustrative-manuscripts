@@ -1,0 +1,709 @@
+{
+  "_meta": {
+    "title": "Uthmanic regional rasm variants",
+    "definition": "Small consonantal/orthographic differences between the four ʿUthmānic regional exemplars (Syria/Ḥimṣ, Medina, Basra, Kufa) as recorded in medieval rasm literature and tested against early manuscript stemmatics — not alternate Qurans or qirāʾāt.",
+    "totals_note": "Michael Cook (2004) tallies 16 Syria-unique, 13 Syria+Medina vs Basra+Kufa, and 6 Kufa-unique variants (~35 total) in Graeco-Arabica 9–10. Marijn van Putten (*Quranic Arabic*) summarizes ~40 variants in the consonantal skeleton between regional codices. Hythem Sidky (JIQSA 5, 2020) confirms four ancestral nodes by manuscript phylogeny.",
+    "honest_disclaimer": "This table is illustrative of the class Cook and Sidky describe. A complete open digital census of every rasm report is still a scholarly dataset problem — we cite totals from published work; we have not re-counted or verified every report against every leaf in our corpus.",
+    "window_note": "Radiocarbon and palaeography place many of our Hijazi witnesses in or near the mid-7th-century canonization window. “Stable from ~650” means an early Uthmanic Text Type archetype, not zero scribal variation thereafter."
+  },
+  "scholarship": [
+    {
+      "label": "Michael Cook, “The stemma of the regional codices of the Koran” (Graeco-Arabica 9–10, 2004)",
+      "url": "https://doi.org/10.1163/9789004693623_009"
+    },
+    {
+      "label": "Hythem Sidky, “On the Regionality of Qurʾānic Codices” (JIQSA 5, 2020)",
+      "url": "https://doi.org/10.5913/jiqsa.5.2020.a005"
+    },
+    {
+      "label": "Marijn van Putten, *Quranic Arabic* (Cambridge, 2024) — ch. on Uthmanic stemmatics",
+      "url": "https://doi.org/10.1163/9789004693623_009"
+    },
+    {
+      "label": "Yasin Dutton on Codex Parisino-Petropolitanus & BL Or. 2165 (JQS)",
+      "url": "https://doi.org/10.3366/jqs.2001.3.1.71"
+    },
+    {
+      "label": "Corpus Coranicum — manuscript catalog (CC BY 4.0 metadata)",
+      "url": "https://corpuscoranicum.org/en/manuscripts"
+    }
+  ],
+  "stemma": {
+    "caption": "Uncontaminated stemma implied by Cook’s regional tallies (16 / 13 / 6). Sidky’s phylogeny of early manuscripts recovers the same four ancestral nodes; the Syrian exemplar was likely sent to Ḥimṣ, not Damascus.",
+    "groups": {
+      "syria_medina": "13 variants where Syria and Medina share one rasm vs Basra and Kufa",
+      "syria_unique": "16 variants where Syria alone differs from Medina, Basra, and Kufa",
+      "kufa_unique": "6 variants where Kufa alone differs from the other three"
+    },
+    "neo_basran_note": "Sidky identifies a later neo-Basran subgroup — a local orthographic reform on the Basran line, distinct from the original Basran exemplar readings in rasm literature."
+  },
+  "variants": [
+    {
+      "id": "2-132-awsa",
+      "surah": 2,
+      "ayah": 132,
+      "ref": "Q 2:132",
+      "context": "Abraham’s charge to his sons (wa-ʾawṣā bihā Ibrāhīm…)",
+      "readings": {
+        "syria": {
+          "rasm": "وَأَوۡصَىٰ",
+          "gloss": "wa-awsa — alif between the two wāws; ṣād not geminated"
+        },
+        "medina": {
+          "rasm": "وَأَوۡصَىٰ",
+          "gloss": "Same early Medinan/Syrian orthography as Syria in rasm reports"
+        },
+        "basra": {
+          "rasm": "وَوَصّٰى",
+          "gloss": "wa-waṣṣa — no alif; geminate ṣād (two ṣād letters)"
+        },
+        "kufa": {
+          "rasm": "وَوَصّٰى",
+          "gloss": "Same Iraqi (Basra/Kufa) spelling as Basra in rasm lists"
+        }
+      },
+      "nature": "Orthography — alif insertion and consonant doubling",
+      "pattern": "syria_medina",
+      "sources": [
+        "Cook 2004, example at Q 2:132 (Syria+Medina vs Basra+Kufa)",
+        "Dutton 2001; al-Burhan survey of Parisino-Petropolitanus"
+      ],
+      "manuscript_hits": [
+        {
+          "witness_id": "parisino-328a",
+          "reading": "syria",
+          "note": "Damascene/Syrian line per Dutton — wa-awsa with alif",
+          "source": "Dutton 2001; Intisar Rabb al-Burhan 2019"
+        },
+        {
+          "witness_id": "bl-or-2165",
+          "reading": "syria",
+          "note": "Syrian regional variants per Dutton; not checked ayah-by-ayah here",
+          "source": "Dutton 2001/2004"
+        }
+      ]
+    },
+    {
+      "id": "6-63-anjana",
+      "surah": 6,
+      "ayah": 63,
+      "ref": "Q 6:63",
+      "context": "“If He saves us from this…” (la-ʾin anjā…)",
+      "readings": {
+        "syria": {
+          "rasm": "أَنجَيْتَنَا",
+          "gloss": "anjaytana — yāʾ, tāʾ, nūn written (2nd-person “Thou savest us”)"
+        },
+        "medina": {
+          "rasm": "أَنجَيْتَنَا",
+          "gloss": "Same as Syria/Basra majority reading in Cook’s Kufa-contrast set"
+        },
+        "basra": {
+          "rasm": "أَنجَيْتَنَا",
+          "gloss": "anjaytana with y-t-n cluster"
+        },
+        "kufa": {
+          "rasm": "أَنجَىٰنَا",
+          "gloss": "la-ʾin anjānā — alif after jīm, no y-t-n cluster"
+        }
+      },
+      "nature": "Particle / person marking — 2nd vs 1st person verb skeleton",
+      "pattern": "kufa_unique",
+      "sources": [
+        "Cook 2004, Kufa-unique example at Q 6:63",
+        "al-Dānī via al-Burhan 2019; Sidky JIQSA 5"
+      ],
+      "manuscript_hits": [
+        {
+          "witness_id": "bl-or-2165",
+          "reading": "syria",
+          "note": "anjaytana (three teeth) per al-Burhan collation",
+          "source": "Rabb, al-Burhan 2019"
+        },
+        {
+          "witness_id": "berlin-or-fol-4313",
+          "reading": "kufa",
+          "note": "Kufan la-ʾin anjānā reading",
+          "source": "Rabb, al-Burhan 2019"
+        },
+        {
+          "witness_id": "parisino-328a",
+          "reading": "syria",
+          "note": "Not on extant Parisino leaves — Syrian line inferred from codex tradition",
+          "source": "Dutton 2001"
+        }
+      ]
+    },
+    {
+      "id": "7-171-syria",
+      "surah": 7,
+      "ayah": 171,
+      "ref": "Q 7:171",
+      "context": "Children of Israel raised above the mountain (min kum)",
+      "readings": {
+        "syria": {
+          "rasm": "مِنكُم",
+          "gloss": "Syrian rasm for min kum — distinct skeleton in rasm lists"
+        },
+        "medina": {
+          "rasm": "مِنَّكُم",
+          "gloss": "Medinan/Basran/Kufan shared form with extra letters"
+        },
+        "basra": {
+          "rasm": "مِنَّكُم",
+          "gloss": "Shared with Medina and Kufa against Syria"
+        },
+        "kufa": {
+          "rasm": "مِنَّكُم",
+          "gloss": "Shared Iraqi/Medinan form"
+        }
+      },
+      "nature": "Orthography — pronominal suffix skeleton",
+      "pattern": "syria_unique",
+      "sources": [
+        "Cook 2004, Syria-unique example at Q 7:171",
+        "van Putten, *Quranic Arabic* (stemmatics summary)"
+      ],
+      "manuscript_hits": []
+    },
+    {
+      "id": "3-184-zubur",
+      "surah": 3,
+      "ayah": 184,
+      "ref": "Q 3:184",
+      "context": "“They came with clear proofs and the Scriptures…” (bi-l-zubur)",
+      "readings": {
+        "syria": {
+          "rasm": "وَبِٱلۡزُّبُرِ",
+          "gloss": "bi-l-zubur — preposition bi- prefixed to zubur"
+        },
+        "medina": {
+          "rasm": "وَبِٱلۡزُّبُرِ",
+          "gloss": "Early Medinan codices share Syrian bi-l-zubur"
+        },
+        "basra": {
+          "rasm": "وَٱلۡزُّبُرِ",
+          "gloss": "wa-l-zubur / az-zubur without prefixed bi-"
+        },
+        "kufa": {
+          "rasm": "وَٱلۡزُّبُرِ",
+          "gloss": "Iraqi codices align with Basra here"
+        }
+      },
+      "nature": "Particle — preposition on zubur",
+      "pattern": "syria_medina",
+      "sources": [
+        "Dutton 2001 on Parisino-Petropolitanus (Damascene/Syrian)",
+        "Rabb, al-Burhan 2019, item 4–5"
+      ],
+      "manuscript_hits": [
+        {
+          "witness_id": "parisino-328a",
+          "reading": "syria",
+          "note": "bi-l-zubur on extant folio",
+          "source": "Dutton 2001; Déroche on Parisino"
+        },
+        {
+          "witness_id": "berlin-wetzstein-1913",
+          "reading": "syria",
+          "note": "Damascene-compatible bi-l-zubur",
+          "source": "Rabb, al-Burhan 2019"
+        }
+      ]
+    },
+    {
+      "id": "2-116-qalu",
+      "surah": 2,
+      "ayah": 116,
+      "ref": "Q 2:116",
+      "context": "“They said, God has taken a son…”",
+      "readings": {
+        "syria": {
+          "rasm": "قَالُواْ",
+          "gloss": "qālū without initial wāw"
+        },
+        "medina": {
+          "rasm": "قَالُواْ",
+          "gloss": "Early Medinan/Syrian form without wāw"
+        },
+        "basra": {
+          "rasm": "وَقَالُواْ",
+          "gloss": "wa-qālū with conjunction wāw"
+        },
+        "kufa": {
+          "rasm": "وَقَالُواْ",
+          "gloss": "Iraqi codices with initial wāw"
+        }
+      },
+      "nature": "Particle — initial wāw presence",
+      "pattern": "syria_medina",
+      "sources": [
+        "Rabb, al-Burhan 2019, item 1 (Parisino collation)",
+        "Ibn ʿĀmir / Syrian rasm tradition"
+      ],
+      "manuscript_hits": [
+        {
+          "witness_id": "parisino-328a",
+          "reading": "syria",
+          "note": "qālū without wāw on Syrian-line manuscript",
+          "source": "Rabb, al-Burhan 2019"
+        }
+      ]
+    },
+    {
+      "id": "3-133-sariu",
+      "surah": 3,
+      "ayah": 133,
+      "ref": "Q 3:133",
+      "context": "“Race toward forgiveness…” (sāriʿū)",
+      "readings": {
+        "syria": {
+          "rasm": "سَارِعُواْ",
+          "gloss": "sāriʿū without initial wāw"
+        },
+        "medina": {
+          "rasm": "سَارِعُواْ",
+          "gloss": "Shared with Syria in early rasm reports"
+        },
+        "basra": {
+          "rasm": "وَسَارِعُواْ",
+          "gloss": "wa-sāriʿū with conjunction"
+        },
+        "kufa": {
+          "rasm": "وَسَارِعُواْ",
+          "gloss": "Iraqi form with wāw"
+        }
+      },
+      "nature": "Particle — initial wāw",
+      "pattern": "syria_medina",
+      "sources": [
+        "Rabb, al-Burhan 2019, item 3"
+      ],
+      "manuscript_hits": []
+    },
+    {
+      "id": "6-137-zuyyina",
+      "surah": 6,
+      "ayah": 137,
+      "ref": "Q 6:137",
+      "context": "Slaughter of children made fair-seeming to polytheists",
+      "readings": {
+        "syria": {
+          "rasm": "ZYYN … QTL … SHRKʾYHM",
+          "gloss": "zuyyina (passive), qatlu (nom.), shurakāʾihim (gen. with yāʾ)"
+        },
+        "medina": {
+          "rasm": "ZYN … QTLA … SHRKʾHM",
+          "gloss": "Late Medinan/Iraqi active spellings"
+        },
+        "basra": {
+          "rasm": "ZYN … QTLA … SHRKʾHM",
+          "gloss": "zayyana… qatla… shurakāʾuhum"
+        },
+        "kufa": {
+          "rasm": "ZYN … QTLA … SHRKʾHM",
+          "gloss": "Same Iraqi skeleton as Basra"
+        }
+      },
+      "nature": "Morphology — passive/active verb and case skeleton",
+      "pattern": "syria_unique",
+      "sources": [
+        "Rabb, al-Burhan 2019, item 11 (Syrian codex reading)",
+        "al-Dānī rasm reports"
+      ],
+      "manuscript_hits": []
+    },
+    {
+      "id": "7-3-tadhakkarun",
+      "surah": 7,
+      "ayah": 3,
+      "ref": "Q 7:3",
+      "context": "“…that you may take heed” (tadhakkarūn / yatadhakkarūn)",
+      "readings": {
+        "syria": {
+          "rasm": "YTDKRWN",
+          "gloss": "yatadhakkarūn — yāʾ + tāʾ (two teeth) for 2nd person"
+        },
+        "medina": {
+          "rasm": "YTDKRWN",
+          "gloss": "Early Medinan shares Syrian yāʾ+tāʾ spelling"
+        },
+        "basra": {
+          "rasm": "TDKRWN",
+          "gloss": "tadhakkarūn — single tāʾ tooth (Hamza/Kisāʾī reading tradition)"
+        },
+        "kufa": {
+          "rasm": "TDKRWN",
+          "gloss": "Iraqi single-tāʾ form"
+        }
+      },
+      "nature": "Orthography — yāʾ vs tāʾ disambiguation",
+      "pattern": "syria_medina",
+      "sources": [
+        "Rabb, al-Burhan 2019, item 12",
+        "Dutton 2001 (Parisino Syrian line)"
+      ],
+      "manuscript_hits": [
+        {
+          "witness_id": "parisino-328a",
+          "reading": "syria",
+          "note": "yatadhakkarūn on extant folio",
+          "source": "Rabb, al-Burhan 2019"
+        },
+        {
+          "witness_id": "bl-or-2165",
+          "reading": "syria",
+          "note": "Syrian-compatible spelling — not re-verified on this ayah",
+          "source": "Dutton 2001"
+        }
+      ]
+    },
+    {
+      "id": "8-67-nabiyy",
+      "surah": 8,
+      "ayah": 67,
+      "ref": "Q 8:67",
+      "context": "“It is not for a prophet…” (li-nabiyy / li-ʾn-nabiyy)",
+      "readings": {
+        "syria": {
+          "rasm": "لِنَبِيٍّ",
+          "gloss": "li-ʾn-nabiyy — definite article ʾal- marked in rasm"
+        },
+        "medina": {
+          "rasm": "لِنَبِيٍ",
+          "gloss": "li-nabiyy without definite-article marking"
+        },
+        "basra": {
+          "rasm": "لِنَبِيٍ",
+          "gloss": "Indefinite-form skeleton"
+        },
+        "kufa": {
+          "rasm": "لِنَبِيٍ",
+          "gloss": "Indefinite-form skeleton"
+        }
+      },
+      "nature": "Orthography — definite article in rasm",
+      "pattern": "syria_unique",
+      "sources": [
+        "Sidky JIQSA 5, Fig. 7 (BL Or. 2165, Parisino, CUL Add. 1125)",
+        "al-Dānī variant $18 in Sidky’s table 1"
+      ],
+      "manuscript_hits": [
+        {
+          "witness_id": "bl-or-2165",
+          "reading": "syria",
+          "note": "li-ʾn-nabiyy — among oldest Syrian witnesses with this ayah",
+          "source": "Sidky 2020"
+        },
+        {
+          "witness_id": "parisino-328a",
+          "reading": "syria",
+          "note": "Syrian definite form — ayah not on our excerpted leaves",
+          "source": "Sidky 2020"
+        }
+      ]
+    },
+    {
+      "id": "9-107-waw",
+      "surah": 9,
+      "ayah": 107,
+      "ref": "Q 9:107",
+      "context": "“Those who took a mosque…” (al-ladhīna l-takhadhū)",
+      "readings": {
+        "syria": {
+          "rasm": "LDHYN LTAKHDHW",
+          "gloss": "al-ladhīna l-takhadhū — no initial wāw on second clause"
+        },
+        "medina": {
+          "rasm": "WLDHYN LTAKHDHW",
+          "gloss": "Late Medinan with wāw"
+        },
+        "basra": {
+          "rasm": "WLDHYN LTAKHDHW",
+          "gloss": "wa-l-ladhīna… with conjunction"
+        },
+        "kufa": {
+          "rasm": "WLDHYN LTAKHDHW",
+          "gloss": "Iraqi form with wāw"
+        }
+      },
+      "nature": "Particle — wāw on relative clause",
+      "pattern": "syria_unique",
+      "sources": [
+        "Rabb, al-Burhan 2019, item 17"
+      ],
+      "manuscript_hits": []
+    },
+    {
+      "id": "5-53-yaqulu",
+      "surah": 5,
+      "ayah": 53,
+      "ref": "Q 5:53",
+      "context": "“Those who believe will say…”",
+      "readings": {
+        "syria": {
+          "rasm": "YQWL LDHYN AMNW",
+          "gloss": "yaqūlu l-ladhīna — no initial wāw"
+        },
+        "medina": {
+          "rasm": "YQWL LDHYN AMNW",
+          "gloss": "Ibn ʿĀmir / early Syrian-Medinan form"
+        },
+        "basra": {
+          "rasm": "WYQWL LDHYN AMNW",
+          "gloss": "wa-yaqūlu with conjunction"
+        },
+        "kufa": {
+          "rasm": "WYQWL LDHYN AMNW",
+          "gloss": "Iraqi conjunction form"
+        }
+      },
+      "nature": "Particle — initial wāw",
+      "pattern": "syria_medina",
+      "sources": [
+        "Rabb, al-Burhan 2019, item 7",
+        "Ibn ʿĀmir reading tradition"
+      ],
+      "manuscript_hits": []
+    },
+    {
+      "id": "5-54-yartadid",
+      "surah": 5,
+      "ayah": 54,
+      "ref": "Q 5:54",
+      "context": "“Whoever turns back from his religion…” (yartadid / yartadd)",
+      "readings": {
+        "syria": {
+          "rasm": "MYRTDD",
+          "gloss": "yartadid — two dāl letters (Ibn ʿĀmir tradition)"
+        },
+        "medina": {
+          "rasm": "MYRTDD",
+          "gloss": "Shared Syrian-Medinan geminate dāl"
+        },
+        "basra": {
+          "rasm": "MYRTD",
+          "gloss": "yartad — single dāl in Iraqi rasm"
+        },
+        "kufa": {
+          "rasm": "MYRTD",
+          "gloss": "Single dāl form"
+        }
+      },
+      "nature": "Orthography — consonant doubling",
+      "pattern": "syria_medina",
+      "sources": [
+        "Rabb, al-Burhan 2019, item 8",
+        "Nāfiʿ / Ibn ʿĀmir contrast in rasm lists"
+      ],
+      "manuscript_hits": []
+    },
+    {
+      "id": "46-15-ihsanana",
+      "surah": 46,
+      "ayah": 15,
+      "ref": "Q 46:15",
+      "context": "“… kindness to his parents” (iḥsānana)",
+      "readings": {
+        "syria": {
+          "rasm": "IHSAN",
+          "gloss": "iḥsān — without trailing hamza/alif cluster"
+        },
+        "medina": {
+          "rasm": "IHSAN",
+          "gloss": "Standard Medinan skeleton"
+        },
+        "basra": {
+          "rasm": "IHSAN",
+          "gloss": "Non-Kufan form"
+        },
+        "kufa": {
+          "rasm": "IHSANANA",
+          "gloss": "iḥsānana — hamza + alif + nūn + alif ending (Kufan)"
+        }
+      },
+      "nature": "Morphology — accusative ending skeleton",
+      "pattern": "kufa_unique",
+      "sources": [
+        "Rabb, al-Burhan 2019, item 38",
+        "Cook 2004 Kufa-unique tally"
+      ],
+      "manuscript_hits": []
+    },
+    {
+      "id": "2-125-tatahiru",
+      "surah": 2,
+      "ayah": 125,
+      "ref": "Q 2:125",
+      "context": "“… then purify My House…” (fa-taṭṭahirū / fa-yataṭṭahirū)",
+      "readings": {
+        "syria": {
+          "rasm": "طَهِّرَا",
+          "gloss": "ṭahhirā — imperative without extra yāʾ on verb"
+        },
+        "medina": {
+          "rasm": "طَهِّرَا",
+          "gloss": "Early Syrian/Medinan imperative skeleton"
+        },
+        "basra": {
+          "rasm": "يَطَهَّرَا",
+          "gloss": "yaṭahhirā — yāʾ prefixed to verb"
+        },
+        "kufa": {
+          "rasm": "يَطَهَّرَا",
+          "gloss": "Iraqi prefixed yāʾ form"
+        }
+      },
+      "nature": "Orthography — yāʾ prefix on verb",
+      "pattern": "syria_medina",
+      "sources": [
+        "Nöldeke–Schwally *Geschichte des Qorāns* regional table",
+        "van Putten, *Quranic Arabic* (regional rasm overview)"
+      ],
+      "manuscript_hits": []
+    },
+    {
+      "id": "9-100-ansar",
+      "surah": 9,
+      "ayah": 100,
+      "ref": "Q 9:100",
+      "context": "“… and the Helpers (al-anṣār)…”",
+      "readings": {
+        "syria": {
+          "rasm": "ٱلۡأَنصَارِ",
+          "gloss": "al-anṣār — nominative rasm"
+        },
+        "medina": {
+          "rasm": "ٱلۡأَنصَارِ",
+          "gloss": "Medinan nominative"
+        },
+        "basra": {
+          "rasm": "ٱلۡأَنصَارِى",
+          "gloss": "al-anṣārī — oblique skeleton with yāʾ"
+        },
+        "kufa": {
+          "rasm": "ٱلۡأَنصَارِى",
+          "gloss": "Iraqi oblique-form spelling"
+        }
+      },
+      "nature": "Case ending — nominative vs oblique skeleton",
+      "pattern": "syria_medina",
+      "sources": [
+        "Corpus Coranicum variant navigator Q 9:100",
+        "Codex Mashhad regional analysis (Q 9:100 Meccan overlap noted separately)"
+      ],
+      "manuscript_hits": []
+    },
+    {
+      "id": "19-37-sabih",
+      "surah": 19,
+      "ayah": 37,
+      "ref": "Q 19:37",
+      "context": "“… at the clear sign / morning…” (al-ṣabāḥ / al-ṣabīḥ)",
+      "readings": {
+        "syria": {
+          "rasm": "ALṢBYḤ",
+          "gloss": "al-ṣabīḥ — “the clear/right” (ḥāʾ ending)"
+        },
+        "medina": {
+          "rasm": "ALṢBĀḤ",
+          "gloss": "al-ṣabāḥ — “the morning”"
+        },
+        "basra": {
+          "rasm": "ALṢBĀḤ",
+          "gloss": "Morning reading skeleton"
+        },
+        "kufa": {
+          "rasm": "ALṢBĀḤ",
+          "gloss": "Morning reading skeleton"
+        }
+      },
+      "nature": "Lexical skeleton — ḥāʾ vs hāʾ letter (different lemmas in rasm)",
+      "pattern": "syria_unique",
+      "sources": [
+        "Nöldeke regional variants table",
+        "Jeffery, *Materials for the History of the Text of the Qurʾān*"
+      ],
+      "manuscript_hits": []
+    },
+    {
+      "id": "7-43-nahtadi",
+      "surah": 7,
+      "ayah": 43,
+      "ref": "Q 7:43",
+      "context": "“… we would never have been guided…” (mā kunnā li-nahtadi)",
+      "readings": {
+        "syria": {
+          "rasm": "MKNN LNAHTDY",
+          "gloss": "mā kunnā li-nahtadi — no initial wāw (Ibn ʿĀmir)"
+        },
+        "medina": {
+          "rasm": "WMKNN LNAHTDY",
+          "gloss": "Late Medinan with wāw"
+        },
+        "basra": {
+          "rasm": "WMKNN LNAHTDY",
+          "gloss": "wa-mā kunnā with conjunction"
+        },
+        "kufa": {
+          "rasm": "WMKNN LNAHTDY",
+          "gloss": "Iraqi conjunction form"
+        }
+      },
+      "nature": "Particle — initial wāw",
+      "pattern": "syria_unique",
+      "sources": [
+        "Rabb, al-Burhan 2019, item 13",
+        "Ibn ʿĀmir Syrian reading"
+      ],
+      "manuscript_hits": []
+    },
+    {
+      "id": "33-23-nabi",
+      "surah": 33,
+      "ayah": 23,
+      "ref": "Q 33:23",
+      "context": "“Among the believers are men…” (al-nabī / al-nabiyy)",
+      "readings": {
+        "syria": {
+          "rasm": "ALNBY",
+          "gloss": "al-nabī — shorter skeleton"
+        },
+        "medina": {
+          "rasm": "ALNBYY",
+          "gloss": "al-nabiyy — yāʾ suffix"
+        },
+        "basra": {
+          "rasm": "ALNBYY",
+          "gloss": "Form with yāʾ"
+        },
+        "kufa": {
+          "rasm": "ALNBYY",
+          "gloss": "Form with yāʾ"
+        }
+      },
+      "nature": "Orthography — yāʾ suffix on nabī",
+      "pattern": "syria_unique",
+      "sources": [
+        "Sidky JIQSA 5 (regional variant tables)",
+        "al-Dānī rasm literature"
+      ],
+      "manuscript_hits": []
+    }
+  ],
+  "sanaa_callout": {
+    "title": "Ṣanʿāʾ DAM 01-27.1 lower text — a different category",
+    "summary": "The lower (scriptio inferior) text of the Ṣanʿāʾ palimpsest is a non-Uthmanic companion-era codex, studied by Sadeghi & Goudarzi (2012). Its variants reflect a different textual line from the Uthmanic Text Type — not the ~35–40 regional rasm differences between ʿUthmānic exemplars.",
+    "witness_id": "sanaa-dam-01-27-1",
+    "scholarship": [
+      {
+        "label": "Sadeghi & Goudarzi, “Ṣanʿāʾ 1 and the Origins of the Qurʾān” (Der Islam 2012)",
+        "url": "https://doi.org/10.1515/islam-2011-0025"
+      },
+      {
+        "label": "Our witness card — upper + lower layers",
+        "url": "/?q=sanaa-dam-01-27-1"
+      }
+    ]
+  }
+}

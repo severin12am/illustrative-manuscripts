@@ -9,6 +9,7 @@ const links = [
   { href: "/", label: "Timeline", match: (path: string) => path === "/" || path === "" },
   { href: "/variants/", label: "Variants", match: (path: string) => path.startsWith("/variants") },
   { href: "/famous/", label: "Famous passages", match: (path: string) => path.startsWith("/famous") },
+  { href: "/quran/uthmani/", label: "Uthmanic rasm", match: (path: string) => path.startsWith("/quran") },
   { href: "/compare/", label: "Compare", match: (path: string) => path.startsWith("/compare") },
   { href: "/coverage/", label: "Coverage", match: (path: string) => path.startsWith("/coverage") },
   { href: "/cite/", label: "Cite & learn", match: (path: string) => path.startsWith("/cite") },

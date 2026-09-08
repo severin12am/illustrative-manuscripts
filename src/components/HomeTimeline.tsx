@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import styles from "./HomeTimeline.module.css";
@@ -289,7 +290,10 @@ export default function HomeTimeline() {
             <p className={styles.completeness}>
               Hand-curated seed of well-sourced Hijazi witnesses overlapping 1–100
               AH. Later Kufic display mushafs (8th–9th c.) are out of scope
-              unless their published range overlaps this window.
+              unless their published range overlaps this window.{" "}
+              <Link href="/quran/uthmani/">Uthmanic regional rasm</Link> explains
+              the ~35–40 orthographic differences between Syria, Medina, Basra, and
+              Kufa (Cook / Sidky) — not a full manuscript collation on every card.
             </p>
           )}
           {isNagHammadi && (
