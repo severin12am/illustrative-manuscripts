@@ -366,6 +366,13 @@ export default function CoveragePage() {
           </div>
         </div>
         <p className={styles.note}>{quran.variant_census_note}</p>
+        <p className={styles.note}>
+          For evidence-backed regional <em>rasm</em> within the Uthmanic Text Type
+          (~35–40 reports in Cook / Sidky), see{" "}
+          <Link href="/quran/uthmani/">Uthmanic regional rasm</Link> — distinct from
+          our per-card excerpt display and from the Ṣanʿāʾ lower-text companion
+          codex.
+        </p>
       </section>
 
       <section className={styles.section}>
@@ -402,6 +409,8 @@ export default function CoveragePage() {
       </aside>
 
       <footer className={styles.footer}>
+        <Link href="/quran/uthmani/">Uthmanic regional rasm →</Link>
+        {" · "}
         <Link href="/famous/">Famous passages →</Link>
         {" · "}
         <Link href="/compare/">Witness compare →</Link>
