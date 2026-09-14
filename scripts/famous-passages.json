@@ -201,6 +201,85 @@
       ],
       "variants_link": { "book": "Luke", "q": "23:34" },
       "compare_link": { "a": "P75", "b": "03", "book": "Luke" }
+    },
+    {
+      "slug": "matthew-613-doxology",
+      "title": "Lord’s Prayer doxology (Matthew 6:13b)",
+      "passage_ref": "Matthew 6:13",
+      "book": "Matthew",
+      "verse_esns": [40006013],
+      "story": "Many English Bibles end the Lord’s Prayer with a doxology — “For thine is the kingdom, and the power, and the glory, forever. Amen.” — after “deliver us from evil.” That closing formula is absent from the earliest and best Greek witnesses of Matthew, which stop after the petition against evil. The words were supplied from liturgical use and from parallels in some manuscripts of Luke and the Didache, then became familiar through the Byzantine majority and the Textus Receptus.",
+      "later_tradition": "The doxology is widespread in later Greek minuscules and in printed Bibles descended from the Byzantine tradition (including the KJV). Modern critical editions (NA28, UBS5, SR GNT) omit it from Matthew 6:13. CNTR encodes Matthew 6:13 as a single verse: where the doxology is missing, the Greek text simply ends at “from the evil one” — we flag that as partial absence of the closing clause, not absence of the whole verse.",
+      "scholarship": [
+        {
+          "label": "CNTR — Matthew witnesses",
+          "url": "https://greekcntr.org/"
+        },
+        {
+          "label": "Matthew 6:13 — Wikipedia (secondary)",
+          "url": "https://en.wikipedia.org/wiki/Lord%27s_Prayer#Final_doxology"
+        }
+      ],
+      "witnesses": [
+        { "ga": "01", "status": "partial", "note": "Verse extant; CNTR Greek ends at deliverance from evil — no doxology." },
+        { "ga": "03", "status": "partial", "note": "Verse extant without the closing doxology in Codex Vaticanus." },
+        { "ga": "P66", "status": "not_in_corpus", "note": "𝔓⁶⁶ is John only in our CNTR slice." }
+      ],
+      "variants_link": { "book": "Matthew", "q": "6:13" },
+      "compare_link": { "a": "01", "b": "03", "book": "Matthew" }
+    },
+    {
+      "slug": "acts-8-37-eunuch",
+      "title": "Ethiopian’s confession (Acts 8:37)",
+      "passage_ref": "Acts 8:37",
+      "book": "Acts",
+      "verse_esns": [44008037],
+      "story": "In the KJV and many later Bibles, the Ethiopian official asks Philip what prevents him from being baptized and confesses faith in Jesus as Son of God before they enter the water. That verse is missing from the earliest Greek line of Acts represented by Codex Sinaiticus, Codex Vaticanus, and 𝔓⁴⁵. The narrative runs directly from the chariot stopping at water (8:36) to baptism (8:38). Critics usually treat 8:37 as a secondary expansion harmonizing baptism with confession formulas known from later liturgy.",
+      "later_tradition": "Acts 8:37 becomes common in Byzantine copies and the Textus Receptus, so English readers often assume it was always part of Luke’s narrative. NA28 and UBS5 bracket or omit the verse. Our CNTR transcriptions mark Acts 8:37 absent (—) in 01, 03, and 𝔓⁴⁵.",
+      "scholarship": [
+        {
+          "label": "CNTR — Acts witnesses",
+          "url": "https://greekcntr.org/"
+        },
+        {
+          "label": "Acts 8:37 — Wikipedia (secondary)",
+          "url": "https://en.wikipedia.org/wiki/Textual_variants_in_the_New_Testament#Acts_8:37"
+        }
+      ],
+      "witnesses": [
+        { "ga": "01", "status": "absent", "note": "CNTR marks Acts 8:37 absent (—) in Codex Sinaiticus." },
+        { "ga": "03", "status": "absent", "note": "Absent in Codex Vaticanus." },
+        { "ga": "P45", "status": "absent", "note": "Absent in 𝔓⁴⁵ (early Acts papyrus)." },
+        { "ga": "P66", "status": "not_in_corpus", "note": "𝔓⁶⁶ is John only in our CNTR slice." }
+      ],
+      "variants_link": { "book": "Acts", "q": "8:37" },
+      "compare_link": { "a": "01", "b": "03", "book": "Acts" }
+    },
+    {
+      "slug": "mark-9-hell-verses",
+      "title": "Duplicate “unquenchable fire” lines (Mark 9:44, 9:46)",
+      "passage_ref": "Mark 9:44, 9:46",
+      "book": "Mark",
+      "verse_esns": [41009044, 41009046],
+      "story": "In some manuscripts and printed Bibles, Mark 9 repeats a warning about hell — “where their worm does not die, and the fire is not quenched” — after verses about the hand and foot (9:44 and 9:46), in addition to the same saying at 9:48. Critical editions omit 9:44 and 9:46 as scribal assimilations to the longer form of the passage found in some witnesses. The earliest complete Greek codices in our window keep the single climactic line at 9:48.",
+      "later_tradition": "The duplicated lines persist in the Byzantine majority and the Textus Receptus (and thus the KJV). NA28 prints 9:44 and 9:46 in brackets with weak attestation. CNTR marks both verses absent (—) in Codex Sinaiticus and Codex Vaticanus while 9:48 remains present.",
+      "scholarship": [
+        {
+          "label": "CNTR — Mark witnesses",
+          "url": "https://greekcntr.org/"
+        },
+        {
+          "label": "Mark 9 — Wikipedia (secondary)",
+          "url": "https://en.wikipedia.org/wiki/Mark_9"
+        }
+      ],
+      "witnesses": [
+        { "ga": "01", "status": "absent", "note": "CNTR marks Mark 9:44 and 9:46 absent (—) in Codex Sinaiticus." },
+        { "ga": "03", "status": "absent", "note": "Both verses absent in Codex Vaticanus." },
+        { "ga": "P45", "status": "not_in_corpus", "note": "𝔓⁴⁵ does not preserve Mark 9 in our CNTR slice." }
+      ],
+      "variants_link": { "book": "Mark", "q": "9:48" },
+      "compare_link": { "a": "01", "b": "03", "book": "Mark" }
     }
   ]
 }
