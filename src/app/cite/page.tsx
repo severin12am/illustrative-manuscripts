@@ -8,6 +8,8 @@ import {
   sortKindEntries,
   VARIANT_KIND_DEFINITIONS,
 } from "@/lib/variantTaxonomy";
+import { famousPassages } from "@/data/famous-passages";
+import { uthmaniRegionalVariants } from "@/data/uthmani-regional-variants";
 import { assetUrl } from "@/lib/assetUrl";
 import styles from "./cite.module.css";
 
@@ -29,6 +31,10 @@ export default function CitePage() {
   const kinds = sortKindEntries(coverage.greek_nt.disagreements.by_kind);
   const censusCsv = assetUrl("/variant-census.csv");
   const censusJson = assetUrl("/variant-census.json");
+  const famousJson = assetUrl("/famous-passages.json");
+  const uthmaniJson = assetUrl("/uthmani-regional-variants.json");
+  const famousCount = famousPassages.entries.length;
+  const uthmaniCount = uthmaniRegionalVariants.variants.length;
 
   return (
     <main className={styles.main}>
@@ -115,6 +121,61 @@ export default function CitePage() {
   note = {${variantIndex.total.toLocaleString()} word-aligned variation units; ${variantIndex.witness_count} witnesses. Mechanical collation vs open SR GNT (CNTR); not NA28 apparatus.}
 }`}</pre>
         </div>
+
+        <div className={styles.citationBlock} id="downloads">
+          <h3>Downloads (census + curated datasets)</h3>
+          <p className={styles.sectionIntro} style={{ marginTop: 0 }}>
+            Static JSON/CSV under <code>public/</code> — CC BY 4.0 metadata
+            compilation; CNTR-derived census fields remain CC BY-SA 4.0 per{" "}
+            <a href="https://greekcntr.org/">CNTR</a>. Qurʾān rasm examples
+            cite published stemmatics (Cook, Sidky, van Putten) in each row.
+          </p>
+          <ul className={styles.notClaimList}>
+            <li>
+              <a href={censusCsv}>variant-census.csv</a>
+              {" · "}
+              <a href={censusJson}>variant-census.json</a> — word-aligned Greek
+              NT disagreements vs SR GNT ({TIMELINE_START}–{TIMELINE_END} CE).
+            </li>
+            <li>
+              <a href={famousJson}>famous-passages.json</a> — {famousCount}{" "}
+              block-level passage cards (witness status, scholarship links).
+            </li>
+            <li>
+              <a href={uthmaniJson}>uthmani-regional-variants.json</a> —{" "}
+              {uthmaniCount} illustrative Uthmanic regional rasm reports
+              (published ~35–40 band).
+            </li>
+          </ul>
+          <p className={styles.citationOneLiner}>
+            Chicago (short): Illustrative Manuscripts.{" "}
+            <em>Famous Greek New Testament Passages (block-level, curated)</em>.
+            GitHub, {GITHUB}/blob/main/public/famous-passages.json. Accessed
+            [date].
+          </p>
+          <pre className={styles.bibPre}>{`@misc{illustrative_manuscripts_famous,
+  title = {Famous Greek New Testament passages (block-level curated cards)},
+  author = {{Illustrative Manuscripts}},
+  year = {n.d.},
+  publisher = {GitHub},
+  url = {${GITHUB}/blob/main/public/famous-passages.json},
+  note = {${famousCount} entries; CNTR witness status in ${TIMELINE_START}--${TIMELINE_END} CE slice. Not NA28 apparatus.}
+}`}</pre>
+          <p className={styles.citationOneLiner}>
+            Chicago (short): Illustrative Manuscripts.{" "}
+            <em>Uthmanic Regional Rasm Variants (illustrative table)</em>. GitHub,{" "}
+            {GITHUB}/blob/main/public/uthmani-regional-variants.json. Accessed
+            [date].
+          </p>
+          <pre className={styles.bibPre}>{`@misc{illustrative_manuscripts_uthmani_rasm,
+  title = {Uthmanic regional rasm variants (illustrative curated table)},
+  author = {{Illustrative Manuscripts}},
+  year = {n.d.},
+  publisher = {GitHub},
+  url = {${GITHUB}/blob/main/public/uthmani-regional-variants.json},
+  note = {${uthmaniCount} examples citing published stemmatics; not a full mushaf census.}
+}`}</pre>
+        </div>
       </section>
 
       <section className={styles.section} id="for-researchers">
@@ -133,13 +194,14 @@ export default function CitePage() {
           <div className={styles.defItem}>
             <dt>Public data files</dt>
             <dd>
-              <code>public/variant-census.json</code> and{" "}
-              <code>public/variant-census.csv</code> — one row per counted
-              variation unit (witness, verse, kind, readings vs SR GNT).{" "}
-              <code>src/data/coverage.json</code> — build-time aggregates
-              (totals, by book, by kind, intentional-tag summaries).{" "}
-              <code>src/data/witness-texts.json</code> — diplomatic verse bundles
-              for timeline cards (CNTR-derived). Schema notes in{" "}
+              <Link href="/cite/#downloads">Downloads</Link> above lists{" "}
+              <code>public/variant-census.json</code> /{" "}
+              <code>public/variant-census.csv</code>,{" "}
+              <code>public/famous-passages.json</code>, and{" "}
+              <code>public/uthmani-regional-variants.json</code>. Build-time
+              aggregates live in <code>src/data/coverage.json</code>; diplomatic
+              verse bundles in <code>src/data/witness-texts.json</code>{" "}
+              (CNTR-derived). Schema notes in{" "}
               <a href={`${GITHUB}/blob/main/DATA.md`}>DATA.md</a>.
             </dd>
           </div>

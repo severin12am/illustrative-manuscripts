@@ -46,6 +46,10 @@ export default function FamousPassagesPage() {
       <header className={styles.hero}>
         <p className={styles.eyebrow}>Block-level textual issues</p>
         <h1 className={styles.title}>Famous passages</h1>
+        <p className={styles.tagline}>
+          Block-level issues — word-level census is on{" "}
+          <Link href="/variants/">Variants</Link>.
+        </p>
         <p className={styles.lead}>
           Whole passages that are missing, inserted, or disputed in early
           manuscripts — not the word-by-word disagreements counted in our{" "}

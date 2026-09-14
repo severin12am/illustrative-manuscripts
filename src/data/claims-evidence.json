@@ -102,6 +102,30 @@
       "links": [{ "href": "/famous/#comma-johanneum", "label": "Famous: Comma Johanneum" }]
     },
     {
+      "id": "lords-prayer-doxology-early",
+      "claim": "The Lord’s Prayer doxology (“For thine is the kingdom…”) is in the earliest Alexandrian Greek witnesses of Matthew.",
+      "verdict": "unsupported",
+      "why": "In CNTR transcriptions for Codex Sinaiticus (01) and Codex Vaticanus (03), Matthew 6:13 is extant but the Greek ends at the petition against evil — the closing doxology familiar from the KJV is not part of that early line. Later Byzantine copies and liturgical tradition supplied the formula; NA28/UBS5 omit it from Matthew.",
+      "links": [
+        { "href": "/famous/#matthew-613-doxology", "label": "Famous: Lord’s Prayer doxology" },
+        { "href": "/variants/?book=Matthew&q=6:13", "label": "Word-level: Matthew 6:13" }
+      ]
+    },
+    {
+      "id": "acts-8-37-early",
+      "claim": "Acts 8:37 (the Ethiopian’s confession before baptism) is in our earliest Greek witnesses of Acts.",
+      "verdict": "unsupported",
+      "why": "CNTR marks Acts 8:37 absent (—) in Codex Sinaiticus, Codex Vaticanus, and 𝔓⁴⁵ within our 1–400 CE slice; the narrative runs from 8:36 to 8:38. The verse is common in Byzantine copies and the Textus Receptus — a later expansion, not the earliest recoverable Greek in our window.",
+      "links": [{ "href": "/famous/#acts-8-37-eunuch", "label": "Famous: Acts 8:37" }]
+    },
+    {
+      "id": "mark-9-hell-duplicates-early",
+      "claim": "Mark 9:44 and 9:46 (duplicate “unquenchable fire” warnings) are in Codex Sinaiticus and Codex Vaticanus.",
+      "verdict": "unsupported",
+      "why": "In CNTR, both verses are marked absent (—) in 01 and 03; the saying appears once at Mark 9:48 in that line. Duplicated lines persist in the Byzantine majority and KJV — scribal assimilation to a longer form, not the earliest complete Greek codices in our dataset.",
+      "links": [{ "href": "/famous/#mark-9-hell-verses", "label": "Famous: Mark 9:44 & 9:46" }]
+    },
+    {
       "id": "quran-zero-variation",
       "claim": "The Qurʾān has no manuscript variation.",
       "verdict": "unsupported",
