@@ -67,7 +67,7 @@ function seedToWitness(m) {
     docID: 0,
     translation: "Display English excerpts on each card — World English Bible (PD)",
     modern_base_text: "No BHQ/NA apparatus — diplomatic excerpts only where openly licensed",
-    known_variants: [],
+    known_variants: m.known_variants || [],
     bibliography: m.bibliography || [],
     license_note: isHebrew
       ? "Hebrew Bible DSS. Images © IAA/Israel Museum unless a Commons PD plate is shown. Leon Levy DSS Digital Library linked, not rehosted."

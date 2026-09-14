@@ -39,5 +39,45 @@
     "file": "cbp-bp-v.jpg",
     "commons_title": "File:Papyrus with fragments of the Book of Genesis (Rahlfs 962) (CBL BP V f.21).jpg",
     "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus_with_fragments_of_the_Book_of_Genesis_(Rahlfs_962)_(CBL_BP_V_f.21).jpg"
+  },
+  "nash-papyrus": {
+    "file": "nash-papyrus.jpg",
+    "commons_title": "File:2nd century Hebrew decalogue.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:2nd_century_Hebrew_decalogue.jpg"
+  },
+  "4q175": {
+    "file": "4q175.jpg",
+    "commons_title": "File:4Q175.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:4Q175.jpg"
+  },
+  "4qgen-exa": {
+    "file": "4qgen-exa.jpg",
+    "commons_title": "File:Genesis 1 Dead Sea Scroll.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Genesis_1_Dead_Sea_Scroll.jpg"
+  },
+  "8hev-xii-gr": {
+    "file": "8hev-xii-gr.jpg",
+    "commons_title": "File:Nahal Hever2.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Nahal_Hever2.jpg"
+  },
+  "codex-washingtonianus-lxx": {
+    "file": "codex-washingtonianus-lxx.jpg",
+    "commons_title": "File:Codex Washingtonianus 032.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Codex_Washingtonianus_032.jpg"
+  },
+  "p-amherst-3-lxx-gen": {
+    "file": "p-amherst-3-lxx-gen.jpg",
+    "commons_title": "File:New York, Morgan Library Ms Amherst Greek Papyrus 3 (Papyrus 12) verso Genesis 1, 1–5 LXX Greek.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:New_York,_Morgan_Library_Ms_Amherst_Greek_Papyrus_3_(Papyrus_12)_verso_Genesis_1,_1%E2%80%935_LXX_Greek.jpg"
+  },
+  "p967": {
+    "file": "p967.jpg",
+    "commons_title": "File:Papyrus 967.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus_967.jpg"
+  },
+  "p-oxy-3522": {
+    "file": "p-oxy-3522.jpg",
+    "commons_title": "File:POxy n3522.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:POxy_n3522.jpg"
   }
 }

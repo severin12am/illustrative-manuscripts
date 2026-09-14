@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T18:26:17.442Z",
+  "generated_at": "2026-09-14T11:25:42.222Z",
   "sources": {
     "seed": "scripts/hebrew-lxx-seed.json",
     "leon_levy": "https://www.deadseascrolls.org.il/ (link only)",
@@ -309,6 +309,294 @@
           "original_label": "Greek of holiness code (Lev 19:17–18 locus)",
           "original_source": "Rahlfs LXX Leviticus — display excerpt for the passage",
           "english": "You shall not hate your brother in your heart. You shall surely rebuke your neighbor, and not bear sin because of him.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "attribution": "Greek diplomatic excerpts from PD editio princeps plates where noted. English: WEB (PD). Not a Rahlfs/Göttingen apparatus dump."
+    },
+    "nash-papyrus": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Hebrew consonantal display",
+      "library_url": "https://www.lib.cam.ac.uk/collections/departments/manuscripts-university-archives",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Deuteronomy 6:4–5 (Shema)",
+          "tradition": "hebrew",
+          "original": "שמע ישראל יהוה אלהינו יהוה אחד ואהבת את יהוה אלהיך בכל לבבך",
+          "original_label": "Consonantal display of Shema locus — compare Nash plate orthography",
+          "original_source": "Cambridge MS Or. 233 facsimile (Commons); standard consonants for reading",
+          "english": "Hear, Israel: Yahweh is our God. Yahweh is one. You shall love Yahweh your God with all your heart.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)",
+          "note": "Nash uses early spellings and paleo-Hebrew script; medieval MT adds full pointing and later orthographic standardization."
+        }
+      ],
+      "attribution": "Hebrew display consonants for the shown locus; compare Leon Levy DSS Digital Library plates. English: WEB (PD). Not a BHQ apparatus reuse."
+    },
+    "4q175": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Hebrew consonantal display",
+      "library_url": "https://www.deadseascrolls.org.il/",
+      "leon_levy_url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/4Q175-1",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Isaiah 7:14–15 (excerpt on 4Q175)",
+          "tradition": "hebrew",
+          "original": "לכן יתן אדני הוא לכם אות הנה העלמה הרה וילדת בן",
+          "original_label": "Hebrew of Isaiah citation column — consonantal display",
+          "original_source": "Allegro DJD V; compare Leon Levy 4Q175",
+          "english": "Therefore the Lord himself will give you a sign. Behold, the virgin will conceive, and bear a son.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)",
+          "note": "4Q175 cites Isaiah in a testimonia chain; spelling and line breaks follow the scroll, not a modern printed Bible page."
+        }
+      ],
+      "attribution": "Hebrew display consonants for the shown locus; compare Leon Levy DSS Digital Library plates. English: WEB (PD). Not a BHQ apparatus reuse."
+    },
+    "4qgen-exa": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Hebrew consonantal display",
+      "library_url": "https://www.deadseascrolls.org.il/",
+      "leon_levy_url": "https://www.deadseascrolls.org.il/",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Genesis 1:1–3",
+          "tradition": "hebrew",
+          "original": "בראשית ברא אלהים את השמים ואת הארץ והארץ היתה תהו ובהו וחשך על פני תהום",
+          "original_label": "Opening creation lines — consonantal display",
+          "original_source": "Ulrich DJD XII; compare Commons Genesis 1 plate",
+          "english": "In the beginning, God created the heavens and the earth. The earth was formless and empty. Darkness was on the surface of the deep.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "attribution": "Hebrew display consonants for the shown locus; compare Leon Levy DSS Digital Library plates. English: WEB (PD). Not a BHQ apparatus reuse."
+    },
+    "mur-88": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Hebrew consonantal display",
+      "library_url": "https://www.deadseascrolls.org.il/",
+      "leon_levy_url": "https://www.deadseascrolls.org.il/",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Isaiah 40:8",
+          "tradition": "hebrew",
+          "original": "ייבש חציר נבל ציץ כי רוח יהוה נשבה בו אכן חציר העם",
+          "original_label": "Consonantal display of Isa 40:8 locus",
+          "original_source": "Milik DJD II; compare Murabbaʿat plate",
+          "english": "The grass withers, the flower fades, because Yahweh's breath blows on it. Surely the people are grass.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)",
+          "note": "Murabbaʿat Isaiah aligns more closely with medieval MT than 1QIsaᵃ in many chapters — useful when debating 'how uniform was Hebrew before the Masoretes?'"
+        }
+      ],
+      "attribution": "Hebrew display consonants for the shown locus; compare Leon Levy DSS Digital Library plates. English: WEB (PD). Not a BHQ apparatus reuse."
+    },
+    "mas1a": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Hebrew consonantal display",
+      "library_url": "https://www.deadseascrolls.org.il/",
+      "leon_levy_url": "https://www.deadseascrolls.org.il/",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Leviticus 4:27",
+          "tradition": "hebrew",
+          "original": "ואם נפש אחת תחטא בשגגה מעם הארץ",
+          "original_label": "Leviticus sin-offering law — consonantal display",
+          "original_source": "Yadin, Masada publications; Tov handbook summary",
+          "english": "If one person sins unwittingly, from among the people of the land…",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "attribution": "Hebrew display consonants for the shown locus; compare Leon Levy DSS Digital Library plates. English: WEB (PD). Not a BHQ apparatus reuse."
+    },
+    "8hev-xii-gr": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Greek uncial display",
+      "library_url": "https://www.deadseascrolls.org.il/",
+      "rahlfs": "943",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Jonah 4:2",
+          "tradition": "lxx",
+          "original": "κύριε οὐκ οὗτος ὁ λόγος μου ἔτι ὄντος μου εἰς τὴν πατρίδα μου",
+          "original_label": "Greek of Jonah 4:2 area — display excerpt",
+          "original_source": "Barthélemy DJD VIII; Rahlfs apparatus summary",
+          "english": "Lord, wasn't this what I said when I was still in my homeland?",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)",
+          "note": "This scroll preserves a mix of LXX and proto-MT readings — key evidence that 'LXX vs MT' is not a simple binary for all books."
+        }
+      ],
+      "attribution": "Greek diplomatic excerpts from PD editio princeps plates where noted. English: WEB (PD). Not a Rahlfs/Göttingen apparatus dump."
+    },
+    "codex-washingtonianus-lxx": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Greek uncial display",
+      "library_url": "https://www.freersgallery.org/",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Deuteronomy 5:6–7",
+          "tradition": "lxx",
+          "original": "ἐγώ εἰμι κύριος ὁ θεός σου ὁ ἐξαγαγών σε ἐκ γῆς Αἰγύπτου",
+          "original_label": "Greek Decalogue opening on Freer OT leaves",
+          "original_source": "Sanders, Old Testament Manuscripts in the Freer Collection — display excerpt",
+          "english": "I am Yahweh your God, who brought you out of the land of Egypt.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "attribution": "Greek diplomatic excerpts from PD editio princeps plates where noted. English: WEB (PD). Not a Rahlfs/Göttingen apparatus dump."
+    },
+    "codex-vaticanus-lxx-ot": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Greek uncial display",
+      "library_url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Genesis 1:1",
+          "tradition": "lxx",
+          "original": "ἐν ἀρχῇ ἐποίησεν ὁ θεὸς τὸν οὐρανὸν καὶ τὴν γῆν",
+          "original_label": "Standard LXX opening — Vaticanus hand (display excerpt)",
+          "original_source": "Rahlfs LXX Genesis; Vatican digitization for verification",
+          "english": "In the beginning, God created the heavens and the earth.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "attribution": "Greek diplomatic excerpts from PD editio princeps plates where noted. English: WEB (PD). Not a Rahlfs/Göttingen apparatus dump."
+    },
+    "codex-sinaiticus-lxx-ot": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Greek uncial display",
+      "library_url": "https://codexsinaiticus.org/en/",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Psalm 23:1 (LXX Ps 22:1)",
+          "tradition": "lxx",
+          "original": "κύριος ποιμαίνει με καὶ οὐδέν με ὑστερήσει",
+          "original_label": "Greek Psalm 22:1 (LXX numbering) — display excerpt",
+          "original_source": "Codex Sinaiticus Project transcription (verify on site)",
+          "english": "Yahweh is my shepherd; I shall lack nothing.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "attribution": "Greek diplomatic excerpts from PD editio princeps plates where noted. English: WEB (PD). Not a Rahlfs/Göttingen apparatus dump."
+    },
+    "p-amherst-3-lxx-gen": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Greek uncial display",
+      "library_url": "https://www.themorgan.org/manuscript/77095",
+      "rahlfs": "814",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Genesis 1:1–3",
+          "tradition": "lxx",
+          "original": "ἐν ἀρχῇ ἐποίησεν ὁ θεὸς τὸν οὐρανὸν καὶ τὴν γῆν ἡ δὲ γῆ ἦν ἀόρατος",
+          "original_label": "Greek uncial on Amherst 3 verso (Gen 1:1–5 plate)",
+          "original_source": "Morgan Library plate on Commons",
+          "english": "In the beginning, God created the heavens and the earth. The earth was formless and empty.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "attribution": "Greek diplomatic excerpts from PD editio princeps plates where noted. English: WEB (PD). Not a Rahlfs/Göttingen apparatus dump."
+    },
+    "p967": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Greek uncial display",
+      "library_url": "https://www.chesterbeatty.ie/",
+      "rahlfs": "872",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Ezekiel 37:1",
+          "tradition": "lxx",
+          "original": "καὶ ἐγένετο ἐπʼ ἐμὲ χεὶρ κυρίου καὶ ἐξήγαγέν με ἐν πνεύματι",
+          "original_label": "Greek of valley of dry bones vision opening",
+          "original_source": "Hayes Beatty plates; Rahlfs Ezekiel",
+          "english": "Yahweh's hand was on me, and he brought me out in Yahweh's Spirit.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "attribution": "Greek diplomatic excerpts from PD editio princeps plates where noted. English: WEB (PD). Not a Rahlfs/Göttingen apparatus dump."
+    },
+    "p-oxy-3522": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + PD facsimile diplomatic excerpts",
+      "translation_base": "World English Bible (PD)",
+      "translation_label": "English of these lines",
+      "original_base": "Greek uncial display",
+      "library_url": "https://papyri.info/ddbdp/p.oxy;52;3522",
+      "rahlfs": "967",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Esther 1:1",
+          "tradition": "lxx",
+          "original": "ἔτους δευτέρου βασιλεύοντος Ἀρταξέρξου τῷ μεγάλῳ",
+          "original_label": "Greek Esther opening formula on P.Oxy. 3522",
+          "original_source": "Parsons P.Oxy. LII 3522 — display excerpt",
+          "english": "In the second year of the reign of Artaxerxes the Great…",
           "english_label": "English of these lines",
           "english_source": "World English Bible (PD)"
         }

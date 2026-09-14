@@ -61,6 +61,16 @@ export default function HomeTimeline() {
   useEffect(() => {
     const q = searchParams.get("q");
     if (q) setSearch(q);
+    const c = searchParams.get("corpus");
+    if (
+      c === "nt" ||
+      c === "quran" ||
+      c === "nag-hammadi" ||
+      c === "hebrew-lxx"
+    ) {
+      setSiteCorpus(c);
+      setSelectedYear(CORPUS_DEFAULT_YEAR[c]);
+    }
   }, [searchParams]);
 
   const isQuran = siteCorpus === "quran";
@@ -281,9 +291,12 @@ export default function HomeTimeline() {
             <p className={styles.completeness}>
               Hand-curated seed of {hebrewLxxWitnesses.filter((w) => w.corpus === "ot").length}{" "}
               Hebrew DSS and {hebrewLxxWitnesses.filter((w) => w.corpus === "lxx").length} Greek
-              LXX papyri overlapping {HEBREW_LXX_WINDOW_LABEL}. BCE dates are allowed on this
-              timeline only. Famous Isaiah scrolls (1QIsaᵃ) are BCE — they appear here, not on the
-              Greek NT switch. No BHQ or Rahlfs apparatus reuse.
+              LXX witnesses overlapping {HEBREW_LXX_WINDOW_LABEL}. BCE dates appear on this timeline
+              only (e.g. 1QIsaᵃ). For debates: medieval MT is late; Qumran shows earlier Hebrew; LXX
+              is a separate Greek stream — compare both to the frozen Greek NT slice (1–400 CE), not
+              as one uniform &ldquo;original.&rdquo; Diplomatic excerpts + WEB English; no BHQ/Rahlfs
+              apparatus reuse.{" "}
+              <Link href="/coverage/">Coverage counts</Link>.
             </p>
           )}
           {isQuran && (

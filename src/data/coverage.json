@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T18:34:44.959Z",
+  "generated_at": "2026-09-14T11:26:14.296Z",
   "sources": {
     "witness_texts": "src/data/witness-texts.json",
     "cntr_overflow": "public/cntr-texts/*.json",
@@ -1836,6 +1836,20 @@
     "leaf_image_count": 10,
     "leaf_image_fraction": 1,
     "collation_note": "No Thomas↔NT collation in v1. These are Coptic Gnostic tractates, not Greek New Testament witnesses."
+  },
+  "hebrew_lxx": {
+    "window": [
+      -250,
+      400
+    ],
+    "window_label": "250 BCE–400 CE",
+    "witness_count": 24,
+    "hebrew_dss_count": 9,
+    "greek_lxx_count": 15,
+    "leaf_image_count": 16,
+    "leaf_image_fraction": 0.667,
+    "corpus_note": "Hand-curated DSS + LXX papyri/uncials overlapping the Hebrew/LXX timeline. Diplomatic excerpts + WEB English on cards — not BHQ or Göttingen apparatus dumps.",
+    "student_note": "Medieval Masoretic Text (MT) codices are centuries later than Qumran Hebrew; Dead Sea Scrolls show earlier Hebrew diversity. The Septuagint (LXX) is a separate early Greek translation stream — compare both to the site's Greek NT slice (1–400 CE), not as a single 'original Bible' line."
   },
   "primer_example": {
     "witness": "P129",

@@ -17,8 +17,8 @@ Witnesses are included when a published **paleographic or C14 CE range** overlap
 
 - `date_start ≤ 400` AND `date_end ≥ -250`
 - **BCE dates** are shown on this corpus timeline only (negative CE years → “250 BCE” labels).
-- **12 witnesses** in `scripts/hebrew-lxx-seed.json` (4 Hebrew DSS + 8 Greek LXX papyri).
-- **8/12** witnesses show a leaf photo (Commons PD/CC plates); IAA/Leon Levy restricted photos are **linked**, not rehosted.
+- **24 witnesses** in `scripts/hebrew-lxx-seed.json` (9 Hebrew DSS + 15 Greek LXX papyri/codices).
+- **16/24** witnesses show a leaf photo (Commons PD/CC plates); IAA/Leon Levy restricted photos are **linked**, not rehosted.
 - Hebrew diplomatic: display consonants for the shown locus (compare Leon Levy / PD editio princeps plates).
 - Greek LXX diplomatic: uncial excerpts from PD facsimile publications (Grenfell & Hunt, Roberts 1936, etc.).
 - English: **World English Bible** (public domain) — labeled *English of these lines* for the surviving passage.
@@ -26,7 +26,7 @@ Witnesses are included when a published **paleographic or C14 CE range** overlap
 
 Regenerate: `node scripts/build-hebrew-lxx-data.mjs`
 
-### Hebrew / LXX image coverage (12 witnesses)
+### Hebrew / LXX image coverage (24 witnesses)
 
 | Witness | Tradition | Image source | Notes |
 |---------|-----------|--------------|-------|
@@ -34,14 +34,25 @@ Regenerate: `node scripts/build-hebrew-lxx-data.mjs`
 | 11QPsᵃ | Hebrew DSS | **Commons** (hosted) | LOC/IAA Psalms Scroll (PDMC) |
 | 4QSamᵃ | Hebrew DSS | **None** | Leon Levy DSS Digital Library link only |
 | 2Q18 | Hebrew DSS | **None** | Leon Levy link only |
+| Nash Papyrus | Hebrew DSS | **Commons** (hosted) | Cambridge Decalogue plate |
+| 4Q175 | Hebrew DSS | **Commons** (hosted) | Testimonia catena |
+| 4QGen-Exa | Hebrew DSS | **Commons** (hosted) | Genesis 1 exhibition plate |
+| Mur 88 | Hebrew DSS | **None** | Leon Levy link only |
+| Mas1a | Hebrew DSS | **None** | Leon Levy link only |
 | P.Ryl. 458 | Greek LXX | **Commons** (hosted) | Rahlfs 957; Roberts 1936 plate |
 | P.Fouad 266 | Greek LXX | **Commons** (hosted) | Rahlfs 847–848; tetragrammaton plate |
 | P.Oxy. 656 | Greek LXX | **Commons** (hosted) | Rahlfs 905; Grenfell & Hunt 1904 plate |
 | P.Oxy. 1007 | Greek LXX | **Commons** (hosted) | Rahlfs 907; Hunt 1910 plate |
-| CBL BP IV | Greek LXX | **Commons** (hosted) | Rahlfs 961 Genesis |
-| CBL BP V | Greek LXX | **Commons** (hosted) | Rahlfs 962 Genesis |
+| CBL BP IV–V | Greek LXX | **Commons** (hosted) | Rahlfs 961–962 Genesis |
 | CBL BP VI | Greek LXX | **None** | Chester Beatty / Michigan — link only |
 | P.Vindob. G 39777 | Greek LXX | **None** | ONB Vienna — link only |
+| 8HevXII gr | Greek LXX | **Commons** (hosted) | Nahal Ḥever Greek Minor Prophets |
+| Codex Washingtonianus (OT) | Greek LXX | **Commons** (hosted) | Freer OT leaves (GA 032) |
+| Codex Vaticanus (OT) | Greek LXX | **None** | DigiVatLib IIIF link only |
+| Codex Sinaiticus (OT) | Greek LXX | **None** | codexsinaiticus.org link only |
+| P.Amherst 3 (Gen) | Greek LXX | **Commons** (hosted) | Morgan LXX Genesis — not NT P12 |
+| P967 Ezekiel | Greek LXX | **Commons** (hosted) | Chester Beatty Rahlfs 872 |
+| P.Oxy. 3522 | Greek LXX | **Commons** (hosted) | Greek Esther Rahlfs 967 |
 
 Commons files live in `public/witnesses/` with `.attribution.json` sidecars. Run `npm run hebrew-lxx-images` to fetch.
 

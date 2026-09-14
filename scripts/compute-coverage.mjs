@@ -46,6 +46,13 @@ function loadNagHammadiWitnessesFromTs() {
   return JSON.parse(match[1]);
 }
 
+function loadHebrewLxxWitnessesFromTs() {
+  const mod = readFileSync(join(ROOT, "src/data/hebrew-lxx-witnesses.ts"), "utf8");
+  const match = mod.match(/export const hebrewLxxWitnesses: Witness\[\] = (\[[\s\S]*\]);/);
+  if (!match) throw new Error("Could not parse hebrew-lxx-witnesses.ts");
+  return JSON.parse(match[1]);
+}
+
 function overlapsWindow(start, end, winStart, winEnd) {
   return start <= winEnd && end >= winStart;
 }
@@ -260,6 +267,31 @@ function computeNagHammadiCoverage(witnesses) {
   };
 }
 
+function computeHebrewLxxCoverage(witnesses, window) {
+  const withImage = witnesses.filter((w) => hasLeafImage(w)).length;
+  const hebrew = witnesses.filter((w) => w.corpus === "ot").length;
+  const lxx = witnesses.filter((w) => w.corpus === "lxx").length;
+  const windowLabel =
+    window[0] < 0
+      ? `${Math.abs(window[0])} BCE–${window[1]} CE`
+      : `${window[0]}–${window[1]} CE`;
+  return {
+    window,
+    window_label: windowLabel,
+    witness_count: witnesses.length,
+    hebrew_dss_count: hebrew,
+    greek_lxx_count: lxx,
+    leaf_image_count: withImage,
+    leaf_image_fraction: witnesses.length
+      ? Math.round((withImage / witnesses.length) * 1000) / 1000
+      : 0,
+    corpus_note:
+      "Hand-curated DSS + LXX papyri/uncials overlapping the Hebrew/LXX timeline. Diplomatic excerpts + WEB English on cards — not BHQ or Göttingen apparatus dumps.",
+    student_note:
+      "Medieval Masoretic Text (MT) codices are centuries later than Qumran Hebrew; Dead Sea Scrolls show earlier Hebrew diversity. The Septuagint (LXX) is a separate early Greek translation stream — compare both to the site's Greek NT slice (1–400 CE), not as a single 'original Bible' line.",
+  };
+}
+
 function computeIntentionalTagging() {
   const tagsPath = join(ROOT, "src/data/intentional-tags.json");
   const taggableTotal = countTaggableUnits(false);
@@ -316,6 +348,7 @@ function main() {
   const witnesses = loadWitnessesFromTs();
   const quranWitnesses = loadQuranWitnessesFromTs();
   const nagHammadiWitnesses = loadNagHammadiWitnessesFromTs();
+  const hebrewLxxWitnesses = loadHebrewLxxWitnessesFromTs();
   const witnessTexts = loadJson(join(ROOT, "src/data/witness-texts.json"));
   const liste = loadJson(join(ROOT, "scripts/cache/liste.json"));
 
@@ -325,6 +358,15 @@ function main() {
   nt.intentional_tagging = computeIntentionalTagging();
   const quran = computeQuranCoverage(quranWitnesses);
   const nagHammadi = computeNagHammadiCoverage(nagHammadiWitnesses);
+  const hebrewLxxMod = readFileSync(
+    join(ROOT, "src/data/hebrew-lxx-witnesses.ts"),
+    "utf8"
+  );
+  const hlWindow = [
+    Number(hebrewLxxMod.match(/HEBREW_LXX_TIMELINE_START = (-?\d+)/)?.[1] ?? -250),
+    Number(hebrewLxxMod.match(/HEBREW_LXX_TIMELINE_END = (-?\d+)/)?.[1] ?? 400),
+  ];
+  const hebrew_lxx = computeHebrewLxxCoverage(hebrewLxxWitnesses, hlWindow);
 
   const out = {
     generated_at: new Date().toISOString(),
@@ -338,6 +380,7 @@ function main() {
     greek_nt: nt,
     quran,
     nag_hammadi: nagHammadi,
+    hebrew_lxx,
     primer_example: findPrimerExample(witnessTexts),
     home_stats: {
       greek_nt_witnesses: nt.witness_count,
