@@ -1,0 +1,145 @@
+{
+  "intro": "This page maps common public claims to what Illustrative Manuscripts actually contains — open CNTR transcriptions, a bounded 1–400 CE Greek NT slice, and hand-curated Qurʾān catalog data. It is meant to help students, researchers, debaters, and apologists stay precise: neither inflating our counts nor pretending the site settles every tradition-scale debate.",
+  "pathways": [
+    {
+      "id": "student",
+      "title": "Student",
+      "description": "Learn how to read a witness card, what our numbers mean, and where block-level famous passages differ from the word census.",
+      "links": [
+        { "href": "/cite/", "label": "Cite & learn" },
+        { "href": "/famous/", "label": "Famous passages" },
+        { "href": "/coverage/", "label": "Coverage primer (Ehrman vs our slice)" }
+      ]
+    },
+    {
+      "id": "researcher",
+      "title": "Researcher / academic",
+      "description": "Download the open census, read methodology, and cite CNTR/INTF for primaries — cite us for the illustrative collation slice only.",
+      "links": [
+        { "href": "/coverage/", "label": "Coverage & downloads" },
+        { "href": "/cite/#for-researchers", "label": "For researchers (schema & BibTeX)" },
+        { "href": "/quran/uthmani/", "label": "Uthmanic regional rasm" },
+        {
+          "href": "https://github.com/severin12am/illustrative-manuscripts",
+          "label": "GitHub (data & code)",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "debater",
+      "title": "Debater / apologist",
+      "description": "Check claim discipline before arguing from our charts — then use Famous passages, Variants, Uthmanic rasm, and Coverage honesty together.",
+      "links": [
+        { "href": "/use/#claims", "label": "Claim cards (this page)" },
+        { "href": "/famous/", "label": "Famous passages" },
+        { "href": "/variants/", "label": "Variant explorer" },
+        { "href": "/quran/uthmani/", "label": "Uthmanic rasm" },
+        { "href": "/coverage/", "label": "Coverage & scope limits" }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "nobody-counted-variants",
+      "claim": "Nobody has counted New Testament variants.",
+      "verdict": "partial",
+      "why": "Peter Gurry (NTS 2016) estimates on the order of ~500,000 readings across the whole Greek tradition — a extrapolation, not a hand count of every manuscript. Our site does publish a mechanical count, but only for word-aligned disagreements vs SR GNT in extant letters of our 1–400 CE CNTR witness slice — not the full ~5,700+ manuscript tradition.",
+      "links": [
+        { "href": "/coverage/", "label": "Coverage & scope" },
+        { "href": "/variants/", "label": "Variant census" },
+        { "href": "/cite/", "label": "What the numbers mean" }
+      ],
+      "scholarship": [
+        {
+          "label": "Gurry 2016 — How Many Variants Are in the Greek New Testament?",
+          "url": "https://doi.org/10.1017/S0028688516000216"
+        }
+      ]
+    },
+    {
+      "id": "nt-unknown-before-late",
+      "claim": "The New Testament text is completely unknown before late manuscripts.",
+      "verdict": "unsupported",
+      "why": "Within our frozen window, substantial Greek material survives from the second and third centuries (papyri) plus fourth-century codices such as 01 and 03. That does not recover every verse in every book from every century — but it falsifies the blanket claim that nothing early exists.",
+      "links": [
+        { "href": "/", "label": "Timeline" },
+        { "href": "/coverage/", "label": "Coverage (what we actually hold)" }
+      ]
+    },
+    {
+      "id": "text-largely-recoverable-400",
+      "claim": "By about 400 CE the Greek New Testament text is largely recoverable.",
+      "verdict": "supported",
+      "why": "Standard critical-edition framing (and our site’s own scope statement) treats the fourth-century major codices plus earlier papyri as the backbone for reconstructing the Greek text — while still not counting every later Byzantine variant or replacing NA28/ECM apparatus judgments.",
+      "links": [
+        { "href": "/coverage/", "label": "Coverage methodology" },
+        { "href": "/compare/", "label": "Witness compare" }
+      ]
+    },
+    {
+      "id": "pa-absent-early",
+      "claim": "P66, P75, 01, and 03 lack the Pericope Adulterae (John 7:53–8:11).",
+      "verdict": "supported",
+      "why": "In CNTR transcriptions in our corpus, that block is marked absent; narrative runs from 7:52 to 8:12 in those witnesses. Later Byzantine copies insert the pericope — a different story from our early slice.",
+      "links": [{ "href": "/famous/#pericope-adulterae", "label": "Famous: Pericope Adulterae" }]
+    },
+    {
+      "id": "mark-ends-16-8",
+      "claim": "Mark originally ended at 16:8 in the earliest complete Greek codices in our window.",
+      "verdict": "supported",
+      "why": "Codex Sinaiticus (01) and Codex Vaticanus (03) end Mark at 16:8 in the main Greek tradition represented in CNTR; the longer ending 16:9–20 is a later supplement in the manuscript record. Textual critics still debate composition history — our data support the codex-level statement for 01/03.",
+      "links": [{ "href": "/famous/#mark-long-ending", "label": "Famous: Mark ending" }]
+    },
+    {
+      "id": "comma-in-earliest-greek",
+      "claim": "The Comma Johanneum is in the earliest Greek tradition.",
+      "verdict": "unsupported",
+      "why": "1 John 5:7–8 is extant in early Greek witnesses with the short reading (Spirit, water, blood). The explicit heavenly Trinity wording of the Comma is not attested in Greek before the sixteenth century; it entered some Latin lines and late Greek retro-translations.",
+      "links": [{ "href": "/famous/#comma-johanneum", "label": "Famous: Comma Johanneum" }]
+    },
+    {
+      "id": "quran-zero-variation",
+      "claim": "The Qurʾān has no manuscript variation.",
+      "verdict": "unsupported",
+      "why": "The Uthmanic Text Type is highly uniform, but published stemmatics (Cook; Sidky; van Putten) report on the order of ~35–40 regional rasm differences among the four ʿUthmānic exemplar traditions — not wholesale content rewrites, but not zero graphic variation. Early palimpsests such as Ṣanʿāʾ 1 preserve a lower text that is not UT.",
+      "links": [
+        { "href": "/quran/uthmani/", "label": "Uthmanic regional rasm" },
+        { "href": "/?q=Sanaa", "label": "Ṣanʿāʾ palimpsest card" }
+      ],
+      "scholarship": [
+        {
+          "label": "Cook — The Koran: A Very Short Introduction (regional rasm overview)",
+          "url": "https://en.wikipedia.org/wiki/The_Koran:_A_Very_Short_Introduction"
+        }
+      ]
+    },
+    {
+      "id": "uthmanic-stable-650",
+      "claim": "From about 650 CE the Uthmanic text type is already stable.",
+      "verdict": "supported",
+      "why": "Sidky and van Putten’s archetype framing treats UT as stable from the seventh century onward for the rasm tradition they model — while allowing later scribal noise and regional graphic differences, not a claim of byte-identical copies everywhere.",
+      "links": [{ "href": "/quran/uthmani/", "label": "Uthmanic regional rasm (stemma & examples)" }]
+    },
+    {
+      "id": "proves-theological-corruption",
+      "claim": "Illustrative Manuscripts proves intentional theological corruption at scale.",
+      "verdict": "unsupported",
+      "why": "Optional intentional-vs-error tags on some Greek NT units are heuristic and model-assisted — useful for exploration, not proof of motive across the tradition. Most counted units are spelling, word order, or ordinary scribal difference vs SR GNT.",
+      "links": [
+        { "href": "/coverage/", "label": "Coverage (intentional tagging limits)" },
+        { "href": "/cite/#not-claiming", "label": "Cite & learn — what we are not claiming" }
+      ]
+    },
+    {
+      "id": "census-equals-na28",
+      "claim": "Our census equals the NA28 apparatus or all Greek manuscripts.",
+      "verdict": "out_of_scope",
+      "why": "Out of scope by design: we mechanically align a bounded CNTR witness set to SR GNT. NA28/ECM/IGNTP record editorial judgments and thousands of witnesses beyond our 1–400 CE illustrative slice.",
+      "links": [
+        { "href": "/coverage/", "label": "Coverage & scope" },
+        { "href": "/cite/#for-researchers", "label": "For researchers" }
+      ]
+    }
+  ]
+}

@@ -205,6 +205,11 @@
   background: #f5ecec;
 }
 
+.statusBadge[data-status="partial"] {
+  color: #6b5a2d;
+  background: #f5f0e0;
+}
+
 .statusBadge[data-status="lacunose"] {
   color: #5a4a2d;
   background: #f5f0e8;

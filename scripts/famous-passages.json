@@ -121,6 +121,86 @@
       ],
       "variants_link": { "book": "Luke", "q": "22:43" },
       "compare_link": { "a": "P75", "b": "03", "book": "Luke" }
+    },
+    {
+      "slug": "john-pool-angel",
+      "title": "Angel stirring the pool (John 5:3b–4)",
+      "passage_ref": "John 5:3b–4",
+      "book": "John",
+      "verse_esns": [43005004],
+      "story": "Some later Greek manuscripts and many printed Bibles add an explanation at the pool of Bethesda: an angel periodically stirred the water and the first person in was healed. John 5:3 in the earliest line ends after the list of the blind, lame, and paralyzed; verse 4 (the angel story) is absent from the best early Greek witnesses and is regarded as a secondary gloss explaining why people waited at the pool.",
+      "later_tradition": "The angel verse becomes common in Byzantine copies and the Textus Receptus tradition, so English readers often know the story from the KJV. Modern critical editions (NA28, UBS5, SR GNT) omit verse 4; NA28 also brackets the expanded ending of 5:3 found in some late witnesses. Our CNTR transcriptions mark John 5:4 absent in 𝔓⁶⁶, 𝔓⁷⁵, 01, and 03.",
+      "scholarship": [
+        {
+          "label": "CNTR — John 5 witnesses",
+          "url": "https://greekcntr.org/"
+        },
+        {
+          "label": "John 5:3–4 — Wikipedia (secondary)",
+          "url": "https://en.wikipedia.org/wiki/Textual_variants_in_the_New_Testament#John_5:3%E2%80%934"
+        }
+      ],
+      "witnesses": [
+        { "ga": "P66", "status": "absent", "note": "CNTR marks John 5:4 absent (—) in 𝔓⁶⁶." },
+        { "ga": "P75", "status": "absent", "note": "CNTR marks John 5:4 absent (—) in 𝔓⁷⁵." },
+        { "ga": "01", "status": "absent", "note": "Absent in Codex Sinaiticus." },
+        { "ga": "03", "status": "absent", "note": "Absent in Codex Vaticanus." }
+      ],
+      "variants_link": { "book": "John", "q": "5:3" },
+      "compare_link": { "a": "P66", "b": "P75", "book": "John" }
+    },
+    {
+      "slug": "romans-16-24",
+      "title": "Doxology at Romans 16:24",
+      "passage_ref": "Romans 16:24",
+      "book": "Romans",
+      "verse_esns": [45016024],
+      "story": "A short grace formula — “The grace of our Lord Jesus Christ be with you all. Amen.” — appears as Romans 16:24 in some later manuscripts and printed Bibles, sandwiched before the final benediction of chapter 16. Critical editions usually omit the verse as a scribal transfer from elsewhere; the Pauline letter flows without it in the Alexandrian line represented by Codex Vaticanus and in 𝔓⁴⁶.",
+      "later_tradition": "The verse persists in the Byzantine majority and the Textus Receptus, so it surfaced in the KJV. NA28 prints 16:24 in brackets with weak attestation. In our CNTR slice, 16:24 is marked absent in 01, 03, and 𝔓⁴⁶.",
+      "scholarship": [
+        {
+          "label": "CNTR — Romans witnesses",
+          "url": "https://greekcntr.org/"
+        },
+        {
+          "label": "Romans 16:24 — Wikipedia (secondary)",
+          "url": "https://en.wikipedia.org/wiki/Textual_variants_in_the_New_Testament#Romans_16:24"
+        }
+      ],
+      "witnesses": [
+        { "ga": "01", "status": "absent", "note": "CNTR marks Romans 16:24 absent (—) in Codex Sinaiticus." },
+        { "ga": "03", "status": "absent", "note": "Absent in Codex Vaticanus." },
+        { "ga": "P46", "status": "absent", "note": "Absent in 𝔓⁴⁶ (early Paul papyrus)." },
+        { "ga": "P66", "status": "not_in_corpus", "note": "𝔓⁶⁶ is John only in our CNTR slice." }
+      ],
+      "variants_link": { "book": "Romans", "q": "16:24" },
+      "compare_link": { "a": "01", "b": "03", "book": "Romans" }
+    },
+    {
+      "slug": "luke-forgive-them",
+      "title": "“Father, forgive them” (Luke 23:34a)",
+      "passage_ref": "Luke 23:34",
+      "book": "Luke",
+      "verse_esns": [42023034],
+      "story": "At the crucifixion Luke reports Jesus praying, “Father, forgive them, for they do not know what they are doing,” before the soldiers divide his clothing. That opening clause is missing from Codex Vaticanus (03) and from 𝔓⁷⁵ — among the earliest Luke witnesses in our dataset — while Codex Sinaiticus (01) includes it (with later marginal doubt in the manuscript tradition). The omission is usually explained as accidental scribal loss or deliberate excision in an Alexandrian line, not as wholesale uncertainty about Luke’s passion narrative.",
+      "later_tradition": "Most later manuscripts include the prayer; it is familiar from liturgy and many Bible translations. NA28 brackets the clause as doubtful. CNTR still encodes Luke 23:34 as one verse: where the clause is omitted, the surviving text begins at the clothing division — we flag that below as partial absence of the opening words, not absence of the whole verse.",
+      "scholarship": [
+        {
+          "label": "CNTR — Luke witnesses",
+          "url": "https://greekcntr.org/"
+        },
+        {
+          "label": "Luke 23:34 — Wikipedia (secondary)",
+          "url": "https://en.wikipedia.org/wiki/Father,_forgive_them,_for_they_know_not_what_they_do"
+        }
+      ],
+      "witnesses": [
+        { "ga": "P75", "status": "partial", "note": "Verse extant but CNTR text lacks the forgiveness clause; begins at the clothing division." },
+        { "ga": "03", "status": "partial", "note": "Verse extant without the opening prayer in Codex Vaticanus." },
+        { "ga": "01", "status": "present", "note": "Includes “Father, forgive them…” in Codex Sinaiticus (later correctors marked doubt in the MS)." }
+      ],
+      "variants_link": { "book": "Luke", "q": "23:34" },
+      "compare_link": { "a": "P75", "b": "03", "book": "Luke" }
     }
   ]
 }

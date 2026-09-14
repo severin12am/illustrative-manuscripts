@@ -70,6 +70,28 @@
   font-weight: 600;
 }
 
+.bibPre {
+  margin: 0.65rem 0 0;
+  padding: 0.85rem 1rem;
+  background: var(--paper-warm);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, monospace;
+  font-size: 0.75rem;
+  line-height: 1.55;
+  color: var(--ink-secondary);
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.citationOneLiner {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  margin: 0.5rem 0 0;
+  line-height: 1.55;
+}
+
 .citation {
   font-size: 0.9rem;
   color: var(--ink-secondary);

@@ -1,0 +1,206 @@
+.main {
+  min-height: 100vh;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3.5rem;
+}
+
+.hero {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-muted);
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: clamp(1.875rem, 4vw, 2.5rem);
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.lead {
+  color: var(--ink-secondary);
+  line-height: 1.75;
+  font-size: 1rem;
+  max-width: 44rem;
+}
+
+.section {
+  margin: 2.5rem 0;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  color: var(--ink);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-light);
+  font-weight: 600;
+}
+
+.sectionIntro {
+  color: var(--ink-secondary);
+  line-height: 1.7;
+  font-size: 0.9375rem;
+  margin-bottom: 1.25rem;
+  max-width: 44rem;
+}
+
+.pathwayGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.pathwayCard {
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.15rem 1.25rem;
+}
+
+.pathwayCard h3 {
+  font-size: 1rem;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.pathwayCard p {
+  font-size: 0.875rem;
+  color: var(--ink-secondary);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.pathwayLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+}
+
+.pathwayLinks li {
+  margin-bottom: 0.35rem;
+}
+
+.pathwayLinks a {
+  color: var(--accent);
+}
+
+.claimList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.claimCard {
+  background: var(--paper-warm);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.35rem;
+}
+
+.claimHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.65rem 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.claimText {
+  flex: 1 1 14rem;
+  font-size: 1.05rem;
+  color: var(--ink);
+  font-weight: 600;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.verdict {
+  font-family: var(--font-ui);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.25rem 0.55rem;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+.verdict[data-verdict="supported"] {
+  background: #e8f0ea;
+  color: #2d5a3d;
+}
+
+.verdict[data-verdict="partial"] {
+  background: #f5f0e0;
+  color: #6b5a2d;
+}
+
+.verdict[data-verdict="unsupported"] {
+  background: #f3ece8;
+  color: #6b3d2d;
+}
+
+.verdict[data-verdict="out_of_scope"] {
+  background: #eef2f4;
+  color: #3d5a6b;
+}
+
+.claimWhy {
+  font-size: 0.9375rem;
+  color: var(--ink-secondary);
+  line-height: 1.7;
+  margin: 0 0 0.85rem;
+}
+
+.claimMeta {
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  color: var(--ink-muted);
+  line-height: 1.55;
+}
+
+.claimMeta strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.claimMeta ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.claimMeta li {
+  margin-bottom: 0.25rem;
+}
+
+.claimMeta a {
+  color: var(--accent);
+}
+
+.footer {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-light);
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  color: var(--ink-muted);
+  line-height: 1.6;
+}
+
+.footer a {
+  color: var(--accent);
+}

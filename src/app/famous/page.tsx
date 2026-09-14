@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 const STATUS_LABEL: Record<WitnessPassageStatus, string> = {
   present: "Present",
   absent: "Absent",
+  partial: "Partial",
   lacunose: "Lacunose",
   not_in_corpus: "Not in corpus",
 };
@@ -172,6 +173,8 @@ export default function FamousPassagesPage() {
       ))}
 
       <footer className={styles.footer}>
+        <Link href="/use/">Use this site →</Link>
+        {" · "}
         <Link href="/coverage/">Coverage &amp; scope →</Link>
         {" · "}
         <Link href="/variants/">Variant explorer →</Link>

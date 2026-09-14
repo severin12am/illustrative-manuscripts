@@ -38,7 +38,9 @@ export default function CitePage() {
         <p className={styles.lead}>
           Plain-language help for using this site in papers, classrooms, and
           curious browsing — how to cite our work, what the counts mean, and
-          where to go next for full scholarly tools.
+          where to go next for full scholarly tools. For claim discipline and
+          audience routes, see{" "}
+          <Link href="/use/">Use this site</Link>.
         </p>
       </header>
 
@@ -60,6 +62,23 @@ export default function CitePage() {
             [Website]. GitHub Pages. {PAGES} (Source code: {GITHUB}). Accessed{" "}
             <span className={styles.placeholder}>{ACCESS}</span>.
           </p>
+          <p className={styles.citationOneLiner}>
+            Chicago (short): Illustrative Manuscripts.{" "}
+            <em>Illustrative Manuscripts: An Illustrated Timeline of Early Biblical Witnesses</em>
+            . Accessed [date]. {PAGES}.
+          </p>
+          <p className={styles.citationOneLiner}>
+            MLA (short): <em>Illustrative Manuscripts: An Illustrated Timeline of Early Biblical Witnesses</em>
+            . GitHub Pages, severin12am.github.io/illustrative-manuscripts/. Accessed [date].
+          </p>
+          <pre className={styles.bibPre}>{`@misc{illustrative_manuscripts_site,
+  title = {Illustrative Manuscripts: An illustrated timeline of early biblical witnesses},
+  author = {{Illustrative Manuscripts}},
+  year = {n.d.},
+  howpublished = {Website},
+  url = {${PAGES}},
+  note = {Source code: ${GITHUB}. CC BY 4.0 metadata; MIT code.}
+}`}</pre>
         </div>
 
         <div className={styles.citationBlock}>
@@ -82,7 +101,66 @@ export default function CitePage() {
             {" · "}
             <a href={censusJson}>variant-census.json</a>
           </p>
+          <p className={styles.citationOneLiner}>
+            Chicago (short): Illustrative Manuscripts.{" "}
+            <em>Greek New Testament Variant Census ({TIMELINE_START}–{TIMELINE_END} CE vs SR GNT)</em>
+            . GitHub, {GITHUB}/blob/main/public/variant-census.csv. Accessed [date].
+          </p>
+          <pre className={styles.bibPre}>{`@misc{illustrative_manuscripts_census,
+  title = {Greek New Testament variant census (${TIMELINE_START}--${TIMELINE_END} CE vs SR GNT)},
+  author = {{Illustrative Manuscripts}},
+  year = {n.d.},
+  publisher = {GitHub},
+  url = {${GITHUB}/blob/main/public/variant-census.json},
+  note = {${variantIndex.total.toLocaleString()} word-aligned variation units; ${variantIndex.witness_count} witnesses. Mechanical collation vs open SR GNT (CNTR); not NA28 apparatus.}
+}`}</pre>
         </div>
+      </section>
+
+      <section className={styles.section} id="for-researchers">
+        <h2 className={styles.sectionTitle}>For researchers</h2>
+        <p className={styles.sectionIntro}>
+          Cite <a href="https://greekcntr.org/">CNTR</a> and{" "}
+          <a href="https://ntvmr.uni-muenster.de/">INTF/NTVMR</a> for primary
+          Greek transcriptions and manuscript registers. Cite Illustrative
+          Manuscripts when you use our{" "}
+          <strong>illustrative census slice</strong>, coverage aggregates, or
+          hand-curated passage cards — not as a stand-in for critical editions.
+        </p>
+        <dl className={styles.defList}>
+          <div className={styles.defItem}>
+            <dt>Public data files</dt>
+            <dd>
+              <code>public/variant-census.json</code> and{" "}
+              <code>public/variant-census.csv</code> — one row per counted
+              variation unit (witness, verse, kind, readings vs SR GNT).{" "}
+              <code>src/data/coverage.json</code> — build-time aggregates
+              (totals, by book, by kind, intentional-tag summaries).{" "}
+              <code>src/data/witness-texts.json</code> — diplomatic verse bundles
+              for timeline cards (CNTR-derived). Schema notes in{" "}
+              <a href={`${GITHUB}/blob/main/DATA.md`}>DATA.md</a>.
+            </dd>
+          </div>
+          <div className={styles.defItem}>
+            <dt>What is not in the JSON</dt>
+            <dd>
+              Full NA28/ECM apparatus, manuscripts outside our{" "}
+              {TIMELINE_START}–{TIMELINE_END} CE Greek NT window, copyrighted
+              scan pixels, or proprietary translation text (NA28/NIV/ESV). Block-level
+              famous passages live in{" "}
+              <code>src/data/famous-passages.json</code>; claim discipline cards
+              in <code>src/data/claims-evidence.json</code>.
+            </dd>
+          </div>
+          <div className={styles.defItem}>
+            <dt>Claim discipline</dt>
+            <dd>
+              Before comparing our counts to tradition-scale estimates, read{" "}
+              <Link href="/use/">Use this site</Link> and{" "}
+              <Link href="/coverage/">Coverage &amp; scope</Link>.
+            </dd>
+          </div>
+        </dl>
       </section>
 
       <section className={styles.section} id="what-numbers-mean">
@@ -470,6 +548,8 @@ export default function CitePage() {
       </section>
 
       <footer className={styles.footer}>
+        <Link href="/use/">Use this site →</Link>
+        {" · "}
         <Link href="/quran/uthmani/">Uthmanic regional rasm →</Link>
         {" · "}
         <Link href="/coverage/">Coverage &amp; scope →</Link>

@@ -61,6 +61,11 @@ export default function CoveragePage() {
             timeStyle: "short",
           })}
         </p>
+        <p className={styles.sectionIntro} style={{ marginTop: "1rem", marginBottom: 0 }}>
+          Students and debaters: start with{" "}
+          <Link href="/use/">Use this site</Link> for pathways and claim discipline
+          before quoting our counts in an argument.
+        </p>
       </header>
 
       <section className={styles.section}>
