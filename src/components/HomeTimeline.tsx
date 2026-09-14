@@ -8,6 +8,7 @@ import Timeline from "@/components/Timeline";
 import WitnessCard from "@/components/WitnessCard";
 import StatsStrip from "@/components/StatsStrip";
 import HomePrimerBanner from "@/components/HomePrimerBanner";
+import HomeStartHere from "@/components/HomeStartHere";
 import VariantExamples from "@/components/VariantExamples";
 import {
   witnesses as ntWitnesses,
@@ -147,6 +148,7 @@ export default function HomeTimeline() {
   return (
     <main className={styles.main}>
       <StatsStrip />
+      <HomeStartHere />
       <HomePrimerBanner />
       <header className={styles.hero}>
         <div className={styles.heroInner}>

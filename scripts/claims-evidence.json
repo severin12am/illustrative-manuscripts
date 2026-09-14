@@ -18,6 +18,7 @@
       "links": [
         { "href": "/coverage/", "label": "Coverage & downloads" },
         { "href": "/methodology/", "label": "Methods (scope & reproducibility)" },
+        { "href": "/?corpus=hebrew-lxx", "label": "Hebrew Bible & LXX corpus" },
         { "href": "/cite/#for-researchers", "label": "For researchers (schema & BibTeX)" },
         { "href": "/quran/uthmani/", "label": "Uthmanic regional rasm" },
         {
@@ -36,6 +37,7 @@
         { "href": "/famous/", "label": "Famous passages" },
         { "href": "/variants/", "label": "Variant explorer" },
         { "href": "/quran/uthmani/", "label": "Uthmanic rasm" },
+        { "href": "/?corpus=hebrew-lxx", "label": "Hebrew / LXX timeline" },
         { "href": "/coverage/", "label": "Coverage & scope limits" }
       ]
     }
@@ -140,6 +142,68 @@
       "links": [
         { "href": "/coverage/", "label": "Coverage & scope" },
         { "href": "/cite/#for-researchers", "label": "For researchers" }
+      ]
+    },
+    {
+      "id": "mt-identical-jesus-read",
+      "claim": "The Masoretic Text is identical to what Jesus read.",
+      "verdict": "partial",
+      "why": "Second-Temple and pre-Christian Hebrew witnesses in our corpus (Dead Sea Scrolls, Nash Papyrus) show a largely continuous consonantal tradition alongside spelling diversity and occasional longer or shorter readings in some books. That supports substantial continuity for much of the Hebrew Bible — not byte-identical identity with every medieval Masoretic codex for every verse a first-century reader might have heard.",
+      "links": [
+        { "href": "/?corpus=hebrew-lxx", "label": "Hebrew / LXX timeline" },
+        { "href": "/coverage/", "label": "Hebrew/LXX coverage notes" },
+        { "href": "/methodology/", "label": "Methods (corpus limits)" }
+      ],
+      "scholarship": [
+        {
+          "label": "Tov, Textual Criticism of the Hebrew Bible (3rd ed.) — DSS vs MT overview",
+          "url": "https://doi.org/10.1515/9783110360040"
+        }
+      ]
+    },
+    {
+      "id": "lxx-late-christian-invention",
+      "claim": "The Septuagint is a late Christian invention.",
+      "verdict": "unsupported",
+      "why": "Jewish Greek Torah and prophetic books are attested on pre-Christian papyri in this site’s Hebrew/LXX slice — e.g. P.Ryl. 458 (Genesis), P.Fouad 266 (Deuteronomy), P.Oxy. 1007 (Exodus) — centuries before Christian recensions and church fathers. Later Christian copies and revisions exist; that is not the same as inventing the whole Greek Old Testament tradition.",
+      "links": [
+        { "href": "/?corpus=hebrew-lxx&q=P.Ryl", "label": "P.Ryl. 458 witness card" },
+        { "href": "/?corpus=hebrew-lxx", "label": "Hebrew / LXX timeline" },
+        { "href": "/methodology/", "label": "Methods (what we transcribe)" }
+      ],
+      "scholarship": [
+        {
+          "label": "Rahlfs / Göttingen LXX — pre-Christian Jewish Greek witnesses",
+          "url": "https://www.uni-goettingen.de/en/613540.html"
+        }
+      ]
+    },
+    {
+      "id": "1qisa-proves-never-changed",
+      "claim": "1QIsaᵃ proves the Bible never changed.",
+      "verdict": "partial",
+      "why": "The Great Isaiah Scroll agrees with the Masoretic book of Isaiah far more often than it disagrees — a key data point for stability. It also preserves thousands of spelling variants and documented textual differences elsewhere in the DSS corpus; “remarkable agreement in Isaiah” is not a license to claim zero textual history for the whole Hebrew Bible.",
+      "links": [
+        { "href": "/?corpus=hebrew-lxx&q=1QIsa", "label": "1QIsaᵃ witness card" },
+        { "href": "/?corpus=hebrew-lxx", "label": "Hebrew / LXX corpus" },
+        { "href": "/coverage/", "label": "Coverage (DSS + LXX scope)" }
+      ],
+      "scholarship": [
+        {
+          "label": "Ulrich, The Biblical Qumran Scrolls (DJD series) — 1QIsaᵃ edition",
+          "url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/1Q1-1"
+        }
+      ]
+    },
+    {
+      "id": "ot-unattested-before-medieval",
+      "claim": "The Old Testament survives only in medieval manuscripts — nothing earlier exists.",
+      "verdict": "unsupported",
+      "why": "Within our Hebrew/LXX window, material survives from the second century BCE onward (DSS) and from pre-Christian Greek papyri. That does not recover every book on every leaf for every century — but it falsifies the blanket claim that no pre-medieval witnesses exist.",
+      "links": [
+        { "href": "/?corpus=hebrew-lxx", "label": "Hebrew / LXX timeline" },
+        { "href": "/coverage/", "label": "Coverage & downloads" },
+        { "href": "/methodology/", "label": "Methods" }
       ]
     }
   ]

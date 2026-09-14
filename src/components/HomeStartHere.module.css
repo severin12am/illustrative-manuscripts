@@ -1,0 +1,35 @@
+.strip {
+  border-bottom: 1px solid var(--border-light);
+  background: var(--surface-raised, var(--bg));
+  padding: 0.55rem 1.5rem;
+  text-align: center;
+}
+
+.inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  color: var(--ink-muted);
+  line-height: 1.5;
+}
+
+.label {
+  color: var(--ink-secondary);
+  font-weight: 500;
+  margin-right: 0.35rem;
+}
+
+.inner a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.inner a:hover {
+  text-decoration: underline;
+}
+
+.sep {
+  margin: 0 0.4rem;
+  opacity: 0.45;
+}
