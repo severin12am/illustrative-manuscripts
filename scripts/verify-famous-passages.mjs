@@ -82,6 +82,10 @@ if (mismatches > 0) {
 }
 console.log("All witness statuses align with CNTR data (within expected rules).");
 
+fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });
+fs.writeFileSync(OUTPUT, JSON.stringify(source, null, 2) + "\n");
+console.log(`Synced ${path.relative(ROOT, SOURCE)} → ${path.relative(ROOT, OUTPUT)}`);
+
 const claimsSrc = path.join(ROOT, "scripts/claims-evidence.json");
 const claimsOut = path.join(ROOT, "src/data/claims-evidence.json");
 if (fs.existsSync(claimsSrc)) {
