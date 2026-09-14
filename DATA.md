@@ -90,10 +90,10 @@ Regenerate: `node scripts/build-quran-data.mjs`
 | chester-beatty-is-1615i | **IIIF** | CBL `Is_1615I` fol. 1r (CC BY 4.0) |
 | leiden-or-14-545b | **IIIF** | Leiden UL Or. 14.545b fol. 1a (public domain) |
 | leiden-or-14-545c | **IIIF** | Leiden UL Or. 14.545c fol. 1a (C14; public domain) |
-| marcel-17 | **None** | St Petersburg (Marcel 17) — no public IIIF or verified Commons leaf |
-| mingana-1572b | **None** | Birmingham 1572b — no separate open image yet |
-| doha-ms-2007 | **None** | MIA Doha — no public IIIF/Commons match |
-| dar-al-kutub-247-masahif | **None** | Cairo Ms. 247 Maṣāḥif — no public IIIF; see Berlin 4313 counterpart |
+| marcel-17 | **None** | St Petersburg (Marcel 17) — no public IIIF or verified Commons leaf (re-checked 2026-09-14; NLR Marcel exposition not IIIF) |
+| mingana-1572b | **None** | Birmingham 1572b — Cadbury Flickr/VMR images © UoB (not CC); no Commons plate |
+| doha-ms-2007 | **None** | MIA Doha MS 67.2007 — no public IIIF/Commons match for this codex join |
+| dar-al-kutub-247-masahif | **None** | Cairo Ms. 247 Maṣāḥif — no public IIIF; color plates in JQS 2025 not openly licensed; see Berlin 4313 IIIF counterpart |
 
 **Removed (2026-09-07):** `gotha-orient-a-409` — shelfmark not verified in Corpus Coranicum / Gotha catalogs; replaced by verified witnesses above.
 

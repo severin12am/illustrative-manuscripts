@@ -1,5 +1,5 @@
 /**
- * Generated 2026-09-07 from scripts/quran-seed.json
+ * Generated 2026-09-14 from scripts/quran-seed.json
  * Window: 1–100 AH (≈622–719 CE overlap). 19 witnesses, 15 with Commons or IIIF leaf images.
  * Regenerate: node scripts/build-quran-data.mjs
  */
