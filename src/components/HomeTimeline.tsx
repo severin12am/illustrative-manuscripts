@@ -314,7 +314,7 @@ export default function HomeTimeline() {
           {isNagHammadi && (
             <p className={styles.completeness}>
               Hand-curated seed of tractates from multiple Nag Hammadi codices
-              (Codex I Jung, II, III). These are non-canonical Coptic texts — not
+              (Codices I, II–VI, XIII in seed). These are non-canonical Coptic texts — not
               New Testament manuscripts. Discovery at Jabal al-Tarif was in 1945;
               the codices were copied ca. mid 4th c. CE.
             </p>

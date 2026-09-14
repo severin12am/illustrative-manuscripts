@@ -1,12 +1,16 @@
 {
   "_meta": {
-    "window_ce": [300, 400],
+    "window_ce": [
+      300,
+      400
+    ],
     "window_ce_note": "Paleographic date range of the physical Nag Hammadi codices (~mid 4th c. CE). Composition of individual tractates may be earlier; cards date the witnesses (codices), not speculative composition dates. Discovery at Jabal al-Tarif was December 1945 — not a writing date.",
     "sources": [
       "Claremont Nag Hammadi Archive (IIIF embed only)",
       "Coptic Scriptorium diplomatic editions (CC-BY 4.0 where used)",
       "Coptic Museum Cairo / Jung Institute provenance catalogs",
-      "Layton, Nag Hammadi Codex II, 2–7 (Brill 1989) — metadata only"
+      "Layton, Nag Hammadi Codex II, 2–7 (Brill 1989) — metadata only",
+      "Robinson, The Nag Hammadi Library in English (metadata only)"
     ],
     "generated_by": "Hand-curated seed — not all 52 tractates; expand against open image/text licenses"
   },
@@ -30,18 +34,18 @@
       "find_year_note": "Discovered December 1945; copied ca. 350 CE",
       "current_institution": "Coptic Museum, Cairo",
       "current_shelfmark": "Inv. 10544 (Codex II)",
-      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2877",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2859",
       "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
       "image": {
         "policy": "iiif",
-        "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/2877/manifest.json",
-        "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:2877/full/800,/0/default.jpg",
-        "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2877",
+        "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/2859/manifest.json",
+        "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:2859/full/800,/0/default.jpg",
+        "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2859",
         "attribution": {
           "institution": "Claremont Colleges Digital Library / Nag Hammadi Archive",
           "license": "© institution — IIIF embed only",
           "attribution_required": true,
-          "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2877",
+          "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2859",
           "note": "Physical rights retained by holding institution. Do not rehost scans."
         }
       },
@@ -85,6 +89,10 @@
       ],
       "bibliography": [
         {
+          "title": "Claremont Nag Hammadi Archive — Codex II, p. 32 (Thomas logion 1)",
+          "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2859"
+        },
+        {
           "title": "Claremont Nag Hammadi Archive — Codex II, p. 40",
           "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2877"
         },
@@ -96,7 +104,8 @@
           "title": "NASSCAL — Cairo, Coptic Museum Inv. 10544",
           "url": "https://www.nasscal.com/manuscripta-apocryphorum/cairo-coptic-museum-inv-10544-nag-hammadi-codex-ii/"
         }
-      ]
+      ],
+      "canonical_diff_note": "Sayings collection (114 logia) in Coptic, not a narrative Gospel; some parallels to Synoptic sayings but many unique teachings and no birth, passion, or resurrection account."
     },
     {
       "id": "nhc-ii-gospel-philip",
@@ -149,7 +158,8 @@
           "title": "Claremont — Codex II, p. 51",
           "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2842"
         }
-      ]
+      ],
+      "canonical_diff_note": "Valentinian anthology of sayings and ritual notes — not a biography like Matthew–John and absent from every major NT canon list."
     },
     {
       "id": "nhc-ii-hypostasis-archons",
@@ -198,7 +208,8 @@
           "title": "Claremont — Codex II, p. 86",
           "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2856"
         }
-      ]
+      ],
+      "canonical_diff_note": "Gnostic cosmology re-reading Genesis (archons, Sophia); not a Gospel or epistle in the NT genre set."
     },
     {
       "id": "nhc-ii-origin-world",
@@ -247,7 +258,8 @@
           "title": "Claremont — Codex II, p. 97",
           "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2911"
         }
-      ]
+      ],
+      "canonical_diff_note": "Cosmological treatise with Genesis/Enoch motifs; belongs to second-temple and Gnostic speculation, not the NT corpus."
     },
     {
       "id": "nhc-ii-exegesis-soul",
@@ -296,7 +308,8 @@
           "title": "Claremont — Codex II, p. 127",
           "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2901"
         }
-      ]
+      ],
+      "canonical_diff_note": "Allegorical treatise on the soul’s fall and return; homiletic philosophy, not NT narrative or letter."
     },
     {
       "id": "nhc-ii-thomas-contender",
@@ -345,7 +358,8 @@
           "title": "Claremont — Codex II, p. 138",
           "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2862"
         }
-      ]
+      ],
+      "canonical_diff_note": "Post-resurrection dialogue attributed to Thomas; revelatory discourse unlike the canonical Gospel forms."
     },
     {
       "id": "nhc-ii-apocryphon-john",
@@ -394,7 +408,8 @@
           "title": "Claremont — Codex II, p. 2",
           "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2796"
         }
-      ]
+      ],
+      "canonical_diff_note": "Revelatory “secret book” with a secondary creator-god myth; contradicts the monotheistic theology of the canonical NT."
     },
     {
       "id": "nhc-i-gospel-truth",
@@ -443,7 +458,8 @@
           "title": "Claremont — Codex I, p. 33",
           "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2723"
         }
-      ]
+      ],
+      "canonical_diff_note": "Valentinian homily on truth and error — not one of the four canonical Gospels and not a Pauline letter."
     },
     {
       "id": "nhc-i-apocryphon-james",
@@ -492,7 +508,8 @@
           "title": "Claremont — Codex I, p. 19",
           "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2761"
         }
-      ]
+      ],
+      "canonical_diff_note": "First Apocalypse of James (revelation to James); apocalyptic dialogue, not a canonical epistle or Gospel."
     },
     {
       "id": "nhc-iii-apocryphon-john",
@@ -540,6 +557,415 @@
         {
           "title": "Claremont — Codex III, p. 10",
           "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2858"
+        }
+      ],
+      "canonical_diff_note": "Third Coptic copy of the Apocryphon of John (long recension); same non-NT genre as Codex II/IV witnesses."
+    },
+    {
+      "id": "nhc-iv-apocryphon-john-long",
+      "catalog_id": "NHC IV,1",
+      "traditional_name": "Apocryphon of John (long recension, Codex IV)",
+      "tractate": "Apocryphon of John",
+      "nhc_siglum": "CG IV,1",
+      "language": "Coptic (Sahidic)",
+      "material": "papyrus",
+      "date_ce_start": 300,
+      "date_ce_end": 400,
+      "date_label": "ca. 350 CE (Inv. 10545 (Codex IV))",
+      "date_note": "Physical codex copied ca. mid 4th c. CE (paleography). Tractate on Codex IV pp. 1–49 — composition may be earlier; card dates the witness.",
+      "dating_method": "palaeography",
+      "dating_source": "Robinson, NHLE; Layton NHS",
+      "contents": "Apocryphon of John (long recension) — pp. 1–49 of Codex IV",
+      "find_place": "Jabal al-Tarif, near Nag Hammadi, Upper Egypt",
+      "find_year_note": "Discovered December 1945; copied ca. 350 CE",
+      "current_institution": "Coptic Museum, Cairo",
+      "current_shelfmark": "Codex IV",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/3077",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "canonical_diff_note": "Third Coptic witness to a Gnostic revelation dialogue; not a Greek NT manuscript and teaches a mythic cosmology foreign to canonical christology.",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/3077/manifest.json",
+        "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:3077/full/800,/0/default.jpg",
+        "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/3077",
+        "attribution": {
+          "institution": "Claremont Colleges Digital Library",
+          "license": "© institution — IIIF embed only",
+          "attribution_required": true,
+          "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/3077"
+        }
+      },
+      "passages": [
+        {
+          "tractate": "Apocryphon of John",
+          "reference": "Opening (p. 1)",
+          "codex_page": 1,
+          "english": "The teaching of the savior, and the revelation of the mysteries and the things hidden in silence, which he taught John, his disciple, one day when he was resting upon a bed in the temple.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for leaf context; not a full modern critical translation dump"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Claremont — NHC IV,1, p. 1",
+          "url": "https://ccdl.claremont.edu/digital/collection/nha/id/3077"
+        }
+      ]
+    },
+    {
+      "id": "nhc-iv-gospel-egyptians",
+      "catalog_id": "NHC IV,2",
+      "traditional_name": "Gospel of the Egyptians (Nag Hammadi Codex IV)",
+      "tractate": "Gospel of the Egyptians",
+      "nhc_siglum": "CG IV,2",
+      "language": "Coptic (Sahidic)",
+      "material": "papyrus",
+      "date_ce_start": 300,
+      "date_ce_end": 400,
+      "date_label": "ca. 350 CE (Inv. 10545 (Codex IV))",
+      "date_note": "Physical codex copied ca. mid 4th c. CE (paleography). Tractate on Codex IV pp. 53–78 — composition may be earlier; card dates the witness.",
+      "dating_method": "palaeography",
+      "dating_source": "Robinson, NHLE; Layton NHS",
+      "contents": "Gospel of the Egyptians — Sethian/encratite sayings gospel on pp. 53–78",
+      "find_place": "Jabal al-Tarif, near Nag Hammadi, Upper Egypt",
+      "find_year_note": "Discovered December 1945; copied ca. 350 CE",
+      "current_institution": "Coptic Museum, Cairo",
+      "current_shelfmark": "Codex IV",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/3070",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "canonical_diff_note": "Title says “Gospel” but the work is a Sethian revelation about aeons and baptism — not Matthew–John narrative and rejected by proto-orthodox catalogues.",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/3070/manifest.json",
+        "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:3070/full/800,/0/default.jpg",
+        "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/3070",
+        "attribution": {
+          "institution": "Claremont Colleges Digital Library",
+          "license": "© institution — IIIF embed only",
+          "attribution_required": true,
+          "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/3070"
+        }
+      },
+      "passages": [
+        {
+          "tractate": "Gospel of the Egyptians",
+          "reference": "Opening (p. 52)",
+          "codex_page": 52,
+          "english": "The holy book of the great invisible Spirit, the Father whose name cannot be uttered, he who came forth from the heights of the perfection, the light of the light of the aeons of light.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for leaf context; not a full modern critical translation dump"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Claremont — NHC IV,2, p. 52",
+          "url": "https://ccdl.claremont.edu/digital/collection/nha/id/3070"
+        }
+      ]
+    },
+    {
+      "id": "nhc-v-eugnostos",
+      "catalog_id": "NHC V,1",
+      "traditional_name": "Eugnostos the Blessed (Nag Hammadi Codex V)",
+      "tractate": "Eugnostos the Blessed",
+      "nhc_siglum": "CG V,1",
+      "language": "Coptic (Sahidic)",
+      "material": "papyrus",
+      "date_ce_start": 300,
+      "date_ce_end": 400,
+      "date_label": "ca. 350 CE (Inv. 10546 (Codex V))",
+      "date_note": "Physical codex copied ca. mid 4th c. CE (paleography). Tractate on Codex V pp. 1–36 — composition may be earlier; card dates the witness.",
+      "dating_method": "palaeography",
+      "dating_source": "Robinson, NHLE; Layton NHS",
+      "contents": "Eugnostos the Blessed — philosophical theogony on pp. 1–36",
+      "find_place": "Jabal al-Tarif, near Nag Hammadi, Upper Egypt",
+      "find_year_note": "Discovered December 1945; copied ca. 350 CE",
+      "current_institution": "Coptic Museum, Cairo",
+      "current_shelfmark": "Codex V",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/3045",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "canonical_diff_note": "Pagan-philosophical theogony later Christianized in the Wisdom of Jesus Christ; not an NT book or apostolic letter.",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/3045/manifest.json",
+        "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:3045/full/800,/0/default.jpg",
+        "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/3045",
+        "attribution": {
+          "institution": "Claremont Colleges Digital Library",
+          "license": "© institution — IIIF embed only",
+          "attribution_required": true,
+          "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/3045"
+        }
+      },
+      "passages": [
+        {
+          "tractate": "Eugnostos the Blessed",
+          "reference": "Opening (p. 2)",
+          "codex_page": 2,
+          "english": "The blessed Eugnostos said: No one can see the Father and the Son, nor can anyone know them, unless one receives the Spirit of the Father and becomes entirely Spirit.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for leaf context; not a full modern critical translation dump"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Claremont — NHC V,1, p. 2",
+          "url": "https://ccdl.claremont.edu/digital/collection/nha/id/3045"
+        }
+      ]
+    },
+    {
+      "id": "nhc-v-apocalypse-paul",
+      "catalog_id": "NHC V,2",
+      "traditional_name": "Apocalypse of Paul (Nag Hammadi Codex V)",
+      "tractate": "Apocalypse of Paul",
+      "nhc_siglum": "CG V,2",
+      "language": "Coptic (Sahidic)",
+      "material": "papyrus",
+      "date_ce_start": 300,
+      "date_ce_end": 400,
+      "date_label": "ca. 350 CE (Inv. 10546 (Codex V))",
+      "date_note": "Physical codex copied ca. mid 4th c. CE (paleography). Tractate on Codex V pp. 37–63 — composition may be earlier; card dates the witness.",
+      "dating_method": "palaeography",
+      "dating_source": "Robinson, NHLE; Layton NHS",
+      "contents": "Apocalypse of Paul — heavenly journey narrative on pp. 37–63",
+      "find_place": "Jabal al-Tarif, near Nag Hammadi, Upper Egypt",
+      "find_year_note": "Discovered December 1945; copied ca. 350 CE",
+      "current_institution": "Coptic Museum, Cairo",
+      "current_shelfmark": "Codex V",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/3178",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "canonical_diff_note": "Apocalyptic travelogue attributed to Paul, unlike the canonical Pauline epistles; parallels other non-canonical Apocalypse of Paul traditions, not Romans–Philemon.",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/3178/manifest.json",
+        "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:3178/full/800,/0/default.jpg",
+        "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/3178",
+        "attribution": {
+          "institution": "Claremont Colleges Digital Library",
+          "license": "© institution — IIIF embed only",
+          "attribution_required": true,
+          "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/3178"
+        }
+      },
+      "passages": [
+        {
+          "tractate": "Apocalypse of Paul",
+          "reference": "Opening (p. 37)",
+          "codex_page": 37,
+          "english": "It came to pass when Paul was in the city of Jericho that he went up into the mountain to pray, in order that he might go up to Jerusalem.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for leaf context; not a full modern critical translation dump"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Claremont — NHC V,2, p. 37",
+          "url": "https://ccdl.claremont.edu/digital/collection/nha/id/3178"
+        }
+      ]
+    },
+    {
+      "id": "nhc-vi-acts-peter-twelve",
+      "catalog_id": "NHC VI,1",
+      "traditional_name": "Acts of Peter and the Twelve Apostles (Codex VI)",
+      "tractate": "Acts of Peter and the Twelve Apostles",
+      "nhc_siglum": "CG VI,1",
+      "language": "Coptic (Sahidic)",
+      "material": "papyrus",
+      "date_ce_start": 300,
+      "date_ce_end": 400,
+      "date_label": "ca. 350 CE (Inv. 10547 (Codex VI))",
+      "date_note": "Physical codex copied ca. mid 4th c. CE (paleography). Tractate on Codex VI pp. 1–11 — composition may be earlier; card dates the witness.",
+      "dating_method": "palaeography",
+      "dating_source": "Robinson, NHLE; Layton NHS",
+      "contents": "Acts of Peter and the Twelve Apostles — apocryphal acts on pp. 1–11",
+      "find_place": "Jabal al-Tarif, near Nag Hammadi, Upper Egypt",
+      "find_year_note": "Discovered December 1945; copied ca. 350 CE",
+      "current_institution": "Coptic Museum, Cairo",
+      "current_shelfmark": "Codex VI",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2674",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "canonical_diff_note": "Apocryphal acts genre (merchant/Lithargoel allegory), not the canonical Acts of the Apostles or NT narrative history.",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/2674/manifest.json",
+        "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:2674/full/800,/0/default.jpg",
+        "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2674",
+        "attribution": {
+          "institution": "Claremont Colleges Digital Library",
+          "license": "© institution — IIIF embed only",
+          "attribution_required": true,
+          "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2674"
+        }
+      },
+      "passages": [
+        {
+          "tractate": "Acts of Peter and the Twelve Apostles",
+          "reference": "Opening (p. 1)",
+          "codex_page": 1,
+          "english": "When he had said this, he went away. And we were afraid, for we did not know what he meant when he said to us, “I will appear to you.”",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for leaf context; not a full modern critical translation dump"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Claremont — NHC VI,1, p. 1",
+          "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2674"
+        }
+      ]
+    },
+    {
+      "id": "nhc-vi-thunder-perfect-mind",
+      "catalog_id": "NHC VI,2",
+      "traditional_name": "Thunder, Perfect Mind (Nag Hammadi Codex VI)",
+      "tractate": "Thunder, Perfect Mind",
+      "nhc_siglum": "CG VI,2",
+      "language": "Coptic (Sahidic)",
+      "material": "papyrus",
+      "date_ce_start": 300,
+      "date_ce_end": 400,
+      "date_label": "ca. 350 CE (Inv. 10547 (Codex VI))",
+      "date_note": "Physical codex copied ca. mid 4th c. CE (paleography). Tractate on Codex VI pp. 13–20 — composition may be earlier; card dates the witness.",
+      "dating_method": "palaeography",
+      "dating_source": "Robinson, NHLE; Layton NHS",
+      "contents": "Thunder, Perfect Mind — monologue of a divine feminine figure on pp. 13–20",
+      "find_place": "Jabal al-Tarif, near Nag Hammadi, Upper Egypt",
+      "find_year_note": "Discovered December 1945; copied ca. 350 CE",
+      "current_institution": "Coptic Museum, Cairo",
+      "current_shelfmark": "Codex VI",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2502",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "canonical_diff_note": "Poetic self-revelation of a goddess-like voice; no parallel in the NT canon’s genres (Gospel, epistle, apocalypse of John).",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/2502/manifest.json",
+        "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:2502/full/800,/0/default.jpg",
+        "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2502",
+        "attribution": {
+          "institution": "Claremont Colleges Digital Library",
+          "license": "© institution — IIIF embed only",
+          "attribution_required": true,
+          "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2502"
+        }
+      },
+      "passages": [
+        {
+          "tractate": "Thunder, Perfect Mind",
+          "reference": "Opening (p. 13)",
+          "codex_page": 13,
+          "english": "I was sent forth from the power, and I have come to those who reflect upon me, and I have been found among those who seek after me.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for leaf context; not a full modern critical translation dump"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Claremont — NHC VI,2, p. 13",
+          "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2502"
+        }
+      ]
+    },
+    {
+      "id": "nhc-vi-authoritative-teaching",
+      "catalog_id": "NHC VI,3",
+      "traditional_name": "Authoritative Teaching (Nag Hammadi Codex VI)",
+      "tractate": "Authoritative Teaching",
+      "nhc_siglum": "CG VI,3",
+      "language": "Coptic (Sahidic)",
+      "material": "papyrus",
+      "date_ce_start": 300,
+      "date_ce_end": 400,
+      "date_label": "ca. 350 CE (Inv. 10547 (Codex VI))",
+      "date_note": "Physical codex copied ca. mid 4th c. CE (paleography). Tractate on Codex VI pp. 28–39 — composition may be earlier; card dates the witness.",
+      "dating_method": "palaeography",
+      "dating_source": "Robinson, NHLE; Layton NHS",
+      "contents": "Authoritative Teaching — Valentinian instruction on soul and death on pp. 28–39",
+      "find_place": "Jabal al-Tarif, near Nag Hammadi, Upper Egypt",
+      "find_year_note": "Discovered December 1945; copied ca. 350 CE",
+      "current_institution": "Coptic Museum, Cairo",
+      "current_shelfmark": "Codex VI",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2645",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "canonical_diff_note": "Catechetical treatise on soul, death, and Valentinian soteriology — not a NT epistle and teaches a framework unlike Paul’s letters.",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/2645/manifest.json",
+        "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:2645/full/800,/0/default.jpg",
+        "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2645",
+        "attribution": {
+          "institution": "Claremont Colleges Digital Library",
+          "license": "© institution — IIIF embed only",
+          "attribution_required": true,
+          "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2645"
+        }
+      },
+      "passages": [
+        {
+          "tractate": "Authoritative Teaching",
+          "reference": "Opening (p. 28)",
+          "codex_page": 28,
+          "english": "The invisible, spiritual Word came forth from the Father and descended upon the holy virgin Mary, and she bore a son, the Christ.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for leaf context; not a full modern critical translation dump"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Claremont — NHC VI,3, p. 28",
+          "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2645"
+        }
+      ]
+    },
+    {
+      "id": "nhc-xiii-trimorphic-protennoia",
+      "catalog_id": "NHC XIII,1",
+      "traditional_name": "Trimorphic Protennoia (Nag Hammadi Codex XIII)",
+      "tractate": "Trimorphic Protennoia",
+      "nhc_siglum": "CG XIII,1",
+      "language": "Coptic (Sahidic)",
+      "material": "papyrus",
+      "date_ce_start": 300,
+      "date_ce_end": 400,
+      "date_label": "ca. 350 CE (Inv. 10554 (Codex XIII))",
+      "date_note": "Physical codex copied ca. mid 4th c. CE (paleography). Tractate on Codex XIII pp. 48–50 — composition may be earlier; card dates the witness.",
+      "dating_method": "palaeography",
+      "dating_source": "Robinson, NHLE; Layton NHS",
+      "contents": "Trimorphic Protennoia — threefold divine revelation on pp. 48–50",
+      "find_place": "Jabal al-Tarif, near Nag Hammadi, Upper Egypt",
+      "find_year_note": "Discovered December 1945; copied ca. 350 CE",
+      "current_institution": "Coptic Museum, Cairo",
+      "current_shelfmark": "Codex XIII",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2720",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "canonical_diff_note": "Sethian revelation of Protennoia/Barbelo — high Gnostic metaphysics without counterpart as a canonical NT book.",
+      "image": {
+        "policy": "iiif",
+        "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/2720/manifest.json",
+        "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:2720/full/800,/0/default.jpg",
+        "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2720",
+        "attribution": {
+          "institution": "Claremont Colleges Digital Library",
+          "license": "© institution — IIIF embed only",
+          "attribution_required": true,
+          "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2720"
+        }
+      },
+      "passages": [
+        {
+          "tractate": "Trimorphic Protennoia",
+          "reference": "Opening (p. 49)",
+          "codex_page": 49,
+          "english": "I am Protennoia, the Thought that dwells in the Light. I am the movement that dwells in the All, she in whom the All takes its stand.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for leaf context; not a full modern critical translation dump"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Claremont — NHC XIII,1, p. 49",
+          "url": "https://ccdl.claremont.edu/digital/collection/nha/id/2720"
         }
       ]
     }

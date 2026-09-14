@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T15:41:18.082Z",
+  "generated_at": "2026-09-14T13:38:10.041Z",
   "sources": {
     "seed": "scripts/nag-hammadi-seed.json",
     "coptic_scriptorium": "https://data.copticscriptorium.org/texts/thomasgospel/ (CC-BY 4.0)",
@@ -13,7 +13,7 @@
       "translation_base": "Display excerpts — not Robinson/Lambdin/Brill editions",
       "translation_label": "English of these lines",
       "coptic_base": "Coptic Scriptorium diplomatic where noted (CC-BY 4.0)",
-      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2877",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2859",
       "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
       "total_units": 3,
       "initial_units": [
@@ -54,7 +54,8 @@
           "english_source": "Display rendering aligned to diplomatic Coptic"
         }
       ],
-      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation."
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation.",
+      "canonical_diff_note": "Sayings collection (114 logia) in Coptic, not a narrative Gospel; some parallels to Synoptic sayings but many unique teachings and no birth, passion, or resurrection account."
     },
     "nhc-ii-gospel-philip": {
       "available": true,
@@ -80,7 +81,8 @@
           "english_source": "Brief display excerpt; full Coptic diplomatic text pending open edition in v1"
         }
       ],
-      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation."
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation.",
+      "canonical_diff_note": "Valentinian anthology of sayings and ritual notes — not a biography like Matthew–John and absent from every major NT canon list."
     },
     "nhc-ii-hypostasis-archons": {
       "available": true,
@@ -106,7 +108,8 @@
           "english_source": "Display excerpt for leaf context; full diplomatic Coptic pending open license in v1"
         }
       ],
-      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation."
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation.",
+      "canonical_diff_note": "Gnostic cosmology re-reading Genesis (archons, Sophia); not a Gospel or epistle in the NT genre set."
     },
     "nhc-ii-origin-world": {
       "available": true,
@@ -132,7 +135,8 @@
           "english_source": "Display excerpt; not a full modern critical translation dump"
         }
       ],
-      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation."
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation.",
+      "canonical_diff_note": "Cosmological treatise with Genesis/Enoch motifs; belongs to second-temple and Gnostic speculation, not the NT corpus."
     },
     "nhc-ii-exegesis-soul": {
       "available": true,
@@ -158,7 +162,8 @@
           "english_source": "Display excerpt for shown leaf"
         }
       ],
-      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation."
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation.",
+      "canonical_diff_note": "Allegorical treatise on the soul’s fall and return; homiletic philosophy, not NT narrative or letter."
     },
     "nhc-ii-thomas-contender": {
       "available": true,
@@ -184,7 +189,8 @@
           "english_source": "Display excerpt for shown leaf"
         }
       ],
-      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation."
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation.",
+      "canonical_diff_note": "Post-resurrection dialogue attributed to Thomas; revelatory discourse unlike the canonical Gospel forms."
     },
     "nhc-ii-apocryphon-john": {
       "available": true,
@@ -210,7 +216,8 @@
           "english_source": "Display excerpt for shown leaf"
         }
       ],
-      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation."
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation.",
+      "canonical_diff_note": "Revelatory “secret book” with a secondary creator-god myth; contradicts the monotheistic theology of the canonical NT."
     },
     "nhc-i-gospel-truth": {
       "available": true,
@@ -236,7 +243,8 @@
           "english_source": "Display excerpt for shown leaf"
         }
       ],
-      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation."
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation.",
+      "canonical_diff_note": "Valentinian homily on truth and error — not one of the four canonical Gospels and not a Pauline letter."
     },
     "nhc-i-apocryphon-james": {
       "available": true,
@@ -262,7 +270,8 @@
           "english_source": "Display excerpt for shown leaf"
         }
       ],
-      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation."
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation.",
+      "canonical_diff_note": "First Apocalypse of James (revelation to James); apocalyptic dialogue, not a canonical epistle or Gospel."
     },
     "nhc-iii-apocryphon-john": {
       "available": true,
@@ -288,7 +297,224 @@
           "english_source": "Display excerpt parallel to Codex II opening"
         }
       ],
-      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation."
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation.",
+      "canonical_diff_note": "Third Coptic copy of the Apocryphon of John (long recension); same non-NT genre as Codex II/IV witnesses."
+    },
+    "nhc-iv-apocryphon-john-long": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + Coptic Scriptorium (Thomas, CC-BY 4.0)",
+      "translation_base": "Display excerpts — not Robinson/Lambdin/Brill editions",
+      "translation_label": "English of these lines",
+      "coptic_base": "Coptic Scriptorium diplomatic where noted (CC-BY 4.0)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/3077",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Opening (p. 1)",
+          "tractate": "Apocryphon of John",
+          "logion": null,
+          "codex_page": 1,
+          "coptic": null,
+          "coptic_label": "Coptic diplomatic text not yet bundled for this tractate in v1",
+          "coptic_source": "Robinson, NHLE; Layton NHS",
+          "english": "The teaching of the savior, and the revelation of the mysteries and the things hidden in silence, which he taught John, his disciple, one day when he was resting upon a bed in the temple.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for leaf context; not a full modern critical translation dump"
+        }
+      ],
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation.",
+      "canonical_diff_note": "Third Coptic witness to a Gnostic revelation dialogue; not a Greek NT manuscript and teaches a mythic cosmology foreign to canonical christology."
+    },
+    "nhc-iv-gospel-egyptians": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + Coptic Scriptorium (Thomas, CC-BY 4.0)",
+      "translation_base": "Display excerpts — not Robinson/Lambdin/Brill editions",
+      "translation_label": "English of these lines",
+      "coptic_base": "Coptic Scriptorium diplomatic where noted (CC-BY 4.0)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/3070",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Opening (p. 52)",
+          "tractate": "Gospel of the Egyptians",
+          "logion": null,
+          "codex_page": 52,
+          "coptic": null,
+          "coptic_label": "Coptic diplomatic text not yet bundled for this tractate in v1",
+          "coptic_source": "Robinson, NHLE; Layton NHS",
+          "english": "The holy book of the great invisible Spirit, the Father whose name cannot be uttered, he who came forth from the heights of the perfection, the light of the light of the aeons of light.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for leaf context; not a full modern critical translation dump"
+        }
+      ],
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation.",
+      "canonical_diff_note": "Title says “Gospel” but the work is a Sethian revelation about aeons and baptism — not Matthew–John narrative and rejected by proto-orthodox catalogues."
+    },
+    "nhc-v-eugnostos": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + Coptic Scriptorium (Thomas, CC-BY 4.0)",
+      "translation_base": "Display excerpts — not Robinson/Lambdin/Brill editions",
+      "translation_label": "English of these lines",
+      "coptic_base": "Coptic Scriptorium diplomatic where noted (CC-BY 4.0)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/3045",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Opening (p. 2)",
+          "tractate": "Eugnostos the Blessed",
+          "logion": null,
+          "codex_page": 2,
+          "coptic": null,
+          "coptic_label": "Coptic diplomatic text not yet bundled for this tractate in v1",
+          "coptic_source": "Robinson, NHLE; Layton NHS",
+          "english": "The blessed Eugnostos said: No one can see the Father and the Son, nor can anyone know them, unless one receives the Spirit of the Father and becomes entirely Spirit.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for leaf context; not a full modern critical translation dump"
+        }
+      ],
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation.",
+      "canonical_diff_note": "Pagan-philosophical theogony later Christianized in the Wisdom of Jesus Christ; not an NT book or apostolic letter."
+    },
+    "nhc-v-apocalypse-paul": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + Coptic Scriptorium (Thomas, CC-BY 4.0)",
+      "translation_base": "Display excerpts — not Robinson/Lambdin/Brill editions",
+      "translation_label": "English of these lines",
+      "coptic_base": "Coptic Scriptorium diplomatic where noted (CC-BY 4.0)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/3178",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Opening (p. 37)",
+          "tractate": "Apocalypse of Paul",
+          "logion": null,
+          "codex_page": 37,
+          "coptic": null,
+          "coptic_label": "Coptic diplomatic text not yet bundled for this tractate in v1",
+          "coptic_source": "Robinson, NHLE; Layton NHS",
+          "english": "It came to pass when Paul was in the city of Jericho that he went up into the mountain to pray, in order that he might go up to Jerusalem.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for leaf context; not a full modern critical translation dump"
+        }
+      ],
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation.",
+      "canonical_diff_note": "Apocalyptic travelogue attributed to Paul, unlike the canonical Pauline epistles; parallels other non-canonical Apocalypse of Paul traditions, not Romans–Philemon."
+    },
+    "nhc-vi-acts-peter-twelve": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + Coptic Scriptorium (Thomas, CC-BY 4.0)",
+      "translation_base": "Display excerpts — not Robinson/Lambdin/Brill editions",
+      "translation_label": "English of these lines",
+      "coptic_base": "Coptic Scriptorium diplomatic where noted (CC-BY 4.0)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2674",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Opening (p. 1)",
+          "tractate": "Acts of Peter and the Twelve Apostles",
+          "logion": null,
+          "codex_page": 1,
+          "coptic": null,
+          "coptic_label": "Coptic diplomatic text not yet bundled for this tractate in v1",
+          "coptic_source": "Robinson, NHLE; Layton NHS",
+          "english": "When he had said this, he went away. And we were afraid, for we did not know what he meant when he said to us, “I will appear to you.”",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for leaf context; not a full modern critical translation dump"
+        }
+      ],
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation.",
+      "canonical_diff_note": "Apocryphal acts genre (merchant/Lithargoel allegory), not the canonical Acts of the Apostles or NT narrative history."
+    },
+    "nhc-vi-thunder-perfect-mind": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + Coptic Scriptorium (Thomas, CC-BY 4.0)",
+      "translation_base": "Display excerpts — not Robinson/Lambdin/Brill editions",
+      "translation_label": "English of these lines",
+      "coptic_base": "Coptic Scriptorium diplomatic where noted (CC-BY 4.0)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2502",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Opening (p. 13)",
+          "tractate": "Thunder, Perfect Mind",
+          "logion": null,
+          "codex_page": 13,
+          "coptic": null,
+          "coptic_label": "Coptic diplomatic text not yet bundled for this tractate in v1",
+          "coptic_source": "Robinson, NHLE; Layton NHS",
+          "english": "I was sent forth from the power, and I have come to those who reflect upon me, and I have been found among those who seek after me.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for leaf context; not a full modern critical translation dump"
+        }
+      ],
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation.",
+      "canonical_diff_note": "Poetic self-revelation of a goddess-like voice; no parallel in the NT canon’s genres (Gospel, epistle, apocalypse of John)."
+    },
+    "nhc-vi-authoritative-teaching": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + Coptic Scriptorium (Thomas, CC-BY 4.0)",
+      "translation_base": "Display excerpts — not Robinson/Lambdin/Brill editions",
+      "translation_label": "English of these lines",
+      "coptic_base": "Coptic Scriptorium diplomatic where noted (CC-BY 4.0)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2645",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Opening (p. 28)",
+          "tractate": "Authoritative Teaching",
+          "logion": null,
+          "codex_page": 28,
+          "coptic": null,
+          "coptic_label": "Coptic diplomatic text not yet bundled for this tractate in v1",
+          "coptic_source": "Robinson, NHLE; Layton NHS",
+          "english": "The invisible, spiritual Word came forth from the Father and descended upon the holy virgin Mary, and she bore a son, the Christ.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for leaf context; not a full modern critical translation dump"
+        }
+      ],
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation.",
+      "canonical_diff_note": "Catechetical treatise on soul, death, and Valentinian soteriology — not a NT epistle and teaches a framework unlike Paul’s letters."
+    },
+    "nhc-xiii-trimorphic-protennoia": {
+      "available": true,
+      "message": null,
+      "source": "Hand-curated seed + Coptic Scriptorium (Thomas, CC-BY 4.0)",
+      "translation_base": "Display excerpts — not Robinson/Lambdin/Brill editions",
+      "translation_label": "English of these lines",
+      "coptic_base": "Coptic Scriptorium diplomatic where noted (CC-BY 4.0)",
+      "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2720",
+      "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
+      "total_units": 1,
+      "initial_units": [
+        {
+          "reference": "Opening (p. 49)",
+          "tractate": "Trimorphic Protennoia",
+          "logion": null,
+          "codex_page": 49,
+          "coptic": null,
+          "coptic_label": "Coptic diplomatic text not yet bundled for this tractate in v1",
+          "coptic_source": "Robinson, NHLE; Layton NHS",
+          "english": "I am Protennoia, the Thought that dwells in the Light. I am the movement that dwells in the All, she in whom the All takes its stand.",
+          "english_label": "English of opening lines on this leaf",
+          "english_source": "Display excerpt for leaf context; not a full modern critical translation dump"
+        }
+      ],
+      "attribution": "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation.",
+      "canonical_diff_note": "Sethian revelation of Protennoia/Barbelo — high Gnostic metaphysics without counterpart as a canonical NT book."
     }
   }
 }
