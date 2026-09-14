@@ -78,7 +78,7 @@ export default function UsePage() {
         </p>
         <div className={styles.claimList}>
           {claimsEvidence.claims.map((card) => (
-            <article key={card.id} className={styles.claimCard}>
+            <article key={card.id} id={card.id} className={styles.claimCard}>
               <div className={styles.claimHeader}>
                 <p className={styles.claimText}>&ldquo;{card.claim}&rdquo;</p>
                 <span

@@ -216,7 +216,7 @@ export default function UthmaniRegionalPage() {
             </thead>
             <tbody>
               {variants.map((v) => (
-                <tr key={v.id}>
+                <tr key={v.id} id={v.id}>
                   <td className={styles.refCell}>
                     <a href={`#${v.id}`}>{v.ref}</a>
                   </td>
