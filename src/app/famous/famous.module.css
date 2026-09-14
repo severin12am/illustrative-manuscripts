@@ -23,8 +23,20 @@
 .title {
   font-size: clamp(1.875rem, 4vw, 2.5rem);
   color: var(--ink);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   font-weight: 600;
+}
+
+.tagline {
+  font-family: var(--font-ui);
+  font-size: 0.9375rem;
+  color: var(--ink-secondary);
+  margin-bottom: 0.75rem;
+  max-width: 42rem;
+}
+
+.tagline a {
+  color: var(--accent);
 }
 
 .lead {

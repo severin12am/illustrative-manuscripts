@@ -157,10 +157,12 @@ export default function MethodologyPage() {
             <dd>
               Illustrative table of published regional muṣḥaf reports (~35–40 in
               Cook / van Putten summaries) in{" "}
-              <code>scripts/uthmani-regional-variants.json</code>. We cite
-              published totals and secondary collations — we have{" "}
-              <strong>not</strong> re-census every rasm report against every leaf
-              in our Qurʾān seed. See{" "}
+              <code>scripts/uthmani-regional-variants.json</code> — currently{" "}
+              <strong>40</strong> curated examples with per-region rasm glosses
+              and source citations, aligned to that published total band without
+              inventing extra reports. We cite published totals and secondary
+              collations — we have <strong>not</strong> re-census every rasm
+              report against every leaf in our Qurʾān seed. See{" "}
               <Link href="/quran/uthmani/">Uthmanic regional rasm</Link>.
             </dd>
           </div>
@@ -231,6 +233,11 @@ export default function MethodologyPage() {
             <code>npm run export-census</code> — write{" "}
             <code>public/variant-census.json</code> /{" "}
             <code>.csv</code> (also runs in <code>prebuild</code>).
+          </li>
+          <li>
+            <code>npm run export-curated</code> — copy famous-passages and
+            Uthmanic rasm JSON to <code>public/</code> (also runs in{" "}
+            <code>prebuild</code>).
           </li>
           <li>
             <code>npm run famous-passages</code> — verify famous cards + sync

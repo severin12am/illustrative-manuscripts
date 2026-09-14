@@ -1,0 +1,547 @@
+{
+  "definition": "Hand-curated block-level textual issues in the Greek New Testament — whole passages absent, inserted, or disputed — distinct from word-level variation units in the variant census.",
+  "entries": [
+    {
+      "slug": "pericope-adulterae",
+      "title": "Pericope Adulterae",
+      "passage_ref": "John 7:53–8:11",
+      "book": "John",
+      "verse_esns": [
+        43007053,
+        43007054,
+        43007055,
+        43007056,
+        43007057,
+        43007058,
+        43007059,
+        43007060,
+        43007061,
+        43007062,
+        43007063,
+        43007064,
+        43008001,
+        43008002,
+        43008003,
+        43008004,
+        43008005,
+        43008006,
+        43008007,
+        43008008,
+        43008009,
+        43008010,
+        43008011
+      ],
+      "story": "The story of Jesus and the woman caught in adultery (“Let him who is without sin…”) is one of the best-known Gospel scenes. In modern critical editions it is usually set in brackets or moved to a footnote because the passage does not appear in the earliest and best Greek manuscripts of John. The narrative jumps cleanly from 7:52 to 8:12 in witnesses like 𝔓⁶⁶, 𝔓⁷⁵, Codex Sinaiticus (01), and Codex Vaticanus (03). Scribes and editors later inserted the block at this point; it became standard in the Byzantine majority and thus in many printed Bibles — but the insertion is widely regarded as a secondary addition to the Fourth Gospel, not part of the earliest recoverable text.",
+      "later_tradition": "The pericope is absent from essentially all Greek manuscripts before the fifth century. It appears in a few late Greek witnesses and becomes common in Byzantine copies from roughly the ninth century onward, then in the Textus Receptus tradition. Standard introductions (e.g. Metzger, *Text of the NT*; Ehrman, *Misquoting Jesus*) treat it as a later insertion; NA28 and UBS5 bracket the passage. We do not date the first insertion to a precise year — paleography and stemmatics point to a gradual adoption, not a single datable event.",
+      "scholarship": [
+        {
+          "label": "CNTR apparatus & transcriptions",
+          "url": "https://greekcntr.org/"
+        },
+        {
+          "label": "Pericope Adulterae (Wikipedia — secondary overview)",
+          "url": "https://en.wikipedia.org/wiki/Pericope_Adulterae"
+        },
+        {
+          "label": "INTF / NTVMR manuscript workspace",
+          "url": "https://ntvmr.uni-muenster.de/"
+        }
+      ],
+      "witnesses": [
+        {
+          "ga": "P66",
+          "status": "absent",
+          "note": "CNTR marks these verses absent (—) in 𝔓⁶⁶."
+        },
+        {
+          "ga": "P75",
+          "status": "absent",
+          "note": "CNTR marks these verses absent (—) in 𝔓⁷⁵."
+        },
+        {
+          "ga": "01",
+          "status": "absent",
+          "note": "Absent in Codex Sinaiticus; text runs 7:52 → 8:12."
+        },
+        {
+          "ga": "03",
+          "status": "absent",
+          "note": "Absent in Codex Vaticanus; text runs 7:52 → 8:12."
+        }
+      ],
+      "variants_link": {
+        "book": "John",
+        "q": "8:12"
+      },
+      "compare_link": {
+        "a": "P66",
+        "b": "P75",
+        "book": "John"
+      }
+    },
+    {
+      "slug": "mark-long-ending",
+      "title": "Longer ending of Mark",
+      "passage_ref": "Mark 16:9–20",
+      "book": "Mark",
+      "verse_esns": [
+        41016009,
+        41016010,
+        41016011,
+        41016012,
+        41016013,
+        41016014,
+        41016015,
+        41016016,
+        41016017,
+        41016018,
+        41016019,
+        41016020
+      ],
+      "story": "Mark’s Gospel appears to end abruptly at 16:8 in the two earliest complete Greek codices: the women flee the tomb in fear and “they said nothing to anyone” — with no resurrection appearances, no Great Commission, no ascension. Verses 9–20, familiar from later Bibles, summarize appearances and commission the disciples. That longer ending is missing from 01 and 03; two very old Greek witnesses (Codex Bobiensis, 𝔓⁴⁵ does not cover this section) and several early citations suggest the shorter ending was known. Later scribes supplied the longer block to round out the narrative.",
+      "later_tradition": "The long ending is absent from 01 and 03 and from several Old Latin witnesses. It becomes dominant in Byzantine manuscripts and the Textus Receptus. Critical editions bracket or annotate 16:9–20; some append the shorter “Freer Logion” ending (after 16:8) found in one manuscript. Standard TC handbooks describe the long ending as a second-century or later compilation of resurrection traditions, not Mark’s original conclusion.",
+      "scholarship": [
+        {
+          "label": "CNTR — Mark witnesses",
+          "url": "https://greekcntr.org/"
+        },
+        {
+          "label": "Mark 16 (endings) — Wikipedia (secondary)",
+          "url": "https://en.wikipedia.org/wiki/Mark_16"
+        },
+        {
+          "label": "IGNTP — Mark",
+          "url": "https://igntp.org/"
+        }
+      ],
+      "witnesses": [
+        {
+          "ga": "01",
+          "status": "absent",
+          "note": "Codex Sinaiticus ends Mark at 16:8 in the main tradition; CNTR marks 16:9–20 absent."
+        },
+        {
+          "ga": "03",
+          "status": "absent",
+          "note": "Codex Vaticanus ends at 16:8; long ending absent."
+        },
+        {
+          "ga": "P45",
+          "status": "not_in_corpus",
+          "note": "𝔓⁴⁵ does not preserve Mark 16 in our CNTR slice."
+        }
+      ],
+      "variants_link": {
+        "book": "Mark",
+        "q": "16:8"
+      },
+      "compare_link": {
+        "a": "01",
+        "b": "03",
+        "book": "Mark"
+      }
+    },
+    {
+      "slug": "comma-johanneum",
+      "title": "Comma Johanneum",
+      "passage_ref": "1 John 5:7–8",
+      "book": "1 John",
+      "verse_esns": [
+        62005007,
+        62005008
+      ],
+      "story": "The King James and some Latin Bibles read that “there are three that bear record in heaven, the Father, the Word, and the Holy Ghost: and these three are one” — a explicit Trinitarian formula in 1 John 5:7–8. That wording (the Johannine Comma) is not found in any Greek manuscript before the sixteenth century. Early Greek witnesses have only the short reading about Spirit, water, and blood bearing witness. The Comma entered some Latin copies and was retro-translated into a handful of late Greek minuscules; Erasmus included it under pressure in later editions of his Greek New Testament.",
+      "later_tradition": "Absent from the entire pre-400 CE Greek tradition in our dataset. The interpolation is attested in Latin from the fourth century onward in some branches, but not in the best Greek line. Modern critical texts (NA28, UBS5, SR GNT) print the short reading only. Our CNTR transcriptions of 01 and 03 show 1 John 5:7–8 extant with the standard short Greek — the Comma text itself is absent.",
+      "scholarship": [
+        {
+          "label": "CNTR — 1 John witnesses",
+          "url": "https://greekcntr.org/"
+        },
+        {
+          "label": "Comma Johanneum — Wikipedia (secondary)",
+          "url": "https://en.wikipedia.org/wiki/Comma_Johanneum"
+        },
+        {
+          "label": "Metzger, *Text of the New Testament* (standard handbook)",
+          "url": "https://en.wikipedia.org/wiki/The_Text_of_the_New_Testament_(Metzger)"
+        }
+      ],
+      "witnesses": [
+        {
+          "ga": "01",
+          "status": "present",
+          "note": "Verses extant; short Greek reading only — Johannine Comma absent (standard for early Greek)."
+        },
+        {
+          "ga": "03",
+          "status": "present",
+          "note": "Verses extant; short Greek reading only — Comma absent."
+        },
+        {
+          "ga": "P9",
+          "status": "not_in_corpus",
+          "note": "𝔓⁹ (1 John fragment) does not cover 5:7–8 in our CNTR slice."
+        }
+      ],
+      "variants_link": {
+        "book": "1 John",
+        "q": "5:7"
+      },
+      "compare_link": {
+        "a": "01",
+        "b": "03",
+        "book": "1 John"
+      }
+    },
+    {
+      "slug": "luke-bloody-sweat",
+      "title": "Jesus’ bloody sweat (Luke 22:43–44)",
+      "passage_ref": "Luke 22:43–44",
+      "book": "Luke",
+      "verse_esns": [
+        42022043,
+        42022044
+      ],
+      "story": "Only Luke tells of an angel strengthening Jesus in Gethsemane and sweat “like drops of blood.” These two verses are absent from Codex Vaticanus (03) and from 𝔓⁷⁵, one of the earliest Luke papyri. Codex Sinaiticus (01) includes them, but a later corrector marked them as doubtful — a sign that even scribes knew the passage was debated. The verses read like a later amplification of Jesus’ agony, harmonizing with other tradition.",
+      "later_tradition": "Absent in 𝔓⁷⁵ and 03; present in 01 (with marginal doubt). Many later manuscripts include the verses; some mark them with asterisks or move them to the margin. NA28 brackets 22:43–44; the balance of early Greek evidence favors omission or secondary status, though the picture is less unanimous than for the Pericope Adulterae.",
+      "scholarship": [
+        {
+          "label": "CNTR — Luke witnesses",
+          "url": "https://greekcntr.org/"
+        },
+        {
+          "label": "Luke 22:43–44 — Wikipedia (secondary)",
+          "url": "https://en.wikipedia.org/wiki/Luke_22:43%E2%80%9344"
+        },
+        {
+          "label": "IGNTP — Luke",
+          "url": "https://igntp.org/"
+        }
+      ],
+      "witnesses": [
+        {
+          "ga": "P75",
+          "status": "absent",
+          "note": "CNTR marks 22:43–44 absent (—) in 𝔓⁷⁵."
+        },
+        {
+          "ga": "03",
+          "status": "absent",
+          "note": "Absent in Codex Vaticanus."
+        },
+        {
+          "ga": "01",
+          "status": "present",
+          "note": "Present in Codex Sinaiticus; later marginal mark notes doubt."
+        }
+      ],
+      "variants_link": {
+        "book": "Luke",
+        "q": "22:43"
+      },
+      "compare_link": {
+        "a": "P75",
+        "b": "03",
+        "book": "Luke"
+      }
+    },
+    {
+      "slug": "john-pool-angel",
+      "title": "Angel stirring the pool (John 5:3b–4)",
+      "passage_ref": "John 5:3b–4",
+      "book": "John",
+      "verse_esns": [
+        43005004
+      ],
+      "story": "Some later Greek manuscripts and many printed Bibles add an explanation at the pool of Bethesda: an angel periodically stirred the water and the first person in was healed. John 5:3 in the earliest line ends after the list of the blind, lame, and paralyzed; verse 4 (the angel story) is absent from the best early Greek witnesses and is regarded as a secondary gloss explaining why people waited at the pool.",
+      "later_tradition": "The angel verse becomes common in Byzantine copies and the Textus Receptus tradition, so English readers often know the story from the KJV. Modern critical editions (NA28, UBS5, SR GNT) omit verse 4; NA28 also brackets the expanded ending of 5:3 found in some late witnesses. Our CNTR transcriptions mark John 5:4 absent in 𝔓⁶⁶, 𝔓⁷⁵, 01, and 03.",
+      "scholarship": [
+        {
+          "label": "CNTR — John 5 witnesses",
+          "url": "https://greekcntr.org/"
+        },
+        {
+          "label": "John 5:3–4 — Wikipedia (secondary)",
+          "url": "https://en.wikipedia.org/wiki/Textual_variants_in_the_New_Testament#John_5:3%E2%80%934"
+        }
+      ],
+      "witnesses": [
+        {
+          "ga": "P66",
+          "status": "absent",
+          "note": "CNTR marks John 5:4 absent (—) in 𝔓⁶⁶."
+        },
+        {
+          "ga": "P75",
+          "status": "absent",
+          "note": "CNTR marks John 5:4 absent (—) in 𝔓⁷⁵."
+        },
+        {
+          "ga": "01",
+          "status": "absent",
+          "note": "Absent in Codex Sinaiticus."
+        },
+        {
+          "ga": "03",
+          "status": "absent",
+          "note": "Absent in Codex Vaticanus."
+        }
+      ],
+      "variants_link": {
+        "book": "John",
+        "q": "5:3"
+      },
+      "compare_link": {
+        "a": "P66",
+        "b": "P75",
+        "book": "John"
+      }
+    },
+    {
+      "slug": "romans-16-24",
+      "title": "Doxology at Romans 16:24",
+      "passage_ref": "Romans 16:24",
+      "book": "Romans",
+      "verse_esns": [
+        45016024
+      ],
+      "story": "A short grace formula — “The grace of our Lord Jesus Christ be with you all. Amen.” — appears as Romans 16:24 in some later manuscripts and printed Bibles, sandwiched before the final benediction of chapter 16. Critical editions usually omit the verse as a scribal transfer from elsewhere; the Pauline letter flows without it in the Alexandrian line represented by Codex Vaticanus and in 𝔓⁴⁶.",
+      "later_tradition": "The verse persists in the Byzantine majority and the Textus Receptus, so it surfaced in the KJV. NA28 prints 16:24 in brackets with weak attestation. In our CNTR slice, 16:24 is marked absent in 01, 03, and 𝔓⁴⁶.",
+      "scholarship": [
+        {
+          "label": "CNTR — Romans witnesses",
+          "url": "https://greekcntr.org/"
+        },
+        {
+          "label": "Romans 16:24 — Wikipedia (secondary)",
+          "url": "https://en.wikipedia.org/wiki/Textual_variants_in_the_New_Testament#Romans_16:24"
+        }
+      ],
+      "witnesses": [
+        {
+          "ga": "01",
+          "status": "absent",
+          "note": "CNTR marks Romans 16:24 absent (—) in Codex Sinaiticus."
+        },
+        {
+          "ga": "03",
+          "status": "absent",
+          "note": "Absent in Codex Vaticanus."
+        },
+        {
+          "ga": "P46",
+          "status": "absent",
+          "note": "Absent in 𝔓⁴⁶ (early Paul papyrus)."
+        },
+        {
+          "ga": "P66",
+          "status": "not_in_corpus",
+          "note": "𝔓⁶⁶ is John only in our CNTR slice."
+        }
+      ],
+      "variants_link": {
+        "book": "Romans",
+        "q": "16:24"
+      },
+      "compare_link": {
+        "a": "01",
+        "b": "03",
+        "book": "Romans"
+      }
+    },
+    {
+      "slug": "luke-forgive-them",
+      "title": "“Father, forgive them” (Luke 23:34a)",
+      "passage_ref": "Luke 23:34",
+      "book": "Luke",
+      "verse_esns": [
+        42023034
+      ],
+      "story": "At the crucifixion Luke reports Jesus praying, “Father, forgive them, for they do not know what they are doing,” before the soldiers divide his clothing. That opening clause is missing from Codex Vaticanus (03) and from 𝔓⁷⁵ — among the earliest Luke witnesses in our dataset — while Codex Sinaiticus (01) includes it (with later marginal doubt in the manuscript tradition). The omission is usually explained as accidental scribal loss or deliberate excision in an Alexandrian line, not as wholesale uncertainty about Luke’s passion narrative.",
+      "later_tradition": "Most later manuscripts include the prayer; it is familiar from liturgy and many Bible translations. NA28 brackets the clause as doubtful. CNTR still encodes Luke 23:34 as one verse: where the clause is omitted, the surviving text begins at the clothing division — we flag that below as partial absence of the opening words, not absence of the whole verse.",
+      "scholarship": [
+        {
+          "label": "CNTR — Luke witnesses",
+          "url": "https://greekcntr.org/"
+        },
+        {
+          "label": "Luke 23:34 — Wikipedia (secondary)",
+          "url": "https://en.wikipedia.org/wiki/Father,_forgive_them,_for_they_know_not_what_they_do"
+        }
+      ],
+      "witnesses": [
+        {
+          "ga": "P75",
+          "status": "partial",
+          "note": "Verse extant but CNTR text lacks the forgiveness clause; begins at the clothing division."
+        },
+        {
+          "ga": "03",
+          "status": "partial",
+          "note": "Verse extant without the opening prayer in Codex Vaticanus."
+        },
+        {
+          "ga": "01",
+          "status": "present",
+          "note": "Includes “Father, forgive them…” in Codex Sinaiticus (later correctors marked doubt in the MS)."
+        }
+      ],
+      "variants_link": {
+        "book": "Luke",
+        "q": "23:34"
+      },
+      "compare_link": {
+        "a": "P75",
+        "b": "03",
+        "book": "Luke"
+      }
+    },
+    {
+      "slug": "matthew-613-doxology",
+      "title": "Lord’s Prayer doxology (Matthew 6:13b)",
+      "passage_ref": "Matthew 6:13",
+      "book": "Matthew",
+      "verse_esns": [
+        40006013
+      ],
+      "story": "Many English Bibles end the Lord’s Prayer with a doxology — “For thine is the kingdom, and the power, and the glory, forever. Amen.” — after “deliver us from evil.” That closing formula is absent from the earliest and best Greek witnesses of Matthew, which stop after the petition against evil. The words were supplied from liturgical use and from parallels in some manuscripts of Luke and the Didache, then became familiar through the Byzantine majority and the Textus Receptus.",
+      "later_tradition": "The doxology is widespread in later Greek minuscules and in printed Bibles descended from the Byzantine tradition (including the KJV). Modern critical editions (NA28, UBS5, SR GNT) omit it from Matthew 6:13. CNTR encodes Matthew 6:13 as a single verse: where the doxology is missing, the Greek text simply ends at “from the evil one” — we flag that as partial absence of the closing clause, not absence of the whole verse.",
+      "scholarship": [
+        {
+          "label": "CNTR — Matthew witnesses",
+          "url": "https://greekcntr.org/"
+        },
+        {
+          "label": "Matthew 6:13 — Wikipedia (secondary)",
+          "url": "https://en.wikipedia.org/wiki/Lord%27s_Prayer#Final_doxology"
+        }
+      ],
+      "witnesses": [
+        {
+          "ga": "01",
+          "status": "partial",
+          "note": "Verse extant; CNTR Greek ends at deliverance from evil — no doxology."
+        },
+        {
+          "ga": "03",
+          "status": "partial",
+          "note": "Verse extant without the closing doxology in Codex Vaticanus."
+        },
+        {
+          "ga": "P66",
+          "status": "not_in_corpus",
+          "note": "𝔓⁶⁶ is John only in our CNTR slice."
+        }
+      ],
+      "variants_link": {
+        "book": "Matthew",
+        "q": "6:13"
+      },
+      "compare_link": {
+        "a": "01",
+        "b": "03",
+        "book": "Matthew"
+      }
+    },
+    {
+      "slug": "acts-8-37-eunuch",
+      "title": "Ethiopian’s confession (Acts 8:37)",
+      "passage_ref": "Acts 8:37",
+      "book": "Acts",
+      "verse_esns": [
+        44008037
+      ],
+      "story": "In the KJV and many later Bibles, the Ethiopian official asks Philip what prevents him from being baptized and confesses faith in Jesus as Son of God before they enter the water. That verse is missing from the earliest Greek line of Acts represented by Codex Sinaiticus, Codex Vaticanus, and 𝔓⁴⁵. The narrative runs directly from the chariot stopping at water (8:36) to baptism (8:38). Critics usually treat 8:37 as a secondary expansion harmonizing baptism with confession formulas known from later liturgy.",
+      "later_tradition": "Acts 8:37 becomes common in Byzantine copies and the Textus Receptus, so English readers often assume it was always part of Luke’s narrative. NA28 and UBS5 bracket or omit the verse. Our CNTR transcriptions mark Acts 8:37 absent (—) in 01, 03, and 𝔓⁴⁵.",
+      "scholarship": [
+        {
+          "label": "CNTR — Acts witnesses",
+          "url": "https://greekcntr.org/"
+        },
+        {
+          "label": "Acts 8:37 — Wikipedia (secondary)",
+          "url": "https://en.wikipedia.org/wiki/Textual_variants_in_the_New_Testament#Acts_8:37"
+        }
+      ],
+      "witnesses": [
+        {
+          "ga": "01",
+          "status": "absent",
+          "note": "CNTR marks Acts 8:37 absent (—) in Codex Sinaiticus."
+        },
+        {
+          "ga": "03",
+          "status": "absent",
+          "note": "Absent in Codex Vaticanus."
+        },
+        {
+          "ga": "P45",
+          "status": "absent",
+          "note": "Absent in 𝔓⁴⁵ (early Acts papyrus)."
+        },
+        {
+          "ga": "P66",
+          "status": "not_in_corpus",
+          "note": "𝔓⁶⁶ is John only in our CNTR slice."
+        }
+      ],
+      "variants_link": {
+        "book": "Acts",
+        "q": "8:37"
+      },
+      "compare_link": {
+        "a": "01",
+        "b": "03",
+        "book": "Acts"
+      }
+    },
+    {
+      "slug": "mark-9-hell-verses",
+      "title": "Duplicate “unquenchable fire” lines (Mark 9:44, 9:46)",
+      "passage_ref": "Mark 9:44, 9:46",
+      "book": "Mark",
+      "verse_esns": [
+        41009044,
+        41009046
+      ],
+      "story": "In some manuscripts and printed Bibles, Mark 9 repeats a warning about hell — “where their worm does not die, and the fire is not quenched” — after verses about the hand and foot (9:44 and 9:46), in addition to the same saying at 9:48. Critical editions omit 9:44 and 9:46 as scribal assimilations to the longer form of the passage found in some witnesses. The earliest complete Greek codices in our window keep the single climactic line at 9:48.",
+      "later_tradition": "The duplicated lines persist in the Byzantine majority and the Textus Receptus (and thus the KJV). NA28 prints 9:44 and 9:46 in brackets with weak attestation. CNTR marks both verses absent (—) in Codex Sinaiticus and Codex Vaticanus while 9:48 remains present.",
+      "scholarship": [
+        {
+          "label": "CNTR — Mark witnesses",
+          "url": "https://greekcntr.org/"
+        },
+        {
+          "label": "Mark 9 — Wikipedia (secondary)",
+          "url": "https://en.wikipedia.org/wiki/Mark_9"
+        }
+      ],
+      "witnesses": [
+        {
+          "ga": "01",
+          "status": "absent",
+          "note": "CNTR marks Mark 9:44 and 9:46 absent (—) in Codex Sinaiticus."
+        },
+        {
+          "ga": "03",
+          "status": "absent",
+          "note": "Both verses absent in Codex Vaticanus."
+        },
+        {
+          "ga": "P45",
+          "status": "not_in_corpus",
+          "note": "𝔓⁴⁵ does not preserve Mark 9 in our CNTR slice."
+        }
+      ],
+      "variants_link": {
+        "book": "Mark",
+        "q": "9:48"
+      },
+      "compare_link": {
+        "a": "01",
+        "b": "03",
+        "book": "Mark"
+      }
+    }
+  ]
+}
