@@ -24,6 +24,7 @@ export interface NagHammadiWitnessText {
   total_units?: number;
   initial_units: NagHammadiTextUnit[];
   attribution?: string | null;
+  canonical_diff_note?: string;
 }
 
 export interface NagHammadiTextBundle {

@@ -229,6 +229,23 @@
         { "href": "/coverage/", "label": "Coverage & downloads" },
         { "href": "/methodology/", "label": "Methods" }
       ]
+    },
+    {
+      "id": "nag-hammadi-lost-nt-books",
+      "claim": "Nag Hammadi texts are lost books of the New Testament canon.",
+      "verdict": "partial",
+      "why": "The find shows how diverse early Christian literature was — and some titles (e.g. Gospel of Thomas) overlap sayings also known from Greek fragments. But these are fourth-century Coptic codices of mostly Gnostic tractates, not uncatalogued Greek NT manuscript copies. Church lists debated individual works; they were not treated as the same stream as Matthew–Revelation in the Greek NT tradition this site collates (1–400 CE CNTR).",
+      "links": [
+        { "href": "/?corpus=nag-hammadi", "label": "Nag Hammadi corpus" },
+        { "href": "/methodology/", "label": "Methods (corpus boundaries)" },
+        { "href": "/coverage/", "label": "Coverage (no Thomas↔NT collation)" }
+      ],
+      "scholarship": [
+        {
+          "label": "Ehrman, Lost Christianities — canon formation vs diversity",
+          "url": "https://doi.org/10.1093/acprof:oso/9780195182491.001.0001"
+        }
+      ]
     }
   ]
 }

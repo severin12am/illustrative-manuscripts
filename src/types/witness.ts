@@ -98,6 +98,8 @@ export interface Witness {
   known_variants: KnownVariant[];
   bibliography: BibliographyEntry[];
   license_note: string;
+  /** Nag Hammadi: genre/content contrast with the canonical NT (not a verse collation). */
+  canonical_diff_note?: string;
 }
 
 export function formatYear(year: number): string {

@@ -63,6 +63,7 @@ function seedToWitness(m) {
     bibliography: m.bibliography || [],
     license_note:
       "Non-canonical Coptic Gnostic Christian texts. Images © Claremont/Coptic Museum unless Commons. Coptic Thomas diplomatic via Coptic Scriptorium (CC-BY 4.0) where shown.",
+    canonical_diff_note: m.canonical_diff_note || undefined,
   };
 }
 
@@ -107,6 +108,7 @@ function main() {
       initial_units: units,
       attribution:
         "Coptic diplomatic (Gospel of Thomas): Coptic Scriptorium (CC-BY 4.0). Images: Claremont Nag Hammadi Archive (IIIF embed only). English: short display excerpts, not a dumped modern critical translation.",
+      canonical_diff_note: m.canonical_diff_note || undefined,
     };
   }
 

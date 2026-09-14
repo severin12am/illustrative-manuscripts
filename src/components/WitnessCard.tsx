@@ -118,6 +118,11 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
           </p>
         )}
         <p className={styles.dateNote}>{witness.date_note}</p>
+        {isNagHammadi && witness.canonical_diff_note && (
+          <p className={styles.dateNote}>
+            <strong>Vs. canonical NT:</strong> {witness.canonical_diff_note}
+          </p>
+        )}
         {ntCoverage && ntCoverage.cntr_transcription && (
           <div className={styles.variantSummary}>
             <p className={styles.variantDef}>

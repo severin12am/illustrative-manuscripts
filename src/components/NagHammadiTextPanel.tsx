@@ -71,6 +71,11 @@ export default function NagHammadiTextPanel({ text, witnessId }: Props) {
         <p className={styles.note}>
           Non-canonical Coptic tractate — not a New Testament manuscript.
         </p>
+        {text.canonical_diff_note && (
+          <p className={styles.note}>
+            <strong>Vs. canonical NT:</strong> {text.canonical_diff_note}
+          </p>
+        )}
       </header>
 
       <div className={styles.unitList}>
