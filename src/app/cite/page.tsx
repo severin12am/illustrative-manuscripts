@@ -126,6 +126,8 @@ export default function CitePage() {
           Manuscripts when you use our{" "}
           <strong>illustrative census slice</strong>, coverage aggregates, or
           hand-curated passage cards — not as a stand-in for critical editions.
+          For a one-page methods statement (windows, units, scripts), see{" "}
+          <Link href="/methodology/">Methods</Link>.
         </p>
         <dl className={styles.defList}>
           <div className={styles.defItem}>
@@ -551,6 +553,8 @@ export default function CitePage() {
         <Link href="/use/">Use this site →</Link>
         {" · "}
         <Link href="/quran/uthmani/">Uthmanic regional rasm →</Link>
+        {" · "}
+        <Link href="/methodology/">Methods →</Link>
         {" · "}
         <Link href="/coverage/">Coverage &amp; scope →</Link>
         {" · "}

@@ -64,7 +64,8 @@ export default function CoveragePage() {
         <p className={styles.sectionIntro} style={{ marginTop: "1rem", marginBottom: 0 }}>
           Students and debaters: start with{" "}
           <Link href="/use/">Use this site</Link> for pathways and claim discipline
-          before quoting our counts in an argument.
+          before quoting our counts in an argument. Researchers: see{" "}
+          <Link href="/methodology/">Methods</Link> for scope windows and reproducibility.
         </p>
       </header>
 
@@ -448,6 +449,8 @@ export default function CoveragePage() {
       </aside>
 
       <footer className={styles.footer}>
+        <Link href="/methodology/">Methods →</Link>
+        {" · "}
         <Link href="/quran/uthmani/">Uthmanic regional rasm →</Link>
         {" · "}
         <Link href="/famous/">Famous passages →</Link>
