@@ -10,7 +10,7 @@
       "Rahlfs Verzeichnis / Göttingen Septuaginta catalogue (metadata)",
       "World English Bible (PD) for English of shown lines"
     ],
-    "generated_by": "Hand-curated seed — ~12 witnesses; expand against open image/text licenses"
+    "generated_by": "Hand-curated seed — 24 witnesses (9 Hebrew DSS + 15 Greek LXX); expand against open image/text licenses"
   },
   "manuscripts": [
     {
@@ -651,6 +651,610 @@
         {
           "title": "Göttingen Septuaginta — Rahlfs 802",
           "url": "https://septuaginta.uni-goettingen.de/"
+        }
+      ]
+    },
+    {
+      "id": "nash-papyrus",
+      "catalog_id": "Nash Papyrus",
+      "traditional_name": "Nash Papyrus (Cambridge MS Or. 233)",
+      "tradition": "hebrew",
+      "language": "Hebrew (paleo-Hebrew script)",
+      "material": "papyrus",
+      "date_ce_start": -150,
+      "date_ce_end": -100,
+      "date_label": "ca. 150–100 BCE (palaeography)",
+      "date_note": "Oldest known Hebrew manuscript on papyrus from Egypt — Decalogue + Shema in pre-Masoretic spelling. Orthography differs from later medieval MT codices (e.g. 2nd-person suffixes, divine name form).",
+      "dating_method": "palaeography",
+      "dating_source": "Albright; Cambridge University Library catalogue; Wikipedia secondary summary",
+      "contents": "Exodus 20:2–17 (Ten Commandments) and Deuteronomy 5:6–21; Deuteronomy 6:4–9 (Shema)",
+      "find_place": "Fayyum, Egypt (provenance before acquisition)",
+      "find_year_note": "Acquired 1902 by W. L. Nash; published 1903",
+      "current_institution": "Cambridge University Library",
+      "current_shelfmark": "MS Or. 233",
+      "library_url": "https://www.lib.cam.ac.uk/collections/departments/manuscripts-university-archives",
+      "commons_key": "nash-papyrus",
+      "known_variants": [
+        {
+          "locus": "Orthography vs medieval MT",
+          "witness_reading": "Pre-Masoretic spellings on Nash (paleo-Hebrew hand)",
+          "modern_reading": "Standard Leningrad Codex (BHS/BHQ base)",
+          "significance": "Illustrates that Hebrew Bible text existed in fluid orthography centuries before pointed MT codices — not a collation dump.",
+          "base_text": "Leningrad Codex (MT)"
+        }
+      ],
+      "image": {
+        "policy": "hosted",
+        "viewer_url": "https://commons.wikimedia.org/wiki/File:2nd_century_Hebrew_decalogue.jpg",
+        "attribution": {
+          "institution": "Cambridge University Library / Commons upload",
+          "license": "Public domain (Commons)",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:2nd_century_Hebrew_decalogue.jpg",
+          "attribution_required": false,
+          "note": "Commons plate of Nash Papyrus Decalogue columns."
+        }
+      },
+      "passages": [
+        {
+          "reference": "Deuteronomy 6:4–5 (Shema)",
+          "original": "שמע ישראל יהוה אלהינו יהוה אחד ואהבת את יהוה אלהיך בכל לבבך",
+          "original_label": "Consonantal display of Shema locus — compare Nash plate orthography",
+          "original_source": "Cambridge MS Or. 233 facsimile (Commons); standard consonants for reading",
+          "english": "Hear, Israel: Yahweh is our God. Yahweh is one. You shall love Yahweh your God with all your heart.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)",
+          "note": "Nash uses early spellings and paleo-Hebrew script; medieval MT adds full pointing and later orthographic standardization."
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Cambridge University Library — MS Or. 233",
+          "url": "https://www.lib.cam.ac.uk/"
+        },
+        {
+          "title": "Wikipedia — Nash Papyrus (secondary)",
+          "url": "https://en.wikipedia.org/wiki/Nash_Papyrus"
+        }
+      ]
+    },
+    {
+      "id": "4q175",
+      "catalog_id": "4Q175",
+      "traditional_name": "Testimonia scroll (4Q175)",
+      "tradition": "hebrew",
+      "language": "Hebrew (Qumran)",
+      "material": "parchment",
+      "date_ce_start": -75,
+      "date_ce_end": -1,
+      "date_label": "ca. 75–1 BCE (palaeography)",
+      "date_note": "Catena of five biblical quotations (Deut, two Isa, Ps, Josh) — shows which passages were read together at Qumran before the medieval chapter order.",
+      "dating_method": "palaeography",
+      "dating_source": "Allegro, DJD V; Leon Levy DSS Digital Library",
+      "contents": "Testimonia: Deuteronomy 5:28–29; Isaiah 11:3–5; Isaiah 7:14–15; Psalm 1:1; Joshua 6:26",
+      "find_place": "Qumran Cave 4",
+      "find_year_note": "Excavated 1952",
+      "current_institution": "Israel Antiquities Authority",
+      "current_shelfmark": "4Q175",
+      "leon_levy_url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/4Q175-1",
+      "library_url": "https://www.deadseascrolls.org.il/",
+      "commons_key": "4q175",
+      "image": {
+        "policy": "hosted",
+        "viewer_url": "https://commons.wikimedia.org/wiki/File:4Q175.jpg",
+        "attribution": {
+          "institution": "Commons upload (IAA scroll photograph)",
+          "license": "Public domain (Commons uploader tag)",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:4Q175.jpg",
+          "attribution_required": false
+        }
+      },
+      "passages": [
+        {
+          "reference": "Isaiah 7:14–15 (excerpt on 4Q175)",
+          "original": "לכן יתן אדני הוא לכם אות הנה העלמה הרה וילדת בן",
+          "original_label": "Hebrew of Isaiah citation column — consonantal display",
+          "original_source": "Allegro DJD V; compare Leon Levy 4Q175",
+          "english": "Therefore the Lord himself will give you a sign. Behold, the virgin will conceive, and bear a son.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)",
+          "note": "4Q175 cites Isaiah in a testimonia chain; spelling and line breaks follow the scroll, not a modern printed Bible page."
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Leon Levy DSS Digital Library — 4Q175",
+          "url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/4Q175-1"
+        }
+      ]
+    },
+    {
+      "id": "4qgen-exa",
+      "catalog_id": "4QGen-Exa (4Q1)",
+      "traditional_name": "Genesis–Exodus scroll (4QGen-Exa)",
+      "tradition": "hebrew",
+      "language": "Hebrew (Qumran)",
+      "material": "parchment",
+      "date_ce_start": -100,
+      "date_ce_end": -50,
+      "date_label": "ca. 100–50 BCE (palaeography)",
+      "date_note": "Early Genesis copy from Cave 4 — text type often classified as pre-Samaritan / non-MT in scholarly handbooks (Ulrich).",
+      "dating_method": "palaeography",
+      "dating_source": "Ulrich, DJD XII; Leon Levy DSS Digital Library",
+      "contents": "Genesis 1–2 (and Exodus portions on same scroll)",
+      "find_place": "Qumran Cave 4",
+      "find_year_note": "Excavated 1952",
+      "current_institution": "Israel Antiquities Authority",
+      "current_shelfmark": "4Q1 (4QGen-Exa)",
+      "leon_levy_url": "https://www.deadseascrolls.org.il/",
+      "library_url": "https://www.deadseascrolls.org.il/",
+      "commons_key": "4qgen-exa",
+      "image": {
+        "policy": "hosted",
+        "viewer_url": "https://commons.wikimedia.org/wiki/File:Genesis_1_Dead_Sea_Scroll.jpg",
+        "attribution": {
+          "institution": "Commons / Israel Museum style exhibition plate",
+          "license": "Public domain (PDMC on Commons file)",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Genesis_1_Dead_Sea_Scroll.jpg",
+          "attribution_required": false,
+          "note": "Commons Genesis 1 plate associated with Qumran Genesis scrolls — compare Leon Levy 4Q1."
+        }
+      },
+      "passages": [
+        {
+          "reference": "Genesis 1:1–3",
+          "original": "בראשית ברא אלהים את השמים ואת הארץ והארץ היתה תהו ובהו וחשך על פני תהום",
+          "original_label": "Opening creation lines — consonantal display",
+          "original_source": "Ulrich DJD XII; compare Commons Genesis 1 plate",
+          "english": "In the beginning, God created the heavens and the earth. The earth was formless and empty. Darkness was on the surface of the deep.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Leon Levy Dead Sea Scrolls Digital Library",
+          "url": "https://www.deadseascrolls.org.il/"
+        }
+      ]
+    },
+    {
+      "id": "mur-88",
+      "catalog_id": "Mur 88",
+      "traditional_name": "Murabbaʿat Isaiah scroll (Mur 88)",
+      "tradition": "hebrew",
+      "language": "Hebrew (Murabbaʿat)",
+      "material": "parchment",
+      "date_ce_start": 50,
+      "date_ce_end": 150,
+      "date_label": "ca. 50–150 CE (palaeography)",
+      "date_note": "First-century CE Hebrew Isaiah from Wadi Murabbaʿat — closer to proto-MT profile than many Qumran Isaiah copies (Tov).",
+      "dating_method": "palaeography",
+      "dating_source": "Milik, DJD II; Tov, Textual Criticism of the Hebrew Bible",
+      "contents": "Book of Isaiah (substantial scroll)",
+      "find_place": "Wadi Murabbaʿat, Judean Desert",
+      "find_year_note": "Discovered 1951–1952",
+      "current_institution": "Israel Antiquities Authority",
+      "current_shelfmark": "Mur 88",
+      "leon_levy_url": "https://www.deadseascrolls.org.il/",
+      "library_url": "https://www.deadseascrolls.org.il/",
+      "image": {
+        "policy": "link_only",
+        "viewer_url": "https://www.deadseascrolls.org.il/",
+        "attribution": {
+          "institution": "Israel Antiquities Authority",
+          "license": "© IAA — link only",
+          "attribution_required": true,
+          "note": "No verified PD Commons leaf for Mur 88; view at Leon Levy DSS Digital Library."
+        }
+      },
+      "passages": [
+        {
+          "reference": "Isaiah 40:8",
+          "original": "ייבש חציר נבל ציץ כי רוח יהוה נשבה בו אכן חציר העם",
+          "original_label": "Consonantal display of Isa 40:8 locus",
+          "original_source": "Milik DJD II; compare Murabbaʿat plate",
+          "english": "The grass withers, the flower fades, because Yahweh's breath blows on it. Surely the people are grass.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)",
+          "note": "Murabbaʿat Isaiah aligns more closely with medieval MT than 1QIsaᵃ in many chapters — useful when debating 'how uniform was Hebrew before the Masoretes?'"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Leon Levy DSS Digital Library — Murabbaʿat materials",
+          "url": "https://www.deadseascrolls.org.il/"
+        }
+      ]
+    },
+    {
+      "id": "mas1a",
+      "catalog_id": "Mas1a",
+      "traditional_name": "Masada Leviticus–Numbers (Mas1a)",
+      "tradition": "hebrew",
+      "language": "Hebrew (Masada)",
+      "material": "parchment",
+      "date_ce_start": -30,
+      "date_ce_end": 1,
+      "date_label": "ca. 30–1 BCE (radiocarbon / palaeography)",
+      "date_note": "Biblical fragments from Masada siege context — among the latest pre-70 CE Hebrew copies; often cited as early MT-aligned Leviticus/Numbers.",
+      "dating_method": "radiocarbon + palaeography",
+      "dating_source": "Yadin, Masada excavations; Tov",
+      "contents": "Leviticus 4–8; Numbers 3–4 (fragments)",
+      "find_place": "Masada, Judean Desert",
+      "find_year_note": "Excavated 1963–1965",
+      "current_institution": "Israel Antiquities Authority",
+      "current_shelfmark": "Mas1a",
+      "leon_levy_url": "https://www.deadseascrolls.org.il/",
+      "library_url": "https://www.deadseascrolls.org.il/",
+      "image": {
+        "policy": "link_only",
+        "viewer_url": "https://www.deadseascrolls.org.il/",
+        "attribution": {
+          "institution": "Israel Antiquities Authority",
+          "license": "© IAA — link only",
+          "attribution_required": true
+        }
+      },
+      "passages": [
+        {
+          "reference": "Leviticus 4:27",
+          "original": "ואם נפש אחת תחטא בשגגה מעם הארץ",
+          "original_label": "Leviticus sin-offering law — consonantal display",
+          "original_source": "Yadin, Masada publications; Tov handbook summary",
+          "english": "If one person sins unwittingly, from among the people of the land…",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Leon Levy DSS Digital Library",
+          "url": "https://www.deadseascrolls.org.il/"
+        }
+      ]
+    },
+    {
+      "id": "8hev-xii-gr",
+      "catalog_id": "8HevXII gr",
+      "rahlfs": "943",
+      "traditional_name": "Nahal Ḥever Greek Minor Prophets scroll",
+      "tradition": "lxx",
+      "language": "Greek (Koine)",
+      "material": "papyrus",
+      "date_ce_start": -50,
+      "date_ce_end": 1,
+      "date_label": "ca. 50–1 BCE (palaeography)",
+      "date_note": "Only surviving Greek scroll of the Twelve Prophets from the Second Temple period — agrees with MT in many places and with LXX in others (Barthélemy / Tov discussions).",
+      "dating_method": "palaeography",
+      "dating_source": "Barthélemy, DJD VIII; Rahlfs 943",
+      "contents": "Minor Prophets (Greek scroll, Nahal Ḥever Cave 8)",
+      "find_place": "Nahal Ḥever, Judean Desert (Cave of Horror)",
+      "find_year_note": "Discovered 1960s",
+      "current_institution": "Israel Antiquities Authority",
+      "current_shelfmark": "8HevXII gr",
+      "library_url": "https://www.deadseascrolls.org.il/",
+      "commons_key": "8hev-xii-gr",
+      "image": {
+        "policy": "hosted",
+        "viewer_url": "https://commons.wikimedia.org/wiki/File:Nahal_Hever2.jpg",
+        "attribution": {
+          "institution": "Commons upload (scroll column plate)",
+          "license": "Public domain (Commons)",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Nahal_Hever2.jpg",
+          "attribution_required": false
+        }
+      },
+      "passages": [
+        {
+          "reference": "Jonah 4:2",
+          "original": "κύριε οὐκ οὗτος ὁ λόγος μου ἔτι ὄντος μου εἰς τὴν πατρίδα μου",
+          "original_label": "Greek of Jonah 4:2 area — display excerpt",
+          "original_source": "Barthélemy DJD VIII; Rahlfs apparatus summary",
+          "english": "Lord, wasn't this what I said when I was still in my homeland?",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)",
+          "note": "This scroll preserves a mix of LXX and proto-MT readings — key evidence that 'LXX vs MT' is not a simple binary for all books."
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Leon Levy DSS Digital Library — Greek Minor Prophets",
+          "url": "https://www.deadseascrolls.org.il/"
+        },
+        {
+          "title": "Göttingen Septuaginta — Rahlfs 943",
+          "url": "https://septuaginta.uni-goettingen.de/"
+        }
+      ]
+    },
+    {
+      "id": "codex-washingtonianus-lxx",
+      "catalog_id": "032 (OT)",
+      "traditional_name": "Codex Washingtonianus — Greek Pentateuch & Joshua (Freer)",
+      "tradition": "lxx",
+      "language": "Greek (Koine)",
+      "material": "parchment",
+      "date_ce_start": 350,
+      "date_ce_end": 450,
+      "date_label": "ca. IV–V CE (palaeography)",
+      "date_note": "Same physical codex as GA 032 but this card foregrounds the surviving Greek Old Testament portion (Genesis–Deuteronomy, Joshua) — distinct text family from Vaticanus in Deuteronomy (Freer/Washingtonensis). NT portion remains on the Greek NT corpus only.",
+      "dating_method": "palaeography",
+      "dating_source": "Sanders, Freer collection catalogue; INTF Liste 032",
+      "contents": "Greek Genesis–Deuteronomy; Greek Joshua (OT portion of Codex W / Freer)",
+      "find_place": "Egypt (provenance before Freer acquisition)",
+      "find_year_note": "Acquired Charles Lang Freer, 1906",
+      "current_institution": "Freer Gallery of Art, Smithsonian Institution, Washington, D.C.",
+      "current_shelfmark": "MS 1 (Freer) / GA 032",
+      "library_url": "https://www.freersgallery.org/",
+      "commons_key": "codex-washingtonianus-lxx",
+      "image": {
+        "policy": "hosted",
+        "viewer_url": "https://commons.wikimedia.org/wiki/File:Codex_Washingtonianus_032.jpg",
+        "attribution": {
+          "institution": "Freer Gallery / Commons (CC BY-SA 4.0 on file page)",
+          "license": "CC BY-SA 4.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Codex_Washingtonianus_032.jpg",
+          "attribution_required": true
+        }
+      },
+      "passages": [
+        {
+          "reference": "Deuteronomy 5:6–7",
+          "original": "ἐγώ εἰμι κύριος ὁ θεός σου ὁ ἐξαγαγών σε ἐκ γῆς Αἰγύπτου",
+          "original_label": "Greek Decalogue opening on Freer OT leaves",
+          "original_source": "Sanders, Old Testament Manuscripts in the Freer Collection — display excerpt",
+          "english": "I am Yahweh your God, who brought you out of the land of Egypt.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Freer Gallery — Codex Washingtonianus",
+          "url": "https://www.freersgallery.org/"
+        }
+      ]
+    },
+    {
+      "id": "codex-vaticanus-lxx-ot",
+      "catalog_id": "03 (OT)",
+      "traditional_name": "Codex Vaticanus — Greek Old Testament (Vat. gr. 1209)",
+      "tradition": "lxx",
+      "language": "Greek (Koine)",
+      "material": "parchment",
+      "date_ce_start": 300,
+      "date_ce_end": 399,
+      "date_label": "IV CE (INTF Liste range)",
+      "date_note": "Benchmark Alexandrian LXX codex for Genesis–Maccabees (where extant). Same codex as NT B/03 on the Greek NT timeline; shown here for LXX/MT debates without expanding the NT witness list.",
+      "dating_method": "palaeography",
+      "dating_source": "INTF Kurzgefasste Liste; Vatican Library catalogue",
+      "contents": "Greek Old Testament (LXX) — major portions of Genesis through Maccabees in the original hand",
+      "find_place": "Unknown before Vatican Library",
+      "find_year_note": "Vatican Library by 1475",
+      "current_institution": "Biblioteca Apostolica Vaticana",
+      "current_shelfmark": "Vat. gr. 1209",
+      "library_url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209",
+      "image": {
+        "policy": "link_only",
+        "viewer_url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209",
+        "attribution": {
+          "institution": "Biblioteca Apostolica Vaticana",
+          "license": "© Vatican Library — IIIF link only",
+          "attribution_required": true,
+          "viewer_url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209",
+          "note": "A Commons PD plate of Hebrews (OT corpus) exists on the NT card; OT leaves viewed via official DigiVatLib."
+        }
+      },
+      "passages": [
+        {
+          "reference": "Genesis 1:1",
+          "original": "ἐν ἀρχῇ ἐποίησεν ὁ θεὸς τὸν οὐρανὸν καὶ τὴν γῆν",
+          "original_label": "Standard LXX opening — Vaticanus hand (display excerpt)",
+          "original_source": "Rahlfs LXX Genesis; Vatican digitization for verification",
+          "english": "In the beginning, God created the heavens and the earth.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "DigiVatLib — Vat. gr. 1209",
+          "url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209"
+        }
+      ]
+    },
+    {
+      "id": "codex-sinaiticus-lxx-ot",
+      "catalog_id": "01 (OT)",
+      "traditional_name": "Codex Sinaiticus — Greek Old Testament",
+      "tradition": "lxx",
+      "language": "Greek (Koine)",
+      "material": "parchment",
+      "date_ce_start": 325,
+      "date_ce_end": 375,
+      "date_label": "IV CE (mid-century range)",
+      "date_note": "Complete Greek Bible manuscript tradition; OT portion digitized at codexsinaiticus.org. NT leaf on Greek NT corpus — this entry is the LXX side for comparing Greek Torah/Prophets to DSS Hebrew.",
+      "dating_method": "palaeography",
+      "dating_source": "Codex Sinaiticus Project; INTF Liste 01",
+      "contents": "Greek Old Testament (majority extant) plus NT in same codex",
+      "find_place": "Saint Catherine's Monastery, Sinai",
+      "find_year_note": "Tischendorf discovery 1844 (long possessed at Sinai)",
+      "current_institution": "British Library, Leipzig, Saint Catherine's Monastery (dispersed)",
+      "current_shelfmark": "BL Add. MS 43725 et al.",
+      "library_url": "https://codexsinaiticus.org/en/",
+      "image": {
+        "policy": "link_only",
+        "viewer_url": "https://codexsinaiticus.org/en/manuscript.aspx",
+        "attribution": {
+          "institution": "Codex Sinaiticus Project",
+          "license": "© holding libraries — link only",
+          "attribution_required": true,
+          "viewer_url": "https://codexsinaiticus.org/en/manuscript.aspx"
+        }
+      },
+      "passages": [
+        {
+          "reference": "Psalm 23:1 (LXX Ps 22:1)",
+          "original": "κύριος ποιμαίνει με καὶ οὐδέν με ὑστερήσει",
+          "original_label": "Greek Psalm 22:1 (LXX numbering) — display excerpt",
+          "original_source": "Codex Sinaiticus Project transcription (verify on site)",
+          "english": "Yahweh is my shepherd; I shall lack nothing.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Codex Sinaiticus Project",
+          "url": "https://codexsinaiticus.org/en/"
+        }
+      ]
+    },
+    {
+      "id": "p-amherst-3-lxx-gen",
+      "catalog_id": "P.Amherst 3",
+      "rahlfs": "814",
+      "traditional_name": "Amherst Greek Genesis (P.Amherst 3)",
+      "tradition": "lxx",
+      "language": "Greek (Koine)",
+      "material": "papyrus",
+      "date_ce_start": 200,
+      "date_ce_end": 399,
+      "date_label": "III–IV CE (palaeography)",
+      "date_note": "Not NT papyrus P12 — this is the Morgan/Amherst Greek Genesis LXX codex leaf (Gen 1:1–5 on verso).",
+      "dating_method": "palaeography",
+      "dating_source": "Rahlfs 814; Morgan Library catalogue",
+      "contents": "Genesis 1:1–5 (and other Genesis fragments in codex)",
+      "find_place": "Egypt",
+      "find_year_note": "Amherst collection; Morgan Library MS Amherst Gr. 3",
+      "current_institution": "The Morgan Library & Museum, New York",
+      "current_shelfmark": "MS Amherst Gr. 3",
+      "library_url": "https://www.themorgan.org/manuscript/77095",
+      "commons_key": "p-amherst-3-lxx-gen",
+      "image": {
+        "policy": "hosted",
+        "viewer_url": "https://commons.wikimedia.org/wiki/File:New_York,_Morgan_Library_Ms_Amherst_Greek_Papyrus_3_(Papyrus_12)_verso_Genesis_1,_1%E2%80%935_LXX_Greek.jpg",
+        "attribution": {
+          "institution": "The Morgan Library & Museum / Commons",
+          "license": "Public domain (Commons)",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:New_York,_Morgan_Library_Ms_Amherst_Greek_Papyrus_3_(Papyrus_12)_verso_Genesis_1,_1%E2%80%935_LXX_Greek.jpg",
+          "attribution_required": false,
+          "note": "Commons title references 'Papyrus 12' as Morgan shelf label — not Gregory-Aland P12 (Hebrews)."
+        }
+      },
+      "passages": [
+        {
+          "reference": "Genesis 1:1–3",
+          "original": "ἐν ἀρχῇ ἐποίησεν ὁ θεὸς τὸν οὐρανὸν καὶ τὴν γῆν ἡ δὲ γῆ ἦν ἀόρατος",
+          "original_label": "Greek uncial on Amherst 3 verso (Gen 1:1–5 plate)",
+          "original_source": "Morgan Library plate on Commons",
+          "english": "In the beginning, God created the heavens and the earth. The earth was formless and empty.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Morgan Library — MS Amherst Gr. 3",
+          "url": "https://www.themorgan.org/manuscript/77095"
+        }
+      ]
+    },
+    {
+      "id": "p967",
+      "catalog_id": "P.967",
+      "rahlfs": "872",
+      "traditional_name": "Chester Beatty Ezekiel papyrus (P967 / Rahlfs 872)",
+      "tradition": "lxx",
+      "language": "Greek (Koine)",
+      "material": "papyrus",
+      "date_ce_start": 150,
+      "date_ce_end": 250,
+      "date_label": "II–III CE (palaeography)",
+      "date_note": "Early papyrus codex of Ezekiel — among substantial pre-uncial LXX prophets witnesses.",
+      "dating_method": "palaeography",
+      "dating_source": "Rahlfs 872; Kenyon/Hayes Beatty series",
+      "contents": "Ezekiel (papyrus codex fragments)",
+      "find_place": "Egypt",
+      "find_year_note": "Chester Beatty collection",
+      "current_institution": "Chester Beatty, Dublin",
+      "current_shelfmark": "P967",
+      "library_url": "https://www.chesterbeatty.ie/",
+      "commons_key": "p967",
+      "image": {
+        "policy": "hosted",
+        "viewer_url": "https://commons.wikimedia.org/wiki/File:Papyrus_967.jpg",
+        "attribution": {
+          "institution": "Chester Beatty Library / Commons",
+          "license": "Public domain (Commons)",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus_967.jpg",
+          "attribution_required": false
+        }
+      },
+      "passages": [
+        {
+          "reference": "Ezekiel 37:1",
+          "original": "καὶ ἐγένετο ἐπʼ ἐμὲ χεὶρ κυρίου καὶ ἐξήγαγέν με ἐν πνεύματι",
+          "original_label": "Greek of valley of dry bones vision opening",
+          "original_source": "Hayes Beatty plates; Rahlfs Ezekiel",
+          "english": "Yahweh's hand was on me, and he brought me out in Yahweh's Spirit.",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "Chester Beatty — P967 Ezekiel",
+          "url": "https://www.chesterbeatty.ie/"
+        }
+      ]
+    },
+    {
+      "id": "p-oxy-3522",
+      "catalog_id": "P.Oxy. 3522",
+      "rahlfs": "967",
+      "traditional_name": "Oxyrhynchus Greek Esther (P.Oxy. 3522)",
+      "tradition": "lxx",
+      "language": "Greek (Koine)",
+      "material": "papyrus",
+      "date_ce_start": 250,
+      "date_ce_end": 350,
+      "date_label": "III–IV CE (palaeography)",
+      "date_note": "Greek Esther scroll fragment — part of the Oxyrhynchus LXX papyri corpus (Rahlfs 967).",
+      "dating_method": "palaeography",
+      "dating_source": "Parsons, P.Oxy. LII 3522; Rahlfs",
+      "contents": "Esther (Greek text fragments)",
+      "find_place": "Oxyrhynchus, Egypt",
+      "find_year_note": "Published 1984",
+      "current_institution": "Sackler Library, Oxford (Papyrology Rooms)",
+      "current_shelfmark": "P.Oxy. 3522",
+      "library_url": "https://papyri.info/ddbdp/p.oxy;52;3522",
+      "commons_key": "p-oxy-3522",
+      "image": {
+        "policy": "hosted",
+        "viewer_url": "https://commons.wikimedia.org/wiki/File:POxy_n3522.jpg",
+        "attribution": {
+          "institution": "Oxford / Commons uploader",
+          "license": "Public domain (Commons)",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:POxy_n3522.jpg",
+          "attribution_required": false
+        }
+      },
+      "passages": [
+        {
+          "reference": "Esther 1:1",
+          "original": "ἔτους δευτέρου βασιλεύοντος Ἀρταξέρξου τῷ μεγάλῳ",
+          "original_label": "Greek Esther opening formula on P.Oxy. 3522",
+          "original_source": "Parsons P.Oxy. LII 3522 — display excerpt",
+          "english": "In the second year of the reign of Artaxerxes the Great…",
+          "english_label": "English of these lines",
+          "english_source": "World English Bible (PD)"
+        }
+      ],
+      "bibliography": [
+        {
+          "title": "papyri.info — P.Oxy. 3522",
+          "url": "https://papyri.info/ddbdp/p.oxy;52;3522"
         }
       ]
     }

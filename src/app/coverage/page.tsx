@@ -37,7 +37,7 @@ function pct(count: number, total: number) {
 }
 
 export default function CoveragePage() {
-  const { greek_nt, quran, nag_hammadi, generated_at } = coverage;
+  const { greek_nt, quran, nag_hammadi, hebrew_lxx, generated_at } = coverage;
   const kinds = sortKindEntries(greek_nt.disagreements.by_kind);
   const disagreementTotal = greek_nt.disagreements.total;
   const bookSummary = greek_nt.disagreements.by_book ?? [];
@@ -377,6 +377,40 @@ export default function CoveragePage() {
           <Link href="/quran/uthmani/">Uthmanic regional rasm</Link> — distinct from
           our per-card excerpt display and from the Ṣanʿāʾ lower-text companion
           codex.
+        </p>
+      </section>
+
+      <section className={styles.section}>
+        <h2 className={styles.sectionTitle}>
+          Hebrew Bible &amp; Septuagint ({hebrew_lxx.window_label})
+        </h2>
+        <div className={styles.statGrid}>
+          <div className={styles.statCard}>
+            <span className={styles.statValue}>{hebrew_lxx.witness_count}</span>
+            <span className={styles.statLabel}>witnesses in seed</span>
+          </div>
+          <div className={styles.statCard}>
+            <span className={styles.statValue}>
+              {hebrew_lxx.hebrew_dss_count} + {hebrew_lxx.greek_lxx_count}
+            </span>
+            <span className={styles.statLabel}>Hebrew DSS + Greek LXX</span>
+          </div>
+          <div className={styles.statCard}>
+            <span className={styles.statValue}>
+              {hebrew_lxx.leaf_image_count}/{hebrew_lxx.witness_count}
+            </span>
+            <span className={styles.statLabel}>
+              with leaf image (
+              {Math.round(hebrew_lxx.leaf_image_fraction * 100)}%)
+            </span>
+          </div>
+        </div>
+        <p className={styles.note}>{hebrew_lxx.corpus_note}</p>
+        <p className={styles.note}>{hebrew_lxx.student_note}</p>
+        <p className={styles.note}>
+          Switch to{" "}
+          <Link href="/?corpus=hebrew-lxx">Hebrew / LXX on the timeline</Link> for
+          cards with Leon Levy / library links (IAA scans not rehosted).
         </p>
       </section>
 

@@ -67,6 +67,17 @@ export interface CoverageData {
     leaf_image_fraction: number;
     collation_note: string;
   };
+  hebrew_lxx: {
+    window: number[];
+    window_label: string;
+    witness_count: number;
+    hebrew_dss_count: number;
+    greek_lxx_count: number;
+    leaf_image_count: number;
+    leaf_image_fraction: number;
+    corpus_note: string;
+    student_note: string;
+  };
   primer_example: {
     witness: string;
     reference: string;
