@@ -135,6 +135,8 @@ export default function UsePage() {
       </section>
 
       <footer className={styles.footer}>
+        <Link href="/methodology/">Methods →</Link>
+        {" · "}
         <Link href="/cite/">Cite &amp; learn →</Link>
         {" · "}
         <Link href="/coverage/">Coverage &amp; scope →</Link>

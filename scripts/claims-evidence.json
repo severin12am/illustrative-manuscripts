@@ -17,6 +17,7 @@
       "description": "Download the open census, read methodology, and cite CNTR/INTF for primaries — cite us for the illustrative collation slice only.",
       "links": [
         { "href": "/coverage/", "label": "Coverage & downloads" },
+        { "href": "/methodology/", "label": "Methods (scope & reproducibility)" },
         { "href": "/cite/#for-researchers", "label": "For researchers (schema & BibTeX)" },
         { "href": "/quran/uthmani/", "label": "Uthmanic regional rasm" },
         {

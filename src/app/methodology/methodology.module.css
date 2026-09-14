@@ -1,0 +1,131 @@
+.main {
+  min-height: 100vh;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3.5rem;
+}
+
+.hero {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-muted);
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: clamp(1.875rem, 4vw, 2.5rem);
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.lead {
+  color: var(--ink-secondary);
+  line-height: 1.75;
+  font-size: 1rem;
+  max-width: 44rem;
+}
+
+.lead code {
+  color: var(--accent);
+  font-size: 0.9em;
+  font-family: var(--font-ui);
+}
+
+.section {
+  margin: 2.5rem 0;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  color: var(--ink);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-light);
+  font-weight: 600;
+}
+
+.sectionIntro {
+  color: var(--ink-secondary);
+  line-height: 1.7;
+  font-size: 0.9375rem;
+  margin-bottom: 1rem;
+  max-width: 44rem;
+}
+
+.defList {
+  display: grid;
+  gap: 1rem;
+  max-width: 44rem;
+}
+
+.defItem dt {
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 0.9375rem;
+  margin-bottom: 0.35rem;
+}
+
+.defItem dd {
+  margin: 0;
+  color: var(--ink-secondary);
+  line-height: 1.65;
+  font-size: 0.9375rem;
+}
+
+.defItem dd ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.scriptList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 44rem;
+}
+
+.scriptList li {
+  margin-bottom: 0.65rem;
+  padding: 0.65rem 0.85rem;
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--ink-secondary);
+}
+
+.scriptList code {
+  color: var(--accent);
+  font-family: var(--font-ui);
+  font-size: 0.85em;
+}
+
+.limitList {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+  color: var(--ink-secondary);
+  line-height: 1.65;
+  font-size: 0.9375rem;
+  max-width: 44rem;
+}
+
+.footer {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-light);
+  font-size: 0.9375rem;
+}
+
+.footer a {
+  color: var(--accent);
+}

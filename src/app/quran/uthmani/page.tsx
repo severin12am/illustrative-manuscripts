@@ -300,6 +300,8 @@ export default function UthmaniRegionalPage() {
       </aside>
 
       <footer className={styles.footer}>
+        <Link href="/methodology/">Methods →</Link>
+        {" · "}
         <Link href="/coverage/">Coverage &amp; scope →</Link>
         {" · "}
         <Link href="/cite/">Cite &amp; learn →</Link>
