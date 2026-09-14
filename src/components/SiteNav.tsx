@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
-import { useCallback, useState } from "react";
+import { usePathname } from "next/navigation";
+import SiteNavSearch from "@/components/SiteNavSearch";
 import styles from "./SiteNav.module.css";
 
 const links = [
@@ -18,18 +18,6 @@ const links = [
 
 export default function SiteNav() {
   const pathname = usePathname() ?? "/";
-  const router = useRouter();
-  const [navSearch, setNavSearch] = useState("");
-
-  const submitNavSearch = useCallback(
-    (e: React.FormEvent) => {
-      e.preventDefault();
-      const q = navSearch.trim();
-      if (!q) return;
-      router.push(`/?q=${encodeURIComponent(q)}`);
-    },
-    [navSearch, router]
-  );
 
   return (
     <header className={styles.header}>
@@ -39,16 +27,7 @@ export default function SiteNav() {
             Illustrative Manuscripts
           </Link>
           <div className={styles.right}>
-            <form className={styles.searchForm} onSubmit={submitNavSearch}>
-              <input
-                type="search"
-                value={navSearch}
-                onChange={(e) => setNavSearch(e.target.value)}
-                placeholder="Search witnesses…"
-                className={styles.searchInput}
-                aria-label="Search witnesses globally"
-              />
-            </form>
+            <SiteNavSearch />
             <div className={styles.links}>
               {links.map(({ href, label, match }) => (
                 <Link
