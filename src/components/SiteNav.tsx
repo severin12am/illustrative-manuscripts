@@ -12,6 +12,7 @@ const links = [
   { href: "/quran/uthmani/", label: "Uthmanic rasm", match: (path: string) => path.startsWith("/quran") },
   { href: "/compare/", label: "Compare", match: (path: string) => path.startsWith("/compare") },
   { href: "/coverage/", label: "Coverage", match: (path: string) => path.startsWith("/coverage") },
+  { href: "/use/", label: "Use / Claims", match: (path: string) => path.startsWith("/use") },
   { href: "/cite/", label: "Cite & learn", match: (path: string) => path.startsWith("/cite") },
 ];
 

@@ -64,6 +64,7 @@ for (const entry of source.entries) {
     const ok =
       curated === computed ||
       (curated === "present" && computed === "present") ||
+      (curated === "partial" && computed === "present") ||
       (curated === "not_in_corpus" && computed === "not_in_corpus") ||
       (curated === "absent" && (computed === "absent" || computed === "mixed"));
     const mark = ok ? "✓" : "✗ MISMATCH";
@@ -80,3 +81,10 @@ if (mismatches > 0) {
   process.exit(1);
 }
 console.log("All witness statuses align with CNTR data (within expected rules).");
+
+const claimsSrc = path.join(ROOT, "scripts/claims-evidence.json");
+const claimsOut = path.join(ROOT, "src/data/claims-evidence.json");
+if (fs.existsSync(claimsSrc)) {
+  fs.copyFileSync(claimsSrc, claimsOut);
+  console.log("Synced scripts/claims-evidence.json → src/data/claims-evidence.json");
+}

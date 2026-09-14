@@ -1,6 +1,7 @@
 export type WitnessPassageStatus =
   | "present"
   | "absent"
+  | "partial"
   | "lacunose"
   | "not_in_corpus";
 
