@@ -50,6 +50,13 @@
   color: var(--accent);
 }
 
+.shareHint {
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  color: var(--ink-muted);
+  margin-top: 0.75rem;
+}
+
 .callout {
   background: var(--paper-warm);
   border-left: 2px solid var(--accent);
@@ -115,6 +122,7 @@
   margin: 3rem 0;
   padding-top: 2rem;
   border-top: 1px solid var(--border-light);
+  scroll-margin-top: 5.5rem;
 }
 
 .entry:first-of-type {
@@ -124,6 +132,16 @@
 
 .entryHeader {
   margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+}
+
+.entryHeaderMain {
+  flex: 1 1 12rem;
+  min-width: 0;
 }
 
 .entryTitle {

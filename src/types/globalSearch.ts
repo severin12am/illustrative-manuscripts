@@ -1,4 +1,9 @@
-export type GlobalSearchKind = "witness" | "famous" | "claim" | "uthmani";
+export type GlobalSearchKind =
+  | "witness"
+  | "famous"
+  | "variant"
+  | "claim"
+  | "uthmani";
 
 export interface GlobalSearchItem {
   kind: GlobalSearchKind;
@@ -19,6 +24,7 @@ export interface GlobalSearchIndex {
 export const GLOBAL_SEARCH_GROUP_LABEL: Record<GlobalSearchKind, string> = {
   witness: "Witnesses",
   famous: "Famous passages",
+  variant: "Variants",
   claim: "Use / claims",
   uthmani: "Uthmanic rasm",
 };
@@ -26,6 +32,7 @@ export const GLOBAL_SEARCH_GROUP_LABEL: Record<GlobalSearchKind, string> = {
 export const GLOBAL_SEARCH_GROUP_ORDER: GlobalSearchKind[] = [
   "witness",
   "famous",
+  "variant",
   "claim",
   "uthmani",
 ];

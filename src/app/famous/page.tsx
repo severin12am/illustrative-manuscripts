@@ -1,14 +1,28 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import CopyShareLink from "@/components/CopyShareLink";
 import { famousPassages } from "@/data/famous-passages";
 import { TIMELINE_START, TIMELINE_END } from "@/data/witnesses";
 import type { WitnessPassageStatus } from "@/types/famousPassages";
 import styles from "./famous.module.css";
 
+const PAGE_TITLE = "Famous passages — Illustrative Manuscripts";
+const PAGE_DESCRIPTION =
+  "Block-level textual issues in the Greek New Testament — pericope adulterae, Mark’s ending, Comma Johanneum, and more — with honest early-witness status from our CNTR slice.";
+
 export const metadata: Metadata = {
-  title: "Famous passages — Illustrative Manuscripts",
-  description:
-    "Block-level textual issues in the Greek New Testament — pericope adulterae, Mark’s ending, Comma Johanneum, and more — with honest early-witness status from our CNTR slice.",
+  title: PAGE_TITLE,
+  description: PAGE_DESCRIPTION,
+  openGraph: {
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
+  },
 };
 
 const STATUS_LABEL: Record<WitnessPassageStatus, string> = {
@@ -57,6 +71,7 @@ export default function FamousPassagesPage() {
           hand-curated; witness status is checked against CNTR transcriptions in
           our <strong>{TIMELINE_START}–{TIMELINE_END} CE</strong> Greek NT slice.
         </p>
+        <p className={styles.shareHint}>Copy link to share this card.</p>
       </header>
 
       <aside className={styles.callout}>
@@ -89,10 +104,13 @@ export default function FamousPassagesPage() {
           aria-labelledby={`${entry.slug}-title`}
         >
           <header className={styles.entryHeader}>
-            <h2 id={`${entry.slug}-title`} className={styles.entryTitle}>
-              {entry.title}
-            </h2>
-            <p className={styles.entryRef}>{entry.passage_ref}</p>
+            <div className={styles.entryHeaderMain}>
+              <h2 id={`${entry.slug}-title`} className={styles.entryTitle}>
+                {entry.title}
+              </h2>
+              <p className={styles.entryRef}>{entry.passage_ref}</p>
+            </div>
+            <CopyShareLink href={`/famous/#${entry.slug}`} />
           </header>
 
           <div className={styles.entryBody}>

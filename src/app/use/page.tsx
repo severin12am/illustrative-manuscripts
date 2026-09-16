@@ -1,13 +1,27 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import CopyShareLink from "@/components/CopyShareLink";
 import { claimsEvidence } from "@/data/claims-evidence";
 import type { ClaimVerdict } from "@/types/claimsEvidence";
 import styles from "./use.module.css";
 
+const PAGE_TITLE = "Use this site — claims & evidence — Illustrative Manuscripts";
+const PAGE_DESCRIPTION =
+  "Audience pathways and claim discipline: what Illustrative Manuscripts supports vs common overclaims — for students, researchers, debaters, and apologists.";
+
 export const metadata: Metadata = {
-  title: "Use this site — claims & evidence — Illustrative Manuscripts",
-  description:
-    "Audience pathways and claim discipline: what Illustrative Manuscripts supports vs common overclaims — for students, researchers, debaters, and apologists.",
+  title: PAGE_TITLE,
+  description: PAGE_DESCRIPTION,
+  openGraph: {
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
+  },
 };
 
 const VERDICT_LABEL: Record<ClaimVerdict, string> = {
@@ -76,17 +90,21 @@ export default function UsePage() {
           For citations and BibTeX, see{" "}
           <Link href="/cite/">Cite &amp; learn</Link>.
         </p>
+        <p className={styles.shareHint}>Copy link to share this card.</p>
         <div className={styles.claimList}>
           {claimsEvidence.claims.map((card) => (
             <article key={card.id} id={card.id} className={styles.claimCard}>
               <div className={styles.claimHeader}>
                 <p className={styles.claimText}>&ldquo;{card.claim}&rdquo;</p>
-                <span
-                  className={styles.verdict}
-                  data-verdict={card.verdict}
-                >
-                  {VERDICT_LABEL[card.verdict]}
-                </span>
+                <div className={styles.claimHeaderActions}>
+                  <span
+                    className={styles.verdict}
+                    data-verdict={card.verdict}
+                  >
+                    {VERDICT_LABEL[card.verdict]}
+                  </span>
+                  <CopyShareLink href={`/use/#${card.id}`} />
+                </div>
               </div>
               <p className={styles.claimWhy}>{card.why}</p>
               <div className={styles.claimMeta}>
