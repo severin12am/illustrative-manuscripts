@@ -37,7 +37,8 @@ function pct(count: number, total: number) {
 }
 
 export default function CoveragePage() {
-  const { greek_nt, quran, nag_hammadi, hebrew_lxx, generated_at } = coverage;
+  const { greek_nt, quran, nag_hammadi, hebrew_lxx, curated_layers, generated_at } =
+    coverage;
   const kinds = sortKindEntries(greek_nt.disagreements.by_kind);
   const disagreementTotal = greek_nt.disagreements.total;
   const bookSummary = greek_nt.disagreements.by_book ?? [];
@@ -63,11 +64,52 @@ export default function CoveragePage() {
         </p>
         <p className={styles.sectionIntro} style={{ marginTop: "1rem", marginBottom: 0 }}>
           Students and debaters: start with{" "}
-          <Link href="/use/">Use this site</Link> for pathways and claim discipline
+          <Link href="/use/">Use this site</Link> or{" "}
+          <Link href="/teach/">Teaching briefs</Link> for pathways and claim discipline
           before quoting our counts in an argument. Researchers: see{" "}
           <Link href="/methodology/">Methods</Link> for scope windows and reproducibility.
         </p>
       </header>
+
+      {curated_layers && (
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Curated teaching layers (counts)</h2>
+          <div className={styles.statGrid}>
+            <div className={styles.statCard}>
+              <span className={styles.statValue}>
+                {curated_layers.famous_passages.count}
+              </span>
+              <span className={styles.statLabel}>
+                <Link href="/famous/">Famous passages</Link>
+              </span>
+            </div>
+            <div className={styles.statCard}>
+              <span className={styles.statValue}>
+                {curated_layers.uthmani_regional_rasm.count}
+              </span>
+              <span className={styles.statLabel}>
+                <Link href="/quran/uthmani/">Uthmanic regional rasm</Link>
+              </span>
+            </div>
+            <div className={styles.statCard}>
+              <span className={styles.statValue}>
+                {curated_layers.teach_briefs.count}
+              </span>
+              <span className={styles.statLabel}>
+                <Link href="/teach/">Teaching briefs</Link>
+              </span>
+            </div>
+            <div className={styles.statCard}>
+              <span className={styles.statValue}>
+                {nag_hammadi.tractate_witness_count}
+              </span>
+              <span className={styles.statLabel}>Nag Hammadi tractates</span>
+            </div>
+          </div>
+          <p className={styles.note}>{curated_layers.famous_passages.note}</p>
+          <p className={styles.note}>{curated_layers.uthmani_regional_rasm.note}</p>
+        </section>
+      )}
 
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>The Ehrman question — and what we answer</h2>
@@ -141,8 +183,12 @@ export default function CoveragePage() {
         <h2 className={styles.sectionTitle}>How to use this site</h2>
         <p className={styles.sliceSummary}>
           For whole missing or inserted passages (not word-level rows), see{" "}
-          <Link href="/famous/">Famous passages</Link> — block-level issues
-          taught separately from the variant census.
+          <Link href="/famous/">Famous passages</Link>
+          {curated_layers
+            ? ` (${curated_layers.famous_passages.count} entries)`
+            : ""}{" "}
+          — block-level issues taught separately from the variant census. Lesson
+          outlines: <Link href="/teach/">Teaching briefs</Link>.
         </p>
         <ol className={styles.steps}>
           <li>
@@ -454,6 +500,8 @@ export default function CoveragePage() {
         <Link href="/quran/uthmani/">Uthmanic regional rasm →</Link>
         {" · "}
         <Link href="/famous/">Famous passages →</Link>
+        {" · "}
+        <Link href="/teach/">Teaching briefs →</Link>
         {" · "}
         <Link href="/compare/">Witness compare →</Link>
         {" · "}

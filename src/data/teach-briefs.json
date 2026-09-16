@@ -1,0 +1,203 @@
+{
+  "version": 1,
+  "intro": "One-page lesson outlines for classrooms and debate prep. Each brief links into pages we already publish — no invented collation data. Greek NT word-level compare stays on /compare/ (CNTR only); other traditions use timeline cards and curated tables.",
+  "briefs": [
+    {
+      "id": "variation-unit",
+      "slug": "variation-unit",
+      "title": "What is a variation unit?",
+      "subtitle": "Word-aligned disagreements vs a base text",
+      "audience": "Students · debaters · first visit to Coverage",
+      "learning_goal": "Define a variation unit the way this site counts it (extant Greek letters aligned to SR GNT), and separate that from block-level famous passages or tradition-scale estimates.",
+      "steps": [
+        {
+          "text": "Read the Coverage primer on what Ehrman asked, what Gurry estimated, and what our mechanical census actually covers.",
+          "links": [{ "href": "/coverage/", "label": "Coverage & scope" }]
+        },
+        {
+          "text": "Open the variant explorer and filter by kind (omission, substitution, orthography, etc.) — each row is one counted unit in extant text.",
+          "links": [{ "href": "/variants/", "label": "Variant explorer" }]
+        },
+        {
+          "text": "On a witness card, read the strip under a verse: that is the same unit logic at single-verse scale.",
+          "links": [{ "href": "/", "label": "Timeline (Greek NT)" }]
+        },
+        {
+          "text": "Contrast with Famous passages: whole verses or pericopes missing or added — taught as block issues, not mixed into the word census.",
+          "links": [{ "href": "/famous/", "label": "Famous passages" }]
+        }
+      ],
+      "dont_overclaim": "Our ~37k-style totals count word-aligned units in a bounded 1–400 CE CNTR slice vs SR GNT — not Gurry’s ~500,000 across the full Greek tradition, and not Qurʾān or LXX material.",
+      "related_links": [
+        { "href": "/compare/", "label": "Witness compare (Greek NT only)" },
+        { "href": "/methodology/#greek-units", "label": "Methods: variation units" }
+      ]
+    },
+    {
+      "id": "famous-block-omissions",
+      "slug": "famous-block-omissions",
+      "title": "Famous block omissions and additions",
+      "subtitle": "Pericope Adulterae, Mark’s ending, Comma Johanneum, and more",
+      "audience": "Debaters · NT survey students",
+      "learning_goal": "Use block-level famous passages to argue precisely about what early Greek witnesses contain or omit — without treating them as rows in the word-level variant census.",
+      "steps": [
+        {
+          "text": "Skim the ten curated famous passage cards and note which witnesses CNTR marks absent vs present.",
+          "links": [{ "href": "/famous/", "label": "Famous passages (10 entries)" }]
+        },
+        {
+          "text": "Cross-check a claim card (e.g. Pericope Adulterae in P66, P75, 01, 03) against the famous entry and the underlying witness cards.",
+          "links": [
+            { "href": "/use/#pa-absent-early", "label": "Claim: PA absent in early witnesses" },
+            { "href": "/famous/#pericope-adulterae", "label": "Famous: Pericope Adulterae" }
+          ]
+        },
+        {
+          "text": "When someone cites “thousands of variants,” redirect: block omissions are real but counted differently from spelling disagreements in Coverage.",
+          "links": [{ "href": "/coverage/", "label": "Coverage honesty section" }]
+        }
+      ],
+      "dont_overclaim": "Famous cards document status in our CNTR slice and curated scholarship links — not every manuscript ever copied, and not automatic proof about authorial originals.",
+      "related_links": [
+        { "href": "/variants/", "label": "Variant explorer" },
+        { "href": "/cite/", "label": "Cite famous-passages.json" }
+      ]
+    },
+    {
+      "id": "uthmani-rasm-not-forty-qurans",
+      "slug": "uthmani-rasm-not-forty-qurans",
+      "title": "Uthmanic regional rasm ≠ “40 different Qurans”",
+      "subtitle": "Graphic stemma vs content rewrites",
+      "audience": "Islamic studies · interfaith debate prep",
+      "learning_goal": "Explain regional rasm differences within the Uthmanic Text Type using our illustrative table — and reject both “zero variation” and “forty conflicting Qurans” slogans.",
+      "steps": [
+        {
+          "text": "Read the Uthmanic regional rasm page: ~35–40 published graphic differences among exemplar traditions, with sources — not a full mushaf census.",
+          "links": [{ "href": "/quran/uthmani/", "label": "Uthmanic regional rasm (40 examples)" }]
+        },
+        {
+          "text": "Open the claim cards on zero variation vs seventh-century stability.",
+          "links": [
+            { "href": "/use/#quran-zero-variation", "label": "Claim: no manuscript variation" },
+            { "href": "/use/#uthmanic-stable-650", "label": "Claim: UT stable from ~650 CE" }
+          ]
+        },
+        {
+          "text": "Contrast UT rasm with the Ṣanʿāʾ palimpsest lower text — one card, two layers, not a verse-alignment compare tool.",
+          "links": [{ "href": "/?corpus=quran#sanaa-dam-01-27-1", "label": "Ṣanʿāʾ palimpsest card" }]
+        },
+        {
+          "text": "Browse Hijazi catalog witnesses on the Qurʾān timeline for dated leaves and library metadata (no invented collation).",
+          "links": [{ "href": "/?corpus=quran", "label": "Qurʾān timeline" }]
+        }
+      ],
+      "dont_overclaim": "Our 40 rasm rows cite published stemmatics; they do not prove or disprove theological claims about preservation, and they are not parallel-verse alignments like Greek NT compare.",
+      "related_links": [
+        { "href": "/coverage/", "label": "Coverage: Qurʾān section" },
+        { "href": "/cite/", "label": "Cite uthmani-regional-variants.json" }
+      ]
+    },
+    {
+      "id": "dss-vs-mt",
+      "slug": "dss-vs-mt",
+      "title": "Dead Sea Scrolls Hebrew vs medieval Masoretic Text",
+      "subtitle": "Earlier diversity, later standardization",
+      "audience": "Hebrew Bible survey · LXX/MT debates",
+      "learning_goal": "Use 1QIsaᵃ and related cards to show pre-Masoretic Hebrew diversity without claiming the DSS replace BHQ or that LXX equals “the original.”",
+      "steps": [
+        {
+          "text": "Switch the timeline to Hebrew Bible & LXX (250 BCE–400 CE) and open the Great Isaiah Scroll card.",
+          "links": [{ "href": "/?corpus=hebrew-lxx#1qisaa", "label": "1QIsaᵃ on timeline" }]
+        },
+        {
+          "text": "Read the diplomatic excerpt notes on the card — compare wording to the display English (WEB), not a full apparatus.",
+          "links": [{ "href": "/coverage/", "label": "Coverage: Hebrew/LXX limits" }]
+        },
+        {
+          "text": "Add Nash Papyrus or Murabbaʿat examples for pre-Masoretic spellings vs later MT codices.",
+          "links": [
+            { "href": "/?corpus=hebrew-lxx#nash-papyrus", "label": "Nash Papyrus" },
+            { "href": "/?corpus=hebrew-lxx#mur-88", "label": "Murabbaʿat Isaiah (Mur 88)" }
+          ]
+        },
+        {
+          "text": "Keep Greek NT compare separate: LXX papyri on this site are their own cards, not CNTR verse alignment.",
+          "links": [{ "href": "/compare/", "label": "Compare (Greek NT CNTR only)" }]
+        }
+      ],
+      "dont_overclaim": "We host illustrative excerpts and images where licensed — not Leon Levy/IAA full plates, not BHQ or Göttingen apparatus dumps, and no automated DSS↔MT verse census.",
+      "related_links": [
+        { "href": "/methodology/", "label": "Methods: corpus windows" },
+        { "href": "/use/", "label": "Use: claim discipline" }
+      ]
+    },
+    {
+      "id": "nag-hammadi-vs-canon",
+      "slug": "nag-hammadi-vs-canon",
+      "title": "Nag Hammadi vs the Greek NT canon stream",
+      "subtitle": "Fourth-century Coptic codices, not lost Matthew manuscripts",
+      "audience": "Early Christianity · canon debates",
+      "learning_goal": "Describe what Nag Hammadi codices are physically and literarily — and refute equating them with the Greek NT manuscript tradition this site collates.",
+      "steps": [
+        {
+          "text": "Open the Nag Hammadi corpus on the timeline (18 tractate witnesses in our seed).",
+          "links": [{ "href": "/?corpus=nag-hammadi", "label": "Nag Hammadi timeline" }]
+        },
+        {
+          "text": "Read the Gospel of Thomas card and note Coptic Scriptorium diplomatic text — overlap with Greek sayings tradition is scholarly, not a built-in Thomas↔John compare.",
+          "links": [{ "href": "/?corpus=nag-hammadi#nhc-ii-gospel-thomas", "label": "Gospel of Thomas (NHC II)" }]
+        },
+        {
+          "text": "Pair mentally with an early Greek gospel fragment on the NT timeline (e.g. P52) — two routes, not one collation engine.",
+          "links": [
+            { "href": "/?corpus=nt#p52", "label": "P52 (John fragment)" },
+            { "href": "/compare/", "label": "Compare tool scope (NT only)" }
+          ]
+        },
+        {
+          "text": "Use the claim card before arguing “lost books of the Bible.”",
+          "links": [{ "href": "/use/#nag-hammadi-lost-nt-books", "label": "Claim: NH = lost NT books" }]
+        }
+      ],
+      "dont_overclaim": "Nag Hammadi images and excerpts illustrate non-canonical Coptic Christianity; they do not enumerate how many “versions” of Matthew existed in Greek.",
+      "related_links": [
+        { "href": "/coverage/", "label": "Coverage: Nag Hammadi counts" },
+        { "href": "/famous/", "label": "Famous passages (canonical NT blocks)" }
+      ]
+    },
+    {
+      "id": "how-to-cite",
+      "slug": "how-to-cite",
+      "title": "How to cite this site",
+      "subtitle": "Website, census downloads, and curated JSON",
+      "audience": "Students writing papers · instructors",
+      "learning_goal": "Cite Illustrative Manuscripts for what we actually publish (bounded Greek census, curated tables, catalog metadata) and point readers to CNTR/INTF for primaries.",
+      "steps": [
+        {
+          "text": "Copy Chicago/MLA/BibTeX templates for the site and open downloads.",
+          "links": [{ "href": "/cite/#how-to-cite", "label": "Cite & learn" }]
+        },
+        {
+          "text": "If you quote disagreement totals, cite variant-census.json/csv and state the 1–400 CE CNTR scope.",
+          "links": [
+            { "href": "/cite/#for-researchers", "label": "For researchers" },
+            { "href": "/coverage/", "label": "Coverage numbers" }
+          ]
+        },
+        {
+          "text": "For famous passages or Uthmani rasm, cite the dedicated JSON files with entry counts from the cite page.",
+          "links": [{ "href": "/cite/", "label": "Cite page (counts & URLs)" }]
+        },
+        {
+          "text": "Route classmates through teaching briefs instead of misquoting charts.",
+          "links": [{ "href": "/teach/", "label": "Teaching briefs index" }]
+        }
+      ],
+      "dont_overclaim": "Do not cite our Greek disagreement total as “the number of NT variants in history,” or our 40 rasm examples as a complete Qurʾān variant catalog.",
+      "related_links": [
+        { "href": "/use/", "label": "Use & claims" },
+        { "href": "/methodology/", "label": "Methods" }
+      ]
+    }
+  ]
+}

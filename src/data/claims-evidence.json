@@ -6,6 +6,7 @@
       "title": "Student",
       "description": "Learn how to read a witness card, what our numbers mean, and where block-level famous passages differ from the word census.",
       "links": [
+        { "href": "/teach/", "label": "Teaching briefs (lesson outlines)" },
         { "href": "/cite/", "label": "Cite & learn" },
         { "href": "/famous/", "label": "Famous passages" },
         { "href": "/coverage/", "label": "Coverage primer (Ehrman vs our slice)" }

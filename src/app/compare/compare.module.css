@@ -38,6 +38,92 @@
   color: var(--accent);
 }
 
+.ntOnlyBanner {
+  margin-top: 1rem;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--ink-secondary);
+  background: var(--surface-muted);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  max-width: 42rem;
+}
+
+.ntOnlyBanner a {
+  color: var(--accent);
+}
+
+.otherCorpora {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.otherCorpora h2 {
+  font-size: 1.125rem;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.otherCorporaLead {
+  font-size: 0.9375rem;
+  color: var(--ink-secondary);
+  line-height: 1.65;
+  max-width: 44rem;
+  margin-bottom: 1.25rem;
+}
+
+.corpusBlock {
+  margin-bottom: 1.25rem;
+  padding: 1rem 1.1rem;
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+}
+
+.corpusBlock h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.35rem;
+}
+
+.corpusNote {
+  font-size: 0.875rem;
+  color: var(--ink-muted);
+  margin-bottom: 0.65rem;
+  line-height: 1.55;
+}
+
+.presetList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--ink-secondary);
+  line-height: 1.6;
+}
+
+.presetList li {
+  margin-bottom: 0.65rem;
+}
+
+.presetDesc {
+  color: var(--ink-muted);
+}
+
+.presetLinks {
+  display: block;
+  margin-top: 0.25rem;
+  font-family: var(--font-ui);
+}
+
+.presetLinks a {
+  color: var(--accent);
+}
+
 .controls {
   display: flex;
   flex-wrap: wrap;

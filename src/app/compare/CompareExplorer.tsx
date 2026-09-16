@@ -15,6 +15,7 @@ import {
 } from "@/lib/witnessCompare";
 import type { CompareResult } from "@/types/compare";
 import type { SrWitnessEsnsBundle } from "@/types/srWitnessEsns";
+import { compareCorpusPresets } from "@/data/compare-corpus-presets";
 import styles from "./compare.module.css";
 
 const PAGE_SIZE = 75;
@@ -127,6 +128,11 @@ export default function CompareExplorer() {
           <strong>SR GNT</strong> as a third column. Uses committed CNTR /
           witness-text JSON only — not a full-tradition collation. See{" "}
           <Link href="/coverage/">Coverage</Link> for scope.
+        </p>
+        <p className={styles.ntOnlyBanner} role="note">
+          <strong>Greek NT (CNTR) only.</strong> Qurʾān, Hebrew/LXX, and Nag
+          Hammadi are not in this tool — use curated timeline deep-links below or{" "}
+          <Link href="/teach/">teaching briefs</Link>.
         </p>
       </header>
 
@@ -314,6 +320,37 @@ export default function CompareExplorer() {
         </>
       )}
 
+      <section className={styles.otherCorpora} aria-labelledby="other-corpus-title">
+        <h2 id="other-corpus-title">Other corpora — timeline pairs (no verse compare)</h2>
+        <p className={styles.otherCorporaLead}>
+          Where we have two cards (or layered content notes) worth reading side by
+          side, these presets jump to witness cards. We do not invent parallel
+          alignments for Qurʾān or Hebrew without data.
+        </p>
+        {compareCorpusPresets.map((block) => (
+          <div key={block.id} className={styles.corpusBlock}>
+            <h3>{block.corpus}</h3>
+            <p className={styles.corpusNote}>{block.note}</p>
+            <ul className={styles.presetList}>
+              {block.presets.map((preset) => (
+                <li key={preset.title}>
+                  <strong>{preset.title}</strong>
+                  <span className={styles.presetDesc}> — {preset.description}</span>
+                  <span className={styles.presetLinks}>
+                    {preset.links.map((link, idx) => (
+                      <span key={link.href}>
+                        {idx > 0 && " · "}
+                        <Link href={link.href}>{link.label}</Link>
+                      </span>
+                    ))}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </section>
+
       <aside className={styles.disclaimer}>
         <h2>Limits</h2>
         <p>
@@ -323,6 +360,8 @@ export default function CompareExplorer() {
         </p>
         <p>
           <Link href="/variants/">Variant explorer</Link>
+          {" · "}
+          <Link href="/teach/">Teaching briefs</Link>
           {" · "}
           <Link href="/coverage/">Coverage &amp; downloads</Link>
         </p>
