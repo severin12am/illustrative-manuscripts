@@ -99,6 +99,54 @@ function claimEntries() {
   }));
 }
 
+function variantBookEntries() {
+  const index = readJson("src/data/variant-index.json");
+  const books = index.books ?? index.by_book?.map((b) => b.book) ?? [];
+  return books.map((book) => ({
+    kind: "variant",
+    id: `book-${book.replace(/\s+/g, "-").toLowerCase()}`,
+    label: book,
+    subtitle: "Variant census — filter by book",
+    href: `/variants/?book=${encodeURIComponent(book)}`,
+    haystack: hay(book, "variants variant census greek nt word-level"),
+  }));
+}
+
+/** Deep links from famous-passage variants_link — not full census rows. */
+function variantFamousDeepLinks() {
+  const { entries } = readJson("src/data/famous-passages.json");
+  const seen = new Set();
+  const out = [];
+  for (const e of entries) {
+    const link = e.variants_link;
+    if (!link?.book) continue;
+    const params = new URLSearchParams();
+    params.set("book", link.book);
+    if (link.q) params.set("q", link.q);
+    if (link.kind) params.set("kind", link.kind);
+    const key = params.toString();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    const label = link.q ? `${link.book} ${link.q}` : link.book;
+    out.push({
+      kind: "variant",
+      id: `near-${e.slug}`,
+      label,
+      subtitle: `Near ${e.title}`,
+      href: `/variants/?${key}`,
+      haystack: hay(
+        link.book,
+        link.q,
+        e.title,
+        e.passage_ref,
+        e.slug,
+        "variants"
+      ),
+    });
+  }
+  return out;
+}
+
 function uthmaniEntries() {
   const { variants } = readJson("src/data/uthmani-regional-variants.json");
   return variants.map((v) => ({
@@ -124,6 +172,8 @@ const items = [
   ...seedWitnesses("scripts/nag-hammadi-seed.json", "nag-hammadi", (m) => m.id),
   ...seedWitnesses("scripts/hebrew-lxx-seed.json", "hebrew-lxx", (m) => m.catalog_id || m.id),
   ...famousEntries(),
+  ...variantBookEntries(),
+  ...variantFamousDeepLinks(),
   ...claimEntries(),
   ...uthmaniEntries(),
 ];
@@ -134,6 +184,7 @@ const out = {
   counts: {
     witness: items.filter((i) => i.kind === "witness").length,
     famous: items.filter((i) => i.kind === "famous").length,
+    variant: items.filter((i) => i.kind === "variant").length,
     claim: items.filter((i) => i.kind === "claim").length,
     uthmani: items.filter((i) => i.kind === "uthmani").length,
     total: items.length,
@@ -146,5 +197,6 @@ writeFileSync(dest, JSON.stringify(out));
 console.log(
   `Wrote public/search-index.json (${out.counts.total} items: ` +
     `${out.counts.witness} witnesses, ${out.counts.famous} famous, ` +
-    `${out.counts.claim} claims, ${out.counts.uthmani} uthmani)`
+    `${out.counts.variant} variants, ${out.counts.claim} claims, ` +
+    `${out.counts.uthmani} uthmani)`
 );
