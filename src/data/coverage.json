@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T13:34:50.869Z",
+  "generated_at": "2026-09-16T09:09:29.686Z",
   "sources": {
     "witness_texts": "src/data/witness-texts.json",
     "cntr_overflow": "public/cntr-texts/*.json",
@@ -1850,6 +1850,23 @@
     "leaf_image_fraction": 0.667,
     "corpus_note": "Hand-curated DSS + LXX papyri/uncials overlapping the Hebrew/LXX timeline. Diplomatic excerpts + WEB English on cards — not BHQ or Göttingen apparatus dumps.",
     "student_note": "Medieval Masoretic Text (MT) codices are centuries later than Qumran Hebrew; Dead Sea Scrolls show earlier Hebrew diversity. The Septuagint (LXX) is a separate early Greek translation stream — compare both to the site's Greek NT slice (1–400 CE), not as a single 'original Bible' line."
+  },
+  "curated_layers": {
+    "famous_passages": {
+      "count": 10,
+      "source": "src/data/famous-passages.json",
+      "note": "Block-level Greek NT teaching cards — not in the word-level variant census."
+    },
+    "uthmani_regional_rasm": {
+      "count": 40,
+      "source": "src/data/uthmani-regional-variants.json",
+      "note": "Illustrative Uthmanic regional rasm reports (Cook / Sidky stemma framing) — not a full mushaf census."
+    },
+    "teach_briefs": {
+      "count": 6,
+      "source": "src/data/teach-briefs.json",
+      "note": "Hand-curated classroom / debate outlines at /teach/."
+    }
   },
   "primer_example": {
     "witness": "P129",

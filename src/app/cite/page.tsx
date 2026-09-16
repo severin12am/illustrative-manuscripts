@@ -44,9 +44,9 @@ export default function CitePage() {
         <p className={styles.lead}>
           Plain-language help for using this site in papers, classrooms, and
           curious browsing — how to cite our work, what the counts mean, and
-          where to go next for full scholarly tools. For claim discipline and
-          audience routes, see{" "}
-          <Link href="/use/">Use this site</Link>.
+          where to go next for full scholarly tools. For lesson outlines, see{" "}
+          <Link href="/teach/">Teaching briefs</Link>. For claim discipline and
+          audience routes, see <Link href="/use/">Use this site</Link>.
         </p>
       </header>
 
@@ -612,6 +612,8 @@ export default function CitePage() {
       </section>
 
       <footer className={styles.footer}>
+        <Link href="/teach/">Teaching briefs →</Link>
+        {" · "}
         <Link href="/use/">Use this site →</Link>
         {" · "}
         <Link href="/quran/uthmani/">Uthmanic regional rasm →</Link>

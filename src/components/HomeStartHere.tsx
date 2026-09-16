@@ -11,6 +11,8 @@ export default function HomeStartHere() {
         <Link href="/methodology/">Methods</Link>
         <span className={styles.sep} aria-hidden="true">·</span>
         <Link href="/coverage/">Coverage</Link>
+        <span className={styles.sep} aria-hidden="true">·</span>
+        <Link href="/teach/">Teach</Link>
       </p>
     </aside>
   );

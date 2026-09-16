@@ -78,6 +78,11 @@ export interface CoverageData {
     corpus_note: string;
     student_note: string;
   };
+  curated_layers?: {
+    famous_passages: { count: number; source: string; note: string };
+    uthmani_regional_rasm: { count: number; source: string; note: string };
+    teach_briefs: { count: number; source: string; note: string };
+  };
   primer_example: {
     witness: string;
     reference: string;

@@ -368,6 +368,28 @@ function main() {
   ];
   const hebrew_lxx = computeHebrewLxxCoverage(hebrewLxxWitnesses, hlWindow);
 
+  const famousPassages = loadJson(join(ROOT, "src/data/famous-passages.json"));
+  const uthmaniRegional = loadJson(
+    join(ROOT, "src/data/uthmani-regional-variants.json")
+  );
+  const curated_layers = {
+    famous_passages: {
+      count: famousPassages.entries?.length ?? 0,
+      source: "src/data/famous-passages.json",
+      note: "Block-level Greek NT teaching cards — not in the word-level variant census.",
+    },
+    uthmani_regional_rasm: {
+      count: uthmaniRegional.variants?.length ?? 0,
+      source: "src/data/uthmani-regional-variants.json",
+      note: "Illustrative Uthmanic regional rasm reports (Cook / Sidky stemma framing) — not a full mushaf census.",
+    },
+    teach_briefs: {
+      count: loadJson(join(ROOT, "src/data/teach-briefs.json")).briefs?.length ?? 0,
+      source: "src/data/teach-briefs.json",
+      note: "Hand-curated classroom / debate outlines at /teach/.",
+    },
+  };
+
   const out = {
     generated_at: new Date().toISOString(),
     sources: {
@@ -381,6 +403,7 @@ function main() {
     quran,
     nag_hammadi: nagHammadi,
     hebrew_lxx,
+    curated_layers,
     primer_example: findPrimerExample(witnessTexts),
     home_stats: {
       greek_nt_witnesses: nt.witness_count,
