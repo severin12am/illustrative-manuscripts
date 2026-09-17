@@ -167,6 +167,17 @@ export default function MethodologyPage() {
             </dd>
           </div>
           <div className={styles.defItem}>
+            <dt>Shared orthographic idiosyncrasies (hand-curated)</dt>
+            <dd>
+              Matrix transcribed from van Putten (BSOAS 2019) Table 2 in{" "}
+              <code>scripts/quran-shared-orthography-nimat.json</code> —{" "}
+              {23} niʿmat verse rows × published manuscript sigla. Teaching
+              reproduction only; we have <strong>not</strong> re-collated every
+              leaf ourselves. Distinct from regional rasm (layer 2). See{" "}
+              <Link href="/quran/archetype/">shared orthography</Link>.
+            </dd>
+          </div>
+          <div className={styles.defItem}>
             <dt>Intentional-response tags (provisional)</dt>
             <dd>
               Optional LLM/heuristic labels on a bounded Greek NT sample. Treat
@@ -245,7 +256,10 @@ export default function MethodologyPage() {
           </li>
           <li>
             <code>npm run uthmani-regional</code> — validate + copy Uthmanic
-            rasm table to <code>src/data/</code>.
+            regional rasm seed.
+            <br />
+            <code>npm run quran-archetype</code> — validate + copy niʿmat shared-
+            orthography matrix to <code>src/data/</code>.
           </li>
           <li>
             <code>npm run quran</code> / <code>npm run hebrew-lxx</code> /{" "}

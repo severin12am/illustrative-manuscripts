@@ -22,6 +22,7 @@
         { "href": "/?corpus=hebrew-lxx", "label": "Hebrew Bible & LXX corpus" },
         { "href": "/cite/#for-researchers", "label": "For researchers (schema & BibTeX)" },
         { "href": "/quran/uthmani/", "label": "Uthmanic regional rasm" },
+        { "href": "/quran/archetype/", "label": "Shared orthography (written archetype)" },
         {
           "href": "https://github.com/severin12am/illustrative-manuscripts",
           "label": "GitHub (data & code)",
@@ -38,6 +39,7 @@
         { "href": "/famous/", "label": "Famous passages" },
         { "href": "/variants/", "label": "Variant explorer" },
         { "href": "/quran/uthmani/", "label": "Uthmanic rasm" },
+        { "href": "/quran/archetype/", "label": "Shared orthography matrix" },
         { "href": "/?corpus=hebrew-lxx", "label": "Hebrew / LXX timeline" },
         { "href": "/coverage/", "label": "Coverage & scope limits" }
       ]
@@ -133,6 +135,7 @@
       "why": "The Uthmanic Text Type is highly uniform, but published stemmatics (Cook; Sidky; van Putten) report on the order of ~35–40 regional rasm differences among the four ʿUthmānic exemplar traditions — not wholesale content rewrites, but not zero graphic variation. Early palimpsests such as Ṣanʿāʾ 1 preserve a lower text that is not UT.",
       "links": [
         { "href": "/quran/uthmani/", "label": "Uthmanic regional rasm" },
+        { "href": "/quran/archetype/", "label": "Shared orthography (niʿmat matrix)" },
         { "href": "/?q=Sanaa", "label": "Ṣanʿāʾ palimpsest card" }
       ],
       "scholarship": [
@@ -147,7 +150,43 @@
       "claim": "From about 650 CE the Uthmanic text type is already stable.",
       "verdict": "supported",
       "why": "Sidky and van Putten’s archetype framing treats UT as stable from the seventh century onward for the rasm tradition they model — while allowing later scribal noise and regional graphic differences, not a claim of byte-identical copies everywhere.",
-      "links": [{ "href": "/quran/uthmani/", "label": "Uthmanic regional rasm (stemma & examples)" }]
+      "links": [
+        { "href": "/quran/uthmani/", "label": "Uthmanic regional rasm (stemma & examples)" },
+        { "href": "/quran/archetype/", "label": "Shared orthography matrix" }
+      ]
+    },
+    {
+      "id": "quran-nimat-random-spelling",
+      "claim": "Early Qurʾān manuscripts show random independent spelling at each niʿmat allāh verse.",
+      "verdict": "unsupported",
+      "why": "Van Putten (BSOAS 2019) collated fourteen early witnesses plus the Cairo reference for niʿmat allāh / rabbi-ka: at nearly every attested verse they share the same ta vs ta marbūṭa choice as the 1924 rasm — including grammatically quirky pairings — with only isolated disagreements (e.g. Q 16:114, Q 37:57). That pattern fits a shared written archetype copied from exemplars, not independent invention at each verse.",
+      "links": [
+        { "href": "/quran/archetype/", "label": "niʿmat matrix (Table 2 reproduction)" },
+        { "href": "/use/#quran-shared-idiosyncrasies-archetype", "label": "Opposite claim card" }
+      ],
+      "scholarship": [
+        {
+          "label": "van Putten 2019 — The Grace of God (open access)",
+          "url": "https://doi.org/10.1017/S0041977X19000338"
+        }
+      ]
+    },
+    {
+      "id": "quran-shared-idiosyncrasies-archetype",
+      "claim": "Shared idiosyncratic spellings in early Uthmanic manuscripts support a written Uthmanic archetype.",
+      "verdict": "supported",
+      "why": "Within scope of published collation work (van Putten 2019; stemma framing in Cook and Sidky): when many early UT manuscripts agree on the same non-standard rasm at the same ayah — the niʿmat case is the site’s illustrative proof — the straightforward scholarly explanation is descent from a single written archetype and copying from written exemplars. That is early standardization of a text type, not a claim about zero variation (see regional rasm) or about proving ʿUthmān’s personal authorship.",
+      "links": [
+        { "href": "/quran/archetype/", "label": "Shared orthography page" },
+        { "href": "/quran/uthmani/", "label": "Regional rasm (layer 2 — where exemplars differ)" },
+        { "href": "/?corpus=quran&q=sanaa", "label": "Ṣanʿāʾ (non-UT lower text)" }
+      ],
+      "scholarship": [
+        {
+          "label": "van Putten 2019 — BSOAS",
+          "url": "https://doi.org/10.1017/S0041977X19000338"
+        }
+      ]
     },
     {
       "id": "proves-theological-corruption",

@@ -308,7 +308,10 @@ export default function HomeTimeline() {
               unless their published range overlaps this window.{" "}
               <Link href="/quran/uthmani/">Uthmanic regional rasm</Link> explains
               the ~35–40 orthographic differences between Syria, Medina, Basra, and
-              Kufa (Cook / Sidky) — not a full manuscript collation on every card.
+              Kufa (Cook / Sidky).{" "}
+              <Link href="/quran/archetype/">Shared orthography</Link> holds the
+              niʿmat matrix (van Putten 2019) — not a full manuscript collation on
+              every card.
             </p>
           )}
           {isNagHammadi && (

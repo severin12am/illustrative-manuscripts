@@ -166,6 +166,37 @@ function uthmaniEntries() {
   }));
 }
 
+function quranArchetypeEntries() {
+  const data = readJson("src/data/quran-shared-orthography.json");
+  const page = {
+    kind: "quran_archetype",
+    id: "quran-archetype-page",
+    label: "Shared orthography & written archetype",
+    subtitle: "niʿmat allāh matrix (van Putten 2019)",
+    href: "/quran/archetype/",
+    haystack: hay(
+      "niʿmat",
+      "ni'mat",
+      "archetype",
+      "orthography",
+      "grace of god",
+      "van putten",
+      "uthmanic",
+      "written exemplar",
+      "table 2"
+    ),
+  };
+  const rows = (data.rows ?? []).map((r) => ({
+    kind: "quran_archetype",
+    id: r.id,
+    label: r.ref,
+    subtitle: "niʿmat spelling row",
+    href: `/quran/archetype/#${r.id}`,
+    haystack: hay(r.ref, r.id, "niʿmat", "archetype", "orthography", `${r.surah}:${r.ayah}`),
+  }));
+  return [page, ...rows];
+}
+
 const items = [
   ...ntWitnesses(),
   ...seedWitnesses("scripts/quran-seed.json", "quran", (m) => m.id),
@@ -176,6 +207,7 @@ const items = [
   ...variantFamousDeepLinks(),
   ...claimEntries(),
   ...uthmaniEntries(),
+  ...quranArchetypeEntries(),
 ];
 
 const out = {
@@ -187,6 +219,7 @@ const out = {
     variant: items.filter((i) => i.kind === "variant").length,
     claim: items.filter((i) => i.kind === "claim").length,
     uthmani: items.filter((i) => i.kind === "uthmani").length,
+    quran_archetype: items.filter((i) => i.kind === "quran_archetype").length,
     total: items.length,
   },
   items,
@@ -198,5 +231,5 @@ console.log(
   `Wrote public/search-index.json (${out.counts.total} items: ` +
     `${out.counts.witness} witnesses, ${out.counts.famous} famous, ` +
     `${out.counts.variant} variants, ${out.counts.claim} claims, ` +
-    `${out.counts.uthmani} uthmani)`
+    `${out.counts.uthmani} uthmani, ${out.counts.quran_archetype} quran archetype)`
 );

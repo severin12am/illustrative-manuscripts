@@ -81,6 +81,7 @@ export interface CoverageData {
   curated_layers?: {
     famous_passages: { count: number; source: string; note: string };
     uthmani_regional_rasm: { count: number; source: string; note: string };
+    quran_shared_orthography?: { count: number; source: string; note: string };
     teach_briefs: { count: number; source: string; note: string };
   };
   primer_example: {

@@ -1,0 +1,248 @@
+.main {
+  min-height: 100vh;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3.5rem;
+}
+
+.hero {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-muted);
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: clamp(1.875rem, 4vw, 2.5rem);
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.lead {
+  color: var(--ink-secondary);
+  line-height: 1.75;
+  font-size: 1rem;
+  max-width: 46rem;
+}
+
+.lead a {
+  color: var(--accent);
+}
+
+.layerList {
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+  color: var(--ink-secondary);
+  line-height: 1.75;
+  max-width: 46rem;
+}
+
+.layerList li {
+  margin-bottom: 0.35rem;
+}
+
+.callout {
+  background: var(--paper-warm);
+  border-left: 2px solid var(--accent);
+  padding: 1rem 1.25rem;
+  margin-bottom: 2rem;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--ink-secondary);
+}
+
+.callout a {
+  color: var(--accent);
+}
+
+.calloutWarn {
+  background: #f5f0e8;
+  border-left-color: #8a7344;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  color: var(--ink);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.sectionIntro {
+  color: var(--ink-secondary);
+  line-height: 1.75;
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+  max-width: 46rem;
+}
+
+.scholarshipList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.scholarshipList li + li {
+  margin-top: 0.5rem;
+}
+
+.scholarshipList a {
+  color: var(--accent);
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: var(--ink-secondary);
+}
+
+.legendGlyph {
+  font-size: 1.25rem;
+  font-family: var(--font-arabic, inherit);
+  margin-right: 0.35rem;
+}
+
+.matrixWrap {
+  overflow-x: auto;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+}
+
+.matrix {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8125rem;
+}
+
+.matrix th,
+.matrix td {
+  border: 1px solid var(--border-light);
+  padding: 0.4rem 0.35rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.matrix thead th {
+  background: var(--paper-warm);
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.75rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.refCol {
+  text-align: left;
+  white-space: nowrap;
+  font-weight: 500;
+  position: sticky;
+  left: 0;
+  background: #fff;
+  z-index: 2;
+}
+
+.matrix thead .refCol {
+  background: var(--paper-warm);
+  z-index: 3;
+}
+
+.sigLink {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sigLink:hover {
+  text-decoration: underline;
+}
+
+.sigMuted {
+  color: var(--ink-muted);
+}
+
+.spellCell {
+  font-size: 1.125rem;
+  line-height: 1;
+}
+
+.spellMarbuta {
+  background: #eef4ef;
+}
+
+.spellTa {
+  background: #f5f8fa;
+}
+
+.spellDisagree {
+  outline: 2px solid #8a7344;
+  outline-offset: -2px;
+  background: #f5f0e8;
+}
+
+.rowLocus {
+  background: #faf6f0;
+}
+
+.rowLocus .refCol {
+  background: #faf6f0;
+}
+
+.emptyCell {
+  color: var(--ink-muted);
+}
+
+.mssKey {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.65;
+}
+
+.mssKey li + li {
+  margin-top: 0.75rem;
+}
+
+.mssKey code {
+  font-weight: 600;
+}
+
+.metaNote {
+  font-size: 0.875rem;
+  color: var(--ink-muted);
+  line-height: 1.65;
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--paper-warm);
+  border-radius: 4px;
+}
+
+.footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-light);
+  font-family: var(--font-ui);
+  font-size: 0.9375rem;
+  color: var(--ink-muted);
+}
+
+.footer a {
+  color: var(--accent);
+}

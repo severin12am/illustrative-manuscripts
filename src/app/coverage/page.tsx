@@ -91,6 +91,16 @@ export default function CoveragePage() {
                 <Link href="/quran/uthmani/">Uthmanic regional rasm</Link>
               </span>
             </div>
+            {curated_layers.quran_shared_orthography ? (
+              <div className={styles.statCard}>
+                <span className={styles.statValue}>
+                  {curated_layers.quran_shared_orthography.count}
+                </span>
+                <span className={styles.statLabel}>
+                  <Link href="/quran/archetype/">Shared orthography matrix</Link>
+                </span>
+              </div>
+            ) : null}
             <div className={styles.statCard}>
               <span className={styles.statValue}>
                 {curated_layers.teach_briefs.count}
@@ -108,6 +118,11 @@ export default function CoveragePage() {
           </div>
           <p className={styles.note}>{curated_layers.famous_passages.note}</p>
           <p className={styles.note}>{curated_layers.uthmani_regional_rasm.note}</p>
+          {curated_layers.quran_shared_orthography ? (
+            <p className={styles.note}>
+              {curated_layers.quran_shared_orthography.note}
+            </p>
+          ) : null}
         </section>
       )}
 
@@ -421,8 +436,10 @@ export default function CoveragePage() {
         <p className={styles.note}>
           For evidence-backed regional <em>rasm</em> within the Uthmanic Text Type
           (~35–40 reports in Cook / Sidky), see{" "}
-          <Link href="/quran/uthmani/">Uthmanic regional rasm</Link> — distinct from
-          our per-card excerpt display and from the Ṣanʿāʾ lower-text companion
+          <Link href="/quran/uthmani/">Uthmanic regional rasm</Link>. For shared
+          spellings across witnesses (written-archetype case study), see{" "}
+          <Link href="/quran/archetype/">shared orthography</Link> — both distinct
+          from our per-card excerpt display and from the Ṣanʿāʾ lower-text companion
           codex.
         </p>
       </section>
@@ -498,6 +515,8 @@ export default function CoveragePage() {
         <Link href="/methodology/">Methods →</Link>
         {" · "}
         <Link href="/quran/uthmani/">Uthmanic regional rasm →</Link>
+        {" · "}
+        <Link href="/quran/archetype/">Shared orthography →</Link>
         {" · "}
         <Link href="/famous/">Famous passages →</Link>
         {" · "}

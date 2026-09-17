@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T09:09:29.686Z",
+  "generated_at": "2026-09-17T13:26:52.641Z",
   "sources": {
     "witness_texts": "src/data/witness-texts.json",
     "cntr_overflow": "public/cntr-texts/*.json",
@@ -1862,8 +1862,13 @@
       "source": "src/data/uthmani-regional-variants.json",
       "note": "Illustrative Uthmanic regional rasm reports (Cook / Sidky stemma framing) — not a full mushaf census."
     },
+    "quran_shared_orthography": {
+      "count": 23,
+      "source": "src/data/quran-shared-orthography.json",
+      "note": "niʿmat allāh ta vs ta marbūṭa matrix (van Putten 2019 Table 2) — shared idiosyncrasy layer, not regional splits."
+    },
     "teach_briefs": {
-      "count": 6,
+      "count": 7,
       "source": "src/data/teach-briefs.json",
       "note": "Hand-curated classroom / debate outlines at /teach/."
     }

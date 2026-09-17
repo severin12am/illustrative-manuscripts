@@ -16,6 +16,7 @@ const PUBLIC = join(ROOT, "public");
 const PAIRS = [
   ["src/data/famous-passages.json", "famous-passages.json"],
   ["src/data/uthmani-regional-variants.json", "uthmani-regional-variants.json"],
+  ["src/data/quran-shared-orthography.json", "quran-shared-orthography.json"],
 ];
 
 for (const [srcRel, destName] of PAIRS) {
@@ -28,6 +29,9 @@ for (const [srcRel, destName] of PAIRS) {
   copyFileSync(src, dest);
   const parsed = JSON.parse(readFileSync(src, "utf8"));
   const count =
-    parsed.entries?.length ?? parsed.variants?.length ?? "?";
+    parsed.entries?.length ??
+    parsed.variants?.length ??
+    parsed.rows?.length ??
+    "?";
   console.log(`Wrote public/${destName} (${count} top-level records)`);
 }

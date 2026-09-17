@@ -372,6 +372,9 @@ function main() {
   const uthmaniRegional = loadJson(
     join(ROOT, "src/data/uthmani-regional-variants.json")
   );
+  const sharedOrthography = loadJson(
+    join(ROOT, "src/data/quran-shared-orthography.json")
+  );
   const curated_layers = {
     famous_passages: {
       count: famousPassages.entries?.length ?? 0,
@@ -382,6 +385,11 @@ function main() {
       count: uthmaniRegional.variants?.length ?? 0,
       source: "src/data/uthmani-regional-variants.json",
       note: "Illustrative Uthmanic regional rasm reports (Cook / Sidky stemma framing) — not a full mushaf census.",
+    },
+    quran_shared_orthography: {
+      count: sharedOrthography.rows?.length ?? 0,
+      source: "src/data/quran-shared-orthography.json",
+      note: "niʿmat allāh ta vs ta marbūṭa matrix (van Putten 2019 Table 2) — shared idiosyncrasy layer, not regional splits.",
     },
     teach_briefs: {
       count: loadJson(join(ROOT, "src/data/teach-briefs.json")).briefs?.length ?? 0,

@@ -3,7 +3,8 @@ export type GlobalSearchKind =
   | "famous"
   | "variant"
   | "claim"
-  | "uthmani";
+  | "uthmani"
+  | "quran_archetype";
 
 export interface GlobalSearchItem {
   kind: GlobalSearchKind;
@@ -27,6 +28,7 @@ export const GLOBAL_SEARCH_GROUP_LABEL: Record<GlobalSearchKind, string> = {
   variant: "Variants",
   claim: "Use / claims",
   uthmani: "Uthmanic rasm",
+  quran_archetype: "Qurʾān archetype matrix",
 };
 
 export const GLOBAL_SEARCH_GROUP_ORDER: GlobalSearchKind[] = [
@@ -35,4 +37,5 @@ export const GLOBAL_SEARCH_GROUP_ORDER: GlobalSearchKind[] = [
   "variant",
   "claim",
   "uthmani",
+  "quran_archetype",
 ];
