@@ -37,7 +37,7 @@ function isExternal(href: string) {
 
 export default function UsePage() {
   return (
-    <main className={styles.main}>
+    <main className={styles.main} data-handout="true">
       <header className={styles.hero}>
         <p className={styles.eyebrow}>Claims &amp; evidence</p>
         <h1 className={styles.title}>Use this site</h1>

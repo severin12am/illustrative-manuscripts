@@ -1,0 +1,42 @@
+/**
+ * Classroom handouts: /teach/*, /famous/, /use/
+ * Hide chrome; keep article content readable on paper theme.
+ */
+@media print {
+  @page {
+    margin: 1.2cm;
+  }
+
+  body {
+    background: #fff !important;
+    color: var(--ink);
+    font-size: 11pt;
+  }
+
+  #site-nav-header {
+    display: none !important;
+  }
+
+  input[type="search"],
+  button[type="submit"] {
+    display: none !important;
+  }
+
+  [aria-label="Start here"],
+  [aria-label="Dataset summary"] {
+    display: none !important;
+  }
+
+  [data-handout="true"] {
+    padding-top: 0 !important;
+    max-width: 100% !important;
+  }
+
+  [data-handout="true"] .printHint {
+    display: none !important;
+  }
+
+  a[href]::after {
+    content: none !important;
+  }
+}

@@ -119,6 +119,23 @@
   max-width: 44rem;
 }
 
+.layerList {
+  margin: 0.5rem 0 1rem;
+  padding-left: 1.25rem;
+  color: var(--ink-secondary);
+  line-height: 1.75;
+  font-size: 0.9375rem;
+  max-width: 44rem;
+}
+
+.layerList li {
+  margin-bottom: 0.65rem;
+}
+
+.layerList a {
+  color: var(--accent);
+}
+
 .footer {
   margin-top: 2.5rem;
   padding-top: 1.5rem;

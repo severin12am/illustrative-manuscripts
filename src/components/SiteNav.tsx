@@ -20,7 +20,7 @@ export default function SiteNav() {
   const pathname = usePathname() ?? "/";
 
   return (
-    <header className={styles.header}>
+    <header id="site-nav-header" className={styles.header}>
       <nav className={styles.nav} aria-label="Site">
         <div className={styles.inner}>
           <Link href="/" className={styles.brand}>

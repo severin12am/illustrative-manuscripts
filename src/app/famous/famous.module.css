@@ -297,3 +297,18 @@
     display: none;
   }
 }
+
+@media print {
+  .main {
+    padding: 0.75rem 0 !important;
+  }
+
+  .entry,
+  .callout {
+    break-inside: avoid;
+  }
+
+  .shareHint {
+    display: none;
+  }
+}

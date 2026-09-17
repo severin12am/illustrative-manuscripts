@@ -8,6 +8,7 @@ import {
 } from "next/font/google";
 import SiteNav from "@/components/SiteNav";
 import "./globals.css";
+import "./print.css";
 
 const display = Cormorant_Garamond({
   subsets: ["latin"],
