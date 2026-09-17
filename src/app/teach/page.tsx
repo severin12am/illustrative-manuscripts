@@ -11,11 +11,16 @@ export const metadata: Metadata = {
 
 export default function TeachIndexPage() {
   return (
-    <main className={styles.main}>
+    <main className={styles.main} data-handout="true">
       <header className={styles.hero}>
         <p className={styles.eyebrow}>Classroom &amp; debate prep</p>
         <h1 className={styles.title}>Teaching briefs</h1>
         <p className={styles.lead}>{teachBriefs.intro}</p>
+        <p className={styles.printHint}>
+          Tip: use your browser&apos;s <strong>Print</strong> (Ctrl+P / ⌘P) on an
+          open brief or this index for a classroom handout — navigation is hidden
+          in print view.
+        </p>
       </header>
 
       <div className={styles.briefGrid}>

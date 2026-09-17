@@ -17,6 +17,7 @@ import {
   INTENTIONAL_LABEL_DISPLAY,
   INTENTIONAL_LABEL_ORDER,
 } from "@/lib/intentionalTags";
+import GreekNtEvidenceMap from "@/components/GreekNtEvidenceMap";
 import styles from "./coverage.module.css";
 
 export const metadata: Metadata = {
@@ -248,6 +249,7 @@ export default function CoveragePage() {
 
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Greek New Testament ({TIMELINE_START}–{TIMELINE_END} CE)</h2>
+        <GreekNtEvidenceMap variant="section" />
         <p className={styles.sliceSummary}>
           <strong>{greek_nt.witness_count}</strong> witnesses ·{" "}
           <strong>{disagreementTotal.toLocaleString()}</strong> variation units vs

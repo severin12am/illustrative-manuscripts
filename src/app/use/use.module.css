@@ -219,3 +219,19 @@
 .footer a {
   color: var(--accent);
 }
+
+@media print {
+  .main {
+    padding: 0.75rem 0 !important;
+  }
+
+  .claimCard,
+  .pathwayCard {
+    break-inside: avoid;
+    box-shadow: none;
+  }
+
+  .shareHint {
+    display: none;
+  }
+}

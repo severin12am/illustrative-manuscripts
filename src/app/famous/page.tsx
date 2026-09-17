@@ -56,7 +56,7 @@ function compareHref(link: { a: string; b: string; book: string }) {
 
 export default function FamousPassagesPage() {
   return (
-    <main className={styles.main}>
+    <main className={styles.main} data-handout="true">
       <header className={styles.hero}>
         <p className={styles.eyebrow}>Block-level textual issues</p>
         <h1 className={styles.title}>Famous passages</h1>

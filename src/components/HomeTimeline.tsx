@@ -150,7 +150,7 @@ export default function HomeTimeline() {
   return (
     <main className={styles.main}>
       <StatsStrip />
-      <HomeStartHere />
+      <HomeStartHere showGreekNtMap={isNt} />
       <HomePrimerBanner />
       <header className={styles.hero}>
         <div className={styles.heroInner}>

@@ -227,6 +227,51 @@ export default function MethodologyPage() {
         </dl>
       </section>
 
+      <section className={styles.section} id="greek-evidence-layers">
+        <h2 className={styles.sectionTitle}>
+          Greek NT evidence layers (site map)
+        </h2>
+        <p className={styles.sectionIntro}>
+          Greek material is organized in four discoverable layers — analogous to
+          how Qurʾān routes catalog cards, regional rasm, and shared orthography
+          separately. Use the{" "}
+          <Link href="/coverage/">Coverage</Link> evidence map cards or the compact
+          map under <strong>Start here</strong> on the NT timeline home.
+        </p>
+        <ol className={styles.layerList}>
+          <li>
+            <strong>Timeline witnesses ({TIMELINE_START}–{TIMELINE_END} CE)</strong>{" "}
+            — INTF-aligned catalog cards on{" "}
+            <Link href="/">/</Link> with diplomatic CNTR excerpts and images when
+            licensed.
+          </li>
+          <li>
+            <strong>Word-level variant census</strong> — extant-letter disagreements
+            vs SR GNT in <code>public/variant-census.json</code>, browsable at{" "}
+            <Link href="/variants/">/variants/</Link> and{" "}
+            <Link href="/compare/">/compare/</Link> (mechanical classifier; not NA28
+            apparatus).
+          </li>
+          <li>
+            <strong>Famous block passages</strong> — hand-curated block-level cards
+            at <Link href="/famous/">/famous/</Link> (Pericope Adulterae, endings,
+            Comma Johanneum, etc.) — intentionally <em>not</em> merged into the word
+            census rows.
+          </li>
+          <li>
+            <strong>Use / claims</strong> — audience pathways and verdict cards at{" "}
+            <Link href="/use/">/use/</Link> describing what our bounded slice
+            supports.
+          </li>
+        </ol>
+        <p className={styles.sectionIntro}>
+          Optional <strong>intentional-response tags</strong> on a bounded Greek NT
+          sample are <strong>provisional</strong> model/heuristic labels — not ECM,
+          NA28, or IGNTP judgments. Do not cite tag counts as settled scholarship
+          (see <Link href="/coverage/">Coverage</Link> experimental section).
+        </p>
+      </section>
+
       <section className={styles.section} id="layers">
         <h2 className={styles.sectionTitle}>Curated vs computed layers</h2>
         <dl className={styles.defList}>

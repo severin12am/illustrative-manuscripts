@@ -38,7 +38,7 @@ export default async function TeachBriefPage({ params }: PageProps) {
   if (!brief) notFound();
 
   return (
-    <main className={styles.main}>
+    <main className={styles.main} data-handout="true">
       <header className={styles.hero}>
         <p className={styles.eyebrow}>{brief.audience}</p>
         <h1 className={styles.title}>{brief.title}</h1>
