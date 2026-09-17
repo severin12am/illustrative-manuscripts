@@ -177,13 +177,18 @@ function quranArchetypeEntries() {
     haystack: hay(
       "niʿmat",
       "ni'mat",
+      "nimat",
       "archetype",
       "orthography",
+      "shared orthography",
       "grace of god",
       "van putten",
       "uthmanic",
       "written exemplar",
-      "table 2"
+      "written archetype",
+      "table 2",
+      "quran evidence map",
+      "three layers"
     ),
   };
   const rows = (data.rows ?? []).map((r) => ({

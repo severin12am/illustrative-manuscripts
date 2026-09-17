@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import QuranEvidenceMap from "@/components/QuranEvidenceMap";
+import { quranSharedOrthography } from "@/data/quran-shared-orthography";
 import { TIMELINE_START, TIMELINE_END } from "@/data/witnesses";
 import styles from "./methodology.module.css";
+
+const NIMAT_ROW_COUNT = quranSharedOrthography.rows.length;
 
 const GITHUB =
   "https://github.com/severin12am/illustrative-manuscripts";
@@ -74,6 +78,51 @@ export default function MethodologyPage() {
               Codex-level witnesses positioned by <strong>paleography</strong>{" "}
               (~300–400 CE overlap) from the Claremont NHA catalog seed — catalog
               cards, not a Coptic variant census.
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <section className={styles.section} id="quran-evidence-layers">
+        <h2 className={styles.sectionTitle}>
+          Qurʾān: three evidence layers (UT teaching stack)
+        </h2>
+        <p className={styles.sectionIntro}>
+          Unlike Greek NT on this site, Qurʾān material has no mechanical word census
+          yet. We instead stack three <strong>published, citable</strong> layers — from
+          catalog cards to stemmatic splits to shared written quirks. None of layers
+          2–3 re-collates every leaf in our seed; they transcribe or summarize open
+          scholarship.
+        </p>
+        <QuranEvidenceMap showHeading={false} />
+        <dl className={styles.defList}>
+          <div className={styles.defItem}>
+            <dt>Layer 1 — Hijazi witness leaves</dt>
+            <dd>
+              Dated or overlapping manuscripts in{" "}
+              <code>scripts/quran-seed.json</code>, shown on the{" "}
+              <Link href="/?corpus=quran">Qurʾān timeline</Link>. Excerpt rasm +
+              metadata only; not a full mushaf compare tool.
+            </dd>
+          </div>
+          <div className={styles.defItem}>
+            <dt>Layer 2 — Regional Uthmanic rasm</dt>
+            <dd>
+              ~35–40 graphic differences among the four ʿUthmānic exemplar traditions
+              (Cook 2004; Sidky 2020 phylogeny). Curated rows in{" "}
+              <code>scripts/uthmani-regional-variants.json</code> — see{" "}
+              <Link href="/quran/uthmani/">Uthmanic regional rasm</Link>.
+            </dd>
+          </div>
+          <div className={styles.defItem}>
+            <dt>Layer 3 — Shared orthographic idiosyncrasies</dt>
+            <dd>
+              Places where many early UT witnesses agree on the same non-standard
+              spelling at the same ayah — the site&apos;s seed matrix is van Putten
+              (BSOAS 2019) Table 2 ({NIMAT_ROW_COUNT} niʿmat verse rows × published
+              sigla). We hand-transcribed the published table for teaching; we have{" "}
+              <strong>not</strong> independently re-collated those manuscripts. See{" "}
+              <Link href="/quran/archetype/">shared orthography</Link>.
             </dd>
           </div>
         </dl>
@@ -171,10 +220,11 @@ export default function MethodologyPage() {
             <dd>
               Matrix transcribed from van Putten (BSOAS 2019) Table 2 in{" "}
               <code>scripts/quran-shared-orthography-nimat.json</code> —{" "}
-              {23} niʿmat verse rows × published manuscript sigla. Teaching
-              reproduction only; we have <strong>not</strong> re-collated every
-              leaf ourselves. Distinct from regional rasm (layer 2). See{" "}
-              <Link href="/quran/archetype/">shared orthography</Link>.
+              {NIMAT_ROW_COUNT} niʿmat verse rows × published manuscript sigla.
+              Teaching reproduction only; we have <strong>not</strong> re-collated
+              every leaf ourselves. Distinct from regional rasm (layer 2). See{" "}
+              <Link href="/quran/archetype/">shared orthography</Link> and{" "}
+              <Link href="#quran-evidence-layers">three-layer overview</Link>.
             </dd>
           </div>
           <div className={styles.defItem}>
