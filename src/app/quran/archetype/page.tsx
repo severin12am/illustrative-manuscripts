@@ -121,9 +121,10 @@ export default function QuranArchetypePage() {
           <strong>written Uthmanic archetype</strong> and copying from written
           exemplars — not a proof that ʿUthmān personally penned every letter,
           and not a verse-alignment compare tool like Greek NT{" "}
-          <Link href="/compare/">/compare/</Link>. Non-UT material (e.g.{" "}
-          <Link href="/?corpus=quran&q=sanaa">Ṣanʿāʾ lower text</Link>) is a
-          separate text type — see{" "}
+          <Link href="/compare/">/compare/</Link>.           Non-UT material (e.g.{" "}
+          <Link href="/?corpus=quran&q=sanaa">Ṣanʿāʾ lower text</Link>) and{" "}
+          <Link href="/quran/readings/">qirāʾāt reading traditions</Link> are separate
+          categories — see{" "}
           <Link href="/quran/uthmani/#variants">Uthmani Sanaa callout</Link>.
         </p>
       </aside>
@@ -283,6 +284,8 @@ export default function QuranArchetypePage() {
       </aside>
 
       <footer className={styles.footer}>
+        <Link href="/quran/readings/">Rasm vs qirāʾāt →</Link>
+        {" · "}
         <Link href="/quran/uthmani/">Regional Uthmanic rasm →</Link>
         {" · "}
         <Link href="/methodology/">Methods →</Link>

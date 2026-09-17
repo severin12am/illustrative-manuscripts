@@ -202,6 +202,32 @@ function quranArchetypeEntries() {
   return [page, ...rows];
 }
 
+function quranReadingsEntry() {
+  return {
+    kind: "quran_archetype",
+    id: "quran-readings-page",
+    label: "Rasm vs qirāʾāt vs Ṣanʿāʾ",
+    subtitle: "Don't conflate orthography, readings, and palimpsest lower text",
+    href: "/quran/readings/",
+    haystack: hay(
+      "rasm",
+      "qiraat",
+      "qirāʾāt",
+      "qiraat",
+      "reading traditions",
+      "seven readings",
+      "ten readings",
+      "sanaa",
+      "ṣanʿāʾ",
+      "lower text",
+      "companion",
+      "uthmanic",
+      "conflation",
+      "claim discipline"
+    ),
+  };
+}
+
 const items = [
   ...ntWitnesses(),
   ...seedWitnesses("scripts/quran-seed.json", "quran", (m) => m.id),
@@ -213,6 +239,7 @@ const items = [
   ...claimEntries(),
   ...uthmaniEntries(),
   ...quranArchetypeEntries(),
+  quranReadingsEntry(),
 ];
 
 const out = {

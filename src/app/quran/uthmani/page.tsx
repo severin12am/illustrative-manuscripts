@@ -171,8 +171,10 @@ export default function UthmaniRegionalPage() {
           <strong>Not word-level Greek variants.</strong> Our{" "}
           <Link href="/variants/">variant explorer</Link> counts CNTR word disagreements
           in the Greek NT. <strong>Not qirāʾāt.</strong> The seven canonical reading
-          traditions are a later layer. <strong>These entries</strong> are regional{" "}
-          <em>rasm</em> within one early standard — the class Cook and Sidky describe.
+          traditions are a later layer — see{" "}
+          <Link href="/quran/readings/">rasm vs qirāʾāt vs Ṣanʿāʾ</Link>.{" "}
+          <strong>These entries</strong> are regional <em>rasm</em> within one early
+          standard — the class Cook and Sidky describe.
         </p>
       </aside>
 
@@ -303,6 +305,8 @@ export default function UthmaniRegionalPage() {
       </aside>
 
       <footer className={styles.footer}>
+        <Link href="/quran/readings/">Rasm vs qirāʾāt →</Link>
+        {" · "}
         <Link href="/quran/archetype/">Shared orthography →</Link>
         {" · "}
         <Link href="/methodology/">Methods →</Link>

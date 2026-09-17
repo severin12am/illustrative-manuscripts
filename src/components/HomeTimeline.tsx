@@ -308,11 +308,12 @@ export default function HomeTimeline() {
               <p className={styles.completeness}>
                 Hand-curated seed of well-sourced Hijazi witnesses overlapping 1–100
                 AH. Later Kufic display mushafs (8th–9th c.) are out of scope
-                unless their published range overlaps this window. Layer 2 (
+                unless their published range overlaps this window.                 Layer 2 (
                 <Link href="/quran/uthmani/">regional rasm</Link>) and layer 3 (
                 <Link href="/quran/archetype/">shared orthography</Link>) are
-                published-table teaching layers — not a full collation on every
-                card.
+                published-table teaching layers — not qirāʾāt or a full collation on
+                every card (
+                <Link href="/quran/readings/">don&apos;t conflate</Link>).
               </p>
             </>
           )}
