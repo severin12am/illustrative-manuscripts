@@ -98,6 +98,47 @@
       ]
     },
     {
+      "id": "quran-three-evidence-layers",
+      "slug": "quran-three-evidence-layers",
+      "title": "Three Qurʾān evidence layers on this site",
+      "subtitle": "Timeline cards · regional rasm · shared idiosyncrasies",
+      "audience": "Islamic studies · interfaith debate · new contributors",
+      "learning_goal": "Route users to the correct page for each kind of Qurʾān evidence — and avoid conflating regional splits, written-archetype arguments, and non-Uthmanic palimpsest layers.",
+      "steps": [
+        {
+          "text": "Layer 1: open the Qurʾān timeline for dated Hijazi witness cards (metadata and licensed images — not a full mushaf collation).",
+          "links": [{ "href": "/?corpus=quran", "label": "Qurʾān timeline (1–100 AH window)" }]
+        },
+        {
+          "text": "Layer 2: regional Uthmanic rasm — ~40 places Cook/Sidky report the four exemplar traditions differ.",
+          "links": [{ "href": "/quran/uthmani/", "label": "Uthmanic regional rasm" }]
+        },
+        {
+          "text": "Layer 3: shared orthographic idiosyncrasies — niʿmat ta vs ta marbūṭa matrix (van Putten 2019 Table 2) for the written-archetype argument.",
+          "links": [{ "href": "/quran/archetype/", "label": "Shared orthography / archetype" }]
+        },
+        {
+          "text": "Keep Ṣanʿāʾ’s lower text separate: one card, two layers, not UT.",
+          "links": [
+            { "href": "/?corpus=quran&q=sanaa", "label": "Ṣanʿāʾ palimpsest" },
+            { "href": "/use/#quran-zero-variation", "label": "Claim: not zero variation" }
+          ]
+        },
+        {
+          "text": "Check claim cards before citing the matrix in debate.",
+          "links": [
+            { "href": "/use/#quran-nimat-random-spelling", "label": "Random spelling (unsupported)" },
+            { "href": "/use/#quran-shared-idiosyncrasies-archetype", "label": "Shared idiosyncrasies (supported, scoped)" }
+          ]
+        }
+      ],
+      "dont_overclaim": "The niʿmat table reproduces one published case study — not a generated variant census of the whole Qurʾān, and not proof about who personally standardized the rasm.",
+      "related_links": [
+        { "href": "/coverage/", "label": "Coverage: Qurʾān section" },
+        { "href": "/teach/uthmani-rasm-not-forty-qurans/", "label": "Brief: regional rasm ≠ 40 Qurans" }
+      ]
+    },
+    {
       "id": "dss-vs-mt",
       "slug": "dss-vs-mt",
       "title": "Dead Sea Scrolls Hebrew vs medieval Masoretic Text",

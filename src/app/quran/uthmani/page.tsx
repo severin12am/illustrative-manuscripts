@@ -156,7 +156,10 @@ export default function UthmaniRegionalPage() {
           are highly uniform. Medieval <em>rasm</em> literature and modern stemmatics
           record on the order of <strong>~35–40</strong> small consonantal or
           orthographic differences between those regional exemplars — not ~40
-          alternate Qurans. See our{" "}
+          alternate Qurans. For shared spellings across witnesses (written-archetype
+          layer), see{" "}
+          <Link href="/quran/archetype/">shared orthographic idiosyncrasies</Link>.
+          See our{" "}
           <Link href="/">Hijazi witness timeline</Link> for dated leaves;{" "}
           <Link href="/coverage/">Coverage</Link> explains what we do and do not
           collate.
@@ -300,6 +303,8 @@ export default function UthmaniRegionalPage() {
       </aside>
 
       <footer className={styles.footer}>
+        <Link href="/quran/archetype/">Shared orthography →</Link>
+        {" · "}
         <Link href="/methodology/">Methods →</Link>
         {" · "}
         <Link href="/coverage/">Coverage &amp; scope →</Link>

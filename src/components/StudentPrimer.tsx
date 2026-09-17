@@ -101,6 +101,9 @@ export default function StudentPrimer({ compact = false }: Props) {
             tiny regional <em>rasm</em> differences between Syria, Medina, Basra,
             and Kufa — not alternate Qurans. See{" "}
             <Link href="/quran/uthmani/">Uthmanic regional rasm</Link>.
+            {" "}
+            <Link href="/quran/archetype/">Shared orthography matrix</Link> (niʿmat
+            / written archetype).
           </dd>
         </div>
 

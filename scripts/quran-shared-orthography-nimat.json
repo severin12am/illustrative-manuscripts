@@ -1,0 +1,495 @@
+{
+  "_meta": {
+    "title": "niʿmat allāh / rabbi-ka — ta vs ta marbūṭa (van Putten 2019 Table 2)",
+    "source": "Marijn van Putten, BSOAS 82:2 (2019), Table 2 — hand-transcribed for teaching; not an independent re-collation.",
+    "doi": "10.1017/S0041977X19000338",
+    "open_access_pdf": "https://scholarlypublications.universiteitleiden.nl/handle/1887/79373",
+    "honest_disclaimer": "We reproduce the published matrix pattern for illustration. Empty cells mean the verse is not attested on that witness in van Putten’s table, not that we verified lacunae on our timeline cards.",
+    "layer_note": "Third Qurʾān evidence layer: shared orthographic idiosyncrasies across early UT manuscripts — distinct from regional Uthmanic rasm splits (layer 2) and from catalog timeline cards (layer 1)."
+  },
+  "scholarship": [
+    {
+      "label": "van Putten 2019 — “The Grace of God” (BSOAS, open access)",
+      "url": "https://doi.org/10.1017/S0041977X19000338"
+    },
+    {
+      "label": "Leiden repository PDF",
+      "url": "https://scholarlypublications.universiteitleiden.nl/handle/1887/79373"
+    },
+    {
+      "label": "Michael Cook — regional rasm stemma (layer 2 context)",
+      "url": "https://doi.org/10.1163/157006704774269443"
+    },
+    {
+      "label": "Hythem Sidky 2020 — four ancestral nodes (JIQSA)",
+      "url": "https://doi.org/10.59164/jiqsa.5.1.001"
+    }
+  ],
+  "manuscripts": [
+    {
+      "siglum": "C",
+      "label": "1924 Cairo edition (reference rasm)",
+      "our_witness_id": null,
+      "is_reference": true
+    },
+    {
+      "siglum": "Q",
+      "label": "Ms Qāf 47 + Berlin Staatsbibliothek Or. Fol. 4313",
+      "our_witness_id": "berlin-or-fol-4313",
+      "source": "van Putten 2019 Table 2 siglum Q"
+    },
+    {
+      "siglum": "BL",
+      "label": "British Library Or. 2165 (+ BnF Arabe 328e composite in paper)",
+      "our_witness_id": "bl-or-2165",
+      "source": "van Putten 2019"
+    },
+    {
+      "siglum": "CP",
+      "label": "Codex Parisino-Petropolitanus (Paris leaves)",
+      "our_witness_id": "parisino-328a",
+      "source": "van Putten 2019; St Petersburg = marcel-17 in our catalog"
+    },
+    {
+      "siglum": "A3",
+      "label": "BnF Arabe 331 + Leiden Or. 14.545b/c",
+      "our_witness_id": null,
+      "our_witness_ids": [
+        "bnf-arabe-331",
+        "leiden-or-14-545b",
+        "leiden-or-14-545c"
+      ],
+      "source": "Composite siglum in van Putten 2019"
+    },
+    {
+      "siglum": "CA1",
+      "label": "Codex Amrensis 1 (Cellard 2017)",
+      "our_witness_id": null,
+      "source": "Not in our Hijazi seed"
+    },
+    {
+      "siglum": "M",
+      "label": "Cambridge Mingana-Lewis palimpsest (small Qurʾān leaves)",
+      "our_witness_id": null,
+      "source": "Not in our Hijazi seed"
+    },
+    {
+      "siglum": "T",
+      "label": "Tübingen Ma VI 165",
+      "our_witness_id": "tubingen-ma-vi-165",
+      "source": "van Putten 2019"
+    },
+    {
+      "siglum": "SU",
+      "label": "Ṣanʿāʾ I upper text (DAM 01-27.1 + auction folios)",
+      "our_witness_id": "sanaa-dam-01-27-1",
+      "source": "Upper text only; lower text is non-UT"
+    },
+    {
+      "siglum": "SM",
+      "label": "Istanbul Saray Medina 1a",
+      "our_witness_id": null,
+      "source": "Not in our Hijazi seed"
+    },
+    {
+      "siglum": "S",
+      "label": "Berlin Samarkand Kodex (facsimile on Corpus Coranicum)",
+      "our_witness_id": null,
+      "source": "Not in our Hijazi seed"
+    },
+    {
+      "siglum": "W",
+      "label": "Berlin Wetzstein II 1913 (+ BnF Arabe 6087)",
+      "our_witness_id": "berlin-wetzstein-1913",
+      "source": "van Putten 2019"
+    },
+    {
+      "siglum": "K",
+      "label": "Cairo al-Maktaba al-Markaziyya Great Codex",
+      "our_witness_id": null,
+      "source": "Not in our Hijazi seed"
+    },
+    {
+      "siglum": "B",
+      "label": "Mingana Islamic Arabic 1572b (+ Marcel 17)",
+      "our_witness_id": "mingana-1572b",
+      "source": "van Putten 2019"
+    },
+    {
+      "siglum": "Zid",
+      "label": "Meknes private kufic codex (Gotthelf-Bergsträßer archive)",
+      "our_witness_id": null,
+      "source": "Not in our Hijazi seed"
+    }
+  ],
+  "rows": [
+    {
+      "id": "q2-211",
+      "ref": "Q 2:211",
+      "surah": 2,
+      "ayah": 211,
+      "cairo": "ta_marbuta",
+      "readings": {
+        "CP": "ta_marbuta",
+        "K": "ta",
+        "B": "ta",
+        "Zid": "ta"
+      }
+    },
+    {
+      "id": "q2-231",
+      "ref": "Q 2:231",
+      "surah": 2,
+      "ayah": 231,
+      "cairo": "ta",
+      "readings": {
+        "CP": "ta",
+        "S": "ta",
+        "K": "ta",
+        "B": "ta",
+        "Zid": "ta"
+      },
+      "cell_notes": {
+        "K": "bracketed in table; later hand per van Putten §Results"
+      }
+    },
+    {
+      "id": "q3-103",
+      "ref": "Q 3:103",
+      "surah": 3,
+      "ayah": 103,
+      "cairo": "ta",
+      "readings": {
+        "Q": "ta",
+        "CP": "ta",
+        "SU": "ta",
+        "S": "ta",
+        "K": "ta",
+        "B": "ta",
+        "Zid": "ta"
+      }
+    },
+    {
+      "id": "q5-7",
+      "ref": "Q 5:7",
+      "surah": 5,
+      "ayah": 7,
+      "cairo": "ta",
+      "readings": {
+        "Q": "ta",
+        "CP": "ta",
+        "SU": "ta",
+        "S": "ta",
+        "K": "ta",
+        "B": "ta",
+        "Zid": "ta"
+      }
+    },
+    {
+      "id": "q5-11",
+      "ref": "Q 5:11",
+      "surah": 5,
+      "ayah": 11,
+      "cairo": "ta",
+      "readings": {
+        "Q": "ta",
+        "BL": "ta",
+        "CP": "ta",
+        "S": "ta",
+        "K": "ta",
+        "B": "ta",
+        "Zid": "ta"
+      }
+    },
+    {
+      "id": "q5-20",
+      "ref": "Q 5:20",
+      "surah": 5,
+      "ayah": 20,
+      "cairo": "ta_marbuta",
+      "readings": {
+        "Q": "ta_marbuta",
+        "BL": "ta_marbuta",
+        "CP": "ta_marbuta",
+        "S": "ta_marbuta",
+        "K": "ta_marbuta",
+        "B": "ta_marbuta",
+        "Zid": "ta_marbuta"
+      }
+    },
+    {
+      "id": "q14-6",
+      "ref": "Q 14:6",
+      "surah": 14,
+      "ayah": 6,
+      "cairo": "ta_marbuta",
+      "readings": {
+        "BL": "ta_marbuta",
+        "CP": "ta_marbuta",
+        "SM": "ta_marbuta",
+        "S": "ta_marbuta",
+        "K": "ta_marbuta",
+        "Zid": "ta_marbuta"
+      }
+    },
+    {
+      "id": "q14-28",
+      "ref": "Q 14:28",
+      "surah": 14,
+      "ayah": 28,
+      "cairo": "ta",
+      "readings": {
+        "BL": "ta",
+        "CP": "ta",
+        "A3": "ta",
+        "CA1": "ta",
+        "SM": "ta",
+        "S": "ta",
+        "K": "ta",
+        "Zid": "ta"
+      }
+    },
+    {
+      "id": "q14-34",
+      "ref": "Q 14:34",
+      "surah": 14,
+      "ayah": 34,
+      "cairo": "ta",
+      "readings": {
+        "BL": "ta",
+        "CP": "ta",
+        "A3": "ta",
+        "CA1": "ta",
+        "SU": "ta",
+        "SM": "ta",
+        "S": "ta",
+        "K": "ta",
+        "Zid": "ta"
+      }
+    },
+    {
+      "id": "q16-18",
+      "ref": "Q 16:18",
+      "surah": 16,
+      "ayah": 18,
+      "cairo": "ta_marbuta",
+      "readings": {
+        "BL": "ta_marbuta",
+        "A3": "ta_marbuta",
+        "M": "ta_marbuta",
+        "SM": "ta_marbuta",
+        "S": "ta_marbuta",
+        "K": "ta_marbuta",
+        "Zid": "ta_marbuta"
+      }
+    },
+    {
+      "id": "q16-71",
+      "ref": "Q 16:71",
+      "surah": 16,
+      "ayah": 71,
+      "cairo": "ta_marbuta",
+      "readings": {
+        "BL": "ta_marbuta",
+        "SM": "ta_marbuta",
+        "S": "ta_marbuta",
+        "K": "ta_marbuta",
+        "Zid": "ta_marbuta"
+      }
+    },
+    {
+      "id": "q16-72",
+      "ref": "Q 16:72",
+      "surah": 16,
+      "ayah": 72,
+      "cairo": "ta",
+      "readings": {
+        "BL": "ta",
+        "SM": "ta",
+        "S": "ta",
+        "K": "ta",
+        "Zid": "ta"
+      }
+    },
+    {
+      "id": "q16-83",
+      "ref": "Q 16:83",
+      "surah": 16,
+      "ayah": 83,
+      "cairo": "ta",
+      "readings": {
+        "BL": "ta",
+        "M": "ta",
+        "SU": "ta",
+        "SM": "ta",
+        "S": "ta",
+        "K": "ta",
+        "Zid": "ta"
+      }
+    },
+    {
+      "id": "q16-114",
+      "ref": "Q 16:114",
+      "surah": 16,
+      "ayah": 114,
+      "cairo": "ta",
+      "readings": {
+        "BL": "ta",
+        "A3": "ta",
+        "SU": "ta",
+        "SM": "ta_marbuta",
+        "S": "ta",
+        "K": "ta",
+        "Zid": "ta"
+      },
+      "disagreement_locus": true,
+      "disagreement_note": "SM disagrees — only ta marbuta here"
+    },
+    {
+      "id": "q29-67",
+      "ref": "Q 29:67",
+      "surah": 29,
+      "ayah": 67,
+      "cairo": "ta_marbuta",
+      "readings": {
+        "BL": "ta_marbuta",
+        "T": "ta_marbuta",
+        "SM": "ta_marbuta",
+        "S": "ta_marbuta",
+        "K": "ta_marbuta",
+        "Zid": "ta_marbuta"
+      }
+    },
+    {
+      "id": "q31-31",
+      "ref": "Q 31:31",
+      "surah": 31,
+      "ayah": 31,
+      "cairo": "ta",
+      "readings": {
+        "BL": "ta",
+        "T": "ta",
+        "SU": "ta",
+        "SM": "ta",
+        "S": "ta",
+        "K": "ta",
+        "Zid": "ta"
+      }
+    },
+    {
+      "id": "q33-9",
+      "ref": "Q 33:9",
+      "surah": 33,
+      "ayah": 9,
+      "cairo": "ta_marbuta",
+      "readings": {
+        "BL": "ta_marbuta",
+        "T": "ta_marbuta",
+        "SU": "ta_marbuta",
+        "SM": "ta_marbuta",
+        "S": "ta_marbuta",
+        "K": "ta_marbuta",
+        "Zid": "ta_marbuta"
+      }
+    },
+    {
+      "id": "q35-3",
+      "ref": "Q 35:3",
+      "surah": 35,
+      "ayah": 3,
+      "cairo": "ta",
+      "readings": {
+        "BL": "ta",
+        "T": "ta",
+        "SU": "ta",
+        "SM": "ta",
+        "S": "ta",
+        "K": "ta",
+        "Zid": "ta"
+      },
+      "cell_notes": {
+        "Zid": "later hand; spelling agrees with pattern"
+      }
+    },
+    {
+      "id": "q37-57",
+      "ref": "Q 37:57",
+      "surah": 37,
+      "ayah": 57,
+      "cairo": "ta_marbuta",
+      "readings": {
+        "S": "ta",
+        "W": "ta_marbuta",
+        "K": "ta",
+        "Zid": "ta_marbuta"
+      },
+      "disagreement_locus": true,
+      "disagreement_note": "Cairo/W/Zid ta marbuta vs early mss mostly ta"
+    },
+    {
+      "id": "q43-13",
+      "ref": "Q 43:13",
+      "surah": 43,
+      "ayah": 13,
+      "cairo": "ta_marbuta",
+      "readings": {
+        "BL": "ta_marbuta",
+        "CP": "ta_marbuta",
+        "SM": "ta_marbuta",
+        "S": "ta_marbuta",
+        "K": "ta_marbuta",
+        "Zid": "ta_marbuta"
+      }
+    },
+    {
+      "id": "q52-29",
+      "ref": "Q 52:29",
+      "surah": 52,
+      "ayah": 29,
+      "cairo": "ta",
+      "readings": {
+        "BL": "ta",
+        "A3": "ta",
+        "CA1": "ta",
+        "S": "ta",
+        "K": "ta",
+        "Zid": "ta"
+      }
+    },
+    {
+      "id": "q68-2",
+      "ref": "Q 68:2",
+      "surah": 68,
+      "ayah": 2,
+      "cairo": "ta_marbuta",
+      "readings": {
+        "S": "ta_marbuta",
+        "K": "ta_marbuta",
+        "Zid": "ta_marbuta"
+      }
+    },
+    {
+      "id": "q93-11",
+      "ref": "Q 93:11",
+      "surah": 93,
+      "ayah": 11,
+      "cairo": "ta_marbuta",
+      "readings": {
+        "SM": "ta_marbuta",
+        "S": "ta_marbuta",
+        "K": "ta_marbuta",
+        "Zid": "ta_marbuta"
+      }
+    }
+  ],
+  "reading_legend": {
+    "ta_marbuta": {
+      "glyph": "ة",
+      "label": "tāʾ marbūṭa (niʿmat spelled with ـة)"
+    },
+    "ta": {
+      "glyph": "ت",
+      "label": "tāʾ (niʿmat spelled with ـت)"
+    }
+  }
+}

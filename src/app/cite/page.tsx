@@ -10,6 +10,7 @@ import {
 } from "@/lib/variantTaxonomy";
 import { famousPassages } from "@/data/famous-passages";
 import { uthmaniRegionalVariants } from "@/data/uthmani-regional-variants";
+import { nimatRowCount } from "@/data/quran-shared-orthography";
 import { assetUrl } from "@/lib/assetUrl";
 import styles from "./cite.module.css";
 
@@ -35,6 +36,8 @@ export default function CitePage() {
   const uthmaniJson = assetUrl("/uthmani-regional-variants.json");
   const famousCount = famousPassages.entries.length;
   const uthmaniCount = uthmaniRegionalVariants.variants.length;
+  const archetypeJson = assetUrl("/quran-shared-orthography.json");
+  const archetypeCount = nimatRowCount();
 
   return (
     <main className={styles.main}>
@@ -146,6 +149,11 @@ export default function CitePage() {
               {uthmaniCount} illustrative Uthmanic regional rasm reports
               (published ~35–40 band).
             </li>
+            <li>
+              <a href={archetypeJson}>quran-shared-orthography.json</a> —{" "}
+              {archetypeCount} niʿmat matrix rows (van Putten 2019 Table 2
+              reproduction).
+            </li>
           </ul>
           <p className={styles.citationOneLiner}>
             Chicago (short): Illustrative Manuscripts.{" "}
@@ -236,7 +244,8 @@ export default function CitePage() {
           show catalogued witnesses but do not yet publish the same mechanical
           census. For regional <em>rasm</em> within the Uthmanic Text Type (~35–40
           reports in published stemmatics), see{" "}
-          <Link href="/quran/uthmani/">Uthmanic regional rasm</Link>.
+            <Link href="/quran/uthmani/">Uthmanic regional rasm</Link> and{" "}
+            <Link href="/quran/archetype/">shared orthography</Link>.
         </p>
         <dl className={styles.defList}>
           <div className={styles.defItem}>
@@ -605,7 +614,8 @@ export default function CitePage() {
               corpuscoranicum.org
             </a>{" "}
             for early Qurʾān manuscript cataloguing and bibliography. Our{" "}
-            <Link href="/quran/uthmani/">Uthmanic regional rasm</Link> page
+            <Link href="/quran/uthmani/">Uthmanic regional rasm</Link> and{" "}
+            <Link href="/quran/archetype/">shared orthography</Link> pages
             summarizes Cook / Sidky stemmatics with curated examples.
           </li>
         </ol>
@@ -617,6 +627,8 @@ export default function CitePage() {
         <Link href="/use/">Use this site →</Link>
         {" · "}
         <Link href="/quran/uthmani/">Uthmanic regional rasm →</Link>
+        {" · "}
+        <Link href="/quran/archetype/">Shared orthography →</Link>
         {" · "}
         <Link href="/methodology/">Methods →</Link>
         {" · "}

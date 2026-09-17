@@ -20,6 +20,7 @@
     "variant-index": "node scripts/export-variant-index.mjs",
     "famous-passages": "node scripts/verify-famous-passages.mjs",
     "uthmani-regional": "node scripts/build-uthmani-regional-variants.mjs",
+    "quran-archetype": "node scripts/build-quran-shared-orthography.mjs",
     "export-sr-esns": "node scripts/export-sr-witness-esns.mjs",
     "export-census": "node scripts/export-variant-census.mjs",
     "export-curated": "node scripts/export-curated-datasets.mjs",
