@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import QuranEvidenceMap from "@/components/QuranEvidenceMap";
+import HebrewLxxEvidenceMap from "@/components/HebrewLxxEvidenceMap";
+import { coverage } from "@/data/coverage";
 import { quranSharedOrthography } from "@/data/quran-shared-orthography";
 import { TIMELINE_START, TIMELINE_END } from "@/data/witnesses";
 import styles from "./methodology.module.css";
@@ -133,6 +135,49 @@ export default function MethodologyPage() {
               Debaters often merge them with regional rasm; see{" "}
               <Link href="/quran/readings/">rasm vs qirāʾāt vs Ṣanʿāʾ</Link> and{" "}
               <Link href="/teach/quran-rasm-qiraat-sanaa/">teaching brief</Link>.
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <section className={styles.section} id="hebrew-lxx-evidence-traditions">
+        <h2 className={styles.sectionTitle}>
+          Hebrew Bible &amp; LXX: three evidence traditions
+        </h2>
+        <p className={styles.sectionIntro}>
+          Unlike Greek NT on this site, the Hebrew/LXX corpus has no mechanical word
+          census. We map three <strong>standard handbook traditions</strong> — Qumran
+          Hebrew, medieval Masoretic Text, and early Jewish Greek (LXX) — and link into{" "}
+          {coverage.hebrew_lxx.witness_count} curated timeline cards ({coverage.hebrew_lxx.hebrew_dss_count}{" "}
+          DSS + {coverage.hebrew_lxx.greek_lxx_count} LXX) overlapping{" "}
+          {coverage.hebrew_lxx.window_label}. MT is explained on the evidence page but
+          not facsimiled in the seed (too late for our window).
+        </p>
+        <HebrewLxxEvidenceMap showHeading={false} />
+        <dl className={styles.defList}>
+          <div className={styles.defItem}>
+            <dt>Tradition 1 — Dead Sea Scrolls Hebrew</dt>
+            <dd>
+              Pre-medieval witnesses in <code>scripts/hebrew-lxx-seed.json</code> on
+              the <Link href="/?corpus=hebrew-lxx">Hebrew/LXX timeline</Link>.
+              Diplomatic excerpts + WEB English; Leon Levy links for full plates.
+            </dd>
+          </div>
+          <div className={styles.defItem}>
+            <dt>Tradition 2 — Masoretic Text (context)</dt>
+            <dd>
+              Late-medieval standardized Hebrew — the line behind BHS/BHQ — not
+              identical to every Second-Temple reading. See{" "}
+              <Link href="/hebrew-lxx/evidence/#mt">evidence essay</Link> and claim
+              cards on Jesus/MT overclaims.
+            </dd>
+          </div>
+          <div className={styles.defItem}>
+            <dt>Tradition 3 — Septuagint (Jewish Greek)</dt>
+            <dd>
+              Pre-Christian papyri (P.Ryl. 458, P.Fouad 266, P.Oxy. 1007, etc.) in
+              the seed — separate from Hebrew DSS and from CNTR Greek NT compare. See{" "}
+              <Link href="/hebrew-lxx/evidence/#lxx">LXX essay</Link>.
             </dd>
           </div>
         </dl>

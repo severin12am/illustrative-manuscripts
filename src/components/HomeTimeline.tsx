@@ -10,6 +10,7 @@ import StatsStrip from "@/components/StatsStrip";
 import HomePrimerBanner from "@/components/HomePrimerBanner";
 import HomeStartHere from "@/components/HomeStartHere";
 import QuranEvidenceMap from "@/components/QuranEvidenceMap";
+import HebrewLxxEvidenceMap from "@/components/HebrewLxxEvidenceMap";
 import VariantExamples from "@/components/VariantExamples";
 import {
   witnesses as ntWitnesses,
@@ -291,7 +292,9 @@ export default function HomeTimeline() {
             </li>
           </ul>
           {isHebrewLxx && (
-            <p className={styles.completeness}>
+            <>
+              <HebrewLxxEvidenceMap showHeading={false} />
+              <p className={styles.completeness}>
               Hand-curated seed of {hebrewLxxWitnesses.filter((w) => w.corpus === "ot").length}{" "}
               Hebrew DSS and {hebrewLxxWitnesses.filter((w) => w.corpus === "lxx").length} Greek
               LXX witnesses overlapping {HEBREW_LXX_WINDOW_LABEL}. BCE dates appear on this timeline
@@ -299,8 +302,11 @@ export default function HomeTimeline() {
               is a separate Greek stream — compare both to the frozen Greek NT slice (1–400 CE), not
               as one uniform &ldquo;original.&rdquo; Diplomatic excerpts + WEB English; no BHQ/Rahlfs
               apparatus reuse.{" "}
-              <Link href="/coverage/">Coverage counts</Link>.
+              <Link href="/coverage/">Coverage counts</Link>
+              {" · "}
+              <Link href="/hebrew-lxx/evidence/">Three traditions map</Link>.
             </p>
+            </>
           )}
           {isQuran && (
             <>

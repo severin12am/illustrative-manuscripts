@@ -3,6 +3,7 @@ import Link from "next/link";
 import { coverage } from "@/data/coverage";
 import { TIMELINE_START, TIMELINE_END } from "@/data/witnesses";
 import QuranEvidenceMap from "@/components/QuranEvidenceMap";
+import HebrewLxxEvidenceMap from "@/components/HebrewLxxEvidenceMap";
 import StudentPrimer from "@/components/StudentPrimer";
 import VariantExamples from "@/components/VariantExamples";
 import DownloadCensus from "@/components/DownloadCensus";
@@ -452,6 +453,7 @@ export default function CoveragePage() {
         <h2 className={styles.sectionTitle}>
           Hebrew Bible &amp; Septuagint ({hebrew_lxx.window_label})
         </h2>
+        <HebrewLxxEvidenceMap />
         <div className={styles.statGrid}>
           <div className={styles.statCard}>
             <span className={styles.statValue}>{hebrew_lxx.witness_count}</span>
@@ -476,7 +478,8 @@ export default function CoveragePage() {
         <p className={styles.note}>{hebrew_lxx.corpus_note}</p>
         <p className={styles.note}>{hebrew_lxx.student_note}</p>
         <p className={styles.note}>
-          Switch to{" "}
+          For the three-tradition teaching stack (DSS Hebrew · MT context · LXX papyri), see{" "}
+          <Link href="/hebrew-lxx/evidence/">Hebrew / LXX evidence map</Link>. Switch to{" "}
           <Link href="/?corpus=hebrew-lxx">Hebrew / LXX on the timeline</Link> for
           cards with Leon Levy / library links (IAA scans not rehosted).
         </p>

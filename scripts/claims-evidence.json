@@ -273,9 +273,10 @@
       "verdict": "partial",
       "why": "Second-Temple and pre-Christian Hebrew witnesses in our corpus (Dead Sea Scrolls, Nash Papyrus) show a largely continuous consonantal tradition alongside spelling diversity and occasional longer or shorter readings in some books. That supports substantial continuity for much of the Hebrew Bible — not byte-identical identity with every medieval Masoretic codex for every verse a first-century reader might have heard.",
       "links": [
+        { "href": "/hebrew-lxx/evidence/#mt", "label": "Evidence map: Masoretic Text" },
         { "href": "/?corpus=hebrew-lxx", "label": "Hebrew / LXX timeline" },
         { "href": "/coverage/", "label": "Hebrew/LXX coverage notes" },
-        { "href": "/methodology/", "label": "Methods (corpus limits)" }
+        { "href": "/methodology/#hebrew-lxx-evidence-traditions", "label": "Methods (three traditions)" }
       ],
       "scholarship": [
         {
@@ -290,9 +291,10 @@
       "verdict": "unsupported",
       "why": "Jewish Greek Torah and prophetic books are attested on pre-Christian papyri in this site’s Hebrew/LXX slice — e.g. P.Ryl. 458 (Genesis), P.Fouad 266 (Deuteronomy), P.Oxy. 1007 (Exodus) — centuries before Christian recensions and church fathers. Later Christian copies and revisions exist; that is not the same as inventing the whole Greek Old Testament tradition.",
       "links": [
+        { "href": "/hebrew-lxx/evidence/#lxx", "label": "Evidence map: Septuagint" },
         { "href": "/?corpus=hebrew-lxx&q=P.Ryl", "label": "P.Ryl. 458 witness card" },
         { "href": "/?corpus=hebrew-lxx", "label": "Hebrew / LXX timeline" },
-        { "href": "/methodology/", "label": "Methods (what we transcribe)" }
+        { "href": "/methodology/#hebrew-lxx-evidence-traditions", "label": "Methods (three traditions)" }
       ],
       "scholarship": [
         {
@@ -307,6 +309,7 @@
       "verdict": "partial",
       "why": "The Great Isaiah Scroll agrees with the Masoretic book of Isaiah far more often than it disagrees — a key data point for stability. It also preserves thousands of spelling variants and documented textual differences elsewhere in the DSS corpus; “remarkable agreement in Isaiah” is not a license to claim zero textual history for the whole Hebrew Bible.",
       "links": [
+        { "href": "/hebrew-lxx/evidence/#dss", "label": "Evidence map: DSS Hebrew" },
         { "href": "/?corpus=hebrew-lxx&q=1QIsa", "label": "1QIsaᵃ witness card" },
         { "href": "/?corpus=hebrew-lxx", "label": "Hebrew / LXX corpus" },
         { "href": "/coverage/", "label": "Coverage (DSS + LXX scope)" }
@@ -324,9 +327,28 @@
       "verdict": "unsupported",
       "why": "Within our Hebrew/LXX window, material survives from the second century BCE onward (DSS) and from pre-Christian Greek papyri. That does not recover every book on every leaf for every century — but it falsifies the blanket claim that no pre-medieval witnesses exist.",
       "links": [
+        { "href": "/hebrew-lxx/evidence/", "label": "Hebrew / LXX evidence map" },
         { "href": "/?corpus=hebrew-lxx", "label": "Hebrew / LXX timeline" },
         { "href": "/coverage/", "label": "Coverage & downloads" },
-        { "href": "/methodology/", "label": "Methods" }
+        { "href": "/methodology/#hebrew-lxx-evidence-traditions", "label": "Methods" }
+      ]
+    },
+    {
+      "id": "lxx-irrelevant-nt-authors",
+      "claim": "The Septuagint is irrelevant to New Testament authors — they only used Hebrew.",
+      "verdict": "partial",
+      "why": "Many NT citations and allusions follow Greek Old Testament wording that matches the LXX (or a closely related Greek tradition) more closely than a fresh translation from the medieval MT would — e.g. in Matthew, Hebrews, and Pauline letters. That does not mean every OT echo is LXX-only, or that Hebrew was unread in the Second Temple period. It does refute the blanket that LXX is irrelevant to how NT authors quote scripture in Greek.",
+      "links": [
+        { "href": "/hebrew-lxx/evidence/#lxx", "label": "Evidence map: Septuagint" },
+        { "href": "/?corpus=hebrew-lxx&q=P.Ryl", "label": "P.Ryl. 458 (Jewish Greek Torah)" },
+        { "href": "/compare/", "label": "Compare scope (Greek NT only — not LXX collation)" },
+        { "href": "/use/#lxx-late-christian-invention", "label": "Related: LXX not a late invention" }
+      ],
+      "scholarship": [
+        {
+          "label": "Jobes & Silva, Invitation to the Septuagint — NT use of Greek OT",
+          "url": "https://doi.org/10.5040/9781493407768"
+        }
       ]
     },
     {
