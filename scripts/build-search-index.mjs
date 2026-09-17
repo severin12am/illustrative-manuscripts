@@ -226,7 +226,68 @@ function quranReadingsEntry() {
       "claim discipline"
     ),
   };
-}
+
+function hebrewLxxEvidenceEntries() {
+  const { hebrew_lxx: hl } = readJson("src/data/coverage.json");
+  const page = {
+    kind: "hebrew_lxx_evidence",
+    id: "hebrew-lxx-evidence-page",
+    label: "Hebrew Bible & Septuagint evidence map",
+    subtitle: "DSS Hebrew · Masoretic Text · LXX",
+    href: "/hebrew-lxx/evidence/",
+    haystack: hay(
+      "hebrew lxx evidence map",
+      "three traditions",
+      "dead sea scrolls",
+      "masoretic text",
+      "septuagint",
+      "dss",
+      "mt",
+      "lxx",
+      "1qisa",
+      "p.ryl",
+      "qumran",
+      hl.window_label
+    ),
+  };
+  const sections = [
+    {
+      id: "dss-hebrew",
+      label: "Dead Sea Scrolls Hebrew",
+      subtitle: "Tradition 1 — Qumran evidence",
+      href: "/hebrew-lxx/evidence/#dss",
+      haystack: hay("dss qumran 1qisa early hebrew scrolls", "dss hebrew"),
+    },
+    {
+      id: "masoretic-text",
+      label: "Masoretic Text (medieval standard)",
+      subtitle: "Tradition 2 — MT context",
+      href: "/hebrew-lxx/evidence/#mt",
+      haystack: hay("masoretic text mt bhs medieval hebrew standard", "mt masoretic"),
+    },
+    {
+      id: "septuagint",
+      label: "Septuagint (early Jewish Greek)",
+      subtitle: "Tradition 3 — LXX papyri",
+      href: "/hebrew-lxx/evidence/#lxx",
+      haystack: hay("septuagint lxx p.ryl pryl 458 greek old testament", "lxx septuagint"),
+    },
+    {
+      id: "teach-hebrew-lxx-three",
+      label: "Teaching brief: three Hebrew Bible traditions",
+      subtitle: "Classroom / debate outline",
+      href: "/teach/hebrew-lxx-three-traditions/",
+      haystack: hay("teach brief hebrew lxx three traditions debate classroom", "teaching"),
+    },
+  ].map((s) => ({
+    kind: "hebrew_lxx_evidence",
+    id: s.id,
+    label: s.label,
+    subtitle: s.subtitle,
+    href: s.href,
+    haystack: s.haystack,
+  }));
+  return [page, ...sections];
 
 const items = [
   ...ntWitnesses(),
@@ -240,6 +301,7 @@ const items = [
   ...uthmaniEntries(),
   ...quranArchetypeEntries(),
   quranReadingsEntry(),
+  ...hebrewLxxEvidenceEntries(),
 ];
 
 const out = {
@@ -252,6 +314,7 @@ const out = {
     claim: items.filter((i) => i.kind === "claim").length,
     uthmani: items.filter((i) => i.kind === "uthmani").length,
     quran_archetype: items.filter((i) => i.kind === "quran_archetype").length,
+    hebrew_lxx_evidence: items.filter((i) => i.kind === "hebrew_lxx_evidence").length,
     total: items.length,
   },
   items,
@@ -263,5 +326,6 @@ console.log(
   `Wrote public/search-index.json (${out.counts.total} items: ` +
     `${out.counts.witness} witnesses, ${out.counts.famous} famous, ` +
     `${out.counts.variant} variants, ${out.counts.claim} claims, ` +
-    `${out.counts.uthmani} uthmani, ${out.counts.quran_archetype} quran archetype)`
+    `${out.counts.uthmani} uthmani, ${out.counts.quran_archetype} quran archetype, ` +
+    `${out.counts.hebrew_lxx_evidence} hebrew lxx evidence)`
 );

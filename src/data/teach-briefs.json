@@ -181,6 +181,55 @@
       ]
     },
     {
+      "id": "hebrew-lxx-three-traditions",
+      "slug": "hebrew-lxx-three-traditions",
+      "title": "Three Hebrew Bible evidence traditions on this site",
+      "subtitle": "DSS Hebrew · Masoretic Text · Septuagint",
+      "audience": "Hebrew Bible survey · LXX/MT debates · NT background",
+      "learning_goal": "Route students to the Hebrew/LXX evidence map and timeline cards — distinguishing Qumran Hebrew, late MT standardization, and early Jewish Greek without collapsing them into one “original Bible” line.",
+      "steps": [
+        {
+          "text": "Open the evidence map page: three cards with short essays and witness deep links.",
+          "links": [{ "href": "/hebrew-lxx/evidence/", "label": "Hebrew / LXX evidence map" }]
+        },
+        {
+          "text": "Tradition 1 — switch to the Hebrew/LXX timeline and open 1QIsaᵃ (Great Isaiah Scroll).",
+          "links": [
+            { "href": "/?corpus=hebrew-lxx#1qisaa", "label": "1QIsaᵃ card" },
+            { "href": "/hebrew-lxx/evidence/#dss", "label": "Essay: DSS Hebrew" }
+          ]
+        },
+        {
+          "text": "Tradition 2 — read the MT essay: medieval standard, not what Jesus held as a printed codex.",
+          "links": [
+            { "href": "/hebrew-lxx/evidence/#mt", "label": "Essay: Masoretic Text" },
+            { "href": "/use/#mt-identical-jesus-read", "label": "Claim: MT vs Jesus (partial)" }
+          ]
+        },
+        {
+          "text": "Tradition 3 — open pre-Christian LXX papyri (P.Ryl. 458, P.Fouad 266) and related claim cards.",
+          "links": [
+            { "href": "/?corpus=hebrew-lxx&q=P.Ryl", "label": "P.Ryl. 458" },
+            { "href": "/hebrew-lxx/evidence/#lxx", "label": "Essay: Septuagint" },
+            { "href": "/use/#lxx-late-christian-invention", "label": "Claim: not a late invention" },
+            { "href": "/use/#lxx-irrelevant-nt-authors", "label": "Claim: LXX & NT authors (partial)" }
+          ]
+        },
+        {
+          "text": "Keep Greek NT compare separate: CNTR 1–400 CE only — no built-in LXX↔NT collation.",
+          "links": [
+            { "href": "/compare/", "label": "Compare (Greek NT)" },
+            { "href": "/methodology/#hebrew-lxx-evidence-traditions", "label": "Methods: three traditions" }
+          ]
+        }
+      ],
+      "dont_overclaim": "Our 24 Hebrew/LXX cards are illustrative seeds with diplomatic excerpts — not BHQ or Göttingen apparatus dumps, not a DSS↔MT verse census, and not proof that MT or LXX alone equals “what Jesus read” for every book.",
+      "related_links": [
+        { "href": "/teach/dss-vs-mt/", "label": "Brief: DSS vs MT" },
+        { "href": "/coverage/", "label": "Coverage: Hebrew/LXX counts" }
+      ]
+    },
+    {
       "id": "dss-vs-mt",
       "slug": "dss-vs-mt",
       "title": "Dead Sea Scrolls Hebrew vs medieval Masoretic Text",
@@ -190,7 +239,10 @@
       "steps": [
         {
           "text": "Switch the timeline to Hebrew Bible & LXX (250 BCE–400 CE) and open the Great Isaiah Scroll card.",
-          "links": [{ "href": "/?corpus=hebrew-lxx#1qisaa", "label": "1QIsaᵃ on timeline" }]
+          "links": [
+            { "href": "/?corpus=hebrew-lxx#1qisaa", "label": "1QIsaᵃ on timeline" },
+            { "href": "/hebrew-lxx/evidence/", "label": "Three traditions evidence map" }
+          ]
         },
         {
           "text": "Read the diplomatic excerpt notes on the card — compare wording to the display English (WEB), not a full apparatus.",

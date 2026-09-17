@@ -1,5 +1,6 @@
 import Link from "next/link";
 import QuranEvidenceMap from "@/components/QuranEvidenceMap";
+import HebrewLxxEvidenceMap from "@/components/HebrewLxxEvidenceMap";
 import styles from "./HomeStartHere.module.css";
 
 export default function HomeStartHere() {
@@ -18,6 +19,10 @@ export default function HomeStartHere() {
       <div className={styles.quranMap}>
         <span className={styles.quranMapLabel}>Qurʾān evidence</span>
         <QuranEvidenceMap variant="strip" />
+      </div>
+      <div className={styles.quranMap}>
+        <span className={styles.quranMapLabel}>Hebrew / LXX evidence</span>
+        <HebrewLxxEvidenceMap variant="strip" />
       </div>
     </aside>
   );
