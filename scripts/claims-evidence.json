@@ -23,6 +23,7 @@
         { "href": "/cite/#for-researchers", "label": "For researchers (schema & BibTeX)" },
         { "href": "/quran/uthmani/", "label": "Uthmanic regional rasm" },
         { "href": "/quran/archetype/", "label": "Shared orthography (written archetype)" },
+        { "href": "/quran/readings/", "label": "Rasm vs qirāʾāt vs Ṣanʿāʾ" },
         {
           "href": "https://github.com/severin12am/illustrative-manuscripts",
           "label": "GitHub (data & code)",
@@ -40,6 +41,7 @@
         { "href": "/variants/", "label": "Variant explorer" },
         { "href": "/quran/uthmani/", "label": "Uthmanic rasm" },
         { "href": "/quran/archetype/", "label": "Shared orthography matrix" },
+        { "href": "/quran/readings/", "label": "Don't conflate rasm / qirāʾāt / Ṣanʿāʾ" },
         { "href": "/?corpus=hebrew-lxx", "label": "Hebrew / LXX timeline" },
         { "href": "/coverage/", "label": "Coverage & scope limits" }
       ]
@@ -136,6 +138,7 @@
       "links": [
         { "href": "/quran/uthmani/", "label": "Uthmanic regional rasm" },
         { "href": "/quran/archetype/", "label": "Shared orthography (niʿmat matrix)" },
+        { "href": "/quran/readings/", "label": "Rasm vs qirāʾāt vs Ṣanʿāʾ" },
         { "href": "/?q=Sanaa", "label": "Ṣanʿāʾ palimpsest card" }
       ],
       "scholarship": [
@@ -184,6 +187,62 @@
       "scholarship": [
         {
           "label": "van Putten 2019 — BSOAS",
+          "url": "https://doi.org/10.1017/S0041977X19000338"
+        }
+      ]
+    },
+    {
+      "id": "quran-rasm-equals-qiraat",
+      "claim": "The ~40 Uthmani regional rasm differences are the same thing as the Seven or Ten qirāʾāt.",
+      "verdict": "unsupported",
+      "why": "Cook/Sidky’s ~35–40 graphic splits concern the four ʿUthmānic exemplar traditions within one written Uthmanic Text Type — consonantal/orthographic stemmatics, not the later canonized reading lines (Nasser; Shah; van Putten). Qirāʾāt specify recitation atop rasm; they are related historically but not a one-to-one map to each regional rasm report. Illustrative Manuscripts publishes rasm tables only — no qirāʾāt census.",
+      "links": [
+        { "href": "/quran/readings/", "label": "Rasm vs qirāʾāt vs Ṣanʿāʾ" },
+        { "href": "/quran/uthmani/", "label": "Regional rasm (~40 examples)" },
+        { "href": "/teach/quran-rasm-qiraat-sanaa/", "label": "Teaching brief" }
+      ],
+      "scholarship": [
+        {
+          "label": "Nasser 2013 — Transmission of the Variant Readings of the Qurʾān",
+          "url": "https://doi.org/10.1163/9789004241794"
+        },
+        {
+          "label": "van Putten 2022 — Quranic Arabic",
+          "url": "https://doi.org/10.1163/9789004506251"
+        }
+      ]
+    },
+    {
+      "id": "sanaa-proves-uthmanic-fiction",
+      "claim": "The Ṣanʿāʾ lower text proves the Uthmanic text is late fiction.",
+      "verdict": "partial",
+      "why": "Sadeghi & Goudarzi (2012) show the palimpsest’s lower layer is a non-Uthmanic companion-era line with real divergences from standard UT rasm — important evidence for early textual diversity. That does not erase the separate manuscript record of UT-type Hijazi copies, regional rasm stemmatics, or shared orthography arguments on this site. “Late fiction” overstates what one palimpsest layer can disprove.",
+      "links": [
+        { "href": "/?corpus=quran&q=sanaa-dam-01-27-1", "label": "Ṣanʿāʾ DAM 01-27.1 card" },
+        { "href": "/quran/readings/#compare", "label": "What Ṣanʿāʾ does and does not support" },
+        { "href": "/quran/uthmani/", "label": "UT regional rasm (separate category)" },
+        { "href": "/use/#uthmanic-stable-650", "label": "Claim: UT stable from ~650 CE (scoped)" }
+      ],
+      "scholarship": [
+        {
+          "label": "Sadeghi & Goudarzi 2012 — Der Islam",
+          "url": "https://doi.org/10.1515/islam-2011-0025"
+        }
+      ]
+    },
+    {
+      "id": "undotted-mss-any-reading-original",
+      "claim": "Undotted early Qurʾān manuscripts mean any reading is equally original.",
+      "verdict": "partial",
+      "why": "Hijazi rasm is often written without full vowel pointing, so the consonantal line alone underdetermines pronunciation — that is why qirāʾāt scholarship exists. But underdetermination is not license to ignore transmission: early UT witnesses still show highly uniform rasm with patterned splits (Cook/Sidky) and shared idiosyncrasies (van Putten 2019). Undotted script invites reading traditions; it does not make every hypothetical reading equally attested.",
+      "links": [
+        { "href": "/quran/readings/", "label": "Rasm vs qirāʾāt guide" },
+        { "href": "/quran/archetype/", "label": "Shared orthography (written copying)" },
+        { "href": "/use/#quran-rasm-equals-qiraat", "label": "Claim: rasm ≠ qirāʾāt" }
+      ],
+      "scholarship": [
+        {
+          "label": "van Putten 2019 — The Grace of God (niʿmat rasm)",
           "url": "https://doi.org/10.1017/S0041977X19000338"
         }
       ]

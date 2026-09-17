@@ -51,6 +51,12 @@ export default function QuranEvidenceMap({
           </span>
           <Link href="/quran/archetype/">Shared orthography</Link>
         </span>
+        <span className={styles.arrow} aria-hidden="true">
+          ·
+        </span>
+        <Link href="/quran/readings/" className={styles.stripAside}>
+          ≠ qirāʾāt / Ṣanʿāʾ
+        </Link>
       </p>
     );
   }
@@ -100,6 +106,9 @@ export default function QuranEvidenceMap({
       </div>
       <p className={styles.note}>
         Three layers stack: catalog → regional splits → shared idiosyncrasies.{" "}
+        <strong>Don&apos;t conflate</strong> this UT rasm stack with qirāʾāt reading
+        traditions or the Ṣanʿāʾ lower text —{" "}
+        <Link href="/quran/readings/">rasm vs qirāʾāt vs Ṣanʿāʾ</Link>.{" "}
         <Link href="/methodology/#quran-evidence-layers">Methods</Link> ·{" "}
         <Link href="/teach/quran-three-evidence-layers/">Teaching brief</Link>
       </p>

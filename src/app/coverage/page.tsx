@@ -441,8 +441,10 @@ export default function CoveragePage() {
           <Link href="/quran/uthmani/">Uthmanic regional rasm</Link>. For shared
           spellings across witnesses (written-archetype case study), see{" "}
           <Link href="/quran/archetype/">shared orthography</Link> — both distinct
-          from our per-card excerpt display and from the Ṣanʿāʾ lower-text companion
-          codex.
+          from our per-card excerpt display, from canonical{" "}
+          <Link href="/quran/readings/">qirāʾāt</Link>, and from the Ṣanʿāʾ
+          lower-text companion codex (
+          <Link href="/quran/readings/">rasm vs qirāʾāt vs Ṣanʿāʾ</Link>).
         </p>
       </section>
 

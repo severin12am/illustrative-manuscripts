@@ -59,6 +59,17 @@
   user-select: none;
 }
 
+.stripAside {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+.stripAside:hover {
+  text-decoration: underline;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

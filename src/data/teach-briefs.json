@@ -98,6 +98,47 @@
       ]
     },
     {
+      "id": "quran-rasm-qiraat-sanaa",
+      "slug": "quran-rasm-qiraat-sanaa",
+      "title": "Rasm ≠ qirāʾāt ≠ Ṣanʿāʾ lower text",
+      "subtitle": "Stop conflating orthography, reading traditions, and the palimpsest",
+      "audience": "Islamic studies · interfaith debate · anyone citing our Qurʾān charts",
+      "learning_goal": "Name three separate categories — Uthmanic rasm (what our tables show), canonical qirāʾāt (reading-tradition scholarship we do not census), and Ṣanʿāʾ DAM 01-27.1 lower text (non-UT companion line) — and use claim cards when debaters merge them.",
+      "steps": [
+        {
+          "text": "Read the plain-English guide and skim the three-column “supports / does not support” matrix.",
+          "links": [{ "href": "/quran/readings/", "label": "Rasm vs qirāʾāt vs Ṣanʿāʾ" }]
+        },
+        {
+          "text": "Open claim cards for the two most common conflations: regional rasm vs Seven/Ten qirāʾāt, and Ṣanʿāʾ lower text vs “UT is fiction.”",
+          "links": [
+            { "href": "/use/#quran-rasm-equals-qiraat", "label": "Claim: ~40 rasm = qirāʾāt" },
+            { "href": "/use/#sanaa-proves-uthmanic-fiction", "label": "Claim: Ṣanʿāʾ disproves UT" }
+          ]
+        },
+        {
+          "text": "Optional third card: undotted early script does not make every reading equally original.",
+          "links": [{ "href": "/use/#undotted-mss-any-reading-original", "label": "Claim: undotted = anything goes" }]
+        },
+        {
+          "text": "Pair with our published rasm layers — regional splits and shared niʿmat orthography — not a qirāʾāt table.",
+          "links": [
+            { "href": "/quran/uthmani/", "label": "Regional Uthmanic rasm" },
+            { "href": "/quran/archetype/", "label": "Shared orthography matrix" }
+          ]
+        },
+        {
+          "text": "Open the Ṣanʿāʾ witness card: upper UT-type layer vs lower companion text (Sadeghi & Goudarzi 2012).",
+          "links": [{ "href": "/?corpus=quran&q=sanaa-dam-01-27-1", "label": "DAM 01-27.1 palimpsest" }]
+        }
+      ],
+      "dont_overclaim": "We do not host qirāʾāt variant lists or a full mushaf collation — cite Nasser, Shah handbook chapters, and van Putten for reading traditions; cite our JSON only for rasm teaching rows.",
+      "related_links": [
+        { "href": "/teach/quran-three-evidence-layers/", "label": "Brief: three evidence layers" },
+        { "href": "/methodology/#quran-evidence-layers", "label": "Methods: Qurʾān stack" }
+      ]
+    },
+    {
       "id": "quran-three-evidence-layers",
       "slug": "quran-three-evidence-layers",
       "title": "Three Qurʾān evidence layers on this site",
@@ -118,9 +159,10 @@
           "links": [{ "href": "/quran/archetype/", "label": "Shared orthography / archetype" }]
         },
         {
-          "text": "Keep Ṣanʿāʾ’s lower text separate: one card, two layers, not UT.",
+          "text": "Keep Ṣanʿāʾ’s lower text separate: one card, two layers, not UT — and keep qirāʾāt separate from rasm.",
           "links": [
             { "href": "/?corpus=quran&q=sanaa", "label": "Ṣanʿāʾ palimpsest" },
+            { "href": "/quran/readings/", "label": "Rasm vs qirāʾāt vs Ṣanʿāʾ" },
             { "href": "/use/#quran-zero-variation", "label": "Claim: not zero variation" }
           ]
         },

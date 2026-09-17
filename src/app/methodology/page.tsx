@@ -125,6 +125,16 @@ export default function MethodologyPage() {
               <Link href="/quran/archetype/">shared orthography</Link>.
             </dd>
           </div>
+          <div className={styles.defItem}>
+            <dt>Not on this stack — qirāʾāt &amp; Ṣanʿāʾ lower text</dt>
+            <dd>
+              Canonical <strong>qirāʾāt</strong> (reading traditions) and the{" "}
+              <strong>Ṣanʿāʾ palimpsest lower text</strong> are not layers 2–3.
+              Debaters often merge them with regional rasm; see{" "}
+              <Link href="/quran/readings/">rasm vs qirāʾāt vs Ṣanʿāʾ</Link> and{" "}
+              <Link href="/teach/quran-rasm-qiraat-sanaa/">teaching brief</Link>.
+            </dd>
+          </div>
         </dl>
       </section>
 

@@ -1,0 +1,215 @@
+.main {
+  min-height: 100vh;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3.5rem;
+}
+
+.hero {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-muted);
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: clamp(1.875rem, 4vw, 2.5rem);
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.lead {
+  color: var(--ink-secondary);
+  line-height: 1.75;
+  font-size: 1rem;
+  max-width: 46rem;
+}
+
+.lead a {
+  color: var(--accent);
+}
+
+.callout {
+  background: var(--paper-warm);
+  border-left: 2px solid var(--accent);
+  padding: 1rem 1.25rem;
+  margin-bottom: 2rem;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--ink-secondary);
+}
+
+.callout a {
+  color: var(--accent);
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  color: var(--ink);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.sectionIntro {
+  color: var(--ink-secondary);
+  line-height: 1.75;
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+  max-width: 46rem;
+}
+
+.defList {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 46rem;
+}
+
+.defItem dt {
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.35rem;
+}
+
+.defItem dd {
+  margin: 0;
+  color: var(--ink-secondary);
+  line-height: 1.7;
+  font-size: 0.9375rem;
+}
+
+.defItem dd a {
+  color: var(--accent);
+}
+
+.scholarshipList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.scholarshipList a {
+  color: var(--accent);
+  font-size: 0.9375rem;
+}
+
+.compareWrap {
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.compareTable {
+  width: 100%;
+  min-width: 42rem;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+
+.compareTable th,
+.compareTable td {
+  border: 1px solid var(--border-light);
+  padding: 0.65rem 0.75rem;
+  vertical-align: top;
+  text-align: left;
+}
+
+.compareTable thead th {
+  background: var(--paper-warm);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.compareTable tbody th {
+  background: #faf9f7;
+  font-weight: 600;
+  width: 7.5rem;
+  color: var(--ink-muted);
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.colRasm {
+  border-top: 3px solid #5a7a8a;
+}
+
+.colQiraat {
+  border-top: 3px solid #6b4a2d;
+}
+
+.colSanaa {
+  border-top: 3px solid #5a3a6b;
+}
+
+.supports {
+  color: var(--ink-secondary);
+}
+
+.supports strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.notSupports {
+  color: var(--ink-muted);
+  font-size: 0.8125rem;
+}
+
+.diagramWrap {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #faf9f7;
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+}
+
+.diagramSvg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.diagramCaption {
+  font-size: 0.8125rem;
+  color: var(--ink-muted);
+  line-height: 1.55;
+  margin-top: 0.75rem;
+  max-width: 40rem;
+}
+
+.metaNote {
+  font-size: 0.8125rem;
+  color: var(--ink-muted);
+  line-height: 1.6;
+  max-width: 46rem;
+}
+
+.footer {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-light);
+  font-size: 0.9375rem;
+  color: var(--ink-secondary);
+}
+
+.footer a {
+  color: var(--accent);
+}
