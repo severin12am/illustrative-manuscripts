@@ -12,16 +12,16 @@ export const INTENTIONAL_LABEL_DISPLAY: Record<
   { short: string; title: string }
 > = {
   error: {
-    short: "Error",
-    title: "Likely scribal error (model-assisted hypothesis)",
+    short: "Error?",
+    title: "Likely scribal error (provisional model-assisted hypothesis)",
   },
   intentional: {
     short: "Intentional?",
-    title: "Possibly intentional change (model-assisted hypothesis)",
+    title: "Possibly intentional change (provisional model-assisted hypothesis)",
   },
   uncertain: {
-    short: "Uncertain",
-    title: "Intentionality unclear (model-assisted hypothesis)",
+    short: "Unclear?",
+    title: "Intentionality unclear (provisional model-assisted hypothesis)",
   },
 };
 

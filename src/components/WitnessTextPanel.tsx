@@ -14,6 +14,7 @@ import {
   intentionalBadgeTitle,
   INTENTIONAL_LABEL_DISPLAY,
 } from "@/lib/intentionalTags";
+import IntentionalTagsProvisionalNotice from "@/components/IntentionalTagsProvisionalNotice";
 
 interface Props {
   text: WitnessText;
@@ -174,7 +175,9 @@ export default function WitnessTextPanel({ text, ga }: Props) {
             ))}
           </ul>
         )}
-        {!hasAnyIntentionalTags() && (
+        {hasAnyIntentionalTags() ? (
+          <IntentionalTagsProvisionalNotice compact />
+        ) : (
           <p className={styles.kindPending}>
             Intentional-vs-error tagging not run yet. On your machine:{" "}
             <code>npm run export-taggable</code> then{" "}

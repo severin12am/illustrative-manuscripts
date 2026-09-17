@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import QuranEvidenceMap from "@/components/QuranEvidenceMap";
 import HebrewLxxEvidenceMap from "@/components/HebrewLxxEvidenceMap";
+import NagHammadiEvidenceMap from "@/components/NagHammadiEvidenceMap";
 import { coverage } from "@/data/coverage";
 import { quranSharedOrthography } from "@/data/quran-shared-orthography";
 import { TIMELINE_START, TIMELINE_END } from "@/data/witnesses";
@@ -178,6 +179,52 @@ export default function MethodologyPage() {
               Pre-Christian papyri (P.Ryl. 458, P.Fouad 266, P.Oxy. 1007, etc.) in
               the seed — separate from Hebrew DSS and from CNTR Greek NT compare. See{" "}
               <Link href="/hebrew-lxx/evidence/#lxx">LXX essay</Link>.
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <section className={styles.section} id="nag-hammadi-evidence">
+        <h2 className={styles.sectionTitle}>Nag Hammadi library (evidence map)</h2>
+        <p className={styles.sectionIntro}>
+          The Nag Hammadi corpus has no mechanical word census comparable to Greek
+          NT. We host <strong>{coverage.nag_hammadi.tractate_witness_count}</strong>{" "}
+          tractate witness cards (seed in{" "}
+          <code>scripts/nag-hammadi-seed.json</code>) with Coptic diplomatic text,
+          English excerpts, and Claremont IIIF embeds — dating the mid–4th c.{" "}
+          <strong>codex copies</strong> on the timeline, not every tractate&apos;s
+          composition date. Discovery at Jabal al-Tarif: December 1945.
+        </p>
+        <NagHammadiEvidenceMap showHeading={false} />
+        <dl className={styles.defList}>
+          <div className={styles.defItem}>
+            <dt>Not the Greek NT stream</dt>
+            <dd>
+              Mostly Gnostic and apocryphal Coptic tractates — not uncatalogued
+              Greek Matthew–Revelation copies in our CNTR slice. See claim card{" "}
+              <Link href="/use/#nag-hammadi-lost-nt-books">
+                Nag Hammadi = lost NT books
+              </Link>{" "}
+              and <Link href="/nag-hammadi/evidence/#not-lost-nt">evidence essay</Link>.
+            </dd>
+          </div>
+          <div className={styles.defItem}>
+            <dt>Pairing with Greek NT</dt>
+            <dd>
+              Use genre and content notes across corpora — e.g. Thomas logia beside
+              P52 — without treating NH excerpts as rows in the{" "}
+              <Link href="/variants/">variant explorer</Link>.{" "}
+              <Link href="/compare/">Compare</Link> remains NT-only.
+            </dd>
+          </div>
+          <div className={styles.defItem}>
+            <dt>Full tractate list</dt>
+            <dd>
+              All seeded tractates with deep links:{" "}
+              <Link href="/nag-hammadi/evidence/#tractates">
+                evidence page § tractates
+              </Link>
+              .
             </dd>
           </div>
         </dl>

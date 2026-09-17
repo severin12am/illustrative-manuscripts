@@ -13,6 +13,7 @@ import {
   VARIANT_KIND_DEFINITIONS,
 } from "@/lib/variantTaxonomy";
 import BookVariantSummary from "@/components/BookVariantSummary";
+import IntentionalTagsProvisionalNotice from "@/components/IntentionalTagsProvisionalNotice";
 import styles from "./variants.module.css";
 
 const PAGE_SIZE = 50;
@@ -98,6 +99,8 @@ export default function VariantsExplorer() {
           challenge at the scale of <em>this dataset</em>; it is not a count of
           every variant in every Greek manuscript.
         </p>
+
+        <IntentionalTagsProvisionalNotice />
 
         <div className={styles.summaryGrid} role="group" aria-label="Totals by kind">
           <button

@@ -2,6 +2,7 @@
 import QuranEvidenceMap from "@/components/QuranEvidenceMap";
 import HebrewLxxEvidenceMap from "@/components/HebrewLxxEvidenceMap";
 import GreekNtEvidenceMap from "@/components/GreekNtEvidenceMap";
+import NagHammadiEvidenceMap from "@/components/NagHammadiEvidenceMap";
 import styles from "./HomeStartHere.module.css";
 
 type Props = {
@@ -35,6 +36,10 @@ export default function HomeStartHere({ showGreekNtMap }: Props) {
         <div className={styles.quranMap}>
           <span className={styles.quranMapLabel}>Hebrew / LXX evidence</span>
           <HebrewLxxEvidenceMap variant="strip" />
+        </div>
+        <div className={styles.quranMap}>
+          <span className={styles.quranMapLabel}>Nag Hammadi evidence</span>
+          <NagHammadiEvidenceMap variant="strip" />
         </div>
       </aside>
       {showGreekNtMap ? <GreekNtEvidenceMap variant="compact" /> : null}
