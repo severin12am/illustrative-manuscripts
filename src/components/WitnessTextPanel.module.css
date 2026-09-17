@@ -183,6 +183,11 @@
   letter-spacing: 0.04em;
   color: var(--ink-muted);
   cursor: help;
+  border: 1px dashed var(--border);
+  padding: 0.05rem 0.25rem;
+  border-radius: 2px;
+  font-style: italic;
+  opacity: 0.85;
 }
 
 .intentionBadge[data-intention="error"] {

@@ -1,0 +1,45 @@
+.banner {
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--ink-secondary);
+  background: var(--surface-raised, var(--bg));
+  border: 1px dashed var(--border);
+  border-left: 3px solid var(--ink-muted);
+  border-radius: 0;
+  padding: 0.65rem 0.85rem;
+  margin: 0 0 1.25rem;
+}
+
+.banner a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.banner a:hover {
+  text-decoration: underline;
+}
+
+.compact {
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--ink-secondary);
+  background: var(--surface-raised, var(--bg));
+  border: 1px dashed var(--border);
+  border-left: 3px solid var(--ink-muted);
+  border-radius: 0;
+  padding: 0.45rem 0.65rem;
+  margin: 0.5rem 0 0.75rem;
+}
+
+.compact a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.compact a:hover {
+  text-decoration: underline;
+}

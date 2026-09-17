@@ -275,6 +275,10 @@
       "learning_goal": "Describe what Nag Hammadi codices are physically and literarily — and refute equating them with the Greek NT manuscript tradition this site collates.",
       "steps": [
         {
+          "text": "Read the evidence map (1945 find, codex dating, vs Greek NT) before debating canon.",
+          "links": [{ "href": "/nag-hammadi/evidence/", "label": "Nag Hammadi evidence map" }]
+        },
+        {
           "text": "Open the Nag Hammadi corpus on the timeline (18 tractate witnesses in our seed).",
           "links": [{ "href": "/?corpus=nag-hammadi", "label": "Nag Hammadi timeline" }]
         },
@@ -296,6 +300,7 @@
       ],
       "dont_overclaim": "Nag Hammadi images and excerpts illustrate non-canonical Coptic Christianity; they do not enumerate how many “versions” of Matthew existed in Greek.",
       "related_links": [
+        { "href": "/nag-hammadi/evidence/", "label": "Nag Hammadi evidence map" },
         { "href": "/coverage/", "label": "Coverage: Nag Hammadi counts" },
         { "href": "/famous/", "label": "Famous passages (canonical NT blocks)" }
       ]

@@ -18,6 +18,8 @@ import {
   INTENTIONAL_LABEL_ORDER,
 } from "@/lib/intentionalTags";
 import GreekNtEvidenceMap from "@/components/GreekNtEvidenceMap";
+import NagHammadiEvidenceMap from "@/components/NagHammadiEvidenceMap";
+import IntentionalTagsProvisionalNotice from "@/components/IntentionalTagsProvisionalNotice";
 import styles from "./coverage.module.css";
 
 export const metadata: Metadata = {
@@ -249,6 +251,7 @@ export default function CoveragePage() {
 
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Greek New Testament ({TIMELINE_START}–{TIMELINE_END} CE)</h2>
+        <IntentionalTagsProvisionalNotice />
         <GreekNtEvidenceMap variant="section" />
         <p className={styles.sliceSummary}>
           <strong>{greek_nt.witness_count}</strong> witnesses ·{" "}
@@ -357,8 +360,13 @@ export default function CoveragePage() {
           </div>
         )}
 
-        <div className={styles.detailBlock} data-experimental>
+        <div
+          className={styles.detailBlock}
+          data-experimental
+          id="intentional-tagging"
+        >
           <h3>Experimental: intentional vs error tagging</h3>
+          <IntentionalTagsProvisionalNotice compact />
           <p className={styles.experimentalNote}>
             <strong>Provisional only.</strong> {tagging?.definition} These labels
             are model-assisted hypotheses — not ECM, NA28, or IGNTP judgments. Do
@@ -489,6 +497,7 @@ export default function CoveragePage() {
 
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Nag Hammadi (~300–400 CE)</h2>
+        <NagHammadiEvidenceMap />
         <div className={styles.statGrid}>
           <div className={styles.statCard}>
             <span className={styles.statValue}>
@@ -508,6 +517,14 @@ export default function CoveragePage() {
           </div>
         </div>
         <p className={styles.note}>{nag_hammadi.collation_note}</p>
+        <p className={styles.note}>
+          For the discovery story, claim discipline, tractate list, and how to pair
+          NH with the Greek NT timeline, see{" "}
+          <Link href="/nag-hammadi/evidence/">Nag Hammadi evidence map</Link>.
+          Open tractates on{" "}
+          <Link href="/?corpus=nag-hammadi">the NH timeline</Link> or{" "}
+          <Link href="/teach/nag-hammadi-vs-canon/">teaching brief</Link>.
+        </p>
       </section>
 
       <aside className={styles.disclaimer}>

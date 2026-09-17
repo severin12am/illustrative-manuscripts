@@ -5,7 +5,8 @@ export type GlobalSearchKind =
   | "claim"
   | "uthmani"
   | "quran_archetype"
-  | "hebrew_lxx_evidence";
+  | "hebrew_lxx_evidence"
+  | "nag_hammadi_evidence";
 
 export interface GlobalSearchItem {
   kind: GlobalSearchKind;
@@ -31,6 +32,7 @@ export const GLOBAL_SEARCH_GROUP_LABEL: Record<GlobalSearchKind, string> = {
   uthmani: "Uthmanic rasm",
   quran_archetype: "Qurʾān archetype matrix",
   hebrew_lxx_evidence: "Hebrew / LXX evidence map",
+  nag_hammadi_evidence: "Nag Hammadi evidence map",
 };
 
 export const GLOBAL_SEARCH_GROUP_ORDER: GlobalSearchKind[] = [
@@ -41,4 +43,5 @@ export const GLOBAL_SEARCH_GROUP_ORDER: GlobalSearchKind[] = [
   "uthmani",
   "quran_archetype",
   "hebrew_lxx_evidence",
+  "nag_hammadi_evidence",
 ];

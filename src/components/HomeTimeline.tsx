@@ -11,6 +11,7 @@ import HomePrimerBanner from "@/components/HomePrimerBanner";
 import HomeStartHere from "@/components/HomeStartHere";
 import QuranEvidenceMap from "@/components/QuranEvidenceMap";
 import HebrewLxxEvidenceMap from "@/components/HebrewLxxEvidenceMap";
+import NagHammadiEvidenceMap from "@/components/NagHammadiEvidenceMap";
 import VariantExamples from "@/components/VariantExamples";
 import {
   witnesses as ntWitnesses,
@@ -324,12 +325,22 @@ export default function HomeTimeline() {
             </>
           )}
           {isNagHammadi && (
-            <p className={styles.completeness}>
-              Hand-curated seed of tractates from multiple Nag Hammadi codices
-              (Codices I, II–VI, XIII in seed). These are non-canonical Coptic texts — not
-              New Testament manuscripts. Discovery at Jabal al-Tarif was in 1945;
-              the codices were copied ca. mid 4th c. CE.
-            </p>
+            <>
+              <NagHammadiEvidenceMap showHeading={false} />
+              <p className={styles.completeness}>
+                Hand-curated seed of tractates from multiple Nag Hammadi codices
+                (Codices I, II–VI, XIII in seed). These are non-canonical Coptic
+                texts — not Greek NT manuscripts. Discovery at Jabal al-Tarif was
+                in December 1945; the codices were copied ca. mid 4th c. CE on our
+                cards. Pair with the frozen Greek NT slice (1–400 CE) for genre
+                contrast, not verse collation.{" "}
+                <Link href="/coverage/">Coverage counts</Link>
+                {" · "}
+                <Link href="/nag-hammadi/evidence/">Evidence map</Link>
+                {" · "}
+                <Link href="/use/#nag-hammadi-lost-nt-books">Claim discipline</Link>.
+              </p>
+            </>
           )}
         </div>
       </header>

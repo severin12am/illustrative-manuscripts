@@ -114,6 +114,7 @@
 .detailBlock[data-experimental] {
   opacity: 0.92;
   border-left-style: dashed;
+  scroll-margin-top: 5rem;
 }
 
 .gurryLinks {

@@ -291,6 +291,66 @@ function hebrewLxxEvidenceEntries() {
   return [page, ...sections];
 }
 
+function nagHammadiEvidenceEntries() {
+  const { nag_hammadi: nh } = readJson("src/data/coverage.json");
+  const page = {
+    kind: "nag_hammadi_evidence",
+    id: "nag-hammadi-evidence-page",
+    label: "Nag Hammadi evidence map",
+    subtitle: "Library · tractates · vs Greek NT",
+    href: "/nag-hammadi/evidence/",
+    haystack: hay(
+      "nag hammadi evidence map",
+      "jabal al-tarif",
+      "1945",
+      "coptic codices",
+      "gnostic",
+      "gospel of thomas",
+      "lost nt books",
+      "not new testament",
+      nh.tractate_witness_count
+    ),
+  };
+  const sections = [
+    {
+      id: "nh-library",
+      label: "What the Nag Hammadi library is",
+      subtitle: "Discovery & codex dating",
+      href: "/nag-hammadi/evidence/#library",
+      haystack: hay("nag hammadi library 1945 codices fourth century", "library find"),
+    },
+    {
+      id: "nh-not-lost-nt",
+      label: "Not lost books of the New Testament",
+      subtitle: "Claim discipline",
+      href: "/nag-hammadi/evidence/#not-lost-nt",
+      haystack: hay("lost books new testament canon gnostic coptic", "not lost nt"),
+    },
+    {
+      id: "nh-vs-greek-nt",
+      label: "Nag Hammadi vs Greek NT timeline",
+      subtitle: "Genre notes, not collation",
+      href: "/nag-hammadi/evidence/#vs-greek-nt",
+      haystack: hay("compare greek nt thomas cntr variant census", "vs greek nt"),
+    },
+    {
+      id: "teach-nag-hammadi",
+      label: "Teaching brief: Nag Hammadi vs canon",
+      subtitle: "Classroom / debate outline",
+      href: "/teach/nag-hammadi-vs-canon/",
+      haystack: hay("teach brief nag hammadi canon thomas", "teaching"),
+    },
+  ].map((s) => ({
+    kind: "nag_hammadi_evidence",
+    id: s.id,
+    label: s.label,
+    subtitle: s.subtitle,
+    href: s.href,
+    haystack: s.haystack,
+  }));
+  return [page, ...sections];
+}
+
 const items = [
   ...ntWitnesses(),
   ...seedWitnesses("scripts/quran-seed.json", "quran", (m) => m.id),
@@ -304,6 +364,7 @@ const items = [
   ...quranArchetypeEntries(),
   quranReadingsEntry(),
   ...hebrewLxxEvidenceEntries(),
+  ...nagHammadiEvidenceEntries(),
 ];
 
 const out = {
@@ -317,6 +378,7 @@ const out = {
     uthmani: items.filter((i) => i.kind === "uthmani").length,
     quran_archetype: items.filter((i) => i.kind === "quran_archetype").length,
     hebrew_lxx_evidence: items.filter((i) => i.kind === "hebrew_lxx_evidence").length,
+    nag_hammadi_evidence: items.filter((i) => i.kind === "nag_hammadi_evidence").length,
     total: items.length,
   },
   items,
@@ -329,5 +391,6 @@ console.log(
     `${out.counts.witness} witnesses, ${out.counts.famous} famous, ` +
     `${out.counts.variant} variants, ${out.counts.claim} claims, ` +
     `${out.counts.uthmani} uthmani, ${out.counts.quran_archetype} quran archetype, ` +
-    `${out.counts.hebrew_lxx_evidence} hebrew lxx evidence)`
+    `${out.counts.hebrew_lxx_evidence} hebrew lxx evidence, ` +
+    `${out.counts.nag_hammadi_evidence} nag hammadi evidence)`
 );

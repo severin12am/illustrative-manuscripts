@@ -1,0 +1,140 @@
+.main {
+  min-height: 100vh;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3.5rem;
+}
+
+.hero {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-muted);
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: clamp(1.875rem, 4vw, 2.5rem);
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.lead {
+  color: var(--ink-secondary);
+  line-height: 1.75;
+  font-size: 1rem;
+  max-width: 46rem;
+}
+
+.lead a {
+  color: var(--accent);
+}
+
+.essay {
+  margin: 2.5rem 0;
+  scroll-margin-top: 5rem;
+}
+
+.essayTitle {
+  font-size: 1.25rem;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.essayBody {
+  color: var(--ink-secondary);
+  line-height: 1.75;
+  font-size: 0.9375rem;
+  max-width: 46rem;
+}
+
+.essayBody p {
+  margin: 0 0 1rem;
+}
+
+.essayBody a {
+  color: var(--accent);
+}
+
+.witnessLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-top: 1rem;
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+}
+
+.witnessLinks a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.witnessLinks a:hover {
+  text-decoration: underline;
+}
+
+.tractateList {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  column-width: 18rem;
+  column-gap: 1.5rem;
+}
+
+.tractateList li {
+  break-inside: avoid;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.tractateList a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.tractateList a:hover {
+  text-decoration: underline;
+}
+
+.tractateSiglum {
+  color: var(--ink-muted);
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+}
+
+.callout {
+  background: var(--paper-warm);
+  border-left: 2px solid var(--accent);
+  padding: 1rem 1.25rem;
+  margin: 2rem 0;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--ink-secondary);
+  max-width: 46rem;
+}
+
+.callout a {
+  color: var(--accent);
+}
+
+.footer {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-light);
+  font-size: 0.875rem;
+  color: var(--ink-muted);
+}
+
+.footer a {
+  color: var(--accent);
+}
