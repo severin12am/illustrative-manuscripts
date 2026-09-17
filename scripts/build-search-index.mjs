@@ -226,6 +226,7 @@ function quranReadingsEntry() {
       "claim discipline"
     ),
   };
+}
 
 function hebrewLxxEvidenceEntries() {
   const { hebrew_lxx: hl } = readJson("src/data/coverage.json");
@@ -288,6 +289,7 @@ function hebrewLxxEvidenceEntries() {
     haystack: s.haystack,
   }));
   return [page, ...sections];
+}
 
 const items = [
   ...ntWitnesses(),
