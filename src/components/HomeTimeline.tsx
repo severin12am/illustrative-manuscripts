@@ -9,6 +9,7 @@ import WitnessCard from "@/components/WitnessCard";
 import StatsStrip from "@/components/StatsStrip";
 import HomePrimerBanner from "@/components/HomePrimerBanner";
 import HomeStartHere from "@/components/HomeStartHere";
+import QuranEvidenceMap from "@/components/QuranEvidenceMap";
 import VariantExamples from "@/components/VariantExamples";
 import {
   witnesses as ntWitnesses,
@@ -302,17 +303,18 @@ export default function HomeTimeline() {
             </p>
           )}
           {isQuran && (
-            <p className={styles.completeness}>
-              Hand-curated seed of well-sourced Hijazi witnesses overlapping 1–100
-              AH. Later Kufic display mushafs (8th–9th c.) are out of scope
-              unless their published range overlaps this window.{" "}
-              <Link href="/quran/uthmani/">Uthmanic regional rasm</Link> explains
-              the ~35–40 orthographic differences between Syria, Medina, Basra, and
-              Kufa (Cook / Sidky).{" "}
-              <Link href="/quran/archetype/">Shared orthography</Link> holds the
-              niʿmat matrix (van Putten 2019) — not a full manuscript collation on
-              every card.
-            </p>
+            <>
+              <QuranEvidenceMap showHeading={false} />
+              <p className={styles.completeness}>
+                Hand-curated seed of well-sourced Hijazi witnesses overlapping 1–100
+                AH. Later Kufic display mushafs (8th–9th c.) are out of scope
+                unless their published range overlaps this window. Layer 2 (
+                <Link href="/quran/uthmani/">regional rasm</Link>) and layer 3 (
+                <Link href="/quran/archetype/">shared orthography</Link>) are
+                published-table teaching layers — not a full collation on every
+                card.
+              </p>
+            </>
           )}
           {isNagHammadi && (
             <p className={styles.completeness}>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { coverage } from "@/data/coverage";
 import { TIMELINE_START, TIMELINE_END } from "@/data/witnesses";
+import QuranEvidenceMap from "@/components/QuranEvidenceMap";
 import StudentPrimer from "@/components/StudentPrimer";
 import VariantExamples from "@/components/VariantExamples";
 import DownloadCensus from "@/components/DownloadCensus";
@@ -417,6 +418,7 @@ export default function CoveragePage() {
 
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Qurʾān (1–100 AH)</h2>
+        <QuranEvidenceMap />
         <div className={styles.statGrid}>
           <div className={styles.statCard}>
             <span className={styles.statValue}>{quran.witness_count}</span>

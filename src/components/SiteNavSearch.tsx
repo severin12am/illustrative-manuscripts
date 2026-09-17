@@ -160,7 +160,7 @@ export default function SiteNavSearch() {
           onKeyDown={onKeyDown}
           placeholder="Search site…"
           className={styles.searchInput}
-          aria-label="Search witnesses, famous passages, variants, claims, and Uthmanic rasm"
+          aria-label="Search witnesses, famous passages, variants, claims, Uthmanic rasm, and Qurʾān archetype matrix"
           aria-expanded={showPanel}
           aria-controls={showPanel ? listId : undefined}
           aria-autocomplete="list"
