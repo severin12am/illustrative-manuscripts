@@ -538,6 +538,8 @@ export default function CoveragePage() {
       </aside>
 
       <footer className={styles.footer}>
+        <Link href="/status/">Site status →</Link>
+        {" · "}
         <Link href="/methodology/">Methods →</Link>
         {" · "}
         <Link href="/quran/uthmani/">Uthmanic regional rasm →</Link>
