@@ -40,6 +40,10 @@ export default function HomeStartHere({ showGreekNtMap, activeCorpus }: Props) {
           <span className={styles.sep} aria-hidden="true">
             ·
           </span>
+          <Link href="/about/">About</Link>
+          <span className={styles.sep} aria-hidden="true">
+            ·
+          </span>
           <Link href="/teach/">Teach</Link>
         </p>
         <div

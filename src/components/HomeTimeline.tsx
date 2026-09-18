@@ -463,6 +463,11 @@ export default function HomeTimeline() {
       </section>
 
       <footer className={styles.footer}>
+        <p className={styles.footerAbout}>
+          <Link href="/about/">About this project</Link>
+          {" · "}
+          <Link href="/status/">Site status</Link>
+        </p>
         <p>
           {isHebrewLxx ? (
             <>
