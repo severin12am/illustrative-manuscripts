@@ -1,6 +1,6 @@
 /**
- * Generated 2026-09-14 from scripts/hebrew-lxx-seed.json
- * Window: 250 BCE–400 CE. 24 witnesses (9 Hebrew DSS + 15 Greek LXX), 16 with Commons leaf images.
+ * Generated 2026-09-18 from scripts/hebrew-lxx-seed.json
+ * Window: 250 BCE–400 CE. 24 witnesses (9 Hebrew DSS + 15 Greek LXX), 18 with Commons leaf images.
  * Regenerate: node scripts/build-hebrew-lxx-data.mjs
  */
 
@@ -978,14 +978,17 @@ export const hebrewLxxWitnesses: Witness[] = [
     "find_year_or_note": "Vatican Library by 1475",
     "current_institution": "Biblioteca Apostolica Vaticana",
     "current_shelfmark": "Vat. gr. 1209",
-    "image_policy": "link_only",
+    "image_policy": "iiif",
+    "image_source": "iiif",
     "hosted_image": null,
+    "iiif_manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.1209/manifest.json",
+    "iiif_image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1209/Vat.gr.1209_0005_pa_0001.jp2/full/800,/0/default.jpg",
     "image_attribution": {
       "institution": "Biblioteca Apostolica Vaticana",
-      "license": "© Vatican Library — IIIF link only",
+      "license": "© Vatican Library — IIIF embed only",
       "attribution_required": true,
       "viewer_url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209",
-      "note": "A Commons PD plate of Hebrews (OT corpus) exists on the NT card; OT leaves viewed via official DigiVatLib."
+      "note": "Leaf shown: DigiVatLib folio 1 (Genesis opening). A separate Commons PD Hebrews plate appears on the Greek NT card for 03."
     },
     "source_page_url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209",
     "library_url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209",
@@ -1024,15 +1027,20 @@ export const hebrewLxxWitnesses: Witness[] = [
     "find_year_or_note": "Tischendorf discovery 1844 (long possessed at Sinai)",
     "current_institution": "British Library, Leipzig, Saint Catherine's Monastery (dispersed)",
     "current_shelfmark": "BL Add. MS 43725 et al.",
-    "image_policy": "link_only",
-    "hosted_image": null,
+    "image_policy": "hosted",
+    "image_source": "commons",
+    "hosted_image": "/witnesses/codex-sinaiticus-lxx-ot.jpg",
     "image_attribution": {
-      "institution": "Codex Sinaiticus Project",
-      "license": "© holding libraries — link only",
-      "attribution_required": true,
-      "viewer_url": "https://codexsinaiticus.org/en/manuscript.aspx"
+      "institution": "Codex Sinaiticus Project / Leipzig portion (historical plate)",
+      "license": "Public domain (US; pre-1931 plate on Commons)",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Codex_sinaticus_(The_S.S._Teacher%27s_Edition-The_Holy_Bible_-_Plate_XXII).jpg",
+      "attribution_required": false,
+      "viewer_url": "https://codexsinaiticus.org/en/manuscript.aspx",
+      "note": "Commons PD plate shows Esther 2:3–8 (Leipzig leaves). Psalm excerpt on the card is display text — verify OT leaves on codexsinaiticus.org."
     },
-    "source_page_url": "https://codexsinaiticus.org/en/manuscript.aspx",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Codex_sinaticus_(The_S.S._Teacher%27s_Edition-The_Holy_Bible_-_Plate_XXII).jpg",
+    "source_page_url": "https://commons.wikimedia.org/wiki/File:Codex_sinaticus_(The_S.S._Teacher%27s_Edition-The_Holy_Bible_-_Plate_XXII).jpg",
     "library_url": "https://codexsinaiticus.org/en/",
     "ntvmr_url": "https://codexsinaiticus.org/en/",
     "docID": 0,
