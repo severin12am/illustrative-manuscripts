@@ -260,6 +260,10 @@
   line-height: 1.6;
 }
 
+.footerAbout {
+  margin-bottom: 0.75rem;
+}
+
 .footer a {
   color: var(--accent);
 }

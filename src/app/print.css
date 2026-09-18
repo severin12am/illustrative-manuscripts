@@ -1,5 +1,6 @@
 /**
  * Classroom handouts: /teach/*, /famous/, /use/
+ * Doc pages: /about/, /status/ (nav hidden; readable article layout)
  * Hide chrome; keep article content readable on paper theme.
  */
 @media print {
@@ -34,6 +35,11 @@
 
   [data-handout="true"] .printHint {
     display: none !important;
+  }
+
+  [data-doc-page="true"] {
+    padding-top: 0 !important;
+    max-width: 100% !important;
   }
 
   a[href]::after {

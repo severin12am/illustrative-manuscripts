@@ -29,7 +29,7 @@ export default function SiteStatusPage() {
   const teachCount = curated_layers?.teach_briefs.count ?? 0;
 
   return (
-    <main className={styles.main}>
+    <main className={styles.main} data-doc-page="true">
       <header className={styles.hero}>
         <p className={styles.eyebrow}>Before you cite or email</p>
         <h1 className={styles.title}>Site status</h1>
@@ -339,6 +339,8 @@ export default function SiteStatusPage() {
 
       <footer className={styles.footer}>
         <Link href="/">← Timeline</Link>
+        {" · "}
+        <Link href="/about/">About</Link>
         {" · "}
         <Link href="/coverage/">Coverage</Link>
         {" · "}

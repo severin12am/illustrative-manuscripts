@@ -40,7 +40,14 @@ const arabic = Noto_Naskh_Arabic({
   variable: "--font-arabic",
 });
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    basePath
+      ? `https://severin12am.github.io${basePath}`
+      : "http://localhost:3000",
+  ),
   title: "Illustrative Manuscripts",
   description:
     "A year-by-year illustrated history of the written Bible — manuscripts, scraps, and witnesses through time.",
