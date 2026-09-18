@@ -230,6 +230,39 @@
       ]
     },
     {
+      "id": "before-you-cite-status",
+      "slug": "before-you-cite-status",
+      "title": "Before you cite: site status and claim discipline",
+      "subtitle": "What this GitHub Pages build can and cannot support",
+      "audience": "Researchers · debaters · syllabus authors",
+      "learning_goal": "Use the Site status hub with Use/claims and Coverage so papers and debates cite our bounded slices — not tradition-scale totals we do not hold.",
+      "steps": [
+        {
+          "text": "Open Site status for computed witness counts, corpus windows, and explicit non-claims (from coverage.json).",
+          "links": [{ "href": "/status/", "label": "Site status" }]
+        },
+        {
+          "text": "Skim claim cards for the argument you are about to make — especially intentional tags (provisional) and Qurʾān rasm tables (illustrative case studies).",
+          "links": [
+            { "href": "/use/#claims", "label": "Use: claim cards" },
+            { "href": "/cite/#not-claiming", "label": "Cite: what we are not claiming" }
+          ]
+        },
+        {
+          "text": "Download open JSON only when you need the census itself; pair citations with CNTR, NTVMR, Corpus Coranicum, or holding libraries for primaries.",
+          "links": [
+            { "href": "/coverage/", "label": "Coverage & downloads" },
+            { "href": "/methodology/", "label": "Methods" }
+          ]
+        }
+      ],
+      "dont_overclaim": "Site status summarizes committed build data — it is not a substitute for critical editions, qirāʾāt reference works, or a complete manuscript census.",
+      "related_links": [
+        { "href": "/teach/", "label": "All teaching briefs" },
+        { "href": "/use/", "label": "Use this site" }
+      ]
+    },
+    {
       "id": "dss-vs-mt",
       "slug": "dss-vs-mt",
       "title": "Dead Sea Scrolls Hebrew vs medieval Masoretic Text",

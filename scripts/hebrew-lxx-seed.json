@@ -1035,14 +1035,16 @@
       "current_shelfmark": "Vat. gr. 1209",
       "library_url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209",
       "image": {
-        "policy": "link_only",
+        "policy": "iiif",
         "viewer_url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209",
+        "iiif_manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.1209/manifest.json",
+        "iiif_image_url": "https://digi.vatlib.it/iiifimage/MSS_Vat.gr.1209/Vat.gr.1209_0005_pa_0001.jp2/full/800,/0/default.jpg",
         "attribution": {
           "institution": "Biblioteca Apostolica Vaticana",
-          "license": "© Vatican Library — IIIF link only",
+          "license": "© Vatican Library — IIIF embed only",
           "attribution_required": true,
           "viewer_url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209",
-          "note": "A Commons PD plate of Hebrews (OT corpus) exists on the NT card; OT leaves viewed via official DigiVatLib."
+          "note": "Leaf shown: DigiVatLib folio 1 (Genesis opening). A separate Commons PD Hebrews plate appears on the Greek NT card for 03."
         }
       },
       "passages": [
@@ -1082,14 +1084,18 @@
       "current_institution": "British Library, Leipzig, Saint Catherine's Monastery (dispersed)",
       "current_shelfmark": "BL Add. MS 43725 et al.",
       "library_url": "https://codexsinaiticus.org/en/",
+      "commons_key": "codex-sinaiticus-lxx-ot",
       "image": {
-        "policy": "link_only",
-        "viewer_url": "https://codexsinaiticus.org/en/manuscript.aspx",
+        "policy": "hosted",
+        "viewer_url": "https://commons.wikimedia.org/wiki/File:Codex_sinaticus_(The_S.S._Teacher%27s_Edition-The_Holy_Bible_-_Plate_XXII).jpg",
         "attribution": {
-          "institution": "Codex Sinaiticus Project",
-          "license": "© holding libraries — link only",
-          "attribution_required": true,
-          "viewer_url": "https://codexsinaiticus.org/en/manuscript.aspx"
+          "institution": "Codex Sinaiticus Project / Leipzig portion (historical plate)",
+          "license": "Public domain (US; pre-1931 plate on Commons)",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Codex_sinaticus_(The_S.S._Teacher%27s_Edition-The_Holy_Bible_-_Plate_XXII).jpg",
+          "attribution_required": false,
+          "viewer_url": "https://codexsinaiticus.org/en/manuscript.aspx",
+          "note": "Commons PD plate shows Esther 2:3–8 (Leipzig leaves). Psalm excerpt on the card is display text — verify OT leaves on codexsinaiticus.org."
         }
       },
       "passages": [

@@ -494,6 +494,8 @@ export default function MethodologyPage() {
       </section>
 
       <footer className={styles.footer}>
+        <Link href="/status/">Site status →</Link>
+        {" · "}
         <Link href="/cite/">Cite &amp; learn →</Link>
         {" · "}
         <Link href="/coverage/">Coverage &amp; scope →</Link>

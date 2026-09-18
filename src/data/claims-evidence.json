@@ -17,6 +17,7 @@
       "title": "Researcher / academic",
       "description": "Download the open census, read methodology, and cite CNTR/INTF for primaries — cite us for the illustrative collation slice only.",
       "links": [
+        { "href": "/status/", "label": "Site status (finish-readiness hub)" },
         { "href": "/coverage/", "label": "Coverage & downloads" },
         { "href": "/methodology/", "label": "Methods (scope & reproducibility)" },
         { "href": "/?corpus=hebrew-lxx", "label": "Hebrew Bible & LXX corpus" },
@@ -255,6 +256,34 @@
       "links": [
         { "href": "/coverage/", "label": "Coverage (intentional tagging limits)" },
         { "href": "/cite/#not-claiming", "label": "Cite & learn — what we are not claiming" }
+      ]
+    },
+    {
+      "id": "intentional-tags-settled-judgments",
+      "claim": "Illustrative Manuscripts intentional/error tags are settled text-critical judgments.",
+      "verdict": "unsupported",
+      "why": "Tags are model-assisted hypotheses on a pilot subset of Greek NT units — useful for classroom exploration, not ECM/IGNTP-style editorial decisions. Failed API calls are skipped; nothing is invented without a model response. Treat tags as provisional.",
+      "links": [
+        { "href": "/status/", "label": "Site status (tagging limits)" },
+        { "href": "/methodology/", "label": "Methods (intentional tagging)" },
+        { "href": "/coverage/", "label": "Coverage" }
+      ]
+    },
+    {
+      "id": "quran-nimat-full-census",
+      "claim": "Our niʿmat allāh matrix is a complete census proving the entire Qurʾān rasm never varied.",
+      "verdict": "unsupported",
+      "why": "The shared-orthography page reproduces van Putten 2019 Table 2 for one published niʿmat/rabbi-ka case study — an illustration of shared written idiosyncrasies, not a generated variant census of all early manuscripts or all verses. Regional rasm splits and Ṣanʿāʾ palimpsest layers still show graphic diversity elsewhere.",
+      "links": [
+        { "href": "/quran/archetype/", "label": "Shared orthography (illustration only)" },
+        { "href": "/quran/uthmani/", "label": "Regional rasm" },
+        { "href": "/status/", "label": "Site status" }
+      ],
+      "scholarship": [
+        {
+          "label": "van Putten 2019 — The Grace of God (niʿmat rasm)",
+          "url": "https://doi.org/10.1017/S0041977X19000338"
+        }
       ]
     },
     {

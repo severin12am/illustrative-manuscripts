@@ -622,6 +622,8 @@ export default function CitePage() {
       </section>
 
       <footer className={styles.footer}>
+        <Link href="/status/">Site status →</Link>
+        {" · "}
         <Link href="/teach/">Teaching briefs →</Link>
         {" · "}
         <Link href="/use/">Use this site →</Link>

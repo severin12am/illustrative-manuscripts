@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T14:13:47.461Z",
+  "generated_at": "2026-09-18T16:46:10.815Z",
   "sources": {
     "witness_texts": "src/data/witness-texts.json",
     "cntr_overflow": "public/cntr-texts/*.json",
@@ -1846,8 +1846,8 @@
     "witness_count": 24,
     "hebrew_dss_count": 9,
     "greek_lxx_count": 15,
-    "leaf_image_count": 16,
-    "leaf_image_fraction": 0.667,
+    "leaf_image_count": 18,
+    "leaf_image_fraction": 0.75,
     "corpus_note": "Hand-curated DSS + LXX papyri/uncials overlapping the Hebrew/LXX timeline. Diplomatic excerpts + WEB English on cards — not BHQ or Göttingen apparatus dumps.",
     "student_note": "Medieval Masoretic Text (MT) codices are centuries later than Qumran Hebrew; Dead Sea Scrolls show earlier Hebrew diversity. The Septuagint (LXX) is a separate early Greek translation stream — compare both to the site's Greek NT slice (1–400 CE), not as a single 'original Bible' line."
   },
@@ -1868,7 +1868,7 @@
       "note": "niʿmat allāh ta vs ta marbūṭa matrix (van Putten 2019 Table 2) — shared idiosyncrasy layer, not regional splits."
     },
     "teach_briefs": {
-      "count": 8,
+      "count": 10,
       "source": "src/data/teach-briefs.json",
       "note": "Hand-curated classroom / debate outlines at /teach/."
     }

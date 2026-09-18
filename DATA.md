@@ -18,7 +18,7 @@ Witnesses are included when a published **paleographic or C14 CE range** overlap
 - `date_start ≤ 400` AND `date_end ≥ -250`
 - **BCE dates** are shown on this corpus timeline only (negative CE years → “250 BCE” labels).
 - **24 witnesses** in `scripts/hebrew-lxx-seed.json` (9 Hebrew DSS + 15 Greek LXX papyri/codices).
-- **16/24** witnesses show a leaf photo (Commons PD/CC plates); IAA/Leon Levy restricted photos are **linked**, not rehosted.
+- **18/24** witnesses show a leaf photo (Commons PD/CC plates + DigiVatLib IIIF for Vaticanus OT); IAA/Leon Levy restricted photos are **linked**, not rehosted.
 - Hebrew diplomatic: display consonants for the shown locus (compare Leon Levy / PD editio princeps plates).
 - Greek LXX diplomatic: uncial excerpts from PD facsimile publications (Grenfell & Hunt, Roberts 1936, etc.).
 - English: **World English Bible** (public domain) — labeled *English of these lines* for the surviving passage.
@@ -48,8 +48,8 @@ Regenerate: `node scripts/build-hebrew-lxx-data.mjs`
 | P.Vindob. G 39777 | Greek LXX | **None** | ONB Vienna — link only |
 | 8HevXII gr | Greek LXX | **Commons** (hosted) | Nahal Ḥever Greek Minor Prophets |
 | Codex Washingtonianus (OT) | Greek LXX | **Commons** (hosted) | Freer OT leaves (GA 032) |
-| Codex Vaticanus (OT) | Greek LXX | **None** | DigiVatLib IIIF link only |
-| Codex Sinaiticus (OT) | Greek LXX | **None** | codexsinaiticus.org link only |
+| Codex Vaticanus (OT) | Greek LXX | **IIIF** | DigiVatLib Vat.gr.1209 fol. 1 (Genesis opening) |
+| Codex Sinaiticus (OT) | Greek LXX | **Commons** (hosted) | PD Teacher’s Edition plate (Esther 2:3–8); codexsinaiticus.org for full OT |
 | P.Amherst 3 (Gen) | Greek LXX | **Commons** (hosted) | Morgan LXX Genesis — not NT P12 |
 | P967 Ezekiel | Greek LXX | **Commons** (hosted) | Chester Beatty Rahlfs 872 |
 | P.Oxy. 3522 | Greek LXX | **Commons** (hosted) | Greek Esther Rahlfs 967 |
