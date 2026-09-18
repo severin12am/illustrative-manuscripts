@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import QuranEvidenceMap from "@/components/QuranEvidenceMap";
 import HebrewLxxEvidenceMap from "@/components/HebrewLxxEvidenceMap";
 import GreekNtEvidenceMap from "@/components/GreekNtEvidenceMap";
