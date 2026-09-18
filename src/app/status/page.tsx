@@ -1,0 +1,349 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import IntentionalTagsProvisionalNotice from "@/components/IntentionalTagsProvisionalNotice";
+import { coverage } from "@/data/coverage";
+import { claimsEvidence } from "@/data/claims-evidence";
+import { TIMELINE_START, TIMELINE_END } from "@/data/witnesses";
+import styles from "./status.module.css";
+
+export const metadata: Metadata = {
+  title: "Site status — Illustrative Manuscripts",
+  description:
+    "Finish-readiness hub: what Illustrative Manuscripts can answer per corpus, honest limits, and computed counts before you cite or debate from this site.",
+};
+
+export default function SiteStatusPage() {
+  const {
+    greek_nt,
+    quran,
+    hebrew_lxx,
+    nag_hammadi,
+    curated_layers,
+    generated_at,
+  } = coverage;
+  const claimCount = claimsEvidence.claims.length;
+  const disagreementTotal = greek_nt.disagreements.total;
+  const famousCount = curated_layers?.famous_passages.count ?? 0;
+  const uthmaniCount = curated_layers?.uthmani_regional_rasm.count ?? 0;
+  const archetypeCount = curated_layers?.quran_shared_orthography?.count ?? 0;
+  const teachCount = curated_layers?.teach_briefs.count ?? 0;
+
+  return (
+    <main className={styles.main}>
+      <header className={styles.hero}>
+        <p className={styles.eyebrow}>Before you cite or email</p>
+        <h1 className={styles.title}>Site status</h1>
+        <p className={styles.lead}>
+          A single honesty checkpoint for researchers, students, and debaters: what
+          this GitHub Pages site <strong>can</strong> support from committed data,
+          what it <strong>does not</strong> claim, and where to start. Pair with{" "}
+          <Link href="/use/">Use &amp; claims</Link>,{" "}
+          <Link href="/methodology/">Methods</Link>, and{" "}
+          <Link href="/coverage/">Coverage</Link> — numbers below are from{" "}
+          <code>src/data/coverage.json</code>, not invented for outreach.
+        </p>
+        <p className={styles.meta}>
+          Coverage last computed:{" "}
+          {new Date(generated_at).toLocaleString("en-GB", {
+            dateStyle: "medium",
+            timeStyle: "short",
+          })}
+        </p>
+      </header>
+
+      <section className={styles.section} aria-labelledby="counts-title">
+        <h2 id="counts-title" className={styles.sectionTitle}>
+          Honest counts (from build data)
+        </h2>
+        <p className={styles.sectionIntro}>
+          Regenerate with <code>npm run coverage</code> after witness changes. These
+          are the same figures shown on Coverage, not rounded for marketing.
+        </p>
+        <div className={styles.statGrid}>
+          <div className={styles.statCard}>
+            <span className={styles.statValue}>{greek_nt.witness_count}</span>
+            <span className={styles.statLabel}>
+              Greek NT witnesses ({TIMELINE_START}–{TIMELINE_END} CE)
+            </span>
+          </div>
+          <div className={styles.statCard}>
+            <span className={styles.statValue}>
+              {disagreementTotal.toLocaleString()}
+            </span>
+            <span className={styles.statLabel}>
+              <Link href="/variants/">Variation units</Link> vs SR GNT
+            </span>
+          </div>
+          <div className={styles.statCard}>
+            <span className={styles.statValue}>{quran.witness_count}</span>
+            <span className={styles.statLabel}>
+              <Link href="/?corpus=quran">Qurʾān</Link> catalog leaves
+            </span>
+          </div>
+          <div className={styles.statCard}>
+            <span className={styles.statValue}>{hebrew_lxx.witness_count}</span>
+            <span className={styles.statLabel}>
+              Hebrew / LXX witnesses ({hebrew_lxx.window_label})
+            </span>
+          </div>
+          <div className={styles.statCard}>
+            <span className={styles.statValue}>
+              {nag_hammadi.tractate_witness_count}
+            </span>
+            <span className={styles.statLabel}>Nag Hammadi tractates</span>
+          </div>
+          <div className={styles.statCard}>
+            <span className={styles.statValue}>{famousCount}</span>
+            <span className={styles.statLabel}>
+              <Link href="/famous/">Famous passages</Link>
+            </span>
+          </div>
+          <div className={styles.statCard}>
+            <span className={styles.statValue}>{uthmaniCount}</span>
+            <span className={styles.statLabel}>
+              <Link href="/quran/uthmani/">Uthmanic rasm</Link> examples
+            </span>
+          </div>
+          <div className={styles.statCard}>
+            <span className={styles.statValue}>{archetypeCount}</span>
+            <span className={styles.statLabel}>
+              <Link href="/quran/archetype/">Shared orthography</Link> rows
+            </span>
+          </div>
+          <div className={styles.statCard}>
+            <span className={styles.statValue}>{claimCount}</span>
+            <span className={styles.statLabel}>
+              <Link href="/use/#claims">Claim cards</Link>
+            </span>
+          </div>
+          <div className={styles.statCard}>
+            <span className={styles.statValue}>{teachCount}</span>
+            <span className={styles.statLabel}>
+              <Link href="/teach/">Teaching briefs</Link>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.section} aria-labelledby="corpora-title">
+        <h2 id="corpora-title" className={styles.sectionTitle}>
+          Per corpus: can answer vs cannot claim
+        </h2>
+
+        <article className={styles.corpusBlock}>
+          <h3 className={styles.corpusTitle}>
+            Greek New Testament ({TIMELINE_START}–{TIMELINE_END} CE)
+          </h3>
+          <div className={styles.twoCol}>
+            <div className={styles.col}>
+              <h4>Can help answer</h4>
+              <ul>
+                <li>
+                  How many word-aligned disagreements vs open SR GNT appear in extant
+                  CNTR letters for our Liste window ({greek_nt.cntr_transcription_count}{" "}
+                  transcriptions; {greek_nt.leaf_image_count} with leaf image).
+                </li>
+                <li>
+                  Kind breakdown (substitution, orthography, omission, etc.) and
+                  per-book filters in the{" "}
+                  <Link href="/variants/">variant explorer</Link>.
+                </li>
+                <li>
+                  Block-level famous passages ({famousCount}) separate from the word
+                  census — witness status checked against CNTR in our slice.
+                </li>
+                <li>
+                  Bounded claim cards ({claimCount}) on tradition-scale debates when
+                  scoped to this dataset.
+                </li>
+              </ul>
+            </div>
+            <div className={styles.col}>
+              <h4>Does not claim</h4>
+              <ul>
+                <li>
+                  A full INTF Liste census or ~5,700+ manuscript tradition count.
+                </li>
+                <li>
+                  Gurry&apos;s ~500,000 extrapolation as our number — see{" "}
+                  <Link href="/coverage/">Coverage</Link>.
+                </li>
+                <li>NA28 / ECM apparatus judgments.</li>
+                <li>
+                  Settled intentional-vs-error labels — see notice below (
+                  {greek_nt.intentional_tagging?.tagged_count?.toLocaleString() ?? 0}{" "}
+                  tagged of{" "}
+                  {greek_nt.intentional_tagging?.taggable_total?.toLocaleString() ??
+                    0}{" "}
+                  taggable units, provisional only).
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p className={styles.note}>
+            Evidence map:{" "}
+            <Link href="/coverage/">Coverage § Greek NT</Link> ·{" "}
+            <Link href="/methodology/#greek-evidence-layers">Methods § layers</Link>
+          </p>
+        </article>
+
+        <article className={styles.corpusBlock}>
+          <h3 className={styles.corpusTitle}>
+            Qurʾān — early leaves, Uthmani rasm, shared orthography
+          </h3>
+          <div className={styles.twoCol}>
+            <div className={styles.col}>
+              <h4>Can help answer</h4>
+              <ul>
+                <li>
+                  Catalog cards for {quran.witness_count} seeded Hijazi-range leaves (
+                  {quran.leaf_image_count} with hosted leaf image).
+                </li>
+                <li>
+                  Illustrative regional <em>rasm</em> rows ({uthmaniCount}) and
+                  van Putten Table 2 niʿmat matrix ({archetypeCount} rows) for
+                  teaching — citable to published scholarship.
+                </li>
+                <li>
+                  Claim discipline on rasm vs qirāʾāt vs Ṣanʿāʾ lower text (
+                  <Link href="/quran/readings/">readings essay</Link>).
+                </li>
+              </ul>
+            </div>
+            <div className={styles.col}>
+              <h4>Does not claim</h4>
+              <ul>
+                <li>{quran.variant_census_note}</li>
+                <li>
+                  “40 Qurans” or a full mushaf collation — layers 2–3 transcribe
+                  published tables, not every leaf in the seed.
+                </li>
+                <li>
+                  The niʿmat matrix as independent re-collation of all sigla — it
+                  mirrors {curated_layers?.quran_shared_orthography?.note ?? "published Table 2"}.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p className={styles.note}>
+            Evidence stack:{" "}
+            <Link href="/methodology/#quran-evidence-layers">Methods § three layers</Link>{" "}
+            · <Link href="/coverage/">Coverage § Qurʾān</Link>
+          </p>
+        </article>
+
+        <article className={styles.corpusBlock}>
+          <h3 className={styles.corpusTitle}>
+            Hebrew Bible &amp; Septuagint ({hebrew_lxx.window_label})
+          </h3>
+          <div className={styles.twoCol}>
+            <div className={styles.col}>
+              <h4>Can help answer</h4>
+              <ul>
+                <li>
+                  Timeline context for {hebrew_lxx.hebrew_dss_count} DSS Hebrew +{" "}
+                  {hebrew_lxx.greek_lxx_count} LXX papyri witnesses (
+                  {hebrew_lxx.leaf_image_count} with leaf image).
+                </li>
+                <li>
+                  Three-tradition teaching map (DSS, MT context, LXX) on the{" "}
+                  <Link href="/hebrew-lxx/evidence/">evidence page</Link>.
+                </li>
+                <li>{hebrew_lxx.student_note}</li>
+              </ul>
+            </div>
+            <div className={styles.col}>
+              <h4>Does not claim</h4>
+              <ul>
+                <li>{hebrew_lxx.corpus_note}</li>
+                <li>
+                  A mechanical word census parallel to Greek NT — no variant explorer
+                  rows for Hebrew/LXX here.
+                </li>
+                <li>
+                  That Qumran Hebrew equals medieval MT or that LXX replaces DSS
+                  evidence.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article className={styles.corpusBlock}>
+          <h3 className={styles.corpusTitle}>Nag Hammadi library</h3>
+          <div className={styles.twoCol}>
+            <div className={styles.col}>
+              <h4>Can help answer</h4>
+              <ul>
+                <li>
+                  Fourth-century Coptic codex cards for{" "}
+                  {nag_hammadi.tractate_witness_count} tractates (
+                  {nag_hammadi.leaf_image_count} with leaf image).
+                </li>
+                <li>
+                  Genre and canon discipline — overlap with Greek sayings traditions
+                  without Thomas↔NT collation.
+                </li>
+                <li>
+                  <Link href="/nag-hammadi/evidence/">Evidence map</Link> and{" "}
+                  <Link href="/teach/nag-hammadi-vs-canon/">teaching brief</Link>.
+                </li>
+              </ul>
+            </div>
+            <div className={styles.col}>
+              <h4>Does not claim</h4>
+              <ul>
+                <li>{nag_hammadi.collation_note}</li>
+                <li>
+                  Lost books of the New Testament canon — NH ≠ uncatalogued Greek NT
+                  copies (see claim cards on{" "}
+                  <Link href="/use/#nag-hammadi-lost-nt-books">Use</Link>).
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <IntentionalTagsProvisionalNotice />
+
+      <section className={styles.section} aria-labelledby="start-title">
+        <h2 id="start-title" className={styles.sectionTitle}>Start with</h2>
+        <div className={styles.linkGrid}>
+          <Link href="/coverage/">Coverage &amp; scope</Link>
+          <Link href="/methodology/">Methods</Link>
+          <Link href="/use/">Use &amp; claims</Link>
+          <Link href="/methodology/#greek-evidence-layers">Greek NT evidence map</Link>
+          <Link href="/methodology/#quran-evidence-layers">Qurʾān evidence layers</Link>
+          <Link href="/hebrew-lxx/evidence/">Hebrew / LXX evidence map</Link>
+          <Link href="/nag-hammadi/evidence/">Nag Hammadi evidence map</Link>
+          <Link href="/teach/">Teaching briefs</Link>
+          <Link href="/cite/">Cite &amp; learn</Link>
+          <Link href="/famous/">Famous passages</Link>
+          <Link href="/variants/">Variant explorer</Link>
+          <Link href="/quran/uthmani/">Uthmanic regional rasm</Link>
+          <Link href="/quran/archetype/">Shared orthography</Link>
+          <Link href="/quran/readings/">Rasm vs qirāʾāt vs Ṣanʿāʾ</Link>
+        </div>
+      </section>
+
+      <aside className={styles.disclaimer}>
+        <h2>Outreach discipline</h2>
+        <p>
+          This page exists so finish-readiness is visible on the site itself — not
+          buried in email drafts. Reuse CNTR, INTF, Corpus Coranicum, and critical
+          editions for primary work; cite Illustrative Manuscripts only for the
+          bounded slices and curated layers described here.
+        </p>
+      </aside>
+
+      <footer className={styles.footer}>
+        <Link href="/">← Timeline</Link>
+        {" · "}
+        <Link href="/coverage/">Coverage</Link>
+        {" · "}
+        <Link href="/use/">Use</Link>
+      </footer>
+    </main>
+  );
+}

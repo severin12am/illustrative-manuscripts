@@ -291,6 +291,30 @@ function hebrewLxxEvidenceEntries() {
   return [page, ...sections];
 }
 
+function siteStatusEntry() {
+  return {
+    kind: "claim",
+    id: "site-status-hub",
+    label: "Site status — finish readiness",
+    subtitle: "What we can answer, honest limits, per-corpus counts",
+    href: "/status/",
+    haystack: hay(
+      "site status",
+      "finish readiness",
+      "coverage honesty",
+      "what we can answer",
+      "cannot claim",
+      "liste",
+      "variant census",
+      "quran uthmani",
+      "nag hammadi",
+      "hebrew lxx",
+      "claim discipline",
+      "before outreach"
+    ),
+  };
+}
+
 function nagHammadiEvidenceEntries() {
   const { nag_hammadi: nh } = readJson("src/data/coverage.json");
   const page = {
@@ -360,6 +384,7 @@ const items = [
   ...variantBookEntries(),
   ...variantFamousDeepLinks(),
   ...claimEntries(),
+  siteStatusEntry(),
   ...uthmaniEntries(),
   ...quranArchetypeEntries(),
   quranReadingsEntry(),
