@@ -53,6 +53,28 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  max-width: 100%;
+}
+
+:where([dir="rtl"], .greek-line, .reading) {
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 body {
