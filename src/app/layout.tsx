@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import {
   Cormorant_Garamond,
   Source_Serif_4,
@@ -41,6 +41,11 @@ const arabic = Noto_Naskh_Arabic({
 });
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(

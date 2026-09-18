@@ -1,5 +1,6 @@
 .main {
   min-height: 100vh;
+  overflow-x: clip;
 }
 
 .hero {
@@ -164,6 +165,24 @@
   font-family: var(--font-ui);
   font-size: 0.875rem;
   min-width: 200px;
+  max-width: 100%;
+}
+
+@media (max-width: 640px) {
+  .search {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .filters {
+    width: 100%;
+  }
+
+  .slider {
+    min-width: 0;
+    width: 100%;
+    max-width: none;
+  }
 }
 
 .search::placeholder {

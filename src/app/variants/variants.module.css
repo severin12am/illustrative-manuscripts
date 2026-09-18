@@ -3,6 +3,7 @@
   max-width: var(--content-wide);
   margin: 0 auto;
   padding: 2.5rem 1.5rem 3.5rem;
+  overflow-x: clip;
 }
 
 .hero {
@@ -156,11 +157,14 @@
 .tableWrap {
   border: none;
   border-top: 1px solid var(--border);
-  overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
 }
 
 .table {
   width: 100%;
+  min-width: 36rem;
   border-collapse: collapse;
   font-size: 0.9rem;
 }

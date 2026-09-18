@@ -52,6 +52,7 @@ export default function Timeline({
 
   return (
     <div className={styles.timeline}>
+      <p className={styles.scrollHint}>Swipe sideways to explore the full timeline axis.</p>
       <div className={styles.header}>
         <span className={styles.rangeLabel}>
           {formatYear(min)} – {formatYear(max)}
