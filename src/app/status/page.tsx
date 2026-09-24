@@ -427,6 +427,12 @@ export default function SiteStatusPage() {
                   The niʿmat matrix as independent re-collation of all sigla — it
                   mirrors {curated_layers?.quran_shared_orthography?.note ?? "published Table 2"}.
                 </li>
+                <li>
+                  Four seeded leaves still lack license-clear hosted images (
+                  marcel-17, mingana-1572b, doha-ms-2007, dar-al-kutub-247-masahif)
+                  — re-checked 2026-09-24; see <Link href="/coverage/">Coverage</Link>{" "}
+                  counts and DATA.md in the repo.
+                </li>
               </ul>
             </div>
           </div>
@@ -468,6 +474,11 @@ export default function SiteStatusPage() {
                 <li>
                   That Qumran Hebrew equals medieval MT or that LXX replaces DSS
                   evidence.
+                </li>
+                <li>
+                  Five witnesses still link-only for leaf photos (4QSamᵃ, 2Q18, Mur
+                  88, Mas1a, P.Vindob. G 39777) — re-checked Commons 2026-09-24;
+                  see repo DATA.md.
                 </li>
               </ul>
             </div>

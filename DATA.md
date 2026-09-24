@@ -18,7 +18,7 @@ Witnesses are included when a published **paleographic or C14 CE range** overlap
 - `date_start ≤ 400` AND `date_end ≥ -250`
 - **BCE dates** are shown on this corpus timeline only (negative CE years → “250 BCE” labels).
 - **24 witnesses** in `scripts/hebrew-lxx-seed.json` (9 Hebrew DSS + 15 Greek LXX papyri/codices).
-- **18/24** witnesses show a leaf photo (Commons PD/CC plates + DigiVatLib IIIF for Vaticanus OT); IAA/Leon Levy restricted photos are **linked**, not rehosted.
+- **19/24** witnesses show a leaf photo (Commons PD/CC plates + DigiVatLib IIIF for Vaticanus OT); IAA/Leon Levy restricted photos are **linked**, not rehosted.
 - Hebrew diplomatic: display consonants for the shown locus (compare Leon Levy / PD editio princeps plates).
 - Greek LXX diplomatic: uncial excerpts from PD facsimile publications (Grenfell & Hunt, Roberts 1936, etc.).
 - English: **World English Bible** (public domain) — labeled *English of these lines* for the surviving passage.
@@ -32,20 +32,20 @@ Regenerate: `node scripts/build-hebrew-lxx-data.mjs`
 |---------|-----------|--------------|-------|
 | 1QIsaᵃ | Hebrew DSS | **Commons** (hosted) | Google Art Project / Israel Museum plate |
 | 11QPsᵃ | Hebrew DSS | **Commons** (hosted) | LOC/IAA Psalms Scroll (PDMC) |
-| 4QSamᵃ | Hebrew DSS | **None** | Leon Levy DSS Digital Library link only |
-| 2Q18 | Hebrew DSS | **None** | Leon Levy link only |
+| 4QSamᵃ | Hebrew DSS | **None** | Leon Levy DSS Digital Library link only (re-checked Commons 2026-09-24) |
+| 2Q18 | Hebrew DSS | **None** | Leon Levy link only (re-checked Commons 2026-09-24) |
 | Nash Papyrus | Hebrew DSS | **Commons** (hosted) | Cambridge Decalogue plate |
 | 4Q175 | Hebrew DSS | **Commons** (hosted) | Testimonia catena |
 | 4QGen-Exa | Hebrew DSS | **Commons** (hosted) | Genesis 1 exhibition plate |
-| Mur 88 | Hebrew DSS | **None** | Leon Levy link only |
-| Mas1a | Hebrew DSS | **None** | Leon Levy link only |
+| Mur 88 | Hebrew DSS | **None** | Leon Levy link only (re-checked Commons 2026-09-24) |
+| Mas1a | Hebrew DSS | **None** | Leon Levy link only (re-checked Commons 2026-09-24) |
 | P.Ryl. 458 | Greek LXX | **Commons** (hosted) | Rahlfs 957; Roberts 1936 plate |
 | P.Fouad 266 | Greek LXX | **Commons** (hosted) | Rahlfs 847–848; tetragrammaton plate |
 | P.Oxy. 656 | Greek LXX | **Commons** (hosted) | Rahlfs 905; Grenfell & Hunt 1904 plate |
 | P.Oxy. 1007 | Greek LXX | **Commons** (hosted) | Rahlfs 907; Hunt 1910 plate |
 | CBL BP IV–V | Greek LXX | **Commons** (hosted) | Rahlfs 961–962 Genesis |
-| CBL BP VI | Greek LXX | **None** | Chester Beatty / Michigan — link only |
-| P.Vindob. G 39777 | Greek LXX | **None** | ONB Vienna — link only |
+| CBL BP VI | Greek LXX | **Commons** (hosted) | Rahlfs 963 — Univ. of Michigan P.Mich.inv. 5554 Deuteronomy plate (PDMC on Commons; added 2026-09-24) |
+| P.Vindob. G 39777 | Greek LXX | **None** | ONB Vienna — link only (re-checked Commons 2026-09-24) |
 | 8HevXII gr | Greek LXX | **Commons** (hosted) | Nahal Ḥever Greek Minor Prophets |
 | Codex Washingtonianus (OT) | Greek LXX | **Commons** (hosted) | Freer OT leaves (GA 032) |
 | Codex Vaticanus (OT) | Greek LXX | **IIIF** | DigiVatLib Vat.gr.1209 fol. 1 (Genesis opening) |
@@ -55,6 +55,8 @@ Regenerate: `node scripts/build-hebrew-lxx-data.mjs`
 | P.Oxy. 3522 | Greek LXX | **Commons** (hosted) | Greek Esther Rahlfs 967 |
 
 Commons files live in `public/witnesses/` with `.attribution.json` sidecars. Run `npm run hebrew-lxx-images` to fetch.
+
+**2026-09-24:** Added **CBL BP VI** from Commons (`File:P. Chester Beatty VI fragments, recto.jpg`, PDMC). Remaining link-only gaps: **4QSamᵃ, 2Q18, Mur 88, Mas1a, P.Vindob. G 39777** — no new PD/CC plates verified on Commons this pass.
 
 ## Qurʾān window: 1–100 AH
 
