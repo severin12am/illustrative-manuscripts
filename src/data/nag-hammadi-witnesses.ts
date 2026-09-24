@@ -1,6 +1,6 @@
 /**
- * Generated 2026-09-14 from scripts/nag-hammadi-seed.json
- * Window: 300–400 CE (codex paleography). 18 witnesses, 18 with IIIF leaf images.
+ * Generated 2026-09-24 from scripts/nag-hammadi-seed.json
+ * Window: 300–400 CE (codex paleography). 18 witnesses, 18 with leaf images (5 Commons hosted, 13 Claremont IIIF only).
  * Regenerate: node scripts/build-nag-hammadi-data.mjs
  */
 
@@ -36,17 +36,21 @@ export const nagHammadiWitnesses: Witness[] = [
     "tractate": "Gospel of Thomas",
     "nhc_siglum": "CG II,2",
     "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
-    "image_policy": "iiif",
-    "image_source": "iiif",
-    "hosted_image": null,
+    "image_policy": "hosted",
+    "image_source": "commons",
+    "hosted_image": "/witnesses/nhc-ii-gospel-thomas.jpg",
     "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/2859/manifest.json",
     "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:2859/full/800,/0/default.jpg",
     "image_attribution": {
-      "institution": "Claremont Colleges Digital Library / Nag Hammadi Archive",
-      "license": "© institution — IIIF embed only",
-      "attribution_required": true,
-      "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2859",
-      "note": "Physical rights retained by holding institution. Do not rehost scans."
+      "ga": "nhc-ii-gospel-thomas",
+      "file": "nhc-ii-gospel-thomas.jpg",
+      "commons_title": "File:Gospel of Thomas - Nag Hammadi II-32.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Gospel_of_Thomas_-_Nag_Hammadi_II-32.jpg",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "Unknown authorUnknown author (attributed to Thomas)",
+      "credit": "Nag Hammadi Codex II, https://web.archive.org/web/20120414184408/http://www.metalog.org/files/th_scan/01.jpg",
+      "attribution_required": true
     },
     "source_page_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2859",
     "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2859",
@@ -74,7 +78,8 @@ export const nagHammadiWitnesses: Witness[] = [
       }
     ],
     "license_note": "Non-canonical Coptic Gnostic Christian texts. Images © Claremont/Coptic Museum unless Commons. Coptic Thomas diplomatic via Coptic Scriptorium (CC-BY 4.0) where shown.",
-    "canonical_diff_note": "Sayings collection (114 logia) in Coptic, not a narrative Gospel; some parallels to Synoptic sayings but many unique teachings and no birth, passion, or resurrection account."
+    "canonical_diff_note": "Sayings collection (114 logia) in Coptic, not a narrative Gospel; some parallels to Synoptic sayings but many unique teachings and no birth, passion, or resurrection account.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Gospel_of_Thomas_-_Nag_Hammadi_II-32.jpg"
   },
   {
     "id": "nhc-ii-gospel-philip",
@@ -102,16 +107,21 @@ export const nagHammadiWitnesses: Witness[] = [
     "tractate": "Gospel of Philip",
     "nhc_siglum": "CG II,3",
     "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
-    "image_policy": "iiif",
-    "image_source": "iiif",
-    "hosted_image": null,
+    "image_policy": "hosted",
+    "image_source": "commons",
+    "hosted_image": "/witnesses/nhc-ii-gospel-philip.png",
     "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/2842/manifest.json",
     "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:2842/full/800,/0/default.jpg",
     "image_attribution": {
-      "institution": "Claremont Colleges Digital Library",
-      "license": "© institution — IIIF embed only",
-      "attribution_required": true,
-      "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2842"
+      "ga": "nhc-ii-gospel-philip",
+      "file": "nhc-ii-gospel-philip.png",
+      "commons_title": "File:Evangelio de Felipe · Codex II, 3 · Biblioteca Copta de Nag Hammadi.png",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Evangelio_de_Felipe_%C2%B7_Codex_II,_3_%C2%B7_Biblioteca_Copta_de_Nag_Hammadi.png",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "Unknown authorUnknown author",
+      "credit": "Manuscritos en el tiempo",
+      "attribution_required": true
     },
     "source_page_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2842",
     "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2842",
@@ -127,7 +137,8 @@ export const nagHammadiWitnesses: Witness[] = [
       }
     ],
     "license_note": "Non-canonical Coptic Gnostic Christian texts. Images © Claremont/Coptic Museum unless Commons. Coptic Thomas diplomatic via Coptic Scriptorium (CC-BY 4.0) where shown.",
-    "canonical_diff_note": "Valentinian anthology of sayings and ritual notes — not a biography like Matthew–John and absent from every major NT canon list."
+    "canonical_diff_note": "Valentinian anthology of sayings and ritual notes — not a biography like Matthew–John and absent from every major NT canon list.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Evangelio_de_Felipe_%C2%B7_Codex_II,_3_%C2%B7_Biblioteca_Copta_de_Nag_Hammadi.png"
   },
   {
     "id": "nhc-ii-hypostasis-archons",
@@ -415,14 +426,20 @@ export const nagHammadiWitnesses: Witness[] = [
     "tractate": "Gospel of Truth",
     "nhc_siglum": "CG I,3",
     "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
-    "image_policy": "iiif",
-    "image_source": "iiif",
-    "hosted_image": null,
+    "image_policy": "hosted",
+    "image_source": "commons",
+    "hosted_image": "/witnesses/nhc-i-gospel-truth.png",
     "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/2723/manifest.json",
     "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:2723/full/800,/0/default.jpg",
     "image_attribution": {
-      "institution": "Claremont Colleges Digital Library",
-      "license": "© institution — IIIF embed only",
+      "ga": "nhc-i-gospel-truth",
+      "file": "nhc-i-gospel-truth.png",
+      "commons_title": "File:· Papiro 17 del Codex I o Code Jung, conteniendo una parte del Evangelio de la Verdad (NHC I,3 ) ·.png",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:%C2%B7_Papiro_17_del_Codex_I_o_Code_Jung,_conteniendo_una_parte_del_Evangelio_de_la_Verdad_(NHC_I,3_)_%C2%B7.png",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "Unknown authorUnknown author",
+      "credit": "Manuscritos en el tiempo",
       "attribution_required": true
     },
     "source_page_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2723",
@@ -439,7 +456,8 @@ export const nagHammadiWitnesses: Witness[] = [
       }
     ],
     "license_note": "Non-canonical Coptic Gnostic Christian texts. Images © Claremont/Coptic Museum unless Commons. Coptic Thomas diplomatic via Coptic Scriptorium (CC-BY 4.0) where shown.",
-    "canonical_diff_note": "Valentinian homily on truth and error — not one of the four canonical Gospels and not a Pauline letter."
+    "canonical_diff_note": "Valentinian homily on truth and error — not one of the four canonical Gospels and not a Pauline letter.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:%C2%B7_Papiro_17_del_Codex_I_o_Code_Jung,_conteniendo_una_parte_del_Evangelio_de_la_Verdad_(NHC_I,3_)_%C2%B7.png"
   },
   {
     "id": "nhc-i-apocryphon-james",
@@ -730,16 +748,21 @@ export const nagHammadiWitnesses: Witness[] = [
     "tractate": "Apocalypse of Paul",
     "nhc_siglum": "CG V,2",
     "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
-    "image_policy": "iiif",
-    "image_source": "iiif",
-    "hosted_image": null,
+    "image_policy": "hosted",
+    "image_source": "commons",
+    "hosted_image": "/witnesses/nhc-v-apocalypse-paul.png",
     "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/3178/manifest.json",
     "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:3178/full/800,/0/default.jpg",
     "image_attribution": {
-      "institution": "Claremont Colleges Digital Library",
-      "license": "© institution — IIIF embed only",
-      "attribution_required": true,
-      "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/3178"
+      "ga": "nhc-v-apocalypse-paul",
+      "file": "nhc-v-apocalypse-paul.png",
+      "commons_title": "File:Nag Hammadi Codex V 17.png",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Nag_Hammadi_Codex_V_17.png",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "Manuscript: Unknown.\n\nPhotographer: p. xv of the work mysteriously attributes the photograph to \"from the series made for this edition under the auspices of the Centre for Documentation and supplied to UNESCO in 1963.\"  So an unknown worker on the Nag Hammadi project pre-1963, I can only presume.",
+      "credit": "https://archive.org/details/facsimileedition0005unse/page/24/mode/2up?view=theater\n\nRobinson, James M., ed. (1975). The Facsimile Edition of the Nag Hammadi Codices: Codex V. Leiden: Brill. p. 25, p. [17] of Codex V.",
+      "attribution_required": true
     },
     "source_page_url": "https://ccdl.claremont.edu/digital/collection/nha/id/3178",
     "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/3178",
@@ -755,7 +778,8 @@ export const nagHammadiWitnesses: Witness[] = [
       }
     ],
     "license_note": "Non-canonical Coptic Gnostic Christian texts. Images © Claremont/Coptic Museum unless Commons. Coptic Thomas diplomatic via Coptic Scriptorium (CC-BY 4.0) where shown.",
-    "canonical_diff_note": "Apocalyptic travelogue attributed to Paul, unlike the canonical Pauline epistles; parallels other non-canonical Apocalypse of Paul traditions, not Romans–Philemon."
+    "canonical_diff_note": "Apocalyptic travelogue attributed to Paul, unlike the canonical Pauline epistles; parallels other non-canonical Apocalypse of Paul traditions, not Romans–Philemon.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Nag_Hammadi_Codex_V_17.png"
   },
   {
     "id": "nhc-vi-acts-peter-twelve",
@@ -836,16 +860,21 @@ export const nagHammadiWitnesses: Witness[] = [
     "tractate": "Thunder, Perfect Mind",
     "nhc_siglum": "CG VI,2",
     "claremont_url": "https://ccdl.claremont.edu/digital/collection/nha",
-    "image_policy": "iiif",
-    "image_source": "iiif",
-    "hosted_image": null,
+    "image_policy": "hosted",
+    "image_source": "commons",
+    "hosted_image": "/witnesses/nhc-vi-thunder-perfect-mind.jpg",
     "iiif_manifest": "https://ccdl.claremont.edu/iiif/info/nha/2502/manifest.json",
     "iiif_image_url": "https://cdm15831.contentdm.oclc.org/iiif/2/nha:2502/full/800,/0/default.jpg",
     "image_attribution": {
-      "institution": "Claremont Colleges Digital Library",
-      "license": "© institution — IIIF embed only",
-      "attribution_required": true,
-      "viewer_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2502"
+      "ga": "nhc-vi-thunder-perfect-mind",
+      "file": "nhc-vi-thunder-perfect-mind.jpg",
+      "commons_title": "File:The Thunder, Perfect Mind.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:The_Thunder,_Perfect_Mind.jpg",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "Unknown authorUnknown author",
+      "credit": "https://ccdl.claremont.edu/digital/collection/nha/id/2502/rec/39",
+      "attribution_required": true
     },
     "source_page_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2502",
     "library_url": "https://ccdl.claremont.edu/digital/collection/nha/id/2502",
@@ -861,7 +890,8 @@ export const nagHammadiWitnesses: Witness[] = [
       }
     ],
     "license_note": "Non-canonical Coptic Gnostic Christian texts. Images © Claremont/Coptic Museum unless Commons. Coptic Thomas diplomatic via Coptic Scriptorium (CC-BY 4.0) where shown.",
-    "canonical_diff_note": "Poetic self-revelation of a goddess-like voice; no parallel in the NT canon’s genres (Gospel, epistle, apocalypse of John)."
+    "canonical_diff_note": "Poetic self-revelation of a goddess-like voice; no parallel in the NT canon’s genres (Gospel, epistle, apocalypse of John).",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:The_Thunder,_Perfect_Mind.jpg"
   },
   {
     "id": "nhc-vi-authoritative-teaching",

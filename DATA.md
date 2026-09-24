@@ -133,33 +133,33 @@ Witnesses are included when a published **paleographic CE range** for the physic
 - Cards date the **codex witnesses** (mid 4th c. CE), not speculative composition dates of individual tractates.
 - **Discovery** at Jabal al-Tarif was **December 1945** — that is not a writing date.
 - **18 tractate witnesses** in `scripts/nag-hammadi-seed.json` (seed, not all 52 Nag Hammadi texts).
-- **18/18** show a leaf photo via **Claremont IIIF embed** (no rehosted Brill/Claremont JPGs).
+- **18/18** show a leaf photo (**5 Commons PD hosted** + **13 Claremont IIIF embed**; re-checked Commons 2026-09-24).
 - Coptic diplomatic (Gospel of Thomas logia 1–3): [Coptic Scriptorium](https://data.copticscriptorium.org/texts/thomasgospel/gospel-of-thomas/) (CC-BY 4.0).
 - English: short **display excerpts** of the lines shown — not Robinson/Lambdin/Brill critical editions.
 - **No variant collation** against modern Thomas critical text in v1 (different corpus from Greek NT SR GNT workflow).
 
-Regenerate: `node scripts/build-nag-hammadi-data.mjs`
+Regenerate: `npm run nag-hammadi-images && npm run nag-hammadi`
 
 ### Nag Hammadi image coverage (18 witnesses)
 
 | Witness | Tractate | Image source | Notes |
 |---------|----------|--------------|-------|
-| nhc-ii-gospel-thomas | Gospel of Thomas | **IIIF** | Codex II p. 32 logion 1 (`nha:2859`) |
-| nhc-ii-gospel-philip | Gospel of Philip | **IIIF** | Codex II p. 51 (`nha:2842`) |
-| nhc-ii-hypostasis-archons | Hypostasis of the Archons | **IIIF** | Codex II p. 86 (`nha:2856`) |
+| nhc-ii-gospel-thomas | Gospel of Thomas | **Commons** (hosted) | Codex II p. 32 logion 1 — PD plate; Claremont `nha:2859` also linked |
+| nhc-ii-gospel-philip | Gospel of Philip | **Commons** (hosted) | NHC II,3 PD plate; Claremont p. 51 (`nha:2842`) IIIF |
+| nhc-ii-hypostasis-archons | Hypostasis of the Archons | **IIIF** | Codex II p. 86 (`nha:2856`) — no verified Commons leaf (reject Marcion screenshot) |
 | nhc-ii-origin-world | On the Origin of the World | **IIIF** | Codex II p. 97 (`nha:2911`) |
 | nhc-ii-exegesis-soul | Exegesis on the Soul | **IIIF** | Codex II p. 127 (`nha:2901`) |
 | nhc-ii-thomas-contender | Book of Thomas the Contender | **IIIF** | Codex II p. 138 (`nha:2862`) |
 | nhc-ii-apocryphon-john | Apocryphon of John (short) | **IIIF** | Codex II p. 2 (`nha:2796`) |
-| nhc-i-gospel-truth | Gospel of Truth | **IIIF** | Codex I p. 33 (`nha:2723`) |
+| nhc-i-gospel-truth | Gospel of Truth | **Commons** (hosted) | Codex I p. 17 PD plate; Claremont p. 33 (`nha:2723`) IIIF |
 | nhc-i-apocryphon-james | Apocryphon of James | **IIIF** | Codex I p. 19 (`nha:2761`) |
 | nhc-iii-apocryphon-john | Apocryphon of John (long) | **IIIF** | Codex III p. 10 (`nha:2858`) |
 | nhc-iv-apocryphon-john-long | Apocryphon of John (long, Codex IV) | **IIIF** | Codex IV p. 1 (`nha:3077`) |
 | nhc-iv-gospel-egyptians | Gospel of the Egyptians | **IIIF** | Codex IV p. 52 (`nha:3070`) |
 | nhc-v-eugnostos | Eugnostos the Blessed | **IIIF** | Codex V p. 2 (`nha:3045`) |
-| nhc-v-apocalypse-paul | Apocalypse of Paul | **IIIF** | Codex V p. 37 (`nha:3178`) |
+| nhc-v-apocalypse-paul | Apocalypse of Paul | **Commons** (hosted) | Codex V p. 17 opening PD plate; Claremont p. 37 (`nha:3178`) IIIF |
 | nhc-vi-acts-peter-twelve | Acts of Peter and the Twelve | **IIIF** | Codex VI p. 1 (`nha:2674`) |
-| nhc-vi-thunder-perfect-mind | Thunder, Perfect Mind | **IIIF** | Codex VI p. 13 (`nha:2502`) |
+| nhc-vi-thunder-perfect-mind | Thunder, Perfect Mind | **Commons** (hosted) | PD Coptic leaf plate; Claremont p. 13 (`nha:2502`) IIIF |
 | nhc-vi-authoritative-teaching | Authoritative Teaching | **IIIF** | Codex VI p. 28 (`nha:2645`) |
 | nhc-xiii-trimorphic-protennoia | Trimorphic Protennoia | **IIIF** | Codex XIII p. 49 (`nha:2720`) |
 
@@ -173,7 +173,7 @@ Claremont rights: "Physical rights are retained by the institution. Copyright is
 - [ ] PD or CC English aligned line-by-line to diplomatic Coptic for all tractates
 - [ ] Remaining codices (VII–XII) and ~34 tractates not yet in seed
 - [ ] Variant notes vs open critical base (if one becomes available under compatible license)
-- [ ] Commons-hosted color photos where PD scans exist (Thomas page 32 Coptic Museum plate)
+- [x] Commons-hosted color photos where PD scans exist (5 tractates — see table; re-checked 2026-09-24)
 
 ## Greek NT window: 1–400 CE
 

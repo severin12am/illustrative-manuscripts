@@ -12,11 +12,13 @@
       "Layton, Nag Hammadi Codex II, 2–7 (Brill 1989) — metadata only",
       "Robinson, The Nag Hammadi Library in English (metadata only)"
     ],
-    "generated_by": "Hand-curated seed — not all 52 tractates; expand against open image/text licenses"
+    "generated_by": "Hand-curated seed — not all 52 tractates; expand against open image/text licenses",
+    "image_gap_note": "2026-09-24: 5/18 tractates now have Commons PD hosted plates (Thomas II-32, Philip II,3, Gospel of Truth Codex I p.17, Apocalypse of Paul Codex V p.17, Thunder Perfect Mind). Remaining 13 rely on Claremont IIIF embed only — no verified Commons leaf for Hypostasis of the Archons (reject Marcion screenshot), Origin of the World, Exegesis on the Soul, Thomas Contender, Apocryphon of John (×3 codices), Apocryphon of James, Gospel of the Egyptians, Eugnostos, Acts of Peter and the Twelve, Authoritative Teaching, Trimorphic Protennoia. Do not rehost Brill/Coptic Museum © scans."
   },
   "manuscripts": [
     {
       "id": "nhc-ii-gospel-thomas",
+      "commons_key": "nhc-ii-gospel-thomas",
       "catalog_id": "NHC II,2",
       "traditional_name": "Gospel of Thomas (Nag Hammadi Codex II)",
       "tractate": "Gospel of Thomas",
@@ -109,6 +111,7 @@
     },
     {
       "id": "nhc-ii-gospel-philip",
+      "commons_key": "nhc-ii-gospel-philip",
       "catalog_id": "NHC II,3",
       "traditional_name": "Gospel of Philip (Nag Hammadi Codex II)",
       "tractate": "Gospel of Philip",
@@ -413,6 +416,7 @@
     },
     {
       "id": "nhc-i-gospel-truth",
+      "commons_key": "nhc-i-gospel-truth",
       "catalog_id": "NHC I,3",
       "traditional_name": "Gospel of Truth (Jung Codex I)",
       "tractate": "Gospel of Truth",
@@ -716,6 +720,7 @@
     },
     {
       "id": "nhc-v-apocalypse-paul",
+      "commons_key": "nhc-v-apocalypse-paul",
       "catalog_id": "NHC V,2",
       "traditional_name": "Apocalypse of Paul (Nag Hammadi Codex V)",
       "tractate": "Apocalypse of Paul",
@@ -818,6 +823,7 @@
     },
     {
       "id": "nhc-vi-thunder-perfect-mind",
+      "commons_key": "nhc-vi-thunder-perfect-mind",
       "catalog_id": "NHC VI,2",
       "traditional_name": "Thunder, Perfect Mind (Nag Hammadi Codex VI)",
       "tractate": "Thunder, Perfect Mind",

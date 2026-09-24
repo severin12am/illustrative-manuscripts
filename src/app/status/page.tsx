@@ -494,7 +494,9 @@ export default function SiteStatusPage() {
                 <li>
                   Fourth-century Coptic codex cards for{" "}
                   {nag_hammadi.tractate_witness_count} tractates (
-                  {nag_hammadi.leaf_image_count} with leaf image).
+                  {nag_hammadi.leaf_image_count} with leaf image:{" "}
+                  {nag_hammadi.hosted_leaf_image_count ?? 0} Commons hosted,{" "}
+                  {nag_hammadi.iiif_leaf_image_count ?? 0} Claremont IIIF only).
                 </li>
                 <li>
                   Genre and canon discipline — overlap with Greek sayings traditions
@@ -514,6 +516,11 @@ export default function SiteStatusPage() {
                   Lost books of the New Testament canon — NH ≠ uncatalogued Greek NT
                   copies (see claim cards on{" "}
                   <Link href="/use/#nag-hammadi-lost-nt-books">Use</Link>).
+                </li>
+                <li>
+                  Thirteen tractates still Claremont IIIF only — no verified Commons
+                  PD leaf for the remaining seed sigla (re-checked 2026-09-24; see
+                  repo DATA.md).
                 </li>
               </ul>
             </div>

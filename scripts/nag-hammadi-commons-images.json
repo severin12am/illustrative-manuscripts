@@ -1,0 +1,28 @@
+{
+  "_comment": "Verified Wikimedia Commons PD manuscript plates only. Run: npm run nag-hammadi-images",
+  "nhc-ii-gospel-thomas": {
+    "file": "nhc-ii-gospel-thomas.jpg",
+    "commons_title": "File:Gospel of Thomas - Nag Hammadi II-32.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Gospel_of_Thomas_-_Nag_Hammadi_II-32.jpg"
+  },
+  "nhc-ii-gospel-philip": {
+    "file": "nhc-ii-gospel-philip.png",
+    "commons_title": "File:Evangelio de Felipe · Codex II, 3 · Biblioteca Copta de Nag Hammadi.png",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Evangelio_de_Felipe_%C2%B7_Codex_II,_3_%C2%B7_Biblioteca_Copta_de_Nag_Hammadi.png"
+  },
+  "nhc-i-gospel-truth": {
+    "file": "nhc-i-gospel-truth.png",
+    "commons_title": "File:· Papiro 17 del Codex I o Code Jung, conteniendo una parte del Evangelio de la Verdad (NHC I,3 ) ·.png",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:%C2%B7_Papiro_17_del_Codex_I_o_Code_Jung,_conteniendo_una_parte_del_Evangelio_de_la_Verdad_(NHC_I,3_)_%C2%B7.png"
+  },
+  "nhc-v-apocalypse-paul": {
+    "file": "nhc-v-apocalypse-paul.png",
+    "commons_title": "File:Nag Hammadi Codex V 17.png",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Nag_Hammadi_Codex_V_17.png"
+  },
+  "nhc-vi-thunder-perfect-mind": {
+    "file": "nhc-vi-thunder-perfect-mind.jpg",
+    "commons_title": "File:The Thunder, Perfect Mind.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:The_Thunder,_Perfect_Mind.jpg"
+  }
+}

@@ -12,6 +12,7 @@
     "reclassify": "node scripts/reclassify-variants.mjs",
     "quran": "node scripts/build-quran-data.mjs",
     "nag-hammadi": "node scripts/build-nag-hammadi-data.mjs",
+    "nag-hammadi-images": "node scripts/download-nag-hammadi-commons.mjs",
     "hebrew-lxx": "node scripts/build-hebrew-lxx-data.mjs",
     "images": "node scripts/download-commons.mjs",
     "quran-images": "node scripts/download-quran-commons.mjs",

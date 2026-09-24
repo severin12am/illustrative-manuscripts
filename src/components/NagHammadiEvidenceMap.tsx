@@ -105,7 +105,9 @@ export default function NagHammadiEvidenceMap({
             </Link>
           </h3>
           <p className={styles.cardMeta}>
-            {nh.leaf_image_count}/{tractateCount} with Claremont IIIF embed
+            {nh.leaf_image_count}/{tractateCount} with leaf image (
+            {nh.hosted_leaf_image_count ?? 0} Commons hosted,{" "}
+            {nh.iiif_leaf_image_count ?? nh.leaf_image_count} Claremont IIIF)
           </p>
           <p className={styles.cardBody}>
             Gospel of Thomas, Apocryphon of John (multiple codices), Gospel of

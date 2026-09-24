@@ -256,14 +256,22 @@ function computeQuranCoverage(witnesses) {
 
 function computeNagHammadiCoverage(witnesses) {
   const withImage = witnesses.filter((w) => hasLeafImage(w)).length;
+  const withHosted = witnesses.filter((w) => w.hosted_image).length;
+  const iiifOnly = witnesses.filter(
+    (w) => !w.hosted_image && w.image_policy === "iiif" && w.iiif_image_url
+  ).length;
   return {
     tractate_witness_count: witnesses.length,
     leaf_image_count: withImage,
+    hosted_leaf_image_count: withHosted,
+    iiif_leaf_image_count: iiifOnly,
     leaf_image_fraction: witnesses.length
       ? Math.round((withImage / witnesses.length) * 1000) / 1000
       : 0,
     collation_note:
       "No Thomas↔NT collation in v1. These are Coptic Gnostic tractates, not Greek New Testament witnesses.",
+    image_note:
+      "Commons PD plates rehosted where verified; Claremont Nag Hammadi Archive IIIF for remaining tractates (© holding institution — embed only).",
   };
 }
 

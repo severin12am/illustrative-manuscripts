@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T10:42:06.008Z",
+  "generated_at": "2026-09-24T10:48:42.422Z",
   "sources": {
     "witness_texts": "src/data/witness-texts.json",
     "cntr_overflow": "public/cntr-texts/*.json",
@@ -1834,8 +1834,11 @@
   "nag_hammadi": {
     "tractate_witness_count": 18,
     "leaf_image_count": 18,
+    "hosted_leaf_image_count": 5,
+    "iiif_leaf_image_count": 13,
     "leaf_image_fraction": 1,
-    "collation_note": "No Thomas↔NT collation in v1. These are Coptic Gnostic tractates, not Greek New Testament witnesses."
+    "collation_note": "No Thomas↔NT collation in v1. These are Coptic Gnostic tractates, not Greek New Testament witnesses.",
+    "image_note": "Commons PD plates rehosted where verified; Claremont Nag Hammadi Archive IIIF for remaining tractates (© holding institution — embed only)."
   },
   "hebrew_lxx": {
     "window": [
