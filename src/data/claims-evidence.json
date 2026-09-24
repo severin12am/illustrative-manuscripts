@@ -297,6 +297,23 @@
       ]
     },
     {
+      "id": "site-replaces-intf-ecm",
+      "claim": "This site replaces INTF or ECM/NA28 for text criticism.",
+      "verdict": "unsupported",
+      "why": "Illustrative Manuscripts is a teaching and bounded-collation layer on GitHub Pages. INTF Liste and NTVMR hold the full manuscript register; CNTR hosts the open transcription corpus; NA28/ECM/UBS and IGNTP supply apparatus judgments and licensed plates we do not mirror. Use our witness cards to jump out — not as a substitute catalog.",
+      "links": [
+        { "href": "/sources/", "label": "Open sources hub" },
+        { "href": "/status/#published-tools", "label": "Status: published tools" },
+        { "href": "/status/#ehrman-grade", "label": "For Ehrman-grade work" }
+      ],
+      "scholarship": [
+        {
+          "label": "INTF — Kurzgefasste Liste",
+          "url": "https://ntvmr.uni-muenster.de/liste"
+        }
+      ]
+    },
+    {
       "id": "mt-identical-jesus-read",
       "claim": "The Masoretic Text is identical to what Jesus read.",
       "verdict": "partial",

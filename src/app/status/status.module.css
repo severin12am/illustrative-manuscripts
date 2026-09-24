@@ -79,6 +79,31 @@
   color: var(--accent);
 }
 
+.ehrmanGrade {
+  margin: 0 0 2.5rem;
+  padding: 0 0 0.25rem;
+}
+
+.ehrmanList {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+  color: var(--ink-secondary);
+  line-height: 1.65;
+  font-size: 0.9375rem;
+  max-width: 44rem;
+}
+
+.ehrmanList a {
+  color: var(--accent);
+}
+
+.ehrmanGrade .note {
+  font-size: 0.875rem;
+  color: var(--ink-muted);
+  max-width: 44rem;
+  line-height: 1.6;
+}
+
 .corpusBlock {
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;

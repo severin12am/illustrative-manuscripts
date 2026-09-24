@@ -183,6 +183,79 @@ export default function SiteStatusPage() {
         </div>
       </section>
 
+      <section
+        className={styles.ehrmanGrade}
+        aria-labelledby="ehrman-grade-title"
+        id="ehrman-grade"
+      >
+        <h2 id="ehrman-grade-title" className={styles.sectionTitle}>
+          For Ehrman-grade work, still use…
+        </h2>
+        <p className={styles.sectionIntro}>
+          Textbook-level manuscript criticism and apparatus work still lives in
+          published registers and licensed editions — not in our bounded GitHub
+          Pages slice. Wire out before you argue tradition scale or cite plate
+          numbers.
+        </p>
+        <ul className={styles.ehrmanList}>
+          <li>
+            <a
+              href="https://ntvmr.uni-muenster.de/liste"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              INTF Kurzgefasste Liste
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://ntvmr.uni-muenster.de/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              NTVMR
+            </a>{" "}
+            for the full Greek NT manuscript census and workspace.
+          </li>
+          <li>
+            <a href="https://greekcntr.org/" target="_blank" rel="noopener noreferrer">
+              CNTR
+            </a>{" "}
+            for complete CC BY-SA transcriptions and SR GNT — beyond our lazy-load
+            class-1 subset (gaps listed in{" "}
+            <a
+              href="https://github.com/severin12am/illustrative-manuscripts/blob/main/DATA.md#cntr-gaps-among-witnesses"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              DATA.md
+            </a>
+            ).
+          </li>
+          <li>
+            <a href="https://igntp.org/" target="_blank" rel="noopener noreferrer">
+              IGNTP
+            </a>{" "}
+            and other open edition projects where a book has a published
+            apparatus.
+          </li>
+          <li>
+            NA28, ECM, and UBS — library or licensed access for editorial
+            judgments; we do not host apparatus (
+            <Link href="/sources/#na28-ecm-ubs">license note</Link>).
+          </li>
+          <li>
+            Holding-institution IIIF and catalog viewers for plates we only
+            outbound-link — see{" "}
+            <Link href="/sources/">Open sources</Link> and witness cards.
+          </li>
+        </ul>
+        <p className={styles.note}>
+          What this site adds: curated timeline cards, mechanical disagreements vs
+          SR GNT in our window, and teaching layers — summarized in{" "}
+          <Link href="/status/#published-tools">Published tools</Link> above.
+        </p>
+      </section>
+
       <section className={styles.section} aria-labelledby="counts-title">
         <h2 id="counts-title" className={styles.sectionTitle}>
           Honest counts (from build data)
