@@ -14,6 +14,8 @@ import {
 } from "@/lib/variantTaxonomy";
 import BookVariantSummary from "@/components/BookVariantSummary";
 import IntentionalTagsProvisionalNotice from "@/components/IntentionalTagsProvisionalNotice";
+import ScholarshipOutboundStrip from "@/components/ScholarshipOutboundStrip";
+import { cntrManuscriptUrl, listeUrlForGa } from "@/lib/witnessOutbound";
 import styles from "./variants.module.css";
 
 const PAGE_SIZE = 50;
@@ -101,6 +103,8 @@ export default function VariantsExplorer() {
         </p>
 
         <IntentionalTagsProvisionalNotice />
+
+        <ScholarshipOutboundStrip />
 
         <div className={styles.summaryGrid} role="group" aria-label="Totals by kind">
           <button
@@ -350,11 +354,21 @@ function VariantDetail({ unit }: { unit: VariantIndexEntry }) {
       </div>
       <div className={styles.detailLinks}>
         <Link href={witnessHref}>View witness card →</Link>
-        {unit.cntr_url && (
-          <a href={unit.cntr_url} target="_blank" rel="noopener noreferrer">
-            CNTR manuscript page →
-          </a>
-        )}
+        <a
+          href={listeUrlForGa(unit.witness_id)}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          INTF Liste ({unit.witness_id}) →
+        </a>
+        <a
+          href={unit.cntr_url ?? cntrManuscriptUrl(unit.witness_id)}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CNTR manuscript page →
+        </a>
+        <Link href="/sources/#greek-nt">Open sources (Greek NT) →</Link>
         <Link href={`/variants/?id=${encodeURIComponent(unit.unit_id)}`}>
           Permalink
         </Link>

@@ -87,7 +87,11 @@ export default function GreekNtEvidenceMap({
           <strong>provisional</strong> — see{" "}
           <Link href="/coverage/">Coverage</Link> and{" "}
           <Link href="/methodology/#greek-evidence-layers">Methods</Link>. Not
-          ECM/NA judgments.
+          ECM/NA judgments. For Liste, full CNTR, and apparatus work, wire out via{" "}
+          <Link href="/sources/#greek-nt">Open sources</Link> and{" "}
+          <Link href="/status/#ehrman-grade">Site status § Ehrman-grade</Link> (
+          <Link href="/teach/when-to-leave-for-intf-ecm/">teaching brief</Link>
+          ).
         </p>
       )}
     </section>

@@ -195,7 +195,21 @@ export default function SiteStatusPage() {
           Textbook-level manuscript criticism and apparatus work still lives in
           published registers and licensed editions — not in our bounded GitHub
           Pages slice. Wire out before you argue tradition scale or cite plate
-          numbers.
+          numbers. Lesson outline:{" "}
+          <Link href="/teach/when-to-leave-for-intf-ecm/">
+            When to leave for INTF / ECM
+          </Link>
+          .
+        </p>
+        <p className={styles.notClaiming}>
+          <strong>This site is not:</strong> a replacement for the INTF Liste or
+          NTVMR workspace; a host for NA28/ECM/UBS apparatus; a full CNTR mirror
+          ({greek_nt.cntr_transcription_count}/{greek_nt.witness_count} witnesses
+          with class-1 text in this build); or a tradition-wide variant census (
+          {greek_nt.cntr_missing.length} documented CNTR gaps — see{" "}
+          <Link href="/coverage/">Coverage</Link>). Claim card:{" "}
+          <Link href="/use/#site-replaces-intf-ecm">we do not replace INTF/ECM</Link>
+          .
         </p>
         <ul className={styles.ehrmanList}>
           <li>
@@ -242,6 +256,24 @@ export default function SiteStatusPage() {
             NA28, ECM, and UBS — library or licensed access for editorial
             judgments; we do not host apparatus (
             <Link href="/sources/#na28-ecm-ubs">license note</Link>).
+          </li>
+          <li>
+            <a
+              href="https://doi.org/10.1017/S0028688516000216"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Gurry 2016
+            </a>{" "}
+            and the{" "}
+            <a
+              href="https://www.repository.cam.ac.uk/bitstreams/fbac7937-110b-48a0-81f5-656677f85d8e/download"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              open accepted manuscript
+            </a>{" "}
+            for tradition-scale reading estimates — not our disagreement total.
           </li>
           <li>
             Holding-institution IIIF and catalog viewers for plates we only
