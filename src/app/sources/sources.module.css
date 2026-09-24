@@ -1,0 +1,181 @@
+.main {
+  min-height: 100vh;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3.5rem;
+}
+
+.hero {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-muted);
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: clamp(1.875rem, 4vw, 2.5rem);
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.lead {
+  color: var(--ink-secondary);
+  line-height: 1.75;
+  font-size: 1rem;
+  max-width: 44rem;
+}
+
+.section {
+  margin: 2.5rem 0;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  color: var(--ink);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-light);
+  font-weight: 600;
+}
+
+.sectionIntro {
+  color: var(--ink-secondary);
+  line-height: 1.7;
+  font-size: 0.9375rem;
+  margin-bottom: 1rem;
+  max-width: 44rem;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  color: var(--ink-muted);
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--paper-warm);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+}
+
+.legendItem strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.corpusSection {
+  margin-bottom: 2.5rem;
+}
+
+.corpusTitle {
+  font-size: 1.0625rem;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.15rem;
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cardTitle {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0;
+}
+
+.cardSummary {
+  font-size: 0.875rem;
+  color: var(--ink-secondary);
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+}
+
+.badge {
+  align-self: flex-start;
+  font-family: var(--font-ui);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.45rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+}
+
+.badgeOpen {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  color: var(--accent);
+}
+
+.badgeLink {
+  background: var(--paper-warm);
+  color: var(--ink-muted);
+}
+
+.badgeCopyright {
+  background: color-mix(in srgb, var(--ink-muted) 15%, transparent);
+  color: var(--ink-secondary);
+}
+
+.linkList {
+  list-style: none;
+  margin: 0.35rem 0 0;
+  padding: 0;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+}
+
+.linkList li {
+  margin-bottom: 0.25rem;
+}
+
+.linkList a {
+  color: var(--accent);
+}
+
+.licenseNote {
+  font-size: 0.75rem;
+  color: var(--ink-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.footer {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-light);
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  color: var(--ink-muted);
+  line-height: 1.6;
+}
+
+.footer a {
+  color: var(--accent);
+}

@@ -14,6 +14,7 @@ const STATIC_ROUTES = [
   "coverage",
   "use",
   "cite",
+  "sources",
   "teach",
   "famous",
   "variants",

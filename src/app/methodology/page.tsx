@@ -31,7 +31,8 @@ export default function MethodologyPage() {
           vs build-time aggregates, and how to reproduce the numbers. Pair this
           page with{" "}
           <Link href="/coverage/">Coverage &amp; scope</Link>,{" "}
-          <Link href="/cite/">Cite &amp; learn</Link>, and{" "}
+          <Link href="/cite/">Cite &amp; learn</Link>,{" "}
+          <Link href="/sources/">Open sources</Link>, and{" "}
           <Link href="/use/">Use this site</Link> for claim discipline.
         </p>
       </header>
@@ -495,6 +496,8 @@ export default function MethodologyPage() {
 
       <footer className={styles.footer}>
         <Link href="/status/">Site status →</Link>
+        {" · "}
+        <Link href="/sources/">Open sources →</Link>
         {" · "}
         <Link href="/cite/">Cite &amp; learn →</Link>
         {" · "}

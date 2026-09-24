@@ -77,6 +77,11 @@
         "a": "P66",
         "b": "P75",
         "book": "John"
+      },
+      "historical_apparatus": {
+        "label": "Historical apparatus — Tischendorf EOCM vol. IV (John)",
+        "url": "https://archive.org/details/novumtestamentum04tisc",
+        "note": "Public-domain 19th-century apparatus (Editio octava critica maior) — not NA28/ECM."
       }
     },
     {
@@ -139,6 +144,11 @@
         "a": "01",
         "b": "03",
         "book": "Mark"
+      },
+      "historical_apparatus": {
+        "label": "Historical apparatus — Tischendorf EOCM vol. II (Mark)",
+        "url": "https://archive.org/details/novumtestamentum02tisc",
+        "note": "Public-domain 19th-century apparatus (Editio octava critica maior) — not NA28/ECM."
       }
     },
     {
@@ -191,6 +201,11 @@
         "a": "01",
         "b": "03",
         "book": "1 John"
+      },
+      "historical_apparatus": {
+        "label": "Historical apparatus — Tischendorf EOCM vol. VII (Catholic epistles (1 John))",
+        "url": "https://archive.org/details/novumtestamentum07tisc",
+        "note": "Public-domain 19th-century apparatus (Editio octava critica maior) — not NA28/ECM."
       }
     },
     {
@@ -243,6 +258,11 @@
         "a": "P75",
         "b": "03",
         "book": "Luke"
+      },
+      "historical_apparatus": {
+        "label": "Historical apparatus — Tischendorf EOCM vol. III (Luke)",
+        "url": "https://archive.org/details/novumtestamentum03tisc",
+        "note": "Public-domain 19th-century apparatus (Editio octava critica maior) — not NA28/ECM."
       }
     },
     {
@@ -295,6 +315,11 @@
         "a": "P66",
         "b": "P75",
         "book": "John"
+      },
+      "historical_apparatus": {
+        "label": "Historical apparatus — Tischendorf EOCM vol. IV (John)",
+        "url": "https://archive.org/details/novumtestamentum04tisc",
+        "note": "Public-domain 19th-century apparatus (Editio octava critica maior) — not NA28/ECM."
       }
     },
     {
@@ -347,6 +372,11 @@
         "a": "01",
         "b": "03",
         "book": "Romans"
+      },
+      "historical_apparatus": {
+        "label": "Historical apparatus — Tischendorf EOCM vol. VI (Pauline epistles (Romans))",
+        "url": "https://archive.org/details/novumtestamentum06tisc",
+        "note": "Public-domain 19th-century apparatus (Editio octava critica maior) — not NA28/ECM."
       }
     },
     {
@@ -394,6 +424,11 @@
         "a": "P75",
         "b": "03",
         "book": "Luke"
+      },
+      "historical_apparatus": {
+        "label": "Historical apparatus — Tischendorf EOCM vol. III (Luke)",
+        "url": "https://archive.org/details/novumtestamentum03tisc",
+        "note": "Public-domain 19th-century apparatus (Editio octava critica maior) — not NA28/ECM."
       }
     },
     {
@@ -441,6 +476,11 @@
         "a": "01",
         "b": "03",
         "book": "Matthew"
+      },
+      "historical_apparatus": {
+        "label": "Historical apparatus — Tischendorf EOCM vol. I (Matthew)",
+        "url": "https://archive.org/details/novumtestamentum01tisc",
+        "note": "Public-domain 19th-century apparatus (Editio octava critica maior) — not NA28/ECM."
       }
     },
     {
@@ -493,6 +533,11 @@
         "a": "01",
         "b": "03",
         "book": "Acts"
+      },
+      "historical_apparatus": {
+        "label": "Historical apparatus — Tischendorf EOCM vol. V (Acts)",
+        "url": "https://archive.org/details/novumtestamentum05tisc",
+        "note": "Public-domain 19th-century apparatus (Editio octava critica maior) — not NA28/ECM."
       }
     },
     {
@@ -541,6 +586,11 @@
         "a": "01",
         "b": "03",
         "book": "Mark"
+      },
+      "historical_apparatus": {
+        "label": "Historical apparatus — Tischendorf EOCM vol. II (Mark)",
+        "url": "https://archive.org/details/novumtestamentum02tisc",
+        "note": "Public-domain 19th-century apparatus (Editio octava critica maior) — not NA28/ECM."
       }
     }
   ]
