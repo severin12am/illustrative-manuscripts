@@ -369,7 +369,56 @@
       "dont_overclaim": "We compile and explain — we do not replace the INTF Liste, parse copyrighted NA28/ECM apparatus, or OCR-ingest bulk Tischendorf text in this repo.",
       "related_links": [
         { "href": "/methodology/", "label": "Methods" },
-        { "href": "/teach/before-you-cite-status/", "label": "Brief: before you cite" }
+        { "href": "/teach/before-you-cite-status/", "label": "Brief: before you cite" },
+        { "href": "/teach/when-to-leave-for-intf-ecm/", "label": "Brief: when to leave for INTF/ECM" }
+      ]
+    },
+    {
+      "id": "when-to-leave-for-intf-ecm",
+      "slug": "when-to-leave-for-intf-ecm",
+      "title": "When to leave this site for INTF / ECM",
+      "subtitle": "Registers, apparatus, and full CNTR — not our GitHub Pages slice",
+      "audience": "Researchers · debate prep · syllabus design",
+      "learning_goal": "Know which questions require INTF Liste, NTVMR, licensed NA28/ECM apparatus, or full CNTR — and which bounded answers Illustrative Manuscripts already publishes.",
+      "steps": [
+        {
+          "text": "Read Site status § For Ehrman-grade work — explicit non-claims and outbound catalogs we already link on /sources/.",
+          "links": [
+            { "href": "/status/#ehrman-grade", "label": "Site status § Ehrman-grade" },
+            { "href": "/status/#published-tools", "label": "Published tools contrast" }
+          ]
+        },
+        {
+          "text": "Open the Open sources hub for Greek NT cards (Liste, NTVMR, CNTR GitHub class 1, Gurry open MS, Tischendorf EOCM on IA, NA28/ECM cite-only).",
+          "links": [{ "href": "/sources/#greek-nt", "label": "Open sources: Greek NT" }]
+        },
+        {
+          "text": "On a witness card, use Primary catalogs (Liste, NTVMR, CSNTM when present, CNTR) — our word census is only where CNTR class-1 text is in the build.",
+          "links": [
+            { "href": "/", "label": "Timeline (Greek NT)" },
+            { "href": "/coverage/", "label": "Coverage: CNTR gap list" }
+          ]
+        },
+        {
+          "text": "For block-level famous passages, pair our CNTR witness status with PD Tischendorf apparatus links — not ECM judgments hosted here.",
+          "links": [
+            { "href": "/famous/", "label": "Famous passages" },
+            { "href": "/sources/#tischendorf-eocm", "label": "Tischendorf EOCM (IA)" }
+          ]
+        },
+        {
+          "text": "When citing tradition-scale totals, use Gurry 2016 / critical editions — not our variant explorer row count.",
+          "links": [
+            { "href": "/variants/", "label": "Variant explorer (bounded)" },
+            { "href": "/use/#site-replaces-intf-ecm", "label": "Claim: site ≠ INTF/ECM" }
+          ]
+        }
+      ],
+      "dont_overclaim": "Illustrative Manuscripts compiles a teaching layer on open CNTR vs SR GNT in a 1–400 CE window — it does not scrape Liste, host ECM, or count every Greek manuscript.",
+      "related_links": [
+        { "href": "/teach/reuse-open-tools/", "label": "Brief: reuse open tools" },
+        { "href": "/teach/before-you-cite-status/", "label": "Brief: before you cite" },
+        { "href": "/cite/#not-claiming", "label": "Cite: what we are not claiming" }
       ]
     },
     {

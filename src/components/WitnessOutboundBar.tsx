@@ -1,6 +1,12 @@
 import type { Witness } from "@/types/witness";
 import type { CoveragePerWitness } from "@/types/coverage";
-import { cntrGapDocUrl, witnessListeUrl } from "@/lib/witnessOutbound";
+import {
+  cntrGapDocUrl,
+  witnessCntrUrl,
+  witnessCsntmUrl,
+  witnessListeUrl,
+  witnessNtvmrUrl,
+} from "@/lib/witnessOutbound";
 import styles from "./WitnessOutboundBar.module.css";
 
 interface WitnessOutboundBarProps {
@@ -19,6 +25,9 @@ export default function WitnessOutboundBar({
     !isQuran && !isNagHammadi && !isHebrewLxx && witness.corpus === "nt";
 
   const listeUrl = isNt ? witnessListeUrl(witness) : undefined;
+  const ntvmrUrl = isNt ? witnessNtvmrUrl(witness) : undefined;
+  const cntrUrl = isNt ? witnessCntrUrl(witness) : undefined;
+  const csntmUrl = isNt ? witnessCsntmUrl(witness) : undefined;
   const hasCntrTranscription = Boolean(ntCoverage?.cntr_transcription);
 
   const links: { href: string; label: string }[] = [];
@@ -26,11 +35,24 @@ export default function WitnessOutboundBar({
 
   if (isNt) {
     if (listeUrl) links.push({ href: listeUrl, label: "INTF Liste ↗" });
-    if (witness.ntvmr_url) {
-      links.push({ href: witness.ntvmr_url, label: "NTVMR workspace ↗" });
+    if (ntvmrUrl) {
+      links.push({ href: ntvmrUrl, label: "NTVMR workspace ↗" });
     }
-    if (hasCntrTranscription && witness.cntr_url) {
-      links.push({ href: witness.cntr_url, label: "CNTR transcription ↗" });
+    if (csntmUrl) {
+      links.push({ href: csntmUrl, label: "CSNTM catalog ↗" });
+    }
+    if (hasCntrTranscription && cntrUrl) {
+      links.push({ href: cntrUrl, label: "CNTR transcription ↗" });
+    } else if (cntrUrl) {
+      links.push({
+        href: cntrUrl,
+        label: "CNTR manuscript page ↗",
+      });
+      gapNote = {
+        text: "No CNTR class-1 transcription in this build",
+        href: cntrGapDocUrl(),
+        label: "DATA.md gaps ↗",
+      };
     } else if (ntCoverage) {
       gapNote = {
         text: "No CNTR class-1 transcription in this build",

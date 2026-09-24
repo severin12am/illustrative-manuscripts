@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T10:48:42.422Z",
+  "generated_at": "2026-09-24T10:53:35.946Z",
   "sources": {
     "witness_texts": "src/data/witness-texts.json",
     "cntr_overflow": "public/cntr-texts/*.json",
@@ -1871,7 +1871,7 @@
       "note": "niʿmat allāh ta vs ta marbūṭa matrix (van Putten 2019 Table 2) — shared idiosyncrasy layer, not regional splits."
     },
     "teach_briefs": {
-      "count": 11,
+      "count": 12,
       "source": "src/data/teach-briefs.json",
       "note": "Hand-curated classroom / debate outlines at /teach/."
     }

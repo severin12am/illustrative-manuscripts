@@ -51,6 +51,20 @@ function loadCntrUrls() {
   for (const [ga, entry] of Object.entries(bundle.texts || {})) {
     if (entry?.cntr_url) urls[ga] = entry.cntr_url;
   }
+  const mod = readFileSync(join(ROOT, "src/data/witnesses.ts"), "utf8");
+  const match = mod.match(/export const witnesses: Witness\[\] = (\[[\s\S]*\]);/);
+  if (match) {
+    const witnesses = JSON.parse(match[1]);
+    for (const w of witnesses) {
+      if (w.corpus !== "nt" || !w.ga_number) continue;
+      if (!urls[w.ga_number] && w.cntr_url) {
+        urls[w.ga_number] = w.cntr_url;
+      }
+      if (!urls[w.ga_number]) {
+        urls[w.ga_number] = `https://greekcntr.org/manuscripts/${w.ga_number}`;
+      }
+    }
+  }
   return urls;
 }
 

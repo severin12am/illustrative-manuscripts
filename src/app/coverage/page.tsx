@@ -19,6 +19,8 @@ import {
 } from "@/lib/intentionalTags";
 import GreekNtEvidenceMap from "@/components/GreekNtEvidenceMap";
 import NagHammadiEvidenceMap from "@/components/NagHammadiEvidenceMap";
+import CntrGapRoster from "@/components/CntrGapRoster";
+import ScholarshipOutboundStrip from "@/components/ScholarshipOutboundStrip";
 import IntentionalTagsProvisionalNotice from "@/components/IntentionalTagsProvisionalNotice";
 import styles from "./coverage.module.css";
 
@@ -256,6 +258,8 @@ export default function CoveragePage() {
         <h2 className={styles.sectionTitle}>Greek New Testament ({TIMELINE_START}–{TIMELINE_END} CE)</h2>
         <IntentionalTagsProvisionalNotice />
         <GreekNtEvidenceMap variant="section" />
+        <ScholarshipOutboundStrip />
+        <CntrGapRoster missing={greek_nt.cntr_missing} />
         <p className={styles.sliceSummary}>
           <strong>{greek_nt.witness_count}</strong> witnesses ·{" "}
           <strong>{disagreementTotal.toLocaleString()}</strong> variation units vs

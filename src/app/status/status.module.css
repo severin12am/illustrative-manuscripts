@@ -97,6 +97,18 @@
   color: var(--accent);
 }
 
+.notClaiming {
+  font-size: 0.9rem;
+  color: var(--ink-secondary);
+  line-height: 1.6;
+  max-width: 44rem;
+  margin: 0 0 1rem;
+  padding: 0.75rem 0.9rem;
+  background: var(--paper-warm);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+}
+
 .ehrmanGrade .note {
   font-size: 0.875rem;
   color: var(--ink-muted);

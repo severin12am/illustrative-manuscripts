@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { cntrManuscriptUrl } from "@/lib/witnessOutbound";
 import styles from "./WitnessTextPanel.module.css";
 import GreekDiplomatic from "./GreekDiplomatic";
 import type { WitnessText, TextVerse, VariantUnit } from "@/types/text";
@@ -106,7 +107,7 @@ export default function WitnessTextPanel({ text, ga }: Props) {
         <p className={styles.hint}>
           See{" "}
           <a
-            href={`https://greekcntr.org/manuscripts/${ga}`}
+            href={cntrManuscriptUrl(ga)}
             target="_blank"
             rel="noopener noreferrer"
           >
