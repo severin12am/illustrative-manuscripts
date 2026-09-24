@@ -12,9 +12,12 @@
     "P5",
     "P13",
     "P16",
+    "P23",
     "P22",
     "P27",
+    "P29",
     "P28",
+    "P32",
     "P30",
     "P40",
     "P39",
@@ -42,7 +45,9 @@
     "P10",
     "P12",
     "P15",
+    "P18",
     "P17",
+    "P20",
     "P19",
     "P24",
     "P37",
@@ -52,42 +57,40 @@
     "P71",
     "P77",
     "P81",
+    "P86",
     "P89",
     "P102",
     "P110",
+    "P120",
+    "P51",
+    "P54",
+    "P56",
+    "P57",
+    "P62",
+    "P64",
+    "P65",
+    "P69",
+    "P72",
+    "P82",
+    "P85",
+    "P87",
+    "P88",
+    "P93",
+    "P94",
+    "P99",
+    "P100",
+    "P101",
+    "P112",
+    "P115",
+    "P117",
+    "P119",
+    "P121",
+    "P122",
+    "P125",
     "P123",
     "P126",
     "01",
     "03"
   ],
-  "fail": [
-    {
-      "ga": "P23",
-      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/e/eb/Papyrus_23_-Jam_1.10-12-POxy1229_III.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-    },
-    {
-      "ga": "P29",
-      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/6/64/Papyrus_29_%28POxy1597%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-    },
-    {
-      "ga": "P32",
-      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/d/d9/P032-Tit-1_11-15-II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-    },
-    {
-      "ga": "P18",
-      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/6/63/Papyrus_18_POxy1079.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-    },
-    {
-      "ga": "P20",
-      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/8/87/Papyrus_20_-_Papyrus_Oxyrhynchus_1171_-_Princeton_University_Library%2C_AM_4117_-_Epistle_of_James_2%2C26%E2%80%933%2C9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-    },
-    {
-      "ga": "P86",
-      "reason": "Download failed 429: https://upload.wikimedia.org/wikipedia/commons/4/43/P086-Mat-5_13-16-IV.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-    },
-    {
-      "ga": "P120",
-      "reason": "Unexpected token 'Y', \"You are ma\"... is not valid JSON"
-    }
-  ]
+  "fail": []
 }
