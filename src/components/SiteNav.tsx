@@ -14,6 +14,7 @@ const primaryLinks = [
   { href: "/compare/", label: "Compare", match: (path: string) => path.startsWith("/compare") },
   { href: "/use/", label: "Use / Claims", match: (path: string) => path.startsWith("/use") },
   { href: "/cite/", label: "Cite & learn", match: (path: string) => path.startsWith("/cite") },
+  { href: "/sources/", label: "Open sources", match: (path: string) => path.startsWith("/sources") },
   { href: "/about/", label: "About", match: (path: string) => path.startsWith("/about") },
   { href: "/status/", label: "Status", match: (path: string) => path.startsWith("/status") },
 ];

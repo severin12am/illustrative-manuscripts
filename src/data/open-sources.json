@@ -19,6 +19,7 @@
           "links": [
             { "label": "Liste (Münster)", "href": "https://ntvmr.uni-muenster.de/liste" },
             { "label": "NTVMR portal", "href": "https://ntvmr.uni-muenster.de/" },
+            { "label": "NTVMR help", "href": "https://ntvmr.uni-muenster.de/help/" },
             { "label": "INTF overview", "href": "https://www.uni-muenster.de/INTF/" }
           ],
           "license": "link_only",
@@ -30,7 +31,11 @@
           "summary": "Open diplomatic Greek, Society of Biblical Literature Greek New Testament (SR GNT) base text, and tools our variant census reuses.",
           "links": [
             { "label": "Center for New Testament Restoration", "href": "https://greekcntr.org/" },
-            { "label": "SR GNT (via CNTR)", "href": "https://greekcntr.org/" }
+            { "label": "SR GNT (via CNTR)", "href": "https://greekcntr.org/" },
+            {
+              "label": "CNTR transcriptions (GitHub, class 1)",
+              "href": "https://github.com/Center-for-New-Testament-Restoration/transcriptions/tree/main/class%201"
+            }
           ],
           "license": "open_reuse",
           "license_note": "CC BY-SA 4.0 transcriptions — our census fields remain share-alike when derived."
