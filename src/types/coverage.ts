@@ -64,8 +64,11 @@ export interface CoverageData {
   nag_hammadi: {
     tractate_witness_count: number;
     leaf_image_count: number;
+    hosted_leaf_image_count: number;
+    iiif_leaf_image_count: number;
     leaf_image_fraction: number;
     collation_note: string;
+    image_note: string;
   };
   hebrew_lxx: {
     window: number[];

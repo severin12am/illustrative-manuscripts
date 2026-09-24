@@ -3,7 +3,7 @@
  * Builds Nag Hammadi witness metadata + text panels from hand-curated seed.
  */
 
-import { readFileSync, writeFileSync, mkdirSync } from "fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from "fs";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 
@@ -11,8 +11,38 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 const OUT = join(ROOT, "src/data");
 const SEED = join(__dirname, "nag-hammadi-seed.json");
+const COMMONS_MAP = join(__dirname, "nag-hammadi-commons-images.json");
+const WITNESS_IMG_DIR = join(ROOT, "public/witnesses");
 
 mkdirSync(OUT, { recursive: true });
+
+function applyCommonsHosted(witnesses) {
+  if (!existsSync(COMMONS_MAP)) return witnesses;
+  const map = JSON.parse(readFileSync(COMMONS_MAP, "utf8"));
+  delete map._comment;
+
+  return witnesses.map((w) => {
+    const entry = map[w.id];
+    if (!entry) return w;
+    const imgPath = join(WITNESS_IMG_DIR, entry.file);
+    const attrPath = `${imgPath}.attribution.json`;
+    if (!existsSync(imgPath)) return w;
+
+    let attr = null;
+    if (existsSync(attrPath)) {
+      attr = JSON.parse(readFileSync(attrPath, "utf8"));
+    }
+
+    return {
+      ...w,
+      image_policy: "hosted",
+      image_source: "commons",
+      hosted_image: `/witnesses/${entry.file}`,
+      commons_url: entry.commons_url,
+      image_attribution: attr,
+    };
+  });
+}
 
 function seedToWitness(m) {
   const imagePolicy =
@@ -89,7 +119,8 @@ function main() {
   const seed = JSON.parse(readFileSync(SEED, "utf8"));
   const window = seed._meta?.window_ce || [300, 400];
 
-  const witnesses = seed.manuscripts.map(seedToWitness);
+  let witnesses = seed.manuscripts.map(seedToWitness);
+  witnesses = applyCommonsHosted(witnesses);
   const texts = {};
 
   for (const m of seed.manuscripts) {
@@ -115,10 +146,11 @@ function main() {
   const withImages = witnesses.filter(
     (w) => w.hosted_image || w.iiif_image_url
   ).length;
+  const withHosted = witnesses.filter((w) => w.hosted_image).length;
 
   const header = `/**
  * Generated ${new Date().toISOString().split("T")[0]} from scripts/nag-hammadi-seed.json
- * Window: ${window[0]}–${window[1]} CE (codex paleography). ${witnesses.length} witnesses, ${withImages} with IIIF leaf images.
+ * Window: ${window[0]}–${window[1]} CE (codex paleography). ${witnesses.length} witnesses, ${withImages} with leaf images (${withHosted} Commons hosted, ${withImages - withHosted} Claremont IIIF only).
  * Regenerate: node scripts/build-nag-hammadi-data.mjs
  */
 `;
@@ -162,7 +194,7 @@ export function getNagHammadiWitnessById(id: string): Witness | undefined {
   );
 
   console.log(
-    `Wrote ${witnesses.length} Nag Hammadi witnesses (${withImages} images), ${Object.keys(texts).length} text bundles`
+    `Wrote ${witnesses.length} Nag Hammadi witnesses (${withHosted} hosted + ${withImages} total leaf images), ${Object.keys(texts).length} text bundles`
   );
 }
 
