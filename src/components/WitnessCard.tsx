@@ -12,6 +12,7 @@ import QuranTextPanel from "./QuranTextPanel";
 import NagHammadiTextPanel from "./NagHammadiTextPanel";
 import HebrewLxxTextPanel from "./HebrewLxxTextPanel";
 import { kindLabel, sortKindEntries } from "@/lib/variantTaxonomy";
+import WitnessOutboundBar from "./WitnessOutboundBar";
 
 interface WitnessCardProps {
   witness: Witness;
@@ -95,6 +96,7 @@ export default function WitnessCard({ witness }: WitnessCardProps) {
           )}
         </div>
         <p className={styles.traditionalName}>{witness.traditional_name}</p>
+        <WitnessOutboundBar witness={witness} ntCoverage={ntCoverage ?? null} />
         <p className={styles.date}>
           {formatDualDateRange(
             witness.date_start,
