@@ -384,6 +384,8 @@ All in-window witnesses lacking a hosted image link to NTVMR/CSNTM/Vatican/BL vi
 
 No CNTR class-1 file (honest unavailable state): **P7, P10, P12, P16, P50, P54, P56, P62, P65, P78, P80, P99, P103, P105, P112, P127, P140, P93, P94** (and pre-existing gaps). **01** and **03** have full CNTR transcriptions (lazy-loaded overflow in `public/cntr-texts/`).
 
+**Re-checked 2026-09-24** against [CNTR `class 1` transcriptions](https://github.com/Center-for-New-Testament-Restoration/transcriptions/tree/main/class%201) (CC BY-SA 4.0): none of the sigla above have a new `.txt` file yet — no pipeline changes this pass.
+
 ### What is still missing for completeness
 
 - [ ] Live Liste API refresh when NTVMR is reachable (cache refreshed on last `npm run data`)

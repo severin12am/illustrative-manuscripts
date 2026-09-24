@@ -53,6 +53,18 @@ export default function CitePage() {
         </p>
       </header>
 
+      <aside className={styles.primaryCallout} aria-label="Primary work starting points">
+        <p>
+          <strong>For primary work, start here:</strong>{" "}
+          <Link href="/sources/">Open sources hub</Link> for published catalogs
+          and licenses;{" "}
+          <Link href="/status/#published-tools">Site status § Published tools</Link>{" "}
+          for what full registers still give you;{" "}
+          <Link href="/status/#ehrman-grade">Site status § Ehrman-grade contrast</Link>{" "}
+          for how our bounded census relates to tradition-scale claims.
+        </p>
+      </aside>
+
       <section className={styles.section} id="how-to-cite">
         <h2 className={styles.sectionTitle}>How to cite this site</h2>
         <p className={styles.sectionIntro}>
