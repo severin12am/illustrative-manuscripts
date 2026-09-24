@@ -1,6 +1,6 @@
 /**
- * Generated 2026-09-07 from INTF Liste (cached) + uncial seed + NTVMR cache.
- * Window: 1–400 CE overlap. 108 witnesses, 66 with Commons images.
+ * Generated 2026-09-24 from INTF Liste (cached) + uncial seed + NTVMR cache.
+ * Window: 1–400 CE overlap. 108 witnesses, 91 with Commons images.
  * Regenerate: node scripts/generate-data.mjs
  */
 
@@ -432,9 +432,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "Bodleian Art, Archaeology and Ancient World Library",
     "current_shelfmark": "P. Oxy. 4449",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P100-james.jpg",
+    "image_attribution": {
+      "ga": "P100",
+      "file": "P100-james.jpg",
+      "commons_title": "File:Papyrus 100 (Jam 3,13-4,4).jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus_100_(Jam_3,13-4,4).jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Papyrus_100_%28Jam_3%2C13-4%2C4%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "Unknown authorUnknown author",
+      "credit": "Papyrus 100 (Gregory-Aland)",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10100/10/10",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10100",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P100",
@@ -454,7 +466,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10100"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus_100_(Jam_3,13-4,4).jpg"
   },
   {
     "id": "p101",
@@ -479,9 +492,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "Bodleian Art, Archaeology and Ancient World Library",
     "current_shelfmark": "P. Oxy. 4401",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P101-matthew.jpg",
+    "image_attribution": {
+      "ga": "P101",
+      "file": "P101-matthew.jpg",
+      "commons_title": "File:P101-Mat-3 10-12-POxy4401-III.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:P101-Mat-3_10-12-POxy4401-III.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/P101-Mat-3_10-12-POxy4401-III.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "4th Century Monk",
+      "credit": "http://chrles.multiply.com/photos/album/27/Bible_Papyrus_p101#2#photo=3",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10101/10/10",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10101",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P101",
@@ -501,7 +526,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10101"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:P101-Mat-3_10-12-POxy4401-III.jpg"
   },
   {
     "id": "p103",
@@ -982,9 +1008,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "Bodleian Art, Archaeology and Ancient World Library",
     "current_shelfmark": "P. Oxy. 4499",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P115-revelation.jpg",
+    "image_attribution": {
+      "ga": "P115",
+      "file": "P115-revelation.jpg",
+      "commons_title": "File:P. Oxy. LXVI 4499.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:P._Oxy._LXVI_4499.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/P._Oxy._LXVI_4499.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "Original uploader was Iancarter at en.wikipedia\nAuthor of the ruler is User:Kalan",
+      "credit": "[1]",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10115/10/10",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10115",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P115",
@@ -1004,7 +1042,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10115"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:P._Oxy._LXVI_4499.jpg"
   },
   {
     "id": "p118",
@@ -1086,9 +1125,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "Bodleian Art, Archaeology and Ancient World Library",
     "current_shelfmark": "P. Oxy. 4803",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P119-john.jpg",
+    "image_attribution": {
+      "ga": "P119",
+      "file": "P119-john.jpg",
+      "commons_title": "File:Oxford, Sackler Library Ms P. Oxy. 4803 (Papyrus 119) recto John 1, 21-28.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Oxford,_Sackler_Library_Ms_P._Oxy._4803_(Papyrus_119)_recto_John_1,_21-28.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Oxford%2C_Sackler_Library_Ms_P._Oxy._4803_%28Papyrus_119%29_recto_John_1%2C_21-28.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "Unknown authorUnknown author",
+      "credit": "https://portal.sds.ox.ac.uk/articles/online_resource/P_Oxy_LXXI_4803_Gospel_of_John_I_21-8_38-44/21180049",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10119/10/10",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10119",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P119",
@@ -1108,7 +1159,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10119"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Oxford,_Sackler_Library_Ms_P._Oxy._4803_(Papyrus_119)_recto_John_1,_21-28.jpg"
   },
   {
     "id": "p121",
@@ -1133,9 +1185,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "Bodleian Art, Archaeology and Ancient World Library",
     "current_shelfmark": "P. Oxy. 4805",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P121-john.jpg",
+    "image_attribution": {
+      "ga": "P121",
+      "file": "P121-john.jpg",
+      "commons_title": "File:POxy v0071 n4805 a 01 hires.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:POxy_v0071_n4805_a_01_hires.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/POxy_v0071_n4805_a_01_hires.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "4th Century monk",
+      "credit": "http://163.1.169.40/cgi-bin/library?e=q-000-00---0POxy--00-0-0--0prompt-10---4----ded--0-1l--1-20-50---20-help-4804--00031-001-1-0utfZz-8-00&amp;a=d&amp;c=POxy&amp;cl=search&amp;d=HASH2452975fd6e04442b3d041",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10121/10/10",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10121",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P121",
@@ -1155,7 +1219,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10121"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:POxy_v0071_n4805_a_01_hires.jpg"
   },
   {
     "id": "p125",
@@ -1180,9 +1245,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "Bodleian Art, Archaeology and Ancient World Library",
     "current_shelfmark": "P. Oxy. 4934",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P125-1peter.jpg",
+    "image_attribution": {
+      "ga": "P125",
+      "file": "P125-1peter.jpg",
+      "commons_title": "File:POxy v0073 n4934 a 01 hires125.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:POxy_v0073_n4934_a_01_hires125.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/POxy_v0073_n4934_a_01_hires125.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "3rd century monk",
+      "credit": "http://163.1.169.40/cgi-bin/library?e=q-000-00---0POxy--00-0-0--0prompt-10---4----ded--0-1l--1-20-50---20-help-4934--00031-001-1-0utfZz-8-00&amp;a=d&amp;c=POxy&amp;cl=search&amp;d=HASH39f798504849a3b9feb788",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10125/10/10",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10125",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P125",
@@ -1202,7 +1279,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10125"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:POxy_v0073_n4934_a_01_hires125.jpg"
   },
   {
     "id": "p13",
@@ -2721,9 +2799,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "Magdalen College",
     "current_shelfmark": "Ms. Gr. 17",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P64-matthew.jpg",
+    "image_attribution": {
+      "ga": "P64",
+      "file": "P64-matthew.jpg",
+      "commons_title": "File:P064-Mat-26.7-8-26.10-26.14-15-II.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:P064-Mat-26.7-8-26.10-26.14-15-II.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/P064-Mat-26.7-8-26.10-26.14-15-II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "unknown writer in 3rd century",
+      "credit": "http://chrles.multiply.com/",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10064/10/10",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10064",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P64",
@@ -2743,7 +2833,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10064"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:P064-Mat-26.7-8-26.10-26.14-15-II.jpg"
   },
   {
     "id": "p65",
@@ -2768,9 +2859,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "Istituto Papirologico ",
     "current_shelfmark": "PSI inv. 2491",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P65-1thess.jpg",
+    "image_attribution": {
+      "ga": "P65",
+      "file": "P65-1thess.jpg",
+      "commons_title": "File:Papyrus65.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus65.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Papyrus65.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "Unknown authorUnknown author",
+      "credit": "Papyrus 65, manuscript of the New Testament",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10065/10/10",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10065",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P65",
@@ -2790,7 +2893,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10065"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus65.jpg"
   },
   {
     "id": "p66",
@@ -2883,9 +2987,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "Bodleian Art, Archaeology and Ancient World Library",
     "current_shelfmark": "P. Oxy. 2383",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P69-luke.jpg",
+    "image_attribution": {
+      "ga": "P69",
+      "file": "P69-luke.jpg",
+      "commons_title": "File:POxy.v0024.n2383.recto.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:POxy.v0024.n2383.recto.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/POxy.v0024.n2383.recto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "unknown writer in 3rd century",
+      "credit": "http://www.papyrology.ox.ac.uk/POxy/",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10069/10/10",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10069",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P69",
@@ -2905,7 +3021,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10069"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:POxy.v0024.n2383.recto.jpg"
   },
   {
     "id": "p72",
@@ -2930,9 +3047,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "Bibliotheca Bodmeriana",
     "current_shelfmark": "P. Bodmer VII",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P72-1peter.jpg",
+    "image_attribution": {
+      "ga": "P72",
+      "file": "P72-1peter.jpg",
+      "commons_title": "File:P072-1Pe-2.7-12-2.12-17-III-IV.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:P072-1Pe-2.7-12-2.12-17-III-IV.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/P072-1Pe-2.7-12-2.12-17-III-IV.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "unknown writer in 3rd century",
+      "credit": "http://chrles.multiply.com/",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10072/30/10",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10072",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P72",
@@ -2952,7 +3081,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10072"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:P072-1Pe-2.7-12-2.12-17-III-IV.jpg"
   },
   {
     "id": "p75",
@@ -3159,9 +3289,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "Institut für Altertumskunde",
     "current_shelfmark": "Inv. Nr. 12",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P87-philemon.jpg",
+    "image_attribution": {
+      "ga": "P87",
+      "file": "P87-philemon.jpg",
+      "commons_title": "File:Cologne, Uni Köln Ms Papyrus 12 recto Philemon 13-15.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Cologne,_Uni_K%C3%B6ln_Ms_Papyrus_12_recto_Philemon_13-15.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Cologne%2C_Uni_K%C3%B6ln_Ms_Papyrus_12_recto_Philemon_13-15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "Unknown authorUnknown author",
+      "credit": "https://papyri.uni-koeln.de/stueck/tm61857",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10087/10/10",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10087",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P87",
@@ -3181,7 +3323,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10087"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Cologne,_Uni_K%C3%B6ln_Ms_Papyrus_12_recto_Philemon_13-15.jpg"
   },
   {
     "id": "p91",
@@ -3940,9 +4083,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "Staats- und Universitätsbibliothek",
     "current_shelfmark": "P. Hamb. Inv. NS 1002",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P117-2cor.jpg",
+    "image_attribution": {
+      "ga": "P117",
+      "file": "P117-2cor.jpg",
+      "commons_title": "File:Hamburg, State and University Library Ms P. Hamb. Inv. NS 1002 (Papyrus 117) recto 2 Cor 7, 6-8.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Hamburg,_State_and_University_Library_Ms_P._Hamb._Inv._NS_1002_(Papyrus_117)_recto_2_Cor_7,_6-8.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Hamburg%2C_State_and_University_Library_Ms_P._Hamb._Inv._NS_1002_%28Papyrus_117%29_recto_2_Cor_7%2C_6-8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "Unknown authorUnknown author",
+      "credit": "https://manuscripts.csntm.org/manuscript/View/GA_P115",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10117/10/10",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10117",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P117",
@@ -3962,7 +4117,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10117"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Hamburg,_State_and_University_Library_Ms_P._Hamb._Inv._NS_1002_(Papyrus_117)_recto_2_Cor_7,_6-8.jpg"
   },
   {
     "id": "p120",
@@ -4044,9 +4200,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "Bodleian Art, Archaeology and Ancient World Library",
     "current_shelfmark": "P. Oxy. 4806",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P122-john.jpg",
+    "image_attribution": {
+      "ga": "P122",
+      "file": "P122-john.jpg",
+      "commons_title": "File:Papyrus122.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus122.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Papyrus122.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "unknown writer of the 4th century",
+      "credit": "http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH014d/51be280c.dir/POxy.v0071.n4806.a.01.hires.jpg",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10122/10/10",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10122",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P122",
@@ -4066,7 +4234,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10122"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Papyrus122.jpg"
   },
   {
     "id": "p123",
@@ -4605,9 +4774,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "Österreichische Nationalbibliothek",
     "current_shelfmark": "Pap. G. 26020",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P57-acts.jpg",
+    "image_attribution": {
+      "ga": "P57",
+      "file": "P57-acts.jpg",
+      "commons_title": "File:Vienna, Austrian National Library Pap. G. 26020 (Papyrus 57) recto Acts 4, 36-5, 2.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Vienna,_Austrian_National_Library_Pap._G._26020_(Papyrus_57)_recto_Acts_4,_36-5,_2.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Vienna%2C_Austrian_National_Library_Pap._G._26020_%28Papyrus_57%29_recto_Acts_4%2C_36-5%2C_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "Unknown authorUnknown author",
+      "credit": "https://manuscripts.csntm.org/manuscript/View/GA_P57_digital",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10057/10/10",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10057",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P57",
@@ -4627,7 +4808,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10057"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Vienna,_Austrian_National_Library_Pap._G._26020_(Papyrus_57)_recto_Acts_4,_36-5,_2.jpg"
   },
   {
     "id": "p6",
@@ -4712,9 +4894,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "University of Oslo Library ",
     "current_shelfmark": "P. 1661",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P62-matthew.jpg",
+    "image_attribution": {
+      "ga": "P62",
+      "file": "P62-matthew.jpg",
+      "commons_title": "File:P062-Mat-11.25-30-recto-1-3-5-7-IV.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:P062-Mat-11.25-30-recto-1-3-5-7-IV.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/P062-Mat-11.25-30-recto-1-3-5-7-IV.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "unknown writer in 7th century",
+      "credit": "http://chrles.multiply.com/",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10062/10/10",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10062",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P62",
@@ -4734,7 +4928,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10062"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:P062-Mat-11.25-30-recto-1-3-5-7-IV.jpg"
   },
   {
     "id": "p7",
@@ -5046,9 +5241,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "Bibliothèque nationale universitaire",
     "current_shelfmark": "P. Gr. 2677",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P82-luke.jpg",
+    "image_attribution": {
+      "ga": "P82",
+      "file": "P82-luke.jpg",
+      "commons_title": "File:Strasbourg, National and University Library Ms P. Gr. 2677 (Papyrus 82) recto Luke 7, 32-34.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Strasbourg,_National_and_University_Library_Ms_P._Gr._2677_(Papyrus_82)_recto_Luke_7,_32-34.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Strasbourg%2C_National_and_University_Library_Ms_P._Gr._2677_%28Papyrus_82%29_recto_Luke_7%2C_32-34.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "Unknown authorUnknown author",
+      "credit": "https://manuscripts.csntm.org/manuscript/View/GA_P82",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10082",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10082",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P82",
@@ -5068,7 +5275,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10082"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Strasbourg,_National_and_University_Library_Ms_P._Gr._2677_(Papyrus_82)_recto_Luke_7,_32-34.jpg"
   },
   {
     "id": "p85",
@@ -5093,9 +5301,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "Bibliothèque nationale universitaire",
     "current_shelfmark": "P. Gr. 1028",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P85-revelation.jpg",
+    "image_attribution": {
+      "ga": "P85",
+      "file": "P85-revelation.jpg",
+      "commons_title": "File:Strasbourg, National and University Library Ms P. Gr. 1028 (Papyrus 85) all fragments front recto Revelation are verses 9, 19-10, 2; 5-9.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Strasbourg,_National_and_University_Library_Ms_P._Gr._1028_(Papyrus_85)_all_fragments_front_recto_Revelation_are_verses_9,_19-10,_2;_5-9.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Strasbourg%2C_National_and_University_Library_Ms_P._Gr._1028_%28Papyrus_85%29_all_fragments_front_recto_Revelation_are_verses_9%2C_19-10%2C_2%3B_5-9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "Unknown authorUnknown author",
+      "credit": "https://manuscripts.csntm.org/manuscript/Group/GA_P85",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10085",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10085",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P85",
@@ -5115,7 +5335,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10085"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Strasbourg,_National_and_University_Library_Ms_P._Gr._1028_(Papyrus_85)_all_fragments_front_recto_Revelation_are_verses_9,_19-10,_2;_5-9.jpg"
   },
   {
     "id": "p86",
@@ -5197,9 +5418,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "Università Cattolica del Sacro Cuore",
     "current_shelfmark": "P. Med. Inv. Nr. 69.24",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P88-mark.jpg",
+    "image_attribution": {
+      "ga": "P88",
+      "file": "P88-mark.jpg",
+      "commons_title": "File:Milan, Catholic University Ms P. Med. Inv. Nr. 69.24 (Papyrus 88) bifolio recto Mark 2, 1-8; 20-26.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Milan,_Catholic_University_Ms_P._Med._Inv._Nr._69.24_(Papyrus_88)_bifolio_recto_Mark_2,_1-8;_20-26.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Milan%2C_Catholic_University_Ms_P._Med._Inv._Nr._69.24_%28Papyrus_88%29_bifolio_recto_Mark_2%2C_1-8%3B_20-26.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "Unknown authorUnknown author",
+      "credit": "https://manuscripts.csntm.org/manuscript/View/GA_P88",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10088",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10088",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P88",
@@ -5219,7 +5452,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10088"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Milan,_Catholic_University_Ms_P._Med._Inv._Nr._69.24_(Papyrus_88)_bifolio_recto_Mark_2,_1-8;_20-26.jpg"
   },
   {
     "id": "p89",
@@ -5434,9 +5668,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "Chester Beatty Library",
     "current_shelfmark": "CBL BP XXI",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P99-2cor.jpg",
+    "image_attribution": {
+      "ga": "P99",
+      "file": "P99-2cor.jpg",
+      "commons_title": "File:Dublin, Chester Beatty Ms BP XXI (Papyrus 99) fol 12r 2 Cor 1, 6-13.16-17.20-22.24; 7, 13.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Dublin,_Chester_Beatty_Ms_BP_XXI_(Papyrus_99)_fol_12r_2_Cor_1,_6-13.16-17.20-22.24;_7,_13.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Dublin%2C_Chester_Beatty_Ms_BP_XXI_%28Papyrus_99%29_fol_12r_2_Cor_1%2C_6-13.16-17.20-22.24%3B_7%2C_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "Unknown authorUnknown author",
+      "credit": "https://viewer.cbl.ie/viewer/image/BP_XXI_ff_12_15/2/",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10099/10/10",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10099",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P99",
@@ -5456,7 +5702,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10099"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Dublin,_Chester_Beatty_Ms_BP_XXI_(Papyrus_99)_fol_12r_2_Cor_1,_6-13.16-17.20-22.24;_7,_13.jpg"
   },
   {
     "id": "p105",
@@ -5528,9 +5775,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "Bodleian Art, Archaeology and Ancient World Library",
     "current_shelfmark": "P. Oxy. 4496",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P112-acts.jpg",
+    "image_attribution": {
+      "ga": "P112",
+      "file": "P112-acts.jpg",
+      "commons_title": "File:P112-Act-26 31-32-POxy4496-V.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:P112-Act-26_31-32-POxy4496-V.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/P112-Act-26_31-32-POxy4496-V.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "5th Century monk",
+      "credit": "http://chrles.multiply.com/photos/album/16/Bible_Papyrus_p112#2#photo=2",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10112/10/10",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10112",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P112",
@@ -5550,7 +5809,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10112"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:P112-Act-26_31-32-POxy4496-V.jpg"
   },
   {
     "id": "p127",
@@ -5716,9 +5976,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "Bodleian Art, Archaeology and Ancient World Library",
     "current_shelfmark": "P. Oxy. 2157",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P51-galatians.jpg",
+    "image_attribution": {
+      "ga": "P51",
+      "file": "P51-galatians.jpg",
+      "commons_title": "File:P051-Gal-1 2-10-POxy2157-IV.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:P051-Gal-1_2-10-POxy2157-IV.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/P051-Gal-1_2-10-POxy2157-IV.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "monnik 5e eeuw",
+      "credit": "http://chrles.multiply.com/photos/album/77/Bible_Papyrus_p51#2#photo=2",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10051/10/10",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10051",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P51",
@@ -5738,7 +6010,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10051"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:P051-Gal-1_2-10-POxy2157-IV.jpg"
   },
   {
     "id": "p54",
@@ -5763,9 +6036,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "Princeton University Libraries",
     "current_shelfmark": "P. Princeton II 15",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P54-james.jpg",
+    "image_attribution": {
+      "ga": "P54",
+      "file": "P54-james.jpg",
+      "commons_title": "File:P054-Jam-2 16-18-22-V.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:P054-Jam-2_16-18-22-V.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/P054-Jam-2_16-18-22-V.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "6th Century monk",
+      "credit": "http://chrles.multiply.com/photos/album/74/Bible_Papyrus_p54#2#photo=2",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10054/10/10",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10054",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P54",
@@ -5785,7 +6070,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10054"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:P054-Jam-2_16-18-22-V.jpg"
   },
   {
     "id": "p56",
@@ -5810,9 +6096,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "Österreichische Nationalbibliothek",
     "current_shelfmark": "Pap. G. 19918",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P56-acts.jpg",
+    "image_attribution": {
+      "ga": "P56",
+      "file": "P56-acts.jpg",
+      "commons_title": "File:Vienna, Austrian National Library Pap. G. 19918 (Papyrus 56) fragment 2 verso Acts 1, 7-11.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Vienna,_Austrian_National_Library_Pap._G._19918_(Papyrus_56)_fragment_2_verso_Acts_1,_7-11.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Vienna%2C_Austrian_National_Library_Pap._G._19918_%28Papyrus_56%29_fragment_2_verso_Acts_1%2C_7-11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "Unknown authorUnknown author",
+      "credit": "https://manuscripts.csntm.org/manuscript/Group/GA_P56",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10056",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10056",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P56",
@@ -5832,7 +6130,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10056"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Vienna,_Austrian_National_Library_Pap._G._19918_(Papyrus_56)_fragment_2_verso_Acts_1,_7-11.jpg"
   },
   {
     "id": "p93",
@@ -5857,9 +6156,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "Istituto Papirologico ",
     "current_shelfmark": "PSI inv. 108",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P93-john.jpg",
+    "image_attribution": {
+      "ga": "P93",
+      "file": "P93-john.jpg",
+      "commons_title": "File:Florence, National Archaeological Museum Ms PSI inv.108 (Papyrus 93) recto John 13, 15-17.jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Florence,_National_Archaeological_Museum_Ms_PSI_inv.108_(Papyrus_93)_recto_John_13,_15-17.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Florence%2C_National_Archaeological_Museum_Ms_PSI_inv.108_%28Papyrus_93%29_recto_John_13%2C_15-17.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "Unknown authorUnknown author",
+      "credit": "https://psi-online.it/documents/psi-congrxvii-4",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10093/10/10",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10093",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P93",
@@ -5879,7 +6190,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10093"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Florence,_National_Archaeological_Museum_Ms_PSI_inv.108_(Papyrus_93)_recto_John_13,_15-17.jpg"
   },
   {
     "id": "p94",
@@ -5904,9 +6216,21 @@ export const witnesses: Witness[] = [
     "find_year_or_note": "See Liste bibliography",
     "current_institution": "The Egyptian Museum",
     "current_shelfmark": "P. Cair. 10730",
-    "image_policy": "link_only",
-    "hosted_image": null,
-    "image_attribution": null,
+    "image_policy": "hosted",
+    "hosted_image": "/witnesses/P94-romans.jpg",
+    "image_attribution": {
+      "ga": "P94",
+      "file": "P94-romans.jpg",
+      "commons_title": "File:Egyptian Museum, Cairo Ms P. Cair. 10730 (Papyrus 94) recto verso Rom 6, 10-13 (bottom-recto); Rom 6, 19-21 (top-verso).jpg",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:Egyptian_Museum,_Cairo_Ms_P._Cair._10730_(Papyrus_94)_recto_verso_Rom_6,_10-13_(bottom-recto);_Rom_6,_19-21_(top-verso).jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Egyptian_Museum%2C_Cairo_Ms_P._Cair._10730_%28Papyrus_94%29_recto_verso_Rom_6%2C_10-13_%28bottom-recto%29%3B_Rom_6%2C_19-21_%28top-verso%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "Unknown authorUnknown author",
+      "credit": "https://manuscripts.csntm.org/manuscript/View/GA_P94",
+      "attribution_required": true,
+      "note": "Wikimedia Commons file — not the holding library's high-res scan."
+    },
     "source_page_url": "https://ntvmr.uni-muenster.de/community/modules/papyri/?site=VMR&image=10094/10/10",
     "ntvmr_url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10094",
     "csntm_url": "https://manuscripts.csntm.org/manuscript/Group/GA_P94",
@@ -5926,7 +6250,8 @@ export const witnesses: Witness[] = [
         "url": "https://ntvmr.uni-muenster.de/manuscript-workspace/?docID=10094"
       }
     ],
-    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown."
+    "license_note": "Metadata from INTF Liste (cite INTF). Photos © holding institutions unless a Commons image is shown.",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Egyptian_Museum,_Cairo_Ms_P._Cair._10730_(Papyrus_94)_recto_verso_Rom_6,_10-13_(bottom-recto);_Rom_6,_19-21_(top-verso).jpg"
   }
 ];
 
