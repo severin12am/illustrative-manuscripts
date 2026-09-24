@@ -10,7 +10,8 @@
       "Rahlfs Verzeichnis / Göttingen Septuaginta catalogue (metadata)",
       "World English Bible (PD) for English of shown lines"
     ],
-    "generated_by": "Hand-curated seed — 24 witnesses (9 Hebrew DSS + 15 Greek LXX); expand against open image/text licenses"
+    "generated_by": "Hand-curated seed — 24 witnesses (9 Hebrew DSS + 15 Greek LXX); expand against open image/text licenses",
+    "image_gap_note": "2026-09-24: 4QSamᵃ, 2Q18, Mur 88, Mas1a, P.Vindob. G 39777 still lack license-clear Commons or open IIIF leaf URLs (Leon Levy / IAA ©; ONB Vienna catalog only). CBL BP VI filled from Commons PD (Univ. of Michigan P.Mich.inv. 5554 plate)."
   },
   "manuscripts": [
     {
@@ -169,7 +170,7 @@
           "license": "© IAA — link only",
           "attribution_required": true,
           "viewer_url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/4Q51-1",
-          "note": "No verified PD Commons leaf plate; view at Leon Levy DSS Digital Library."
+          "note": "No verified PD Commons leaf plate (re-checked Commons 2026-09-24); view at Leon Levy DSS Digital Library."
         }
       },
       "passages": [
@@ -221,7 +222,7 @@
           "institution": "Israel Antiquities Authority",
           "license": "© IAA — link only",
           "attribution_required": true,
-          "note": "Fragment plate at Leon Levy DSS Digital Library; no open Commons rehost."
+          "note": "Fragment plate at Leon Levy DSS Digital Library; no open Commons rehost (re-checked Commons 2026-09-24)."
         }
       },
       "passages": [
@@ -573,15 +574,17 @@
       "current_institution": "Chester Beatty, Dublin (+ Univ. of Michigan fragments)",
       "current_shelfmark": "CBL BP VI / P.Mich. Inv. 5554",
       "library_url": "https://www.chesterbeatty.ie/",
+      "commons_key": "cbp-bp-vi",
       "image": {
-        "policy": "link_only",
-        "viewer_url": "https://www.chesterbeatty.ie/",
+        "policy": "hosted",
+        "viewer_url": "https://commons.wikimedia.org/wiki/File:P._Chester_Beatty_VI_fragments,_recto.jpg",
         "attribution": {
-          "institution": "Chester Beatty Library / University of Michigan",
-          "license": "© institutions — link only (Hayes 1958 plates not rehosted)",
-          "attribution_required": true,
-          "viewer_url": "https://www.chesterbeatty.ie/",
-          "note": "Michigan Deut. 4 fragments imaged at APIS; no verified PD Commons plate for BP VI yet."
+          "institution": "University of Michigan Library / Chester Beatty (P.Mich.inv. 5554)",
+          "license": "Public domain (PDMC on Commons)",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:P._Chester_Beatty_VI_fragments,_recto.jpg",
+          "attribution_required": false,
+          "note": "Commons PD plate of Deuteronomy fragments (Rahlfs 963); not the full Chester Beatty fascicle scan."
         }
       },
       "passages": [
@@ -633,7 +636,7 @@
           "institution": "Österreichische Nationalbibliothek",
           "license": "© ONB — link only",
           "attribution_required": true,
-          "note": "No verified PD Commons plate; consult ONB catalog."
+          "note": "No verified PD Commons plate (re-checked Commons 2026-09-24); consult ONB catalog."
         }
       },
       "passages": [
@@ -844,7 +847,7 @@
           "institution": "Israel Antiquities Authority",
           "license": "© IAA — link only",
           "attribution_required": true,
-          "note": "No verified PD Commons leaf for Mur 88; view at Leon Levy DSS Digital Library."
+          "note": "No verified PD Commons leaf for Mur 88 (re-checked Commons 2026-09-24); view at Leon Levy DSS Digital Library."
         }
       },
       "passages": [
@@ -892,7 +895,8 @@
         "attribution": {
           "institution": "Israel Antiquities Authority",
           "license": "© IAA — link only",
-          "attribution_required": true
+          "attribution_required": true,
+          "note": "Leon Levy Masada plates © IAA — no verified PD Commons leaf (re-checked Commons 2026-09-24)."
         }
       },
       "passages": [

@@ -1,6 +1,6 @@
 /**
- * Generated 2026-09-18 from scripts/hebrew-lxx-seed.json
- * Window: 250 BCE–400 CE. 24 witnesses (9 Hebrew DSS + 15 Greek LXX), 18 with Commons leaf images.
+ * Generated 2026-09-24 from scripts/hebrew-lxx-seed.json
+ * Window: 250 BCE–400 CE. 24 witnesses (9 Hebrew DSS + 15 Greek LXX), 19 with Commons leaf images.
  * Regenerate: node scripts/build-hebrew-lxx-data.mjs
  */
 
@@ -145,7 +145,7 @@ export const hebrewLxxWitnesses: Witness[] = [
       "license": "© IAA — link only",
       "attribution_required": true,
       "viewer_url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/4Q51-1",
-      "note": "No verified PD Commons leaf plate; view at Leon Levy DSS Digital Library."
+      "note": "No verified PD Commons leaf plate (re-checked Commons 2026-09-24); view at Leon Levy DSS Digital Library."
     },
     "source_page_url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/4Q51-1",
     "library_url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/4Q51-1",
@@ -194,7 +194,7 @@ export const hebrewLxxWitnesses: Witness[] = [
       "institution": "Israel Antiquities Authority",
       "license": "© IAA — link only",
       "attribution_required": true,
-      "note": "Fragment plate at Leon Levy DSS Digital Library; no open Commons rehost."
+      "note": "Fragment plate at Leon Levy DSS Digital Library; no open Commons rehost (re-checked Commons 2026-09-24)."
     },
     "source_page_url": "https://www.deadseascrolls.org.il/",
     "library_url": "https://www.deadseascrolls.org.il/",
@@ -539,16 +539,19 @@ export const hebrewLxxWitnesses: Witness[] = [
     "find_year_or_note": "Acquired Chester Beatty before 1931; some folios at Michigan",
     "current_institution": "Chester Beatty, Dublin (+ Univ. of Michigan fragments)",
     "current_shelfmark": "CBL BP VI / P.Mich. Inv. 5554",
-    "image_policy": "link_only",
-    "hosted_image": null,
+    "image_policy": "hosted",
+    "image_source": "commons",
+    "hosted_image": "/witnesses/cbp-bp-vi.jpg",
     "image_attribution": {
-      "institution": "Chester Beatty Library / University of Michigan",
-      "license": "© institutions — link only (Hayes 1958 plates not rehosted)",
-      "attribution_required": true,
-      "viewer_url": "https://www.chesterbeatty.ie/",
-      "note": "Michigan Deut. 4 fragments imaged at APIS; no verified PD Commons plate for BP VI yet."
+      "institution": "University of Michigan Library / Chester Beatty (P.Mich.inv. 5554)",
+      "license": "Public domain (PDMC on Commons)",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "commons_url": "https://commons.wikimedia.org/wiki/File:P._Chester_Beatty_VI_fragments,_recto.jpg",
+      "attribution_required": false,
+      "note": "Commons PD plate of Deuteronomy fragments (Rahlfs 963); not the full Chester Beatty fascicle scan."
     },
-    "source_page_url": "https://www.chesterbeatty.ie/",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:P._Chester_Beatty_VI_fragments,_recto.jpg",
+    "source_page_url": "https://commons.wikimedia.org/wiki/File:P._Chester_Beatty_VI_fragments,_recto.jpg",
     "library_url": "https://www.chesterbeatty.ie/",
     "ntvmr_url": "https://www.chesterbeatty.ie/",
     "docID": 0,
@@ -596,7 +599,7 @@ export const hebrewLxxWitnesses: Witness[] = [
       "institution": "Österreichische Nationalbibliothek",
       "license": "© ONB — link only",
       "attribution_required": true,
-      "note": "No verified PD Commons plate; consult ONB catalog."
+      "note": "No verified PD Commons plate (re-checked Commons 2026-09-24); consult ONB catalog."
     },
     "source_page_url": "https://www.onb.ac.at/",
     "library_url": "https://www.onb.ac.at/",
@@ -796,7 +799,7 @@ export const hebrewLxxWitnesses: Witness[] = [
       "institution": "Israel Antiquities Authority",
       "license": "© IAA — link only",
       "attribution_required": true,
-      "note": "No verified PD Commons leaf for Mur 88; view at Leon Levy DSS Digital Library."
+      "note": "No verified PD Commons leaf for Mur 88 (re-checked Commons 2026-09-24); view at Leon Levy DSS Digital Library."
     },
     "source_page_url": "https://www.deadseascrolls.org.il/",
     "library_url": "https://www.deadseascrolls.org.il/",
@@ -840,7 +843,8 @@ export const hebrewLxxWitnesses: Witness[] = [
     "image_attribution": {
       "institution": "Israel Antiquities Authority",
       "license": "© IAA — link only",
-      "attribution_required": true
+      "attribution_required": true,
+      "note": "Leon Levy Masada plates © IAA — no verified PD Commons leaf (re-checked Commons 2026-09-24)."
     },
     "source_page_url": "https://www.deadseascrolls.org.il/",
     "library_url": "https://www.deadseascrolls.org.il/",
