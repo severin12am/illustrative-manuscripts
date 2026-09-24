@@ -269,6 +269,17 @@
   font-size: 0.9375rem;
 }
 
+.apparatusNote {
+  font-size: 0.875rem;
+  color: var(--ink-muted);
+  line-height: 1.55;
+}
+
+.apparatusNote a {
+  color: var(--accent);
+  font-size: inherit;
+}
+
 .actionLink {
   margin-top: 0.75rem !important;
   font-size: 0.9375rem !important;

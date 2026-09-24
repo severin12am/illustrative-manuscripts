@@ -73,6 +73,9 @@ export default function CoveragePage() {
           <Link href="/teach/">Teaching briefs</Link> for pathways and claim discipline
           before quoting our counts in an argument. Researchers: see{" "}
           <Link href="/methodology/">Methods</Link> for scope windows and reproducibility.
+          For outbound catalogs (Liste, CNTR, Corpus Coranicum, PD Tischendorf scans), see{" "}
+          <Link href="/sources/">Open sources</Link> and{" "}
+          <Link href="/status/#published-tools">Site status § published tools</Link>.
         </p>
       </header>
 

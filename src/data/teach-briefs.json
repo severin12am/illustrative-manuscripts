@@ -339,6 +339,40 @@
       ]
     },
     {
+      "id": "reuse-open-tools",
+      "slug": "reuse-open-tools",
+      "title": "Reuse open tools — don’t reinvent the Liste",
+      "subtitle": "Wire published catalogs; cite bounded slices here",
+      "audience": "Contributors · syllabus authors · debaters",
+      "learning_goal": "Route yourself and others to INTF, full CNTR, Corpus Coranicum, and PD apparatus scans before treating this site as a complete census.",
+      "steps": [
+        {
+          "text": "Read Site status § What published tools still give you — contrast our CNTR slice + curated Famous/Uthmani/niʿmat layers with tools you still need for primary work.",
+          "links": [{ "href": "/status/#published-tools", "label": "Site status" }]
+        },
+        {
+          "text": "Open the Open sources hub for license-tagged cards (Liste, CNTR, Gurry open MS, Tischendorf EOCM on Internet Archive, NA28/ECM cite-only, Qurʾān stemmatics, Claremont NHA, DSS libraries).",
+          "links": [{ "href": "/sources/", "label": "Open sources hub" }]
+        },
+        {
+          "text": "For block-level Greek issues, pair our Famous passage CNTR status with outbound Tischendorf EOCM apparatus links — 19th-century PD, not ECM.",
+          "links": [{ "href": "/famous/", "label": "Famous passages" }]
+        },
+        {
+          "text": "When citing numbers, download our JSON/CSV only with scope language; point readers to CNTR/NTVMR/Corpus Coranicum for primaries.",
+          "links": [
+            { "href": "/cite/#downloads", "label": "Cite: downloads" },
+            { "href": "/coverage/", "label": "Coverage limits" }
+          ]
+        }
+      ],
+      "dont_overclaim": "We compile and explain — we do not replace the INTF Liste, parse copyrighted NA28/ECM apparatus, or OCR-ingest bulk Tischendorf text in this repo.",
+      "related_links": [
+        { "href": "/methodology/", "label": "Methods" },
+        { "href": "/teach/before-you-cite-status/", "label": "Brief: before you cite" }
+      ]
+    },
+    {
       "id": "how-to-cite",
       "slug": "how-to-cite",
       "title": "How to cite this site",

@@ -181,6 +181,22 @@ export default function FamousPassagesPage() {
                     </a>
                   </li>
                 ))}
+                {entry.historical_apparatus && (
+                  <li key={entry.historical_apparatus.url}>
+                    <a
+                      href={entry.historical_apparatus.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {entry.historical_apparatus.label}
+                    </a>
+                    <span className={styles.apparatusNote}>
+                      {" "}
+                      — {entry.historical_apparatus.note}{" "}
+                      <Link href="/sources/#tischendorf-eocm">Open sources hub</Link>
+                    </span>
+                  </li>
+                )}
               </ul>
               {entry.variants_link && (
                 <p className={styles.actionLink}>

@@ -525,7 +525,8 @@ export default function CitePage() {
         </table>
         <p className={styles.sectionIntro} style={{ marginTop: "1rem" }}>
           Site metadata compilation: CC BY 4.0. Code: MIT. Details in{" "}
-          <a href={`${GITHUB}/blob/main/DATA.md`}>DATA.md</a>.
+          <a href={`${GITHUB}/blob/main/DATA.md`}>DATA.md</a>. Expanded cards:{" "}
+          <Link href="/sources/">Open sources hub</Link>.
         </p>
       </section>
 
@@ -622,6 +623,8 @@ export default function CitePage() {
       </section>
 
       <footer className={styles.footer}>
+        <Link href="/sources/">Open sources hub →</Link>
+        {" · "}
         <Link href="/status/">Site status →</Link>
         {" · "}
         <Link href="/teach/">Teaching briefs →</Link>

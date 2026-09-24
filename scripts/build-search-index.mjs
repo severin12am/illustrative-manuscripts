@@ -310,9 +310,72 @@ function siteStatusEntry() {
       "nag hammadi",
       "hebrew lxx",
       "claim discipline",
-      "before outreach"
+      "before outreach",
+      "published tools"
     ),
   };
+}
+
+function openSourcesEntries() {
+  const bundle = readJson("src/data/open-sources.json");
+  const hub = {
+    kind: "claim",
+    id: "open-sources-hub",
+    label: "Open sources hub",
+    subtitle: "INTF Liste CNTR Gurry Tischendorf Corpus Coranicum Claremont",
+    href: "/sources/",
+    haystack: hay(
+      "open sources",
+      "intf liste",
+      "ntvmr",
+      "cntr",
+      "gurry",
+      "tischendorf",
+      "editio octava",
+      "corpus coranicum",
+      "claremont nha",
+      "digivatlib",
+      "dead sea scrolls",
+      "na28 ecm",
+      "reuse dont reinvent liste"
+    ),
+  };
+  const cards = [];
+  for (const section of bundle.sections ?? []) {
+    for (const card of section.cards ?? []) {
+      cards.push({
+        kind: "claim",
+        id: `open-source-${card.id}`,
+        label: card.title,
+        subtitle: section.title,
+        href: `/sources/#${card.id}`,
+        haystack: hay(
+          card.title,
+          card.summary,
+          card.license_note,
+          section.title,
+          section.id,
+          ...(card.links ?? []).map((l) => l.label),
+          "open sources bibliography"
+        ),
+      });
+    }
+  }
+  const teach = {
+    kind: "claim",
+    id: "teach-reuse-open-tools",
+    label: "Teaching brief: reuse open tools",
+    subtitle: "Don't reinvent the Liste",
+    href: "/teach/reuse-open-tools/",
+    haystack: hay(
+      "reuse open tools",
+      "dont reinvent liste",
+      "published catalogs",
+      "open sources brief",
+      "teaching"
+    ),
+  };
+  return [hub, ...cards, teach];
 }
 
 function nagHammadiEvidenceEntries() {
@@ -385,6 +448,7 @@ const items = [
   ...variantFamousDeepLinks(),
   ...claimEntries(),
   siteStatusEntry(),
+  ...openSourcesEntries(),
   ...uthmaniEntries(),
   ...quranArchetypeEntries(),
   quranReadingsEntry(),

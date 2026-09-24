@@ -1,0 +1,223 @@
+{
+  "version": 1,
+  "intro": "Illustrative Manuscripts wires published catalogs and open transcriptions — it does not replace them. Use this hub to jump to the wheels scholars already built: INTF registers, full CNTR, Corpus Coranicum, Claremont IIIF, and public-domain historical apparatus scans.",
+  "license_legend": {
+    "open_reuse": "Data or scans you may reuse under stated terms (CC BY, CC BY-SA, public domain). We link or compile; check each source.",
+    "link_only": "Cite and follow outbound links — do not rehost images or proprietary databases on this site.",
+    "copyrighted_cite_only": "Standard critical editions (NA28, ECM, UBS). Cite in papers; we never host apparatus text or scans."
+  },
+  "sections": [
+    {
+      "id": "greek-nt",
+      "title": "Greek New Testament",
+      "intro": "Mechanical collation on this site is a bounded CNTR slice vs SR GNT. Full tradition work stays with INTF, CNTR, and edition houses.",
+      "cards": [
+        {
+          "id": "intf-liste-ntvmr",
+          "title": "INTF Liste & NTVMR",
+          "summary": "Gregory–Aland sigla, date ranges, contents, and manuscript workspace — the register behind “how many Greek NT manuscripts exist.”",
+          "links": [
+            { "label": "Liste (Münster)", "href": "https://ntvmr.uni-muenster.de/liste" },
+            { "label": "NTVMR portal", "href": "https://ntvmr.uni-muenster.de/" },
+            { "label": "INTF overview", "href": "https://www.uni-muenster.de/INTF/" }
+          ],
+          "license": "link_only",
+          "license_note": "Catalog metadata and images via institutional terms — link out; we do not mirror the Liste."
+        },
+        {
+          "id": "cntr-srgnt",
+          "title": "CNTR transcriptions & SR GNT",
+          "summary": "Open diplomatic Greek, Society of Biblical Literature Greek New Testament (SR GNT) base text, and tools our variant census reuses.",
+          "links": [
+            { "label": "Center for New Testament Restoration", "href": "https://greekcntr.org/" },
+            { "label": "SR GNT (via CNTR)", "href": "https://greekcntr.org/" }
+          ],
+          "license": "open_reuse",
+          "license_note": "CC BY-SA 4.0 transcriptions — our census fields remain share-alike when derived."
+        },
+        {
+          "id": "igntp",
+          "title": "IGNTP",
+          "summary": "Institute for New Testament Textual Research critical editions and open tools where published (e.g. Catholic Epistles, Pauline projects).",
+          "links": [{ "label": "igntp.org", "href": "https://igntp.org/" }],
+          "license": "link_only",
+          "license_note": "Per-edition terms — use for apparatus judgments we do not encode."
+        },
+        {
+          "id": "gurry-2016",
+          "title": "Gurry 2016 — tradition-scale variant estimates",
+          "summary": "Peter J. Gurry’s accepted manuscript on how many variants the Greek NT tradition may hold (~500k order-of-magnitude) — context for Ehrman-scale debate, not our census total.",
+          "links": [
+            { "label": "DOI (NTS)", "href": "https://doi.org/10.1017/S0028688516000216" },
+            {
+              "label": "Open accepted MS (Cambridge repository)",
+              "href": "https://www.repository.cam.ac.uk/bitstreams/fbac7937-110b-48a0-81f5-656677f85d8e/download"
+            }
+          ],
+          "license": "open_reuse",
+          "license_note": "Article paywall may apply; accepted MS PDF is open at Cambridge."
+        },
+        {
+          "id": "tischendorf-eocm",
+          "title": "Tischendorf Editio octava critica maior (Internet Archive)",
+          "summary": "19th-century public-domain critical edition with historical apparatus — useful for famous passages, not a substitute for NA28/ECM.",
+          "links": [
+            {
+              "label": "Vol. I — Matthew (IA)",
+              "href": "https://archive.org/details/novumtestamentum01tisc"
+            },
+            {
+              "label": "Vol. II — Mark (IA)",
+              "href": "https://archive.org/details/novumtestamentum02tisc"
+            },
+            {
+              "label": "Vol. III — Luke (IA)",
+              "href": "https://archive.org/details/novumtestamentum03tisc"
+            },
+            {
+              "label": "Vol. IV — John (IA)",
+              "href": "https://archive.org/details/novumtestamentum04tisc"
+            },
+            {
+              "label": "Vol. V — Acts (IA)",
+              "href": "https://archive.org/details/novumtestamentum05tisc"
+            },
+            {
+              "label": "Vol. VI — Pauline epistles (IA)",
+              "href": "https://archive.org/details/novumtestamentum06tisc"
+            },
+            {
+              "label": "Vol. VII — Catholic epistles (IA)",
+              "href": "https://archive.org/details/novumtestamentum07tisc"
+            },
+            {
+              "label": "Search all EOCM volumes",
+              "href": "https://archive.org/search?query=editio%20octava%20critica%20major%20tischendorf"
+            }
+          ],
+          "license": "open_reuse",
+          "license_note": "Public-domain scans — link for apparatus; we do not OCR-ingest bulk text here."
+        },
+        {
+          "id": "na28-ecm-ubs",
+          "title": "NA28 · ECM · UBS Greek New Testament",
+          "summary": "Current critical editions of record for citations and classroom — apparatus judgments and copyrighted text.",
+          "links": [
+            { "label": "Deutsche Bibelgesellschaft (NA/UBS)", "href": "https://www.academic-bible.com/" },
+            { "label": "INTF ECM portal", "href": "https://ntvmr.uni-muenster.de/ecm/" }
+          ],
+          "license": "copyrighted_cite_only",
+          "license_note": "Buy or library-access — never host apparatus or text on this site."
+        }
+      ]
+    },
+    {
+      "id": "quran",
+      "title": "Qurʾān",
+      "intro": "Our Qurʾān layers transcribe published stemmatics and catalog cards — not a generated mushaf variant census.",
+      "cards": [
+        {
+          "id": "corpus-coranicum",
+          "title": "Corpus Coranicum",
+          "summary": "Berlin-Brandenburg Academy catalog spine, bibliography, and early manuscript metadata for Qurʾān research.",
+          "links": [{ "label": "corpuscoranicum.org", "href": "https://corpuscoranicum.org/" }],
+          "license": "open_reuse",
+          "license_note": "CC BY 4.0 metadata — images and editions may have separate terms."
+        },
+        {
+          "id": "cook-2004",
+          "title": "Michael Cook (2004) — regional codex stemma",
+          "summary": "Published tallies for Uthmanic regional rasm splits (~35 graphic reports) that frame our layer-2 table.",
+          "links": [
+            {
+              "label": "DOI — Graeco-Arabica stemma chapter",
+              "href": "https://doi.org/10.1163/9789004693623_009"
+            }
+          ],
+          "license": "link_only",
+          "license_note": "Cite the chapter; we reproduce illustrative rows with attribution, not a full re-count."
+        },
+        {
+          "id": "sidky-2020",
+          "title": "Hythem Sidky (2020) — manuscript phylogeny",
+          "summary": "Four ancestral nodes recovered from early manuscript trees — cited on Uthmanic rasm and shared-orthography pages.",
+          "links": [
+            { "label": "DOI — JIQSA 5", "href": "https://doi.org/10.5913/jiqsa.5.2020.a005" }
+          ],
+          "license": "link_only",
+          "license_note": "Journal article — link for phylogeny claims; no bulk ingest."
+        },
+        {
+          "id": "van-putten-2019",
+          "title": "Marijn van Putten (2019) — BSOAS Table 2",
+          "summary": "niʿmat allāh / ta vs ta marbūṭa matrix we hand-transcribed for the shared-orthography layer.",
+          "links": [
+            { "label": "DOI", "href": "https://doi.org/10.1017/S0041977X19000338" },
+            {
+              "label": "Leiden open repository PDF",
+              "href": "https://scholarlypublications.universiteitleiden.nl/handle/1887/79373"
+            }
+          ],
+          "license": "open_reuse",
+          "license_note": "Open-access article — matrix on /quran/archetype/ mirrors Table 2, not independent collation."
+        }
+      ]
+    },
+    {
+      "id": "hebrew-lxx",
+      "title": "Hebrew Bible & Septuagint",
+      "intro": "Timeline cards use named public-domain plates and institutional links listed in DATA.md — not BHQ or Göttingen dumps.",
+      "cards": [
+        {
+          "id": "leon-levy-dss",
+          "title": "Leon Levy Dead Sea Scrolls Digital Library",
+          "summary": "IAA/Qumran image and catalog backbone for DSS Hebrew witnesses we point to.",
+          "links": [{ "label": "deadseascrolls.org.il", "href": "https://www.deadseascrolls.org.il/" }],
+          "license": "link_only",
+          "license_note": "Institutional image terms — we embed or link per license; no full plate rehost."
+        },
+        {
+          "id": "digivatlib",
+          "title": "DigiVatLib (Vatican Library)",
+          "summary": "IIIF and catalog access for codices such as Vaticanus where we outbound-link Greek and Hebrew holdings.",
+          "links": [{ "label": "digi.vatlib.it", "href": "https://digi.vatlib.it/" }],
+          "license": "link_only",
+          "license_note": "Link-only for most high-res manuscript views."
+        },
+        {
+          "id": "pd-plates-data-md",
+          "title": "Named PD plates (DATA.md)",
+          "summary": "Commons and publication scans we may host when license allows — documented per file in the repository.",
+          "links": [
+            {
+              "label": "DATA.md — image provenance",
+              "href": "https://github.com/severin12am/illustrative-manuscripts/blob/main/DATA.md"
+            },
+            { "label": "Wikimedia Commons", "href": "https://commons.wikimedia.org/" }
+          ],
+          "license": "open_reuse",
+          "license_note": "Per-file license in .attribution.json sidecars — check before reuse."
+        }
+      ]
+    },
+    {
+      "id": "nag-hammadi",
+      "title": "Nag Hammadi",
+      "cards": [
+        {
+          "id": "claremont-nha",
+          "title": "Claremont Colleges Digital Library — NHA",
+          "summary": "IIIF embeds for Nag Hammadi codices on our tractate cards.",
+          "links": [
+            {
+              "label": "Nag Hammadi Archive collection",
+              "href": "https://ccdl.claremont.edu/digital/collection/nha/"
+            }
+          ],
+          "license": "link_only",
+          "license_note": "IIIF embed only on this site — physical rights retained by holding institutions."
+        }
+      ]
+    }
+  ]
+}

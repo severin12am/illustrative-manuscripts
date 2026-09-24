@@ -16,6 +16,12 @@ export interface FamousPassageScholarship {
   url: string;
 }
 
+export interface FamousPassageHistoricalApparatus {
+  label: string;
+  url: string;
+  note: string;
+}
+
 export interface FamousPassageEntry {
   slug: string;
   title: string;
@@ -25,6 +31,7 @@ export interface FamousPassageEntry {
   story: string;
   later_tradition: string;
   scholarship: FamousPassageScholarship[];
+  historical_apparatus?: FamousPassageHistoricalApparatus;
   witnesses: FamousPassageWitness[];
   variants_link?: { book: string; q?: string; kind?: string };
   compare_link?: { a: string; b: string; book: string };

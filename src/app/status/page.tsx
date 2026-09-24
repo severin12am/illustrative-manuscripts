@@ -51,6 +51,138 @@ export default function SiteStatusPage() {
         </p>
       </header>
 
+      <section
+        className={styles.publishedTools}
+        aria-labelledby="published-tools-title"
+        id="published-tools"
+      >
+        <h2 id="published-tools-title" className={styles.sectionTitle}>
+          What published tools still give you
+        </h2>
+        <p className={styles.sectionIntro}>
+          Think of this GitHub Pages build as a teaching layer on top of wheels
+          scholars already published — not a replacement for the Liste, full CNTR,
+          or critical editions. Wire out for real work; use our site for bounded
+          slices and curated cards. Full bibliography:{" "}
+          <Link href="/sources/">Open sources hub</Link>.
+        </p>
+        <div className={styles.twoCol}>
+          <div className={styles.col}>
+            <h4>This site (Illustrative Manuscripts)</h4>
+            <ul>
+              <li>
+                Greek NT mechanical census — {disagreementTotal.toLocaleString()}{" "}
+                word-aligned units vs open SR GNT in a{" "}
+                {TIMELINE_START}–{TIMELINE_END} CE CNTR witness slice (
+                {greek_nt.witness_count} catalogued witnesses).
+              </li>
+              <li>
+                {famousCount} block-level <Link href="/famous/">Famous passages</Link>{" "}
+                with CNTR witness status in our window.
+              </li>
+              <li>
+                Qurʾān: {uthmaniCount} illustrative{" "}
+                <Link href="/quran/uthmani/">Uthmanic rasm</Link> rows (Cook / Sidky
+                framing) and {archetypeCount}{" "}
+                <Link href="/quran/archetype/">niʿmat</Link> matrix rows (van Putten
+                2019 Table 2).
+              </li>
+              <li>
+                Timeline catalog cards, claim discipline, teaching briefs — honest
+                aggregates from <code>coverage.json</code>.
+              </li>
+            </ul>
+          </div>
+          <div className={styles.col}>
+            <h4>Still use for real work</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://ntvmr.uni-muenster.de/liste"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  INTF Liste
+                </a>{" "}
+                /{" "}
+                <a
+                  href="https://ntvmr.uni-muenster.de/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  NTVMR
+                </a>{" "}
+                — full manuscript register and workspace.
+              </li>
+              <li>
+                <a href="https://greekcntr.org/" target="_blank" rel="noopener noreferrer">
+                  Full CNTR
+                </a>{" "}
+                (CC BY-SA transcriptions, SR GNT) — beyond our lazy-load slice.
+              </li>
+              <li>
+                <a href="https://igntp.org/" target="_blank" rel="noopener noreferrer">
+                  IGNTP
+                </a>{" "}
+                and other open edition projects where published.
+              </li>
+              <li>
+                NA28 / ECM / UBS — cite and library-access; we do not host apparatus (
+                <Link href="/sources/#na28-ecm-ubs">license note</Link>).
+              </li>
+              <li>
+                <a
+                  href="https://doi.org/10.1017/S0028688516000216"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Gurry 2016
+                </a>{" "}
+                (~500k-order tradition estimate;{" "}
+                <a
+                  href="https://www.repository.cam.ac.uk/bitstreams/fbac7937-110b-48a0-81f5-656677f85d8e/download"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  open accepted MS
+                </a>
+                ) — not our census number.
+              </li>
+              <li>
+                <a
+                  href="https://archive.org/details/novumtestamentum01tisc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Tischendorf Editio octava critica maior
+                </a>{" "}
+                (Internet Archive, PD) — 19th-c. apparatus for famous passages, not ECM (
+                <Link href="/sources/#tischendorf-eocm">all volumes</Link>).
+              </li>
+              <li>
+                <a
+                  href="https://corpuscoranicum.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Corpus Coranicum
+                </a>
+                ,{" "}
+                <a
+                  href="https://ccdl.claremont.edu/digital/collection/nha/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Claremont NHA
+                </a>
+                , Leon Levy DSS, DigiVatLib — see{" "}
+                <Link href="/sources/">Open sources</Link>.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section className={styles.section} aria-labelledby="counts-title">
         <h2 id="counts-title" className={styles.sectionTitle}>
           Honest counts (from build data)
@@ -319,6 +451,7 @@ export default function SiteStatusPage() {
           <Link href="/nag-hammadi/evidence/">Nag Hammadi evidence map</Link>
           <Link href="/teach/">Teaching briefs</Link>
           <Link href="/cite/">Cite &amp; learn</Link>
+          <Link href="/sources/">Open sources</Link>
           <Link href="/famous/">Famous passages</Link>
           <Link href="/variants/">Variant explorer</Link>
           <Link href="/quran/uthmani/">Uthmanic regional rasm</Link>
@@ -343,6 +476,8 @@ export default function SiteStatusPage() {
         <Link href="/about/">About</Link>
         {" · "}
         <Link href="/coverage/">Coverage</Link>
+        {" · "}
+        <Link href="/sources/">Open sources</Link>
         {" · "}
         <Link href="/use/">Use</Link>
       </footer>
