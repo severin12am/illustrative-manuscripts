@@ -4,6 +4,8 @@ A year-by-year timeline of early biblical manuscripts — **Greek NT witnesses (
 
 **Live site (GitHub Pages):** https://severin12am.github.io/illustrative-manuscripts/
 
+**Goals & handoff:** [GOALS.md](./GOALS.md)
+
 ## What this is
 
 ### Greek NT (corpus switch)
